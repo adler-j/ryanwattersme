@@ -2629,17 +2629,22 @@ header {
     color: #ffffff;
     padding-top: 0px;
     margin-top: 0px;
-    line-height: 1;
+    line-height: 1.5;
     font-size: 13.33333px; }
     @media only screen and (min-width: 641px) {
       .site-title-container h5.site-tagline {
         font-size: 20px; } }
 
 @media only screen and (max-width: 640px) {
+  #mobile-menu {
+    padding: 10px;
+    background-color: #2A2C39; }
+
   #mobile-toggle {
-    position: fixed;
+    position: absolute;
     right: 15px;
-    top: 15px; }
+    top: 15px;
+    background-color: #2A2C39; }
 
   #mobile-toggle {
     cursor: pointer;
@@ -2652,10 +2657,14 @@ header {
     border-radius: 1px;
     height: 5px;
     width: 35px;
-    background: white;
+    background: #ffffff;
     position: absolute;
     display: block;
     content: ''; }
+
+  #mobile-toggle.menu-button-scrolled span:before,
+  #mobile-toggle.menu-button-scrolled span:after {
+    background: #2A2C39; }
 
   #mobile-toggle span:before {
     top: -10px; }
@@ -2667,6 +2676,9 @@ header {
   #mobile-toggle span:before,
   #mobile-toggle span:after {
     transition: all 500ms ease-in-out; }
+
+  #mobile-toggle.active {
+    background-color: #51b3fe; }
 
   #mobile-toggle.active span {
     background-color: transparent; }
@@ -2796,6 +2808,11 @@ header {
     justify-content: space-around;
     -ms-flex-pack: distribute;
     background-color: #51b3fe; }
+    nav.global-navigation.sticky-nav {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0; }
     nav.global-navigation ul {
       width: 100%;
       max-width: 900px;

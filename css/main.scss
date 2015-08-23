@@ -65,7 +65,7 @@ header {
         color: $title-color;
         padding-top: 0px;
         margin-top: 0px;
-        line-height: 1;
+        line-height: 1.5;
         font-size: $base-font-size/1.5;
         @include MQ(M) {
             font-size: $base-font-size;
@@ -74,61 +74,64 @@ header {
 }
 
 @include MQ(MMAX) {
-    #mobile-toggle {
-        position: fixed;
-        right:15px;
-        top: 15px;
-    }
-    
-    #mobile-toggle {
-        cursor: pointer;
-        padding: 10px 35px 16px 0px;
-    }
-    
-    #mobile-toggle span,
-    #mobile-toggle span:before,
-    #mobile-toggle span:after {
-        cursor: pointer;
-        border-radius: 1px;
-        height: 5px;
-        width: 35px;
-        background: white;
-        position: absolute;
-        display: block;
-        content: '';
-    }
-    
-    #mobile-toggle span:before {
-        top: -10px;
-    }
-    
-    #mobile-toggle span:after {
-        bottom: -10px;
-    }
-    
-    #mobile-toggle span,
-    #mobile-toggle span:before,
-    #mobile-toggle span:after {
-        transition: all 500ms ease-in-out;
-    }
-    
-    #mobile-toggle.active span {
-        background-color: transparent;
-    }
-    
-    #mobile-toggle.active span:before,
-    #mobile-toggle.active span:after {
-        top: 0;
-    }
-    
-    #mobile-toggle.active span:before {
-        transform: rotate(45deg);
-    }
-    
-    #mobile-toggle.active span:after {
-        transform: rotate(-45deg);
-    }
-
+        #mobile-menu {
+            padding:10px;
+            background-color:$header-background-color;
+        }
+        #mobile-toggle {
+            position: absolute;
+            right: 15px;
+            top: 15px;
+            background-color:$header-background-color;
+        }
+        #mobile-toggle {
+            cursor: pointer;
+            padding: 10px 35px 16px 0px;
+            
+        }
+        #mobile-toggle span,
+        #mobile-toggle span:before,
+        #mobile-toggle span:after {
+            cursor: pointer;
+            border-radius: 1px;
+            height: 5px;
+            width: 35px;
+            background: $header-link-color;
+            position: absolute;
+            display: block;
+            content: '';
+        }
+        #mobile-toggle.menu-button-scrolled span:before,
+        #mobile-toggle.menu-button-scrolled span:after{
+            background: $header-background-color;
+        }
+        #mobile-toggle span:before {
+            top: -10px;
+        }
+        #mobile-toggle span:after {
+            bottom: -10px;
+        }
+        #mobile-toggle span,
+        #mobile-toggle span:before,
+        #mobile-toggle span:after {
+            transition: all 500ms ease-in-out;
+        }
+        #mobile-toggle.active{
+            background-color:$global-navigation-background-color;
+        }
+        #mobile-toggle.active span {
+            background-color: transparent;
+        }
+        #mobile-toggle.active span:before,
+        #mobile-toggle.active span:after {
+            top: 0;
+        }
+        #mobile-toggle.active span:before {
+            transform: rotate(45deg);
+        }
+        #mobile-toggle.active span:after {
+            transform: rotate(-45deg);
+        }
     nav.global-navigation {
         @include hardware-accelerate;
         @include transition(.4s);
@@ -175,11 +178,17 @@ header {
         @include flex-direction(column);
         @include justify-content(space-around);
         background-color: $global-navigation-background-color;
+        &.sticky-nav {
+            position:fixed;
+            width:100%;
+            top:0;
+            left:0;
+        }
         ul {
             width: 100%;
             max-width: $content-max-width;
-            margin-right:auto;
-            margin-left:auto;
+            margin-right: auto;
+            margin-left: auto;
             text-transform: $global-navigation-text-transform;
             @include display(flex);
             @include justify-content(space-between);
@@ -280,22 +289,22 @@ article {
         margin-bottom: 1em;
     }
     h3 {
-        font-size:$article-heading-font-size;
+        font-size: $article-heading-font-size;
     }
-    h4{
-        font-size:$article-subheading-font-size;
+    h4 {
+        font-size: $article-subheading-font-size;
     }
     p {
         color: $base-font-color;
         font-size: $base-font-size;
         margin-bottom: $base-font-size;
     }
-    a{
-        color:lighten($base-font-color,15%);
-        font-weight:$article-anchor-font-weight;
-        color:$article-anchor-font-color;
-        &:hover{
-            text-decoration:underline;
+    a {
+        color: lighten($base-font-color, 15%);
+        font-weight: $article-anchor-font-weight;
+        color: $article-anchor-font-color;
+        &:hover {
+            text-decoration: underline;
         }
     }
 }
@@ -370,8 +379,6 @@ footer {
     }
 }
 
-
-
 .fa-twitter:hover {
     color: $twitter;
 }
@@ -399,5 +406,3 @@ footer {
 .fa-facebook:hover {
     color: $facebook;
 }
-
-

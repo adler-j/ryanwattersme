@@ -19,7 +19,11 @@
             <li><a href="https://plus.google.com/{{site.google_plus}}" target="_blank" title="Check out my Google+ account."><i class="fa fa-google-plus"></i></a></li>
             {% endif %} {% if site.linkedin_profile %}
             <li><a href="https://www.linkedin.com/pub/{{site.linkedin_profile}}" target="_blank" title="Link with {{site.site_owner}} on LinkedIn"><i class="fa fa-linkedin"></i></a></li>
-            {% endif %} {% if site.facebook %}
+            {% endif %} 
+            {% if site.instagram_username %}
+            <li><a href="https://instagram.com/{{site.instagram_username}}" target="_blank"><i class="fa fa-instagram"></i></a></li>
+            {% endif %}
+            {% if site.facebook %}
             <li><a href="https://www.facebook.com/{{site.facebook}}" target="_blank" title="Check out the Facebook page for {{site.title}}"><i class="fa fa-facebook"></i></a></li>
             {% endif %} {% if site.include_rss %}
             <li><a href="{{site.baseurl}}/feed.xml"><i class="fa fa-rss-square" target="_blank" title="Subscribe to the RSS feed for this site - {{site.title}}"></i></a></li>

@@ -1,5 +1,5 @@
 $(document).ready(function() {
-		//Add animate.css class to hero/header/site-intro
+    //Add animate.css class to hero/header/site-intro
     $('.site-title-container').addClass('fadeIn');
     //mobile navigation toggling
     $('#mobile-toggle').on('click', function() {
@@ -13,5 +13,22 @@ $(document).ready(function() {
     var thisYear = date.getFullYear();
     var yearSpan = document.querySelector('.this-year');
     yearSpan.innerHTML = thisYear;
-    console.log(thisYear);
 });
+
+$(window).scroll(function() {
+    var headerHeight = $('.site-title-container').height(),
+        scrollLength = $(window).scrollTop(),
+        mobileToggle = $('#mobile-toggle'),
+        globalNav = $('.global-navigation');
+    if (scrollLength >= headerHeight && window.outerWidth > 640) {
+        globalNav.addClass('sticky-nav');
+    } else if (scrollLength < headerHeight && window.outerWidth > 640) {
+        globalNav.removeClass('sticky-nav');
+    }
+    // } else if (scrollLength >= headerHeight && window.outerWidth <= 640){
+    //     mobileToggle.addClass('menu-button-scrolled');
+    // } else if (scrollLength < headerHeight && window.outerWidth <= 640){
+    //     mobiletoggle.removeClass('menu-button-scrolled');
+    // }
+});
+    
