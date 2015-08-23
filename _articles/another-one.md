@@ -3,7 +3,6 @@ title: Another One
 subtitle: Here is my subtitle for this blog post
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sequi possimus aspernatur maxime repudiandae, at consequatur facilis unde non doloribus. Non laborum, esse. Magnam placeat, voluptates sapiente odit delectus quos.
 layout: article
-date: 2015-08-23
 ---
 
 ### Heading
