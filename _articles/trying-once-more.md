@@ -1,8 +1,8 @@
 ---
+title: Trying Once More
+subtitle: Here is a little subtitle for this post
+description: here is my description but I need to get out of her as soon as possible since I'm already late for this wedding.
 layout: article
-title: giving up soon
-description: here is my description but I need to get the fuck out of here
-subtitle: yo yo yo yo yo
 ---
 
 ### Introduction

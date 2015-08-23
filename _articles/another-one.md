@@ -1,11 +1,12 @@
 ---
+title: Another One
+subtitle: Here is my subtitle for this blog post
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sequi possimus aspernatur maxime repudiandae, at consequatur facilis unde non doloribus. Non laborum, esse. Magnam placeat, voluptates sapiente odit delectus quos.
 layout: article
-title: another one
-subtitle: here is the subtitle
-description: motherfucking description
+date: 2015-08-23
 ---
 
-### Introduction
+### Heading
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](https://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste.
 

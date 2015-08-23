@@ -4,7 +4,7 @@ layout: default
 
 <h1>Recent Posts</h1>
 <ul class="article-list">
-    {% for article in site.articles limit:2 %}
+    {% for article in site.articles limit:5 %}
     <li>
         <a href="{{ article.url }}"><h3>{{ article.title }}</h3></a>
         {% if article.description %}
@@ -14,7 +14,5 @@ layout: default
     {% endfor %}
     
 </ul>
-<section>
-    {{site.time}}
-</section>
+
 

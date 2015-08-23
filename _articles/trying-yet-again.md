@@ -1,7 +1,7 @@
 ---
-title: Testing Date Sorting    
-subtitle: Seeing about this whole date sorting bullshit
-description: How now brown cow. The big black bug bled blue blood. She sells seashells by the seashore.
+title: Trying Yet Again    
+subtitle: Playing with date sorting
+description: How now brown cow. The big black bug bled blue blood. She sells seashells by the seashore. There once was an old man who lived in a shoe.
 layout: article
 categories: foo
 tags: hello, goodbye, yes
