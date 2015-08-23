@@ -1,0 +1,16 @@
+<header>
+    <section class="site-title-container animated">
+        <a href="/" class="site-title">{{site.title}}</a>
+        <h5 class="site-tagline">{{site.tagline}}<sup>1</sup></h5>
+    </section>
+    <nav class="global-navigation" role="navigation">
+        <ul>
+            {% for link in site.main_navigation_links %}
+            <li><a href="{{site.url}}/{{link.url}}">{{link.text}}</a></li>
+            {% endfor %}
+        </ul>
+    </nav>
+    <a href="#" id="mobile-toggle"><span></span></a>
+</header>
+
+

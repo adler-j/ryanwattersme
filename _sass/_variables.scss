@@ -1,0 +1,69 @@
+//Layout
+$S:480px;
+$M:641px;
+$L:900px;
+$XL:1200px;
+$MMAX:640px;
+$content-max-width:$L;
+
+
+//Colors
+$brand: #2A2C39;
+$global-navigation-background-color:lighten(#01589B,35%);
+
+
+$base-font-size:20px;
+$base-font-family:'Open Sans', Georgia;
+$base-font-weight: 400;
+$base-font-color:#555555;
+$logo-font-family:'Pathway Gothic One',sans-serif;
+$logo-font-size:4.5rem;
+$heading-font-family:'Pathway Gothic One',sans-serif;
+$heading-font-color:#444444;
+$heading-font-weight: 700;
+$body-font-family:$base-font-family;
+
+$body-background-color:#fff;
+$anchor-color:inherit;
+$body-z:0;
+
+
+
+
+$header-height:60px;
+$header-link-color:#ffffff;
+$header-background-color:$brand;
+
+$global-navigation-text-transform:uppercase;
+$global-navigation-font-family:$logo-font-family;
+$global-navigation-font-size:$base-font-size * 1.5;
+$global-navigation-font-color:$header-link-color;
+$title-color:$header-link-color;
+
+
+$article-heading-font-size:$base-font-size * 1.5;
+$article-subheading-font-size:$base-font-size * 1.2;
+$article-anchor-font-weight:700;
+$article-anchor-font-color:#01589B;
+
+$footer-link-color:#ffffff;
+$footer-background-color:$brand;
+$footer-icon-size:8px;
+
+//Handy Social Media Colors
+
+$twitter:#00aced;
+$github:#AB5B50;
+$youtube:#bb0000;
+$google-plus:#dd4b39;
+$facebook:#3b5998;
+$rss:#FF6600;
+$pinterest:#cb2027;
+$instagram:#517fa4;
+$linkedin:#007bb6;
+$vine:#00bf8f;
+$tumblr:#32506d;
+$vimeo:#aad450;
+$foursquare:#0072b1;
+
+

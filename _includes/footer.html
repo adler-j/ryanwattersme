@@ -1,0 +1,32 @@
+<footer class="site-footer">
+    {% if site.author_photo %}
+    <section class="author-photo-footer">
+        <img class="footer-photo" src="{{site.url}}/images/{{site.author_photo}}" alt="{{site.site_author}}">
+        {% if site.copyright_in_footer %}
+        <p>&copy; <span class="this-year"></span> {{site.title}}</p>
+        {% endif %}
+    </section>
+    {% endif %}
+    <section class="social-media">
+        <ul>
+            {% if site.twitter_handle %}
+            <li><a href="https://twitter.com/{{site.twitter_username}}" target="_blank" title="Subscribe to my Twitter feed. Handle = {{site.twitter_handle}}"><i class="fa fa-twitter"></i></a></li>
+            {% endif %} {% if site.github_username %}
+            <li><a href="https://github.com/{{site.github_username}}" target="_blank" title="Visit my GitHub account, which includes the source for this site."><i class="fa fa-github"></i></a></li>
+            {% endif %} {% if site.youtube_user %}
+            <li><a href="https://www.youtube.com/user/{{site.youtube_user}}" title="Visit my YouTube channel, user {{site.youtube_user}}" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+            {% endif %} {% if site.google_plus %}
+            <li><a href="https://plus.google.com/{{site.google_plus}}" target="_blank" title="Check out my Google+ account."><i class="fa fa-google-plus"></i></a></li>
+            {% endif %} {% if site.linkedin_profile %}
+            <li><a href="https://www.linkedin.com/pub/{{site.linkedin_profile}}" target="_blank" title="Link with {{site.site_owner}} on LinkedIn"><i class="fa fa-linkedin"></i></a></li>
+            {% endif %} {% if site.facebook %}
+            <li><a href="https://www.facebook.com/{{site.facebook}}" target="_blank" title="Check out the Facebook page for {{site.title}}"><i class="fa fa-facebook"></i></a></li>
+            {% endif %} {% if site.include_rss %}
+            <li><a href="{{site.baseurl}}/feed.xml"><i class="fa fa-rss-square" target="_blank" title="Subscribe to the RSS feed for this site - {{site.title}}"></i></a></li>
+            {% endif %}
+        </ul>
+    </section>
+    <section class="site-footnotes">
+    	<span><sup>1</sup>{{site.footer_tagline}}</span>
+    </section>
+</footer>

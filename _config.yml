@@ -1,0 +1,63 @@
+# Site settings
+title: Ryan Watters
+tagline: Writer, editor, ex-bartender, and aspiring world-class breakdancer
+footer_tagline: That last one might be stretching it a bit.
+email: ryan@ryanwatters.me
+description: My name is Ryan. This is my website.
+copyright_in_footer: true
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: # the base hostname & protocol for your site
+site_owner: Ryan Watters
+
+# SOCIAL MEDIA/SHARING
+
+twitter_handle: ryandwatters
+github_username:  rdwatters
+tumblr_username: 
+pinterest_username:
+instagram_username:
+#Everything after https://www.youtube.com/user/
+youtube_user: Megatull80
+#Everything after "facebook.com/" in the URL, regardless of whether it's a personal profile or business page.
+facebook: pages/MySitecom/810571539011577
+#Everything after "plus.google.com/"  
+google_plus: +RyanWattersRyanWatters
+#Everything after "https://www.linkedin.com/pub/"
+linkedin_profile: ryan-watters-els/25/107/80
+include_rss: true
+
+
+#AUTHOR INFO 
+#Add this image to the "images" folder 
+author_photo: me.jpg 
+
+# COMMENTS(DISQUS)
+
+disqus_shortname: 
+
+# GLOBAL NAVIGATION
+
+main_navigation_links:
+- text: Home
+  url: 
+- text: Articles
+  url: articles
+- text: About
+  url: about
+- text: Contact
+  url: contact
+
+
+# COLLECTIONS
+
+permalink: /:title/
+collections:
+  articles:
+    output: true 
+
+# BUILD SETTINGS
+
+kramdown:
+  auto_ids: false
+  input: GFM
+  coderay_line_numbers: inline
