@@ -293,7 +293,16 @@ article {
         margin-bottom: 1em;
     }
     h1 {
+        @include display(flex);
+        @include align-items(center);
+        @include justify-content(space-between);
         margin:0px;
+        background-color:$accent;
+        width:110%;
+        margin-left:-5%;
+        padding-left:5%;
+        padding-right:5%;
+        vertical-align:middle;
     }
     h2{
         margin:0px;
@@ -307,15 +316,11 @@ article {
         font-size: $article-subheading-font-size;
     }
     time.article-publish-date{
-        display:block;
+        display:inline;
         float:right;
         text-align:right;
-        position:absolute;
-        top:0px;
-        right:0px;
-        @include MQ(MMAX){
-            top:-20px;
-        }
+        font-size:$base-font-size;
+        vertical-align: middle;
     }
     p {
         color: $base-font-color;

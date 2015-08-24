@@ -6,7 +6,8 @@
     <nav class="global-navigation" role="navigation">
         <ul>
             {% for link in site.main_navigation_links %}
-            <li><a href="{{site.url}}/{{link.url}}">{{link.text}}</a></li>
+            {% assign activePage = page.url | remove: "/index.html" %}
+            <li><a href="{{site.url}}/{{link.url}}" {% if link.url == activePage %}class="active"{% endif %}>{{link.text}}</a></li>
             {% endfor %}
         </ul>
     </nav>
