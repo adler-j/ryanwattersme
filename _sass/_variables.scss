@@ -33,7 +33,7 @@ $header-background-color:$brand;
 
 $global-navigation-text-transform:uppercase;
 $global-navigation-font-family:$logo-font-family;
-$global-navigation-font-size:$base-font-size * 1.5;
+$global-navigation-font-size:$base-font-size * 1.2;
 $global-navigation-font-color:$header-link-color;
 $global-navigation-background-color:lighten(#01589B,35%);
 $title-color:$header-link-color;
@@ -46,7 +46,7 @@ $article-anchor-font-color:#01589B;
 
 $footer-link-color:#ffffff;
 $footer-background-color:$brand;
-$footer-icon-size:8px;
+$footer-icon-size:$base-font-size;
 
 //Handy Social Media Colors
 

@@ -2563,7 +2563,7 @@ h6 {
   font-weight: 700;
   color: #444444; }
 
-header {
+header.site-header {
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -2835,7 +2835,7 @@ header {
       -o-justify-content: space-between;
       justify-content: space-between;
       -ms-flex-pack: justify;
-      height: 75px; }
+      height: 60px; }
       nav.global-navigation ul li {
         display: -webkit-box;
         display: -moz-box;
@@ -2847,9 +2847,13 @@ header {
         font-family: "Pathway Gothic One", sans-serif;
         text-align: center;
         display: inline;
-        font-size: 30px;
+        font-size: 24px;
         height: auto;
-        padding-right: 30px; }
+        padding-right: 24px; } }
+      @media only screen and (min-width: 641px) and (min-width: 900px) {
+        nav.global-navigation ul li {
+          font-size: 28.8px; } }
+@media only screen and (min-width: 641px) {
         nav.global-navigation ul li a {
           position: relative;
           display: inline-block;
@@ -2859,11 +2863,11 @@ header {
           color: #ffffff;
           letter-spacing: 3px;
           text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-          height: 45px;
-          line-height: 45px; }
+          height: 36px;
+          line-height: 36px; }
           nav.global-navigation ul li a:before, nav.global-navigation ul li a:after {
             position: absolute;
-            width: 45px;
+            width: 36px;
             height: 2px;
             background: #ffffff;
             content: '';
@@ -3085,22 +3089,21 @@ footer {
           footer section ul li {
             margin-right: 20px; } }
         footer section ul li a {
-          font-size: 24px;
-          background-color: #ffffff;
-          min-height: 16px;
-          min-width: 16px;
-          padding-top: 2px;
-          padding-bottom: 2px;
-          padding-right: 6.15385px;
-          padding-left: 6.15385px;
+          font-size: 20px;
+          min-height: 40px;
+          min-width: 40px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-right: 15.38462px;
+          padding-left: 15.38462px;
           border-radius: 50%;
           vertical-align: middle; }
           footer section ul li a i {
             -webkit-transition: 0.4s;
             -moz-transition: 0.4s;
             transition: 0.4s;
-            font-size: 8px;
-            color: #2A2C39; }
+            font-size: 20px;
+            color: #ffffff; }
 
 .site-footnotes {
   -webkit-align-self: flex-end;
@@ -3130,3 +3133,12 @@ footer {
 
 .fa-facebook:hover {
   color: #3b5998; }
+
+.fa-tumblr:hover {
+  color: #32506d; }
+
+.fa-pinterest:hover {
+  color: #cb2027; }
+
+.fa-instagram:hover {
+  color: #517fa4; }

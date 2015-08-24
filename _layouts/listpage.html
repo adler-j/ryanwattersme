@@ -1,14 +1,20 @@
 ---
-layout: article
+layout: default
 ---
-<ul class="article-list">
-    {% for article in site.articles %}
-    <li>
-        <a href="{{ article.url }}"><h3>{{ article.title }}</h3></a>
-        {% if article.description %}
-            <p>{{ article.description }}</p>
-        {% endif %}
-    </li>
-    {% endfor %}
-    
-</ul>
+<article>
+	<h1>{{page.title}}</h1>
+	<ul class="article-list">
+	    {% for article in site.articles %}
+	    {% if article.url != page.url %}
+	    <li>
+
+	        <a href="{{ article.url }}"><h3>{{ article.title }}</h3></a>
+	        {% if article.description %}
+	            <p>{{ article.description }}</p>
+	        {% endif %}
+	    </li>
+	    {% endif %}
+	    {% endfor %}
+	    
+	</ul>
+</article>

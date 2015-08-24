@@ -1,5 +1,5 @@
 ---
-layout: listpage
-permalink: posts/
+layout: article
+<!-- permalink: posts/ -->
 ---
 

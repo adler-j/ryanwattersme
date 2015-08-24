@@ -27,7 +27,7 @@ h6 {
     color: $heading-font-color;
 }
 
-header {
+header.site-header {
     @include display(flex);
     @include flex-direction(column);
     width: 100%;
@@ -199,6 +199,9 @@ header {
                 text-align: center;
                 display: inline;
                 font-size: $global-navigation-font-size;
+                @include MQ(L){
+                    font-size:$global-navigation-font-size * 1.2;
+                }
                 height: auto;
                 padding-right: $global-navigation-font-size;
                 a {
@@ -351,8 +354,8 @@ footer {
                     margin-right: 20px;
                 }
                 a {
-                    font-size: 24px;
-                    background-color: $footer-link-color;
+                    font-size: $footer-icon-size;
+                    // background-color: $footer-link-color;
                     min-height: $footer-icon-size * 2;
                     min-width: $footer-icon-size * 2;
                     padding-top: $footer-icon-size/4;
@@ -364,7 +367,7 @@ footer {
                     i {
                         @include transition(0.4s);
                         font-size: $footer-icon-size;
-                        color: $footer-background-color;
+                        color: $footer-link-color;
                     }
                 }
             }
@@ -405,4 +408,16 @@ footer {
 
 .fa-facebook:hover {
     color: $facebook;
+}
+
+.fa-tumblr:hover{
+    color:$tumblr;
+}
+
+.fa-pinterest:hover{
+    color:$pinterest;
+}
+
+.fa-instagram:hover{
+    color:$instagram;
 }

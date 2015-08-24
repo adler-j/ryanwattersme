@@ -13,8 +13,8 @@ site_owner: Ryan Watters
 
 twitter_handle: ryandwatters
 github_username:  rdwatters
-tumblr_username: 
-pinterest_username:
+tumblr_username: ryandwatters
+pinterest_username: ryandwatters
 instagram_username: ryandwatters
 #Everything after https://www.youtube.com/user/
 youtube_user: Megatull80
@@ -60,4 +60,4 @@ collections:
 kramdown:
   auto_ids: false
   input: GFM
-  coderay_line_numbers: inline
+  coderay_line_numbers: 
