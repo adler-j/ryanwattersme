@@ -2678,7 +2678,8 @@ header.site-header {
     transition: all 500ms ease-in-out; }
 
   #mobile-toggle.active {
-    background-color: #51B3FE; }
+    background-color: #51B3FE;
+    position: fixed; }
 
   #mobile-toggle.active span {
     background-color: transparent; }

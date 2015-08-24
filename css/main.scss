@@ -117,6 +117,7 @@ header.site-header {
     }
     #mobile-toggle.active {
         background-color: $global-navigation-background-color;
+        position:fixed;
     }
     #mobile-toggle.active span {
         background-color: transparent;
