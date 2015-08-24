@@ -3,6 +3,7 @@ title: Trying Once More
 subtitle: Here is a little subtitle for this post
 description: here is my description but I need to get out of her as soon as possible since I'm already late for this wedding.
 layout: article
+date: 2015-08-23
 ---
 
 ### Introduction

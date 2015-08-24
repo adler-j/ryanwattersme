@@ -12,6 +12,7 @@ layout: default
 	        {% if article.description %}
 	            <p>{{ article.description }}</p>
 	        {% endif %}
+					<time>{{ page.date | date: "%m/%d/%Y" }}</time>
 	    </li>
 	    {% endif %}
 	    {% endfor %}
