@@ -313,6 +313,9 @@ article {
         position:absolute;
         top:0px;
         right:0px;
+        @include MQ(MMAX){
+            top:-20px;
+        }
     }
     p {
         color: $base-font-color;
