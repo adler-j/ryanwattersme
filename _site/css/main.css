@@ -2678,7 +2678,7 @@ header.site-header {
     transition: all 500ms ease-in-out; }
 
   #mobile-toggle.active {
-    background-color: #51b3fe; }
+    background-color: #51B3FE; }
 
   #mobile-toggle.active span {
     background-color: transparent; }
@@ -2735,7 +2735,7 @@ header.site-header {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: #51b3fe;
+    background-color: #51B3FE;
     -webkit-transform: translateX(100%);
     -moz-transform: translateX(100%);
     -ms-transform: translateX(100%);
@@ -2807,7 +2807,7 @@ header.site-header {
     -o-justify-content: space-around;
     justify-content: space-around;
     -ms-flex-pack: distribute;
-    background-color: #51b3fe; }
+    background-color: #51B3FE; }
     nav.global-navigation.sticky-nav {
       position: fixed;
       width: 100%;
@@ -2959,7 +2959,8 @@ article {
   -moz-flex-direction: column;
   flex-direction: column;
   -ms-flex-direction: column;
-  margin-top: 40px; }
+  margin-top: 40px;
+  position: relative; }
   article img {
     -webkit-transition: 0.4s;
     -moz-transition: 0.4s;
@@ -2975,10 +2976,23 @@ article {
     height: auto;
     margin-top: 1em;
     margin-bottom: 1em; }
+  article h1 {
+    margin: 0px; }
+  article h2 {
+    margin: 0px;
+    color: #aeaeae;
+    margin-bottom: 20px; }
   article h3 {
     font-size: 30px; }
   article h4 {
     font-size: 24px; }
+  article time.article-publish-date {
+    display: block;
+    float: right;
+    text-align: right;
+    position: absolute;
+    top: 0px;
+    right: 0px; }
   article p {
     color: #555555;
     font-size: 20px;
@@ -3073,6 +3087,13 @@ footer {
       display: -moz-flex;
       display: -ms-flexbox;
       display: flex;
+      -webkit-box-lines: multiple;
+      -moz-box-lines: multiple;
+      box-lines: multiple;
+      -webkit-flex-wrap: wrap;
+      -moz-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
       width: 100%;
       -webkit-box-pack: distribute;
       -moz-box-pack: distribute;
@@ -3087,7 +3108,7 @@ footer {
         display: inline; }
         @media only screen and (min-width: 641px) {
           footer section ul li {
-            margin-right: 20px; } }
+            margin-right: 10px; } }
         footer section ul li a {
           font-size: 20px;
           min-height: 40px;
@@ -3112,6 +3133,60 @@ footer {
   -ms-flex-item-align: end; }
   .site-footnotes span {
     font-size: 13.33333px; }
+
+blockquote {
+  display: block;
+  background: #fff;
+  padding: 15px 20px 15px 45px;
+  margin: 0 0 20px;
+  position: relative;
+  /*Font*/
+  /*Borders - (Optional)*/
+  border-left: 15px solid #5C946E;
+  border-right: 2px solid #5C946E;
+  /*Box Shadow - (Optional)*/
+  -moz-box-shadow: 2px 2px 15px #ccc;
+  -webkit-box-shadow: 2px 2px 15px #ccc;
+  box-shadow: 2px 2px 15px #ccc; }
+  blockquote p {
+    font-family: "Pathway Gothic One", sans-serif;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #666;
+    text-align: justify; }
+    @media only screen and (min-width: 641px) {
+      blockquote p {
+        font-size: 34px; } }
+
+blockquote::before {
+  content: "\201C";
+  /*Unicode for Left Double Quote*/
+  /*Font*/
+  font-family: Georgia,serif;
+  font-size: 60px;
+  font-weight: bold;
+  color: #999;
+  /*Positioning*/
+  position: absolute;
+  left: 10px;
+  top: 5px; }
+
+blockquote::after {
+  /*Reset to make sure*/
+  content: ""; }
+
+blockquote a {
+  text-decoration: none;
+  background: #eee;
+  cursor: pointer;
+  padding: 0 3px;
+  color: #c76c0c; }
+
+blockquote a:hover {
+  color: #666; }
+
+blockquote em {
+  font-style: italic; }
 
 .fa-twitter:hover {
   color: #00aced; }

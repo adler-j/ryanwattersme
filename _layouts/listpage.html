@@ -5,16 +5,16 @@ layout: default
 	<h1>{{page.title}}</h1>
 	<ul class="article-list">
 	    {% for article in site.articles %}
-	    {% if article.url != page.url %}
-	    <li>
+		    {% if article.url != page.url %}
+		    <li>
 
-	        <a href="{{ article.url }}"><h3>{{ article.title }}</h3></a>
-	        {% if article.description %}
-	            <p>{{ article.description }}</p>
-	        {% endif %}
-					<time>{{ page.date | date: "%m/%d/%Y" }}</time>
-	    </li>
-	    {% endif %}
+		        <a href="{{ article.url }}"><h3>{{ article.title }}</h3></a>
+		        <time>{{ article.date | date: '%B %d, %Y' }}</time>
+		        {% if article.description %}
+		            <p>{{ article.description }}</p>
+		        {% endif %}						
+		    </li>
+		    {% endif %}
 	    {% endfor %}
 	    
 	</ul>

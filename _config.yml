@@ -13,11 +13,11 @@ site_owner: Ryan Watters
 
 twitter_handle: ryandwatters
 github_username:  rdwatters
-tumblr_username: ryandwatters
-pinterest_username: ryandwatters
-instagram_username: ryandwatters
+tumblr_username:
+pinterest_username:
+instagram_username:
 #Everything after https://www.youtube.com/user/
-youtube_user: Megatull80
+youtube_user: #Megatull80
 #Everything after "facebook.com/" in the URL, regardless of whether it's a personal profile or business page.
 facebook: pages/MySitecom/810571539011577
 #Everything after "plus.google.com/"  

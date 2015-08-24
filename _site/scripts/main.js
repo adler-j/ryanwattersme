@@ -25,10 +25,4 @@ $(window).scroll(function() {
     } else if (scrollLength < headerHeight && window.outerWidth > 640) {
         globalNav.removeClass('sticky-nav');
     }
-    // } else if (scrollLength >= headerHeight && window.outerWidth <= 640){
-    //     mobileToggle.addClass('menu-button-scrolled');
-    // } else if (scrollLength < headerHeight && window.outerWidth <= 640){
-    //     mobiletoggle.removeClass('menu-button-scrolled');
-    // }
 });
-    

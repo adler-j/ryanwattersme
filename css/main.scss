@@ -74,64 +74,63 @@ header.site-header {
 }
 
 @include MQ(MMAX) {
-        #mobile-menu {
-            padding:10px;
-            background-color:$header-background-color;
-        }
-        #mobile-toggle {
-            position: absolute;
-            right: 15px;
-            top: 15px;
-            background-color:$header-background-color;
-        }
-        #mobile-toggle {
-            cursor: pointer;
-            padding: 10px 35px 16px 0px;
-            
-        }
-        #mobile-toggle span,
-        #mobile-toggle span:before,
-        #mobile-toggle span:after {
-            cursor: pointer;
-            border-radius: 1px;
-            height: 5px;
-            width: 35px;
-            background: $header-link-color;
-            position: absolute;
-            display: block;
-            content: '';
-        }
-        #mobile-toggle.menu-button-scrolled span:before,
-        #mobile-toggle.menu-button-scrolled span:after{
-            background: $header-background-color;
-        }
-        #mobile-toggle span:before {
-            top: -10px;
-        }
-        #mobile-toggle span:after {
-            bottom: -10px;
-        }
-        #mobile-toggle span,
-        #mobile-toggle span:before,
-        #mobile-toggle span:after {
-            transition: all 500ms ease-in-out;
-        }
-        #mobile-toggle.active{
-            background-color:$global-navigation-background-color;
-        }
-        #mobile-toggle.active span {
-            background-color: transparent;
-        }
-        #mobile-toggle.active span:before,
-        #mobile-toggle.active span:after {
-            top: 0;
-        }
-        #mobile-toggle.active span:before {
-            transform: rotate(45deg);
-        }
-        #mobile-toggle.active span:after {
-            transform: rotate(-45deg);
-        }
+    #mobile-menu {
+        padding: 10px;
+        background-color: $header-background-color;
+    }
+    #mobile-toggle {
+        position: absolute;
+        right: 15px;
+        top: 15px;
+        background-color: $header-background-color;
+    }
+    #mobile-toggle {
+        cursor: pointer;
+        padding: 10px 35px 16px 0px;
+    }
+    #mobile-toggle span,
+    #mobile-toggle span:before,
+    #mobile-toggle span:after {
+        cursor: pointer;
+        border-radius: 1px;
+        height: 5px;
+        width: 35px;
+        background: $header-link-color;
+        position: absolute;
+        display: block;
+        content: '';
+    }
+    #mobile-toggle.menu-button-scrolled span:before,
+    #mobile-toggle.menu-button-scrolled span:after {
+        background: $header-background-color;
+    }
+    #mobile-toggle span:before {
+        top: -10px;
+    }
+    #mobile-toggle span:after {
+        bottom: -10px;
+    }
+    #mobile-toggle span,
+    #mobile-toggle span:before,
+    #mobile-toggle span:after {
+        transition: all 500ms ease-in-out;
+    }
+    #mobile-toggle.active {
+        background-color: $global-navigation-background-color;
+    }
+    #mobile-toggle.active span {
+        background-color: transparent;
+    }
+    #mobile-toggle.active span:before,
+    #mobile-toggle.active span:after {
+        top: 0;
+    }
+    #mobile-toggle.active span:before {
+        transform: rotate(45deg);
+    }
+    #mobile-toggle.active span:after {
+        transform: rotate(-45deg);
+    }
     nav.global-navigation {
         @include hardware-accelerate;
         @include transition(.4s);
@@ -179,10 +178,10 @@ header.site-header {
         @include justify-content(space-around);
         background-color: $global-navigation-background-color;
         &.sticky-nav {
-            position:fixed;
-            width:100%;
-            top:0;
-            left:0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
         }
         ul {
             width: 100%;
@@ -199,8 +198,8 @@ header.site-header {
                 text-align: center;
                 display: inline;
                 font-size: $global-navigation-font-size;
-                @include MQ(L){
-                    font-size:$global-navigation-font-size * 1.2;
+                @include MQ(L) {
+                    font-size: $global-navigation-font-size * 1.2;
                 }
                 height: auto;
                 padding-right: $global-navigation-font-size;
@@ -283,6 +282,7 @@ article {
     @include display(flex);
     @include flex-direction(column);
     margin-top: 40px;
+    position:relative;
     img {
         @include transition(.4s);
         @include display(flex);
@@ -291,11 +291,27 @@ article {
         margin-top: 1em;
         margin-bottom: 1em;
     }
+    h1 {
+        margin:0px;
+    }
+    h2{
+        margin:0px;
+        color:lighten($base-font-color,35%);
+        margin-bottom:$base-font-size;
+    }
     h3 {
         font-size: $article-heading-font-size;
     }
     h4 {
         font-size: $article-subheading-font-size;
+    }
+    time.article-publish-date{
+        display:block;
+        float:right;
+        text-align:right;
+        position:absolute;
+        top:0px;
+        right:0px;
     }
     p {
         color: $base-font-color;
@@ -343,6 +359,7 @@ footer {
         }
         ul {
             @include display(flex);
+            @include flex-wrap(wrap);
             width: 100%;
             @include justify-content(space-around);
             @include MQ(M) {
@@ -351,7 +368,7 @@ footer {
             li {
                 display: inline;
                 @include MQ(M) {
-                    margin-right: 20px;
+                    margin-right: 10px;
                 }
                 a {
                     font-size: $footer-icon-size;
@@ -382,6 +399,67 @@ footer {
     }
 }
 
+blockquote {
+    display: block;
+    background: #fff;
+    padding: 15px 20px 15px 45px;
+    margin: 0 0 20px;
+    position: relative;
+    /*Font*/
+    p {
+        font-family: $heading-font-family;
+        font-size: $base-font-size * 1.2;
+        line-height: 1.2;
+        color: #666;
+        text-align: justify;
+        @include MQ(M){
+            font-size:$base-font-size * 1.7;
+        }
+    }
+    /*Borders - (Optional)*/
+    border-left: 15px solid $accent;
+    border-right: 2px solid $accent;
+    /*Box Shadow - (Optional)*/
+    -moz-box-shadow: 2px 2px 15px #ccc;
+    -webkit-box-shadow: 2px 2px 15px #ccc;
+    box-shadow: 2px 2px 15px #ccc;
+}
+
+blockquote::before {
+    content: "\201C";
+    /*Unicode for Left Double Quote*/
+    /*Font*/
+    font-family: Georgia,serif;
+    font-size: 60px;
+    font-weight: bold;
+    color: #999;
+    /*Positioning*/
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+
+blockquote::after {
+    /*Reset to make sure*/
+    content: "";
+}
+
+blockquote a {
+    text-decoration: none;
+    background: #eee;
+    cursor: pointer;
+    padding: 0 3px;
+    color: #c76c0c;
+}
+
+blockquote a:hover {
+    color: #666;
+}
+
+blockquote em {
+    font-style: italic;
+}
+
 .fa-twitter:hover {
     color: $twitter;
 }
@@ -410,14 +488,14 @@ footer {
     color: $facebook;
 }
 
-.fa-tumblr:hover{
-    color:$tumblr;
+.fa-tumblr:hover {
+    color: $tumblr;
 }
 
-.fa-pinterest:hover{
-    color:$pinterest;
+.fa-pinterest:hover {
+    color: $pinterest;
 }
 
-.fa-instagram:hover{
-    color:$instagram;
+.fa-instagram:hover {
+    color: $instagram;
 }

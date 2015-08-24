@@ -9,6 +9,8 @@ $content-max-width:$L;
 
 //Colors
 $brand: #2A2C39;
+$brand-two: #51B3FE;
+$accent: #5C946E;
 
 
 
@@ -35,7 +37,7 @@ $global-navigation-text-transform:uppercase;
 $global-navigation-font-family:$logo-font-family;
 $global-navigation-font-size:$base-font-size * 1.2;
 $global-navigation-font-color:$header-link-color;
-$global-navigation-background-color:lighten(#01589B,35%);
+$global-navigation-background-color:$brand-two;
 $title-color:$header-link-color;
 
 
