@@ -1,3 +1,5 @@
+$('iframe').wrap('<section class="videoWrapper"></section>');
+
 $(document).ready(function() {
     //Add animate.css class to hero/header/site-intro
     $('.site-title-container').addClass('fadeIn');

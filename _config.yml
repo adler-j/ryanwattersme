@@ -8,6 +8,7 @@ copyright_in_footer: true
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: # the base hostname & protocol for your site
 site_owner: Ryan Watters
+author_photo: #me.jpg 
 
 # SOCIAL MEDIA/SHARING
 
@@ -25,11 +26,6 @@ google_plus: +RyanWattersRyanWatters
 #Everything after "https://www.linkedin.com/pub/"
 linkedin_profile: ryan-watters-els/25/107/80
 include_rss: true
-
-
-#AUTHOR INFO 
-#Add this image to the "images" folder 
-author_photo: me.jpg 
 
 # COMMENTS(DISQUS)
 

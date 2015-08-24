@@ -134,7 +134,7 @@ body,
   font-family: "Open Sans", Georgia;
   background-color: #fff;
   position: relative;
-  color: #555555; }
+  color: #333333; }
 
 *,
 *:before,
@@ -2980,7 +2980,7 @@ article {
     margin: 0px; }
   article h2 {
     margin: 0px;
-    color: #aeaeae;
+    color: #8c8c8c;
     margin-bottom: 20px; }
   article h3 {
     font-size: 30px; }
@@ -2994,11 +2994,11 @@ article {
     top: 0px;
     right: 0px; }
   article p {
-    color: #555555;
+    color: #333333;
     font-size: 20px;
     margin-bottom: 20px; }
   article a {
-    color: #7b7b7b;
+    color: #595959;
     font-weight: 700;
     color: #01589B; }
     article a:hover {
@@ -3068,6 +3068,15 @@ footer {
     -o-align-items: center;
     align-items: center;
     -ms-flex-align: center;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
     padding: 15px; }
     @media only screen and (min-width: 641px) {
       footer section {
@@ -3170,6 +3179,20 @@ blockquote::before {
   position: absolute;
   left: 10px;
   top: 5px; }
+
+.videoWrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  /* 16:9 */
+  padding-top: 25px;
+  height: 0; }
+
+.videoWrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
 
 blockquote::after {
   /*Reset to make sure*/

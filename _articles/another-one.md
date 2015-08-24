@@ -1,5 +1,5 @@
 ---
-title: Another One
+title: Another Post I Recently Wrote
 subtitle: Here is my subtitle for this blog post
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sequi possimus aspernatur maxime repudiandae, at consequatur facilis unde non doloribus. Non laborum, esse. Magnam placeat, voluptates sapiente odit delectus quos.
 layout: article
@@ -8,9 +8,17 @@ date: 2015-08-22
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](https://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste.
 
-#### Subheading
+### Here is an Article Heading
 
-One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it.
+One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. 
+
+If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it.
+
+<iframe width="640" height="360" src="https://www.youtube.com/embed/UXyHf_SpUUIvq=hd1080" frameborder="0" allowfullscreen></iframe>
+
+#### Here is an Article Subheading
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis deserunt omnis illo, iusto esse placeat, atque quisquam accusantium. Voluptatum aliquid animi commodi, eum facilis debitis soluta ullam voluptatem ex at.
 
 ![Here is an image of something cool](/images/japan_imperial_palace.jpeg)
 

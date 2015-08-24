@@ -1,12 +1,9 @@
 <footer class="site-footer">
-    {% if site.author_photo %}
     <section class="author-photo-footer">
-        <img class="footer-photo" src="{{site.url}}/images/{{site.author_photo}}" alt="{{site.site_author}}">
         {% if site.copyright_in_footer %}
         <p>&copy; <span class="this-year"></span> {{site.title}}</p>
         {% endif %}
     </section>
-    {% endif %}
     <section class="social-media">
         <ul>
             {% if site.twitter_handle %}
