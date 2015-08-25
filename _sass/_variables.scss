@@ -12,10 +12,10 @@ $brand-two: #51B3FE;
 $accent: #5C946E;
 
 $base-font-size:16px;
-$base-font-family:'Merriweather', sans-serif;
+$base-font-family:'Merriweather', Georgia, serif;
 $base-font-weight: 400;
 $base-font-color:#333333;
-$heading-font-family: 'Oswald',sans-serif;
+$heading-font-family: 'Pathway Gothic One',sans-serif;
 $heading-font-color:#444444;
 $heading-font-weight: 700;
 $logo-font-family:$heading-font-family;
@@ -32,7 +32,7 @@ $header-background-color:$brand;
 
 $global-navigation-text-transform:uppercase;
 $global-navigation-font-family:$logo-font-family;
-$global-navigation-font-size:$base-font-size * 1.2;
+$global-navigation-font-size:$base-font-size * 1.5;
 $global-navigation-font-color:$header-link-color;
 $global-navigation-background-color:$brand-two;
 $title-color:$header-link-color;
