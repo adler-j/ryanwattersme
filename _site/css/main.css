@@ -2582,6 +2582,7 @@ header.site-header {
   flex-direction: column;
   -ms-flex-direction: column;
   width: 100%;
+  width: 100vw;
   position: relative;
   background-color: #2A2C39;
   color: #ffffff;
@@ -2918,6 +2919,7 @@ main {
   display: -ms-flexbox;
   display: flex;
   flex: 1;
+  overflow-x: hidden;
   -webkit-box-orient: vertical;
   -moz-box-orient: vertical;
   box-orient: vertical;
