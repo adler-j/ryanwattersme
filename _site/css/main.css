@@ -3090,7 +3090,9 @@ article {
       @media only screen and (min-width: 641px) {
         article header.article-header time {
           vertical-align: middle;
-          width: auto; } }
+          width: auto;
+          font-size: 24px;
+          text-transform: uppercase; } }
   article h2 {
     margin: 0px;
     color: #8c8c8c;

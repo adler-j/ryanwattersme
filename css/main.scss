@@ -330,6 +330,8 @@ article {
             @include MQ(M){
                 vertical-align:middle;
                 width:auto;
+                font-size:$base-font-size * 1.2;
+                text-transform:uppercase;
             }        
         }
     }
