@@ -271,6 +271,7 @@ main {
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 15px;
+    margin-top:0px;
     @include MQ(M) {
         margin-right: auto;
         margin-left: auto;
@@ -297,11 +298,12 @@ article {
         @include align-items(center);
         @include justify-content(space-between);
         margin:0px;
+        padding-top:0px;
         background-color:$accent;
-        width:110%;
-        margin-left:-5%;
-        padding-left:5%;
-        padding-right:5%;
+        width:115%;
+        margin-left:-7.5%;
+        padding-left:7.5%;
+        padding-right:7.5%;
         vertical-align:middle;
     }
     h2{

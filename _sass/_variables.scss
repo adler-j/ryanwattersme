@@ -11,15 +11,15 @@ $brand: #2A2C39;
 $brand-two: #51B3FE;
 $accent: #5C946E;
 
-$base-font-size:20px;
-$base-font-family:'Raleway', sans-serif;
+$base-font-size:16px;
+$base-font-family:'Merriweather', sans-serif;
 $base-font-weight: 400;
 $base-font-color:#333333;
-$logo-font-family:'Pathway Gothic One',sans-serif;
-$logo-font-size:4.5rem;
-$heading-font-family:'Pathway Gothic One',sans-serif;
+$heading-font-family: 'Oswald',sans-serif;
 $heading-font-color:#444444;
 $heading-font-weight: 700;
+$logo-font-family:$heading-font-family;
+$logo-font-size:4.5rem;
 $body-font-family:$base-font-family;
 
 $body-background-color:#fff;

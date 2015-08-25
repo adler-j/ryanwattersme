@@ -119,11 +119,11 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 20px; }
+  font-size: 16px; }
 
 body,
 #body {
-  font-size: 20px;
+  font-size: 16px;
   min-height: 100%;
   min-height: 100vh;
   width: 100%;
@@ -131,7 +131,7 @@ body,
   margin: 0;
   padding: 0;
   overflow-x: hidden;
-  font-family: "Raleway", sans-serif;
+  font-family: "Merriweather", sans-serif;
   background-color: #fff;
   position: relative;
   color: #333333; }
@@ -173,13 +173,13 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: "Pathway Gothic One", sans-serif; }
+  font-family: "Oswald", sans-serif; }
 
 h1 {
   margin: 0.67em 0; }
 
 p {
-  line-height: 30px; }
+  line-height: 24px; }
 
 a {
   color: inherit;
@@ -2615,7 +2615,7 @@ header.site-header {
     .site-title-container {
       padding-left: 15px; } }
   .site-title-container .site-title {
-    font-family: "Pathway Gothic One", sans-serif;
+    font-family: "Oswald", sans-serif;
     font-size: 2.25rem;
     padding-bottom: 0px;
     margin-bottom: 0px;
@@ -2630,10 +2630,10 @@ header.site-header {
     padding-top: 0px;
     margin-top: 0px;
     line-height: 1.5;
-    font-size: 13.33333px; }
+    font-size: 10.66667px; }
     @media only screen and (min-width: 641px) {
       .site-title-container h5.site-tagline {
-        font-size: 20px; } }
+        font-size: 16px; } }
 
 @media only screen and (max-width: 640px) {
   #mobile-menu {
@@ -2729,7 +2729,7 @@ header.site-header {
     -o-justify-content: center;
     justify-content: center;
     -ms-flex-pack: center;
-    font-family: "Pathway Gothic One", sans-serif;
+    font-family: "Oswald", sans-serif;
     width: 100vw;
     height: 100%;
     height: 100vh;
@@ -2836,7 +2836,7 @@ header.site-header {
       -o-justify-content: space-between;
       justify-content: space-between;
       -ms-flex-pack: justify;
-      height: 60px; }
+      height: 48px; }
       nav.global-navigation ul li {
         display: -webkit-box;
         display: -moz-box;
@@ -2845,15 +2845,15 @@ header.site-header {
         display: -moz-flex;
         display: -ms-flexbox;
         display: flex;
-        font-family: "Pathway Gothic One", sans-serif;
+        font-family: "Oswald", sans-serif;
         text-align: center;
         display: inline;
-        font-size: 24px;
+        font-size: 19.2px;
         height: auto;
-        padding-right: 24px; } }
+        padding-right: 19.2px; } }
       @media only screen and (min-width: 641px) and (min-width: 900px) {
         nav.global-navigation ul li {
-          font-size: 28.8px; } }
+          font-size: 23.04px; } }
 @media only screen and (min-width: 641px) {
         nav.global-navigation ul li a {
           position: relative;
@@ -2864,11 +2864,11 @@ header.site-header {
           color: #ffffff;
           letter-spacing: 3px;
           text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-          height: 36px;
-          line-height: 36px; }
+          height: 28.8px;
+          line-height: 28.8px; }
           nav.global-navigation ul li a:before, nav.global-navigation ul li a:after {
             position: absolute;
-            width: 36px;
+            width: 28.8px;
             height: 2px;
             background: #ffffff;
             content: '';
@@ -2932,7 +2932,8 @@ main {
   width: 90%;
   margin-right: auto;
   margin-left: auto;
-  padding-bottom: 15px; }
+  padding-bottom: 15px;
+  margin-top: 0px; }
   @media only screen and (min-width: 641px) {
     main {
       margin-right: auto;
@@ -3004,30 +3005,31 @@ article {
     justify-content: space-between;
     -ms-flex-pack: justify;
     margin: 0px;
+    padding-top: 0px;
     background-color: #5C946E;
-    width: 110%;
-    margin-left: -5%;
-    padding-left: 5%;
-    padding-right: 5%;
+    width: 115%;
+    margin-left: -7.5%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
     vertical-align: middle; }
   article h2 {
     margin: 0px;
     color: #8c8c8c;
-    margin-bottom: 20px; }
+    margin-bottom: 16px; }
   article h3 {
-    font-size: 30px; }
-  article h4 {
     font-size: 24px; }
+  article h4 {
+    font-size: 19.2px; }
   article time.article-publish-date {
     display: inline;
     float: right;
     text-align: right;
-    font-size: 20px;
+    font-size: 16px;
     vertical-align: middle; }
   article p {
     color: #333333;
-    font-size: 20px;
-    margin-bottom: 20px; }
+    font-size: 16px;
+    margin-bottom: 16px; }
   article a {
     color: #595959;
     font-weight: 700;
@@ -3054,7 +3056,7 @@ footer {
   flex-direction: column;
   -ms-flex-direction: column;
   color: #ffffff;
-  font-size: 15px;
+  font-size: 12px;
   width: 100%;
   width: 100vw;
   height: auto;
@@ -3150,20 +3152,20 @@ footer {
           footer section ul li {
             margin-right: 10px; } }
         footer section ul li a {
-          font-size: 20px;
-          min-height: 40px;
-          min-width: 40px;
-          padding-top: 5px;
-          padding-bottom: 5px;
-          padding-right: 15.38462px;
-          padding-left: 15.38462px;
+          font-size: 16px;
+          min-height: 32px;
+          min-width: 32px;
+          padding-top: 4px;
+          padding-bottom: 4px;
+          padding-right: 12.30769px;
+          padding-left: 12.30769px;
           border-radius: 50%;
           vertical-align: middle; }
           footer section ul li a i {
             -webkit-transition: 0.4s;
             -moz-transition: 0.4s;
             transition: 0.4s;
-            font-size: 20px;
+            font-size: 16px;
             color: #ffffff; }
 
 .site-footnotes {
@@ -3172,7 +3174,7 @@ footer {
   align-self: flex-end;
   -ms-flex-item-align: end; }
   .site-footnotes span {
-    font-size: 13.33333px; }
+    font-size: 10.66667px; }
 
 blockquote {
   display: block;
@@ -3189,14 +3191,14 @@ blockquote {
   -webkit-box-shadow: 2px 2px 15px #ccc;
   box-shadow: 2px 2px 15px #ccc; }
   blockquote p {
-    font-family: "Pathway Gothic One", sans-serif;
-    font-size: 24px;
+    font-family: "Oswald", sans-serif;
+    font-size: 19.2px;
     line-height: 1.2;
     color: #666;
     text-align: justify; }
     @media only screen and (min-width: 641px) {
       blockquote p {
-        font-size: 34px; } }
+        font-size: 27.2px; } }
 
 blockquote::before {
   content: "\201C";
