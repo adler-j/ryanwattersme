@@ -351,6 +351,19 @@ article {
         font-size: $base-font-size;
         margin-bottom: $base-font-size;
     }
+
+    ul{
+        list-style: square;
+        margin-bottom:$base-font-size;
+        li {
+            padding-left:1em;
+            margin:auto;
+            list-style:square inside;
+        }
+        ul{
+            margin-bottom:0;
+        }
+    }
     a {
         color: lighten($base-font-color, 15%);
         font-weight: $article-anchor-font-weight;

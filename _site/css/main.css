@@ -3105,6 +3105,15 @@ article {
     color: #333333;
     font-size: 20px;
     margin-bottom: 20px; }
+  article ul {
+    list-style: square;
+    margin-bottom: 20px; }
+    article ul li {
+      padding-left: 1em;
+      margin: auto;
+      list-style: square inside; }
+    article ul ul {
+      margin-bottom: 0; }
   article a {
     color: #595959;
     font-weight: 700;
