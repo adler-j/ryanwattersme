@@ -9,9 +9,9 @@ $content-max-width:$L;
 //Colors
 $brand: #2A2C39;
 $brand-two: #51B3FE;
-$accent: #5C946E;
+$accent: lighten(#5C946E,10%);
 
-$base-font-size:18px;
+$base-font-size:20px;
 $base-font-family:'Merriweather', Georgia, serif;
 $base-font-weight: 400;
 $base-font-color:#333333;
@@ -32,7 +32,7 @@ $header-background-color:$brand;
 
 $global-navigation-text-transform:uppercase;
 $global-navigation-font-family:$logo-font-family;
-$global-navigation-font-size:$base-font-size * 1.2;
+$global-navigation-font-size:$base-font-size * 1.5;
 $global-navigation-font-color:$header-link-color;
 $global-navigation-background-color:$brand-two;
 $title-color:$header-link-color;

@@ -119,11 +119,11 @@ html {
   width: 100%;
   margin: 0;
   padding: 0;
-  font-size: 18px; }
+  font-size: 20px; }
 
 body,
 #body {
-  font-size: 18px;
+  font-size: 20px;
   min-height: 100%;
   min-height: 100vh;
   width: 100%;
@@ -179,7 +179,7 @@ h1 {
   margin: 0.67em 0; }
 
 p {
-  line-height: 27px; }
+  line-height: 30px; }
 
 a {
   color: inherit;
@@ -2630,10 +2630,10 @@ header.site-header {
     padding-top: 0px;
     margin-top: 0px;
     line-height: 1.5;
-    font-size: 12px; }
+    font-size: 13.33333px; }
     @media only screen and (min-width: 641px) {
       .site-title-container h5.site-tagline {
-        font-size: 18px; } }
+        font-size: 20px; } }
 
 @media only screen and (max-width: 640px) {
   #mobile-menu {
@@ -2836,7 +2836,7 @@ header.site-header {
       -o-justify-content: space-between;
       justify-content: space-between;
       -ms-flex-pack: justify;
-      height: 54.0px; }
+      height: 75px; }
       nav.global-navigation ul li {
         display: -webkit-box;
         display: -moz-box;
@@ -2848,12 +2848,12 @@ header.site-header {
         font-family: "Pathway Gothic One", sans-serif;
         text-align: center;
         display: inline;
-        font-size: 21.6px;
+        font-size: 30px;
         height: auto;
-        padding-right: 21.6px; } }
+        padding-right: 30px; } }
       @media only screen and (min-width: 641px) and (min-width: 900px) {
         nav.global-navigation ul li {
-          font-size: 25.92px; } }
+          font-size: 36px; } }
 @media only screen and (min-width: 641px) {
         nav.global-navigation ul li a {
           position: relative;
@@ -2864,11 +2864,11 @@ header.site-header {
           color: #ffffff;
           letter-spacing: 3px;
           text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
-          height: 32.4px;
-          line-height: 32.4px; }
+          height: 45px;
+          line-height: 45px; }
           nav.global-navigation ul li a:before, nav.global-navigation ul li a:after {
             position: absolute;
-            width: 32.4px;
+            width: 45px;
             height: 2px;
             background: #ffffff;
             content: '';
@@ -2976,9 +2976,8 @@ article {
     display: flex;
     width: 100%;
     height: auto;
-    margin-top: 1em;
-    margin-bottom: 1em; }
-  article h1 {
+    margin-bottom: 20px; }
+  article header.article-header {
     display: -webkit-box;
     display: -moz-box;
     display: box;
@@ -2986,50 +2985,124 @@ article {
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    box-align: center;
-    -webkit-align-items: center;
-    -moz-align-items: center;
-    -ms-align-items: center;
-    -o-align-items: center;
-    align-items: center;
-    -ms-flex-align: center;
-    -webkit-box-pack: justify;
-    -moz-box-pack: justify;
-    box-pack: justify;
-    -webkit-justify-content: space-between;
-    -moz-justify-content: space-between;
-    -ms-justify-content: space-between;
-    -o-justify-content: space-between;
-    justify-content: space-between;
-    -ms-flex-pack: justify;
-    margin: 0px;
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    box-orient: vertical;
+    -webkit-box-direction: normal;
+    -moz-box-direction: normal;
+    box-direction: normal;
+    -webkit-flex-direction: column;
+    -moz-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    box-pack: center;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -o-justify-content: center;
+    justify-content: center;
+    -ms-flex-pack: center;
+    margin-bottom: 20px;
     padding-top: 0px;
-    background-color: #5C946E;
+    background-color: #78ab88;
     width: 115%;
     margin-left: -7.5%;
     padding-left: 7.5%;
     padding-right: 7.5%;
+    padding-bottom: 20px;
     vertical-align: middle; }
+    @media only screen and (min-width: 641px) {
+      article header.article-header {
+        -webkit-box-orient: horizontal;
+        -moz-box-orient: horizontal;
+        box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -moz-box-direction: normal;
+        box-direction: normal;
+        -webkit-flex-direction: row;
+        -moz-flex-direction: row;
+        flex-direction: row;
+        -ms-flex-direction: row;
+        -webkit-box-pack: justify;
+        -moz-box-pack: justify;
+        box-pack: justify;
+        -webkit-justify-content: space-between;
+        -moz-justify-content: space-between;
+        -ms-justify-content: space-between;
+        -o-justify-content: space-between;
+        justify-content: space-between;
+        -ms-flex-pack: justify;
+        -webkit-box-align: center;
+        -moz-box-align: center;
+        box-align: center;
+        -webkit-align-items: center;
+        -moz-align-items: center;
+        -ms-align-items: center;
+        -o-align-items: center;
+        align-items: center;
+        -ms-flex-align: center; } }
+    article header.article-header h1 {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      margin-bottom: 0px;
+      text-align: center; }
+      @media only screen and (min-width: 641px) {
+        article header.article-header h1 {
+          text-align: left;
+          width: auto; } }
+    article header.article-header time {
+      display: -webkit-box;
+      display: -moz-box;
+      display: box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+      -moz-box-pack: center;
+      box-pack: center;
+      -webkit-justify-content: center;
+      -moz-justify-content: center;
+      -ms-justify-content: center;
+      -o-justify-content: center;
+      justify-content: center;
+      -ms-flex-pack: center;
+      margin-top: 0px;
+      font-size: 16.66667px;
+      width: 100%;
+      font-family: "Pathway Gothic One", sans-serif; }
+      @media only screen and (min-width: 641px) {
+        article header.article-header time {
+          vertical-align: middle;
+          width: auto; } }
   article h2 {
     margin: 0px;
     color: #8c8c8c;
-    margin-bottom: 18px; }
+    margin-bottom: 20px; }
   article h3 {
-    font-size: 27px; }
+    font-size: 30px; }
   article h4 {
-    font-size: 21.6px; }
-  article time.article-publish-date {
-    display: inline;
-    float: right;
-    text-align: right;
-    font-size: 18px;
-    vertical-align: middle; }
+    font-size: 24px; }
   article p {
     color: #333333;
-    font-size: 18px;
-    margin-bottom: 18px; }
+    font-size: 20px;
+    margin-bottom: 20px; }
   article a {
     color: #595959;
     font-weight: 700;
@@ -3056,7 +3129,7 @@ footer {
   flex-direction: column;
   -ms-flex-direction: column;
   color: #ffffff;
-  font-size: 13.5px;
+  font-size: 15px;
   width: 100%;
   width: 100vw;
   height: auto;
@@ -3152,20 +3225,20 @@ footer {
           footer section ul li {
             margin-right: 10px; } }
         footer section ul li a {
-          font-size: 18px;
-          min-height: 36px;
-          min-width: 36px;
-          padding-top: 4.5px;
-          padding-bottom: 4.5px;
-          padding-right: 13.84615px;
-          padding-left: 13.84615px;
+          font-size: 20px;
+          min-height: 40px;
+          min-width: 40px;
+          padding-top: 5px;
+          padding-bottom: 5px;
+          padding-right: 15.38462px;
+          padding-left: 15.38462px;
           border-radius: 50%;
           vertical-align: middle; }
           footer section ul li a i {
             -webkit-transition: 0.4s;
             -moz-transition: 0.4s;
             transition: 0.4s;
-            font-size: 18px;
+            font-size: 20px;
             color: #ffffff; }
 
 .site-footnotes {
@@ -3174,7 +3247,7 @@ footer {
   align-self: flex-end;
   -ms-flex-item-align: end; }
   .site-footnotes span {
-    font-size: 12px; }
+    font-size: 13.33333px; }
 
 blockquote {
   display: block;
@@ -3184,27 +3257,27 @@ blockquote {
   position: relative;
   /*Font*/
   /*Borders - (Optional)*/
-  border-left: 15px solid #5C946E;
-  border-right: 2px solid #5C946E;
+  border-left: 15px solid #78ab88;
+  border-right: 2px solid #78ab88;
   /*Box Shadow - (Optional)*/
   -moz-box-shadow: 2px 2px 15px #ccc;
   -webkit-box-shadow: 2px 2px 15px #ccc;
   box-shadow: 2px 2px 15px #ccc; }
   blockquote p {
     font-family: "Pathway Gothic One", sans-serif;
-    font-size: 21.6px;
+    font-size: 24px;
     line-height: 1.2;
     color: #666;
     text-align: justify; }
     @media only screen and (min-width: 641px) {
       blockquote p {
-        font-size: 30.6px; } }
+        font-size: 34px; } }
 
 blockquote::before {
   content: "\201C";
   /*Unicode for Left Double Quote*/
   /*Font*/
-  font-family: Georgia,serif;
+  font-family: Georgia, serif;
   font-size: 60px;
   font-weight: bold;
   color: #999;
@@ -3218,7 +3291,8 @@ blockquote::before {
   padding-bottom: 56.25%;
   /* 16:9 */
   padding-top: 25px;
-  height: 0; }
+  height: 0;
+  margin-bottom: 20px; }
 
 .videoWrapper iframe {
   position: absolute;

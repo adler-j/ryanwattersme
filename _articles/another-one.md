@@ -1,5 +1,5 @@
 ---
-title: Another One
+title: Another One With A Much Longer Title
 subtitle: Here is my subtitle for this blog post
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sequi possimus aspernatur maxime repudiandae, at consequatur facilis unde non doloribus. Non laborum, esse. Magnam placeat, voluptates sapiente odit delectus quos.
 layout: article
@@ -16,8 +16,6 @@ If you don't watch it people will force you one way or the other, into doing wha
 
 <iframe width="640" height="360" src="https://www.youtube.com/embed/UXyHf_SpUUI" frameborder="0" allowfullscreen></iframe>
 
-#### Here is an Article Subheading
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis deserunt omnis illo, iusto esse placeat, atque quisquam accusantium. Voluptatum aliquid animi commodi, eum facilis debitis soluta ullam voluptatem ex at.
 
 ![Here is an image of something cool](/images/japan_imperial_palace.jpeg)
@@ -33,6 +31,10 @@ Do commanded an shameless we disposing do. Indulgence ten remarkably nor are imp
 ```javascript
 $(document).ready(function(){
     $('h1').css('color','blue');
+    $('h2').css('color','green');
+    $('.myDiv').on('click',function(){
+        $('body').toggleClass('body-class');
+    })
 });
 ``` 
 At every tiled on ye defer do. No attention suspected oh difficult. Fond his say old meet cold find come whom. The sir park sake bred. Wonder matter now can estate esteem assure fat roused. Am performed on existence as discourse is. Pleasure friendly at marriage blessing or. 

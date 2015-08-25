@@ -117,7 +117,7 @@ header.site-header {
     }
     #mobile-toggle.active {
         background-color: $global-navigation-background-color;
-        position:fixed;
+        position: fixed;
     }
     #mobile-toggle.active span {
         background-color: transparent;
@@ -271,7 +271,7 @@ main {
     margin-right: auto;
     margin-left: auto;
     padding-bottom: 15px;
-    margin-top:0px;
+    margin-top: 0px;
     @include MQ(M) {
         margin-right: auto;
         margin-left: auto;
@@ -284,45 +284,65 @@ article {
     @include display(flex);
     @include flex-direction(column);
     margin-top: 40px;
-    position:relative;
+    position: relative;
     img {
         @include transition(.4s);
         @include display(flex);
         width: 100%;
         height: auto;
-        margin-top: 1em;
-        margin-bottom: 1em;
-    }
-    h1 {
-        @include display(flex);
-        @include align-items(center);
-        @include justify-content(space-between);
-        margin:0px;
-        padding-top:0px;
-        background-color:$accent;
-        width:115%;
-        margin-left:-7.5%;
-        padding-left:7.5%;
-        padding-right:7.5%;
-        vertical-align:middle;
-    }
-    h2{
-        margin:0px;
-        color:lighten($base-font-color,35%);
         margin-bottom:$base-font-size;
+    }
+    header.article-header {
+        @include display(flex);
+        @include flex-direction(column);
+        @include justify-content(center);
+        @include MQ(M){
+            @include flex-direction(row);
+            @include justify-content(space-between);
+            @include align-items(center);
+        }
+        margin-bottom: $base-font-size;
+        padding-top: 0px;
+        background-color: $accent;
+        width: 115%;
+        margin-left: -7.5%;
+        padding-left: 7.5%;
+        padding-right: 7.5%;
+        padding-bottom: $base-font-size;
+        vertical-align: middle;
+        h1 {
+            @include display(flex);
+            @include justify-content(center);
+            margin-bottom:0px;
+            text-align:center;
+            @include MQ(M){
+                text-align:left;
+                width:auto;
+            }
+        }
+        time {
+            @include display(flex);
+            @include justify-content(center);
+            margin-top:0px;
+            font-size: $base-font-size/1.2;
+            width: 100%;
+            font-family:$heading-font-family;
+            @include MQ(M){
+                vertical-align:middle;
+                width:auto;
+            }        
+        }
+    }
+    h2 {
+        margin: 0px;
+        color: lighten($base-font-color, 35%);
+        margin-bottom: $base-font-size;
     }
     h3 {
         font-size: $article-heading-font-size;
     }
     h4 {
         font-size: $article-subheading-font-size;
-    }
-    time.article-publish-date{
-        display:inline;
-        float:right;
-        text-align:right;
-        font-size:$base-font-size;
-        vertical-align: middle;
     }
     p {
         color: $base-font-color;
@@ -424,8 +444,8 @@ blockquote {
         line-height: 1.2;
         color: #666;
         text-align: justify;
-        @include MQ(M){
-            font-size:$base-font-size * 1.7;
+        @include MQ(M) {
+            font-size: $base-font-size * 1.7;
         }
     }
     /*Borders - (Optional)*/
@@ -441,7 +461,7 @@ blockquote::before {
     content: "\201C";
     /*Unicode for Left Double Quote*/
     /*Font*/
-    font-family: Georgia,serif;
+    font-family: Georgia, serif;
     font-size: 60px;
     font-weight: bold;
     color: #999;
@@ -453,10 +473,13 @@ blockquote::before {
 
 .videoWrapper {
     position: relative;
-    padding-bottom: 56.25%; /* 16:9 */
+    padding-bottom: 56.25%;
+    /* 16:9 */
     padding-top: 25px;
     height: 0;
+    margin-bottom:$base-font-size;
 }
+
 .videoWrapper iframe {
     position: absolute;
     top: 0;
