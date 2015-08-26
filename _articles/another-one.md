@@ -4,7 +4,7 @@ subtitle: Here is my subtitle for this blog post
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sequi possimus aspernatur maxime repudiandae, at consequatur facilis unde non doloribus. Non laborum, esse. Magnam placeat, voluptates sapiente odit delectus quos.
 layout: article
 published: true
-date: 2015-08-22
+date: 2015-08-26
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](https://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste.
 

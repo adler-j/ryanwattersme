@@ -4,9 +4,8 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="//cdnjs.cloudflare.com/ajax/libs/normalize/3.0.1/normalize.min.css" rel="stylesheet">
-    <link href='https://fonts.googleapis.com/css?family=Pathway+Gothic+One|Merriweather:400,700,400italic' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:300,600,300italic|Pathway+Gothic+One' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://maxcddn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"></link>
     <title>About Me - Ryan Watters</title>
     <meta name="description" content="My name is Ryan. This is my website.">
     <link rel="stylesheet" href=" /css/main.css ">
@@ -36,18 +35,22 @@
             
             <li><a href="/contact" >Contact</a></li>
             
+            <li>
+                <form action="/search.html">
+                    <input type="text" name="q" id="tipue_search_input" autocomplete="off" placeholder="Search..." required>
+                </form>
+            </li>
         </ul>
+    
     </nav>
+    
     <a href="#" id="mobile-toggle"><span></span></a>
 </header>
 
     <main class="main" id="main">
-        <article>
-<h1>About Me</h1>
-Hi.
+        <p>Hi.</p>
 
-My name is Ryan.
-</article>
+<p>My name is Ryan.</p>
 
 
     </main>
@@ -63,15 +66,11 @@ My name is Ryan.
             <li><a href="https://twitter.com/" target="_blank" title="Subscribe to my Twitter feed. Handle = ryandwatters"><i class="fa fa-twitter"></i></a></li>
              
             <li><a href="https://github.com/rdwatters" target="_blank" title="Visit my GitHub account, which includes the source for this site."><i class="fa fa-github"></i></a></li>
-              
-            <li><a href="https://plus.google.com/+RyanWattersRyanWatters" target="_blank" title="Check out my Google+ account."><i class="fa fa-google-plus"></i></a></li>
-             
+               
             
             <li><a href="https://www.linkedin.com/pub/ryan-watters-els/25/107/80" target="_blank" title="Link with Ryan Watters on LinkedIn"><i class="fa fa-linkedin"></i></a></li>
              
             
-            
-            <li><a href="https://www.facebook.com/pages/MySitecom/810571539011577" target="_blank" title="Check out the Facebook page for Ryan Watters"><i class="fa fa-facebook"></i></a></li>
             
             
             
@@ -86,10 +85,25 @@ My name is Ryan.
 </footer>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- tipue search -->
+    <script src="/scripts/tipuesearch_content.js"></script>
+    <script src="/scripts/tipuesearch_set.js"></script>
+    <script src="/scripts/tipuesearch.min.js"></script>
+    <!-- Main js for site interactions -->
     <script src="/scripts/main.js" async></script>
+    <!-- highlight.js -->
     <script src="/scripts/highlight.pack.js"></script>
     <script async>
     hljs.initHighlightingOnLoad();
+    </script>
+    <script>
+    $(document).ready(function() {
+        $('#tipue_search_input').tipuesearch({
+            'highlightEveryTerm':true,
+            'descriptiveWords': 20,
+            'debug': false
+        });
+    });
     </script>
 </body>
 

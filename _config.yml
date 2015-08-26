@@ -20,9 +20,9 @@ instagram_username:
 #Everything after https://www.youtube.com/user/
 youtube_user: #Megatull80
 #Everything after "facebook.com/" in the URL, regardless of whether it's a personal profile or business page.
-facebook: pages/MySitecom/810571539011577
+facebook: #pages/MySitecom/810571539011577
 #Everything after "plus.google.com/"  
-google_plus: +RyanWattersRyanWatters
+google_plus: #+RyanWattersRyanWatters
 #Everything after "https://www.linkedin.com/pub/"
 linkedin_profile: ryan-watters-els/25/107/80
 include_rss: true
@@ -56,4 +56,7 @@ collections:
 kramdown:
   auto_ids: false
   input: GFM
-  coderay_line_numbers: 
+  coderay_line_numbers:
+
+sass:
+  style: compressed 

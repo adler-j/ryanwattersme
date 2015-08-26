@@ -1,3 +1,0 @@
----
----
-{{ site.articles | jsonify }}

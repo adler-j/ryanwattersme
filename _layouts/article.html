@@ -4,7 +4,7 @@ layout: default
 <article>
     <header class="article-header">
         <h1>{{ page.title }}</h1>
-        <time>{{ page.date | date: '%B %d, %Y' }}</time>
+        <div class="publish-date"><time>{{ page.date | date: '%B %d, %Y' }}</time></div>
     </header> 
     {% if page.tags %}
     <ul class="tags">

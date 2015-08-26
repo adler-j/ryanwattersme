@@ -9,21 +9,23 @@ $content-max-width:$L;
 //Colors
 $brand: #2A2C39;
 $brand-two: #51B3FE;
-$accent: lighten(#5C946E,10%);
+$accent-color: lighten(#5C946E,10%);
+$anchor-color: #01589B;
+$warning-color: tomato;
 
-$base-font-size:20px;
-$base-font-family:'Merriweather', Georgia, serif;
-$base-font-weight: 400;
-$base-font-color:#333333;
-$heading-font-family: 'Pathway Gothic One',sans-serif;
+$base-font-size:18px;
+$base-font-family:'Open Sans','Helvetica Neue',helvetica,sans-serif;
+$base-font-weight: 300;
+$base-font-color:#555555;
+$heading-font-family: $base-font-family;
 $heading-font-color:#444444;
 $heading-font-weight: 700;
-$logo-font-family:$heading-font-family;
+$logo-font-family:'Pathway Gothic One',sans-serif;
 $logo-font-size:4.5rem;
 $body-font-family:$base-font-family;
+$blockquote-font-family:$base-font-family;
 
 $body-background-color:#fff;
-$anchor-color:inherit;
 $body-z:0;
 
 $header-height:60px;
@@ -41,7 +43,7 @@ $title-color:$header-link-color;
 $article-heading-font-size:$base-font-size * 1.5;
 $article-subheading-font-size:$base-font-size * 1.2;
 $article-anchor-font-weight:700;
-$article-anchor-font-color:#01589B;
+$article-anchor-font-color:$anchor-color;
 
 $footer-link-color:#ffffff;
 $footer-background-color:$brand;

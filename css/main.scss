@@ -4,10 +4,12 @@
 @import '../_sass/bourbon/bourbon';
 @import '../_sass/variables';
 @import '../_sass/reset';
+@import '../_sass/mixins';
 @import '../_sass/layout';
 @import '../_sass/animate';
 // @import '../_sass/solarized_dark';
 @import '../_sass/monokai_sublime';
+@import '../_sass/search';
 body {
     @include display(flex);
     @include flex-direction(column);
@@ -257,6 +259,11 @@ header.site-header {
                         transform: rotate(0deg) translateX(50%);
                     }
                 }
+                form{
+                    display:inline;
+                    color:$base-font-color;
+                    height:100%;
+                }
             }
         }
     }
@@ -266,7 +273,6 @@ main {
     @include transition(.4s);
     @include display(flex);
     flex: 1;
-    overflow-x: hidden;
     @include flex-direction(column);
     max-width: $content-max-width;
     width: 90%;
@@ -305,13 +311,12 @@ article {
         }
         margin-bottom: $base-font-size;
         padding-top: 0px;
-        background-color: $accent;
+        background-color: $accent-color;
         width: 115%;
         margin-left: -7.5%;
         padding-left: 7.5%;
         padding-right: 7.5%;
         padding-bottom: $base-font-size;
-        vertical-align: middle;
         h1 {
             @include display(flex);
             @include justify-content(center);
@@ -322,19 +327,8 @@ article {
                 width:auto;
             }
         }
-        time {
-            @include display(flex);
-            @include justify-content(center);
-            margin-top:0px;
-            font-size: $base-font-size/1.2;
-            width: 100%;
-            font-family:$heading-font-family;
-            @include MQ(M){
-                vertical-align:middle;
-                width:auto;
-                font-size:$base-font-size * 1.2;
-                text-transform:uppercase;
-            }        
+        time{
+            font-weight:bold;
         }
     }
     h2 {
@@ -456,7 +450,7 @@ blockquote {
     position: relative;
     /*Font*/
     p {
-        font-family: $heading-font-family;
+        font-family: $blockquote-font-family;
         font-size: $base-font-size * 1.2;
         line-height: 1.2;
         color: #666;
@@ -466,8 +460,8 @@ blockquote {
         }
     }
     /*Borders - (Optional)*/
-    border-left: 15px solid $accent;
-    border-right: 2px solid $accent;
+    border-left: 15px solid $accent-color;
+    border-right: 2px solid $accent-color;
     /*Box Shadow - (Optional)*/
     -moz-box-shadow: 2px 2px 15px #ccc;
     -webkit-box-shadow: 2px 2px 15px #ccc;
@@ -494,7 +488,6 @@ blockquote::before {
     /* 16:9 */
     padding-top: 25px;
     height: 0;
-    margin-bottom:$base-font-size;
 }
 
 .videoWrapper iframe {
@@ -503,6 +496,10 @@ blockquote::before {
     left: 0;
     width: 100%;
     height: 100%;
+}
+
+.videoWrapper + p {
+    margin-top: $base-font-size/2;
 }
 
 blockquote::after {
