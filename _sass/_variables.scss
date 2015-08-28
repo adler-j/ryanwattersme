@@ -9,7 +9,7 @@ $content-max-width:$L;
 //Colors
 $brand: #2A2C39;
 $brand-two: #51B3FE;
-$accent-color: lighten(#5C946E,10%);
+$accent-color: #5C946E;
 $anchor-color: #01589B;
 $warning-color: tomato;
 
@@ -40,7 +40,7 @@ $global-navigation-background-color:$brand-two;
 $title-color:$header-link-color;
 
 
-$article-heading-font-size:$base-font-size * 1.5;
+$article-heading-font-family: $heading-font-family;
 $article-subheading-font-size:$base-font-size * 1.2;
 $article-anchor-font-weight:700;
 $article-anchor-font-color:$anchor-color;

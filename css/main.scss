@@ -307,8 +307,7 @@ article {
         margin-bottom: $base-font-size;
         padding-top: 0px;
         background-color: $accent-color;
-        padding-right: 5%;
-        padding-left: 5%;
+        padding: 5%;
         color:white;
         @include MQ(M) {
             @include flex-direction(row);
@@ -322,6 +321,7 @@ article {
         h1 {
             @include display(flex);
             @include justify-content(center);
+            font-family:$article-heading-font-family;
             text-align: center;
             font-size: $h1-font-size * .75;
             color:white;
@@ -336,13 +336,14 @@ article {
             @include flex-direction(column);
             @include justify-content(center);
             time {
-                @include display(flex);
                 font-weight: bold;
                 width:100%;
+                text-align:center;
             }
             ul {
                 @include display(flex);
                 @include justify-content(space-around);
+                @include align-items(center);
                 width:100%;
                 li {
                     font-size: $base-font-size * .75;
