@@ -1,13 +1,17 @@
 ---
 title: Another One With A Much Longer Title
 subtitle: Here is my subtitle for this blog post
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sequi possimus aspernatur maxime repudiandae, at consequatur facilis unde non doloribus. Non laborum, esse. Magnam placeat, voluptates sapiente odit delectus quos.
+description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sequi possimus aspernatur maxime repudiandae, at consequatur facilis unde non doloribus. Non laborum, esse. Magnam placeat, voluptates sapiente odit delectus quos."
 layout: article
 published: true
-date: 2015-08-26
+date: 2015-08-26T00:00:00.000Z
 comments: true
-tags: [javascript,testing,learning]
+tags: 
+  - javascript
+  - testing
+  - learning
 ---
+
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste.
 
@@ -52,7 +56,4 @@ Remain lively hardly needed at do by. Two you fat downs fanny three. True mr gon
 
 ![Here is an image of something cool](/images/coffee_cup_and_pencil.jpeg) 
 
-Was justice improve age article between. No projection as up preference reasonably delightful celebrated. Preserved and abilities assurance tolerably breakfast use saw. And painted letters forming far village elderly compact. Her rest west each spot his and you knew. Estate gay wooded depart six far her. Of we be have it lose gate bred. Do separate removing or expenses in. Had covered but evident chapter matters anxious. 
-
-
-
+Was justice improve age article between. No projection as up preference reasonably delightful celebrated. Preserved and abilities assurance tolerably breakfast use saw. And painted letters forming far village elderly compact. Her rest west each spot his and you knew. Estate gay wooded depart six far her. Of we be have it lose gate bred. Do separate removing or expenses in. Had covered but evident chapter matters anxious.
