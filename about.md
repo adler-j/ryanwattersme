@@ -9,7 +9,7 @@ published: true
 <article>
 #About Me
 
-Hi
+Hi.
 
 My name is Ryan.
 </article>
