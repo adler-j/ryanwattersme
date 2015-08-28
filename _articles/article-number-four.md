@@ -4,13 +4,16 @@ subtitle: "This is a subtitle to the fourth post I've added to this blog"
 description: Here is a contrived and arbitrary description of this particular blog post. Now I am just writing a bunch of rubbish.
 layout: article
 published: true
-date: 2015-08-23
-tags: [javascript,hello]
+date: {}
+tags: 
+  - javascript
+  - hello
 comments: true
 ---
 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste. Please visit my [about me page](/about).
 
 ### Here is an Article Heading
 
@@ -54,4 +57,3 @@ Remain lively hardly needed at do by. Two you fat downs fanny three. True mr gon
 ![Here is an image of something cool](/images/coffee_cup_and_pencil.jpeg) 
 
 Was justice improve age article between. No projection as up preference reasonably delightful celebrated. Preserved and abilities assurance tolerably breakfast use saw. And painted letters forming far village elderly compact. Her rest west each spot his and you knew. Estate gay wooded depart six far her. Of we be have it lose gate bred. Do separate removing or expenses in. Had covered but evident chapter matters anxious.
-
