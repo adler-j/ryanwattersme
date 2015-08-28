@@ -3,7 +3,7 @@ title: Trying Once More
 subtitle: Here is a little subtitle for this post
 description: "Here is my description but I need to get out of here as soon as possible since I'm already late for this wedding."
 layout: article
-date: {}
+date: 2015-08-23
 comments: true
 published: true
 ---
