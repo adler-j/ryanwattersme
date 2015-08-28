@@ -10,13 +10,13 @@
             <li><a href="{{site.url}}/{{link.url}}" {% if link.url == activePage %}class="active"{% endif %}>{{link.text}}</a></li>
             {% endfor %}
             <li>
-                <form action="{{site.url}}/search.html">
-                    <input type="text" name="q" id="tipue_search_input" autocomplete="off" placeholder="Search..." required>
-                </form>
+                <form action="{{site.url}}/search.html" id="search-form">
+                        <input type="text" name="q" id="tipue_search_input" autocomplete="off" placeholder="Search..." required>
+                </form>    
             </li>
-        </ul>
-    
+        </ul>    
     </nav>
+    
     
     <a href="#" id="mobile-toggle"><span></span></a>
 </header>
