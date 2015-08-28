@@ -3,13 +3,14 @@ title: Trying Once More
 subtitle: Here is a little subtitle for this post
 description: "Here is my description but I need to get out of here as soon as possible since I'm already late for this wedding."
 layout: article
-date: 2015-08-26
+date: {}
 comments: true
 published: true
 ---
 
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste.  Testing adding content using Prose.io.
 
 ### Here is an Article Heading
 
