@@ -3,10 +3,11 @@ title: Trying Once More
 subtitle: Here is a little subtitle for this post
 description: "Here is my description but I need to get out of here as soon as possible since I'm already late for this wedding."
 layout: article
-date: 2015-08-23
+date: {}
 comments: true
 published: true
 ---
+
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste.
 
@@ -30,6 +31,8 @@ One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your foo
 
 Do commanded an shameless we disposing do. Indulgence ten remarkably nor are impression out. Power is lived means oh every in we quiet. Remainder provision an in intention. Saw supported too joy promotion engrossed propriety. Me till like it sure no sons.
 
+Visit my [about me](about) page.
+
 ```javascript
 $(document).ready(function(){
     $('h1').css('color','blue');
@@ -52,4 +55,3 @@ Remain lively hardly needed at do by. Two you fat downs fanny three. True mr gon
 ![Here is an image of something cool](/images/coffee_cup_and_pencil.jpeg) 
 
 Was justice improve age article between. No projection as up preference reasonably delightful celebrated. Preserved and abilities assurance tolerably breakfast use saw. And painted letters forming far village elderly compact. Her rest west each spot his and you knew. Estate gay wooded depart six far her. Of we be have it lose gate bred. Do separate removing or expenses in. Had covered but evident chapter matters anxious.
-
