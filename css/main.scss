@@ -269,11 +269,15 @@ body > header {
     }
 }
 
-main {
+#main {
     @include transition(.4s);
     @include display(flex);
-    flex: 1;
     @include flex-direction(column);
+    -webkit-box-flex: 1;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+    min-height: 100%;
     max-width: $content-max-width;
     width: 90%;
     margin-right: auto;
@@ -286,6 +290,7 @@ main {
         max-width: $content-max-width;
     }
 }
+
 
 article {
     @include transition(.4s);
@@ -308,7 +313,7 @@ article {
         padding-top: 0px;
         background-color: $accent-color;
         padding: 5%;
-        color:white;
+        color: white;
         @include MQ(M) {
             @include flex-direction(row);
             @include justify-content(space-between);
@@ -321,10 +326,10 @@ article {
         h1 {
             @include display(flex);
             @include justify-content(center);
-            font-family:$article-heading-font-family;
+            font-family: $article-heading-font-family;
             text-align: center;
             font-size: $h1-font-size * .75;
-            color:white;
+            color: white;
             @include MQ(M) {
                 text-align: left;
                 width: auto;
@@ -337,14 +342,14 @@ article {
             @include justify-content(center);
             time {
                 font-weight: bold;
-                width:100%;
-                text-align:center;
+                width: 100%;
+                text-align: center;
             }
             ul {
                 @include display(flex);
                 @include justify-content(space-around);
                 @include align-items(center);
-                width:100%;
+                width: 100%;
                 li {
                     font-size: $base-font-size * .75;
                 }
