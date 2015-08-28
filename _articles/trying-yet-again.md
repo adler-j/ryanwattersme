@@ -6,6 +6,7 @@ layout: article
 categories: foo
 tags: 
 date: 2015-08-21
+comments: true
 ---
 
 ### Heading

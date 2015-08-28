@@ -6,6 +6,7 @@ layout: article
 published: true
 date: 2015-08-23
 tags: ['javascript','tag','here','yes']
+comments: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore commodi odio consequuntur voluptatum tempora iste modi quaerat. Cum enim repellat voluptates veniam, repellendus, repudiandae saepe sit accusamus impedit omnis quisquam.

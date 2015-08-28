@@ -1,5 +1,5 @@
 # Site settings
-title: Ryan Watters
+title: Random Site Name
 tagline: Writer, editor, ex-bartender, and aspiring world-class breakdancer
 footer_tagline: That last one is a bit of a stretch.
 email: ryan@ryanwatters.me
@@ -28,7 +28,7 @@ linkedin_profile: ryan-watters-els/25/107/80
 include_rss: true
 
 # COMMENTS(DISQUS)
-
+# If you want to remove all comments on all pages at once, removed the shortname from this file
 disqus_shortname: ryanwattersme 
 
 # GLOBAL NAVIGATION

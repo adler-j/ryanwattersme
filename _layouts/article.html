@@ -2,32 +2,19 @@
 layout: default 
 ---
 <article>
-    <header class="article-header">
+    <header>
         <h1>{{ page.title }}</h1>
-        <div class="publish-date"><time>{{ page.date | date: '%B %d, %Y' }}</time></div>
-    </header> 
-    {% if page.tags %}
-    <ul class="tags">
-        {% for tag in page.tags %}
-        <li>{{tag}}</li>
-        {% endfor %}
-    </ul>
-    {% endif %}
-        {{ content }}
+        <section class="publishing-metadata">
+            <time>{{ page.date | date: '%B %d, %Y' }}</time>
+            <ul class="tags">
+                {% for tag in page.tags %}
+                <li>{{tag}}</li>
+                {% endfor %}
+            </ul>
+        </section>
+    </header>
+    {% if page.tags %} {% endif %} {{ content }}
     <p>{{page.next}}</p>
-    {% if site.disqus_shortname %}
-    <div id="disqus_thread"></div>
-    <script type="text/javascript">
-        /* * * CONFIGURATION VARIABLES * * */
-        var disqus_shortname = '{{site.disqus_shortname}}';
-        
-        /* * * DON'T EDIT BELOW THIS LINE * * */
-        (function() {
-            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-        })();
-    </script>
-    <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    {% endif %}
+    <h1 style="font-size:48px">{{page.collections}}</h1>
 </article>
+

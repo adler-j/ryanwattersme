@@ -29,7 +29,7 @@ h6 {
     color: $heading-font-color;
 }
 
-header.site-header {
+body > header {
     @include display(flex);
     @include flex-direction(column);
     width: 100%;
@@ -259,10 +259,10 @@ header.site-header {
                         transform: rotate(0deg) translateX(50%);
                     }
                 }
-                form{
-                    display:inline;
-                    color:$base-font-color;
-                    height:100%;
+                form {
+                    display: inline;
+                    color: $base-font-color;
+                    height: 100%;
                 }
             }
         }
@@ -298,67 +298,87 @@ article {
         @include display(flex);
         width: 100%;
         height: auto;
-        margin-bottom:$base-font-size;
+        margin-bottom: $base-font-size;
     }
-    header.article-header {
+    >header {
         @include display(flex);
         @include flex-direction(column);
         @include justify-content(center);
-        @include MQ(M){
-            @include flex-direction(row);
-            @include justify-content(space-between);
-            @include align-items(center);
-        }
         margin-bottom: $base-font-size;
         padding-top: 0px;
         background-color: $accent-color;
-        width: 115%;
-        margin-left: -7.5%;
-        padding-left: 7.5%;
-        padding-right: 7.5%;
-        padding-bottom: $base-font-size;
+        padding-right: 5%;
+        padding-left: 5%;
+        color:white;
+        @include MQ(M) {
+            @include flex-direction(row);
+            @include justify-content(space-between);
+            @include align-items(center);
+            width: 115%;
+            margin-left: -7.5%;
+            padding-left: 7.5%;
+            padding-right: 7.5%;
+        }
         h1 {
             @include display(flex);
             @include justify-content(center);
-            margin-bottom:0px;
-            text-align:center;
-            @include MQ(M){
-                text-align:left;
-                width:auto;
+            text-align: center;
+            font-size: $h1-font-size * .75;
+            color:white;
+            @include MQ(M) {
+                text-align: left;
+                width: auto;
+                font-size: $h1-font-size;
             }
         }
-        time{
-            font-weight:bold;
+        section.publishing-metadata {
+            @include display(flex);
+            @include flex-direction(column);
+            @include justify-content(center);
+            time {
+                @include display(flex);
+                font-weight: bold;
+                width:100%;
+            }
+            ul {
+                @include display(flex);
+                @include justify-content(space-around);
+                width:100%;
+                li {
+                    font-size: $base-font-size * .75;
+                }
+            }
+            @include MQ(M) {
+                @include flex-direction(row);
+                @include flex-wrap(wrap);
+            }
         }
     }
     h2 {
         margin: 0px;
         color: lighten($base-font-color, 35%);
         margin-bottom: $base-font-size;
+        font-size: $h2-font-size * .85;
+        @include MQ(M) {
+            font-size: $h2-font-size;
+        }
     }
     h3 {
-        font-size: $article-heading-font-size;
+        font-size: $h3-font-size * .85;
+        @include MQ(M) {
+            font-size: $h3-font-size;
+        }
     }
     h4 {
-        font-size: $article-subheading-font-size;
+        font-size: $h4-font-size * .85;
+        @include MQ(M) {
+            font-size: $h4-font-size;
+        }
     }
     p {
         color: $base-font-color;
         font-size: $base-font-size;
         margin-bottom: $base-font-size;
-    }
-
-    ul{
-        list-style: square;
-        margin-bottom:$base-font-size;
-        li {
-            padding-left:1em;
-            margin:auto;
-            list-style:square inside;
-        }
-        ul{
-            margin-bottom:0;
-        }
     }
     a {
         color: lighten($base-font-color, 15%);
@@ -367,6 +387,16 @@ article {
         &:hover {
             text-decoration: underline;
         }
+    }
+}
+
+body > aside {
+    padding-right: 5%;
+    padding-left: 5%;
+    #disqus_thread {
+        max-width: $content-max-width;
+        margin-right: auto;
+        margin-left: auto;
     }
 }
 
@@ -404,6 +434,7 @@ footer {
             @include display(flex);
             @include flex-wrap(wrap);
             width: 100%;
+            color: $footer-link-color;
             @include justify-content(space-around);
             @include MQ(M) {
                 // width: 33.333333%;
