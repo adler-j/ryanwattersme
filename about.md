@@ -2,11 +2,14 @@
 layout: default
 title: About Me
 permalink: /about/
+published: true
 ---
 
-Hi.
+
+<article>
+# About Me
+
+Hi
 
 My name is Ryan.
-
-
-
+</article>
