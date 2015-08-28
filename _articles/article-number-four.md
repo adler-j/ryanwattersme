@@ -4,12 +4,8 @@ subtitle: "This is a subtitle to the fourth post I've added to this blog"
 description: Here is a contrived and arbitrary description of this particular blog post. Now I am just writing a bunch of rubbish.
 layout: article
 published: true
-date:2015-08-23
-tags: 
-  - javascript
-  - tag
-  - here
-  - "yes"
+date: 2015-08-23
+tags: [javascript,hello]
 comments: true
 ---
 
