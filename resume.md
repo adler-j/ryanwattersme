@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /resume/
 ---
 
 {% for job in site.data.jobs %}

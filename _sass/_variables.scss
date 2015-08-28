@@ -9,7 +9,7 @@ $content-max-width:$L;
 //Colors
 $brand: #2A2C39;
 $brand-two: #51B3FE;
-$accent-color: #5C946E;
+$accent-color: darken(#5C946E,20%);
 $anchor-color: #01589B;
 $warning-color: tomato;
 
@@ -41,6 +41,7 @@ $title-color:$header-link-color;
 
 
 $article-heading-font-family: $heading-font-family;
+$article-headline-font-color:#ffffff;
 $article-subheading-font-size:$base-font-size * 1.2;
 $article-anchor-font-weight:700;
 $article-anchor-font-color:$anchor-color;

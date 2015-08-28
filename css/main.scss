@@ -292,7 +292,8 @@ body > header {
     margin-left: auto;
     height:10vh;
     @include MQ(M) {
-        max-width: 120px;
+        width:auto;
+        max-width: 250px;
         margin-right: 5px;
         height:auto;
     }
@@ -345,10 +346,10 @@ article {
             @include flex-direction(row);
             @include justify-content(space-between);
             @include align-items(center);
-            width: 115%;
-            margin-left: -7.5%;
-            padding-left: 7.5%;
-            padding-right: 7.5%;
+            width: 110%;
+            margin-left: -5%;
+            padding-left: 5%;
+            padding-right: 5%;
             padding-top:0;
             padding-bottom:0;
         }
@@ -358,7 +359,7 @@ article {
             font-family: $article-heading-font-family;
             text-align: center;
             font-size: $h1-font-size * .75;
-            color: white;
+            color: $article-headline-font-color;
             @include MQ(M) {
                 text-align: left;
                 width: auto;
@@ -381,6 +382,9 @@ article {
                 width: 100%;
                 li {
                     font-size: $base-font-size * .75;
+                    a{
+                        color:inherit;
+                    }
                 }
             }
             @include MQ(M) {

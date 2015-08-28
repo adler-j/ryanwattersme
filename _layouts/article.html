@@ -8,7 +8,7 @@ layout: default
             <time>{{ page.date | date: '%B %d, %Y' }}</time>
             <ul class="tags">
                 {% for tag in page.tags %}
-                <li>{{tag}}</li>
+                <li><a href="{{site.baseurl}}/{{tag}}">{{tag}}</a></li>
                 {% endfor %}
             </ul>
         </section>
