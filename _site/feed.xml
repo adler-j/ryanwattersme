@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Ryan Watters</title>
+    <title>Random Site</title>
     <description>My name is Ryan. This is my website.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 28 Aug 2015 01:01:40 -0500</pubDate>
-    <lastBuildDate>Fri, 28 Aug 2015 01:01:40 -0500</lastBuildDate>
+    <pubDate>Sat, 29 Aug 2015 13:43:11 -0500</pubDate>
+    <lastBuildDate>Sat, 29 Aug 2015 13:43:11 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
   </channel>

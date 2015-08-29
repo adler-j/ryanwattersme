@@ -7,6 +7,7 @@ categories: foo
 tags: 
 date: 2015-08-21
 comments: true
+insearch: true
 ---
 
 ### Heading

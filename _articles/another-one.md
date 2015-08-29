@@ -4,8 +4,9 @@ subtitle: Here is my subtitle for this blog post
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sequi possimus aspernatur maxime repudiandae, at consequatur facilis unde non doloribus. Non laborum, esse. Magnam placeat, voluptates sapiente odit delectus quos."
 layout: article
 published: true
-date: 2015-08-26T00:00:00.000Z
+date: 2015-08-26
 comments: true
+insearch: true
 tags: 
   - javascript
   - testing

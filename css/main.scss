@@ -1,15 +1,17 @@
 ---
-# Only the main Sass file needs front matter (the dashes are enough)
+title: main.css
+insearch: false
 ---
-@import '../_sass/bourbon/bourbon';
-@import '../_sass/variables';
-@import '../_sass/reset';
-@import '../_sass/mixins';
-@import '../_sass/layout';
-@import '../_sass/animate';
+
+@import 'bourbon/bourbon';
+@import 'variables';
+@import 'reset';
+@import 'mixins';
+@import 'layout';
+@import 'animate';
 // @import '../_sass/solarized_dark';
-@import '../_sass/monokai_sublime';
-@import '../_sass/search';
+@import 'monokai_sublime';
+@import 'search';
 body {
     @include display(flex);
     @include flex-direction(column);
@@ -177,6 +179,9 @@ body > header {
                 a {
                     
                     letter-spacing: 3px;
+                    &.active{
+                        background-color:darken($global-navigation-background-color,20%);
+                    }
                 }
             }
         }
@@ -230,6 +235,9 @@ body > header {
                     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
                     height: $global-navigation-font-size * 1.5;
                     line-height: $global-navigation-font-size * 1.5;
+                    &.active{
+                        background-color:darken($global-navigation-background-color,20%);
+                    }
                     &:before,
                     &:after {
                         position: absolute;
@@ -257,6 +265,7 @@ body > header {
                     &:hover::before,
                     &:hover::after {
                         opacity: 1;
+                        width:100%;
                     }
                     &:hover::before {
                         left: 50%;
@@ -283,22 +292,6 @@ body > header {
         }
     }
 }
-
-#tipue_search_input {
-    color: $base-font-color;
-    width: auto;
-    max-width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    height:10vh;
-    @include MQ(M) {
-        width:auto;
-        max-width: 250px;
-        margin-right: 5px;
-        height:auto;
-    }
-}
-
 
 #main {
     @include transition(.4s);
@@ -552,7 +545,7 @@ blockquote::before {
     top: 5px;
 }
 
-.videoWrapper {
+.article-video {
     position: relative;
     padding-bottom: 56.25%;
     /* 16:9 */
@@ -560,7 +553,7 @@ blockquote::before {
     height: 0;
 }
 
-.videoWrapper iframe {
+.article-video iframe {
     position: absolute;
     top: 0;
     left: 0;
@@ -568,7 +561,7 @@ blockquote::before {
     height: 100%;
 }
 
-.videoWrapper + p {
+.article-video + p {
     margin-top: $base-font-size/2;
 }
 
@@ -632,3 +625,5 @@ blockquote em {
 .fa-instagram:hover {
     color: $instagram;
 }
+
+

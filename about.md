@@ -12,7 +12,7 @@ published: true
   
   Hi. 
   
-  My name is Ryan Watters.
+  My name is Site Author.
   
  
 

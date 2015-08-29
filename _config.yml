@@ -1,5 +1,5 @@
 # Site settings
-title: Ryan Watters
+title: Random Site
 tagline: Writer, editor, ex-bartender, and aspiring world-class breakdancer
 footer_tagline: That last one is a bit of a stretch.
 email: ryan@ryanwatters.me
@@ -60,3 +60,7 @@ kramdown:
 
 sass:
   style: compressed 
+
+# PROSE.IO SETTINGS CAN BE FOUND IN THE _prose.yml FILE
+
+

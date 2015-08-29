@@ -1,4 +1,4 @@
-$('iframe').wrap('<section class="videoWrapper"></section>');
+$('iframe').wrap('<section class="article-video"></section>');
 
 $(document).ready(function() {
     //Add animate.css class to hero/header/site-intro

@@ -5,6 +5,7 @@ description: Here is a contrived and arbitrary description of this particular bl
 layout: article
 published: true
 date: 2015-08-21
+insearch: true
 tags: 
   - javascript
   - hello
