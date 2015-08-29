@@ -14,7 +14,7 @@ $anchor-color: #01589B;
 $warning-color: tomato;
 
 $base-font-size:18px;
-$base-font-family:'Open Sans','Helvetica Neue',helvetica,sans-serif;
+$base-font-family:"museo-sans",'Helvetica Neue',helvetica,sans-serif;
 $base-font-weight: 300;
 $base-font-color:#555555;
 $heading-font-family: $base-font-family;
@@ -56,6 +56,10 @@ $footer-link-color:#ffffff;
 $footer-background-color:$brand;
 $footer-icon-size:$base-font-size;
 
+//Search and search page options
+$search-result-heading-font-size: $base-font-size * 1.3;
+$search-result-heading-font-family: $base-font-family;
+$search-result-heading-font-color: $base-font-color;
 //Handy Social Media Colors
 
 $twitter:#00aced;

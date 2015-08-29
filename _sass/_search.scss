@@ -61,14 +61,14 @@ article#search-page {
 }
 
 .tipue_search_content_title {
-    font: 300 21px/1.7;
-    font-family: $heading-font-family;
     margin-top: 23px;
 }
 
 .tipue_search_content_title a {
-    color: #333;
+    color: $search-result-heading-font-color;
     text-decoration: none;
+    font-size: $search-result-heading-font-size;
+    font-family: $search-result-heading-font-family;
 }
 
 .tipue_search_content_title a:hover {
@@ -106,8 +106,8 @@ article#search-page {
 }
 
 .h01 {
-    color: #333;
-    font-weight: 400;
+    color: $accent-color;
+    font-weight: bold;
 }
 
 #tipue_search_foot {
