@@ -29,6 +29,14 @@ article#search-page {
     max-width: 650px;
     padding-top: 15px;
     margin: 0;
+    h3{
+        font-size:$base-font-size;
+        font-weight:$base-font-weight;
+    }
+    h4 {
+        font-size:$base-font-size;
+        font-weight:$base-font-weight;
+    }
 }
 
 #tipue_search_warning {
