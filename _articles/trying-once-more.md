@@ -3,7 +3,7 @@ title: Trying Once More
 subtitle: Here is a little subtitle for this post
 description: "Here is my description but I need to get out of here as soon as possible since I'm already late for this wedding."
 layout: article
-date: 2015-08-26
+date: 2015-08-26T00:00:00.000Z
 comments: true
 published: true
 insearch: true
@@ -12,7 +12,8 @@ tags: ['putting','random','tags','in','here']
 
 ### Here is an Article Heading
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste.  Testing adding content using Prose.io.
 
 One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. 
 
