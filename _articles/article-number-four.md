@@ -12,10 +12,6 @@ tags:
 comments: true
 ---
 
-
-
-
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste. Please visit my [about me page](/about). Let's see if we can get this to work.
 
 ### Here is an Article Heading

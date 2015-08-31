@@ -59,7 +59,12 @@ kramdown:
   coderay_line_numbers:
 
 sass:
-  style: compressed 
+  style: compressed
+
+compress_html:
+  clippings: all
+  comments: ["<!-- ", " -->"]
+  endings: all 
 
 # PROSE.IO SETTINGS CAN BE FOUND IN THE _prose.yml FILE
 
