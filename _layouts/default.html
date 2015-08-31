@@ -14,7 +14,7 @@ layout: compress
     <aside>
         <div id="disqus_thread"></div>
     </aside>
-    <script type="text/javascript">
+    <script type="text/javascript" async>
         /* * * CONFIGURATION VARIABLES * * */
         var disqus_shortname = '{{site.disqus_shortname}}';
         
@@ -29,24 +29,22 @@ layout: compress
     {% endif %}
     {% include footer.html %}
     <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- tipue search -->
+    {% comment %} tipue search {% endcomment %}
     <script src="{{site.baseurl}}/scripts/tipuesearch_content.js"></script>
     <script src="{{site.baseurl}}/scripts/tipuesearch_set.js"></script>
     <script src="{{site.baseurl}}/scripts/tipuesearch.js"></script>
-    <!-- Main js for site interactions -->
+    {% comment %} highlight.js for code/syntax highlighting {% endcomment %}
+    <script src="{{site.baseurl}}/scripts/highlight.pack.min.js"></script>
+    {% comment %} Main js for site interactions {% endcomment %}
     <script src="{{site.baseurl}}/scripts/main.js" async></script>
-    <!-- highlight.js -->
-    <script src="{{site.baseurl}}/scripts/highlight.pack.js"></script>
     <script async>
-    hljs.initHighlightingOnLoad();
-    </script>
-    <script>
     $(document).ready(function() {
         $('#tipue_search_input').tipuesearch({
             'highlightEveryTerm':true,
             'descriptiveWords': 30,
             'debug': false
         });
+        hljs.initHighlightingOnLoad();
     });
     </script>
 </body>
