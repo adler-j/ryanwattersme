@@ -58,7 +58,13 @@ article#search-page {
     font: 300 15px/1.7;
     font-family: $base-font-family;
     color: #555;
+    span.search-term-top {
+        color: $results-highlight-color;
+        font-weight: bold;
+        font-style:italic;
+    }
 }
+
 
 .tipue_search_content_title {
     margin-top: 23px;
@@ -106,7 +112,7 @@ article#search-page {
 }
 
 .h01 {
-    color: $accent-color;
+    color: $results-highlight-color;
     font-weight: bold;
 }
 
@@ -180,6 +186,8 @@ article#search-page {
     -webkit-animation-delay: -1.0s;
     animation-delay: -1.0s;
 }
+
+
 
 @-webkit-keyframes stretchdelay {
     0%,

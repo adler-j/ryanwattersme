@@ -5,10 +5,9 @@
     </section>
     <nav class="global-navigation" role="navigation">
         <ul>
-            {% assign activePage = page.url | remove: "/index.html" | downcase %}
-            {% assign activePage = activePage | remove: '/' %}
+            {% assign activePage = page.url | remove_first: '/' | remove: "/index.html" | downcase %}
             {% for link in site.main_navigation_links %}
-            <li><a href="{{site.url}}/{{link.url}}" {% if link.url == activePage %}class="active"{% elsif link.url.size == nil and page.url == "/index.html" %}class="active"{% endif %}>{{link.text}}</a></li>
+            <li><a href="{{site.url}}/{{link.url}}" {% if link.url contains activePage or page.url contains link.url %}class="active"{% elsif link.url.size == nil and page.url == "/index.html" %}class="active"{% endif %}>{{link.text}}</a></li>
             {% endfor %}
             {% if page.title != "search" %}
             <li>

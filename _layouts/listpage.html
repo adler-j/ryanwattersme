@@ -11,7 +11,7 @@ layout: default
 		    {% if article.url != page.url %}
 		    <li>
 
-		        <a href="{{ article.url }}"><h3>{{ article.title }}</h3></a>
+		        <a href="{{ article.url }}"><h2>{{ article.title }}</h2></a>
 		        <time>{{ article.date | date: '%B %d, %Y' }}</time>
 		        {% if article.description %}
 		            <p>{{ article.description }}</p>

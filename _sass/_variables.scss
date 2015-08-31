@@ -12,16 +12,17 @@ $brand-two: #51B3FE;
 $accent-color: #487557;
 $anchor-color: #01589B;
 $warning-color: tomato;
+$results-highlight-color:orange;
 
 $base-font-size:18px;
 $base-font-family:"museo-sans",'Helvetica Neue',helvetica,sans-serif;
 $base-font-weight: 300;
 $base-font-color:#555555;
-$heading-font-family: $base-font-family;
+$heading-font-family: "museo-slab",'Helvetica Neue',helvetica,sans-serif;
 $heading-font-color:#444444;
 $heading-font-weight: 700;
-$logo-font-family:'Pathway Gothic One',sans-serif;
-$logo-font-size:4.5rem;
+$logo-font-family:"Pathway Gothic One",sans-serif;
+$logo-font-size:$base-font-size * 4.5;
 $body-font-family:$base-font-family;
 $blockquote-font-family:$base-font-family;
 
@@ -37,7 +38,9 @@ $global-navigation-font-family:$logo-font-family;
 $global-navigation-font-size:$base-font-size * 1.5;
 $global-navigation-font-color:$header-link-color;
 $global-navigation-background-color:$brand-two;
-$title-color:$header-link-color;
+$global-navigation-letter-spacing:normal;
+$site-title-text-transform:uppercase;
+$site-title-font-color:$header-link-color;
 
 
 $article-heading-font-family: $heading-font-family;

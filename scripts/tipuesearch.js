@@ -283,10 +283,10 @@ http://www.tipue.com/search
                             out += '<div id="tipue_search_warning">' + tipuesearch_string_2 + ' ' + d + '. ' + tipuesearch_string_3 + ' <a id="tipue_search_replaced">' + d_r + '</a></div>';
                         }
                         if (c == 1) {
-                            out += '<div id="tipue_search_results_count">' + tipuesearch_string_4 + '</div>';
+                            out += '<div id="tipue_search_results_count">' + tipuesearch_string_4 + ' for <span class="search-term-top">' + d + '</span></div>';
                         } else {
                             c_c = c.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-                            out += '<div id="tipue_search_results_count">' + c_c + ' ' + tipuesearch_string_5 + '</div>';
+                            out += '<div id="tipue_search_results_count">' + c_c + ' ' + tipuesearch_string_5 + ' for <span class="search-term-top">' + d + '</span></div>';
                         }
 
                         found.sort(function(a, b) {

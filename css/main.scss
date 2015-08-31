@@ -48,12 +48,11 @@ body > header {
     @include flex-wrap(wrap);
     text-align:left;
     transition: all .4s ease-in-out;
-    color: $title-color;
+    color: $site-title-font-color;
     max-width:$content-max-width;
     height: auto;
     padding-left: 10px;
     @include MQ(M) {
-
         margin-left: auto;
         margin-right:auto;
         max-width:$content-max-width;
@@ -64,8 +63,11 @@ body > header {
         font-family: $logo-font-family;
         font-size: $logo-font-size/2;
         padding-bottom: 0px;
+        padding-left:0px;
+        margin-left:0px;
         margin-bottom: 0px;
-        text-transform: uppercase;
+        text-align:left;
+        text-transform: $site-title-text-transform;
         width:100%;
         text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
         float:left;
@@ -76,7 +78,7 @@ body > header {
     }
     h5.site-tagline {
         @include display(flex);
-        color: $title-color;
+        color: $site-title-font-color;
         padding-top: 0px;
         margin-top: 0px;
         line-height: 1.5;
@@ -227,11 +229,10 @@ body > header {
                 a {
                     position: relative;
                     display: inline-block;
-                    // margin: 15px 25px;
                     padding-right: 12px;
                     padding-left: 12px;
                     color: $global-navigation-font-color;
-                    letter-spacing: 3px;
+                    letter-spacing: $global-navigation-letter-spacing;
                     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
                     height: $global-navigation-font-size * 1.5;
                     line-height: $global-navigation-font-size * 1.5;
