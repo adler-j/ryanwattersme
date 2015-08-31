@@ -5,14 +5,12 @@ layout: article
 description: Here is a description.
 date: 2015-08-29
 insearch: true
-tags: [hello, lindsay, awewsome]
+tags: [hello, hi, awewsome]
 ---
 
 ### Here is a Heading in an Article
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae, veritatis, tenetur illum molestiae cupiditate perferendis! Minus reiciendis quidem nostrum atque modi ad cum et, porro quibusdam aspernatur architecto! Magnam, quasi! 
-
-LB is super awesome. She is a sexy lady. 
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquid doloribus cupiditate molestiae omnis expedita adipisci quidem ad, voluptates harum sunt incidunt inventore eius voluptatum, ipsum debitis repellendus delectus commodi dignissimos.
 
