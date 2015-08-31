@@ -300,7 +300,10 @@ body > header {
     @include flex-direction(column);
     @include flex-grow(1);
     min-height: 100%;
+    max-width:$S;
+    @include MQ(M){
     max-width: $content-max-width;
+    }
     width: 90%;
     margin-right: auto;
     margin-left: auto;
