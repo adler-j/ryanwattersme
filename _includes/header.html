@@ -9,10 +9,10 @@
             {% for link in site.main_navigation_links %}
             <li><a href="{{site.url}}/{{link.url}}" {% if link.url contains activePage or page.url contains link.url %}class="active"{% elsif link.url.size == nil and page.url == "/index.html" %}class="active"{% endif %}>{{link.text}}</a></li>
             {% endfor %}
-            <li><a href="#" id="search-overlay-toggle"><i class="fa fa-search"></i></a></li>            
+            <li><a href="#" id="search-overlay-toggle" title="Search {{site.title}}"><i class="fa fa-search"></i></a></li>            
         </ul>    
     </nav>
-    <form action="" id="search-form" class="search-form">
+    <form id="search-form" class="search-form">
         <input type="text" name="q" class="search" id="tipue_search_input" autocomplete="off" placeholder="Search..." required>
         <a href="#" id="close-search"><i class="fa fa-times-circle"></i></a>
         <div id="tipue_search_content">

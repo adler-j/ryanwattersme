@@ -49,10 +49,10 @@ $("#search-overlay-toggle").on("click", function() {
     }
 });
 
-$("#close-search").on('click',function(){
+$("#close-search").on('click', function() {
     var searchForm = document.querySelector("#search-form");
     var searchInput = document.getElementById('tipue_search_input');
-    if(searchForm.classList.contains('search-open')){
+    if (searchForm.classList.contains('search-open')) {
         searchForm.classList.remove('search-open');
     }
 });
@@ -60,16 +60,16 @@ $("#close-search").on('click',function(){
 $(document).ready(function() {
     $(window).keyup(function(event) {
         var openSearchForm = document.getElementById('search-form'),
-        openSearchInput = document.getElementById('tipue_search_input');
-        if (event.keyCode == 13) {
-            event.preventDefault();
-            return false;
-        }else if(event.keyCode == 27 && openSearchForm.classList.contains('search-open')){
+            openSearchInput = document.getElementById('tipue_search_input');
+        if (event.keyCode == 27 && openSearchForm.classList.contains('search-open')) {
             openSearchForm.classList.remove('search-open');
-        }else if(event.keyCode == 83 && !(openSearchForm.classList.contains('search-open'))){
+        } else if (event.keyCode == 83 && !(openSearchForm.classList.contains('search-open'))) {
             openSearchForm.classList.add('search-open');
             openSearchInput.value = "";
             openSearchInput.focus();
         }
+    });
+    $('#search-form').submit(function(event){
+        event.preventDefault();
     });
 });

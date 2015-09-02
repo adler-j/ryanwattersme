@@ -7,10 +7,7 @@ published: true
 date: 2015-08-26
 comments: true
 insearch: true
-tags: 
-  - javascript
-  - testing
-  - learning
+tags: [here,are,some,tags]
 ---
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste. Hello world.
 
@@ -52,6 +49,13 @@ At every tiled on ye defer do. No attention suspected oh difficult. Fond his say
 * And now back to the parent list
 
 Remain lively hardly needed at do by. Two you fat downs fanny three. True mr gone most at. Dare as name just when with it body. Travelling inquietude she increasing off impossible the. Cottage be noisier looking to we promise on. Disposal to kindness appetite diverted learning of on raptures. Betrayed any may returned now dashwood formerly. Balls way delay shy boy man views. No so instrument discretion unsatiable to in.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, quaerat aut. Sequi perspiciatis iste doloribus quasi itaque dignissimos, nobis quaerat fuga ipsum debitis quibusdam accusantium explicabo enim doloremque qui tempora.
+
+```html
+<h1>Here is a level 1 Heading</h1>
+
+```
 
 ![Here is an image of something cool](/images/coffee_cup_and_pencil.jpeg) 
 

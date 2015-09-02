@@ -416,7 +416,6 @@ article {
     p {
         color: $base-font-color;
         font-size: $base-font-size;
-        margin-bottom: $base-font-size;
     }
     a {
         color: lighten($base-font-color, 15%);
@@ -554,6 +553,7 @@ blockquote::before {
 .article-video {
     position: relative;
     padding-bottom: 56.25%;
+    margin-top:$base-font-size;
     /* 16:9 */
     padding-top: 25px;
     height: 0;

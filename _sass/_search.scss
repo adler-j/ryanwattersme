@@ -6,24 +6,6 @@ article#search-page {
         text-align: right;
     }
 }
-
-// #tipue_search_input {
-//     color: $base-font-color;
-//     width: auto;
-//     max-width: 90%;
-//     margin-right: auto;
-//     margin-left: auto;
-//     height: 10vh;
-//     &:focus{
-//         outline:none;
-//     }
-//     @include MQ(M) {
-//         width: auto;
-//         max-width: 250px;
-//         margin-right: 5px;
-//         height: auto;
-//     }
-// }
 #tipue_search_content {
     max-width: $content-max-width * .75;
     padding-top: 15px;
