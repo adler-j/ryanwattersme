@@ -5,7 +5,7 @@ description: "This is a description for this piece title \"Arbitrarily Adding Ar
 layout: article
 insearch: true
 published: true
-date: 2015-09-01T00:00:00.000Z
+date: null
 tags: 
   - food
   - travel
