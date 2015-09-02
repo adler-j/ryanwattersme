@@ -1,13 +1,9 @@
----
-title: main.css
-insearch: false
----
 @import 'bourbon/bourbon';
 @import 'variables';
 @import 'reset';
 @import 'mixins';
 @import 'layout';
-@import 'animate';
+// @import 'animate';
 @import 'monokai_sublime';
 @import 'search';
 body {

@@ -26,8 +26,6 @@ var tipuesearch = {"pages": [
 		
 	
 		
-	
-		
   		
       	
   		

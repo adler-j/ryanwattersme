@@ -1,12 +1,12 @@
 # Site settings
-title: Ryan Watters
+title: Development Site
 tagline: Writer, editor, ex-bartender, and aspiring world-class breakdancer
 footer_tagline: That last one is a bit of a stretch.
 email: ryan@ryanwatters.me
 description: My name is Ryan. This is my website.
 copyright_in_footer: true
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: # the base hostname & protocol for your site
+url: http://rdwatters.github.io # the base hostname & protocol for your site
 site_owner: Ryan Watters
 author_photo: #me.jpg 
 
@@ -53,6 +53,7 @@ collections:
 
 # BUILD SETTINGS
 
+markdown: kramdown
 kramdown:
   auto_ids: false
   input: GFM
@@ -60,6 +61,7 @@ kramdown:
 
 
 sass:
+  sass_dir: _sass
   style: compressed
 
 compress_html:
