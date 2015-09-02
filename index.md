@@ -1,6 +1,6 @@
 ---
 layout: homepage
-title: Recent Content
+title: Home
 comments: false
 insearch: true
 ---

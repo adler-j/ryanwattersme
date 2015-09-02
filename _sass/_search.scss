@@ -197,6 +197,7 @@ article#search-page {
     &.search-open {
         display: block;
         overflow-y: scroll;
+        padding-bottom:80px;
     }
     top:0;
     left:0;

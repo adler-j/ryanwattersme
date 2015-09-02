@@ -1,19 +1,10 @@
 ---
-layout: default
+layout: article
 title: About Me
 permalink: /about/
 published: true
 ---
 
+Hi. 
 
-<article>
-
-  <h1>About Me</h1>
-  
-  Hi. 
-  
-  My name is Site Author.
-  
- 
-
-</article>
+My name is Ryan Watters.

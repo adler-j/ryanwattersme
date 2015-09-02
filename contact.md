@@ -1,14 +1,11 @@
 ---
-layout: default
+layout: article
 title: Contact Me
 description: "Contact {{site.site_owner}}"
 permalink: /contact/
 published: true
 ---
 
+Here is some information about me, Ryan Watters.
 
-<article>
-    <h1>Contact Me</h1>
-    
-    Here is some information about me, Ryan Watters.
-</article>
+Here is a code block:

@@ -76,6 +76,9 @@ body > header {
         }
     }
     h5.site-tagline {
+        @include MQ(MMAX){
+            display:none;
+        }
         @include display(flex);
         color: $site-title-font-color;
         padding-top: 0px;
@@ -176,7 +179,7 @@ body > header {
             li {
                 width: 100%;
                 text-align: center;
-                font-size: 10vh;
+                font-size: 8vh;
                 a {
                     
                     letter-spacing: 3px;
@@ -329,7 +332,6 @@ article {
         @include display(flex);
         width: 100%;
         height: auto;
-        margin-bottom: $base-font-size;
     }
     >header {
         @include display(flex);
