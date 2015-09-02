@@ -42,3 +42,17 @@ if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
 //    {"title": "{{article.title}}", "text": {{article.content | jsonify | strip_html }}, "tags": "{% if article.tags %}{% for tag in article.tags %}{{tag}}{% if forloop.rindex0 > 0 %}, {% endif %}{% endfor %}{% endif %}", "url": "{{article.url}}"}{% if forloop.rindex0 > 0 %},{% endif %}
 //    {% endif %}
 //    {% endfor %}
+
+Sticky scroll for global navigation
+
+// $(window).scroll(function() {
+//     var headerHeight = $('.site-title-container').height(),
+//         scrollLength = $(window).scrollTop(),
+//         mobileToggle = $('#mobile-toggle'),
+//         globalNav = $('.global-navigation');
+//     if (scrollLength >= headerHeight && window.outerWidth > 640) {
+//         globalNav.addClass('sticky-nav');
+//     } else if (scrollLength < headerHeight && window.outerWidth > 640) {
+//         globalNav.removeClass('sticky-nav');
+//     }
+// });

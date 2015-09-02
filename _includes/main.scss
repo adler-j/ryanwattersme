@@ -1,3 +1,4 @@
+
 @import 'bourbon/bourbon';
 @import 'variables';
 @import 'reset';
@@ -410,6 +411,9 @@ article {
     p {
         color: $base-font-color;
         font-size: $base-font-size;
+        > .fluidvids > iframe{
+            margin-top:$base-font-size;
+        }
     }
     a {
         color: lighten($base-font-color, 15%);
@@ -419,6 +423,10 @@ article {
             text-decoration: underline;
         }
     }
+}
+
+iframe.fluidvids {
+    margin-bottom:$base-font-size;
 }
 
 body > aside {
