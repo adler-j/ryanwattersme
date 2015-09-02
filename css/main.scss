@@ -181,9 +181,7 @@ body > header {
                 a {
                     
                     letter-spacing: 3px;
-                    &.active{
-                        background-color:darken($global-navigation-background-color,20%);
-                    }
+                    font-weight:500;
                 }
             }
         }
@@ -237,7 +235,7 @@ body > header {
                     height: $global-navigation-font-size * 1.5;
                     line-height: $global-navigation-font-size * 1.5;
                     &.active{
-                        background-color:darken($global-navigation-background-color,20%);
+                        font-weight:700;
                     }
                     &:before,
                     &:after {
@@ -264,17 +262,21 @@ body > header {
                         transform-origin: 100% 0;
                     }
                     &:hover::before,
-                    &:hover::after {
+                    &:hover::after,
+                    &.active::before,
+                    &.active::after {
                         opacity: 1;
                         width:100%;
                     }
-                    &:hover::before {
+                    &:hover::before,
+                    &.active::before {
                         left: 50%;
                         -webkit-transform: rotate(0deg) translateX(-50%);
                         -ms-transform: rotate(0deg) translateX(-50%);
                         transform: rotate(0deg) translateX(-50%);
                     }
-                    &:hover::after {
+                    &:hover::after,
+                    &.active::after {
                         right: 50%;
                         -webkit-transform: rotate(0deg) translateX(50%);
                         -ms-transform: rotate(0deg) translateX(50%);

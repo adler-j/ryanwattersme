@@ -58,10 +58,18 @@ $("#close-search").on('click',function(){
 });
 
 $(document).ready(function() {
-    $(window).keydown(function(event) {
+    $(window).keyup(function(event) {
+        var openSearchForm = document.getElementById('search-form'),
+        openSearchInput = document.getElementById('tipue_search_input');
         if (event.keyCode == 13) {
             event.preventDefault();
             return false;
+        }else if(event.keyCode == 27 && openSearchForm.classList.contains('search-open')){
+            openSearchForm.classList.remove('search-open');
+        }else if(event.keyCode == 83 && !(openSearchForm.classList.contains('search-open'))){
+            openSearchForm.classList.add('search-open');
+            openSearchInput.value = "";
+            openSearchInput.focus();
         }
     });
 });

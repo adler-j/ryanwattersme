@@ -254,6 +254,7 @@ article#search-page {
         margin-left: auto;
         width: 100%;
         max-width: $content-max-width * .75;
+        border-bottom:1px solid $base-font-color;
         &:focus {
             outline: none;
             color: black;
