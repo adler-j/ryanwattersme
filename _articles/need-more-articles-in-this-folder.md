@@ -1,13 +1,17 @@
 ---
 title: Arbitrarily Adding Articles
 subtitle: Subtitle for this particular piece
-description: This is a description for this piece title "Arbitrarily Adding Articles," which is an attempt to add more content for the sake of testing the Tipue search recently added to the site. 
+description: "This is a description for this piece title \"Arbitrarily Adding Articles,\" which is an attempt to add more content for the sake of testing the Tipue search recently added to the site."
 layout: article
 insearch: true
 published: true
-date: 2015-09-01
-tags: [food,travel,japan]
+date: {}
+tags: 
+  - food
+  - travel
+  - japan
 ---
+
 
 One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it. Here is [a link to Google](https://www.google.com). Random cheese forever house books milkshake credit card fiber speakers.
 
@@ -32,6 +36,12 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.write('./')) // Writes sourcemaps into the CSS file
     .pipe(gulp.dest('css'));
 })
+
+$(document).ready(function(){
+	$('h1').on('click',function(){
+    $('body').css('background-color','#01589B');
+    });
+});
 ```
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed autem obcaecati magnam deserunt. Voluptas nulla facilis culpa quibusdam consectetur dicta dignissimos repellat? Excepturi voluptas magni nobis debitis voluptate maiores.
@@ -47,4 +57,3 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sit, dolorem o
 One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy.
 
 If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it.
-
