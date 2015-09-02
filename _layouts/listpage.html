@@ -1,16 +1,19 @@
 ---
-layout: article
+layout: default
 ---
 
-
+<article>
+	<header>
+		<h1>{{page.title}}</h1>
+	</header>
 	<ul class="article-list">
 			{% assign articles = site.articles | sort: 'date' | reverse %}
 	    {% for article in articles %}
 		    {% if article.url != page.url %}
 		    <li>
 
-		        <a href="{{ article.url }}"><h1>{{ article.title }}</h1></a>
-		        <time>{{ article.date | date: '%B %d, %Y' }}</time>
+		        <a href="{{ article.url }}"><h1>{{ article.title }}</h1><time>{{ article.date | date: '%B %d, %Y' }}</time></a>
+		        
 		        {% if article.description %}
 		            <p>{{ article.description }}</p>
 		        {% endif %}						
@@ -18,3 +21,4 @@ layout: article
 		    {% endif %}
 	    {% endfor %}    
 	</ul>
+</article>

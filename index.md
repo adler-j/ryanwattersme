@@ -1,6 +1,6 @@
 ---
-layout: homepage
-title: Home
+layout: listpage
+title: Recent Articles
 comments: false
 insearch: true
 ---

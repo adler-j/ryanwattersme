@@ -2,7 +2,6 @@
 title: main.css
 insearch: false
 ---
-
 @import 'bourbon/bourbon';
 @import 'variables';
 @import 'reset';
@@ -45,16 +44,16 @@ body > header {
     @include display(flex);
     @include justify-content(flex-start);
     @include flex-wrap(wrap);
-    text-align:left;
+    text-align: left;
     transition: all .4s ease-in-out;
     color: $site-title-font-color;
-    max-width:$content-max-width;
+    max-width: $content-max-width;
     height: auto;
     padding-left: 10px;
     @include MQ(M) {
         margin-left: auto;
-        margin-right:auto;
-        max-width:$content-max-width;
+        margin-right: auto;
+        max-width: $content-max-width;
         padding-left: 0px;
     }
     .site-title {
@@ -62,22 +61,22 @@ body > header {
         font-family: $logo-font-family;
         font-size: $logo-font-size/2;
         padding-bottom: 0px;
-        padding-left:0px;
-        margin-left:0px;
+        padding-left: 0px;
+        margin-left: 0px;
         margin-bottom: 0px;
-        text-align:left;
+        text-align: left;
         text-transform: $site-title-text-transform;
-        width:100%;
+        width: 100%;
         text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-        float:left;
+        float: left;
         @include MQ(M) {
             font-size: $logo-font-size;
             margin-top: 1em;
         }
     }
     h5.site-tagline {
-        @include MQ(MMAX){
-            display:none;
+        @include MQ(MMAX) {
+            display: none;
         }
         @include display(flex);
         color: $site-title-font-color;
@@ -181,9 +180,8 @@ body > header {
                 text-align: center;
                 font-size: 8vh;
                 a {
-                    
                     letter-spacing: 3px;
-                    font-weight:500;
+                    font-weight: 500;
                 }
             }
         }
@@ -212,8 +210,8 @@ body > header {
             margin-right: auto;
             margin-left: auto;
             text-transform: $global-navigation-text-transform;
-            padding-right:5px;
-            padding-left:5px;
+            padding-right: 5px;
+            padding-left: 5px;
             @include justify-content(space-between);
             height: 2.5 * $global-navigation-font-size;
             li {
@@ -236,8 +234,8 @@ body > header {
                     text-shadow: 0 0 1px rgba(255, 255, 255, 0.3);
                     height: $global-navigation-font-size * 1.5;
                     line-height: $global-navigation-font-size * 1.5;
-                    &.active{
-                        font-weight:700;
+                    &.active {
+                        font-weight: 700;
                     }
                     &:before,
                     &:after {
@@ -268,7 +266,7 @@ body > header {
                     &.active::before,
                     &.active::after {
                         opacity: 1;
-                        width:100%;
+                        width: 100%;
                     }
                     &:hover::before,
                     &.active::before {
@@ -288,8 +286,8 @@ body > header {
                 form {
                     @include display(flex);
                     color: $base-font-color;
-                    height:100%;
-                    input{
+                    height: 100%;
+                    input {
                         @include align-self(auto);
                     }
                 }
@@ -304,9 +302,9 @@ body > header {
     @include flex-direction(column);
     @include flex-grow(1);
     min-height: 100%;
-    max-width:$S;
-    @include MQ(M){
-    max-width: $content-max-width;
+    max-width: $S;
+    @include MQ(M) {
+        max-width: $content-max-width;
     }
     width: 90%;
     margin-right: auto;
@@ -319,7 +317,6 @@ body > header {
         max-width: $content-max-width;
     }
 }
-
 
 article {
     @include transition(.4s);
@@ -350,8 +347,8 @@ article {
             margin-left: -5%;
             padding-left: 5%;
             padding-right: 5%;
-            padding-top:0;
-            padding-bottom:0;
+            padding-top: 0;
+            padding-bottom: 0;
         }
         h1 {
             @include display(flex);
@@ -382,8 +379,8 @@ article {
                 width: 100%;
                 li {
                     font-size: $base-font-size * .75;
-                    a{
-                        color:inherit;
+                    a {
+                        color: inherit;
                     }
                 }
             }
@@ -504,6 +501,48 @@ footer {
     }
 }
 
+ul.article-list {
+    li {
+        a {
+            &:hover {
+                text-decoration: none;
+                background-color: $brand;
+            }
+            @include display(flex);
+            @include flex-direction(column);
+            @include justify-content(space-around);
+            @include MQ(M) {
+                @include flex-direction(row);
+                @include align-items(center);
+                @include justify-content(space-between);
+                padding-right: 5%;
+                padding-left: 5%;
+            }
+            @include justify-content(center);
+            width: 100%;
+            margin-bottom:$base-font-size * .5;
+            background-color: $brand-two;
+            text-align:center;
+            time {
+                color: white;
+                line-height: 1.5;
+                font-size: $base-font-size * .75;
+                margin-bottom: $base-font-size * .5;
+                @include MQ(M){
+                    margin-bottom:0px;
+                }
+            }
+        }
+        h1 {
+            font-size: $base-font-size;
+            color: white;
+            @include MQ(M) {
+                font-size: $base-font-size * 1.3;
+            }
+        }
+    }
+}
+
 .site-footnotes {
     @include align-self(flex-end);
     span {
@@ -554,7 +593,7 @@ blockquote::before {
 .article-video {
     position: relative;
     padding-bottom: 56.25%;
-    margin-top:$base-font-size;
+    margin-top: $base-font-size;
     /* 16:9 */
     padding-top: 25px;
     height: 0;
@@ -632,5 +671,3 @@ blockquote em {
 .fa-instagram:hover {
     color: $instagram;
 }
-
-

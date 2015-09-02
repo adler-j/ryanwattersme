@@ -2,7 +2,7 @@
 title: Showing LB how to make a post in Jekyll
 subtitle: This is my subtitle
 layout: article
-description: Here is a description.
+description: Here is a description. We can make the description a little bit longer so that it uses up all of the space in the list view for articles.
 date: 2015-08-29
 insearch: true
 tags: [hello, hi, awesome]
