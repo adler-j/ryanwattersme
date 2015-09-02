@@ -5,7 +5,7 @@ layout: article
 description: Here is a description.
 date: 2015-08-29
 insearch: true
-tags: [hello, hi, awewsome]
+tags: [hello, hi, awesome]
 ---
 
 ### Here is a Heading in an Article

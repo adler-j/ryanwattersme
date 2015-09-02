@@ -7,35 +7,34 @@ article#search-page {
     }
 }
 
-#tipue_search_input {
-    color: $base-font-color;
-    width: auto;
-    max-width: 90%;
-    margin-right: auto;
-    margin-left: auto;
-    height: 10vh;
-    &:focus{
-        outline:none;
-    }
-    @include MQ(M) {
-        width: auto;
-        max-width: 250px;
-        margin-right: 5px;
-        height: auto;
-    }
-}
-
+// #tipue_search_input {
+//     color: $base-font-color;
+//     width: auto;
+//     max-width: 90%;
+//     margin-right: auto;
+//     margin-left: auto;
+//     height: 10vh;
+//     &:focus{
+//         outline:none;
+//     }
+//     @include MQ(M) {
+//         width: auto;
+//         max-width: 250px;
+//         margin-right: 5px;
+//         height: auto;
+//     }
+// }
 #tipue_search_content {
-    max-width: 650px;
+    max-width: $content-max-width * .75;
     padding-top: 15px;
     margin: 0;
-    h3{
-        font-size:$base-font-size;
-        font-weight:$base-font-weight;
+    h3 {
+        font-size: $base-font-size;
+        font-weight: $base-font-weight;
     }
     h4 {
-        font-size:$base-font-size;
-        font-weight:$base-font-weight;
+        font-size: $base-font-size;
+        font-weight: $base-font-weight;
     }
 }
 
@@ -61,10 +60,9 @@ article#search-page {
     span.search-term-top {
         color: $results-highlight-color;
         font-weight: bold;
-        font-style:italic;
+        font-style: italic;
     }
 }
-
 
 .tipue_search_content_title {
     margin-top: 23px;
@@ -187,8 +185,6 @@ article#search-page {
     animation-delay: -1.0s;
 }
 
-
-
 @-webkit-keyframes stretchdelay {
     0%,
     40%,
@@ -210,5 +206,64 @@ article#search-page {
     20% {
         transform: scaleY(1.0);
         -webkit-transform: scaleY(1.0);
+    }
+}
+
+.search-form {
+    position: fixed;
+    display: none;
+    &.search-open {
+        display: block;
+        overflow-y: scroll;
+    }
+    top:0;
+    left:0;
+    width:100%;
+    width:100vw;
+    height:100%;
+    height:100vh;
+    margin:0px;
+    border:0px;
+    padding-left:5%;
+    padding-right:5%;
+    z-index:9999;
+    background-color:white;
+    a#close-search {
+        display: block;
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        @include MQ(M) {
+            top: 50px;
+            right: 50px;
+        }
+        max-width: $content-max-width * .75;
+        margin-left:auto;
+        margin-right:auto;
+        i {
+            color: $base-font-color;
+            float: right;
+            font-size: $base-font-size * 2;
+        }
+    }
+    input#tipue_search_input {
+        display: block;
+        margin-top: 35px;
+        border: none;
+        margin-right: auto;
+        margin-left: auto;
+        width: 100%;
+        max-width: $content-max-width * .75;
+        &:focus {
+            outline: none;
+            color: black;
+        }
+        @include MQ(M) {
+            font-size: $base-font-size * 2;
+        }
+    }
+    #tipue_search_content {
+        margin-left: auto;
+        margin-right: auto;
     }
 }

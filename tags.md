@@ -7,6 +7,7 @@ published: true
 date: 2015-08-29
 comments: false
 permalink: /tags/
+insearch: false
 ---
 
 {% assign sorted_tags = site.collections.articles.tags %}

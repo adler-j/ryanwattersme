@@ -31,8 +31,37 @@ $(window).scroll(function() {
 
 //UNCOMME THE FOLLOWING to open up all external links in a new window
 $('a').each(function() {
-   var a = new RegExp('/' + window.location.host + '/');
-   if (!a.test(this.href)) {
-       $(this).attr('target','_blank');
-   }
+    var a = new RegExp('/' + window.location.host + '/');
+    if (!a.test(this.href)) {
+        $(this).attr('target', '_blank');
+    }
+});
+
+$("#search-overlay-toggle").on("click", function() {
+    var searchForm = document.querySelector("#search-form");
+    var searchInput = document.getElementById('tipue_search_input');
+    if (searchForm.classList.contains('search-open')) {
+        searchForm.classList.remove('search-open');
+
+    } else {
+        searchForm.classList.add('search-open');
+        searchInput.focus();
+    }
+});
+
+$("#close-search").on('click',function(){
+    var searchForm = document.querySelector("#search-form");
+    var searchInput = document.getElementById('tipue_search_input');
+    if(searchForm.classList.contains('search-open')){
+        searchForm.classList.remove('search-open');
+    }
+});
+
+$(document).ready(function() {
+    $(window).keydown(function(event) {
+        if (event.keyCode == 13) {
+            event.preventDefault();
+            return false;
+        }
+    });
 });

@@ -1,6 +1,6 @@
 ---
 layout: homepage
-title: Ryan Watters
+title: Recent Content
 comments: false
 insearch: true
 ---

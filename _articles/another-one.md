@@ -1,5 +1,5 @@
 ---
-title: Another One With A Much Longer Title
+title: Another One With A Longer Title
 subtitle: Here is my subtitle for this blog post
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sequi possimus aspernatur maxime repudiandae, at consequatur facilis unde non doloribus. Non laborum, esse. Magnam placeat, voluptates sapiente odit delectus quos."
 layout: article
@@ -12,12 +12,9 @@ tags:
   - testing
   - learning
 ---
-
-
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste. Hello world.
 
-### Here is an Article Heading
+### Here is an Article Heading for Styling
 
 One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. 
 

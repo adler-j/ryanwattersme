@@ -54,9 +54,8 @@ collections:
 # BUILD SETTINGS
 
 kramdown:
-  auto_ids: false
+  auto_ids: true
   input: GFM
-  coderay_line_numbers:
 
 sass:
   style: compressed
