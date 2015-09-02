@@ -216,8 +216,12 @@ article#search-page {
         top: 10px;
         right: 10px;
         @include MQ(M) {
-            top: 50px;
-            right: 50px;
+            top: 30px;
+            right: 30px;
+        }
+        @include MQ(L){
+            right:60px;
+            float:left;
         }
         max-width: $content-max-width * .75;
         margin-left:auto;
