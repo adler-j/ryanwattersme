@@ -6,7 +6,7 @@ var tipuesearch = {"pages": [
 	{% for page in site.pages %}
 		{% if page.insearch != false or page.insearch == nil %}
   		{% if page.url contains "/resume/" %}
-      	{% capture text %}{% for job in site.data.jobs %}{{ job.employer }}, {{ job.description }}{% if forloop.rindex0 > 0 %}; {% endif %}{% endfor %}{% endcapture %}
+      	{% capture text %}{% for job in site.data.jobs %}{{ job.employer }}<br><br> {{ job.description }}{% if forloop.rindex0 > 0 %}; {% endif %}{% endfor %}{% endcapture %}
   		{% else %}
       	{% assign text = page.content %}
   		{% endif %}

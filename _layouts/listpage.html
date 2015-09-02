@@ -9,7 +9,7 @@ layout: default
 	<ul class="article-list">
 			{% assign articles = site.articles | sort: 'date' | reverse %}
 	    {% for article in articles %}
-		    {% if article.url != page.url %}
+		    {% unless article.url contains "articles/index.html" %}
 		    <li>
 
 		        <a href="{{ article.url }}"><h1>{{ article.title }}</h1><time>{{ article.date | date: '%B %d, %Y' }}</time></a>
@@ -18,7 +18,7 @@ layout: default
 		            <p>{{ article.description }}</p>
 		        {% endif %}						
 		    </li>
-		    {% endif %}
+		    {% endunless %}
 	    {% endfor %}    
 	</ul>
 </article>

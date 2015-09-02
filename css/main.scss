@@ -515,30 +515,34 @@ ul.article-list {
                 @include flex-direction(row);
                 @include align-items(center);
                 @include justify-content(space-between);
-                padding-right: 5%;
-                padding-left: 5%;
+                padding-right: 2.5%;
+                padding-left: 2.5%;
             }
             @include justify-content(center);
             width: 100%;
             margin-bottom:$base-font-size * .5;
-            background-color: $brand-two;
+            background-color: $brand-three;
             text-align:center;
             time {
                 color: white;
                 line-height: 1.5;
                 font-size: $base-font-size * .75;
                 margin-bottom: $base-font-size * .5;
-                @include MQ(M){
-                    margin-bottom:0px;
+                @include MQ(M) {
+                    margin-bottom: 0px;
+                }
+            }
+            h1 {
+                font-size: $base-font-size;
+                color: white;
+                @include MQ(M) {
+                    font-size: $base-font-size * 1.3;
                 }
             }
         }
-        h1 {
-            font-size: $base-font-size;
-            color: white;
-            @include MQ(M) {
-                font-size: $base-font-size * 1.3;
-            }
+        p{
+            padding-right:2.5%;
+            padding-left:2.5%;
         }
     }
 }
