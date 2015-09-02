@@ -5,7 +5,7 @@ description: How now brown cow. The big black bug bled blue blood. She sells sea
 layout: article
 categories: foo
 tags: 
-date: 2015-08-21
+publish_date:
 comments: true
 insearch: true
 ---

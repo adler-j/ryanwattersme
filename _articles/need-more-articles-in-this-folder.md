@@ -5,7 +5,7 @@ description: This is a description for this piece title "Arbitrarily Adding Arti
 layout: article
 insearch: true
 published: true
-date: 2015-09-01
+publish_date:
 tags: [food,travel,japan]
 ---
 

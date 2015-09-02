@@ -9,7 +9,7 @@
 #     - /_layouts
 #     - /_includes
 #   metadata:
-#     _posts:
+#     _articles:
 #       - name: "layout"
 #         field:
 #           element: "hidden"

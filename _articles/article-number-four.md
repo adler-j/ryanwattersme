@@ -4,6 +4,7 @@ subtitle: "This is a subtitle to the fourth post I've added to this blog"
 description: Here is a contrived and arbitrary description of this particular blog post. Now I am just writing a bunch of rubbish.
 layout: article
 published: true
+publish_date: 2015-08-30
 date: 2015-08-21
 insearch: true
 tags: 
