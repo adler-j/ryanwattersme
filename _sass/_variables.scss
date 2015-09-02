@@ -4,7 +4,7 @@ $M:641px;
 $L:900px;
 $XL:1200px;
 $MMAX:640px;
-$content-max-width:$L;
+$content-max-width:700px;
 
 //Colors
 $brand: #2A2C39;
@@ -14,10 +14,11 @@ $anchor-color: #01589B;
 $warning-color: tomato;
 $results-highlight-color:orange;
 
-$base-font-size:20px;
+$base-font-size:16px;
 $base-font-family:"Open Sans",'Helvetica Neue',helvetica,sans-serif;
 $base-font-weight: 300;
 $base-font-color:#555555;
+$base-line-height:$base-font-size * 1.5;
 $heading-font-family: "Open Sans",'Helvetica Neue',helvetica,sans-serif;
 $heading-font-color:#444444;
 $heading-font-weight: 700;
