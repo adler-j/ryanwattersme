@@ -5,16 +5,11 @@ description: "This is a description for this piece title \"Arbitrarily Adding Ar
 layout: article
 insearch: true
 published: true
-<<<<<<< HEAD
-publish_date:
-tags: [food,travel,japan]
-=======
-date: 2015-09-01T00:00:00.000Z
+publish_date: 2015-09-02
 tags: 
   - food
   - travel
-  - japan
->>>>>>> origin/master
+  - japans
 ---
 
 
