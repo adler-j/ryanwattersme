@@ -43,17 +43,6 @@ var tipuesearch_string_11 = 'Should be one character or more';
 var tipuesearch_string_12 = 'Should be';
 var tipuesearch_string_13 = 'characters or more';
 
-
-
-
-/*
-Tipue Search 5.0
-Copyright (c) 2015 Tipue
-Tipue Search is released under the MIT License
-http://www.tipue.com/search
-*/
-
-
 (function($) {
 
     $.fn.tipuesearch = function(options) {
@@ -63,7 +52,7 @@ http://www.tipue.com/search
             'show': 7,
             'newWindow': false,
             'showURL': true,
-            'showTitleCount': true,
+            'showTitleCount': false,
             'minimumLength': 3,
             'descriptiveWords': 25,
             'highlightTerms': true,
@@ -421,11 +410,11 @@ http://www.tipue.com/search
                             out += '</ul></div>';
                         }
                     } else {
-                        out += '<div id="tipue_search_warning">' + tipuesearch_string_8 +  ' for <span class="search-term-top">' + d + '</span></div>';
+                        out += '<div id="tipue_search_warning">' + tipuesearch_string_8 + '</div>';
                     }
                 } else {
                     if (show_stop) {
-                        out += '<div id="tipue_search_warning">' + tipuesearch_string_8 + '. ' + tipuesearch_string_9 + '.</div>';
+                        out += '<div id="tipue_search_warning">' + tipuesearch_string_8 + '. ' + tipuesearch_string_9 + '</div>';
                     } else {
                         out += '<div id="tipue_search_warning">' + tipuesearch_string_10 + '</div>';
                         if (set.minimumLength == 1) {

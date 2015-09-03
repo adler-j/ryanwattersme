@@ -16,14 +16,14 @@ $warning-color: tomato;
 $results-highlight-color:orange;
 
 $base-font-size:16px;
-$base-font-family:"Open Sans",'Helvetica Neue',helvetica,sans-serif;
+$base-font-family:"open_sans",'Helvetica Neue',helvetica,sans-serif;
 $base-font-weight: 300;
 $base-font-color:#555555;
 $base-line-height:$base-font-size * 1.5;
-$heading-font-family: "Open Sans",'Helvetica Neue',helvetica,sans-serif;
+$heading-font-family: "open_sans",'Helvetica Neue',helvetica,sans-serif;
 $heading-font-color:#444444;
 $heading-font-weight: 700;
-$logo-font-family:"Open Sans",sans-serif;
+$logo-font-family:"open_sans",sans-serif;
 $logo-font-size:$base-font-size * 4.5;
 $body-font-family:$base-font-family;
 $blockquote-font-family:$base-font-family;
@@ -38,9 +38,10 @@ $header-background-color:$brand;
 $global-navigation-text-transform:uppercase;
 $global-navigation-font-family:$logo-font-family;
 $global-navigation-font-size:$base-font-size * 1.5;
+$global-navigation-font-size-mobile: 8vh;
 $global-navigation-font-color:$header-link-color;
 $global-navigation-background-color:$brand-two;
-$global-navigation-letter-spacing:normal;
+$global-navigation-letter-spacing:1px;
 $site-title-text-transform:uppercase;
 $site-title-font-color:$header-link-color;
 
@@ -59,7 +60,7 @@ $h4-font-size: $base-font-size * 1.3; //mobile = $h4-font-size * .85
 
 $footer-link-color:#ffffff;
 $footer-background-color:$brand;
-$footer-icon-size:$base-font-size;
+$footer-icon-size:$base-font-size * 1.5;
 
 //Search and search page options
 $search-result-heading-font-size: $base-font-size * 1.3;

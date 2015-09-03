@@ -1,5 +1,5 @@
 # Site settings
-title: Development Site
+title: My Site
 tagline: Writer, editor, ex-bartender, and aspiring world-class breakdancer
 footer_tagline: That last one is a bit of a stretch.
 email: ryan@ryanwatters.me
@@ -12,19 +12,22 @@ author_photo: #me.jpg
 
 # SOCIAL MEDIA/SHARING
 
-twitter_handle: ryandwatters
-github_username:  rdwatters
-tumblr_username:
-pinterest_username:
-instagram_username:
+#Just add handle without the "@"
+twitter: ryandwatters
+#Just your username for GitHub, Tumblr, and Pinterest
+github:  rdwatters
+tumblr: ryandwatters
+pinterest: ryandwatters
+instagram: ryandwatters 
 #Everything after https://www.youtube.com/user/
-youtube_user: #Megatull80
+youtube: Megatull80
 #Everything after "facebook.com/" in the URL, regardless of whether it's a personal profile or business page.
-facebook: #pages/MySitecom/810571539011577
+facebook: pages/MySitecom/810571539011577
 #Everything after "plus.google.com/"  
-google_plus: #+RyanWattersRyanWatters
+google_plus: +RyanWattersRyanWatters
 #Everything after "https://www.linkedin.com/pub/"
 linkedin_profile: ryan-watters-els/25/107/80
+#Set RSS to "true" or "false" if you want to include an RSS feed and an RSS icon
 include_rss: true
 
 # COMMENTS(DISQUS)

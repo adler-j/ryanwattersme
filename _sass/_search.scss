@@ -7,6 +7,14 @@ article#search-page {
     }
 }
 
+#search-icon {
+    height: $global-navigation-font-size-mobile;
+    @include MQ(M) {
+        height: $global-navigation-font-size;
+    }
+    fill:$global-navigation-font-color;
+}
+
 #tipue_search_content {
     max-width: $content-max-width * .75;
     padding-top: 15px;
@@ -217,7 +225,9 @@ span.search-term-top {
         display: block;
         position: absolute;
         top: 10px;
-        right: 10px;
+        right: 15px;
+        width: $base-font-size;
+        height: $base-font-size;
         @include MQ(M) {
             top: 30px;
             right: 30px;
@@ -225,20 +235,24 @@ span.search-term-top {
         @include MQ(L) {
             right: 60px;
             float: left;
+            width: $base-font-size * 2;
+            height: $base-font-size * 2;
         }
         max-width: $content-max-width * .75;
         margin-left:auto;
         margin-right:auto;
-        i {
-            color: $base-font-color;
+        svg {
+            min-height: $base-font-size * 2.5;
+            min-width: $base-font-size * 2.5;
             float: right;
-            font-size: $base-font-size * 2;
+            fill: $base-font-color;
         }
     }
     input#tipue_search_input {
         display: block;
         margin-top: 35px;
         border: none;
+        border-radius:0px;
         margin-right: auto;
         margin-left: auto;
         width: 100%;
