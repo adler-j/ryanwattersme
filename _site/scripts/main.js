@@ -1,31 +1,53 @@
+/**
+ * All user interactions for the site are written in vanilla Javascript so as to preclude the jQuery dependency. This allows for more reliable results when adding the async attribute to both this minified file and to minified jQuery, which is required for Tipue search on the site.
+ */
+
+window.addEventListener('keyup', keyToggles, false);
 window.onload = init;
-function init () {
-    var mobileToggle = document.getElementById('mobile-toggle');
+
+function init() {
+    var mobileToggle = document.getElementById('mobile-toggle'),
+        searchToggle = document.getElementById('search-overlay-toggle'),
+        searchClose = document.getElementById('close-search'),
+        searchInput = document.getElementById('search-form');
     mobileToggle.onclick = toggleMenu;
+    searchToggle.onclick = toggleSearch;
+    searchClose.onclick = closeSearch;
+    searchInput.onsubmit = preventRefresh;
+    setCopyrightYear();
+    targetBlank();
 }
 //toggle mobile menu/global navigation
-function toggleMenu () {
+function toggleMenu() {
     var globalNav = document.querySelector('.global-navigation'),
-    menuButton = document.getElementById('mobile-toggle');
+        menuButton = document.getElementById('mobile-toggle');
     globalNav.classList.toggle('mobile-menu');
     menuButton.classList.toggle('active');
 }
 
-$(document).ready(function() {
+function setCopyrightYear() {
     //Add current year to copyright in footer
     var date = new Date();
     var thisYear = date.getFullYear();
     var yearSpan = document.querySelector('.this-year');
     yearSpan.innerHTML = thisYear;
-});
-//UNCOMMENT THE FOLLOWING to open up all external links in a new window
-$('a').each(function() {
-    var a = new RegExp('/' + window.location.host + '/');
-    if (!a.test(this.href)) {
-        $(this).attr('target', '_blank');
+}
+//add "target=_blank" attribute to all external links on page
+function targetBlank() {
+    // remove subdomain of current site's url and setup regex
+    var internal = location.host.replace("www.", "");
+    internal = new RegExp(internal, "i");
+
+    var a = document.getElementsByTagName('a'); // then, grab every link on the page
+    for (var i = 0; i < a.length; i++) {
+        var href = a[i].host; // set the host of each link
+        if (!internal.test(href)) { // make sure the href doesn't contain current site's host
+            a[i].setAttribute('target', '_blank'); // if it doesn't, set attributes
+        }
     }
-});
-$("#search-overlay-toggle").on("click", function() {
+}
+
+function toggleSearch() {
     var searchForm = document.querySelector("#search-form");
     var searchInput = document.getElementById('tipue_search_input');
     if (searchForm.classList.contains('search-open')) {
@@ -35,27 +57,28 @@ $("#search-overlay-toggle").on("click", function() {
         searchForm.classList.add('search-open');
         searchInput.focus();
     }
-});
-$("#close-search").on('click', function() {
-    var searchForm = document.querySelector("#search-form");
-    var searchInput = document.getElementById('tipue_search_input');
+}
+
+function closeSearch() {
+    var searchForm = document.querySelector("#search-form"),
+        searchInput = document.getElementById('tipue_search_input');
     if (searchForm.classList.contains('search-open')) {
         searchForm.classList.remove('search-open');
     }
-});
-$(document).ready(function() {
-    $(window).keyup(function(event) {
-        var openSearchForm = document.getElementById('search-form'),
-            openSearchInput = document.getElementById('tipue_search_input');
-        if (event.keyCode == 27 && openSearchForm.classList.contains('search-open')) {
-            openSearchForm.classList.remove('search-open');
-        } else if (event.keyCode == 83 && !(openSearchForm.classList.contains('search-open'))) {
-            openSearchForm.classList.add('search-open');
-            openSearchInput.value = "";
-            openSearchInput.focus();
-        }
-    });
-    $('#search-form').submit(function(event){
-        event.preventDefault();
-    });
-});
+}
+
+function preventRefresh(enterTerm) {
+    enterTerm.preventDefault();
+}
+
+function keyToggles(event) {
+    var openSearchForm = document.getElementById('search-form'),
+        openSearchInput = document.getElementById('tipue_search_input');
+    if (event.keyCode == 27 && openSearchForm.classList.contains('search-open')) {
+        openSearchForm.classList.remove('search-open');
+    } else if (event.keyCode == 83 && !(openSearchForm.classList.contains('search-open'))) {
+        openSearchForm.classList.add('search-open');
+        openSearchInput.value = "";
+        openSearchInput.focus();
+    }
+}

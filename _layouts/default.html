@@ -37,16 +37,6 @@ layout: compress
     {% comment %} Main js for site interactions {% endcomment %}
     <script src="{{site.baseurl}}/scripts/main.min.js" async></script>
     <script src="{{site.baseurl}}/scripts/fluidvids.min.js" async></script>
-    <script async>
-    $(document).ready(function() {
-        $('#tipue_search_input').tipuesearch({
-            'highlightEveryTerm':true,
-            'descriptiveWords': 30,
-            'debug': false
-        });
-        hljs.initHighlightingOnLoad();
-    });
-    </script>
 </body>
 
 </html>
