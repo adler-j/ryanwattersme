@@ -10,33 +10,8 @@ layout: compress
         <main class="main" id="main">
             {{ content }}
         </main>
-    {% if page.comments && site.disqus_shortname %}
-        <aside>
-            <div id="disqus_thread"></div>
-        </aside>
-        <script type="text/javascript" async>
-            /* * * CONFIGURATION VARIABLES * * */
-            var disqus_shortname = '{{site.disqus_shortname}}';
-            
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    {% endif %}
     {% include footer.html %}
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    {% comment %} tipue search {% endcomment %}
-    <script src="{{site.baseurl}}/scripts/tipuesearch_content.js"></script>
-    <script src="{{site.baseurl}}/scripts/tipuesearch.min.js"></script>
-    {% comment %} highlight.js for code/syntax highlighting {% endcomment %}
-    <script src="{{site.baseurl}}/scripts/highlight.pack.min.js"></script>
-    {% comment %} Main js for site interactions {% endcomment %}
-    <script src="{{site.baseurl}}/scripts/main.min.js" async></script>
-    <script src="{{site.baseurl}}/scripts/fluidvids.min.js" async></script>
+    <script src="{{site.baseurl}}/scripts/script.min.js" async></script>
 </body>
 
 </html>

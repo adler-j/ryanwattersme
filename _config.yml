@@ -1,5 +1,5 @@
 # Site settings
-title: My Site
+title: Ryan Watters
 tagline: Writer, editor, ex-bartender, and aspiring world-class breakdancer
 footer_tagline: That last one is a bit of a stretch.
 email: ryan@ryanwatters.me
@@ -61,6 +61,8 @@ kramdown:
   auto_ids: false
   input: GFM
   syntax_highlighter: rouge
+exclude: [gruntscripts,node_modules,Gruntfile.js,Gemfile,Gemfile.lock,Guardfile,package.json,snippets_and_notes.md]
+include: [scripts]
 
 
 sass:
