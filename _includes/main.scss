@@ -200,9 +200,14 @@ article {
     margin-left: auto;
     img {
         @include transition(.4s);
-        @include display(flex);
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
         width: 100%;
         height: auto;
+        -moz-box-shadow: 2px 2px 15px #ccc;
+        -webkit-box-shadow: 2px 2px 15px #ccc;
+        box-shadow: 2px 2px 15px #ccc;
     }
     >header {
         @include display(flex);
@@ -513,61 +518,61 @@ blockquote em {
 }
 
 .tags {
-  list-style: none;
-  margin: 0;
-  overflow: hidden; 
-  padding: 0;
-  margin-top:10px;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 10px;
 }
 
 .tags li {
-  float: left; 
+    float: left;
 }
 
 .tag {
-  background: $base-font-color;
-  border-radius: 3px 0 0 3px;
-  color: #999;
-  display: inline-block;
-  height: 26px;
-  line-height: 26px;
-  padding: 0 20px 0 23px;
-  position: relative;
-  margin: 0 10px 10px 0;
-  text-decoration: none;
-  -webkit-transition: color 0.2s;
+    background: $base-font-color;
+    border-radius: 3px 0 0 3px;
+    color: #999;
+    display: inline-block;
+    height: 26px;
+    line-height: 26px;
+    padding: 0 20px 0 23px;
+    position: relative;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    -webkit-transition: color 0.2s;
 }
 
 .tag::before {
-  background: inherit;
-  border-radius: 10px;
-  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-  content: '';
-  height: 6px;
-  left: 10px;
-  position: absolute;
-  width: 6px;
-  top: 10px;
+    background: inherit;
+    border-radius: 10px;
+    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    content: '';
+    height: 6px;
+    left: 10px;
+    position: absolute;
+    width: 6px;
+    top: 10px;
 }
 
 .tag::after {
-  background: $accent-color;
-  border-bottom: 13px solid transparent;
-  border-left: 10px solid $base-font-color;
-  border-top: 13px solid transparent;
-  content: '';
-  position: absolute;
-  right: 0;
-  top: 0;
+    background: $accent-color;
+    border-bottom: 13px solid transparent;
+    border-left: 10px solid $base-font-color;
+    border-top: 13px solid transparent;
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
 .tag:hover {
-  background-color: $warning-color;
-  color: white;
+    background-color: $warning-color;
+    color: white;
 }
 
 .tag:hover::after {
-   border-left-color: $warning-color; 
+    border-left-color: $warning-color;
 }
 
 #mobile-menu {
