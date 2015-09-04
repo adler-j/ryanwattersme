@@ -7,7 +7,7 @@ publish_date:
 comments: true
 published: true
 insearch: true
-tags: ['putting','random','tags','in','here']
+tags: ['javascript','jekyll']
 ---
 
 ### Here is an Article Heading
