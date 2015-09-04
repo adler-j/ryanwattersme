@@ -11,6 +11,12 @@ module.exports = function(grunt) {
                 }
             }
         },
+        smushit: {
+            mygroup: {
+                src: ['images/*.png', 'images/*.jpg','images/*.jpeg'],
+                dest: 'images/optimized'
+            }
+        },
         watch: {
             // for scripts, run uglify 
             scripts: {
@@ -21,5 +27,7 @@ module.exports = function(grunt) {
     });
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-smushit');
     grunt.registerTask('default', ['watch']);
+    grunt.registerTask('optimize', ['smushit']);
 };
