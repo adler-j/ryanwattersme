@@ -51,7 +51,7 @@ var tipuesearch_string_13 = 'characters or more';
 
         var set = $.extend({
 
-            'show': 7,
+            'show': 20,
             'newWindow': false,
             'showURL': true,
             'showTitleCount': false,
@@ -412,7 +412,7 @@ var tipuesearch_string_13 = 'characters or more';
                             out += '</ul></div>';
                         }
                     } else {
-                        out += '<div id="tipue_search_warning">' + tipuesearch_string_8 + '</div>';
+                        out += '<div id="tipue_search_warning">' + tipuesearch_string_8 + ' for <span class="search-term-top">' + d + '</span>. Please try another search term.' + '</div>';
                     }
                 } else {
                     if (show_stop) {

@@ -31,8 +31,12 @@ h6 {
 }
 
 body > header:first-child {
-    @include display(flex);
-    @include align-items(center);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
     width: 100%;
     width: 100vw;
     position: relative;
@@ -40,8 +44,12 @@ body > header:first-child {
     color: $header-link-color;
     z-index: 1;
     @include MQ(M) {
-        @include flex-direction(column);
-        @include align-items(flex-start);
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+        -webkit-align-items: flex-start;
+        -ms-flex-align: start;
+        align-items: flex-start;
         width: 300px;
         height: 100%;
         height: 100vh;
@@ -59,14 +67,11 @@ body > header:first-child {
     transition: all .4s ease-in-out;
     color: $site-title-font-color;
     max-width: $content-max-width;
-    height: auto;
-    padding-left: 10px;
     @include MQ(M) {
         margin-left: auto;
         margin-right: auto;
         width: 90%;
         max-width: $content-max-width;
-        padding-left: 0px;
     }
     .site-title {
         h1 {
@@ -74,6 +79,9 @@ body > header:first-child {
             color: $header-link-color;
             font-family: $site-title-font-family;
             font-size: $site-title-font-size-small;
+            line-height: $site-title-font-size-small * 1.5;
+            height: $site-title-font-size-small * 1.5;
+            font-weight: $site-title-font-weight;
             padding-bottom: 0px;
             padding-left: 0px;
             margin-left: 0px;
@@ -84,23 +92,23 @@ body > header:first-child {
             text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
             float: left;
             @include MQ(M) {
+                line-height: $site-title-font-size * 1.5;
+                height: $site-title-font-size * 1.5;
                 font-size: $site-title-font-size;
             }
         }
     }
     h5.site-tagline {
-        @include MQ(MMAX) {
-            display: none;
-        }
-        @include display(flex);
-        color: $site-title-font-color;
-        padding-top: 0px;
-        margin-top: 0px;
-        line-height: 1.5;
-        font-size: $base-font-size/1.5;
-        width:100%;
+        display: none;
         @include MQ(M) {
+            @include display(flex);
+            color: $site-title-font-color;
+            padding-top: 0px;
+            margin-top: 0px;
+            line-height: 1.5;
             font-size: $base-font-size;
+            font-weight: $site-title-font-weight;
+            width: 100%;
         }
     }
 }
@@ -351,8 +359,8 @@ footer {
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column;
-    &.search-open{
-            z-index:-99;
+    &.search-open {
+        z-index: -99;
     }
     @include MQ(M) {
         position: fixed;
@@ -360,8 +368,8 @@ footer {
         left: 25px;
         bottom: 0px;
         z-index: 10;
-        &.search-open{
-            z-index:-99;
+        &.search-open {
+            z-index: -99;
         }
     }
     color: $footer-link-color;
@@ -502,6 +510,64 @@ blockquote a:hover {
 
 blockquote em {
     font-style: italic;
+}
+
+.tags {
+  list-style: none;
+  margin: 0;
+  overflow: hidden; 
+  padding: 0;
+  margin-top:10px;
+}
+
+.tags li {
+  float: left; 
+}
+
+.tag {
+  background: $base-font-color;
+  border-radius: 3px 0 0 3px;
+  color: #999;
+  display: inline-block;
+  height: 26px;
+  line-height: 26px;
+  padding: 0 20px 0 23px;
+  position: relative;
+  margin: 0 10px 10px 0;
+  text-decoration: none;
+  -webkit-transition: color 0.2s;
+}
+
+.tag::before {
+  background: inherit;
+  border-radius: 10px;
+  box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+  content: '';
+  height: 6px;
+  left: 10px;
+  position: absolute;
+  width: 6px;
+  top: 10px;
+}
+
+.tag::after {
+  background: $accent-color;
+  border-bottom: 13px solid transparent;
+  border-left: 10px solid $base-font-color;
+  border-top: 13px solid transparent;
+  content: '';
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.tag:hover {
+  background-color: $warning-color;
+  color: white;
+}
+
+.tag:hover::after {
+   border-left-color: $warning-color; 
 }
 
 #mobile-menu {
