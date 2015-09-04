@@ -5,8 +5,8 @@
     <description>My name is Ryan. This is my website.</description>
     <link>/</link>
     <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Fri, 04 Sep 2015 01:13:58 -0500</pubDate>
-    <lastBuildDate>Fri, 04 Sep 2015 01:13:58 -0500</lastBuildDate>
+    <pubDate>Fri, 04 Sep 2015 01:18:21 -0500</pubDate>
+    <lastBuildDate>Fri, 04 Sep 2015 01:18:21 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
   </channel>
