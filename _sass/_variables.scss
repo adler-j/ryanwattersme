@@ -14,6 +14,7 @@ $accent-color: #487557;
 $anchor-color: #01589B;
 $warning-color: tomato;
 $results-highlight-color:orange;
+$body-background-color:white;
 
 $base-font-size:16px;
 $base-font-family:"open_sans",'Helvetica Neue',helvetica,sans-serif;
@@ -56,6 +57,7 @@ $article-headline-font-color:#ffffff;
 $article-subheading-font-size:$base-font-size * 1.2;
 $article-anchor-font-weight:700;
 $article-anchor-font-color:$anchor-color;
+$article-coding-background-color:#333333;
 
 //article headings (note that for mobile screens, these values are reduce to size * .85)
 $h1-font-size: $base-font-size * 1.7; //mobile = $h1-font-size * .75

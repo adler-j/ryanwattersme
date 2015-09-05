@@ -1,7 +1,7 @@
 <footer class="site-footer" id="footer">
     <section class="author-photo-footer">
         {% if site.copyright_in_footer %}
-        <p>&copy; <span class="this-year">{{ 'now' | date: "%Y" }}</span> {{site.title}}</p>
+        <p>&copy; {{ 'now' | date: "%Y" }}</span> {{site.title}}</p>
         {% endif %}
     </section>
     <section class="social-media">
@@ -149,8 +149,5 @@
             </li>
             {% endif %}
         </ul>
-    </section>
-    <section class="site-footnotes">
-    	<span><sup>1</sup>{{site.footer_tagline}}</span>
     </section>
 </footer>

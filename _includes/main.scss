@@ -70,42 +70,25 @@ body > header:first-child {
     @include MQ(M) {
         margin-left: auto;
         margin-right: auto;
-        width: 250px;
+        width: 220px;
     }
     .site-title {
-        h1 {
-            @include display(flex);
-            color: $header-link-color;
-            font-family: $site-title-font-family;
-            font-size: $site-title-font-size-small;
-            line-height: $site-title-font-size-small * 1.5;
-            height: $site-title-font-size-small * 1.5;
-            font-weight: $site-title-font-weight;
-            text-align: left;
-            padding-left:10px;
-            text-transform: $site-title-text-transform;
-            width: 100%;
-            text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
-            float: left;
-            @include MQ(M) {
-                line-height: $site-title-font-size * 1.5;
-                height: $site-title-font-size * 1.5;
-                font-size: $site-title-font-size;
-                padding-left:0px;
+        width: 100%;
+        text-align: center;
+        #site-logo {
+            min-height: 50px;
+            max-height: 50px;
+            min-width: 100px;
+            fill: $header-link-color;
+            .bar {
+                stroke: $header-link-color;
+                stroke-width: 10;
+                stroke-miterlimit: 10;
             }
         }
-    }
-    h5.site-tagline {
-        display: none;
         @include MQ(M) {
-            @include display(flex);
-            color: $site-title-font-color;
-            padding-top: 0px;
-            margin-top: 0px;
-            line-height: 1.5;
-            font-size: $base-font-size;
-            font-weight: $site-title-font-weight;
-            width: 100%;
+            margin-top: 50px;
+            margin-bottom: 50px;
         }
     }
 }
@@ -148,8 +131,8 @@ nav.global-navigation {
     @include MQ(M) {
         @include transform(translateX(0));
         display: block;
-        width: 250px;
-        margin-right: auto;
+        width: 220px;
+        margin40ight: auto;
         margin-left: auto;
         position: relative;
         height: auto;
@@ -299,6 +282,17 @@ article {
             text-decoration: underline;
         }
     }
+    pre {
+        @include MQ(M) {
+            width: 150vw!important;
+            max-width: 150vw!important;
+            position: relative;
+            margin-left:-25vw;
+        }
+        code.hljs{
+            padding-left:25vw!important;
+        }
+    }
 }
 
 .fluidvids {
@@ -363,8 +357,8 @@ body > footer {
     }
     @include MQ(M) {
         position: fixed;
-        width: 250px;
-        left: 25px;
+        width: 220px;
+        left: 40px;
         bottom: 0px;
         z-index: 10;
         &.search-open {
@@ -394,17 +388,11 @@ body > footer {
         ul {
             @include display(flex);
             @include flex-wrap(wrap);
+            @include justify-content(space-between);
             width: 100%;
             color: $footer-link-color;
-            @include justify-content(space-around);
-            @include MQ(M) {
-                @include flex-direction(row);
-            }
             li {
                 display: inline;
-                @include MQ(M) {
-                    margin-right: 10px;
-                }
                 a {
                     font-size: $footer-icon-size;
                     vertical-align: middle;
@@ -469,27 +457,6 @@ blockquote::before {
     top: 5px;
 }
 
-.article-video {
-    position: relative;
-    padding-bottom: 56.25%;
-    margin-top: $base-font-size;
-    /* 16:9 */
-    padding-top: 25px;
-    height: 0;
-}
-
-.article-video iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.article-video + p {
-    margin-top: $base-font-size/2;
-}
-
 blockquote::after {
     /*Reset to make sure*/
     content: "";
@@ -518,10 +485,10 @@ blockquote em {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    width:100%;
-    max-width:100%;
-    width:100vw;
-    max-width:100vw;
+    width: 100%;
+    max-width: 100%;
+    width: 100vw;
+    max-width: 100vw;
     list-style: none;
     margin: 0;
     overflow: hidden;
@@ -545,6 +512,7 @@ blockquote em {
     margin: 0 10px 10px 0;
     text-decoration: none;
     -webkit-transition: color 0.2s;
+    font-weight: 600;
 }
 
 .tag::before {
@@ -560,7 +528,7 @@ blockquote em {
 }
 
 .tag::after {
-    background: $accent-color;
+    background: $body-background-color;
     border-bottom: 13px solid transparent;
     border-left: 10px solid $base-font-color;
     border-top: 13px solid transparent;
@@ -573,6 +541,7 @@ blockquote em {
 .tag:hover {
     background-color: $warning-color;
     color: white;
+    text-decoration: none;
 }
 
 .tag:hover::after {

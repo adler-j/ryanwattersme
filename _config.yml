@@ -40,8 +40,8 @@ disqus_shortname: ryanwattersme
 # GLOBAL NAVIGATION
 
 main_navigation_links:
-- text: Home
-  url: 
+# - text: Home
+#   url: 
 - text: Articles
   url: articles
 - text: About
