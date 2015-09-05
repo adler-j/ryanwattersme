@@ -1,4 +1,5 @@
 module.exports = function(grunt) {
+    var mozjpeg = require('imagemin-mozjpeg');
     grunt.initConfig({
         pkg: grunt.file.readJSON('package.json'),
         uglify: {

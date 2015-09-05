@@ -6,5 +6,8 @@
     "grunt-contrib-imagemin": "^0.9.4",
     "grunt-contrib-uglify": "latest",
     "grunt-contrib-watch": "latest"
+  },
+  "dependencies": {
+    "imagemin-mozjpeg": "^5.1.0"
   }
 }
