@@ -70,8 +70,7 @@ body > header:first-child {
     @include MQ(M) {
         margin-left: auto;
         margin-right: auto;
-        width: 90%;
-        max-width: $content-max-width;
+        width: 250px;
     }
     .site-title {
         h1 {
@@ -82,11 +81,8 @@ body > header:first-child {
             line-height: $site-title-font-size-small * 1.5;
             height: $site-title-font-size-small * 1.5;
             font-weight: $site-title-font-weight;
-            padding-bottom: 0px;
-            padding-left: 0px;
-            margin-left: 0px;
-            margin-bottom: 0px;
             text-align: left;
+            padding-left:10px;
             text-transform: $site-title-text-transform;
             width: 100%;
             text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);
@@ -95,6 +91,7 @@ body > header:first-child {
                 line-height: $site-title-font-size * 1.5;
                 height: $site-title-font-size * 1.5;
                 font-size: $site-title-font-size;
+                padding-left:0px;
             }
         }
     }
@@ -151,7 +148,7 @@ nav.global-navigation {
     @include MQ(M) {
         @include transform(translateX(0));
         display: block;
-        width: 200px;
+        width: 250px;
         margin-right: auto;
         margin-left: auto;
         position: relative;
@@ -522,7 +519,9 @@ blockquote em {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width:100%;
+    max-width:100%;
     width:100vw;
+    max-width:100vw;
     list-style: none;
     margin: 0;
     overflow: hidden;

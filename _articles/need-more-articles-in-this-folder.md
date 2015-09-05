@@ -14,6 +14,8 @@ tags:
 
 One Flew Over the Cuckoo's Nest random quotes. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it. Here is [a link to Google](https://www.google.com). Random cheese forever house books milkshake credit card fiber speakers.
 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed autem obcaecati magnam deserunt. Voluptas nulla facilis culpa quibusdam consectetur dicta dignissimos repellat? Excepturi voluptas magni nobis debitis voluptate maiores.
+
 ```javascript
 // Require Gulp
 var gulp = require('gulp');
@@ -37,17 +39,13 @@ gulp.task('sass', function() {
 })
 ```
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed autem obcaecati magnam deserunt. Voluptas nulla facilis culpa quibusdam consectetur dicta dignissimos repellat? Excepturi voluptas magni nobis debitis voluptate maiores.
-
-![A picture of a shiba inu puppy taken from a Google Images search](http://images.shibashake.com/wp-content/blogs.dir/7/files/2012/03/375757_10150889470687524_800937523_12981704_1473609087_n-520x346.jpg)
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos error, pariatur. Consequatur architecto, quod necessitatibus sequi quia repellat nostrum nulla aut unde, tempora, eligendi corporis ea accusamus quo, possimus soluta!
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/bCEMBvdgWGM" frameborder="0" allowfullscreen></iframe>
+<iframe width="420" height="315" src="//www.youtube.com/embed/bCEMBvdgWGM" frameborder="0" allowfullscreen></iframe>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet sit, dolorem officiis iusto esse nostrum veniam sed distinctio ullam vel dignissimos rerum a. Labore, sint commodi numquam inventore, facere dolor.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/7y1xJAVZxXg" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="//www.youtube.com/embed/7y1xJAVZxXg" frameborder="0" allowfullscreen></iframe>
 
 One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen.
 
