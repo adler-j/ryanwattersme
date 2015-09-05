@@ -7,7 +7,7 @@
         <ul>
             {% assign activePage = page.url | remove_first: '/' | remove: "/index.html" | downcase %}
             {% for link in site.main_navigation_links %}
-            <li><a href="{{site.url}}/{{link.url}}" {% if link.url contains activePage or page.url contains link.url %}class="active"{% elsif link.url.size == nil and page.url == "/index.html" %}class="active"{% endif %}>{{link.text}}</a></li>
+            <li><a href="{{site.baseurl}}/{{link.url}}" {% if link.url contains activePage or page.url contains link.url %}class="active"{% elsif link.url.size == nil and page.url == "/index.html" %}class="active"{% endif %}>{{link.text}}</a></li>
             {% endfor %}
             <li>
                 <a href="#" id="search-overlay-toggle" title="Search {{site.title}}">
@@ -40,12 +40,3 @@
     </form>
     <a href="#" id="mobile-toggle"><span></span></a>
 </header>
-
-<!-- 
-{% unless page.url contains "search" %}
-            <li id="search">
-                <form action="{{site.url}}/search.html" id="search-form">
-                        <input type="text" name="q" class="search" id="tipue_search_input" autocomplete="off" placeholder="Search..." required>
-                </form>    
-            </li>
-{% endunless %} -->

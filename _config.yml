@@ -30,6 +30,9 @@ linkedin: ryan-watters-els/25/107/80
 #Set RSS to "true" or "false" if you want to include an RSS feed and an RSS icon
 include_rss: true
 
+# GOOGLE ANALYTICS - Usually begins with "UA" followed by 11 digits
+googleanalytics: UA-67203548-1
+
 # COMMENTS(DISQUS)
 # If you want to remove all comments on all pages at once, removed the shortname from this file
 disqus_shortname: ryanwattersme 
