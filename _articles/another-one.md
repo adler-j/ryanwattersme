@@ -17,7 +17,7 @@ One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your foo
 
 If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it.
 
-<iframe width="640" height="360" src="https://www.youtube.com/embed/UXyHf_SpUUI" frameborder="0" allowfullscreen></iframe>
+<iframe width="640" height="360" src="//www.youtube.com/embed/UXyHf_SpUUI" frameborder="0" allowfullscreen></iframe>
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis deserunt omnis illo, iusto esse placeat, atque quisquam accusantium. Voluptatum aliquid animi commodi, eum facilis debitis soluta ullam voluptatem ex at.
 
