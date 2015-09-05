@@ -10,7 +10,11 @@ article#search-page {
 #search-icon {
     height: $global-navigation-font-size-mobile;
     @include MQ(M) {
-        height: $global-navigation-font-size;
+        height: $global-navigation-font-size * 1.5;
+        position:absolute;
+        top:5px;
+        right:-20px;
+        @include transform(translateY(-150px));
     }
     fill:$global-navigation-font-color;
 }
