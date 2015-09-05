@@ -24,9 +24,9 @@ youtube: #Megatull80
 #Everything after "facebook.com/" in the URL, regardless of whether it's a personal profile or business page.
 facebook: #pages/MySitecom/810571539011577
 #Everything after "plus.google.com/"  
-google_plus: #+RyanWattersRyanWatters
+googleplus: +RyanWattersRyanWatters
 #Everything after "https://www.linkedin.com/pub/"
-linkedin_profile: ryan-watters-els/25/107/80
+linkedin: ryan-watters-els/25/107/80
 #Set RSS to "true" or "false" if you want to include an RSS feed and an RSS icon
 include_rss: true
 

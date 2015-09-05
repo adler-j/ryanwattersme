@@ -11,10 +11,18 @@ module.exports = function(grunt) {
                 }
             }
         },
-        smushit: {
-            mygroup: {
-                src: ['images/*.png', 'images/*.jpg','images/*.jpeg'],
-                dest: 'images/optimized'
+        imagemin: { // Task
+            static: { // Target
+                options: { // Target options
+                    optimizationLevel: 3,
+                    svgoPlugins: [{
+                        removeViewBox: false
+                    }],
+                    use: [mozjpeg()]
+                },
+                files: { // Dictionary of files
+                    'images/optimized/': ['images/*.png', 'images/*.jpg', 'images/*.jpeg']
+                }
             }
         },
         watch: {
@@ -27,7 +35,7 @@ module.exports = function(grunt) {
     });
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
-    grunt.loadNpmTasks('grunt-smushit');
+    grunt.loadNpmTasks('grunt-contrib-imagemin');
     grunt.registerTask('default', ['watch']);
-    grunt.registerTask('optimize', ['smushit']);
+    grunt.registerTask('optimize', ['imagemin']);
 };

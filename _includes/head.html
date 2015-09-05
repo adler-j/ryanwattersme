@@ -10,6 +10,9 @@
     </style>
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    {%if site.googleplus %}
+    <meta rel="publisher" content="{{site.googleplus}}">
+    {% endif %}
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta property="og:type" content="{% if page.thumbnail %}article{% else %}website{% endif %}">
