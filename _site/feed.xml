@@ -3,10 +3,10 @@
   <channel>
     <title>Ryan Watters</title>
     <description>My name is Ryan. This is my website.</description>
-    <link>/</link>
-    <atom:link href="/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sat, 05 Sep 2015 00:31:09 -0500</pubDate>
-    <lastBuildDate>Sat, 05 Sep 2015 00:31:09 -0500</lastBuildDate>
+    <link>https://ryansportfol.io/</link>
+    <atom:link href="https://ryansportfol.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sat, 05 Sep 2015 00:40:28 -0500</pubDate>
+    <lastBuildDate>Sat, 05 Sep 2015 00:40:28 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
   </channel>

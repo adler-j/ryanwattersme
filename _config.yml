@@ -6,7 +6,7 @@ email: ryan@ryanwatters.me
 description: My name is Ryan. This is my website.
 copyright_in_footer: true
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: # the base hostname & protocol for your site
+url: https://ryansportfol.io # the base hostname & protocol for your site
 site_owner: Ryan Watters
 author_photo: #me.jpg 
 
