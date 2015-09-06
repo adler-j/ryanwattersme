@@ -289,6 +289,7 @@ article {
         max-width:120vw!important;
         margin-left:-10%;
         margin-left:-10vw;
+        overflow-x:auto;
         @include MQ(M) {
             width: 150vw!important;
             max-width: 150vw!important;
@@ -297,7 +298,7 @@ article {
         }
         code.hljs {
             padding-left:10%;
-            overflow-x:scroll;
+            overflow-x:auto;
             @include MQ(M) {
                 padding-left: 25vw!important;
             }
