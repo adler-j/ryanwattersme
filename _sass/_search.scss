@@ -7,16 +7,41 @@ article#search-page {
     }
 }
 
-#search-icon {
-    height: $global-navigation-font-size-mobile;
-    @include MQ(M) {
-        height: $global-navigation-font-size * 1.5;
-        position:absolute;
-        top:5px;
-        right:-20px;
-        @include transform(translateY(-150px));
+#search-overlay-toggle {
+    #search-icon {
+        height: $global-navigation-font-size-mobile;
+        @include transform(translateY($global-navigation-font-size-mobile/5));
+        @include MQ(M) {
+            height: $search-icon-size-m-plus-screen-sizes;
+            position: absolute;
+            top: $search-icon-size-m-plus-screen-sizes/2;
+            right: -$search-icon-size-m-plus-screen-sizes/1.25;
+            @include transform(translateY(-210px));
+        }
+        fill:$global-navigation-font-color;
     }
-    fill:$global-navigation-font-color;
+    &:after {
+        content:' Search';
+    }
+    @include MQ(M) {
+        &:before {
+            transition:all .4s ease-in-out;
+            content: 'Search';
+            color: white;
+            height: $search-icon-size-m-plus-screen-sizes;
+            right:14px;
+            font-size:$base-font-size * .75;
+            position: absolute;
+            top: $search-icon-size-m-plus-screen-sizes/2;
+            @include transform(translateY(-205px));
+        }
+        &:hover::before{
+            font-weight:bold;
+        }
+        &:after {
+            content:'';
+        }
+    }
 }
 
 #tipue_search_content {
@@ -254,11 +279,11 @@ span.search-term-top {
     }
     input#tipue_search_input {
         display: block;
-        color:$base-font-color;
-        font-weight:300;
+        color: $base-font-color;
+        font-weight: 300;
         margin-top: 35px;
         border: none;
-        border-radius:0px;
+        border-radius: 0px;
         margin-right: auto;
         margin-left: auto;
         width: 100%;

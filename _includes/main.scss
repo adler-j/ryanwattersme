@@ -76,9 +76,15 @@ body > header:first-child {
         width: 100%;
         text-align: center;
         #site-logo {
-            min-height: 50px;
-            max-height: 50px;
-            min-width: 100px;
+            min-height:26px;
+            max-height:26px;
+            min-width:50px;
+            margin:15px 0px 15px 15px;
+            @include MQ(M) {
+                min-height: 50px;
+                max-height: 50px;
+                min-width: 100px;
+            }
             fill: $header-link-color;
             .bar {
                 stroke: $header-link-color;
@@ -87,7 +93,7 @@ body > header:first-child {
             }
         }
         @include MQ(M) {
-            margin-top: 50px;
+            margin-top: 80px;
             margin-bottom: 50px;
         }
     }
@@ -172,7 +178,7 @@ article {
     @include transition(.4s);
     @include display(flex);
     @include flex-direction(column);
-    margin-top: 40px;
+    // margin-top: 40px;
     position: relative;
     width: 90%;
     max-width: $content-max-width;
@@ -283,9 +289,9 @@ article {
         }
     }
     pre {
-        width:100%;
-        max-width:100%;
-        overflow:hidden;
+        width: 100%;
+        max-width: 100%;
+        overflow: hidden;
         @include MQ(M) {
             width: 150vw!important;
             max-width: 150vw!important;
@@ -293,11 +299,24 @@ article {
             margin-left: -25vw;
         }
         code.hljs {
-            padding-left:10%;
-            overflow:auto;
+            padding-left: 10%;
+            overflow: auto;
             @include MQ(M) {
                 padding-left: 25vw!important;
             }
+        }
+    }
+}
+
+aside {
+    #disqus_thread {
+        width: 100%;
+        max-width: 100%;
+        @include MQ(M) {
+            width: 90%;
+            margin-left: auto;
+            margin-right: auto;
+            max-width: $content-max-width;
         }
     }
 }

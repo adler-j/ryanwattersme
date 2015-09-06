@@ -21,7 +21,8 @@ layout: default
             </ul>
         {% endif %}
     </footer>
-    {% if page.comments && site.disqus_shortname %}
+</article>
+{% if page.comments && site.disqus_shortname %}
         <aside>
             <div id="disqus_thread"></div>
         </aside>
@@ -37,6 +38,5 @@ layout: default
             })();
         </script>
         <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-    {% endif %}
-</article>
+{% endif %}
 
