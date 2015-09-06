@@ -25,7 +25,6 @@ article#search-page {
     }
     @include MQ(M) {
         &:before {
-            transition:all .4s ease-in-out;
             content: 'Search';
             color: white;
             height: $search-icon-size-m-plus-screen-sizes;
@@ -34,9 +33,6 @@ article#search-page {
             position: absolute;
             top: $search-icon-size-m-plus-screen-sizes/2;
             @include transform(translateY(-205px));
-        }
-        &:hover::before{
-            font-weight:bold;
         }
         &:after {
             content:'';

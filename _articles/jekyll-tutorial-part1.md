@@ -1,15 +1,17 @@
 ---
-title: Another One With A Longer Title
+title: Jekyll Tutorial Part 1
 subtitle: Here is my subtitle for this blog post
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sequi possimus aspernatur maxime repudiandae, at consequatur facilis unde non doloribus. Non laborum, esse. Magnam placeat, voluptates sapiente odit delectus quos."
 layout: article
+main_image: jekyll_logo_large.png
+main_image_description: This is a photo of a coffee cup and a pencil in black and white.
 published: true
 publish_date: 2015-09-01
 comments: true
 insearch: true
 tags: [here,are,some,tags]
 ---
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste. Hello world.
+First line of this paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste. Hello world.
 
 ### Here is an Article Heading for Styling
 

@@ -76,10 +76,10 @@ body > header:first-child {
         width: 100%;
         text-align: center;
         #site-logo {
-            min-height:26px;
-            max-height:26px;
-            min-width:50px;
-            margin:15px 0px 15px 15px;
+            min-height: 26px;
+            max-height: 26px;
+            min-width: 50px;
+            margin: 15px 0px 15px 15px;
             @include MQ(M) {
                 min-height: 50px;
                 max-height: 50px;
@@ -159,29 +159,64 @@ nav.global-navigation {
     @include flex-direction(column);
     @include flex-grow(1);
     min-height: 100%;
+    width: 100%;
+    width: 100vw;
     @include MQ(M) {
         display: block;
         float: right;
         width: calc(100% - 300px);
         margin-left: 300px;
-        padding-right: auto;
-        padding-left: auto;
     }
-    width: 90%;
-    margin-right: auto;
-    margin-left: auto;
     padding-bottom: 15px;
     margin-top: 0px;
 }
 
+header#article-header {
+    margin-bottom: 10px;
+    &.article-header-with-image {
+        width: 100vw;
+        max-width: 100vw;
+        @include MQ(M){
+            width:calc(100vw - 300px);
+            max-width:calc(100vw - 300px);
+            min-height: 50vh;
+        }
+        float: left;
+        position: relative;
+        min-height: 100%;
+        min-height: 40vh;
+        margin-left: 0px;
+        padding-left: 0px;
+        background-size: co;
+        background-repeat:no-repeat;
+        h1,
+        section {
+            color: $article-headline-font-color;
+            width: 90%;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    &.article-header-without-image {
+        height: auto;
+        width: 90%;
+        max-width: $content-max-width;
+        margin-right: auto;
+        margin-left: auto;
+    }
+}
+
 article {
     @include transition(.4s);
-    @include display(flex);
-    @include flex-direction(column);
-    // margin-top: 40px;
-    position: relative;
+    display: block;
     width: 90%;
-    max-width: $content-max-width;
+    min-height: 100%;
+    @include MQ(M) {
+        max-width: $content-max-width;
+        min-height: 100%;
+        padding-right: auto;
+        padding-left: auto;
+    }
     margin-right: auto;
     margin-left: auto;
     img {
@@ -194,66 +229,6 @@ article {
         -moz-box-shadow: 2px 2px 15px #ccc;
         -webkit-box-shadow: 2px 2px 15px #ccc;
         box-shadow: 2px 2px 15px #ccc;
-    }
-    >header {
-        @include display(flex);
-        @include flex-direction(column);
-        @include justify-content(center);
-        margin-bottom: $base-font-size;
-        padding-top: 0px;
-        background-color: $accent-color;
-        padding: 5%;
-        color: white;
-        @include MQ(M) {
-            @include flex-direction(row);
-            @include justify-content(space-between);
-            @include align-items(center);
-            width: 110%;
-            margin-left: -5%;
-            padding-left: 5%;
-            padding-right: 5%;
-            padding-top: 0;
-            padding-bottom: 0;
-        }
-        h1 {
-            @include display(flex);
-            @include justify-content(center);
-            font-family: $article-heading-font-family;
-            text-align: center;
-            font-size: $h1-font-size * .75;
-            color: $article-headline-font-color;
-            @include MQ(M) {
-                text-align: left;
-                width: auto;
-                font-size: $h1-font-size;
-            }
-        }
-        section.publishing-metadata {
-            @include display(flex);
-            @include flex-direction(column);
-            @include justify-content(center);
-            time {
-                font-weight: bold;
-                width: 100%;
-                text-align: center;
-            }
-            ul {
-                @include display(flex);
-                @include justify-content(space-around);
-                @include align-items(center);
-                width: 100%;
-                li {
-                    font-size: $base-font-size * .75;
-                    a {
-                        color: inherit;
-                    }
-                }
-            }
-            @include MQ(M) {
-                @include flex-direction(row);
-                @include flex-wrap(wrap);
-            }
-        }
     }
     h2 {
         margin: 0px;
@@ -467,41 +442,33 @@ blockquote {
     -moz-box-shadow: 2px 2px 15px #ccc;
     -webkit-box-shadow: 2px 2px 15px #ccc;
     box-shadow: 2px 2px 15px #ccc;
-}
-
-blockquote::before {
-    content: "\201C";
-    /*Unicode for Left Double Quote*/
-    /*Font*/
-    font-family: Georgia, serif;
-    font-size: 60px;
-    font-weight: bold;
-    color: #999;
-    /*Positioning*/
-    position: absolute;
-    left: 10px;
-    top: 5px;
-}
-
-blockquote::after {
-    /*Reset to make sure*/
-    content: "";
-}
-
-blockquote a {
-    text-decoration: none;
-    background: #eee;
-    cursor: pointer;
-    padding: 0 3px;
-    color: #c76c0c;
-}
-
-blockquote a:hover {
-    color: #666;
-}
-
-blockquote em {
-    font-style: italic;
+    &::before {
+        content: "\201C";
+        /*Unicode for Left Double Quote*/
+        /*Font*/
+        font-family: Georgia, serif;
+        font-size: 60px;
+        font-weight: bold;
+        color: #999;
+        /*Positioning*/
+        position: absolute;
+        left: 10px;
+        top: 5px;
+    }
+    &::after {
+        /*Reset to make sure*/
+        content: "";
+    }
+    a {
+        text-decoration: none;
+        background: #eee;
+        cursor: pointer;
+        padding: 0 3px;
+        color: #c76c0c;
+    }
+    em {
+        font-style: italic;
+    }
 }
 
 .tags {
@@ -512,13 +479,12 @@ blockquote em {
     overflow: hidden;
     padding: 0;
     margin-top: 10px;
+    li {
+        float: left;
+    }
 }
 
-.tags li {
-    float: left;
-}
-
-.tag {
+a.tag {
     background: $base-font-color;
     border-radius: 3px 0 0 3px;
     color: #999;
@@ -531,39 +497,35 @@ blockquote em {
     text-decoration: none;
     -webkit-transition: color 0.2s;
     font-weight: 600;
-}
-
-.tag::before {
-    background: inherit;
-    border-radius: 10px;
-    box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-    content: '';
-    height: 6px;
-    left: 10px;
-    position: absolute;
-    width: 6px;
-    top: 10px;
-}
-
-.tag::after {
-    background: $body-background-color;
-    border-bottom: 13px solid transparent;
-    border-left: 10px solid $base-font-color;
-    border-top: 13px solid transparent;
-    content: '';
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-.tag:hover {
-    background-color: $warning-color;
-    color: white;
-    text-decoration: none;
-}
-
-.tag:hover::after {
-    border-left-color: $warning-color;
+    &::before {
+        background: inherit;
+        border-radius: 10px;
+        box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+        content: '';
+        height: 6px;
+        left: 10px;
+        position: absolute;
+        width: 6px;
+        top: 10px;
+    }
+    &::after {
+        background: $body-background;
+        border-bottom: 13px solid transparent;
+        border-left: 10px solid $base-font-color;
+        border-top: 13px solid transparent;
+        content: '';
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &:hover {
+        background-color: $article-tag-hover-color;
+        color: white;
+        text-decoration: none;
+    }
+    &:hover::after {
+        border-left-color: $article-tag-hover-color;
+    }
 }
 
 #mobile-menu {
@@ -579,103 +541,55 @@ blockquote em {
     @include MQ(M) {
         display: none;
     }
-}
-
-#mobile-toggle {
+    transition: all 500ms ease-in-out;
     cursor: pointer;
     padding: 10px 35px 16px 0px;
+    span,
+    span:before,
+    span:after {
+        transition: all 500ms ease-in-out;
+        cursor: pointer;
+        border-radius: 1px;
+        height: 5px;
+        width: 35px;
+        background: $header-link-color;
+        position: absolute;
+        display: block;
+        content: '';
+    }
+    span:before {
+        top: -10px;
+    }
+    span:after {
+        bottom: -10px;
+    }
+    &.menu-button-scrolled span:before,
+    &.menu-button-scrolled span:after {
+        background: $header-background-color;
+    }
+    &.active {
+        background-color: $global-navigation-background-color-mobile;
+        position: fixed;
+        span {
+            background-color: transparent;
+            &:before,
+            &:after {
+                top: 0;
+            }
+            &:before {
+                @include transform(rotate(45deg));
+            }
+            &:after {
+                @include transform(rotate(-45deg));
+            }
+        }
+    }
 }
 
-#mobile-toggle span,
-#mobile-toggle span:before,
-#mobile-toggle span:after {
-    cursor: pointer;
-    border-radius: 1px;
-    height: 5px;
-    width: 35px;
-    background: $header-link-color;
-    position: absolute;
-    display: block;
-    content: '';
-}
-
-#mobile-toggle.menu-button-scrolled span:before,
-#mobile-toggle.menu-button-scrolled span:after {
-    background: $header-background-color;
-}
-
-#mobile-toggle span:before {
-    top: -10px;
-}
-
-#mobile-toggle span:after {
-    bottom: -10px;
-}
-
-#mobile-toggle span,
-#mobile-toggle span:before,
-#mobile-toggle span:after {
-    transition: all 500ms ease-in-out;
-}
-
-#mobile-toggle.active {
-    background-color: $global-navigation-background-color-mobile;
-    position: fixed;
-}
-
-#mobile-toggle.active span {
-    background-color: transparent;
-}
-
-#mobile-toggle.active span:before,
-#mobile-toggle.active span:after {
-    top: 0;
-}
-
-#mobile-toggle.active span:before {
-    transform: rotate(45deg);
-}
-
-#mobile-toggle.active span:after {
-    transform: rotate(-45deg);
-}
-
-#twitter-icon:hover {
-    fill: $twitter;
-}
-
-#linkedin-icon:hover {
-    fill: $linkedin;
-}
-
-#github-icon:hover {
-    fill: $github;
-}
-
-#youtube-icon:hover {
-    fill: $youtube;
-}
-
-#googleplus-icon:hover {
-    fill: $google-plus;
-}
-
-#rss-icon:hover {
-    fill: $rss;
-}
-
-#facebook-icon:hover {
-    fill: $facebook;
-}
-
-#tumblr-icon:hover {
-    fill: $tumblr;
-}
-
-#pinterest-icon:hover {
-    fill: $pinterest;
-}
-
-#instagram-icon:hover {
-    fill: $instagram;
+//Social Media Icons (embedded SVG) hover fill colors from social media sass map in _variables.scss
+@each $social,
+$socialcolor in $socials {
+    ##{$social}-icon:hover {
+        fill: $socialcolor;
+    }
 }

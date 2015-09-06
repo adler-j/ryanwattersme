@@ -56,3 +56,66 @@ Sticky scroll for global navigation
 //         globalNav.removeClass('sticky-nav');
 //     }
 // });
+
+OLD H1 Sass for Articles
+
+>header {
+     @include display(flex);
+     @include flex-direction(column);
+     @include justify-content(center);
+     margin-bottom: $base-font-size;
+     padding-top: 0px;
+     background-color: $accent-color;
+     padding: 5%;
+     color: white;
+     @include MQ(M) {
+         @include flex-direction(row);
+         @include justify-content(space-between);
+         @include align-items(center);
+         width: 110%;
+         margin-left: -5%;
+         padding-left: 5%;
+         padding-right: 5%;
+         padding-top: 0;
+         padding-bottom: 0;
+     }
+     h1 {
+         @include display(flex);
+         @include justify-content(center);
+         font-family: $article-heading-font-family;
+         text-align: center;
+         font-size: $h1-font-size * .75;
+         color: $article-headline-font-color;
+         @include MQ(M) {
+             text-align: left;
+             width: auto;
+             font-size: $h1-font-size;
+         }
+     }
+     section.publishing-metadata {
+         @include display(flex);
+         @include flex-direction(column);
+         @include justify-content(center);
+         time {
+             font-weight: bold;
+             width: 100%;
+             text-align: center;
+         }
+         ul {
+             @include display(flex);
+             @include justify-content(space-around);
+             @include align-items(center);
+             width: 100%;
+             li {
+                 font-size: $base-font-size * .75;
+                 a {
+                     color: inherit;
+                 }
+             }
+         }
+         @include MQ(M) {
+             @include flex-direction(row);
+             @include flex-wrap(wrap);
+         }
+     }
+ }

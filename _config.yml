@@ -39,11 +39,11 @@ disqus_shortname: ryanwattersme
 
 # GLOBAL NAVIGATION
 
-main_navigation_links:
-# - text: Home
-#   url: 
+main_navigation_links: 
 - text: Articles
   url: articles
+- text: Tutorials
+  url: tutorials
 - text: About
   url: about
 - text: Contact
@@ -55,7 +55,9 @@ main_navigation_links:
 permalink: /:title/
 collections:
   articles:
-    output: true 
+    output: true
+  tutorials:
+    output: true
 
 # BUILD SETTINGS
 
@@ -66,7 +68,6 @@ kramdown:
   syntax_highlighter: rouge
 exclude: [gruntscripts,node_modules,Gruntfile.js,Gemfile,Gemfile.lock,Guardfile,package.json,snippets_and_notes.md]
 include: [scripts]
-
 
 sass:
   sass_dir: _sass

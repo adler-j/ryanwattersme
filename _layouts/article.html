@@ -1,16 +1,16 @@
 --- 
 layout: default 
 ---
-<article>
-    <header>
+
+<header id="article-header"{% if page.main_image %}style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('{{site.baseurl}}/images/{{page.main_image}}')" alt="{{page.main_image_description}}" class="article-header-with-image"{% else %}class="article-header-without-image"{% endif %} >
         <h1>{{ page.title }}</h1>
         <section class="publishing-metadata">
             <time>{{ page.publish_date | date: '%B %d, %Y' }}</time>
         </section>
-    </header>
+</header>
+<article>
     {{ content }}
     <p>{{page.next}}</p>
-
     <footer class="article-footer">
         {% if page.tags %}    
         {% assign tags = page.tags | sort %}
