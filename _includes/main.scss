@@ -297,6 +297,7 @@ article {
         }
         code.hljs {
             padding-left:10%;
+            overflow-x:scroll;
             @include MQ(M) {
                 padding-left: 25vw!important;
             }
