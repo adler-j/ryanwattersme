@@ -283,22 +283,19 @@ article {
         }
     }
     pre {
-        width:120%!important;
-        width:120vw!important;
-        max-width:120%!important;
-        max-width:120vw!important;
-        margin-left:-10%;
-        margin-left:-10vw;
-        overflow-x:auto;
+        width:100%;
+        max-width:100%;
+        overflow:hidden;
         @include MQ(M) {
             width: 150vw!important;
             max-width: 150vw!important;
             position: relative;
             margin-left: -25vw;
+            overflow:;
         }
         code.hljs {
             padding-left:10%;
-            overflow-x:auto;
+            overflow:auto;
             @include MQ(M) {
                 padding-left: 25vw!important;
             }
