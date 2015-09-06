@@ -486,16 +486,8 @@ blockquote em {
 }
 
 .tags {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
     width: 100%;
     max-width: 100%;
-    width: 100vw;
-    max-width: 100vw;
     list-style: none;
     margin: 0;
     overflow: hidden;
