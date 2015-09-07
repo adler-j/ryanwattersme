@@ -300,12 +300,12 @@ aside {
     box-shadow: 2px 2px 15px #ccc;
 }
 
-ul.article-list {
+ul.content-list {
     li {
         a {
             &:hover {
                 text-decoration: none;
-                background-color: $article-list-heading-hover-background-color;
+                background-color: $content-list-heading-hover-background-color;
             }
             @include display(flex);
             @include flex-direction(column);

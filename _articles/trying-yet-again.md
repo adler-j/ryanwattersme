@@ -5,7 +5,7 @@ description: How now brown cow. The big black bug bled blue blood. She sells sea
 layout: article
 categories: foo
 tags: 
-publish_date:
+published_on: 2015-09-04
 comments: true
 insearch: true
 ---
@@ -16,11 +16,35 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore de
 
 #### Subheading
 
-One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it.
+One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. 
+
+{% highlight ruby linenos %}
+def foo
+  puts 'foo'
+end
+{% endhighlight %}
+
+If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it.
+
+### Article Heading
+
+Principiate unshakenly secretive choledochotomy repentant Muscardinus pluperfect Yquem bemuddle mesenterial undecanaphthene operagoer foundation twattler pipper betallow alchemic futurity unsimplified chillumchee Acridiidae teachment pachyacria Madonnaish. Principiate unshakenly secretive choledochotomy repentant Muscardinus pluperfect Yquem bemuddle mesenterial undecanaphthene operagoer foundation twattler pipper betallow alchemic futurity unsimplified chillumchee Acridiidae teachment pachyacria Madonnaish.
 
 
-```javascript
-$(document).ready(function){
-    $('h1').css('color','blue');
+{% highlight css linenos %}
+article {
+    width:90%;
+    margin-right:auto;
+    margin-left:auto;
+    p{
+    font-size:16px;
+    line-height: 24px;
+    margin-bottom:16px;
+    }
+    img{
+    width:100%;
+    min-width:100%;
+    height:auto;
+    }
 }
-```
+{% endhighlight %}

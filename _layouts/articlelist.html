@@ -6,13 +6,13 @@ layout: default
 	<header>
 		<h1>{{page.title}}</h1>
 	</header>
-	<ul class="article-list">
-			{% assign articles = site.articles | sort: 'publish_date' | reverse %}
+	<ul class="content-list">
+			{% assign articles = site.articles | sort: 'published_on' | reverse %}
 	    {% for article in articles %}
 		    {% unless article.url contains "articles/index.html" %}
 		    <li>
 
-		        <a href="{{ article.url }}"><h1>{{ article.title }}</h1><time>{{ article.publish_date | date: '%B %d, %Y' }}</time></a>
+		        <a href="{{ article.url }}"><h1>{{ article.title }}</h1><time>{{ article.published_on | date: '%B %d, %Y' }}</time></a>
 		        
 		        {% if article.description %}
 		            <p>{{ article.description }}</p>

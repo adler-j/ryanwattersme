@@ -6,7 +6,7 @@ layout: article
 main_image: coffee_cup_and_pencil.jpeg
 main_image_description: This is a photo of a coffee cup and a pencil in black and white.
 published: true
-publish_date: 2015-08-30
+published_on: 2015-08-30
 insearch: true
 tags: 
   - javascript
