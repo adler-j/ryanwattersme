@@ -78,6 +78,9 @@ compress_html:
   comments: ["<!-- ", " -->"]
   endings: all 
 
+gems:
+  - jekyll-sitemap
+
 # PROSE.IO SETTINGS CAN BE FOUND IN THE _prose.yml FILE
 
 
