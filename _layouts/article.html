@@ -11,18 +11,9 @@ layout: default
 <article>
     {{ content }}
     <p>{{page.next}}</p>
-    <footer class="article-footer">
-        {% if page.tags %}    
-        {% assign tags = page.tags | sort %}
-            <ul class="tags">
-                {% for tag in tags %}
-                <li><a href="{{site.baseurl}}/{{tag}}" class="tag">{{tag}}</a></li>
-                {% endfor %}
-            </ul>
-        {% endif %}
-    </footer>
+    {% include tagsandnavfooter.html %}
 </article>
-{% if page.comments && site.disqus_shortname %}
+{% if page.comments != false && site.disqus_shortname %}
         <aside>
             <div id="disqus_thread"></div>
         </aside>

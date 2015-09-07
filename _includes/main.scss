@@ -177,9 +177,9 @@ header#article-header {
     &.article-header-with-image {
         width: 100vw;
         max-width: 100vw;
-        @include MQ(M){
-            width:calc(100vw - 300px);
-            max-width:calc(100vw - 300px);
+        @include MQ(M) {
+            width: calc(100vw - 300px);
+            max-width: calc(100vw - 300px);
             min-height: $article-header-m-plus-min-height;
         }
         float: left;
@@ -212,6 +212,7 @@ article {
     display: block;
     width: 90%;
     min-height: 100%;
+    position:relative;
     @include MQ(M) {
         max-width: $content-max-width;
         min-height: 100%;
@@ -287,8 +288,8 @@ article {
 aside {
     #disqus_thread {
         width: 90%;
-        margin-right:auto;
-        margin-left:auto;
+        margin-right: auto;
+        margin-left: auto;
         max-width: $content-max-width;
     }
 }
@@ -471,16 +472,28 @@ blockquote {
     }
 }
 
-.tags {
-    width: 100%;
-    max-width: 100%;
-    list-style: none;
-    margin: 0;
-    overflow: hidden;
-    padding: 0;
-    margin-top: 10px;
-    li {
-        float: left;
+.tags-and-article-footer {
+    position:absolute;
+    clear:both;
+    bottom:0;
+    background:white;
+    @include MQ(M){
+        position:fixed;
+        height:52px;
+        width:100%;
+        width:100vw;
+    }
+    .tags {
+        width: 100%;
+        max-width: 100%;
+        list-style: none;
+        margin: 0;
+        overflow: hidden;
+        padding: 0;
+        margin-top: 10px;
+        li {
+            float: left;
+        }
     }
 }
 
@@ -537,7 +550,7 @@ a.tag {
     position: absolute;
     right: 15px;
     top: 15px;
-    background-color:transparent;
+    background-color: transparent;
     @include MQ(M) {
         display: none;
     }
@@ -594,7 +607,7 @@ $socialcolor in $socials {
     }
 }
 
-embed{
-    width:100%;
-    height:100vh;
+embed {
+    width: 100%;
+    height: 100vh;
 }

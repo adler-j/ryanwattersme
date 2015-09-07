@@ -32,12 +32,15 @@ Monokai Sublime style. Derived from Monokai by noformnocontent http://nn.mit-lic
 .hljs-bullet,
 .hljs-blockquote,
 .hljs-horizontal_rule,
-.hljs-number,
 .hljs-regexp,
 .alias .hljs-keyword,
 .hljs-literal,
 .hljs-hexcolor {
   color: #ae81ff;
+}
+
+.hljs-number {
+  color: $article-coding-lineno-color;
 }
 
 .hljs-tag .hljs-value,

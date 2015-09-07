@@ -1,0 +1,10 @@
+<footer class="tags-and-article-footer">
+  {% if page.tags %}    
+	  {% assign tags = page.tags | sort %}
+	      <ul class="tags">
+	          {% for tag in tags %}
+	          <li><a href="{{site.baseurl}}/{{tag}}" class="tag">{{tag}}</a></li>
+	          {% endfor %}
+	      </ul>
+  {% endif %}
+</footer>
