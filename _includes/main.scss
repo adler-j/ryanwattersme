@@ -6,6 +6,7 @@
 @import 'fonts';
 @import 'monokai_sublime';
 @import 'search';
+@import 'tooltip';
 body {
     display: -webkit-box;
     display: -webkit-flex;
@@ -488,7 +489,7 @@ blockquote {
     -webkit-align-items: center;
     -ms-flex-align: center;
     align-items: center;
-    position: absolute;
+    position: relative;
     clear: both;
     bottom: 0;
     background: $article-sticky-footer-background;
@@ -521,7 +522,7 @@ blockquote {
         display: inline;
         position: relative;
         a {
-            margin:10px;
+            margin: 10px;
             color: $base-font-color;
             svg {
                 min-height: 40px;
@@ -532,32 +533,6 @@ blockquote {
                 vertical-align: middle;
                 margin: 10px;
                 cursor: pointer;
-                &:hover {
-                    fill: #01589B;
-                }
-            }
-            &:hover:after {
-                background: #333;
-                background: rgba(0, 0, 0, .8);
-                border-radius: 5px;
-                bottom: 26px;
-                color: #fff;
-                content: attr(title);
-                left: 20%;
-                padding: 5px 15px;
-                position: absolute;
-                z-index: 98;
-                width: 220px;
-            }
-            &:hover:before {
-                border: solid;
-                border-color: #333 transparent;
-                border-width: 6px 6px 0 6px;
-                bottom: 20px;
-                content: "";
-                left: 50%;
-                position: absolute;
-                z-index: 99;
             }
         }
     }

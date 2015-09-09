@@ -26,7 +26,7 @@
             {% assign prev = links %} 
         {% endfor %} 
         {% if prevurl %}
-        <a href="{{prevurl}}" class="prev" title="{{prevtitle}}">
+        <a href="{{prevurl}}" class="direction" id="previous">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="previous-icon" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                 <g>
                     <g>
@@ -35,11 +35,20 @@
                     </g>
                 </g>
             </svg>
+            <span class="direction-content">
+                <span class="direction-text">
+                    <span class="direction-inner">
+                        <span class="direction-heading">PREVIOUS</span>
+                        {{prevtitle}}
+                        <span class="direction-date">{{prevdate}}</span>
+                    </span>
+                </span>
+            </span>
         </a>
         {% endif %}
         
         {% if nexturl %}
-        <a href="{{nexturl}}" class="next" title="{{nexttitle}}">
+        <a href="{{nexturl}}" class="direction" id="next">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="next-icon" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                 <g>
                     <g>
@@ -48,6 +57,15 @@
                     </g>
                 </g>
             </svg>
+            <span class="direction-content">
+                <span class="direction-text">
+                    <span class="direction-inner">
+                        <span class="direction-heading">NEXT</span>
+                        {{nexttitle}}
+                        <span class="direction-date">{{nextdate}}</span>
+                    </span>
+                </span>
+            </span>
         </a>
         {% endif %}
     </section>
