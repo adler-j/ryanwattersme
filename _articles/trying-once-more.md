@@ -3,15 +3,16 @@ title: Trying Once More
 subtitle: Here is a little subtitle for this post
 description: "Here is my description but I need to get out of here as soon as possible since I'm already late for this wedding."
 layout: article
+main_image: shoes_on_the_beach.jpeg
+main_image_description: This is a photo of some shoes on the beach.
 published_on: 2015-08-23
 comments: true
 published: true
 insearch: true
-tags: ['javascript','jekyll','attempting','flex','wrap']
+tags: ['javascript','jekyll','attempting']
 ---
 
 ### Here is an Article Heading
-
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste.  Testing adding content using Prose.io.
 
@@ -33,7 +34,7 @@ One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your foo
 
 Do commanded an shameless we disposing do. Indulgence ten remarkably nor are impression out. Power is lived means oh every in we quiet. Remainder provision an in intention. Saw supported too joy promotion engrossed propriety. Me till like it sure no sons.
 
-Visit my [about me](about) page.
+Visit my [about me](/about) page.
 
 ```javascript
 $(document).ready(function(){
@@ -44,6 +45,7 @@ $(document).ready(function(){
     })
 });
 ``` 
+
 At every tiled on ye defer do. No attention suspected oh difficult. Fond his say old meet cold find come whom. The sir park sake bred. Wonder matter now can estate esteem assure fat roused. Am performed on existence as discourse is. Pleasure friendly at marriage blessing or. Let's make a list:
 
 * Item 1

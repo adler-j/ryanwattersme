@@ -3,6 +3,8 @@ title: Need More Articles
 subtitle: Subtitle for this particular piece
 description: Snortingly queest monochronous Ehatisaht limbation rottle fellahin testimonializer spinosodenticulate inquisitional Gobelin cuboides Teheran horizontally executorship.
 layout: article
+main_image: speedometer_old_car.jpeg
+main_image_description: A speedometer in an old car.
 insearch: true
 published: true
 published_on: 2015-09-02

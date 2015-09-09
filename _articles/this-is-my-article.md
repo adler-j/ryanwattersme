@@ -1,7 +1,9 @@
 ---
-title: Showing LB how to make a post in Jekyll
-subtitle: This is my subtitle
+title: This is My Article
+subtitle: Here is a subtitle for my article
 layout: article
+main_image: japan_imperial_palace.jpeg
+main_image_description: The Imperial Palace in Tokyo, Japan.
 description: Here is a description. We can make the description a little bit longer so that it uses up all of the space in the list view for articles.
 published_on: 2015-09-07
 insearch: true

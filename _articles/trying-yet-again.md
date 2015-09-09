@@ -3,6 +3,8 @@ title: Trying Yet Again
 subtitle: Playing with date sorting
 description: How now brown cow. The big black bug bled blue blood. She sells seashells by the seashore. There once was an old man who lived in a shoe.
 layout: article
+main_image: guy_holding_camera.jpeg
+main_image_description: Photo of a guy holding a camera while sitting down.
 categories: foo
 tags: [javascript,jekyll,development]
 published_on: 2015-09-04
