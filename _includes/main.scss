@@ -526,6 +526,18 @@ blockquote {
     }
 }
 
+svg#previous-icon{
+    min-height:30px;
+    min-width:30px;
+    fill:$base-font-color;
+    vertical-align:middle;
+    margin:5px;
+    cursor:pointer;
+    &:hover{
+        fill:#01589B;
+    }
+}
+
 // a.tag {
 //     transition:none;
 //     background: $base-font-color;
