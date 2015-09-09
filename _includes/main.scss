@@ -68,7 +68,7 @@ h6 {
         -ms-flex-align: start;
         align-items: flex-start;
         position: fixed;
-        width: 300px;
+        width: 250px;
         height: 100%;
         height: 100vh;
         top: 0;
@@ -155,8 +155,7 @@ nav.global-navigation {
         @include transform(translateX(0));
         display: block;
         width: 220px;
-        margin-right: auto;
-        margin-left: auto;
+        margin-left: 15px;
         position: relative;
         height: auto;
         background: $header-background;
@@ -183,8 +182,8 @@ nav.global-navigation {
     @include MQ(M) {
         display: block;
         float: right;
-        width: calc(100% - 300px);
-        margin-left: 300px;
+        width: calc(100% - 250px);
+        margin-left: 250px;
         margin-top: 0px;
     }
 }
@@ -195,8 +194,8 @@ header#article-header {
         width: 100vw;
         max-width: 100vw;
         @include MQ(M) {
-            width: calc(100vw - 300px);
-            max-width: calc(100vw - 300px);
+            width: calc(100vw - 250px);
+            max-width: calc(100vw - 250px);
             min-height: $article-header-m-plus-min-height;
         }
         float: left;
@@ -377,7 +376,7 @@ body > footer {
     @include MQ(M) {
         position: fixed;
         width: 220px;
-        left: 40px;
+        left: 15px;
         bottom: 0px;
         z-index: 10;
         &.search-open {
@@ -496,7 +495,7 @@ blockquote {
     @include MQ(M) {
         position: fixed;
         height: auto;
-        width: calc(100% - 300px);
+        width: calc(100% - 250px);
         margin: 0;
     }
     .tags {

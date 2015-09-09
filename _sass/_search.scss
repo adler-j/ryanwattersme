@@ -15,7 +15,7 @@ article#search-page {
             height: $search-icon-size-m-plus-screen-sizes;
             position: absolute;
             top: $search-icon-size-m-plus-screen-sizes/2;
-            right: -$search-icon-size-m-plus-screen-sizes/1.25;
+            right: $search-icon-size-m-plus-screen-sizes/2;
             @include transform(translateY(-210px));
         }
         fill:$global-navigation-font-color;
@@ -28,7 +28,7 @@ article#search-page {
             content: 'Search';
             color: white;
             height: $search-icon-size-m-plus-screen-sizes;
-            right:14px;
+            right:50px;
             font-size:$base-font-size * .75;
             position: absolute;
             top: $search-icon-size-m-plus-screen-sizes/2;

@@ -78,8 +78,8 @@ compress_html:
   comments: ["<!-- ", " -->"]
   endings: all 
 
-repository: rdwatters.github.io
-gems: ['jekyll-sitemap','jekyll-github-metadata']
+repository: rdwatters/
+gems: ['jekyll-sitemap']
 
 # PROSE.IO SETTINGS CAN BE FOUND IN THE _prose.yml FILE
 

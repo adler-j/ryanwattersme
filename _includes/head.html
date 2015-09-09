@@ -10,6 +10,7 @@
      {{ include_to_scssify | scssify }}
     </style>
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% include favicons.html %}
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     {%if site.googleplus %}
     <meta rel="publisher" content="//plus.google.com/{{site.googleplus}}">
