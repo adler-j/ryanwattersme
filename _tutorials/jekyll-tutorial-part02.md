@@ -1,10 +1,10 @@
 ---
-title: Jekyll Tutorial Part 1
-subtitle: Here is my subtitle for this blog post
-description: In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.
+title: Jekyll Tutorial Part 2
+subtitle: Jekyll Tutorial Part 2 
+description: In this second part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.
 layout: article
 series: jekyll
-series_no: 01
+series_no: 02
 main_image: jekyll_logo_large.png
 main_image_description: This is a photo of a coffee cup and a pencil in black and white.
 published: true

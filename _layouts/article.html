@@ -5,29 +5,20 @@ layout: default
 <header id="article-header"{% if page.main_image %}style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('{{site.baseurl}}/images/{{page.main_image}}')" alt="{{page.main_image_description}}" class="article-header-with-image"{% else %}class="article-header-without-image"{% endif %} >
         <h1>{{ page.title }}</h1>
         <section class="publishing-metadata">
-            <time>{{ page.publish_date | date: '%B %d, %Y' }}</time>
+            <time>{{ page.published_on | date: '%B %d, %Y' }}</time>
         </section>
 </header>
 <article>
     {{ content }}
     <p>{{page.next}}</p>
-    {% include tagsandnavfooter.html %}
+    
 </article>
-{% if page.comments != false && site.disqus_shortname %}
-        <aside>
-            <div id="disqus_thread"></div>
-        </aside>
-        <script type="text/javascript" async>
-            /* * * CONFIGURATION VARIABLES * * */
-            var disqus_shortname = '{{site.disqus_shortname}}';
-            
-            /* * * DON'T EDIT BELOW THIS LINE * * */
-            (function() {
-                var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-                dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-                (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-            })();
-        </script>
-        <noscript>Please enable JavaScript to view the <a href="//disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-{% endif %}
+{% include articlefooter.html %}
+    {% include disquscomments.html %}
+<script>
+  document.body.onkeyup = function(e){
+  if (e.keyCode == '37') { window.location = '{{prevurl}}'; }
+  if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
+  };
+</script>
 

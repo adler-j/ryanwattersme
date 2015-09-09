@@ -52,11 +52,13 @@ $article-anchor-font-color:$anchor-color;
 $article-blockquote-background-color:#ffffff;
 $article-coding-background:$brand;
 $article-coding-lineno-color:#ffffff;
-$article-tag-hover-color:$warning-color;
 $article-header-background-size:cover;
 $article-header-mobile-min-height:30vh;
 $article-header-m-plus-min-height:50vh;
 $article-header-background-position:center;
+$article-sticky-footer-background:#ffffff;
+$article-tag-color:#01589B;
+$article-tag-hover-color:$accent-color;
 //article headings (note that for mobile screens, these values are reduce to size * .85)
 $h1-font-size: $base-font-size * 1.7; //mobile = $h1-font-size * .75
 $h2-font-size: $base-font-size * 1.5; //mobile = $h2-font-size * .85

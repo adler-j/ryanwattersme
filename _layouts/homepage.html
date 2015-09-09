@@ -1,18 +1,8 @@
 ---
-layout: article
+layout: default
 ---
 
-    <ul class="article-list">
-        {% assign articles = site.articles | sort: 'date' | reverse %}
-        {% for article in articles limit:5 %}
-        {% if article.url != "/articles/index.html" %}
-        <li>
-            <a href="{{ article.url }}"><h1>{{ article.title }}</h1></a>
-            <time>{{ article.date | date: '%B %d, %Y' }}</time>
-            {% if article.description %}
-                <p>{{ article.description }}</p>
-            {% endif %}   
-        </li>
-        {% endif %}
-        {% endfor %}    
-    </ul>
+
+<article>
+    {{content}}
+</article>

@@ -27,7 +27,13 @@ module.exports = function(grunt) {
             }
         },
         watch: {
-            // for scripts, run uglify 
+            // for scripts, run uglify
+            options: {
+                livereload: true,
+            },
+            pages: {
+                files: ['_site/index.html']    
+            }, 
             scripts: {
                 files: ['gruntscripts/*.js'],
                 tasks: ['uglify']

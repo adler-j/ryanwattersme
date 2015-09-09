@@ -7,7 +7,7 @@ layout: default
 		<h1>{{page.title}}</h1>
 	</header>
 	<ul class="content-list">
-			{% assign tutorials = site.tutorials | sort: 'published_on' | reverse %}
+			{% assign tutorials = site.tutorials | sort: 'series_no' %}
 	    {% for tutorial in tutorials %}
 		    {% unless tutorial.url contains "tutorials/index.html" %}
 		    <li>

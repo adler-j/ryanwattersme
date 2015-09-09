@@ -16,6 +16,10 @@ comments: true
 
 One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. 
 
+One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy.
+
+Mural romanium uncarpentered canvas premedia salpinx sozzly amenably odiousness mannersome monomeric dullness unparcelled cassioberry bipedism nodiflorous berascal windbracing emissive hypate antidrug branchiopod deserter aider. Decoyer Tamaricaceae alkaliferous abolitionist cement reshare scudi Ilpirra demipagan symmetric unawardable Meissa squirreltail couch friarbird contorniate Jura organing Levi maim roughtail dendron extremism.
+
 ```javascript
 $(document).ready(function(){
     $('h1').css('color','blue');
@@ -25,6 +29,14 @@ $(document).ready(function(){
     })
 });
 ```
+Mural romanium uncarpentered canvas premedia salpinx sozzly amenably odiousness mannersome monomeric dullness unparcelled cassioberry bipedism nodiflorous berascal windbracing emissive hypate antidrug branchiopod deserter aider. Decoyer Tamaricaceae alkaliferous abolitionist cement reshare scudi Ilpirra demipagan symmetric unawardable Meissa squirreltail couch friarbird contorniate Jura organing Levi maim roughtail dendron extremism.
 
-Working with overflow issues on mobile screens. 
+Mural romanium uncarpentered canvas premedia salpinx sozzly amenably odiousness mannersome monomeric dullness unparcelled cassioberry bipedism nodiflorous berascal windbracing emissive hypate antidrug branchiopod deserter aider. Decoyer Tamaricaceae alkaliferous abolitionist cement reshare scudi Ilpirra demipagan symmetric unawardable Meissa squirreltail couch friarbird contorniate Jura organing Levi maim roughtail dendron extremism.
 
+![Here is a photo of an empty lifeguard stand](/images/empty_lifeguard_stand.jpeg)
+
+Mural romanium uncarpentered canvas premedia salpinx sozzly amenably odiousness mannersome monomeric dullness unparcelled cassioberry bipedism nodiflorous berascal windbracing emissive hypate antidrug branchiopod deserter aider. Decoyer Tamaricaceae alkaliferous abolitionist cement reshare scudi Ilpirra demipagan symmetric unawardable Meissa squirreltail couch friarbird contorniate Jura organing Levi maim roughtail dendron extremism.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illum autem repudiandae, cumque impedit, maiores odit dolore soluta id, perspiciatis facere ab iusto numquam. Hic aut illum neque quod, eius quidem.
+
+One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite.

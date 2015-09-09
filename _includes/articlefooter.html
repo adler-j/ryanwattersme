@@ -1,0 +1,31 @@
+<footer class="content-footer headroom">
+    {% if page.tags %} {% assign tags = page.tags | sort %}
+    <ul class="tags">
+        {% for tag in tags %}
+        <li><a href="{{site.baseurl}}/{{tag}}" class="tag">{{tag}}</a></li>
+        {% endfor %}
+    </ul>
+    {% endif %}
+    <section class="prev-and-next">
+        {% if page.collection %} 
+            {% assign document = site[{{page.collection}}] | sort: 'published_on' | reverse %} 
+        {% endif %} 
+        {% for links in document %} 
+            {% if links.title == page.title %} 
+                {% unless forloop.first %} {% assign prevurl = prev.url %} 
+                    {% assign prevtitle = prev.title %}
+                    {% assign prevdate = prev.published_on %} 
+                {% endunless %} 
+                {% unless forloop.last %} 
+                    {% assign next = document[forloop.index] %} 
+                    {% assign nexturl = next.url %}
+                    {% assign nextdate = next.published_on %} 
+                    {% assign nexttitle = next.title %} 
+                {% endunless %} 
+            {% endif %} 
+            {% assign prev = links %} 
+        {% endfor %} 
+        {% if prevurl %}<a href="{{prevurl}}" class="prev">{{prevdate}} - <strong>{{prevtitle}}</strong></a>{% endif %}
+        <br /> {% if nexturl %}<a href="{{nexturl}}" class="nxt">{{nextdate}} - <strong>{{nexttitle}}</strong></a>{% endif %}
+    </section>
+</footer>

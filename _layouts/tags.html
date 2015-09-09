@@ -1,0 +1,22 @@
+---
+layout: default
+---
+
+<article>
+{% for tag in site.data.tags %}
+	<a href="#" id="{{tag}}" class="tag-filter">{{tag}}</a><br>
+{% endfor %}
+
+	{% assign pages = site.pages %}
+	{% assign articles = site.articles %}
+	{% assign tutorials = site.tutorials %}
+	{% for article in articles %}
+		{% unless article.url == "articles/index.html" %}
+		<section class="{%for tag in article.tags %}{{tag}} {% endfor %} " data-tags="tags">
+			<h3>{{article.title}}</h3>
+			<p>{{article.description}}</p>
+		</section>
+		{% endunless %}
+	{% endfor %}
+
+</article>

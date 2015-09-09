@@ -30,7 +30,7 @@ h6 {
     color: $heading-font-color;
 }
 
-body > header:first-child {
+#header {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -44,6 +44,22 @@ body > header:first-child {
     background-repeat: $header-background-repeat;
     color: $header-link-color;
     z-index: 1;
+    &.headroom {
+        transition: -webkit-transform 200ms linear;
+        transition: transform 200ms linear;
+        position: fixed;
+        &.headroom--pinned {
+            -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+        }
+        &.headroom--unpinned {
+            -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+            @include MQ(M) {
+                transform: translateY(0%);
+            }
+        }
+    }
     @include MQ(M) {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -51,10 +67,10 @@ body > header:first-child {
         -webkit-align-items: flex-start;
         -ms-flex-align: start;
         align-items: flex-start;
+        position: fixed;
         width: 300px;
         height: 100%;
         height: 100vh;
-        position: fixed;
         top: 0;
         left: 0;
         bottom: 0;
@@ -162,14 +178,15 @@ nav.global-navigation {
     min-height: 100%;
     width: 100%;
     width: 100vw;
+    margin-top: 62px;
+    padding-bottom: 15px;
     @include MQ(M) {
         display: block;
         float: right;
         width: calc(100% - 300px);
         margin-left: 300px;
+        margin-top: 0px;
     }
-    padding-bottom: 15px;
-    margin-top: 0px;
 }
 
 header#article-header {
@@ -212,7 +229,7 @@ article {
     display: block;
     width: 90%;
     min-height: 100%;
-    position:relative;
+    position: relative;
     @include MQ(M) {
         max-width: $content-max-width;
         min-height: 100%;
@@ -412,13 +429,6 @@ body > footer {
     }
 }
 
-.site-footnotes {
-    text-align: center;
-    span {
-        font-size: $base-font-size/1.2;
-    }
-}
-
 blockquote {
     display: block;
     background: $article-blockquote-background-color;
@@ -472,16 +482,22 @@ blockquote {
     }
 }
 
-.tags-and-article-footer {
-    position:absolute;
-    clear:both;
-    bottom:0;
-    background:white;
-    @include MQ(M){
-        position:fixed;
-        height:52px;
-        width:100%;
-        width:100vw;
+.content-footer {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    position: absolute;
+    clear: both;
+    bottom: 0;
+    background: $article-sticky-footer-background;
+    @include MQ(M) {
+        position: fixed;
+        height: auto;
+        width: calc(100% - 300px);
+        margin: 0;
     }
     .tags {
         width: 100%;
@@ -494,50 +510,112 @@ blockquote {
         li {
             float: left;
         }
+        @include MQ(M) {
+            max-width: 50%;
+            float: left;
+            margin-left: 15px;
+        }
+    }
+    .prev-and-next {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        a {
+            color: $base-font-color;
+        }
     }
 }
 
+// a.tag {
+//     transition:none;
+//     background: $base-font-color;
+//     color: $article-sticky-footer-background;
+//     display: inline-block;
+//     height: 26px;
+//     line-height: 26px;
+//     padding: 0 20px 0 23px;
+//     position: relative;
+//     margin: 0 10px 10px 0;
+//     text-decoration: none;
+//     font-weight: 600;
+//     &::before {
+//         background: $article-sticky-footer-background;
+//         border-radius: 10px;
+//         box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+//         content: '';
+//         height: 6px;
+//         left: 10px;
+//         position: absolute;
+//         width: 6px;
+//         top: 10px;
+//     }
+//     &::after {
+//         background: white;
+//         border-bottom: 13px solid transparent;
+//         border-left: 10px solid $base-font-color;
+//         border-top: 13px solid transparent;
+//         content: '';
+//         position: absolute;
+//         right: 0;
+//         top: 0;
+//     }
+//     &:hover {
+//         background-color: $article-tag-hover-color;
+//         color: white;
+//         text-decoration: none;
+//     }
+//     &:hover::after {
+//         border-left-color: $article-tag-hover-color;
+//     }
+// }
 a.tag {
-    background: $base-font-color;
-    border-radius: 3px 0 0 3px;
-    color: #999;
     display: inline-block;
-    height: 26px;
-    line-height: 26px;
-    padding: 0 20px 0 23px;
     position: relative;
-    margin: 0 10px 10px 0;
-    text-decoration: none;
-    -webkit-transition: color 0.2s;
+    display: block;
+    height: 16px;
+    width: auto;
+    padding: 1.44px 5.33333px 0 8px;
+    box-sizing: border-box;
+    border-radius: 0 4px 4px 0;
+    background-color: $article-tag-color;
+    color: $article-sticky-footer-background;
     font-weight: 600;
-    &::before {
-        background: inherit;
-        border-radius: 10px;
-        box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
+    font-size: 12.8px;
+    text-transform: lowercase;
+    line-height: 1em;
+    -webkit-transition: background-color .5s;
+    transition: background-color .5s;
+    float: left;
+    margin: 0 0 6px 16px;
+    &:after {
         content: '';
-        height: 6px;
-        left: 10px;
         position: absolute;
-        width: 6px;
-        top: 10px;
+        top: 6px;
+        left: 0;
+        width: 4px;
+        height: 4px;
+        border-radius: 50%;
+        background: $article-sticky-footer-background;
     }
-    &::after {
-        background: $body-background;
-        border-bottom: 13px solid transparent;
-        border-left: 10px solid $base-font-color;
-        border-top: 13px solid transparent;
+    &:before {
+        -webkit-transition: all .5s;
+        transition: all .5s;
         content: '';
-        position: absolute;
-        right: 0;
         top: 0;
-    }
-    &:hover {
-        background-color: $article-tag-hover-color;
-        color: white;
-        text-decoration: none;
-    }
-    &:hover::after {
-        border-left-color: $article-tag-hover-color;
+        right: 100%;
+        border: solid transparent;
+        height: 0;
+        width: 0;
+        position: absolute;
+        pointer-events: none;
+        border-color: rgba(255, 255, 255, 0);
+        border-right-color: $article-tag-color;
+        border-width: 8px;
+        -webkit-transition: border-color .5s;
+        transition: border-color .5s;
+        &:hover {
+            background: $article-tag-hover-color;
+        }
     }
 }
 
@@ -605,9 +683,4 @@ $socialcolor in $socials {
     ##{$social}-icon:hover {
         fill: $socialcolor;
     }
-}
-
-embed {
-    width: 100%;
-    height: 100vh;
 }
