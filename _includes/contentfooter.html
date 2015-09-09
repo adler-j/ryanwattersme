@@ -26,8 +26,7 @@
             {% assign prev = links %} 
         {% endfor %} 
         {% if prevurl %}
-        <a href="{{prevurl}}" class="prev">
-            <span class="hover-content">{{prevtitle}}</span>
+        <a href="{{prevurl}}" class="prev" title="{{prevtitle}}">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="previous-icon" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                 <g>
                     <g>
@@ -40,8 +39,7 @@
         {% endif %}
         
         {% if nexturl %}
-        <a href="{{nexturl}}" class="nxt">
-            <span class="hover-content">{{nexttitle}}</span>
+        <a href="{{nexturl}}" class="next" title="{{nexttitle}}">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="next-icon" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                 <g>
                     <g>
