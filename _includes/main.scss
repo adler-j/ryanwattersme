@@ -521,65 +521,44 @@ blockquote {
         display: -ms-flexbox;
         display: flex;
         a {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
+            flex-direction: column;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
+            justify-content: center;
+            text-align: center;
             color: $base-font-color;
+            svg {
+                min-height: 30px;
+                min-width: 30px;
+                max-height: 30px;
+                max-width: 30px;
+                fill: $base-font-color;
+                vertical-align: middle;
+                margin: auto;
+                cursor: pointer;
+                &:hover {
+                    fill: #01589B;
+                }
+                &:hover + .hover-content {
+                    position:relative;
+                    height:auto;
+                    visibility:visible;
+                }
+            }
+            .hover-content {
+                position:absolute;
+                height:0;
+                visibility:hidden;
+            }
         }
     }
 }
 
-svg#previous-icon{
-    min-height:30px;
-    min-width:30px;
-    fill:$base-font-color;
-    vertical-align:middle;
-    margin:5px;
-    cursor:pointer;
-    &:hover{
-        fill:#01589B;
-    }
-}
-
-// a.tag {
-//     transition:none;
-//     background: $base-font-color;
-//     color: $article-sticky-footer-background;
-//     display: inline-block;
-//     height: 26px;
-//     line-height: 26px;
-//     padding: 0 20px 0 23px;
-//     position: relative;
-//     margin: 0 10px 10px 0;
-//     text-decoration: none;
-//     font-weight: 600;
-//     &::before {
-//         background: $article-sticky-footer-background;
-//         border-radius: 10px;
-//         box-shadow: inset 0 1px rgba(0, 0, 0, 0.25);
-//         content: '';
-//         height: 6px;
-//         left: 10px;
-//         position: absolute;
-//         width: 6px;
-//         top: 10px;
-//     }
-//     &::after {
-//         background: white;
-//         border-bottom: 13px solid transparent;
-//         border-left: 10px solid $base-font-color;
-//         border-top: 13px solid transparent;
-//         content: '';
-//         position: absolute;
-//         right: 0;
-//         top: 0;
-//     }
-//     &:hover {
-//         background-color: $article-tag-hover-color;
-//         color: white;
-//         text-decoration: none;
-//     }
-//     &:hover::after {
-//         border-left-color: $article-tag-hover-color;
-//     }
-// }
 a.tag {
     display: inline-block;
     position: relative;
