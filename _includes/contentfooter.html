@@ -7,14 +7,19 @@
     </ul>
     {% endif %}
     <section class="prev-and-next">
-        {% if page.collection && page.collection == "articles" %} 
-            {% assign document = site[{{page.collection}}] | sort: 'published_on' | reverse %}
-            {% elsif page.collection == "tutorials" %}
-            {% assign document = site[{{page.collection}}] | sort: 'series_no' | reverse %} 
+        {% if page.collection == "articles" %} 
+            {% assign document = site[{{page.collection}}] | sort: 'published_on' %}
+        {% elsif page.collection == "tutorials" %}
+            {% assign document = site[{{page.collection}}] | sort: 'series_no' %} 
         {% endif %} 
+        {% assign documentType = page.collection %}
+        {% capture stringLength %}{{ documentType | size | minus: 1 }}{% endcapture %}
+        {% assign documentType = documentType | truncate: stringLength, '' %}
+        {% assign collectionIndexUrl = page.collection | prepend: "/" | append: "/index.html" %}
         {% for links in document %} 
             {% if links.title == page.title %} 
-                {% unless forloop.first %} {% assign prevurl = prev.url %} 
+                {% unless forloop.first %} 
+                    {% assign prevurl = prev.url %} 
                     {% assign prevtitle = prev.title %}
                     {% assign prevdate = prev.published_on %} 
                 {% endunless %} 
@@ -27,8 +32,8 @@
             {% endif %} 
             {% assign prev = links %} 
         {% endfor %} 
-        {% if prevurl %}
-        <a href="{{prevurl}}" class="direction" id="previous">
+        {% unless prevurl == collectionIndexUrl %}
+        <a href="{{prevurl}}" class="direction previous">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="previous-icon" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                 <g>
                     <g>
@@ -40,17 +45,17 @@
             <span class="direction-content">
                 <span class="direction-text">
                     <span class="direction-inner">
-                        <span class="direction-heading">PREVIOUS</span>
+                        <span class="direction-heading">PREVIOUS {{documentType | upcase}}</span>
                         {{prevtitle}}
                         <span class="direction-date">{{prevdate}}</span>
                     </span>
                 </span>
             </span>
         </a>
-        {% endif %}
+        {% endunless %}
         
-        {% if nexturl and nexturl != "/articles/index.html" and nexturl != "/tutorials/index.html" %}
-        <a href="{{nexturl}}" class="direction" id="next">
+        {% unless nexturl == nil %}
+        <a href="{{nexturl}}" class="direction next">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="next-icon" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                 <g>
                     <g>
@@ -62,13 +67,13 @@
             <span class="direction-content">
                 <span class="direction-text">
                     <span class="direction-inner">
-                        <span class="direction-heading">NEXT</span>
+                        <span class="direction-heading">NEXT {{documentType | upcase}}</span>
                         {{nexttitle}}
                         <span class="direction-date">{{nextdate}}</span>
                     </span>
                 </span>
             </span>
         </a>
-        {% endif %}
+        {% endunless %}
     </section>
 </footer>

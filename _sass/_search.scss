@@ -25,10 +25,10 @@ article#search-page {
     }
     @include MQ(M) {
         &:before {
-            content: 'Search';
+            content: 'Press "S" to Search';
             color: white;
             height: $search-icon-size-m-plus-screen-sizes;
-            right:50px;
+            right:55px;
             font-size:$base-font-size * .75;
             position: absolute;
             top: $search-icon-size-m-plus-screen-sizes/2;

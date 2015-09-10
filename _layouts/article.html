@@ -9,11 +9,9 @@ layout: default
         </section>
 </header>
 <article>
-    {{ content }}
-    <p>{{page.next}}</p>
-    
+    {{ content }}  
 </article>
-{% include contentfooter.html %}
+    {% include contentfooter.html %}
     {% include disquscomments.html %}
 <script>
   document.body.onkeyup = function(e){

@@ -1,5 +1,5 @@
 ---
-layout: article
+layout: page
 title: Contact Me
 description: Contact {{site.site_owner}}
 permalink: /contact/

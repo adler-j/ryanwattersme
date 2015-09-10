@@ -311,6 +311,11 @@ aside {
     }
 }
 
+#form > form > div > div.textarea-wrapper > div:nth-child(1) > div.textarea {
+    border-radius: 0px!important;
+    border: 2px solid $base-font-color!important;
+}
+
 .fluidvids {
     margin-top: $base-font-size;
     -moz-box-shadow: 2px 2px 15px #ccc;
@@ -492,8 +497,8 @@ blockquote {
     position: relative;
     clear: both;
     bottom: 0;
-    width:100%;
-    max-width:100%;
+    width: 100%;
+    max-width: 100%;
     background: $article-sticky-footer-background;
     @include MQ(M) {
         position: fixed;
@@ -523,9 +528,18 @@ blockquote {
         float: right;
         display: inline;
         position: relative;
+        @include MQ(M){
+            width:160px;
+        }
         a {
             margin: 10px;
             color: $base-font-color;
+            &.previous{
+                float:left;
+            }
+            &.next {
+                float: right;
+            }
             svg {
                 min-height: 40px;
                 min-width: 40px;
@@ -533,7 +547,7 @@ blockquote {
                 max-width: 40px;
                 fill: $base-font-color;
                 vertical-align: middle;
-                margin: 10px;
+                margin-left: 5px;
                 cursor: pointer;
             }
         }

@@ -1,5 +1,5 @@
 ---
 layout: articlelist
-title: All Articles
+title: Articles
 insearch: false
 ---
