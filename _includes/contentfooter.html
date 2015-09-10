@@ -7,8 +7,10 @@
     </ul>
     {% endif %}
     <section class="prev-and-next">
-        {% if page.collection %} 
-            {% assign document = site[{{page.collection}}] | sort: 'published_on' | reverse %} 
+        {% if page.collection && page.collection == "articles" %} 
+            {% assign document = site[{{page.collection}}] | sort: 'published_on' | reverse %}
+            {% elsif page.collection == "tutorials" %}
+            {% assign document = site[{{page.collection}}] | sort: 'series_no' | reverse %} 
         {% endif %} 
         {% for links in document %} 
             {% if links.title == page.title %} 
