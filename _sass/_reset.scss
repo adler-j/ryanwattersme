@@ -196,7 +196,7 @@ a {
     -moz-transition: .3s;
     transition: .3s;
     background-color: transparent;
-    cursor: auto;
+    cursor: pointer!important;
 }
 
 a:active,
