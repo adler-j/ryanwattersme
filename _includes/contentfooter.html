@@ -47,7 +47,7 @@
         </a>
         {% endif %}
         
-        {% if nexturl %}
+        {% if nexturl and nexturl != "/articles/index.html" and nexturl != "/tutorials/index.html" %}
         <a href="{{nexturl}}" class="direction" id="next">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="next-icon" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                 <g>
