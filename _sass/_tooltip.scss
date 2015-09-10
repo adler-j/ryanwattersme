@@ -10,8 +10,10 @@
     }
 }
 
-.direction span {
-    display:none;
+@include MQ(MMAX) {
+    .direction span {
+        display: none;
+    }
 }
 
 @include MQ(M) {
