@@ -1,5 +1,5 @@
 /**
- * All user interactions for the site are written in vanilla Javascript so as to preclude the jQuery dependency. This allows for more reliable results when adding the async attribute to both this minified file and to minified jQuery, which is required for Tipue search on the site.
+ * All user interactions for the site are written in vanilla Javascript so as to preclude the jQuery dependency--although the Grunt build/concatenate will pull jquery through first, thereby allowing you to add additional scripts using jq syntax. If you decide to break the scripts up in the "gruntscripts" folder, be careful of adding the "async" attribute on your script tags, since this may have unreliable results if using jquery syntax before the jquery library has been loaded.
  */
 
 window.addEventListener('keyup', keyToggles, false);
@@ -14,7 +14,6 @@ function init() {
     searchToggle.onclick = toggleSearch;
     searchClose.onclick = closeSearch;
     searchInput.onsubmit = preventRefresh;
-    // setCopyrightYear();
     targetBlank();
 }
 //toggle mobile menu/global navigation
@@ -24,14 +23,6 @@ function toggleMenu() {
     globalNav.classList.toggle('mobile-menu');
     menuButton.classList.toggle('active');
 }
-
-// function setCopyrightYear() {
-//     //Add current year to copyright in footer
-//     var date = new Date();
-//     var thisYear = date.getFullYear();
-//     var yearSpan = document.querySelector('.this-year');
-//     yearSpan.innerHTML = thisYear;
-// }
 //add "target=_blank" attribute to all external links on page
 function targetBlank() {
     // remove subdomain of current site's url and setup regex
@@ -46,7 +37,7 @@ function targetBlank() {
         }
     }
 }
-
+//Toggle search overlay on all screen sizes
 function toggleSearch() {
     var searchForm = document.querySelector("#search-form"),
         searchInput = document.getElementById('tipue_search_input'),
@@ -58,9 +49,10 @@ function toggleSearch() {
         searchForm.classList.add('search-open');
         searchFooter.classList.add('search-open');
         searchInput.focus();
+        searchInput.style.outline = "none";
     }
 }
-
+//Close search overlay (specially used for the close icon in the upper-right corner when the search overlay is open)
 function closeSearch() {
     var searchForm = document.querySelector("#search-form"),
         searchInput = document.getElementById('tipue_search_input'),
@@ -71,6 +63,7 @@ function closeSearch() {
     }
 }
 
+//Prevents refreshing of page when the search item is entered into the tipue search input
 function preventRefresh(enterTerm) {
     enterTerm.preventDefault();
 }

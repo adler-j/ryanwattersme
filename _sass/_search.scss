@@ -278,7 +278,6 @@ span.search-term-top {
         color: $base-font-color;
         font-weight: 300;
         margin-top: 35px;
-        border: none;
         border-radius: 0px;
         margin-right: auto;
         margin-left: auto;
@@ -286,7 +285,7 @@ span.search-term-top {
         max-width: $content-max-width;
         border-bottom: 1px solid $base-font-color;
         &:focus {
-            outline: none;
+            outline: none!important;
             color: black;
         }
         @include MQ(M) {
@@ -298,4 +297,9 @@ span.search-term-top {
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+input:focus {
+    outline:none!important;
+    border:none!important;
 }

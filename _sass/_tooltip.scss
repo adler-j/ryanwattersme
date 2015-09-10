@@ -47,7 +47,7 @@
         margin: 0 0 30px -100px;
         cursor: pointer;
         pointer-events: none;
-        font-family: 'Open Sans';
+        font-family: $base-font-family;
         -webkit-font-smoothing: antialiased;
         -webkit-transition: opacity 0.2s 0.2s;
         transition: opacity 0.2s 0.2s;
@@ -92,6 +92,7 @@
     }
     .direction-content span {
         display: block;
+        font-family: $base-font-family;
     }
     .direction-text {
         border-bottom: 10px solid $base-font-color;
@@ -100,6 +101,7 @@
         transform: scale3d(0, 1, 1);
         -webkit-transition: -webkit-transform 0.2s 0.2s;
         transition: transform 0.2s 0.2s;
+        font-family: $base-font-family;
     }
     .direction:hover .direction-text {
         -webkit-transition-delay: 0s;
@@ -114,11 +116,13 @@
         transform: translate3d(0, 100%, 0);
         webkit-transition: -webkit-transform 0.2s;
         transition: transform 0.2s;
+        font-family: $base-font-family;
     }
     .direction-heading,
     .direction-date {
         font-size: 14px;
         font-weight: 300;
+        font-family: $base-font-family;
     }
     .direction-heading {
         border-bottom: 1px solid $white;
