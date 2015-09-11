@@ -32,15 +32,10 @@ h6 {
 }
 
 #header {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    display: block;
     width: 100%;
     width: 100vw;
-    min-height:62px;
+    min-height: 62px;
     position: relative;
     background: $header-background;
     background-repeat: $header-background-repeat;
@@ -96,26 +91,23 @@ h6 {
         width: 220px;
     }
     .site-title {
-        width: 100%;
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-align-content: center;
-        -ms-flex-line-pack: center;
-        align-content: center;
-        -webkit-justify-content: flex-start;
-        -ms-flex-pack: start;
-        justify-content: flex-start;
-        @include MQ(M){
+        width: 50vw;
+        float: left;
+        display: inline;
+        @include MQ(M) {
             -webkit-justify-content: center;
             -ms-flex-pack: center;
             justify-content: center;
+            margin-top: 80px;
+            margin-bottom: 50px;
         }
         #site-logo {
-            min-height: 26px;
-            max-height: 26px;
+            min-height: 30px;
+            max-height: 30px;
             min-width: 50px;
+            max-width: 60px;
             margin: 15px 0px 15px 15px;
+            float: left;
             @include MQ(M) {
                 min-height: 60px;
                 max-height: 60px;
@@ -128,20 +120,16 @@ h6 {
                 stroke-miterlimit: 10;
             }
         }
-        &:after {
-            content: ' Ryan Watters';
+        span {
             display: inline;
+            font-size:14px;
+            line-height:62px;
+            height:62px;
             vertical-align: middle;
-            margin-left: 5px;
-            font-size: $base-font-size * .75;
-            padding-top: $base-font-size;
-            @include MQ(M){
-                content: '';
+            margin-left: 8px;
+            @include MQ(M) {
+                display: none;
             }
-        }
-        @include MQ(M) {
-            margin-top: 80px;
-            margin-bottom: 50px;
         }
     }
 }
@@ -181,8 +169,8 @@ nav.global-navigation {
                 font-weight: 500;
             }
         }
-        @include MQ(M){
-            margin-top:0;
+        @include MQ(M) {
+            margin-top: 0;
         }
     }
     @include MQ(M) {
