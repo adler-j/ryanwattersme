@@ -21,12 +21,12 @@
                 {% unless forloop.first %} 
                     {% assign prevurl = prev.url %} 
                     {% assign prevtitle = prev.title %}
-                    {% assign prevdate = prev.published_on %} 
+                    {% assign prevdate = prev.published_on | date: '%B %d, %Y' %} 
                 {% endunless %} 
                 {% unless forloop.last %} 
                     {% assign next = document[forloop.index] %} 
                     {% assign nexturl = next.url %}
-                    {% assign nextdate = next.published_on %} 
+                    {% assign nextdate = next.published_on | date: '%B %d, %Y' %} 
                     {% assign nexttitle = next.title %} 
                 {% endunless %} 
             {% endif %} 

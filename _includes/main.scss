@@ -228,13 +228,15 @@ article {
     @include transition(.4s);
     display: block;
     width: 90%;
-    min-height: 100%;
+    height: 100%;
     position: relative;
     @include MQ(M) {
         max-width: $content-max-width;
-        min-height: 100%;
-        padding-right: auto;
-        padding-left: auto;
+        padding-right:auto;
+        padding-left:auto;
+        margin-bottom:10px;
+        padding-bottom:10px;
+        height:auto;
     }
     margin-right: auto;
     margin-left: auto;
@@ -305,9 +307,15 @@ article {
 aside {
     #disqus_thread {
         width: 90%;
+        position: relative;
         margin-right: auto;
         margin-left: auto;
         max-width: $content-max-width;
+        @include MQ(M){
+            margin-bottom:50px;
+            margin-top:10px;
+            padding-top:0px;
+        }
     }
 }
 
@@ -488,12 +496,17 @@ blockquote {
 }
 
 .content-footer {
+    &.search-open {
+        .prev-and-next a svg {
+            display: none;
+        }
+    }
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
-    -webkit-align-items: center;
-    -ms-flex-align: center;
-    align-items: center;
+    -webkit-flex-direction:column;
+    -ms-flex-direction:column;
+    flex-direction:column;
     position: relative;
     clear: both;
     bottom: 0;
@@ -501,10 +514,17 @@ blockquote {
     max-width: 100%;
     background: $article-sticky-footer-background;
     @include MQ(M) {
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-align-items: center;
+        -ms-flex-align: center;
+        align-items: center;
         position: fixed;
         height: auto;
         width: calc(100% - 250px);
         margin: 0;
+        z-index:10;
     }
     .tags {
         width: 100%;
@@ -524,31 +544,53 @@ blockquote {
         }
     }
     .prev-and-next {
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around;
         transition: all .4s ease-in-out;
-        float: right;
-        display: inline;
-        position: relative;
-        @include MQ(M){
-            width:160px;
-        }
         a {
-            margin: 10px;
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            margin-top: 5px;
+            margin-bottom: 5px;
             color: $base-font-color;
-            &.previous{
-                float:left;
-            }
-            &.next {
-                float: right;
-            }
             svg {
-                min-height: 40px;
-                min-width: 40px;
-                max-height: 40px;
-                max-width: 40px;
+                width: 35px;
+                height: 35px;
+                max-width: 35px;
+                max-height: 35px;
                 fill: $base-font-color;
                 vertical-align: middle;
-                margin-left: 5px;
                 cursor: pointer;
+            }
+        }
+        @include MQ(M) {
+            -webkit-flex-direction: row;
+            -ms-flex-direction: row;
+            flex-direction: row;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
+            align-items: center;
+            -webkit-justify-content: flex-end;
+            -ms-flex-pack: end;
+            justify-content: flex-end;
+            position: relative;
+            width: 50%;
+            text-align: right;
+            margin: 5px 100px 5px 0px;
+            float: right;
+            a {
+                display: inline;
+                &.next {
+                    float: right;
+                }
+                &.previous {
+                    margin-right: 50px;
+                }
             }
         }
     }

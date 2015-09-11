@@ -2,7 +2,12 @@
  * All user interactions for the site are written in vanilla Javascript so as to preclude the jQuery dependency--although the Grunt build/concatenate will pull jquery through first, thereby allowing you to add additional scripts using jq syntax. If you decide to break the scripts up in the "gruntscripts" folder, be careful of adding the "async" attribute on your script tags, since this may have unreliable results if using jquery syntax before the jquery library has been loaded.
  */
 
-window.addEventListener('keyup', keyToggles, false);
+window.addEventListener('keyup', function(event) {
+    var openSearchForm = document.getElementById('search-form');
+    if ((event.keyCode == 83 && !(openSearchForm.classList.contains('search-open'))) || (event.keyCode == 27 && openSearchForm.classList.contains('search-open'))) {
+        toggleSearch();
+    }
+}, false);
 window.onload = init;
 
 function init() {
@@ -12,7 +17,7 @@ function init() {
         searchInput = document.getElementById('search-form');
     mobileToggle.onclick = toggleMenu;
     searchToggle.onclick = toggleSearch;
-    searchClose.onclick = closeSearch;
+    searchClose.onclick = toggleSearch;
     searchInput.onsubmit = preventRefresh;
     targetBlank();
 }
@@ -42,46 +47,18 @@ function toggleSearch() {
     var searchForm = document.querySelector("#search-form"),
         searchInput = document.getElementById('tipue_search_input'),
         searchFooter = document.getElementById('footer');
-    if (searchForm.classList.contains('search-open')) {
-        searchForm.classList.remove('search-open');
-        searchFooter.classList.remove('search-open');
-    } else {
-        searchForm.classList.add('search-open');
-        searchFooter.classList.add('search-open');
+    searchForm.classList.toggle('search-open');
+    searchInput.classList.toggle('search-open');
+    searchFooter.classList.toggle('search-open');
+    if (searchInput.classList.contains('search-open')) {
         searchInput.focus();
-        searchInput.style.outline = "none";
+    }
+    if (document.querySelector('.content-footer')) {
+        var contentFooter = document.querySelector('.content-footer');
+        contentFooter.classList.toggle('search-open');
     }
 }
-//Close search overlay (specially used for the close icon in the upper-right corner when the search overlay is open)
-function closeSearch() {
-    var searchForm = document.querySelector("#search-form"),
-        searchInput = document.getElementById('tipue_search_input'),
-        searchFooter = document.getElementById('footer');
-    if (searchForm.classList.contains('search-open')) {
-        searchForm.classList.remove('search-open');
-        searchFooter.classList.remove('search-open');
-    }
-}
-
 //Prevents refreshing of page when the search item is entered into the tipue search input
 function preventRefresh(enterTerm) {
     enterTerm.preventDefault();
 }
-
-function keyToggles(event) {
-    var openSearchForm = document.getElementById('search-form'),
-        openSearchInput = document.getElementById('tipue_search_input'),
-        openSearchFooter = document.getElementById('footer');
-    if (event.keyCode == 27 && openSearchForm.classList.contains('search-open')) {
-        openSearchForm.classList.remove('search-open');
-        openSearchFooter.classList.remove('search-open');
-    } else if (event.keyCode == 83 && !(openSearchForm.classList.contains('search-open'))) {
-        openSearchForm.classList.add('search-open');
-        openSearchFooter.classList.add('search-open');
-        openSearchInput.value = "";
-        openSearchInput.focus();
-    }
-}
-
-
-
