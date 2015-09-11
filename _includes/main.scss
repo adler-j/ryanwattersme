@@ -130,7 +130,7 @@ nav.global-navigation {
     position: fixed;
     top: 0;
     right: 0;
-    background-color: $global-navigation-background-color-mobile;
+    background: $global-navigation-background-mobile;
     @include transform(translateX(100%));
     &.mobile-menu {
         @include transform(translateX(0));
@@ -689,7 +689,7 @@ a.tag {
         background: $header-background;
     }
     &.active {
-        background-color: $global-navigation-background-color-mobile;
+        background: $global-navigation-background-mobile;
         position: fixed;
         span {
             background-color: transparent;
