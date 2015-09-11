@@ -526,6 +526,7 @@ blockquote {
         width: calc(100% - 250px);
         margin: 0;
         z-index:10;
+        box-shadow: 0 0 8px rgba(91,95,114,.5);
     }
     .tags {
         width: 100%;
