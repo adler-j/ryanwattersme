@@ -79,8 +79,12 @@ h6 {
 }
 
 .site-title-container {
-    @include display(flex);
-    @include flex-wrap(wrap);
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
     text-align: left;
     transition: all .4s ease-in-out;
     color: $site-title-font-color;
@@ -92,7 +96,12 @@ h6 {
     }
     .site-title {
         width: 100%;
-        text-align: center;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-align-content: center;
+        -ms-flex-line-pack: center;
+        align-content: center;
         #site-logo {
             min-height: 26px;
             max-height: 26px;
@@ -109,6 +118,14 @@ h6 {
                 stroke-width: 10;
                 stroke-miterlimit: 10;
             }
+        }
+        &:after {
+            content: ' Ryan Watters';
+            display:inline;
+            vertical-align:middle;
+            margin-left:5px;
+            font-size:$base-font-size * .75;
+            padding-top:$base-font-size;
         }
         @include MQ(M) {
             margin-top: 80px;
@@ -142,6 +159,7 @@ nav.global-navigation {
         width: 100%;
         margin-right: auto;
         margin-left: auto;
+        margin-top: -14vh;
         li {
             width: 100%;
             text-align: center;
@@ -232,12 +250,12 @@ article {
     position: relative;
     @include MQ(M) {
         max-width: $content-max-width;
-        padding-right:auto;
-        padding-left:auto;
-        margin-bottom:10px;
-        padding-bottom:10px;
-        min-height:auto;
-        height:auto;
+        padding-right: auto;
+        padding-left: auto;
+        margin-bottom: 10px;
+        padding-bottom: 10px;
+        min-height: auto;
+        height: auto;
     }
     margin-right: auto;
     margin-left: auto;
@@ -312,10 +330,10 @@ aside {
         margin-right: auto;
         margin-left: auto;
         max-width: $content-max-width;
-        @include MQ(M){
-            margin-bottom:50px;
-            margin-top:10px;
-            padding-top:0px;
+        @include MQ(M) {
+            margin-bottom: 50px;
+            margin-top: 10px;
+            padding-top: 0px;
         }
     }
 }
@@ -525,8 +543,8 @@ blockquote {
         height: auto;
         width: calc(100% - 250px);
         margin: 0;
-        z-index:10;
-        box-shadow: 0 0 8px rgba(91,95,114,.5);
+        z-index: 10;
+        box-shadow: 0 0 8px rgba(91, 95, 114, .5);
     }
     .tags {
         width: 100%;
