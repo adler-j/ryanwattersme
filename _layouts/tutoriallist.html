@@ -9,7 +9,7 @@ layout: default
 	<ul class="content-list">
 			{% assign tutorials = site.tutorials | sort: 'series_no' %}
 	    {% for tutorial in tutorials %}
-		    {% unless tutorial.url contains "tutorials/index.html" %}
+		    {% unless tutorial.url == "/tutorials/" %}
 		    <li>
 
 		        <a href="{{ tutorial.url }}"><h1>{{ tutorial.title }}</h1><time>{{ tutorial.published_on | date: '%B %d, %Y' }}</time></a>

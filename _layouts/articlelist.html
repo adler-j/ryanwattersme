@@ -9,7 +9,7 @@ layout: default
 	<ul class="content-list">
 			{% assign articles = site.articles | sort: 'published_on' | reverse %}
 	    {% for article in articles %}
-		    {% unless article.url contains "articles/index.html" %}
+		    {% unless article.url == "/articles/" %}
 		    <li>
 
 		        <a href="{{ article.url }}"><h1>{{ article.title }}</h1><time>{{ article.published_on | date: '%B %d, %Y' }}</time></a>

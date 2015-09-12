@@ -225,9 +225,9 @@ header#article-header {
         min-height: $article-header-mobile-min-height;
         margin-left: 0px;
         padding-left: 0px;
-        background-size: $article-header-background-size;
+        background-size: $article-header-background-image-size;
         background-repeat:no-repeat;
-        background-position:$article-header-background-position;
+        background-position:$article-header-background-image-position;
         h1,
         section {
             color: $article-headline-font-color;
@@ -432,13 +432,6 @@ body > footer {
         @include align-items(center);
         @include justify-content(center);
         padding: 5px;
-        img {
-            max-width: 100px;
-            max-height: 100px;
-            border-radius: 10px;
-            margin-right: 10px;
-            @include filter(grayscale(100%));
-        }
         ul {
             @include display(flex);
             @include flex-wrap(wrap);

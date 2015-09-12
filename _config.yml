@@ -64,7 +64,7 @@ markdown: kramdown
 kramdown:
   auto_ids: false
   input: GFM
-  syntax_highlighter: rouge
+  syntax_highlighter: pygments
 
 exclude: [gruntscripts,node_modules,Gruntfile.js,Gemfile,Gemfile.lock,Guardfile,package.json,snippets_and_notes.md]
 include: [scripts]

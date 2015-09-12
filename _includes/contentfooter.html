@@ -8,9 +8,9 @@
     {% endif %}
     <section class="prev-and-next">
         {% if page.collection == "articles" %} 
-            {% assign document = site[{{page.collection}}] | sort: 'published_on' %}
+            {% assign document = site[page.collection] | sort: 'published_on' %}
         {% elsif page.collection == "tutorials" %}
-            {% assign document = site[{{page.collection}}] | sort: 'series_no' %} 
+            {% assign document = site[page.collection] | sort: 'series_no' %} 
         {% endif %} 
         {% assign documentType = page.collection %}
         {% capture stringLength %}{{ documentType | size | minus: 1 }}{% endcapture %}
@@ -34,6 +34,7 @@
         {% endfor %} 
         {% unless prevurl == collectionIndexUrl %}
         <a href="{{prevurl}}" class="direction previous">
+
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="previous-icon" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                 <g>
                     <g>
