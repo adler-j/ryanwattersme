@@ -15,11 +15,10 @@ module.exports = function(grunt) {
                     optimizationLevel: 3,
                     svgoPlugins: [{
                         removeViewBox: false
-                    }],
-                    use: [mozjpeg()]
+                    }]
                 },
                 files: { // Dictionary of files
-                    'images/optimized/': ['images/*.png', 'images/*.jpg', 'images/*.jpeg']
+                    'assets/images/optimized/': ['assets/images/*.png', 'assets/images/*.jpg', 'assets/images/*.jpeg']
                 }
             }
         },
@@ -43,3 +42,6 @@ module.exports = function(grunt) {
     grunt.registerTask('default', ['watch']);
     grunt.registerTask('optimize', ['imagemin']);
 };
+
+// ,
+//                     use: [mozjpeg()]
