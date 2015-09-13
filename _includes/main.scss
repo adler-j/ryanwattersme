@@ -513,6 +513,7 @@ blockquote {
 
 .content-footer {
     &.search-open {
+        display:none;
         .prev-and-next a svg {
             display: none;
         }
