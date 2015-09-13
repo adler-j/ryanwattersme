@@ -1,8 +1,8 @@
 ---
 layout: article
-published_on: 
-title: 
-description: 
+published_on: 2015-10-02
+title: First Stackedit Post From Scratch
+description: This is a post I'm putting together using the Stackedit browser-based HTML/Markdown editor, which can be found at https://stackedit.io/editor. 
 comments: true
 insearch: true
 main_image:
