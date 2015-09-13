@@ -1,6 +1,7 @@
 ---
 layout:article
 title: Writing Some Content on StackEdit
+published_on: 2015-10-02
 ---
 
 
