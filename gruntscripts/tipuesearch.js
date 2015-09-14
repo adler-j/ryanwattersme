@@ -7,7 +7,7 @@ var tipuesearch_stop_words = ["a", "about", "above", "after", "again", "against"
 
 var tipuesearch_replace = {'words': [
      {'word': 'js', 'replace_with': 'javascript'},
-     {'word': 'jqeury', 'replace_with': 'jquery'}
+     {'word': 'github pages', 'replace_with': 'github'}
 ]};
 
 
@@ -55,7 +55,7 @@ var tipuesearch_string_13 = 'characters or more';
             'newWindow': false,
             'showURL': true,
             'showTitleCount': false,
-            'minimumLength': 3,
+            'minimumLength': 2,
             'descriptiveWords': 25,
             'highlightTerms': true,
             'highlightEveryTerm': true,
@@ -319,7 +319,7 @@ var tipuesearch_string_13 = 'characters or more';
                         }
 
                         if (show_replace == 1) {
-                            out += '<div id="tipue_search_warning">' + tipuesearch_string_2 + ' ' + d + '. ' + tipuesearch_string_3 + ' <a id="tipue_search_replaced">' + d_r + '</a></div>';
+                            out += '<div id="tipue_search_warning">' + tipuesearch_string_2 + ' ' + d + '.<a id="tipue_search_replaced"> ' + tipuesearch_string_3 + ' ' + d_r + '?</a></div>';
                         }
                         if (c == 1) {
                             out += '<div id="tipue_search_results_count">' + tipuesearch_string_4 + ' for <span class="search-term-top">' + d + '</span></div>';

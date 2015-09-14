@@ -79,6 +79,12 @@ article#search-page {
     color: #555;
 }
 
+#tipue_search_replaced {
+    font-style:italic;
+    font-weight:bold;
+    color:$warning-color;
+}
+
 span.search-term-top {
     color: $results-highlight-color;
     font-weight: bold;
