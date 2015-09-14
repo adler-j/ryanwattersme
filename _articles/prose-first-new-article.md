@@ -10,8 +10,6 @@ insearch: true
 description: Trying again with prose.io
 ---
 
-
-
 ### Heading
 
 Here is some dummy text.
