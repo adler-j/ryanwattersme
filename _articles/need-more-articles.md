@@ -8,6 +8,7 @@ main_image_description: A speedometer in an old car.
 insearch: true
 published: true
 published_on: 2015-09-02
+comments: true
 tags: 
   - food
   - travel
