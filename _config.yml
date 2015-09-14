@@ -106,9 +106,9 @@ prose:
           help: "Write a short description of this article. Try to keep it to less than 200 characters."
       - name: "published_on"
         field:
-          label: "Publish date for the article"
+          label: "When this article was published"
           element: "text"
-          placeholder: "Put your date in as yyyy-mm-dd"
+          placeholder: "Enter as yyyy-mm-dd"
       - name: "published"
         field:
           element: "checkbox"
