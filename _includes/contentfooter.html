@@ -8,9 +8,9 @@
     {% endif %}
     <section class="prev-and-next">
         {% if page.collection == "articles" %} 
-            {% assign document = site.collections.articles.docs | sort: 'published_on' %}
+            {% assign document = site[page.collection] | sort: 'published_on' %}
         {% elsif page.collection == "tutorials" %}
-            {% assign document = site.collections.tutorials.docs | sort: 'series_no' %} 
+            {% assign document = site[page.collection] | sort: 'series_no' %} 
         {% endif %} 
         {% assign documentType = page.collection %}
         {% capture stringLength %}{{ documentType | size | minus: 1 }}{% endcapture %}
