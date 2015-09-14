@@ -1,7 +1,7 @@
 ---
 layout: article
 title: New Title for the Prose Piece
-published_on: "2015-10-05"
+published_on: 2015-10-05
 published: true
 main_image: coffee_cup_and_pencil.jpeg
 main_image_description: A photo of a coffee cup and a pencil.
