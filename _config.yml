@@ -92,7 +92,7 @@ prose:
         field:
           element: "hidden"
           value: "CURRENT_DATETIME"
-      - name: "Title"
+      - name: "title"
         field:
           element: "text"
           label: "Title"
@@ -102,7 +102,7 @@ prose:
         field:
           label: "Publish date for the article"
           element: "text"
-          placeholder: "yyyy-mm-dd"
+          placeholder: "Put your date in as yyyy-mm-dd"
       - name: "published"
         field:
           element: "checkbox"
