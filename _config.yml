@@ -92,7 +92,7 @@ prose:
       - name: "updated_date"
         field:
           element: "hidden"
-          value: "CURRENT_DATETIME"
+          value: CURRENT_DATETIME
       - name: "title"
         field:
           element: "text"
