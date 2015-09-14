@@ -1,7 +1,6 @@
 
 siteurl: https://ryansportfol.io
 media: "/assets/images/""
-rooturl: 
 metadata:
 	_articles:
     - name: "updated_date"
