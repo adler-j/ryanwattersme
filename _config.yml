@@ -81,6 +81,55 @@ compress_html:
 repository: rdwatters/
 gems: ['jekyll-sitemap']
 
-# PROSE.IO SETTINGS CAN BE FOUND IN THE _prose.yml FILE
+# PROSE.IO SETTINGS
+
+prose:
+  siteurl: https://ryansportfol.io
+  media: "/assets/images/""
+  metadata:
+    _articles:
+      - name: "updated_date"
+        field:
+          element: "hidden"
+          value: "CURRENT_DATETIME"
+      - name: "Title"
+        field:
+          element: "text"
+          label: "Title"
+          placeholder: "Enter the title of this article"
+          value: ""
+      - name: "published_on"
+        field:
+          element: "text"
+          placeholder: "yyyy-mm-dd"
+      - name: "published"
+        field:
+          element: "checkbox"
+          label: "Publish now"
+        help: "Keep this unchecked if you do not want to   publish the article right now"
+      - name: "layout"
+        field: 
+          element: "hidden"
+          value: "article"
+      - name: "main_image"
+        field:
+          element: "text"
+          label: "Article image"
+          value: "Full filename of the image you want to use"
+      - name: "main_image_description"
+        field:
+          element: "text"
+          label: "Article image description"
+        value: "Write a descrption of the image used for the   article"
+      - name: "comments"
+        field:
+          element: "checkbox"
+          label: "Include comments?"
+          value: "true"
+      - name: "insearch"
+        field:
+          element: "checkbox"
+          label: "Include in search?"
+          value: "true"
 
 
