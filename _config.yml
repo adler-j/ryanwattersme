@@ -51,12 +51,13 @@ main_navigation_links:
 
 # COLLECTIONS
 
-permalink: pretty
+
 collections:
   articles:
     output: true
   tutorials:
     output: true
+permalink: pretty
 
 # BUILD SETTINGS
 
@@ -98,6 +99,11 @@ prose:
           label: "Title"
           placeholder: "Enter the title of this article"
           value: ""
+      - name: "description"
+        field:
+          element: "textarea"
+          label: "Article Description"
+          help: "Write a short description of this article. Try to keep it to less than 200 characters."
       - name: "published_on"
         field:
           label: "Publish date for the article"
