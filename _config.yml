@@ -85,7 +85,7 @@ gems: ['jekyll-sitemap']
 
 prose:
   siteurl: https://ryansportfol.io
-  media: "/assets/images/""
+  media: "/assets/images/"
   metadata:
     _articles:
       - name: "updated_date"
