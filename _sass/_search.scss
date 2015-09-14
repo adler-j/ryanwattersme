@@ -10,32 +10,36 @@ article#search-page {
 #search-overlay-toggle {
     #search-icon {
         height: $global-navigation-font-size-mobile;
-        @include transform(translateY($global-navigation-font-size-mobile/5));
+        -webkit-transform: translateY($global-navigation-font-size-mobile/5);
+        transform: translateY($global-navigation-font-size-mobile/5);
         @include MQ(M) {
             height: $search-icon-size-m-plus-screen-sizes;
             position: absolute;
             top: $search-icon-size-m-plus-screen-sizes/2;
             right: $search-icon-size-m-plus-screen-sizes/2;
-            @include transform(translateY(-210px));
+            -webkit-transform: translateY(-210px);
+            transform: translateY(-210px);
         }
         fill:$global-navigation-font-color;
     }
     &:after {
-        content:' Search';
+        content: ' Search';
     }
     @include MQ(M) {
         &:before {
             content: 'Press "S" to Search';
             color: white;
             height: $search-icon-size-m-plus-screen-sizes;
-            right:55px;
-            font-size:$base-font-size * .75;
+            right: 55px;
+            font-size: $base-font-size * .75;
             position: absolute;
             top: $search-icon-size-m-plus-screen-sizes/2;
-            @include transform(translateY(-205px));
+            -webkit-transform: translateY(-205px);
+            transform: translateY(-205px);
+
         }
         &:after {
-            content:'';
+            content: '';
         }
     }
 }
@@ -287,9 +291,9 @@ span.search-term-top {
         border-bottom: 1px solid $base-font-color;
         &:focus {
             outline: none!important;
-            border-left:none!important;
-            border-right:none!important;
-            border-top:none!important;
+            border-left: none!important;
+            border-right: none!important;
+            border-top: none!important;
             color: black;
             border-bottom: 1px solid $base-font-color;
         }
@@ -305,6 +309,6 @@ span.search-term-top {
 }
 
 input:focus {
-    outline:none!important;
-    border:none!important;
+    outline: none!important;
+    border: none!important;
 }

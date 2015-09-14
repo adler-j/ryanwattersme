@@ -1,13 +1,15 @@
+
 siteurl: https://ryansportfol.io
 media: /assets/images/
 
 
-
-- name: "creation_date"
-  field:
-    element: "hidden"
-    value: "CURRENT_DATETIME"
-- name: "publish_date"
-  field:
-    element: "text"
-    placeholder: "yyyy-mm-dd"
+metadata:
+	_articles:
+    - name: "creation_date"
+      field:
+        element: "hidden"
+        value: "CURRENT_DATETIME"
+    - name: "published_on"
+      field:
+        element: "text"
+        placeholder: "yyyy-mm-dd"

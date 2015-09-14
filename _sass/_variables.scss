@@ -17,7 +17,8 @@ $results-highlight-color:orange;
 $white:#ffffff;
 
 //Backgrounds - body, global nav/header
-$body-background:url('/assets/images/backgrounds/bg_concrete.png');
+// $body-background:url('/assets/images/backgrounds/bg_concrete.png');
+$body-background:$white;
 $header-background:url('/assets/images/backgrounds/bg_darkdenim.png');
 $header-background-repeat:repeat;
 $base-font-size:16px;
@@ -59,7 +60,7 @@ $article-header-background-image-position:center left;
 $article-header-mobile-min-height:50vh;
 $article-header-m-plus-min-height:50vh;
 
-$article-sticky-footer-background:#ffffff;
+$article-sticky-footer-background:$white;
 $article-tag-color:#01589B;
 $article-tag-hover-color:$accent-color;
 //article headings (note that for mobile screens, these values are reduce to size * .85)
@@ -78,9 +79,6 @@ $search-result-heading-font-size: $base-font-size * 1.3;
 $search-result-heading-font-family: $base-font-family;
 $search-result-heading-font-color: $base-font-color;
 $search-icon-size-m-plus-screen-sizes: 32px;
-
-
-
 
 //Handy Social Media Colors SASS Map; see main.scss for the @each directive
 $socials: (twitter:#00aced, github:#AB5B50, youtube:#bb0000, googleplus:#dd4b39, facebook:#3b5998, rss:#FF6600, pinterest:#cb2027, instagram:#517fa4, linkedin:#007bb6, vine:#00bf8f, tumblr:#32506d, vimeo:#aad450, foursquare:#0072b1); 

@@ -51,7 +51,7 @@ main_navigation_links:
 
 # COLLECTIONS
 
-permalink: /:title/
+permalink: pretty
 collections:
   articles:
     output: true

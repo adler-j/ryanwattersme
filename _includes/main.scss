@@ -277,10 +277,13 @@ article {
         max-width: $content-max-width;
         padding-right: auto;
         padding-left: auto;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
         padding-bottom: 10px;
         min-height: auto;
         height: auto;
+        + aside {
+            margin-bottom:10px;
+        }
     }
     margin-right: auto;
     margin-left: auto;
