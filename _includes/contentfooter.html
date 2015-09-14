@@ -8,30 +8,30 @@
     {% endif %}
     <section class="prev-and-next">
         {% if page.collection == "articles" %} 
-            {% assign document = site.articles | sort: 'published_on' %}
+            {% assign document = site.collections.articles.docs | sort: 'published_on' %}
         {% elsif page.collection == "tutorials" %}
-            {% assign document = site.tutorials | sort: 'series_no' %} 
+            {% assign document = site.collections.tutorials.docs | sort: 'series_no' %} 
         {% endif %} 
         {% assign documentType = page.collection %}
         {% capture stringLength %}{{ documentType | size | minus: 1 }}{% endcapture %}
         {% assign documentType = documentType | truncate: stringLength, '' %}
         {% assign collectionIndexUrl = page.collection | prepend: "/" | append: "/index.html" %}
-            {% for links in document %} 
-                {% if links.title == page.title %} 
-                    {% unless forloop.first %} 
-                        {% assign prevurl = prev.url %} 
-                        {% assign prevtitle = prev.title %}
-                        {% assign prevdate = prev.published_on | date: '%B %d, %Y' %} 
-                    {% endunless %} 
-                    {% unless forloop.last %} 
-                        {% assign next = document[forloop.index] %} 
-                        {% assign nexturl = next.url %}
-                        {% assign nextdate = next.published_on | date: '%B %d, %Y' %} 
-                        {% assign nexttitle = next.title %} 
-                    {% endunless %} 
-                {% endif %} 
-                {% assign prev = links %} 
-            {% endfor %} 
+        {% for links in document %} 
+            {% if links.title == page.title %} 
+                {% unless forloop.first %} 
+                    {% assign prevurl = prev.url %} 
+                    {% assign prevtitle = prev.title %}
+                    {% assign prevdate = prev.published_on | date: '%B %d, %Y' %} 
+                {% endunless %} 
+                {% unless forloop.last %} 
+                    {% assign next = document[forloop.index] %} 
+                    {% assign nexturl = next.url %}
+                    {% assign nextdate = next.published_on | date: '%B %d, %Y' %} 
+                    {% assign nexttitle = next.title %} 
+                {% endunless %} 
+            {% endif %} 
+            {% assign prev = links %} 
+        {% endfor %} 
         {% unless prevurl == collectionIndexUrl %}
         <a href="{{prevurl}}" class="direction previous">
 
