@@ -8,6 +8,10 @@ main_image_description: A photo of a coffee cup and a pencil.
 comments: true
 insearch: true
 description: Trying again with prose.io
+tags: 
+- javascript
+- prose.io
+- github
 ---
 
 ### Heading

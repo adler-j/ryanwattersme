@@ -6,7 +6,10 @@ layout: article
 main_image: guy_holding_camera.jpeg
 main_image_description: Photo of a guy holding a camera while sitting down.
 categories: foo
-tags: [javascript,jekyll,development]
+tags:
+- javascript
+- jekyll
+- static
 published_on: 2015-09-04
 comments: true
 insearch: true

@@ -26,7 +26,7 @@ If you don't watch it people will force you one way or the other, into doing wha
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis deserunt omnis illo, iusto esse placeat, atque quisquam accusantium. Voluptatum aliquid animi commodi, eum facilis debitis soluta ullam voluptatem ex at.
 
-![Here is an image of something cool](/images/japan_imperial_palace.jpeg)
+![Here is an image of the Imperial Palace](/assets/images/japan_imperial_palace.jpeg)
 
 Do commanded an shameless we disposing do. Indulgence ten remarkably nor are impression out. Power is lived means oh every in we quiet. Remainder provision an in intention. Saw supported too joy promotion engrossed propriety. Me till like it sure no sons.
 
@@ -57,7 +57,7 @@ Remain lively hardly needed at do by. Two you fat downs fanny three. True mr gon
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, quaerat aut. Sequi perspiciatis iste doloribus quasi itaque dignissimos, nobis quaerat fuga ipsum debitis quibusdam accusantium explicabo enim doloremque qui tempora.
 
-![Here is an image of something cool](/images/coffee_cup_and_pencil.jpeg) 
+![Here is an image of something cool](/assets/images/coffee_cup_and_pencil.jpeg) 
 
 Was justice improve age article between. No projection as up preference reasonably delightful celebrated. Preserved and abilities assurance tolerably breakfast use saw. And painted letters forming far village elderly compact. Her rest west each spot his and you knew. Estate gay wooded depart six far her. Of we be have it lose gate bred. Do separate removing or expenses in. Had covered but evident chapter matters anxious.
 

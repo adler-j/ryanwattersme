@@ -62,3 +62,24 @@ function toggleSearch() {
 function preventRefresh(enterTerm) {
     enterTerm.preventDefault();
 }
+
+$(document).ready(function() {
+    $('.tag-ajax').on('click', function() {
+        $.ajax({
+            url: '../assets/scripts/tags.json',
+            dataType: 'json',
+            type: 'GET',
+            cache: false,
+            success: function(data) {
+                var theList = $('.matching-items');
+                var theItems = [];
+                $(data.siteContent).each(function(index, value) {
+                    theItems.push("'<li>' + ");
+                });
+            }
+        });
+    });
+});
+
+
+console.log("Yo!");

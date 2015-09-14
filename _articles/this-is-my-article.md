@@ -7,7 +7,9 @@ main_image_description: The Imperial Palace in Tokyo, Japan.
 description: Here is a description. We can make the description a little bit longer so that it uses up all of the space in the list view for articles.
 published_on: 2015-09-07
 insearch: true
-tags: [hello, hi, awesome]
+tags:
+- japan
+- github
 ---
 
 ### Here is a Heading in an Article

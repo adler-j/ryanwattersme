@@ -1,0 +1,54 @@
+{
+    "siteContent": [
+    	
+    		
+    	
+    		
+        {"articleTitle": "Need More Articles",
+        "articleImage": "speedometer_old_car.jpeg",
+        "articleUrl": "/articles/need-more-articles.html",
+        "articleTags": "food, travel, japan"
+    }, 
+    	
+    	
+    		
+        {"articleTitle": "First Article Created on Prose.io",
+        "articleImage": "coffee_cup_and_pencil.jpeg",
+        "articleUrl": "/articles/prose-first-new-article.html",
+        "articleTags": "javascript, prose.io, github"
+    }, 
+    	
+    	
+    		
+        {"articleTitle": "Testing Stuff",
+        "articleImage": "speedometer_old_car.jpeg",
+        "articleUrl": "/articles/testing-stuff.html",
+        "articleTags": "food, travel, japan"
+    }, 
+    	
+    	
+    		
+        {"articleTitle": "This is My Article",
+        "articleImage": "japan_imperial_palace.jpeg",
+        "articleUrl": "/articles/this-is-my-article.html",
+        "articleTags": "japan, github"
+    }, 
+    	
+    	
+    		
+        {"articleTitle": "Trying Once More",
+        "articleImage": "shoes_on_the_beach.jpeg",
+        "articleUrl": "/articles/trying-once-more.html",
+        "articleTags": "javascript, jekyll, attempting"
+    }, 
+    	
+    	
+    		
+        {"articleTitle": "Trying Yet Again",
+        "articleImage": "guy_holding_camera.jpeg",
+        "articleUrl": "/articles/trying-yet-again.html",
+        "articleTags": "javascript, jekyll, static"
+    }
+    	
+    	]
+}
