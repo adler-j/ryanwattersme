@@ -108,7 +108,7 @@ prose:
           element: "checkbox"
           label: "Publish now"
           help: "Keep this unchecked if you do not want to   publish the article right now"
-          alue: "true"
+          value: "true"
       - name: "layout"
         field: 
           element: "hidden"
