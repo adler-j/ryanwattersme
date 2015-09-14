@@ -6,7 +6,7 @@ layout: article
 main_image: shoes_on_the_beach.jpeg
 main_image_description: This is a photo of some shoes on the beach.
 published_on: 2015-08-01
-comments: false
+comments: true
 published: true
 insearch: true
 tags: ['javascript','jekyll','attempting']

@@ -11,9 +11,7 @@ layout: compress
             {{ content }}
         </main>
     {% include footer.html %}
-    <script src="{{site.baseurl}}/assets/scripts/script.min.js" async></script>
-    <script src="{{site.baseurl}}/assets/scripts/highlight.pack.min.js" async></script>
-
+    <script src="{{site.baseurl}}/assets/scripts/script.min.js" async></script>   
 <script async>
 	// Exclude local development with the following if statement
 	if(document.location.hostname !== 'localhost'){
@@ -27,12 +25,7 @@ layout: compress
 	}
 </script>
 {% if page.layout == "article" %}
-<script async >
-  document.body.onkeyup = function(e){
-  if (e.keyCode == '37') { window.location = '{{prevurl}}'; }
-  if (e.keyCode == '39') { window.location = '{{nexturl}}'; }
-  };
-</script>
+
 {% endif %}
 </body>
 
