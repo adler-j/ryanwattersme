@@ -63,7 +63,7 @@ permalink: /:collection/:path/
 # BUILD SETTINGS
 
 markdown: kramdown
-highlighter: rouge
+highlighter: pygments
 kramdown:
   auto_ids: false
   footnote_nr: 1
