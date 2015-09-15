@@ -4,10 +4,9 @@
 @import 'mixins';
 @import 'layout';
 @import 'fonts';
-// @import 'monokai_sublime';
-// Following is for use with KramdownPygments only
 @import 'solarized-pygments';
 @import 'search';
+@import 'animations';
 @import 'tooltip';
 body {
     display: -webkit-flex;
@@ -818,100 +817,63 @@ $socialcolor in $socials {
     }
 }
 
-//Taken from animate.css
-//
-.animated {
-    -webkit-animation-duration: 1s;
-    animation-duration: 1s;
-    -webkit-animation-fill-mode: both;
-    animation-fill-mode: both;
-}
-
-@-webkit-keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-
-@-webkit-keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-
-@keyframes fadeInUp {
-    from {
-        opacity: 0;
-        -webkit-transform: translate3d(0, 100%, 0);
-        transform: translate3d(0, 100%, 0);
-    }
-    to {
-        opacity: 1;
-        -webkit-transform: none;
-        transform: none;
-    }
-}
-
-.fadeInUp {
-    -webkit-animation-name: fadeInUp;
-    animation-name: fadeInUp;
-}
-
 #matching-items {
     margin-top: 25px;
-}
-
-li.json-tag-match {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    width: 100%;
-    height: auto;
-    clear: both;
-    position: relative;
-    margin-bottom: 10px;
-    a {
-        background-position: center left;
-        background-size: cover;
-        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
-        background-repeat: no-repeat;
-        &:hover {
-            text-decoration: none;
-        }
-        h5 {
-            font-size: $base-font-size * 1.1;
-            margin-bottom: 0px;
-            margin: 5px;
-            color: $white;
-        }
-        // img.tag-list {
-        //     width: 20%;
-        //     max-height: 100%;
-        //     position: absolute;
-        //     top: 0px;
-        //     left: 0px;
-        //     display: block;
-        //     margin-right: 5px;
-        //     border-radius: 5px;
-        // }
-        p {
-            margin: 5px;
-            color: $white;
-            font-weight:normal;
+    li {
+        width: 100%;
+        height: auto;
+        clear: both;
+        position: relative;
+        margin-bottom: 10px;
+        background-color:$white;
+        box-shadow:2px 2px 15px #ccc;
+        a {
+            display: -webkit-flex;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-align-items: flex-start;
+            -ms-flex-align: flex-start;
+            align-items: flex-start;
+            &:hover {
+                text-decoration: none;
+            }
+            img {
+                display: none;
+                @include MQ(M) {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    max-width: 40%;
+                    height: auto;
+                    box-shadow:none;
+                }
+            }
+            section {
+                display: -webkit-flex;
+                display: -ms-flexbox;
+                display: flex;
+                -webkit-flex-direction: column;
+                -ms-flex-direction: column;
+                flex-direction: column;
+                -webkit-align-items: flex-start;
+                -ms-flex-align: start;
+                align-items: flex-start;
+                h5 {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    font-size: $base-font-size * 1.1;
+                    margin-bottom: 0px;
+                    margin: 5px;
+                }
+                p {
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
+                    display: flex;
+                    margin: 5px;
+                    font-weight: normal;
+                }
+            }
         }
     }
 }

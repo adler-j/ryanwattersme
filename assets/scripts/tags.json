@@ -2,6 +2,28 @@
 insearch: false
 ---
 
-{"siteContent": [{% for article in site.articles %}{% if article.tags %}{% for tag in article.tags %}{"articleTitle": "{{article.title}}","articleImage": "{{article.main_image}}",  "articleUrl": "{{article.url}}","articleTag": "{{tag}}","articleDescription": "{{article.description}}","articleImage":"{{article.main_image}}"},{% endfor %}{% endif %}{% endfor %}{% for tutorial in site.tutorials %}{% if tutorial.tags %}{% for tag in tutorial.tags %}{"articleTitle": "{{tutorial.title}}","articleImage": "{{tutorial.main_image}}","articleUrl": "{{tutorial.url}}","articleTag": "{{tag}}","articleDescription": "{{tutorial.description}}",  "articleImage":"{{tutorial.main_image}}"}{% if forloop.rindex0 > 0 %},{% endif %}{% endfor %}{% if forloop.rindex0 > 0 %}, {% endif %}{% endif %}{% endfor %}]}
+{"siteContent": [
+{% for article in site.articles %}
+	{% if article.tags %}
+		{% for tag in article.tags %}
+			{"title": "{{article.title}}",
+				"image": "{{article.main_image}}",  
+					"url": "{{article.url}}",
+					"tag": "{{tag | slugify}}",
+					"description": "{{article.description}}"},
+		{% endfor %}
+	{% endif %}
+	{% endfor %}
+{% for tutorial in site.tutorials %}
+	{% if tutorial.tags %}
+		{% for tag in tutorial.tags %}
+			{"title": "{{tutorial.title}}",
+			 "image": "{{tutorial.main_image}}",
+			 "url": "{{tutorial.url}}",
+			 "tag": "{{tag | slugify}}",
+			 "description": "{{tutorial.description}}"}
+	{% if forloop.rindex0 > 0 %},{% endif %}
+{% endfor %}{% if forloop.rindex0 > 0 %}, {% endif %}{% endif %}
+{% endfor %}]}
 
 
