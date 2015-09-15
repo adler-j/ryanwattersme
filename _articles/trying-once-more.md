@@ -24,7 +24,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur at, inventore 
 
 Ginning prochein secretmonger sulphated Harpyia Ramanan nonlimiting blackguardism incudostapedial reaffirmer phylactocarp portionize interlocutrix Adonis uredinium invalorous invination commensal fibrosis Zalophus contorniate Phytoptidae haplopetalous Gastornis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, ex impedit eligendi. Facere labore architecto nisi ducimus corrupti, dicta aperiam, nostrum laboriosam eligendi sunt suscipit repellat a corporis exercitationem quibusdam?
 
-```javascript
+{% highlight javascript %}
 window.onload = init;
 
 function init(){
@@ -35,7 +35,7 @@ function init(){
 function theFunction(){
     console.log("You just created a function that loads with the page!");
 }
-```
+{% endhighlight %}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi omnis nostrum dignissimos officia. Consequuntur error deserunt, numquam laborum laudantium tempore eligendi, incidunt minus iste tenetur ad quis cum quia, hic. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate in dicta, dolores obcaecati necessitatibus quam ipsam tenetur vel deserunt autem, provident a maxime repellendus eius aut, fugit, facilis iure dolor.
 

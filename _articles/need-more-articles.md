@@ -25,7 +25,7 @@ Diplonephridia retinacular grumous reinventor certifiable movability covet benev
 
 Diplonephridia retinacular grumous reinventor certifiable movability covet benevolent heredosyphilis gauteite bestiality teleologic rivalable unrodded argentate diaphanously limiter demiangel fogged heritrix stephanic hypothenal subpopulation anticonductor.
 
-```javascript
+{% highlight javascript %}
 // Require Gulp
 var gulp = require('gulp');
 var sass = require('gulp-sass');
@@ -33,20 +33,7 @@ var sourcemaps = require('gulp-sourcemaps');
 var prefix = require('gulp-autoprefixer');
 var watch = require('gulp-watch');
 var critical = require('critical');
-
-// Gulp Sass Task 
-gulp.task('sass', function() {
-  gulp.src('_sass/**/*.scss')    
-    .pipe(sourcemaps.init()) // Initializes sourcemaps
-    .pipe(sass({
-      errLogToConsole: true,
-      outputStyle: "compressed"
-      }))
-    .pipe(prefix('last 2 versions', '> 1%', 'ie 8'))
-    .pipe(sourcemaps.write('./')) // Writes sourcemaps into the CSS file
-    .pipe(gulp.dest('css'));
-})
-```
+{% endhighlight %}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos error, pariatur. Consequatur architecto, quod necessitatibus sequi quia repellat nostrum nulla aut unde, tempora, eligendi corporis ea accusamus quo, possimus soluta!
 
