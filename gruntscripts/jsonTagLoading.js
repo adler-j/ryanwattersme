@@ -1,6 +1,5 @@
 document.addEventListener('DOMContentLoaded',checkHash(),false);
 window.addEventListener('click', function(event) {
-				event.preventDefault();
     if (event.target.classList.contains("tag-ajax")) {
         var clickedTag = event.target.id;
         getMatches(clickedTag);
