@@ -7,7 +7,7 @@ main_image: coffee_cup_and_pencil.jpeg
 main_image_description: A photo of a coffee cup and a pencil.
 comments: true
 insearch: true
-description: Trying again with prose.io
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio.
 tags: 
 - javascript
 - prose.io

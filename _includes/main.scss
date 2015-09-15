@@ -790,12 +790,11 @@ ul.site-tags {
         display: inline;
         margin: 5px;
         font-family: $base-font-family;
-        font-size: $base-font-size * 1.2;
+        font-size: $base-font-size;
         width: auto;
         text-align: center;
-        padding: 5px;
-        border: 1px solid $base-font-color;
-        background-color: #01589B;
+        padding: 3px 5px;
+        background-color: $button-color;
         color: $white;
         &:hover {
             background-color: tomato;
@@ -806,7 +805,7 @@ ul.site-tags {
             font-weight: 300;
         }
         @include MQ(M) {
-            font-size: $base-font-size * 1.5;
+            font-size: $base-font-size * 1.2;
         }
     }
 }
@@ -876,31 +875,43 @@ $socialcolor in $socials {
     margin-top: 25px;
 }
 
-li.json-tag {
-    display: block;
-    with: 100%;
+li.json-tag-match {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
     height: auto;
     clear: both;
     position: relative;
+    margin-bottom: 10px;
     a {
+        background-position: center left;
+        background-size: cover;
+        background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        background-repeat: no-repeat;
+        &:hover {
+            text-decoration: none;
+        }
         h5 {
             font-size: $base-font-size * 1.1;
             margin-bottom: 0px;
-            margin-top: 5px;
-            margin-left: 22%;
+            margin: 5px;
+            color: $white;
         }
-        img.tag-list {
-            width: 20%;
-            max-height: 100%;
-            position: absolute;
-            top: 0px;
-            left: 0px;
-            display: block;
-            margin-right: 5px;
-            border-radius: 5px;
+        // img.tag-list {
+        //     width: 20%;
+        //     max-height: 100%;
+        //     position: absolute;
+        //     top: 0px;
+        //     left: 0px;
+        //     display: block;
+        //     margin-right: 5px;
+        //     border-radius: 5px;
+        // }
+        p {
+            margin: 5px;
+            color: $white;
+            font-weight:normal;
         }
-    }
-    p {
-        margin-left: 22%;
     }
 }
