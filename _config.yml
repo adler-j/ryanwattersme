@@ -54,9 +54,11 @@ main_navigation_links:
 collections:
   articles:
     output: true
+    permalink: /:collection/:path/
   tutorials:
     output: true
-permalink: pretty
+    permalink: /:collection/:path/
+permalink: /:collection/:path/
 
 # BUILD SETTINGS
 
