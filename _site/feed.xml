@@ -5,9 +5,9 @@
     <description>My name is Ryan. This is my website.</description>
     <link>https://ryansportfol.io/</link>
     <atom:link href="https://ryansportfol.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 14 Sep 2015 20:30:36 -0500</pubDate>
-    <lastBuildDate>Mon, 14 Sep 2015 20:30:36 -0500</lastBuildDate>
-    <generator>Jekyll v3.0.0.pre.beta8</generator>
+    <pubDate>Mon, 14 Sep 2015 20:45:36 -0500</pubDate>
+    <lastBuildDate>Mon, 14 Sep 2015 20:45:36 -0500</lastBuildDate>
+    <generator>Jekyll v2.5.3</generator>
     
   </channel>
 </rss>
