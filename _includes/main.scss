@@ -873,16 +873,34 @@ $socialcolor in $socials {
     animation-name: fadeInUp;
 }
 
+#matching-items{
+    margin-top:25px;
+}
+
 li.json-tag {
     display:block;
     with:100%;
+    height:auto;
     clear:both;
+    a{
+        h5{
+            font-size:$base-font-size * 1.1;
+            margin-bottom:0px;
+            margin-top:5px;
+            margin-left:22%;
+        }
+    }
+    p {
+        margin-left:22%;
+    }
 }
 
 img.tag-list {
-    max-width:20%;
-    max-height:80px;
-    float:left;
+    width:20%;
+    max-height:100%;
+    position:absolute;
+    top:0px;
+    left:0px;
     display:block;
     margin-right:5px;
     border-radius:5px;
