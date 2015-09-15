@@ -1,7 +1,7 @@
 ---
 title: Jekyll Tutorial Part 2
 subtitle: Jekyll Tutorial Part 2 
-description: In this second part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.
 layout: article
 series: jekyll
 series_no: 02
