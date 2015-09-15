@@ -13,6 +13,7 @@ tags:
   - food
   - travel
   - japan
+  - awesome
 ---
 
 ### Heading

@@ -5,12 +5,19 @@ insearch: false
 {
     "siteContent": [
     	{% for article in site.articles %}
-    		{% unless article.url == "/articles/" %}
-        {"articleTitle": "{{article.title}}",
-        "articleImage": "{{article.main_image}}",
-        "articleUrl": "{{article.url}}",
-        "articleTags": "{% for tag in article.tags %}{{tag}}{% if forloop.rindex0 > 0 %}, {% endif %}{% endfor %}"
-    }{% if forloop.rindex0 > 0 %}, {% endif %}
-    	{% endunless %}
-    	{% endfor %}]
+            {% if article.tags %}
+            {% for tag in article.tags %}
+                    {"articleTitle": "{{article.title}}",
+                    "articleImage": "{{article.main_image}}",
+                    "articleUrl": "{{article.url}}",
+                    "articleTag": "{{tag}}",
+                    "articleDescription": "{{article.description}}",
+                    "articleImage":"{{article.main_image}}"
+                    }{% if forloop.rindex0 > 0 %},{% endif %}
+    	   {% endfor %}
+           {% if forloop.rindex0 > 0 %}, {% endif %}
+           {% endif %}
+        {% endfor %}]
 }
+
+

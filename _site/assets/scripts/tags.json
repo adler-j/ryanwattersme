@@ -1,54 +1,182 @@
 {
     "siteContent": [
     	
-    		
-    	
-    		
-        {"articleTitle": "Need More Articles",
-        "articleImage": "speedometer_old_car.jpeg",
-        "articleUrl": "/articles/need-more-articles/",
-        "articleTags": "food, travel, japan"
-    }, 
-    	
-    	
-    		
-        {"articleTitle": "First Article Created on Prose.io",
-        "articleImage": "coffee_cup_and_pencil.jpeg",
-        "articleUrl": "/articles/prose-first-new-article/",
-        "articleTags": "javascript, prose.io, github"
-    }, 
-    	
-    	
-    		
-        {"articleTitle": "Testing Stuff",
-        "articleImage": "speedometer_old_car.jpeg",
-        "articleUrl": "/articles/testing-stuff/",
-        "articleTags": "food, travel, japan"
-    }, 
-    	
-    	
-    		
-        {"articleTitle": "This is My Article",
-        "articleImage": "japan_imperial_palace.jpeg",
-        "articleUrl": "/articles/this-is-my-article/",
-        "articleTags": "japan, github"
-    }, 
-    	
-    	
-    		
-        {"articleTitle": "Trying Once More",
-        "articleImage": "shoes_on_the_beach.jpeg",
-        "articleUrl": "/articles/trying-once-more/",
-        "articleTags": "javascript, jekyll, attempting"
-    }, 
-    	
-    	
-    		
-        {"articleTitle": "Trying Yet Again",
-        "articleImage": "guy_holding_camera.jpeg",
-        "articleUrl": "/articles/trying-yet-again/",
-        "articleTags": "javascript, jekyll, static"
-    }
-    	
-    	]
+            
+        
+            
+            
+                    {"articleTitle": "Need More Articles",
+                    "articleImage": "speedometer_old_car.jpeg",
+                    "articleUrl": "/articles/need-more-articles/",
+                    "articleTag": "food",
+                    "articleDescription": "Snortingly queest monochronous Ehatisaht limbation rottle fellahin testimonializer spinosodenticulate inquisitional Gobelin cuboides Teheran horizontally executorship.",
+                    "articleImage":"speedometer_old_car.jpeg"
+                    },
+    	   
+                    {"articleTitle": "Need More Articles",
+                    "articleImage": "speedometer_old_car.jpeg",
+                    "articleUrl": "/articles/need-more-articles/",
+                    "articleTag": "travel",
+                    "articleDescription": "Snortingly queest monochronous Ehatisaht limbation rottle fellahin testimonializer spinosodenticulate inquisitional Gobelin cuboides Teheran horizontally executorship.",
+                    "articleImage":"speedometer_old_car.jpeg"
+                    },
+    	   
+                    {"articleTitle": "Need More Articles",
+                    "articleImage": "speedometer_old_car.jpeg",
+                    "articleUrl": "/articles/need-more-articles/",
+                    "articleTag": "japan",
+                    "articleDescription": "Snortingly queest monochronous Ehatisaht limbation rottle fellahin testimonializer spinosodenticulate inquisitional Gobelin cuboides Teheran horizontally executorship.",
+                    "articleImage":"speedometer_old_car.jpeg"
+                    }
+    	   
+           , 
+           
+        
+            
+            
+                    {"articleTitle": "First Article Created on Prose.io",
+                    "articleImage": "coffee_cup_and_pencil.jpeg",
+                    "articleUrl": "/articles/prose-first-new-article/",
+                    "articleTag": "javascript",
+                    "articleDescription": "Trying again with prose.io",
+                    "articleImage":"coffee_cup_and_pencil.jpeg"
+                    },
+    	   
+                    {"articleTitle": "First Article Created on Prose.io",
+                    "articleImage": "coffee_cup_and_pencil.jpeg",
+                    "articleUrl": "/articles/prose-first-new-article/",
+                    "articleTag": "prose.io",
+                    "articleDescription": "Trying again with prose.io",
+                    "articleImage":"coffee_cup_and_pencil.jpeg"
+                    },
+    	   
+                    {"articleTitle": "First Article Created on Prose.io",
+                    "articleImage": "coffee_cup_and_pencil.jpeg",
+                    "articleUrl": "/articles/prose-first-new-article/",
+                    "articleTag": "github",
+                    "articleDescription": "Trying again with prose.io",
+                    "articleImage":"coffee_cup_and_pencil.jpeg"
+                    }
+    	   
+           , 
+           
+        
+            
+            
+                    {"articleTitle": "Testing Stuff",
+                    "articleImage": "speedometer_old_car.jpeg",
+                    "articleUrl": "/articles/testing-stuff/",
+                    "articleTag": "food",
+                    "articleDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus tenetur.",
+                    "articleImage":"speedometer_old_car.jpeg"
+                    },
+    	   
+                    {"articleTitle": "Testing Stuff",
+                    "articleImage": "speedometer_old_car.jpeg",
+                    "articleUrl": "/articles/testing-stuff/",
+                    "articleTag": "travel",
+                    "articleDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus tenetur.",
+                    "articleImage":"speedometer_old_car.jpeg"
+                    },
+    	   
+                    {"articleTitle": "Testing Stuff",
+                    "articleImage": "speedometer_old_car.jpeg",
+                    "articleUrl": "/articles/testing-stuff/",
+                    "articleTag": "japan",
+                    "articleDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus tenetur.",
+                    "articleImage":"speedometer_old_car.jpeg"
+                    },
+    	   
+                    {"articleTitle": "Testing Stuff",
+                    "articleImage": "speedometer_old_car.jpeg",
+                    "articleUrl": "/articles/testing-stuff/",
+                    "articleTag": "awesome",
+                    "articleDescription": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit accusamus tenetur.",
+                    "articleImage":"speedometer_old_car.jpeg"
+                    }
+    	   
+           , 
+           
+        
+            
+            
+                    {"articleTitle": "This is My Article",
+                    "articleImage": "japan_imperial_palace.jpeg",
+                    "articleUrl": "/articles/this-is-my-article/",
+                    "articleTag": "japan",
+                    "articleDescription": "Here is a description. We can make the description a little bit longer so that it uses up all of the space in the list view for articles.",
+                    "articleImage":"japan_imperial_palace.jpeg"
+                    },
+    	   
+                    {"articleTitle": "This is My Article",
+                    "articleImage": "japan_imperial_palace.jpeg",
+                    "articleUrl": "/articles/this-is-my-article/",
+                    "articleTag": "github",
+                    "articleDescription": "Here is a description. We can make the description a little bit longer so that it uses up all of the space in the list view for articles.",
+                    "articleImage":"japan_imperial_palace.jpeg"
+                    }
+    	   
+           , 
+           
+        
+            
+            
+                    {"articleTitle": "Trying Once More",
+                    "articleImage": "shoes_on_the_beach.jpeg",
+                    "articleUrl": "/articles/trying-once-more/",
+                    "articleTag": "javascript",
+                    "articleDescription": "Here is my description but I need to get out of here as soon as possible since I'm already late for this wedding.",
+                    "articleImage":"shoes_on_the_beach.jpeg"
+                    },
+    	   
+                    {"articleTitle": "Trying Once More",
+                    "articleImage": "shoes_on_the_beach.jpeg",
+                    "articleUrl": "/articles/trying-once-more/",
+                    "articleTag": "jekyll",
+                    "articleDescription": "Here is my description but I need to get out of here as soon as possible since I'm already late for this wedding.",
+                    "articleImage":"shoes_on_the_beach.jpeg"
+                    },
+    	   
+                    {"articleTitle": "Trying Once More",
+                    "articleImage": "shoes_on_the_beach.jpeg",
+                    "articleUrl": "/articles/trying-once-more/",
+                    "articleTag": "attempting",
+                    "articleDescription": "Here is my description but I need to get out of here as soon as possible since I'm already late for this wedding.",
+                    "articleImage":"shoes_on_the_beach.jpeg"
+                    }
+    	   
+           , 
+           
+        
+            
+            
+                    {"articleTitle": "Trying Yet Again",
+                    "articleImage": "guy_holding_camera.jpeg",
+                    "articleUrl": "/articles/trying-yet-again/",
+                    "articleTag": "javascript",
+                    "articleDescription": "How now brown cow. The big black bug bled blue blood. She sells seashells by the seashore. There once was an old man who lived in a shoe.",
+                    "articleImage":"guy_holding_camera.jpeg"
+                    },
+    	   
+                    {"articleTitle": "Trying Yet Again",
+                    "articleImage": "guy_holding_camera.jpeg",
+                    "articleUrl": "/articles/trying-yet-again/",
+                    "articleTag": "jekyll",
+                    "articleDescription": "How now brown cow. The big black bug bled blue blood. She sells seashells by the seashore. There once was an old man who lived in a shoe.",
+                    "articleImage":"guy_holding_camera.jpeg"
+                    },
+    	   
+                    {"articleTitle": "Trying Yet Again",
+                    "articleImage": "guy_holding_camera.jpeg",
+                    "articleUrl": "/articles/trying-yet-again/",
+                    "articleTag": "static",
+                    "articleDescription": "How now brown cow. The big black bug bled blue blood. She sells seashells by the seashore. There once was an old man who lived in a shoe.",
+                    "articleImage":"guy_holding_camera.jpeg"
+                    }
+    	   
+           
+           
+        ]
 }
+
+
