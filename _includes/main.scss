@@ -4,7 +4,9 @@
 @import 'mixins';
 @import 'layout';
 @import 'fonts';
-@import 'monokai_sublime';
+// @import 'monokai_sublime';
+// Following is for use with KramdownPygments only
+@import 'solarized-pygments';
 @import 'search';
 @import 'tooltip';
 body {
@@ -221,7 +223,6 @@ nav.global-navigation {
     min-height: 100%;
     width: 100%;
     width: 100vw;
-    // margin-top: 62px;
     padding-bottom: 15px;
     section.publish-date {
         time {
@@ -276,10 +277,15 @@ header#article-header {
 }
 
 article {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-flex-grow: 1;
+    -ms-flex-positive: 1;
     transition: all .4s ease-in-out;
     display: block;
     width: 90%;
-    min-height: 100%;
+    height:auto;
     position: relative;
     @include MQ(M) {
         max-width: $content-max-width;
@@ -337,21 +343,22 @@ article {
             text-decoration: underline;
         }
     }
-    pre {
-        width: 100%;
-        max-width: 100%;
-        overflow: hidden;
+    .highlight {
+        padding: 5px;
         @include MQ(M) {
             width: 150vw!important;
-            max-width: 150vw!important;
-            position: relative;
             margin-left: -25vw;
+            max-width: 150vw!important;
         }
-        code.hljs {
-            padding-left: 10%;
-            overflow: auto;
+        pre {
+            width: 100%;
+            max-width: 100%;
+            overflow-x: scroll;
             @include MQ(M) {
-                padding-left: 25vw!important;
+                width: inherit;
+                max-width: inherit;
+                position: relative;
+                margin-left: 25vw;
             }
         }
     }
@@ -439,7 +446,7 @@ ul.content-list {
     }
 }
 
-body > footer {
+#site-footer {
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;

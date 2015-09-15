@@ -60,11 +60,15 @@ permalink: pretty
 
 # BUILD SETTINGS
 
-markdown: kramdown
-kramdown:
-  auto_ids: false
-  input: GFM
-  syntax_highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions:
+    - footnotes
+    - hard_wrap
+    - no_intra_emphasis
+    - autolink
+    - strikethrough
+highlighter: pygments
 
 exclude: [gruntscripts,node_modules,Gruntfile.js,Gemfile,Gemfile.lock,Guardfile,package.json,snippets_and_notes.md]
 include: [scripts]
