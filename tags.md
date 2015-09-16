@@ -1,6 +1,6 @@
 ---
 layout: tags
-title: Tags
+title: Content by Tag
 permalink: /tags/
 insearch: false
 ---
