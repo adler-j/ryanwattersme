@@ -1,12 +1,10 @@
 ---
 layout: homepage
-title: Recent Articles
+title: Welcome to My Website
 comments: false
 insearch: true
 regenerate: true
 ---
-
-# Welcome to my website!
 
 This site is currently in development. 
 

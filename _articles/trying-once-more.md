@@ -1,7 +1,7 @@
 ---
 title: Trying Once More
 subtitle: Here is a little subtitle for this post
-description: "Here is my description but I need to get out of here as soon as possible since I'm already late for this wedding."
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.
 layout: article
 main_image: shoes_on_the_beach.jpeg
 main_image_description: This is a photo of some shoes on the beach.

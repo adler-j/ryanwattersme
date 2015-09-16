@@ -4,7 +4,7 @@ subtitle: Here is a subtitle for my article
 layout: article
 main_image: japan_imperial_palace.jpeg
 main_image_description: The Imperial Palace in Tokyo, Japan.
-description: Here is a description. We can make the description a little bit longer so that it uses up all of the space in the list view for articles.
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.
 published_on: 2015-09-07
 insearch: true
 comments: true
@@ -34,6 +34,14 @@ $(document).ready(function(){
     console.log("WHATEVER!");
 });
 {% endhighlight %}
+
+* Item
+* Item
+	- Item
+		+ Item
+	- Item
+	- Item
+* Item
 
 One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it.
 

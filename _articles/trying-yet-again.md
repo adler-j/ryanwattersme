@@ -1,7 +1,7 @@
 ---
 title: Trying Yet Again    
 subtitle: Playing with date sorting
-description: How now brown cow. The big black bug bled blue blood. She sells seashells by the seashore. There once was an old man who lived in a shoe.
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.
 layout: article
 main_image: guy_holding_camera.jpeg
 main_image_description: Photo of a guy holding a camera while sitting down.
