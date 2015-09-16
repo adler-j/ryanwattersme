@@ -11,6 +11,7 @@ comments: true
 tags:
 - japan
 - github
+- javascript
 ---
 
 ### Here is a Heading in an Article
@@ -29,11 +30,11 @@ One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your foo
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellat, soluta, illo totam expedita, nesciunt neque inventore sunt reiciendis excepturi, nemo sequi quos ipsam accusantium eaque accusamus consectetur tempore nobis.
 
-{% highlight javascript %}
+```js
 $(document).ready(function(){
     console.log("WHATEVER!");
 });
-{% endhighlight %}
+```
 
 * Item
 * Item
