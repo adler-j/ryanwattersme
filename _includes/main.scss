@@ -276,6 +276,14 @@ header#article-header {
 }
 
 article {
+    header{
+        h1.page-title{
+            font-size:$base-font-size * 1.3;
+            @include MQ(M){
+                font-size:2em;
+            }
+        }
+    }
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
