@@ -3,62 +3,74 @@
  */
 
 window.addEventListener('keyup', function(event) {
-    var openSearchForm = document.getElementById('search-form');
-    if ((event.keyCode == 83 && !(openSearchForm.classList.contains('search-open'))) || (event.keyCode == 27 && openSearchForm.classList.contains('search-open'))) {
-        toggleSearch();
-    }
+  var openSearchForm = document.getElementById('search-form');
+  if ((event.keyCode == 83 && !(openSearchForm.classList.contains('search-open'))) || (event.keyCode == 27 && openSearchForm.classList.contains('search-open'))) {
+    toggleSearch();
+  }
 }, false);
 window.onload = init;
 
 function init() {
-    var mobileToggle = document.getElementById('mobile-toggle'),
-        searchToggle = document.getElementById('search-overlay-toggle'),
-        searchClose = document.getElementById('close-search'),
-        searchInput = document.getElementById('search-form');
-    mobileToggle.onclick = toggleMenu;
-    searchToggle.onclick = toggleSearch;
-    searchClose.onclick = toggleSearch;
-    searchInput.onsubmit = preventRefresh;
-    targetBlank();
+  var mobileToggle = document.getElementById('mobile-toggle'),
+    searchToggle = document.getElementById('search-overlay-toggle'),
+    searchClose = document.getElementById('close-search'),
+    searchInput = document.getElementById('search-form');
+  mobileToggle.onclick = toggleMenu;
+  searchToggle.onclick = toggleSearch;
+  searchClose.onclick = toggleSearch;
+  searchInput.onsubmit = preventRefresh;
+  targetBlank();
 }
 //toggle mobile menu/global navigation
 function toggleMenu() {
-    var globalNav = document.querySelector('.global-navigation'),
-        menuButton = document.getElementById('mobile-toggle');
-    globalNav.classList.toggle('mobile-menu');
-    menuButton.classList.toggle('active');
+  var globalNav = document.querySelector('.global-navigation'),
+    menuButton = document.getElementById('mobile-toggle'),
+    mainContent = document.getElementById('main'),
+    mobileTitleContent = document.querySelector('.site-title-container'),
+    siteFooter = document.getElementById('footer');
+  var elsToShift = [mainContent, siteFooter];
+  elsToShift.forEach(function(item) {
+    item.classList.toggle('mobile-menu');
+  });
+  menuButton.classList.toggle('active');
+  globalNav.classList.toggle('menu-open');
+  // mobileTitleContent = classList.toggle('mobile-menu');
+  // mainContent.classList.toggle('mobile-menu');
+  // siteFooter.classList.toggle('mobile-menu');
+
+
 }
 //add "target=_blank" attribute to all external links on page
 function targetBlank() {
-    // remove subdomain of current site's url and setup regex
-    var internal = location.host.replace("www.", "");
-    internal = new RegExp(internal, "i");
+  // remove subdomain of current site's url and setup regex
+  var internal = location.host.replace("www.", "");
+  internal = new RegExp(internal, "i");
 
-    var a = document.getElementsByTagName('a'); // then, grab every link on the page
-    for (var i = 0; i < a.length; i++) {
-        var href = a[i].host; // set the host of each link
-        if (!internal.test(href)) { // make sure the href doesn't contain current site's host
-            a[i].setAttribute('target', '_blank'); // if it doesn't, set attributes
-        }
+  var a = document.getElementsByTagName('a'); // then, grab every link on the page
+  for (var i = 0; i < a.length; i++) {
+    var href = a[i].host; // set the host of each link
+    if (!internal.test(href)) { // make sure the href doesn't contain current site's host
+      a[i].setAttribute('target', '_blank'); // if it doesn't, set attributes
     }
+  }
 }
 //Toggle search overlay on all screen sizes
 function toggleSearch() {
-    var searchForm = document.querySelector("#search-form"),
-        searchInput = document.getElementById('tipue_search_input'),
-        searchFooter = document.getElementById('site-footer');
-    searchForm.classList.toggle('search-open');
-    searchInput.classList.toggle('search-open');
-    searchFooter.classList.toggle('search-open');
-    if (searchInput.classList.contains('search-open')) {
-        searchInput.focus();
-    }
-    if (document.querySelector('.content-footer')) {
-        var contentFooter = document.querySelector('.content-footer');
-        contentFooter.classList.toggle('search-open');
-    }
+  var searchForm = document.querySelector("#search-form"),
+    searchInput = document.getElementById('tipue_search_input'),
+    searchFooter = document.getElementById('footer');
+  searchForm.classList.toggle('search-open');
+  searchInput.classList.toggle('search-open');
+  searchFooter.classList.toggle('search-open');
+  if (searchInput.classList.contains('search-open')) {
+    searchInput.focus();
+  }
+  if (document.querySelector('.content-footer')) {
+    var contentFooter = document.querySelector('.content-footer');
+    contentFooter.classList.toggle('search-open');
+  }
 }
 //Prevents refreshing of page when the search item is entered into the tipue search input
 function preventRefresh(enterTerm) {
-    enterTerm.preventDefault();
+  enterTerm.preventDefault();
 }
