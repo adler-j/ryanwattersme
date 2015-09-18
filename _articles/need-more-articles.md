@@ -20,9 +20,34 @@ One Flew Over the Cuckoo's Nest random quotes. Man, when you lose your laugh you
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis sed autem obcaecati magnam deserunt. Voluptas nulla facilis culpa quibusdam consectetur dicta dignissimos repellat? Excepturi voluptas magni nobis debitis voluptate maiores. Chiba prefecture has more toy pandas than any other prefecture in Japan. 
 
-Diplonephridia retinacular grumous reinventor certifiable movability covet benevolent heredosyphilis gauteite bestiality teleologic rivalable unrodded argentate diaphanously limiter demiangel fogged heritrix stephanic hypothenal subpopulation anticonductor.
+Diplonephridia retinacular grumous reinventor certifiable movability covet benevolent heredosyphilis gauteite bestiality teleologic rivalable unrodded argentate diaphanously limiter demiangel fogged heritrix stephanic hypothenal subpopulation anticonductor. List styles:
+
+* Item 1
+* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis assumenda voluptates eligendi modi hic ex nostrum dolor, reprehenderit iure molestiae minima impedit quaerat, eos animi a, optio consectetur eaque dicta!
+* Item 2
+	- Item 2A
+	- Item 2B
+		+ Item 2B1
+		+ Item 2B2
+	- Item 2C
+* Item 3
+* Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro deserunt obcaecati aliquid quaerat tempora consectetur ullam. Nesciunt ab unde, sint iste atque voluptatem laboriosam ad nam molestias dolor debitis, expedita.
+* Item 4
 
 Diplonephridia retinacular grumous reinventor certifiable movability covet benevolent heredosyphilis gauteite bestiality teleologic rivalable unrodded argentate diaphanously limiter demiangel fogged heritrix stephanic hypothenal subpopulation anticonductor.
+
+1. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore, quae. Vel dolores animi recusandae mollitia ratione porro iste omnis soluta placeat sunt facere, aut ipsam illum quibusdam pariatur in quod!
+2. Item 2
+	1. Item 2a
+		1. Here is an ordered list item
+		2. Here is another ordered list item
+		3. Here is a third ordered list item
+	2. Item 2b
+	3. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam repellat, necessitatibus suscipit ullam mollitia et eum vero quis veniam ea harum unde? Consectetur similique voluptates expedita aliquid sequi architecto perspiciatis?
+		1. Here is another nested list
+		2. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam hic, odio excepturi sequi tempore porro, possimus itaque aut quis cupiditate non similique quod reprehenderit assumenda labore voluptates. Asperiores, maiores, incidunt?
+3. Item 3
+4. Item 4
 
 Diplonephridia retinacular grumous reinventor certifiable movability covet benevolent heredosyphilis gauteite bestiality teleologic rivalable unrodded argentate diaphanously limiter demiangel fogged heritrix stephanic hypothenal subpopulation anticonductor.
 
