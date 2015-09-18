@@ -1,7 +1,7 @@
 /**
  * All user interactions for the site are written in vanilla Javascript so as to preclude the jQuery dependency--although the Grunt build/concatenate will pull jquery through first, thereby allowing you to add additional scripts using jq syntax. If you decide to break the scripts up in the "gruntscripts" folder, be careful of adding the "async" attribute on your script tags, since this may have unreliable results if using jquery syntax before the jquery library has been loaded.
  */
-
+var currentHash = window.location.hash;
 window.addEventListener('keyup', function(event) {
   var openSearchForm = document.getElementById('search-form');
   if ((event.keyCode == 83 && !(openSearchForm.classList.contains('search-open'))) || (event.keyCode == 27 && openSearchForm.classList.contains('search-open'))) {
@@ -9,6 +9,12 @@ window.addEventListener('keyup', function(event) {
   }
 }, false);
 window.onload = init;
+
+
+//convenient hasClass function from toddmotto.com
+function hasClass(elem, className) {
+  return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+}
 
 function init() {
   var mobileToggle = document.getElementById('mobile-toggle'),
@@ -21,25 +27,32 @@ function init() {
   searchInput.onsubmit = preventRefresh;
   targetBlank();
 }
-//toggle mobile menu/global navigation
+//toggle mobile menu/global navigation on <M screen sizes
+//removed .classList on 2015/09/17 for better IE9 support
 function toggleMenu() {
-  var globalNav = document.querySelector('.global-navigation'),
+  var globalNav = document.getElementById('global-navigation'),
     menuButton = document.getElementById('mobile-toggle'),
     mainContent = document.getElementById('main'),
-    mobileTitleContent = document.querySelector('.site-title-container'),
+    // mobileTitleContent = document.getElementById('site-title-container'),
     siteFooter = document.getElementById('footer');
-  var elsToShift = [mainContent, siteFooter];
+  var elsToShift = [globalNav, menuButton, mainContent, siteFooter];
   elsToShift.forEach(function(item) {
-    item.classList.toggle('mobile-menu');
-  });
-  menuButton.classList.toggle('active');
-  globalNav.classList.toggle('menu-open');
-  // mobileTitleContent = classList.toggle('mobile-menu');
-  // mainContent.classList.toggle('mobile-menu');
-  // siteFooter.classList.toggle('mobile-menu');
-
-
+    if (!(hasClass(item, 'mobile-menu'))) {
+      item.className += ' mobile-menu';
+    } else {
+      item.className = item.className.split(' ')[0];
+    }
+  })
+  // implemented as normal for loop
+  // for (var i = 0; i < elsToShift.lenght; i++) {
+  //   if (!(hasClass(elsToShift[i], 'mobile-menu'))) {
+  //     elsToShift[i].className += ' mobile-menu';
+  //   } else {
+  //     elsToShift[i].className = elsToShift[i].className.split(' ')[0];
+  //   }
+  // }
 }
+
 //add "target=_blank" attribute to all external links on page
 function targetBlank() {
   // remove subdomain of current site's url and setup regex

@@ -9,9 +9,9 @@ article#search-page {
 
 #search-overlay-toggle {
     #search-icon {
-        height: $global-navigation-font-size-mobile;
-        -webkit-transform: translateY($global-navigation-font-size-mobile/5);
-        transform: translateY($global-navigation-font-size-mobile/5);
+        height: $global-nav-font-size-mobile;
+        -webkit-transform: translateY($global-nav-font-size-mobile/5);
+        transform: translateY($global-nav-font-size-mobile/5);
         @include MQ(M) {
             height: $search-icon-size-m-plus-screen-sizes;
             position: absolute;
@@ -20,7 +20,7 @@ article#search-page {
             -webkit-transform: translateY(-210px);
             transform: translateY(-210px);
         }
-        fill:$global-navigation-font-color;
+        fill:$global-nav-font-color;
     }
     &:after {
         content: ' Search';

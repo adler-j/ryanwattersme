@@ -11,7 +11,7 @@ $brand: #2A2C39;
 $brand-two: #51B3FE;
 $brand-three: darken(#01589B,10%);
 $accent-color: #487557;
-$anchor-color: #01589B;
+$anchor-color: #5E727F;
 $button-color:$anchor-color;
 $warning-color: tomato;
 $results-highlight-color:orange;
@@ -20,7 +20,7 @@ $white:#ffffff;
 //Backgrounds - body, global nav/header
 $body-background:url('/assets/images/backgrounds/bg_light.png');
 // $body-background:$white;
-$header-background:url('/assets/images/backgrounds/bg_darkdenim.png');
+$header-background:url('/assets/images/backgrounds/bg_slashit.png'),#222222;
 $header-background-repeat:repeat;
 $base-font-size:18px;
 $base-font-family:"open_sans",'Helvetica Neue',helvetica,sans-serif;
@@ -40,13 +40,13 @@ $site-title-font-color:$header-link-color;
 $site-title-font-family:$heading-font-family;
 $site-logo-width-mobile:50px;
 $site-logo-width-desktop:120px;
-$global-navigation-text-transform:uppercase;
-$global-navigation-font-family:$site-title-font-family;
-$global-navigation-font-size:$base-font-size * 1.5;
-$global-navigation-font-size-mobile: 8vh;
-$global-navigation-font-color:$header-link-color;
-$global-navigation-background-mobile:$header-background;
-$global-navigation-letter-spacing:1px;
+$global-nav-text-transform:uppercase;
+$global-nav-font-family:$site-title-font-family;
+$global-nav-font-size:$base-font-size * 1.5;
+$global-nav-font-size-mobile: 8vh;
+$global-nav-font-color:$header-link-color;
+$global-nav-background-mobile:$header-background;
+$global-nav-letter-spacing:1px;
 $content-list-heading-hover-background-color:$anchor-color;
 $article-heading-font-family: $heading-font-family;
 $article-headline-font-color: #ffffff;
@@ -54,7 +54,7 @@ $article-subheading-font-size:$base-font-size * 1.2;
 $article-anchor-font-weight:700;
 $article-anchor-font-color:$anchor-color;
 $article-blockquote-background-color:#ffffff;
-$article-coding-background:$brand;
+$article-coding-background:#222222;
 $article-coding-lineno-color:#ffffff;
 $article-header-background-image-size:cover;
 $article-header-background-image-position:center left;
@@ -62,16 +62,21 @@ $article-header-mobile-min-height:50vh;
 $article-header-m-plus-min-height:50vh;
 
 $article-sticky-footer-background:$white;
-$article-tag-color:#01589B;
-$article-tag-hover-color:$accent-color;
+$article-sticky-footer-tag-font-size:$base-font-size;
+$article-sticky-footer-tag-color:#01589B;
+$article-sticky-footer-tag-hover-color:$accent-color;
+
+$list-page-heading-background-color:$anchor-color;
+$list-page-heading-font-color:$white;
 //article headings (note that for mobile screens, these values are reduce to size * .85)
 $h1-font-size: $base-font-size * 1.7; //mobile = $h1-font-size * .75
 $h2-font-size: $base-font-size * 1.5; //mobile = $h2-font-size * .85
 $h3-font-size: $base-font-size * 1.4; //mobile = $h3-font-size * .85
 $h4-font-size: $base-font-size * 1.3; //mobile = $h4-font-size * .85
-$footer-link-color:#ffffff;
-$footer-background:$header-background;
-$footer-icon-size:$base-font-size * 2;
+
+
+$tag-page-tag-focus-background-color:$brand-three;
+$tag-page-match-list-heading-background-color:$brand-three;
 //Tooltips (eg, the "previous" and "next" arrow in article footer)
 $tooltip-background-color:$accent-color;
 
@@ -80,6 +85,11 @@ $search-result-heading-font-size: $base-font-size * 1.3;
 $search-result-heading-font-family: $base-font-family;
 $search-result-heading-font-color: $base-font-color;
 $search-icon-size-m-plus-screen-sizes: 32px;
+
+//Site footer
+$footer-link-color:#ffffff;
+$footer-background:$header-background;
+$footer-icon-size:30px;
 
 //Handy Social Media Colors SASS Map; see main.scss for the @each directive
 $socials: (twitter:#00aced, github:#AB5B50, youtube:#bb0000, googleplus:#dd4b39, facebook:#3b5998, rss:#FF6600, pinterest:#cb2027, instagram:#517fa4, linkedin:#007bb6, vine:#00bf8f, tumblr:#32506d, vimeo:#aad450, foursquare:#0072b1); 

@@ -8,19 +8,33 @@
 				"image": "speedometer_old_car.jpeg",  
 					"url": "/articles/need-more-articles/",
 					"tag": "food",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 02, 2015"
+			},
 		
 			{"title": "Need More Articles",
 				"image": "speedometer_old_car.jpeg",  
 					"url": "/articles/need-more-articles/",
 					"tag": "travel",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 02, 2015"
+			},
 		
 			{"title": "Need More Articles",
 				"image": "speedometer_old_car.jpeg",  
 					"url": "/articles/need-more-articles/",
 					"tag": "japan",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 02, 2015"
+			},
+		
+			{"title": "Need More Articles",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/need-more-articles/",
+					"tag": "traffic",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 02, 2015"
+			},
 		
 	
 	
@@ -30,19 +44,25 @@
 				"image": "coffee_cup_and_pencil.jpeg",  
 					"url": "/articles/prose-first-new-article/",
 					"tag": "javascript",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 16, 2015"
+			},
 		
 			{"title": "First Article Created on Prose.io",
 				"image": "coffee_cup_and_pencil.jpeg",  
 					"url": "/articles/prose-first-new-article/",
 					"tag": "prose-io",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 16, 2015"
+			},
 		
 			{"title": "First Article Created on Prose.io",
 				"image": "coffee_cup_and_pencil.jpeg",  
 					"url": "/articles/prose-first-new-article/",
 					"tag": "github",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 16, 2015"
+			},
 		
 	
 	
@@ -52,25 +72,33 @@
 				"image": "speedometer_old_car.jpeg",  
 					"url": "/articles/testing-stuff/",
 					"tag": "food",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 14, 2015"
+			},
 		
 			{"title": "Testing Stuff",
 				"image": "speedometer_old_car.jpeg",  
 					"url": "/articles/testing-stuff/",
 					"tag": "travel",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 14, 2015"
+			},
 		
 			{"title": "Testing Stuff",
 				"image": "speedometer_old_car.jpeg",  
 					"url": "/articles/testing-stuff/",
 					"tag": "japan",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 14, 2015"
+			},
 		
 			{"title": "Testing Stuff",
 				"image": "speedometer_old_car.jpeg",  
 					"url": "/articles/testing-stuff/",
 					"tag": "awesome",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 14, 2015"
+			},
 		
 	
 	
@@ -80,19 +108,25 @@
 				"image": "japan_imperial_palace.jpeg",  
 					"url": "/articles/this-is-my-article/",
 					"tag": "japan",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 07, 2015"
+			},
 		
 			{"title": "This is My Article",
 				"image": "japan_imperial_palace.jpeg",  
 					"url": "/articles/this-is-my-article/",
 					"tag": "github",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 07, 2015"
+			},
 		
 			{"title": "This is My Article",
 				"image": "japan_imperial_palace.jpeg",  
 					"url": "/articles/this-is-my-article/",
 					"tag": "javascript",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 07, 2015"
+			},
 		
 	
 	
@@ -102,19 +136,25 @@
 				"image": "shoes_on_the_beach.jpeg",  
 					"url": "/articles/trying-once-more/",
 					"tag": "javascript",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"August 01, 2015"
+			},
 		
 			{"title": "Trying Once More",
 				"image": "shoes_on_the_beach.jpeg",  
 					"url": "/articles/trying-once-more/",
 					"tag": "jekyll",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"August 01, 2015"
+			},
 		
 			{"title": "Trying Once More",
 				"image": "shoes_on_the_beach.jpeg",  
 					"url": "/articles/trying-once-more/",
 					"tag": "attempting",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"August 01, 2015"
+			},
 		
 	
 	
@@ -124,19 +164,25 @@
 				"image": "guy_holding_camera.jpeg",  
 					"url": "/articles/trying-yet-again/",
 					"tag": "javascript",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 04, 2015"
+			},
 		
 			{"title": "Trying Yet Again",
 				"image": "guy_holding_camera.jpeg",  
 					"url": "/articles/trying-yet-again/",
 					"tag": "jekyll",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 04, 2015"
+			},
 		
 			{"title": "Trying Yet Again",
 				"image": "guy_holding_camera.jpeg",  
 					"url": "/articles/trying-yet-again/",
 					"tag": "static",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."},
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 04, 2015"
+			},
 		
 	
 	
@@ -149,28 +195,36 @@
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-tutorial-part01/",
 			 "tag": "jekyll",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine."}
+			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
+			 "date":"September 01, 2015"
+			}
 	,
 
 			{"title": "Jekyll Tutorials Part 1",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-tutorial-part01/",
 			 "tag": "setup",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine."}
+			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
+			 "date":"September 01, 2015"
+			}
 	,
 
 			{"title": "Jekyll Tutorials Part 1",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-tutorial-part01/",
 			 "tag": "osx",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine."}
+			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
+			 "date":"September 01, 2015"
+			}
 	,
 
 			{"title": "Jekyll Tutorials Part 1",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-tutorial-part01/",
 			 "tag": "command-line",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine."}
+			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
+			 "date":"September 01, 2015"
+			}
 	
 , 
 
@@ -180,28 +234,36 @@
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-tutorial-part02/",
 			 "tag": "jekyll",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas."}
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
+			 "date":"September 01, 2015"
+			}
 	,
 
 			{"title": "Jekyll Tutorial Part 2",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-tutorial-part02/",
 			 "tag": "setup",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas."}
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
+			 "date":"September 01, 2015"
+			}
 	,
 
 			{"title": "Jekyll Tutorial Part 2",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-tutorial-part02/",
 			 "tag": "osx",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas."}
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
+			 "date":"September 01, 2015"
+			}
 	,
 
 			{"title": "Jekyll Tutorial Part 2",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-tutorial-part02/",
 			 "tag": "command-line",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas."}
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
+			 "date":"September 01, 2015"
+			}
 	
 , 
 
@@ -211,28 +273,36 @@
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-tutorials-part03/",
 			 "tag": "jekyll",
-			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah."}
+			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
+			 "date":"September 01, 2015"
+			}
 	,
 
 			{"title": "Jekyll Tutorial Part 3",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-tutorials-part03/",
 			 "tag": "setup",
-			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah."}
+			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
+			 "date":"September 01, 2015"
+			}
 	,
 
 			{"title": "Jekyll Tutorial Part 3",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-tutorials-part03/",
 			 "tag": "osx",
-			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah."}
+			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
+			 "date":"September 01, 2015"
+			}
 	,
 
 			{"title": "Jekyll Tutorial Part 3",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-tutorials-part03/",
 			 "tag": "command-line",
-			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah."}
+			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
+			 "date":"September 01, 2015"
+			}
 	
 
 ]}

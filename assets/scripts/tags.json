@@ -1,27 +1,32 @@
 ---
 insearch: false
+regenerate: true
 ---
 
 {"siteContent": [
-{% for article in site.articles %}
+{% for article in site.articles | sort: 'published_on' %}
 	{% if article.tags %}
 		{% for tag in article.tags %}
 			{"title": "{{article.title}}",
 				"image": "{{article.main_image}}",  
 					"url": "{{article.url}}",
 					"tag": "{{tag | slugify}}",
-					"description": "{{article.description}}"},
+					"description": "{{article.description}}",
+					"date":"{{article.published_on | date: '%B %d, %Y'}}"
+			},
 		{% endfor %}
 	{% endif %}
 	{% endfor %}
-{% for tutorial in site.tutorials %}
+{% for tutorial in site.tutorials | sort: 'published_on' %}
 	{% if tutorial.tags %}
 		{% for tag in tutorial.tags %}
 			{"title": "{{tutorial.title}}",
 			 "image": "{{tutorial.main_image}}",
 			 "url": "{{tutorial.url}}",
 			 "tag": "{{tag | slugify}}",
-			 "description": "{{tutorial.description}}"}
+			 "description": "{{tutorial.description}}",
+			 "date":"{{tutorial.published_on | date: '%B %d, %Y'}}"
+			}
 	{% if forloop.rindex0 > 0 %},{% endif %}
 {% endfor %}{% if forloop.rindex0 > 0 %}, {% endif %}{% endif %}
 {% endfor %}]}
