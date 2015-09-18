@@ -39,7 +39,7 @@ function getMatches(thetag, thestring) {
     idString = thestring,
     theIdSpan = document.getElementById('selected-tag'),
     request = new XMLHttpRequest;
-  theIdSpan.innerHTML = '- \"' + idString + '\"';
+  theIdSpan.innerHTML = '- ' + idString;
   request.open('GET', '../assets/scripts/tags.json', true);
   request.onreadystatechange = function() {
     if ((request.status === 200) && (request.readyState === 4)) {

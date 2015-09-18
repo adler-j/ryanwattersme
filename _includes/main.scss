@@ -796,6 +796,7 @@ ul.site-tags {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    margin-left:0;
     li.site-tag {
         transition: all .3s ease-in-out;
         display: inline;
@@ -804,7 +805,8 @@ ul.site-tags {
         font-size: $base-font-size;
         width: auto;
         text-align: center;
-        padding: 0px;
+        padding-left: 3px;
+        padding-right:3px;
         color: $white;
         text-indent: 0;
         &:hover {
@@ -835,6 +837,7 @@ ul#matching-items {
     flex-wrap: wrap;
     margin-top: 25px;
     text-indent: 0;
+    margin-left:0;
     li {
         display: -webkit-flex;
         display: -ms-flexbox;

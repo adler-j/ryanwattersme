@@ -29,7 +29,7 @@ regenerate: true
 {% endfor %}
 <article id="article">
 <header class="tagpage-header">
-	<h1 class="tag-page">{{page.title}} <span id="selected-tag"></span></h1>
+	<h1 class="tag-page">{{page.title}} <em id="selected-tag"></em></h1>
 	<ul class="site-tags">
 	{% for tag in unique_tags %}
 		<li class="site-tag"><a href="#{{tag | slugify}}" id="{{tag | slugify }}" data-tagstring="{{tag}}" class="tag-ajax">{{tag}}</a></li>
