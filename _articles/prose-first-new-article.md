@@ -3,6 +3,7 @@ layout: article
 title: First Article Created on Prose.io
 published_on: 2015-09-16
 published: true
+lastmod: 2015-09-20
 main_image: coffee_cup_and_pencil.jpeg
 main_image_description: A photo of a coffee cup and a pencil.
 comments: true

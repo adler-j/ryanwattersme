@@ -9,6 +9,7 @@ main_image: jekyll_logo_large.png
 main_image_description: This is a photo of a coffee cup and a pencil in black and white.
 published: true
 published_on: 2015-09-01
+lastmod: 2015-09-20
 comments: true
 insearch: true
 tags: [jekyll,setup,osx,command line]

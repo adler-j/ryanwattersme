@@ -4,6 +4,7 @@ title: Welcome to My Website
 comments: false
 insearch: true
 regenerate: true
+published_on: 2015-09-01
 ---
 
 This site is currently in development. 
