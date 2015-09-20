@@ -1,5 +1,3 @@
-
-
 From Bud Parr for Next/Previous
 [https://gist.github.com/budparr/3e637e575471401d01ec](https://gist.github.com/budparr/3e637e575471401d01ec)
 

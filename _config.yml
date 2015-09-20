@@ -83,7 +83,6 @@ compress_html:
   endings: all 
 
 repository: rdwatters/
-gems: ['jekyll-sitemap']
 
 # PROSE.IO SETTINGS
 

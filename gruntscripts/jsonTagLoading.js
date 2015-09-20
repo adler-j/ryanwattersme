@@ -1,7 +1,10 @@
+//Once the DOM content is loaded, run the checkHash function
 document.addEventListener('DOMContentLoaded', checkHash(), false);
+//Add listener to see if user clicks one of the tag buttons
 window.addEventListener('click', function(event) {
   if (event.target.className == "tag-ajax") {
     setTimeout(function() {
+      //on click, try to prevent default of moving page down to id#
       window.scrollTo(0, 0);
     }, 1);
     var theTag = event.target.id;
@@ -11,25 +14,20 @@ window.addEventListener('click', function(event) {
 }, false);
 
 window.onpopstate = function(event) {
-  console.log(currentHash);
   if (currentHash.length > 0) {
     checkHash();
   }
   currentHash = window.location.hash;
-  console.log('And now the hash equals ' + currentHash);
 };
 
 
 function checkHash() {
   if (window.location.hash.length !== 0) {
     var theTag = window.location.hash.split('#')[1];
+    var matchingAnchor = document.getElementById(theTag);
+    var theString = matchingAnchor.dataset.tagstring;
     var theTagList = document.getElementsByTagName('a');
-    for (var i = 0; i < theTagList.length; i++) {
-      if (theTagList[i].dataset.tagstring === theTag) {
-        var theString = theTagList[i].dataset.tagstring;
-      }
-
-    }
+    console.log(theTag, theString);
     getMatches(theTag, theString);
   }
 }
@@ -46,7 +44,6 @@ function getMatches(thetag, thestring) {
       var rawContent = JSON.parse(request.responseText),
         content = rawContent.siteContent,
         matchingItems = document.getElementById('matching-items');
-      $('.matching-items > li').fadeOut();
       matchingItems.innerHTML = '';
       for (var i = 0; i < content.length; i++) {
         if (content[i].tag == tagId) {
