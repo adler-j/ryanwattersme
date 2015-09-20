@@ -14,7 +14,7 @@
 
 	
 	<url>
-		<loc>https://ryansportfol.io/tutorials/jekyll-tutorial-part01/</loc>
+		<loc>https://ryansportfol.io/tutorials/jekyll-01/</loc>
 		
 		<lastmod>2015-09-20</lastmod>
 				
@@ -25,7 +25,7 @@
 
 	
 	<url>
-		<loc>https://ryansportfol.io/tutorials/jekyll-tutorial-part02/</loc>
+		<loc>https://ryansportfol.io/tutorials/jekyll-02/</loc>
 		
 		<lastmod>2015-09-01</lastmod>
 				
@@ -36,7 +36,7 @@
 
 	
 	<url>
-		<loc>https://ryansportfol.io/tutorials/jekyll-tutorials-part03/</loc>
+		<loc>https://ryansportfol.io/tutorials/jekyll-03/</loc>
 		
 		<lastmod>2015-09-01</lastmod>
 				
@@ -46,6 +46,17 @@
 	
 
 
+
+	
+	<url>
+		<loc>https://ryansportfol.io/articles/first-prose-article/</loc>
+		
+		<lastmod>2015-09-20</lastmod>
+				
+		<changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+	</url>
+	
 
 	
 	<url>
@@ -63,17 +74,6 @@
 		<loc>https://ryansportfol.io/articles/need-more-articles/</loc>
 		
 		<lastmod>2015-09-02</lastmod>
-				
-		<changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>https://ryansportfol.io/articles/prose-first-new-article/</loc>
-		
-		<lastmod>2015-09-20</lastmod>
 				
 		<changefreq>weekly</changefreq>
     <priority>0.8</priority>

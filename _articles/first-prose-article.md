@@ -1,6 +1,6 @@
 ---
 layout: article
-title: First Article Created on Prose.io
+title: First Prose.io Article
 published_on: 2015-09-16
 published: true
 lastmod: 2015-09-20

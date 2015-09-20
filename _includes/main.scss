@@ -805,21 +805,20 @@ ul.site-tags {
         font-size: $base-font-size;
         width: auto;
         text-align: center;
-        padding-left: 3px;
-        padding-right:3px;
         color: $white;
         text-indent: 0;
-        &:hover {
-            background-color: $tag-page-tag-focus-background-color;
-        }
         a {
             color: $white;
             text-decoration: none;
             font-weight: 300;
-            padding: 3px 5px;
+            padding: 4px;
             background-color: $button-color;
-            &:focus {
+            &:focus,&:hover {
                 background-color: $tag-page-tag-focus-background-color;
+                padding:6px;
+            }
+            &:focus {
+                font-weight:bold;
             }
         }
         @include MQ(M) {

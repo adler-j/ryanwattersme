@@ -1,6 +1,34 @@
 {"siteContent": [
 
 	
+		
+			{"title": "First Prose.io Article",
+				"image": "coffee_cup_and_pencil.jpeg",  
+					"url": "/articles/first-prose-article/",
+					"tag": "javascript",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 16, 2015"
+			},
+		
+			{"title": "First Prose.io Article",
+				"image": "coffee_cup_and_pencil.jpeg",  
+					"url": "/articles/first-prose-article/",
+					"tag": "prose-io",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 16, 2015"
+			},
+		
+			{"title": "First Prose.io Article",
+				"image": "coffee_cup_and_pencil.jpeg",  
+					"url": "/articles/first-prose-article/",
+					"tag": "github",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 16, 2015"
+			},
+		
+	
+	
+	
 	
 	
 		
@@ -34,34 +62,6 @@
 					"tag": "traffic",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
 					"date":"September 02, 2015"
-			},
-		
-	
-	
-	
-		
-			{"title": "First Article Created on Prose.io",
-				"image": "coffee_cup_and_pencil.jpeg",  
-					"url": "/articles/prose-first-new-article/",
-					"tag": "javascript",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
-					"date":"September 16, 2015"
-			},
-		
-			{"title": "First Article Created on Prose.io",
-				"image": "coffee_cup_and_pencil.jpeg",  
-					"url": "/articles/prose-first-new-article/",
-					"tag": "prose-io",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
-					"date":"September 16, 2015"
-			},
-		
-			{"title": "First Article Created on Prose.io",
-				"image": "coffee_cup_and_pencil.jpeg",  
-					"url": "/articles/prose-first-new-article/",
-					"tag": "github",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
-					"date":"September 16, 2015"
 			},
 		
 	
@@ -193,7 +193,7 @@
 		
 			{"title": "Jekyll Tutorials Part 1",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-tutorial-part01/",
+			 "url": "/tutorials/jekyll-01/",
 			 "tag": "jekyll",
 			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
 			 "date":"September 01, 2015"
@@ -202,7 +202,7 @@
 
 			{"title": "Jekyll Tutorials Part 1",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-tutorial-part01/",
+			 "url": "/tutorials/jekyll-01/",
 			 "tag": "setup",
 			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
 			 "date":"September 01, 2015"
@@ -211,7 +211,7 @@
 
 			{"title": "Jekyll Tutorials Part 1",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-tutorial-part01/",
+			 "url": "/tutorials/jekyll-01/",
 			 "tag": "osx",
 			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
 			 "date":"September 01, 2015"
@@ -220,7 +220,7 @@
 
 			{"title": "Jekyll Tutorials Part 1",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-tutorial-part01/",
+			 "url": "/tutorials/jekyll-01/",
 			 "tag": "command-line",
 			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
 			 "date":"September 01, 2015"
@@ -232,7 +232,7 @@
 		
 			{"title": "Jekyll Tutorial Part 2",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-tutorial-part02/",
+			 "url": "/tutorials/jekyll-02/",
 			 "tag": "jekyll",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
 			 "date":"September 01, 2015"
@@ -241,7 +241,7 @@
 
 			{"title": "Jekyll Tutorial Part 2",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-tutorial-part02/",
+			 "url": "/tutorials/jekyll-02/",
 			 "tag": "setup",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
 			 "date":"September 01, 2015"
@@ -250,7 +250,7 @@
 
 			{"title": "Jekyll Tutorial Part 2",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-tutorial-part02/",
+			 "url": "/tutorials/jekyll-02/",
 			 "tag": "osx",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
 			 "date":"September 01, 2015"
@@ -259,7 +259,7 @@
 
 			{"title": "Jekyll Tutorial Part 2",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-tutorial-part02/",
+			 "url": "/tutorials/jekyll-02/",
 			 "tag": "command-line",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
 			 "date":"September 01, 2015"
@@ -271,7 +271,7 @@
 		
 			{"title": "Jekyll Tutorial Part 3",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-tutorials-part03/",
+			 "url": "/tutorials/jekyll-03/",
 			 "tag": "jekyll",
 			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
 			 "date":"September 01, 2015"
@@ -280,7 +280,7 @@
 
 			{"title": "Jekyll Tutorial Part 3",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-tutorials-part03/",
+			 "url": "/tutorials/jekyll-03/",
 			 "tag": "setup",
 			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
 			 "date":"September 01, 2015"
@@ -289,7 +289,7 @@
 
 			{"title": "Jekyll Tutorial Part 3",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-tutorials-part03/",
+			 "url": "/tutorials/jekyll-03/",
 			 "tag": "osx",
 			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
 			 "date":"September 01, 2015"
@@ -298,7 +298,7 @@
 
 			{"title": "Jekyll Tutorial Part 3",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-tutorials-part03/",
+			 "url": "/tutorials/jekyll-03/",
 			 "tag": "command-line",
 			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
 			 "date":"September 01, 2015"

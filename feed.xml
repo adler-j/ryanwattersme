@@ -1,6 +1,7 @@
 ---
 layout: null
 insearch: false
+regenerate: true
 ---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
@@ -12,18 +13,33 @@ insearch: false
     <pubDate>{{ site.time | date_to_rfc822 }}</pubDate>
     <lastBuildDate>{{ site.time | date_to_rfc822 }}</lastBuildDate>
     <generator>Jekyll v{{ jekyll.version }}</generator>
-    {% for post in site.posts limit:10 %}
+    {% for item in site.tutorials | sort: 'series_no' limit:3 %}
       <item>
-        <title>{{ post.title | xml_escape }}</title>
-        <description>{{ post.content | xml_escape }}</description>
-        <pubDate>{{ post.date | date_to_rfc822 }}</pubDate>
-        <link>{{ post.url | prepend: site.baseurl | prepend: site.url }}</link>
-        <guid isPermaLink="true">{{ post.url | prepend: site.baseurl | prepend: site.url }}</guid>
-        {% for tag in post.tags %}
+        <title>{{ item.title | xml_escape }}</title>
+        <description>{{ item.description | xml_escape }}</description>
+        {% if item.lastmod %}
+        <pubDate>{{ item.lastmod }}</pubDate>
+        {% else %}
+        <pubDate>{{ item.published_on }}</pubDate>
+        {% endif %}
+        <link>{{site.url}}{{ item.url }}</link>
+        {% for tag in item.tags %}
         <category>{{ tag | xml_escape }}</category>
         {% endfor %}
-        {% for cat in post.categories %}
-        <category>{{ cat | xml_escape }}</category>
+      </item>
+    {% endfor %}
+    {% for item in site.articles | sort: 'published_on' | reverse limit:3 %}
+      <item>
+        <title>{{ item.title | xml_escape }}</title>
+        <description>{{ item.description | xml_escape }}</description>
+        {% if item.lastmod %}
+        <pubDate>{{ item.lastmod }}</pubDate>
+        {% else %}
+        <pubDate>{{ item.published_on }}</pubDate>
+        {% endif %}
+        <link>{{site.url}}{{ item.url }}</link>
+        {% for tag in item.tags %}
+        <category>{{ tag | xml_escape }}</category>
         {% endfor %}
       </item>
     {% endfor %}
