@@ -8,31 +8,37 @@
     {% endif %}
     <section class="prev-and-next">
         {% if page.collection == "articles" %} 
-            {% assign document = site[page.collection] | sort: 'published_on' %}
+            {% assign contents = site.articles | sort: 'published_on' %}
+            {% assign collection_name = page.collection %}
+            {% capture stringLength %}{{ collection_name | size | minus: 1 }}{% endcapture %}
+            {% assign collection_name = collection_name | truncate: stringLength, '' %}
         {% elsif page.collection == "tutorials" %}
-            {% assign document = site[page.collection] | sort: 'series_no' %} 
+            {% assign contents = site.tutorials | sort: 'series_no' %}
+            {% assign collection_name = 'tutorials' %} 
         {% endif %} 
-        {% assign documentType = page.collection %}
-        {% capture stringLength %}{{ documentType | size | minus: 1 }}{% endcapture %}
-        {% assign documentType = documentType | truncate: stringLength, '' %}
-        {% assign collectionIndexUrl = page.collection | prepend: "/" | append: "/" %}
-        {% for links in document %} 
-            {% if links.title == page.title %} 
+        {% assign collection_listpage = page.collection | prepend: '/' | append: '/' %}
+        
+        {% for content in contents %}
+            {% if content.title == page.title %}
                 {% unless forloop.first %} 
                     {% assign prevurl = prev.url %} 
                     {% assign prevtitle = prev.title %}
-                    {% assign prevdate = prev.published_on | date: '%B %d, %Y' %} 
+                    {% assign prevdate = prev.published_on | date: '%B %d, %Y' %}
+                    {% assign prevseries = prev.series %}
+                    {% assign prevnum = prev.series_no %} 
                 {% endunless %} 
-                {% unless forloop.last %} 
-                    {% assign next = document[forloop.index] %} 
-                    {% assign nexturl = next.url %}
-                    {% assign nextdate = next.published_on | date: '%B %d, %Y' %} 
-                    {% assign nexttitle = next.title %} 
+                {% unless forloop.last %}
+                    {% assign next = contents[forloop.index] %} 
+                    {% assign nexturl = next.url %} 
+                    {% assign nexttitle = next.title %}
+                    {% assign nextdate = next.published_on | date: '%B %d, %Y' %}
+                    {% assign nextseries = next.series %}
+                    {% assign nextnum = next.series_no %} 
                 {% endunless %} 
             {% endif %} 
-            {% assign prev = links %} 
+            {% assign prev = content %}
         {% endfor %} 
-        {% unless prevurl == collectionIndexUrl %}
+        {% unless prevurl == collection_listpage or prevurl == nil%}
         <a href="{{prevurl}}" class="direction previous">
 
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="previous-icon" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
@@ -46,7 +52,11 @@
             <span class="direction-content">
                 <span class="direction-text">
                     <span class="direction-inner">
-                        <span class="direction-heading">PREVIOUS {{documentType | upcase}}</span>
+                        {% if page.collection == 'articles' %}
+                        <span class="direction-heading">PREVIOUS {{collection_name | upcase }}</span>
+                        {% elsif page.collection == 'tutorials' %}
+                        <span class="direction-heading">PREVIOUS: {{prevseries | upcase }} PART {{prevnum}}</span>    
+                        {% endif %}
                         {{prevtitle}}
                         <span class="direction-date">{{prevdate}}</span>
                     </span>
@@ -55,7 +65,7 @@
         </a>
         {% endunless %}
         
-        {% unless nexturl == nil %}
+        {% if nexturl != nil %}
         <a href="{{nexturl}}" class="direction next">
             <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="next-icon" x="0px" y="0px" viewBox="0 0 612 612" style="enable-background:new 0 0 612 612;" xml:space="preserve">
                 <g>
@@ -68,14 +78,18 @@
             <span class="direction-content">
                 <span class="direction-text">
                     <span class="direction-inner">
-                        <span class="direction-heading">NEXT {{documentType | upcase}}</span>
+                        {% if page.collection == 'articles' %}
+                        <span class="direction-heading">NEXT {{collection_name | upcase }}</span>
+                        {% elsif page.collection == 'tutorials' %}
+                        <span class="direction-heading">NEXT: {{nextseries | upcase }} PART {{nextnum}}</span>
+                        {% endif %}
                         {{nexttitle}}
                         <span class="direction-date">{{nextdate}}</span>
                     </span>
                 </span>
             </span>
         </a>
-        {% endunless %}
+        {% endif %}
     </section>
     <link rel="prefetch" href="{{site.url}}{{nexturl}}">
     <link rel="prerender" href="{{site.url}}{{nexturl}}">

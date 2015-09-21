@@ -17,17 +17,18 @@ $warning-color: #66101F;
 $results-highlight-color:orange;
 $white:#ffffff;
 
-//Backgrounds - body, global nav/header
+// Backgrounds - body, global nav/header
 // $body-background:url('/assets/images/backgrounds/bg_light.png');
 $body-background:$white;
 $header-background:url('/assets/images/backgrounds/bg_slashit.png'),#222222;
 $header-background-repeat:repeat;
 $base-font-size:18px;
-$base-font-family:"Raleway",'Helvetica Neue',helvetica,sans-serif;
+$base-font-family:'Raleway','Helvetica Neue',helvetica,sans-serif;
 $base-font-weight: 300;
 $base-font-color:#333333;
 $base-line-height:$base-font-size * 1.5;
-$heading-font-family: $base-font-family;
+// $heading-font-family: 'Raleway','Helvetica Neue',helvetica,sans-serif;
+$heading-font-family:$base-font-family;
 $heading-font-color:#444444;
 $heading-font-weight: 900;
 $body-font-family:$base-font-family;

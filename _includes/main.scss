@@ -44,23 +44,9 @@ h6 {
     background-repeat: $header-background-repeat;
     color: $header-link-color;
     z-index: 1;
-    &.headroom {
-        transition: -webkit-transform 200ms linear;
-        transition: transform 200ms linear;
-        position: fixed;
-        &.headroom--pinned {
-            -webkit-transform: translateY(0%);
-            transform: translateY(0%);
-        }
-        &.headroom--unpinned {
-            -webkit-transform: translateY(-100%);
-            transform: translateY(-100%);
-            @include MQ(M) {
-                -webkit-transform: translateY(0%);
-                transform: translateY(0%);
-            }
-        }
-    }
+    position: fixed;
+    top: 0;
+    left: 0;
     @include MQ(M) {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -72,8 +58,6 @@ h6 {
         width: 250px;
         height: 100%;
         height: 100vh;
-        top: 0;
-        left: 0;
         bottom: 0;
     }
 }
@@ -227,6 +211,7 @@ nav.global-navigation {
     width: 100%;
     width: 100vw;
     padding-bottom: 15px;
+    margin-top: 50px;
     section.publish-date {
         time {
             font-weight: bold;
@@ -277,6 +262,19 @@ header#article-header {
                 font-weight: bold;
             }
         }
+        a.breadcrumb-link {
+            font-size: $base-font-size * .75;
+            position: absolute;
+            bottom: 15px;
+            right: 15px;
+            color: $white;
+            &:hover {
+                text-decoration: underline;
+            }
+            @include MQ(M) {
+                font-size: $base-font-size;
+            }
+        }
     }
     &.article-header-without-image {
         height: auto;
@@ -284,6 +282,9 @@ header#article-header {
         max-width: $content-max-width;
         margin-right: auto;
         margin-left: auto;
+        a.breadcrum-link {
+            color: $white;
+        }
     }
 }
 
@@ -475,6 +476,7 @@ ul.content-list {
             -webkit-flex-direction:column;
             -ms-flex-direction:column;
             flex-direction:column;
+            font-family:$heading-font-family;
             @include MQ(M) {
                 -webkit-flex-direction: row;
                 -ms-flex-direction: row;
@@ -496,17 +498,26 @@ ul.content-list {
             background-color: $list-page-heading-background-color;
             text-align:center;
             time {
-                color: white;
+                color: $white;
                 line-height: 1.5;
                 font-size: $base-font-size * .75;
                 margin-bottom: $base-font-size * .5;
+                font-family: $heading-font-family;
                 @include MQ(M) {
                     margin-bottom: 0px;
                 }
             }
+            div.series-number {
+                font-size: $base-font-size;
+                color: $white;
+                @include MQ(M) {
+                    border: 1px solid $white;
+                    padding: 4px;
+                }
+            }
             h1 {
                 font-size: $base-font-size;
-                color: white;
+                color: $white;
                 margin-bottom: 0px;
                 @include MQ(M) {
                     font-size: $base-font-size * 1.3;
@@ -796,7 +807,7 @@ ul.site-tags {
     -webkit-flex-wrap: wrap;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-left:0;
+    margin-left: 0;
     li.site-tag {
         transition: all .3s ease-in-out;
         display: inline;
@@ -813,12 +824,13 @@ ul.site-tags {
             font-weight: 300;
             padding: 4px;
             background-color: $button-color;
-            &:focus,&:hover {
+            &:focus,
+            &:hover {
                 background-color: $tag-page-tag-focus-background-color;
-                padding:6px;
+                padding: 6px;
             }
             &:focus {
-                font-weight:bold;
+                font-weight: bold;
             }
         }
         @include MQ(M) {
@@ -836,7 +848,7 @@ ul#matching-items {
     flex-wrap: wrap;
     margin-top: 25px;
     text-indent: 0;
-    margin-left:0;
+    margin-left: 0;
     li {
         display: -webkit-flex;
         display: -ms-flexbox;
@@ -936,7 +948,7 @@ ul#matching-items {
                     padding: 5px 8px;
                     font-weight: normal;
                     margin: 0px;
-                    font-size:16px;
+                    font-size: 16px;
                 }
             }
         }

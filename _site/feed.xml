@@ -5,8 +5,8 @@
     <description>My name is Ryan. This is my website.</description>
     <link>https://ryansportfol.io/</link>
     <atom:link href="https://ryansportfol.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Sun, 20 Sep 2015 16:58:08 -0500</pubDate>
-    <lastBuildDate>Sun, 20 Sep 2015 16:58:08 -0500</lastBuildDate>
+    <pubDate>Sun, 20 Sep 2015 22:50:14 -0500</pubDate>
+    <lastBuildDate>Sun, 20 Sep 2015 22:50:14 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
     
       <item>
@@ -20,7 +20,7 @@
       </item>
     
       <item>
-        <title>Jekyll Tutorials Part 1</title>
+        <title>Setting Up Your Development Environment</title>
         <description>In this first part of my series on developing with Jekyll, I&#39;m going to walk you through every step of turning your Mac into a development machine.</description>
         
         <pubDate>2015-09-20</pubDate>
@@ -38,10 +38,10 @@
       </item>
     
       <item>
-        <title>Jekyll Tutorial Part 2</title>
+        <title>An Introduction to GitHub Pages</title>
         <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.</description>
         
-        <pubDate>2015-09-01</pubDate>
+        <pubDate>2015-09-02</pubDate>
         
         <link>https://ryansportfol.io/tutorials/jekyll-02/</link>
         

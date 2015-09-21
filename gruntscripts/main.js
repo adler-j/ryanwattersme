@@ -32,10 +32,10 @@ function init() {
 function toggleMenu() {
   var globalNav = document.getElementById('global-navigation'),
     menuButton = document.getElementById('mobile-toggle'),
-    mainContent = document.getElementById('main'),
+    mainContent = document.getElementById('main');
     // mobileTitleContent = document.getElementById('site-title-container'),
-    siteFooter = document.getElementById('footer');
-  var elsToShift = [globalNav, menuButton, mainContent, siteFooter];
+    // siteFooter = document.getElementById('footer');
+  var elsToShift = [globalNav, menuButton, mainContent];
   elsToShift.forEach(function(item) {
     if (!(hasClass(item, 'mobile-menu'))) {
       item.className += ' mobile-menu';

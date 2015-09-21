@@ -1,5 +1,5 @@
 ---
-layout: articlelist
+layout: list_page
 title: Articles
 insearch: false
 permalink: /articles/

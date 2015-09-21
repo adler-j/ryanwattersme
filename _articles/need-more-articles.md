@@ -3,8 +3,8 @@ title: Need More Articles
 subtitle: Subtitle for this particular piece
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.
 layout: article
-main_image: speedometer_old_car.jpeg
-main_image_description: A speedometer in an old car.
+main_image:
+main_image_description:
 insearch: true
 published: true
 published_on: 2015-09-02

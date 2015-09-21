@@ -1,0 +1,9 @@
+---
+layout: page
+---
+
+
+
+{% for tutorial in site.tutorials | sort: 'series_no' %}
+		<h5>Index of {{forloop.index}}. Title: {{tutorial.title}}. Link: {{tutorial.url}}</h5>
+{% endfor %}

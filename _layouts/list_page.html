@@ -1,0 +1,35 @@
+---
+layout: default
+regenerate: true
+---
+
+<article id="article">
+	<header>
+		<h1>{{page.title}}</h1>
+	</header>
+	{% if page.collection == 'articles'%}
+		{% assign contents = site.articles | sort: 'published_on' | reverse %}
+		{% assign item_meta = 'articles' %}
+	{% elsif page.collection == 'tutorials' %}
+		{% assign contents = site.tutorials | sort: 'series_no' %}
+		{% assign item_meta = 'tutorials' %}
+	{% endif %}
+	<ul class="content-list">
+	    {% for item in contents %}
+		    {% unless item.url == page.permalink %}
+		    <li>
+		        <a href="{{ item.url }}"><h1>{{ item.title }}</h1>
+						{% if item_meta == 'articles' %}
+		        <time>{{ item.published_on }}</time>
+		        {% elsif item_meta == 'tutorials' %}
+		        <div class="series-number">{{item.series|upcase}}-{{ item.series_no }}</div>
+		        {% endif %}
+		        </a>
+		        {% if item.description %}
+		            <p>{{ item.description }}</p>
+		        {% endif %}						
+		    </li>
+		    {% endunless %}
+	    {% endfor %}    
+	</ul>
+</article>

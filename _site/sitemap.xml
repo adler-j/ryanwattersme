@@ -27,7 +27,7 @@
 	<url>
 		<loc>https://ryansportfol.io/tutorials/jekyll-02/</loc>
 		
-		<lastmod>2015-09-01</lastmod>
+		<lastmod>2015-09-02</lastmod>
 				
 		<changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -38,7 +38,7 @@
 	<url>
 		<loc>https://ryansportfol.io/tutorials/jekyll-03/</loc>
 		
-		<lastmod>2015-09-01</lastmod>
+		<lastmod>2015-08-25</lastmod>
 				
 		<changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -174,6 +174,17 @@
 		<loc>https://ryansportfol.io/index.html</loc>
 		
 		<lastmod>2015-09-01</lastmod>
+				
+		<changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>https://ryansportfol.io/practice/</loc>
+		
+		<lastmod></lastmod>
 				
 		<changefreq>weekly</changefreq>
     <priority>0.5</priority>

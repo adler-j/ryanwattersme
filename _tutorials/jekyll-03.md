@@ -1,17 +1,20 @@
 ---
-title: Jekyll Tutorial Part 3
+series: jekyll
+title: The Liquid Templating Language
 subtitle: Jekyll Tutorial Part 3 
 description: In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.
-layout: article
-series: jekyll
+layout: tutorial
 series_no: 03
 main_image: jekyll_logo_large.png
 main_image_description: This is a photo of a coffee cup and a pencil in black and white.
 published: true
-published_on: 2015-09-01
+published_on: 2015-08-25
 comments: true
 insearch: true
-tags: [jekyll,setup,osx,command line]
+tags: 
+- jekyll
+- liquid
+- templating
 ---
 
 First line of this paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste. Hello world.

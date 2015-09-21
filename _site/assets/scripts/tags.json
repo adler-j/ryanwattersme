@@ -33,7 +33,7 @@
 	
 		
 			{"title": "Need More Articles",
-				"image": "speedometer_old_car.jpeg",  
+				"image": "",  
 					"url": "/articles/need-more-articles/",
 					"tag": "food",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
@@ -41,7 +41,7 @@
 			},
 		
 			{"title": "Need More Articles",
-				"image": "speedometer_old_car.jpeg",  
+				"image": "",  
 					"url": "/articles/need-more-articles/",
 					"tag": "travel",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
@@ -49,7 +49,7 @@
 			},
 		
 			{"title": "Need More Articles",
-				"image": "speedometer_old_car.jpeg",  
+				"image": "",  
 					"url": "/articles/need-more-articles/",
 					"tag": "japan",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
@@ -57,7 +57,7 @@
 			},
 		
 			{"title": "Need More Articles",
-				"image": "speedometer_old_car.jpeg",  
+				"image": "",  
 					"url": "/articles/need-more-articles/",
 					"tag": "traffic",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
@@ -191,7 +191,7 @@
 
 	
 		
-			{"title": "Jekyll Tutorials Part 1",
+			{"title": "Setting Up Your Development Environment",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-01/",
 			 "tag": "jekyll",
@@ -200,7 +200,7 @@
 			}
 	,
 
-			{"title": "Jekyll Tutorials Part 1",
+			{"title": "Setting Up Your Development Environment",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-01/",
 			 "tag": "setup",
@@ -209,7 +209,7 @@
 			}
 	,
 
-			{"title": "Jekyll Tutorials Part 1",
+			{"title": "Setting Up Your Development Environment",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-01/",
 			 "tag": "osx",
@@ -218,7 +218,7 @@
 			}
 	,
 
-			{"title": "Jekyll Tutorials Part 1",
+			{"title": "Setting Up Your Development Environment",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-01/",
 			 "tag": "command-line",
@@ -230,78 +230,69 @@
 
 	
 		
-			{"title": "Jekyll Tutorial Part 2",
+			{"title": "An Introduction to GitHub Pages",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-02/",
 			 "tag": "jekyll",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
-			 "date":"September 01, 2015"
+			 "date":"September 02, 2015"
 			}
 	,
 
-			{"title": "Jekyll Tutorial Part 2",
+			{"title": "An Introduction to GitHub Pages",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-02/",
 			 "tag": "setup",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
-			 "date":"September 01, 2015"
+			 "date":"September 02, 2015"
 			}
 	,
 
-			{"title": "Jekyll Tutorial Part 2",
+			{"title": "An Introduction to GitHub Pages",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-02/",
 			 "tag": "osx",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
-			 "date":"September 01, 2015"
+			 "date":"September 02, 2015"
 			}
 	,
 
-			{"title": "Jekyll Tutorial Part 2",
+			{"title": "An Introduction to GitHub Pages",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-02/",
 			 "tag": "command-line",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
-			 "date":"September 01, 2015"
+			 "date":"September 02, 2015"
 			}
 	
 , 
 
 	
 		
-			{"title": "Jekyll Tutorial Part 3",
+			{"title": "The Liquid Templating Language",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-03/",
 			 "tag": "jekyll",
 			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
-			 "date":"September 01, 2015"
+			 "date":"August 25, 2015"
 			}
 	,
 
-			{"title": "Jekyll Tutorial Part 3",
+			{"title": "The Liquid Templating Language",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-03/",
-			 "tag": "setup",
+			 "tag": "liquid",
 			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
-			 "date":"September 01, 2015"
+			 "date":"August 25, 2015"
 			}
 	,
 
-			{"title": "Jekyll Tutorial Part 3",
+			{"title": "The Liquid Templating Language",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/jekyll-03/",
-			 "tag": "osx",
+			 "tag": "templating",
 			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
-			 "date":"September 01, 2015"
-			}
-	,
-
-			{"title": "Jekyll Tutorial Part 3",
-			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-03/",
-			 "tag": "command-line",
-			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
-			 "date":"September 01, 2015"
+			 "date":"August 25, 2015"
 			}
 	
 
