@@ -5,7 +5,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus
 layout: article
 main_image: shoes_on_the_beach.jpeg
 main_image_description: This is a photo of some shoes on the beach.
-published_on: 2015-08-01
+published_on: 2015-09-01
 comments: true
 published: true
 insearch: true

@@ -4,5 +4,5 @@ title: Articles
 insearch: false
 permalink: /articles/
 regenerate: true
-published_on: 2015-09-01
+published_on: 2015-08-01
 ---
