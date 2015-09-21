@@ -1,5 +1,7 @@
 .sass-cache/
 snippets_and_notes.md
-grunt/node_modules
+grunt/node_modules/
+grunt/.sass-cache/
 CNAME
 practice.md
+node_modules/
