@@ -5,7 +5,7 @@ layout: default
 {% if page.published != false %}
 <header id="article-header"{% if page.main_image %}style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('{{site.baseurl}}/assets/images/{{page.main_image}}')" alt="{{page.main_image_description}}" class="article-header-with-image"{% else %}class="article-header-without-image"{% endif %} >
         <h1>{{ page.title }}</h1>
-        <h5><a href="/{{page.collection}}" class="breadcrumb-link">Back to {{page.collection | capitalize }}</a></h5>
+        <a href="/{{page.collection}}" class="breadcrumb-link">Back to {{page.collection | capitalize }}</a>
         <section class="publishing-metadata">
             <time>{{ page.published_on | date: '%B %d, %Y' }}</time>
         </section>

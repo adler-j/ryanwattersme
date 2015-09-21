@@ -3,7 +3,7 @@ series: jekyll
 title: The Liquid Templating Language
 subtitle: Jekyll Tutorial Part 3 
 description: In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.
-layout: tutorial
+layout: article
 series_no: 03
 main_image: jekyll_logo_large.png
 main_image_description: This is a photo of a coffee cup and a pencil in black and white.

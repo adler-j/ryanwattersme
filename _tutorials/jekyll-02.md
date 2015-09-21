@@ -3,7 +3,7 @@ series: jekyll
 title: An Introduction to GitHub Pages
 subtitle: Jekyll Tutorial Part 2 
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.
-layout: tutorial
+layout: article
 series_no: 02
 main_image: jekyll_logo_large.png
 main_image_description: This is a photo of a coffee cup and a pencil in black and white.
