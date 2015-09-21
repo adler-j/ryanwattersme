@@ -3,7 +3,7 @@ layout: default
 ---
 
 {% if page.published != false %}
-<header id="article-header"{% if page.main_image %}style="background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),url('{{site.baseurl}}/assets/images/{{page.main_image}}')" alt="{{page.main_image_description}}" class="article-header-with-image"{% else %}class="article-header-without-image"{% endif %} >
+<header id="article-header"{% if page.main_image %}style="background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('{{site.baseurl}}/assets/images/{{page.main_image}}')" alt="{{page.main_image_description}}" class="article-header-with-image"{% else %}class="article-header-without-image"{% endif %} >
         <h1>{{ page.title }}</h1>
         <a href="/{{page.collection}}" class="breadcrumb-link">
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="back-arrow-icon" x="0px" y="0px"viewBox="0 0 400.004 400.004" style="enable-background:new 0 0 400.004 400.004;" xml:space="preserve" >

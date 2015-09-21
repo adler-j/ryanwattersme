@@ -2,6 +2,42 @@
 
 	
 		
+			{"title": "Driving Down the Highway",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/driving-down-the-highway/",
+					"tag": "food",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 14, 2015"
+			},
+		
+			{"title": "Driving Down the Highway",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/driving-down-the-highway/",
+					"tag": "travel",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 14, 2015"
+			},
+		
+			{"title": "Driving Down the Highway",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/driving-down-the-highway/",
+					"tag": "japan",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 14, 2015"
+			},
+		
+			{"title": "Driving Down the Highway",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/driving-down-the-highway/",
+					"tag": "awesome",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 14, 2015"
+			},
+		
+	
+	
+	
+		
 			{"title": "First Prose.io Article",
 				"image": "coffee_cup_and_pencil.jpeg",  
 					"url": "/articles/first-prose-article/",
@@ -32,100 +68,64 @@
 	
 	
 		
-			{"title": "Need More Articles",
-				"image": "jekyll_logo_large.png",  
-					"url": "/articles/need-more-articles/",
-					"tag": "food",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
-					"date":"September 02, 2015"
-			},
-		
-			{"title": "Need More Articles",
-				"image": "jekyll_logo_large.png",  
-					"url": "/articles/need-more-articles/",
-					"tag": "travel",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
-					"date":"September 02, 2015"
-			},
-		
-			{"title": "Need More Articles",
-				"image": "jekyll_logo_large.png",  
-					"url": "/articles/need-more-articles/",
-					"tag": "japan",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
-					"date":"September 02, 2015"
-			},
-		
-			{"title": "Need More Articles",
-				"image": "jekyll_logo_large.png",  
-					"url": "/articles/need-more-articles/",
-					"tag": "traffic",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
-					"date":"September 02, 2015"
-			},
-		
-	
-	
-	
-		
-			{"title": "Testing Stuff",
-				"image": "speedometer_old_car.jpeg",  
-					"url": "/articles/testing-stuff/",
-					"tag": "food",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
-					"date":"September 14, 2015"
-			},
-		
-			{"title": "Testing Stuff",
-				"image": "speedometer_old_car.jpeg",  
-					"url": "/articles/testing-stuff/",
-					"tag": "travel",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
-					"date":"September 14, 2015"
-			},
-		
-			{"title": "Testing Stuff",
-				"image": "speedometer_old_car.jpeg",  
-					"url": "/articles/testing-stuff/",
-					"tag": "japan",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
-					"date":"September 14, 2015"
-			},
-		
-			{"title": "Testing Stuff",
-				"image": "speedometer_old_car.jpeg",  
-					"url": "/articles/testing-stuff/",
-					"tag": "awesome",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
-					"date":"September 14, 2015"
-			},
-		
-	
-	
-	
-		
-			{"title": "This is My Article",
-				"image": "japan_imperial_palace.jpeg",  
-					"url": "/articles/this-is-my-article/",
+			{"title": "Making Wine",
+				"image": "hands_full_of_grapes.jpeg",  
+					"url": "/articles/making-wine/",
 					"tag": "japan",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
 					"date":"September 07, 2015"
 			},
 		
-			{"title": "This is My Article",
-				"image": "japan_imperial_palace.jpeg",  
-					"url": "/articles/this-is-my-article/",
+			{"title": "Making Wine",
+				"image": "hands_full_of_grapes.jpeg",  
+					"url": "/articles/making-wine/",
 					"tag": "github",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
 					"date":"September 07, 2015"
 			},
 		
-			{"title": "This is My Article",
-				"image": "japan_imperial_palace.jpeg",  
-					"url": "/articles/this-is-my-article/",
+			{"title": "Making Wine",
+				"image": "hands_full_of_grapes.jpeg",  
+					"url": "/articles/making-wine/",
 					"tag": "javascript",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
 					"date":"September 07, 2015"
+			},
+		
+	
+	
+	
+		
+			{"title": "Need More Articles",
+				"image": "glowing_macbook_on_bed.jpeg",  
+					"url": "/articles/need-more-articles/",
+					"tag": "food",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 02, 2015"
+			},
+		
+			{"title": "Need More Articles",
+				"image": "glowing_macbook_on_bed.jpeg",  
+					"url": "/articles/need-more-articles/",
+					"tag": "travel",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 02, 2015"
+			},
+		
+			{"title": "Need More Articles",
+				"image": "glowing_macbook_on_bed.jpeg",  
+					"url": "/articles/need-more-articles/",
+					"tag": "japan",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 02, 2015"
+			},
+		
+			{"title": "Need More Articles",
+				"image": "glowing_macbook_on_bed.jpeg",  
+					"url": "/articles/need-more-articles/",
+					"tag": "traffic",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.",
+					"date":"September 02, 2015"
 			},
 		
 	
@@ -231,7 +231,7 @@
 	
 		
 			{"title": "An Introduction to GitHub Pages",
-			 "image": "jekyll_logo_large.png",
+			 "image": "github_octocat.jpeg",
 			 "url": "/tutorials/jekyll-02/",
 			 "tag": "jekyll",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
@@ -240,7 +240,7 @@
 	,
 
 			{"title": "An Introduction to GitHub Pages",
-			 "image": "jekyll_logo_large.png",
+			 "image": "github_octocat.jpeg",
 			 "url": "/tutorials/jekyll-02/",
 			 "tag": "setup",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
@@ -249,7 +249,7 @@
 	,
 
 			{"title": "An Introduction to GitHub Pages",
-			 "image": "jekyll_logo_large.png",
+			 "image": "github_octocat.jpeg",
 			 "url": "/tutorials/jekyll-02/",
 			 "tag": "osx",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
@@ -258,7 +258,7 @@
 	,
 
 			{"title": "An Introduction to GitHub Pages",
-			 "image": "jekyll_logo_large.png",
+			 "image": "github_octocat.jpeg",
 			 "url": "/tutorials/jekyll-02/",
 			 "tag": "command-line",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",

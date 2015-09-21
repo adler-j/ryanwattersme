@@ -1,2 +1,5 @@
 .sass-cache/
 snippets_and_notes.md
+grunt/node_modules
+CNAME
+practice.md

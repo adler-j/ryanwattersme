@@ -69,7 +69,7 @@ kramdown:
   footnote_nr: 1
   input: GFM
 
-exclude: [gruntscripts,node_modules,Gruntfile.js,Gemfile,Gemfile.lock,Guardfile,package.json,snippets_and_notes.md]
+exclude: [Gemfile,Gemfile.lock,snippets_and_notes.md,grunt]
 include: [scripts]
 
 

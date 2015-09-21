@@ -3,8 +3,8 @@ title: Need More Articles
 subtitle: Subtitle for this particular piece
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.
 layout: article
-main_image: jekyll_logo_large.png
-main_image_description: This is a photo of a coffee cup and a pencil in black and white.
+main_image: glowing_macbook_on_bed.jpeg
+main_image_description: A glowing laptop on a bed in a dark bedroom.
 insearch: true
 published: true
 published_on: 2015-09-02

@@ -49,6 +49,17 @@
 
 	
 	<url>
+		<loc>https://ryansportfol.io/articles/driving-down-the-highway/</loc>
+		
+		<lastmod>2015-09-14</lastmod>
+				
+		<changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>https://ryansportfol.io/articles/first-prose-article/</loc>
 		
 		<lastmod>2015-09-20</lastmod>
@@ -71,31 +82,20 @@
 
 	
 	<url>
+		<loc>https://ryansportfol.io/articles/making-wine/</loc>
+		
+		<lastmod>2015-09-07</lastmod>
+				
+		<changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>https://ryansportfol.io/articles/need-more-articles/</loc>
 		
 		<lastmod>2015-09-02</lastmod>
-				
-		<changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>https://ryansportfol.io/articles/testing-stuff/</loc>
-		
-		<lastmod>2015-09-14</lastmod>
-				
-		<changefreq>weekly</changefreq>
-    <priority>0.8</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>https://ryansportfol.io/articles/this-is-my-article/</loc>
-		
-		<lastmod>2015-09-07</lastmod>
 				
 		<changefreq>weekly</changefreq>
     <priority>0.8</priority>

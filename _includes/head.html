@@ -4,10 +4,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="alternate" href="{{site.url}}" hreflang="en-us" />
     <style type="text/css">
-     {% capture include_to_scssify %}
-       {% include main.scss %}
-     {% endcapture %}
-     {{ include_to_scssify | scssify }}
+     {% include style-embed.html %}
     </style>
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     {% include favicons.html %}
