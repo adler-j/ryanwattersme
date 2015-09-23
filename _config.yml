@@ -8,6 +8,7 @@ copyright_in_footer: true
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: https://ryansportfol.io # the base hostname & protocol for your site
 site_owner: Ryan Watters
+site_owner_initials: RW
 author_photo: #me.jpg 
 
 # SOCIAL MEDIA/SHARING
