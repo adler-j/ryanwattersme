@@ -87,3 +87,4 @@ function toggleSearch() {
 function preventRefresh(enterTerm) {
   enterTerm.preventDefault();
 }
+
