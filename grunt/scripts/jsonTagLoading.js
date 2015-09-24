@@ -28,7 +28,6 @@ function checkHash() {
     var matchingAnchor = document.getElementById(theTag);
     var theString = matchingAnchor.dataset.tagstring;
     var theTagList = document.getElementsByTagName('a');
-    console.log(theTag, theString);
     getMatches(theTag, theString);
   } else if ((window.location.hash.length === 0 && urlTagTest.test(window.location.href)) && document.getElementById('selected-tag').textContent.length == 0) {
     document.getElementById('selected-tag').innerHTML = "- Select a tag from below";

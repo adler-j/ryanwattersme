@@ -85,7 +85,9 @@ function toggleSearch() {
   }
 }
 //Prevents refreshing of page when the search item is entered into the tipue search input
-function preventRefresh(enterTerm) {
-  enterTerm.preventDefault();
+function preventRefresh(enteredTerm) {
+  enteredTerm.preventDefault();
 }
+
+
 

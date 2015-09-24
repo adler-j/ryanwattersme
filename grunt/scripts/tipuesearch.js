@@ -41,7 +41,7 @@ var tipuesearch_string_7 = 'Next';
 var tipuesearch_string_8 = 'No results found';
 var tipuesearch_string_9 = 'Common words are largely ignored';
 var tipuesearch_string_10 = 'Search too short';
-var tipuesearch_string_11 = 'Should be one character or more';
+var tipuesearch_string_11 = 'Should be three characters or more';
 var tipuesearch_string_12 = 'Should be';
 var tipuesearch_string_13 = 'characters or more';
 
