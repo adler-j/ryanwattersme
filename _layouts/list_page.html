@@ -25,21 +25,7 @@ regenerate: true
 		        <time>{{ item.published_on | date: "%Y-%m-%d" }}</time>
 		        {% elsif item_meta == 'tutorials' %}
 		        <div class="series">
-		        	{% if item.series == "jekyll" %}
-								{% include icons/jekyll-icon.svg %}
-		        	{% elsif item.series == "javascript" %}
-		        		{% include icons/javascript-icon.svg %}
-		        	{% elsif item.series == "html" %}
-		        		{% include icons/html5-icon.svg %}
-		        	{% elsif item.series == "css" %}
-		        		{% include icons/css-icon.svg %}
-		        	{% elsif item.series == "python" %}
-		        		{% include icons/python-icon.svg %}
-		        	{% elsif item.series == "ruby" %}
-		        		{% include icons/ruby-icon.svg %}
-		        	{% elsif item.series == "sass" %}
-		        		{% include icons/sass-icon.svg %}
-		        	{% endif %}
+		        	{% include icons/{{item.series}}-icon.svg %}
 										<span class="series-number">{{ item.series_no }}</span>
 						</div>
 		        {% endif %}
