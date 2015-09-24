@@ -14,6 +14,7 @@
             {% assign collection_name = collection_name | truncate: stringLength, '' %}
         {% elsif page.collection == "tutorials" %}
             {% assign contents = site.tutorials | sort: 'series_no' %}
+        {% assign contents = contents | sort: 'series' %}
             {% assign collection_name = 'tutorials' %} 
         {% endif %} 
         {% assign collection_listpage = page.collection | prepend: '/' | append: '/' %}
