@@ -12,7 +12,7 @@ regenerate: true
 					"url": "{{article.url}}",
 					"tag": "{{tag | slugify}}",
 					"description": "{{article.description}}",
-					"date":"{{article.published_on | date: '%B %d, %Y'}}"
+					"date":"{{article.published_on | date: "%Y-%m-%d" }}"
 			},
 		{% endfor %}
 	{% endif %}
@@ -25,7 +25,8 @@ regenerate: true
 			 "url": "{{tutorial.url}}",
 			 "tag": "{{tag | slugify}}",
 			 "description": "{{tutorial.description}}",
-			 "date":"{{tutorial.published_on | date: '%B %d, %Y'}}"
+			 "series:": "{{tutorial.series | capitalize }}",
+			 "date":"{{tutorial.published_on | date: "%Y-%m-%d" }}"
 			}
 	{% if forloop.rindex0 > 0 %},{% endif %}
 {% endfor %}{% if forloop.rindex0 > 0 %}, {% endif %}{% endif %}

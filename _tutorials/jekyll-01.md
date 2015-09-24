@@ -1,7 +1,7 @@
 ---
 series: jekyll
 series_no: 1
-title: Setting Up Your Development Environment
+title: Set Up Your Dev Environment
 subtitle: Here is my subtitle for this blog post
 description: In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.
 layout: article
@@ -12,7 +12,12 @@ published_on: 2015-09-01
 lastmod: 2015-09-20
 comments: true
 insearch: true
-tags: [jekyll,setup,osx,command line]
+tags:
+- sublime text
+- development
+- osx
+- command line
+- setup
 ---
 
 First line of this paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste. Hello world.
@@ -37,7 +42,7 @@ One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your foo
 
 Do commanded an shameless we disposing do. Indulgence ten remarkably nor are impression out. Power is lived means oh every in we quiet. Remainder provision an in intention. Saw supported too joy promotion engrossed propriety. Me till like it sure no sons.
 
-{% highlight javascript %}
+```js
 $(document).ready(function(){
     $('h1').css('color','blue');
     $('h2').css('color','green');
@@ -45,7 +50,8 @@ $(document).ready(function(){
         $('body').toggleClass('body-class');
     })
 });
-{% endhighlight %}
+```
+
 At every tiled on ye defer do. No attention suspected oh difficult. Fond his say old meet cold find come whom. The sir park sake bred. Wonder matter now can estate esteem assure fat roused. Am performed on existence as discourse is. Pleasure friendly at marriage blessing or. Let's make a list:
 
 * Item 1

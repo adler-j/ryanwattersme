@@ -63,12 +63,12 @@ permalink: /:collection/:path/
 
 # BUILD SETTINGS
 
-markdown: kramdown
-highlighter: pygments
-kramdown:
-  auto_ids: false
-  footnote_nr: 1
-  input: GFM
+markdown: redcarpet
+highlighter: rouge
+# kramdown:
+#   auto_ids: false
+#   footnote_nr: 1
+#   input: GFM
 
 exclude: [Gemfile,Gemfile.lock,snippets_and_notes.md,grunt]
 include: [scripts]
@@ -84,6 +84,7 @@ compress_html:
   endings: all 
 
 repository: rdwatters/
+gems: ['rouge','redcarpet']
 
 # PROSE.IO SETTINGS
 
