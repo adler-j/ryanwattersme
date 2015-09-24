@@ -20,7 +20,7 @@ $white:#ffffff;
 // Backgrounds - body, global nav/header
 // $body-background:url('/assets/images/backgrounds/bg_light.png');
 $body-background:$white;
-$header-background:url('/assets/images/backgrounds/bg_slashit.png'),#222222;
+$header-background:url('/assets/images/backgrounds/bg_slashit.png'),repeat,#000000;
 $header-background-repeat:repeat;
 $base-font-size:18px;
 $base-font-family:'Raleway','Helvetica Neue',helvetica,sans-serif;
@@ -36,11 +36,15 @@ $blockquote-font-family:$base-font-family;
 $body-z:0;
 $header-height:60px;
 $header-link-color:#ffffff;
+
+
 $site-title-text-transform:none;
 $site-title-font-color:$header-link-color;
 $site-title-font-family:$heading-font-family;
 $site-logo-width-mobile:50px;
 $site-logo-width-desktop:120px;
+
+
 $global-nav-text-transform:uppercase;
 $global-nav-font-family:$site-title-font-family;
 $global-nav-font-size:$base-font-size * 1.5;
@@ -48,26 +52,28 @@ $global-nav-font-size-mobile: 8vh;
 $global-nav-font-color:$header-link-color;
 $global-nav-background-mobile:$header-background;
 $global-nav-letter-spacing:1px;
-$content-list-heading-hover-background-color:$anchor-color;
+
+
 $article-heading-font-family: $heading-font-family;
 $article-headline-font-color: #ffffff;
 $article-subheading-font-size:$base-font-size * 1.2;
 $article-anchor-font-weight:700;
 $article-anchor-font-color:$anchor-color;
 $article-blockquote-background-color:#ffffff;
-$article-coding-background:#222222;
+$article-codeblock-background:#111111;
 $article-coding-lineno-color:#ffffff;
 $article-header-background-image-size:cover;
 $article-header-background-image-position:center left;
 $article-header-mobile-min-height:50vh;
 $article-header-m-plus-min-height:50vh;
-
 $article-sticky-footer-background:$white;
 $article-sticky-footer-tag-font-size:$base-font-size;
 $article-sticky-footer-tag-color:#01589B;
 $article-sticky-footer-tag-hover-color:$accent-color;
 
 $list-page-heading-background-color:$anchor-color;
+$list-page-heading-background-color-hover:darken($list-page-heading-background-color,20%);
+// $list-page-heading-background-color-hover:#000000;
 $list-page-heading-font-color:$white;
 //article headings (note that for mobile screens, these values are reduce to size * .85)
 $h1-font-size: $base-font-size * 1.7; //mobile = $h1-font-size * .75

@@ -518,7 +518,7 @@ ul.content-list {
             align-items: center;
             &:hover {
                 text-decoration: none;
-                background-color: $content-list-heading-hover-background-color;
+                background-color: $list-page-heading-background-color-hover;
             }
             h1 {
                 display:-webkit-flex;
