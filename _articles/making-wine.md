@@ -33,7 +33,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellat, soluta
 {% highlight javascript %}
 
 $(document).ready(function(){
-    console.log("WHATEVER!");
+    console.log("hello world");
 });
 
 {% endhighlight %}

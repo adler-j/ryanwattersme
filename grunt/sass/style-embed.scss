@@ -192,12 +192,44 @@ nav.global-navigation {
                 a {
                     position: relative;
                     color: darken($white, 25%);
-                    &:hover,
-                    &.active {
-                        color: $white;
+                    &:before,&:after{
+                        display:inline-block;
+                        opacity: 0;
+                        transition: transform 0.3s, opacity 0.2s;
                     }
-                    &.active {
-                        font-weight: bold;
+                    &:before {
+                        margin-right:10px;
+                        content: '[';
+                        -webkit-transform: translate(20px);
+                        transform: translate(20px);
+                    }
+                    &:after{
+                        margin-left:10px;
+                        content: ']';
+                        transform: translateX(-20px);
+                    }
+                    &:hover::before,&:hover::after,&:focus::before,&:focus::after {
+                        opacity:1;
+                        -webkit-transform:translateX(0px);
+                        transform:translateX(0px);
+                    }
+                    &.active{
+                        opacity:1;
+                        color:$white;
+                        font-weight:600;
+                        &:hover::before{
+                        margin-right:10px;
+                        -webkit-transform: translate(20px);
+                        transform: translate(20px);    
+                        }
+                        &:hover::after{
+                        margin-left:10px;
+                        -webkit-transform: translate(-20px);
+                        transform: translateX(-20px);
+                        }
+                        &:hover::after,&:hover::before{
+                            opacity:0;
+                        }
                     }
                 }
             }
@@ -803,9 +835,6 @@ a.tag {
         border-right-color: $article-sticky-footer-tag-color;
         border-width: 14px;
         transition: border-color .5s;
-        &:hover {
-            background: $article-sticky-footer-tag-hover-color;
-        }
     }
 }
 
