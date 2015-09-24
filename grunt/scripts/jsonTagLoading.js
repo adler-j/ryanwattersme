@@ -22,6 +22,7 @@ window.onpopstate = function(event) {
 
 
 function checkHash() {
+  var urlTagTest = new RegExp(/tags/);
   if (window.location.hash.length !== 0) {
     var theTag = window.location.hash.split('#')[1];
     var matchingAnchor = document.getElementById(theTag);
@@ -29,6 +30,8 @@ function checkHash() {
     var theTagList = document.getElementsByTagName('a');
     console.log(theTag, theString);
     getMatches(theTag, theString);
+  } else if ((window.location.hash.length === 0 && urlTagTest.test(window.location.href)) && document.getElementById('selected-tag').textContent.length == 0) {
+    document.getElementById('selected-tag').innerHTML = "- Select a tag from below";
   }
 }
 

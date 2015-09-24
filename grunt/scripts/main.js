@@ -78,6 +78,7 @@ function toggleSearch() {
   if (searchInput.classList.contains('search-open')) {
     searchInput.focus();
   }
+  //change contentfooter to prevent svgs from leaking through on certain browsers
   if (document.querySelector('.content-footer')) {
     var contentFooter = document.querySelector('.content-footer');
     contentFooter.classList.toggle('search-open');

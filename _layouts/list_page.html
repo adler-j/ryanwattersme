@@ -6,6 +6,7 @@ regenerate: true
 <article id="article">
 	<header>
 		<h1>{{page.title}}</h1>
+		<a href="/tags/" id="content-by-tag">{% include tag-icon.svg %}Find content by tag</a>
 	</header>
 	{% if page.collection == 'articles'%}
 		{% assign contents = site.articles | sort: 'published_on' | reverse %}
@@ -20,7 +21,7 @@ regenerate: true
 		    <li>
 		        <a href="{{ item.url }}"><h1>{{ item.title }}</h1>
 						{% if item_meta == 'articles' %}
-		        <time>{{ item.published_on | date: '%B %d, %Y' }}</time>
+		        <time>{{ item.published_on | date: "%Y-%m-%d" }}</time>
 		        {% elsif item_meta == 'tutorials' %}
 		        <div class="series"><?xml version="1.0" encoding="utf-8"?>
 									<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" id="jekyll-icon" x="0px" y="0px"
