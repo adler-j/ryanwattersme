@@ -80,7 +80,6 @@ h6 {
         width: 70%;
         float: left;
         display: inline;
-        font-family: helvetica, sans-serif;
         @include MQ(M) {
             -webkit-justify-content: center;
             -ms-flex-pack: center;
