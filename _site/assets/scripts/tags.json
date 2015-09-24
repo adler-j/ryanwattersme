@@ -210,7 +210,16 @@
 			{"title": "HTML5 New Elements",
 			 "image": "jekyll_logo_large.png",
 			 "url": "/tutorials/html-01/",
-			 "tag": "templating",
+			 "tag": "html5",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
+			 "date":"August 25, 2015"
+			}
+	,
+
+			{"title": "HTML5 New Elements",
+			 "image": "jekyll_logo_large.png",
+			 "url": "/tutorials/html-01/",
+			 "tag": "elements",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
 			 "date":"August 25, 2015"
 			}
