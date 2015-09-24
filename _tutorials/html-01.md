@@ -1,18 +1,20 @@
 ---
-series: jekyll
-series_no: 1
-title: Setting Up Your Development Environment
-subtitle: Here is my subtitle for this blog post
-description: In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.
+series: html
+title: HTML5 New Elements
+subtitle: HTML5 elements 
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.
 layout: article
-main_image: sublime_text.png
+series_no: 01
+main_image: jekyll_logo_large.png
 main_image_description: This is a photo of a coffee cup and a pencil in black and white.
 published: true
-published_on: 2015-09-01
-lastmod: 2015-09-20
+published_on: 2015-08-25
 comments: true
 insearch: true
-tags: [jekyll,setup,osx,command line]
+tags: 
+- jekyll
+- liquid
+- templating
 ---
 
 First line of this paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste. Hello world.
@@ -45,7 +47,7 @@ $(document).ready(function(){
         $('body').toggleClass('body-class');
     })
 });
-{% endhighlight %}
+{% endhighlight %} 
 At every tiled on ye defer do. No attention suspected oh difficult. Fond his say old meet cold find come whom. The sir park sake bred. Wonder matter now can estate esteem assure fat roused. Am performed on existence as discourse is. Pleasure friendly at marriage blessing or. Let's make a list:
 
 * Item 1

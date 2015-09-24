@@ -5,9 +5,25 @@
     <description>My name is Ryan. This is my website.</description>
     <link>https://ryansportfol.io/</link>
     <atom:link href="https://ryansportfol.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 23 Sep 2015 20:55:14 -0500</pubDate>
-    <lastBuildDate>Wed, 23 Sep 2015 20:55:14 -0500</lastBuildDate>
+    <pubDate>Wed, 23 Sep 2015 21:51:20 -0500</pubDate>
+    <lastBuildDate>Wed, 23 Sep 2015 21:51:20 -0500</lastBuildDate>
     <generator>Jekyll v2.5.3</generator>
+    
+      <item>
+        <title>HTML5 New Elements</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.</description>
+        
+        <pubDate>2015-08-25</pubDate>
+        
+        <link>https://ryansportfol.io/tutorials/html-01/</link>
+        
+        <category>jekyll</category>
+        
+        <category>liquid</category>
+        
+        <category>templating</category>
+        
+      </item>
     
       <item>
         <title>Tutorials</title>
@@ -20,34 +36,14 @@
       </item>
     
       <item>
-        <title>Setting Up Your Development Environment</title>
-        <description>In this first part of my series on developing with Jekyll, I&#39;m going to walk you through every step of turning your Mac into a development machine.</description>
+        <title>Javascript Basics</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.</description>
         
         <pubDate>2015-09-20</pubDate>
         
-        <link>https://ryansportfol.io/tutorials/jekyll-01/</link>
+        <link>https://ryansportfol.io/tutorials/javascript-01/</link>
         
-        <category>jekyll</category>
-        
-        <category>setup</category>
-        
-        <category>osx</category>
-        
-        <category>command line</category>
-        
-      </item>
-    
-      <item>
-        <title>An Introduction to GitHub Pages</title>
-        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.</description>
-        
-        <pubDate>2015-09-02</pubDate>
-        
-        <link>https://ryansportfol.io/tutorials/jekyll-02/</link>
-        
-        <category>jekyll</category>
-        
-        <category>setup</category>
+        <category>javascript</category>
         
         <category>osx</category>
         

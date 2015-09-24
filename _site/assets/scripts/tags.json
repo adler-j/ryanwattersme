@@ -188,111 +188,201 @@
 	
 
 	
-
-	
 		
-			{"title": "Setting Up Your Development Environment",
+			{"title": "HTML5 New Elements",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-01/",
+			 "url": "/tutorials/html-01/",
 			 "tag": "jekyll",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
-			 "date":"September 01, 2015"
-			}
-	,
-
-			{"title": "Setting Up Your Development Environment",
-			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-01/",
-			 "tag": "setup",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
-			 "date":"September 01, 2015"
-			}
-	,
-
-			{"title": "Setting Up Your Development Environment",
-			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-01/",
-			 "tag": "osx",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
-			 "date":"September 01, 2015"
-			}
-	,
-
-			{"title": "Setting Up Your Development Environment",
-			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-01/",
-			 "tag": "command-line",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
-			 "date":"September 01, 2015"
-			}
-	
-, 
-
-	
-		
-			{"title": "An Introduction to GitHub Pages",
-			 "image": "github_octocat.jpeg",
-			 "url": "/tutorials/jekyll-02/",
-			 "tag": "jekyll",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
-			 "date":"September 02, 2015"
-			}
-	,
-
-			{"title": "An Introduction to GitHub Pages",
-			 "image": "github_octocat.jpeg",
-			 "url": "/tutorials/jekyll-02/",
-			 "tag": "setup",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
-			 "date":"September 02, 2015"
-			}
-	,
-
-			{"title": "An Introduction to GitHub Pages",
-			 "image": "github_octocat.jpeg",
-			 "url": "/tutorials/jekyll-02/",
-			 "tag": "osx",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
-			 "date":"September 02, 2015"
-			}
-	,
-
-			{"title": "An Introduction to GitHub Pages",
-			 "image": "github_octocat.jpeg",
-			 "url": "/tutorials/jekyll-02/",
-			 "tag": "command-line",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
-			 "date":"September 02, 2015"
-			}
-	
-, 
-
-	
-		
-			{"title": "The Liquid Templating Language",
-			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-03/",
-			 "tag": "jekyll",
-			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
 			 "date":"August 25, 2015"
 			}
 	,
 
-			{"title": "The Liquid Templating Language",
+			{"title": "HTML5 New Elements",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-03/",
+			 "url": "/tutorials/html-01/",
 			 "tag": "liquid",
-			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
 			 "date":"August 25, 2015"
 			}
 	,
 
-			{"title": "The Liquid Templating Language",
+			{"title": "HTML5 New Elements",
 			 "image": "jekyll_logo_large.png",
-			 "url": "/tutorials/jekyll-03/",
+			 "url": "/tutorials/html-01/",
 			 "tag": "templating",
-			 "description": "In this third part of my series on developing with Jekyll, I'm going to blah blah blah blah blah blah blah.",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
 			 "date":"August 25, 2015"
+			}
+	
+, 
+
+	
+
+	
+		
+			{"title": "Javascript Basics",
+			 "image": "jekyll_logo_large.png",
+			 "url": "/tutorials/javascript-01/",
+			 "tag": "javascript",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "date":"September 01, 2015"
+			}
+	,
+
+			{"title": "Javascript Basics",
+			 "image": "jekyll_logo_large.png",
+			 "url": "/tutorials/javascript-01/",
+			 "tag": "osx",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "date":"September 01, 2015"
+			}
+	,
+
+			{"title": "Javascript Basics",
+			 "image": "jekyll_logo_large.png",
+			 "url": "/tutorials/javascript-01/",
+			 "tag": "command-line",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "date":"September 01, 2015"
+			}
+	
+, 
+
+	
+		
+			{"title": "Javascript Basics Part 2",
+			 "image": "jekyll_logo_large.png",
+			 "url": "/tutorials/javascript-02/",
+			 "tag": "javascript",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "date":"September 01, 2015"
+			}
+	,
+
+			{"title": "Javascript Basics Part 2",
+			 "image": "jekyll_logo_large.png",
+			 "url": "/tutorials/javascript-02/",
+			 "tag": "osx",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "date":"September 01, 2015"
+			}
+	,
+
+			{"title": "Javascript Basics Part 2",
+			 "image": "jekyll_logo_large.png",
+			 "url": "/tutorials/javascript-02/",
+			 "tag": "command-line",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "date":"September 01, 2015"
+			}
+	
+, 
+
+	
+		
+			{"title": "Setting Up Your Development Environment",
+			 "image": "sublime_text.png",
+			 "url": "/tutorials/jekyll-01/",
+			 "tag": "jekyll",
+			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
+			 "date":"September 01, 2015"
+			}
+	,
+
+			{"title": "Setting Up Your Development Environment",
+			 "image": "sublime_text.png",
+			 "url": "/tutorials/jekyll-01/",
+			 "tag": "setup",
+			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
+			 "date":"September 01, 2015"
+			}
+	,
+
+			{"title": "Setting Up Your Development Environment",
+			 "image": "sublime_text.png",
+			 "url": "/tutorials/jekyll-01/",
+			 "tag": "osx",
+			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
+			 "date":"September 01, 2015"
+			}
+	,
+
+			{"title": "Setting Up Your Development Environment",
+			 "image": "sublime_text.png",
+			 "url": "/tutorials/jekyll-01/",
+			 "tag": "command-line",
+			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
+			 "date":"September 01, 2015"
+			}
+	
+, 
+
+	
+		
+			{"title": "An Introduction to GitHub Pages",
+			 "image": "github_octocat.jpeg",
+			 "url": "/tutorials/jekyll-02/",
+			 "tag": "jekyll",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
+			 "date":"September 02, 2015"
+			}
+	,
+
+			{"title": "An Introduction to GitHub Pages",
+			 "image": "github_octocat.jpeg",
+			 "url": "/tutorials/jekyll-02/",
+			 "tag": "setup",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
+			 "date":"September 02, 2015"
+			}
+	,
+
+			{"title": "An Introduction to GitHub Pages",
+			 "image": "github_octocat.jpeg",
+			 "url": "/tutorials/jekyll-02/",
+			 "tag": "osx",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
+			 "date":"September 02, 2015"
+			}
+	,
+
+			{"title": "An Introduction to GitHub Pages",
+			 "image": "github_octocat.jpeg",
+			 "url": "/tutorials/jekyll-02/",
+			 "tag": "command-line",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
+			 "date":"September 02, 2015"
+			}
+	
+, 
+
+	
+		
+			{"title": "An Introduction to Python",
+			 "image": "python.png",
+			 "url": "/tutorials/python-01/",
+			 "tag": "python",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, saepe. Neque minus, at dignissimos.",
+			 "date":"September 01, 2015"
+			}
+	,
+
+			{"title": "An Introduction to Python",
+			 "image": "python.png",
+			 "url": "/tutorials/python-01/",
+			 "tag": "programming",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, saepe. Neque minus, at dignissimos.",
+			 "date":"September 01, 2015"
+			}
+	,
+
+			{"title": "An Introduction to Python",
+			 "image": "python.png",
+			 "url": "/tutorials/python-01/",
+			 "tag": "scripting",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, saepe. Neque minus, at dignissimos.",
+			 "date":"September 01, 2015"
 			}
 	
 

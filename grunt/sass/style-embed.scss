@@ -330,10 +330,9 @@ article {
             }
         }
         a#content-by-tag{
-            float:right;
-            display:block;
-            margin-top:-20px;
-            margin-bottom:10px;
+            position:absolute;
+            top:20px;
+            right:5px;
             color:$base-font-color;
             &:hover {
                 text-decoration:none;
@@ -591,6 +590,7 @@ ul.content-list {
                     display: flex;
                     width: $base-font-size * 2;
                     height: $base-font-size * 2;
+                    margin-right:10px;
                 }
                 .series-number {
                     font-size: $base-font-size;

@@ -1,18 +1,18 @@
 ---
-series: jekyll
+series: python
 series_no: 1
-title: Setting Up Your Development Environment
+title: An Introduction to Python
 subtitle: Here is my subtitle for this blog post
-description: In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, saepe. Neque minus, at dignissimos.
 layout: article
-main_image: sublime_text.png
+main_image: python.png
 main_image_description: This is a photo of a coffee cup and a pencil in black and white.
 published: true
 published_on: 2015-09-01
 lastmod: 2015-09-20
 comments: true
 insearch: true
-tags: [jekyll,setup,osx,command line]
+tags: [python,programming,scripting]
 ---
 
 First line of this paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste. Hello world.
