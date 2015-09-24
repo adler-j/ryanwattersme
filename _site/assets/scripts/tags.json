@@ -468,6 +468,49 @@
 			 "date":"2015-09-01"
 			}
 	
+, 
+
+	
+		
+			{"title": "An Introduction to SASS",
+			 "image": "jekyll_logo_large.png",
+			 "url": "/tutorials/sass-01/",
+			 "tag": "ruby",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "series:": "Sass",
+			 "date":"2015-09-01"
+			}
+	,
+
+			{"title": "An Introduction to SASS",
+			 "image": "jekyll_logo_large.png",
+			 "url": "/tutorials/sass-01/",
+			 "tag": "matsumoto",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "series:": "Sass",
+			 "date":"2015-09-01"
+			}
+	,
+
+			{"title": "An Introduction to SASS",
+			 "image": "jekyll_logo_large.png",
+			 "url": "/tutorials/sass-01/",
+			 "tag": "object-oriented",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "series:": "Sass",
+			 "date":"2015-09-01"
+			}
+	,
+
+			{"title": "An Introduction to SASS",
+			 "image": "jekyll_logo_large.png",
+			 "url": "/tutorials/sass-01/",
+			 "tag": "scripting",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "series:": "Sass",
+			 "date":"2015-09-01"
+			}
+	
 
 ]}
 
