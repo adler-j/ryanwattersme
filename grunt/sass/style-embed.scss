@@ -199,37 +199,6 @@ nav.global-navigation {
                     &.active {
                         font-weight: bold;
                     }
-                    // &:before,
-                    // &:after {
-                    //     position: absolute;
-                    //     left: 0;
-                    //     width: 90%;
-                    //     height: 2px;
-                    //     background: $white;
-                    //     content: '';
-                    //     opacity: 0;
-                    //     -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
-                    //     transition: opacity 0.3s, transform 0.3s;
-                    // }
-                    // &:before {
-                    //     top: 0;
-                    //     -webkit-transform: translateY(-10px);
-                    //     transform: translateY(-10px);
-                    // }
-                    // &:after {
-                    //     bottom: 0;
-                    //     -webkit-transform: translateY(10px);
-                    //     transform: translateY(10px);
-                    // }
-                    // &:hover::before,
-                    // &:focus::before,
-                    // &:hover::after,
-                    // &:focus::after,
-                    // &.active {
-                    //     opacity: 1;
-                    //     -webkit-transform: translateY(0px);
-                    //     transform: translateY(0px);
-                    // }
                 }
             }
         }
@@ -334,27 +303,25 @@ header#article-header {
             }
         }
     }
+    h1{
+        font-size: $base-font-size * 1.5;
+        @include MQ(M){
+            font-size: 2em;
+        }
+    }
     &.article-header-without-image {
         height: auto;
         width: 90%;
         max-width: $content-max-width;
         margin-right: auto;
         margin-left: auto;
-        a.breadcrum-link {
+        a.breadcrumb-link {
             color: $base-font-color;
         }
     }
 }
 
 article {
-    header {
-        h1 {
-            font-size: $base-font-size * 1.2;
-            @include MQ(M) {
-                font-size: 2em;
-            }
-        }
-    }
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
