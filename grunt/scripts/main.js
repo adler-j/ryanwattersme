@@ -32,7 +32,7 @@ function init() {
 function toggleMenu() {
   var globalNav = document.getElementById('global-navigation'),
     menuButton = document.getElementById('mobile-toggle'),
-    mainContent = document.getElementById('main');
+    mainContent = document.getElementByTagName('main');
     // mobileTitleContent = document.getElementById('site-title-container'),
     // siteFooter = document.getElementById('footer');
   var elsToShift = [globalNav, menuButton, mainContent];
