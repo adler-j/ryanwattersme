@@ -11,7 +11,10 @@ layout: compress
             {{ content }}
         </main>
     {% include footer.html %}
-    <script src="{{site.baseurl}}/assets/scripts/script.min.js" async></script>   
+    <script src="{{site.baseurl}}/assets/scripts/script.min.js" async></script>
+    {% if page.layout == 'parse' %}   
+    <script src="//www.parsecdn.com/js/parse-1.6.2.min.js"></script>
+    {% endif %}
   <script async>
   	/*Exclude local development with the following if statement*/
   	if(document.location.hostname !== 'localhost'){

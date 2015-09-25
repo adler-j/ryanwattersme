@@ -189,6 +189,39 @@
 
 	
 		
+			{"title": "Command Line Basics Part 1",
+			 "image": "/icons/command line-icon.svg",
+			 "url": "/tutorials/commandline-01/",
+			 "tag": "bash",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Command line",
+			 "date":"2015-09-01"
+			}
+	,
+
+			{"title": "Command Line Basics Part 1",
+			 "image": "/icons/command line-icon.svg",
+			 "url": "/tutorials/commandline-01/",
+			 "tag": "command-line",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Command line",
+			 "date":"2015-09-01"
+			}
+	,
+
+			{"title": "Command Line Basics Part 1",
+			 "image": "/icons/command line-icon.svg",
+			 "url": "/tutorials/commandline-01/",
+			 "tag": "scripting",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Command line",
+			 "date":"2015-09-01"
+			}
+	
+, 
+
+	
+		
 			{"title": "Using Viewport Measurements in CSS",
 			 "image": "/icons/css-icon.svg",
 			 "url": "/tutorials/css-01/",

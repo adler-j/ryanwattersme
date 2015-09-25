@@ -3,6 +3,17 @@
 
 	
 	<url>
+		<loc>https://ryansportfol.io/tutorials/commandline-01/</loc>
+		
+		<lastmod>2015-09-20</lastmod>
+				
+		<changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>https://ryansportfol.io/tutorials/css-01/</loc>
 		
 		<lastmod>2015-09-20</lastmod>
@@ -240,6 +251,17 @@
 		<loc>https://ryansportfol.io/index.html</loc>
 		
 		<lastmod>2015-09-01</lastmod>
+				
+		<changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+	</url>
+	
+
+	
+	<url>
+		<loc>https://ryansportfol.io/parse/</loc>
+		
+		<lastmod></lastmod>
 				
 		<changefreq>weekly</changefreq>
     <priority>0.5</priority>

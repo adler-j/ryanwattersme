@@ -4,7 +4,7 @@ layout: default
 
 {% if page.published != false %}
 {% if page.series and page.main_image == nil %}
-    {% assign main_image = page.series | append: '-icon.svg' | prepend: 'icons/' %}
+    {% assign main_image = page.series | slugify | append: '-icon.svg' | prepend: 'icons/' %}
     {% assign img = true %}
     {% assign header_class = "article-header-with-image"%}
 {% elsif page.main_image %}

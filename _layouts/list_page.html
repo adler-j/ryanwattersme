@@ -29,11 +29,13 @@ regenerate: true
 			{% endunless %}
 			{% assign previous = ser %}
 		{% endfor %}
+		{% comment %}
 <!-- 		<ul class="svg-icon-list">
 			{% for ser in unique_series %}
 			<li class="svg-icon-list-item"><a href="#" class="svg-icon-anchor" data-targetseries="{{ser}}">{% include icons/{{ser}}-icon.svg %}</a></li>
 			{% endfor %}
 		</ul> -->
+		{% endcomment %}
 	{% endif %}
 	<ul class="content-list">
 	    {% for item in contents %}
@@ -44,7 +46,7 @@ regenerate: true
 		        <time>{{ item.published_on | date: "%Y-%m-%d" }}</time>
 		        {% elsif article_type == 'tutorials' %}
 		        <div class="series">
-		        	{% include icons/{{item.series}}-icon.svg %}
+		        	{% include icons/{{ item.series | slugify }}-icon.svg %}
 										<span class="series-number">{{ item.series_no }}</span>
 						</div>
 		        {% endif %}
