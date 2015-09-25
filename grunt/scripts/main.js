@@ -32,7 +32,7 @@ function init() {
 function toggleMenu() {
   var globalNav = document.getElementById('global-navigation'),
     menuButton = document.getElementById('mobile-toggle'),
-    mainContent = document.querySelector('main');
+    mainContent = document.querySelector('.main');
     // mobileTitleContent = document.getElementById('site-title-container'),
     // siteFooter = document.getElementById('footer');
   var elsToShift = [globalNav, menuButton, mainContent];
@@ -43,14 +43,6 @@ function toggleMenu() {
       item.className = item.className.split(' ')[0];
     }
   })
-  // implemented as normal for loop
-  // for (var i = 0; i < elsToShift.lenght; i++) {
-  //   if (!(hasClass(elsToShift[i], 'mobile-menu'))) {
-  //     elsToShift[i].className += ' mobile-menu';
-  //   } else {
-  //     elsToShift[i].className = elsToShift[i].className.split(' ')[0];
-  //   }
-  // }
 }
 
 //add "target=_blank" attribute to all external links on page
