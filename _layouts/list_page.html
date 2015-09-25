@@ -47,7 +47,6 @@ regenerate: true
 		        {% elsif article_type == 'tutorials' %}
 		        <div class="series">
 		        	{% include icons/{{ item.series | slugify }}-icon.svg %}
-										<span class="series-number">{{ item.series_no }}</span>
 						</div>
 		        {% endif %}
 		        </a>
