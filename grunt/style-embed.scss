@@ -309,12 +309,14 @@ main {
         a.breadcrumb-link {
             font-size: $base-font-size * .75;
             line-height: 1.5;
+            height:$base-font-size * 1.5;
             vertical-align: middle;
             position: absolute;
             bottom: 15px;
             right: 15px;
             color: $white;
             min-width: auto;
+            z-index:10;
             &:hover {
                 text-decoration: none;
                 font-weight:bold;
