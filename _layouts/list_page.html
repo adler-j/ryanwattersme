@@ -3,35 +3,55 @@ layout: default
 regenerate: true
 ---
 
-<article id="article">
+<article>
 	<header>
-		<h1>{{page.title}}</h1>
-		<a href="/tags/" id="content-by-tag">{% include icons/tag-icon.svg %}Content by tag</a>
+		<h1>{{page.title}}</h1> 
+		<a href="/tags/" id="content-by-tag">{% include icons/tag-icon.svg %}Site content by tag</a>
 	</header>
 	{% if page.collection == 'articles'%}
 		{% assign contents = site.articles | sort: 'published_on' | reverse %}
-		{% assign item_meta = 'articles' %}
-	{% elsif page.collection == 'tutorials' %}
+		{% assign article_type = 'articles' %}
+	{% endif %}
+	{% if page.collection == 'tutorials' %}
 		{% assign contents = site.tutorials | sort: 'series_no' %}
 		{% assign contents = contents | sort: 'series' %}
-		{% assign item_meta = 'tutorials' %}
+		{% assign article_type = 'tutorials' %}
+		{% assign theseries = '' | split: ',' %}
+		{% assign unique_series = '' | split: ',' %}
+		{% assign series_contents = site.tutorials | map: 'series' | join: ',' | join: ',' | split: ',' %}
+		{% for serie in series_contents %}
+			{% assign theseries = theseries | push: serie %}
+		{% endfor %}
+		{% assign theseries = theseries | sort %}
+		{% for ser in theseries %}
+			{% unless ser == previous or ser == '' %}
+				{% assign unique_series = unique_series | push: ser%}
+			{% endunless %}
+			{% assign previous = ser %}
+		{% endfor %}
+<!-- 		<ul class="svg-icon-list">
+			{% for ser in unique_series %}
+			<li class="svg-icon-list-item"><a href="#" class="svg-icon-anchor" data-targetseries="{{ser}}">{% include icons/{{ser}}-icon.svg %}</a></li>
+			{% endfor %}
+		</ul> -->
 	{% endif %}
 	<ul class="content-list">
 	    {% for item in contents %}
 		    {% unless item.url == page.permalink %}
 		    <li>
-		        <a href="{{ item.url }}"><h1>{{ item.title }}</h1>
-						{% if item_meta == 'articles' %}
+		        <a class="list" href="{{ item.url }}" {% if item.series %}date-series="{{item.series | downcase}}"{% endif %}><h1>{{ item.title }}</h1>
+						{% if article_type == 'articles' %}
 		        <time>{{ item.published_on | date: "%Y-%m-%d" }}</time>
-		        {% elsif item_meta == 'tutorials' %}
+		        {% elsif article_type == 'tutorials' %}
 		        <div class="series">
 		        	{% include icons/{{item.series}}-icon.svg %}
 										<span class="series-number">{{ item.series_no }}</span>
 						</div>
 		        {% endif %}
 		        </a>
+		        {% comment %} Rather than truncate by letter, truncate to 20 words to keep description lengths consistent {% endcomment %}
 		        {% if item.description %}
-		            <p>{{ item.description }}</p>
+		            <p>{{ item.description | truncatewords: 20,'...' }}</p>
 		        {% endif %}						
 		    </li>
 		    {% endunless %}

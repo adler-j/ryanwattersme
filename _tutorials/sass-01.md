@@ -5,8 +5,8 @@ title: An Introduction to SASS
 subtitle: These are some basics characteristics of SASS, a CSS preprocessor originally built in Ruby.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.
 layout: article
-main_image: jekyll_logo_large.png
-main_image_description: This is a photo of a coffee cup and a pencil in black and white.
+main_image:
+main_image_description:
 published: true
 published_on: 2015-09-01
 lastmod: 2015-09-20

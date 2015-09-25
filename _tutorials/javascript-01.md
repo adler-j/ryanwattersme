@@ -1,12 +1,12 @@
 ---
 series: javascript
 series_no: 1
-title: Javascript Basics
+title: Javascript Basics Part 1
 subtitle: These are some javascript basics
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.
 layout: article
-main_image: jekyll_logo_large.png
-main_image_description: This is a photo of a coffee cup and a pencil in black and white.
+main_image:
+main_image_description:
 published: true
 published_on: 2015-09-01
 lastmod: 2015-09-20

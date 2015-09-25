@@ -2,6 +2,7 @@
 title: Making Wine
 subtitle: Here is a subtitle for my article
 layout: article
+author: Ryan Watters
 main_image: hands_full_of_grapes.jpeg
 main_image_description: A man holding two handfuls of grapes.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.

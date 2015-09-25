@@ -1,6 +1,8 @@
 ---
 layout: article
 title: First Prose.io Article
+subtitle: This is the first article I wrote using Prose.io
+author: Ryan Watters
 published_on: 2015-09-16
 published: true
 lastmod: 2015-09-20

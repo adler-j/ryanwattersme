@@ -1,8 +1,9 @@
 ---
+layout: article
 title: Trying Once More
 subtitle: Here is a little subtitle for this post
+author: Ryan Watters
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.
-layout: article
 main_image: shoes_on_the_beach.jpeg
 main_image_description: This is a photo of some shoes on the beach.
 published_on: 2015-09-01

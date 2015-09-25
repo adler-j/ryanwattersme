@@ -1,6 +1,8 @@
 ---
+layout: article
 title: Trying Yet Again    
 subtitle: Playing with date sorting
+author: Ryan Watters
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.
 layout: article
 main_image: guy_holding_camera.jpeg

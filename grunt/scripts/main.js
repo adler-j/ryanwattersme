@@ -89,5 +89,18 @@ function preventRefresh(enteredTerm) {
   enteredTerm.preventDefault();
 }
 
+// document.querySelector('.svg-icon-list').addEventListener('click', function(event){
+//   if(event.target.className === "svg-icon-anchor" || event.target.className === "tutorial-icon" || event.target.className === "svg-icon-list-item"){
+//     // var theTargetSeries = event.target.dataset.targetseries;
+//     // filterTuts(theTargetSeries);
+//     console.log("HERE");
+//   }
+// },false);
+
+// // var theTutorialLis = document.querySelectorAll('.svg-icon-anchor');
+// // for (var i = 0; i < theTutorialLis.length; i ++){
+// //   console.log(theTutorialLis[i].dataset.targetseries);
+// // }
+
 
 

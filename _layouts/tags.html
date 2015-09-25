@@ -8,11 +8,11 @@ regenerate: true
 {% assign article_tags =  site.articles | map: 'tags' | join: ',' | join: ',' | split: ',' %}
 {% assign tutorial_tags =  site.tutorials | map: 'tags' | join: ',' | join: ',' | split: ',' %}
 
-{% for tag in article_tags '%}
+{% for tag in article_tags %}
   {% assign tags = tags | push: tag %}
 {% endfor %}
 
-{% for tag in tutorial_tags '%}
+{% for tag in tutorial_tags %}
   {% assign tags = tags | push: tag %}
 {% endfor %}
 
@@ -27,7 +27,7 @@ regenerate: true
 
 {% for tag in unique_tags %}
 {% endfor %}
-<article id="article">
+<article>
 <header class="tagpage-header">
 	<h1 class="tag-page">{{page.title}} <em id="selected-tag"></em></h1>
 	<ul class="site-tags">
@@ -36,7 +36,7 @@ regenerate: true
 	{% endfor %}
 	</ul>
 </header>
-	<ul id="matching-items">
+	<ul class="matching-items">
 		
 	</ul>
 </article>

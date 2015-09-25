@@ -3,10 +3,10 @@ series: jekyll
 series_no: 1
 title: Set Up Your Dev Environment
 subtitle: Here is my subtitle for this blog post
-description: In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.
+description: "We'll start this tutorials on Jekyll by turning your Mac into a development machine for statically generated sites."
 layout: article
-main_image: sublime_text.png
-main_image_description: This is a photo of a coffee cup and a pencil in black and white.
+main_image:
+main_image_description: 
 published: true
 published_on: 2015-09-01
 lastmod: 2015-09-20

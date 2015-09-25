@@ -21,11 +21,11 @@ regenerate: true
 	{% if tutorial.tags %}
 		{% for tag in tutorial.tags %}
 			{"title": "{{tutorial.title}}",
-			 "image": "{{tutorial.main_image}}",
+			 "image": "{% if tutorial.main_image %}{{tutorial.main_image}}{% else %}/icons/{{tutorial.series}}-icon.svg{% endif %}",
 			 "url": "{{tutorial.url}}",
 			 "tag": "{{tag | slugify}}",
 			 "description": "{{tutorial.description}}",
-			 "series:": "{{tutorial.series | capitalize }}",
+			 "tutseries:": "{{tutorial.series | capitalize }}",
 			 "date":"{{tutorial.published_on | date: "%Y-%m-%d" }}"
 			}
 	{% if forloop.rindex0 > 0 %},{% endif %}

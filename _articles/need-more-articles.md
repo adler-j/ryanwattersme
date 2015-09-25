@@ -1,8 +1,9 @@
 ---
+layout: article
 title: Need More Articles
 subtitle: Subtitle for this particular piece
+author: Ryan Watters
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.
-layout: article
 main_image: glowing_macbook_on_bed.jpeg
 main_image_description: A glowing laptop on a bed in a dark bedroom.
 insearch: true

@@ -189,42 +189,118 @@
 
 	
 		
+			{"title": "Using Viewport Measurements in CSS",
+			 "image": "/icons/css-icon.svg",
+			 "url": "/tutorials/css-01/",
+			 "tag": "ruby",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Css",
+			 "date":"2015-09-01"
+			}
+	,
+
+			{"title": "Using Viewport Measurements in CSS",
+			 "image": "/icons/css-icon.svg",
+			 "url": "/tutorials/css-01/",
+			 "tag": "matsumoto",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Css",
+			 "date":"2015-09-01"
+			}
+	,
+
+			{"title": "Using Viewport Measurements in CSS",
+			 "image": "/icons/css-icon.svg",
+			 "url": "/tutorials/css-01/",
+			 "tag": "object-oriented",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Css",
+			 "date":"2015-09-01"
+			}
+	,
+
+			{"title": "Using Viewport Measurements in CSS",
+			 "image": "/icons/css-icon.svg",
+			 "url": "/tutorials/css-01/",
+			 "tag": "scripting",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Css",
+			 "date":"2015-09-01"
+			}
+	
+, 
+
+	
+		
+			{"title": "Git & GitHub Basics",
+			 "image": "/icons/git-icon.svg",
+			 "url": "/tutorials/git-01/",
+			 "tag": "git",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Git",
+			 "date":"2015-09-01"
+			}
+	,
+
+			{"title": "Git & GitHub Basics",
+			 "image": "/icons/git-icon.svg",
+			 "url": "/tutorials/git-01/",
+			 "tag": "github",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Git",
+			 "date":"2015-09-01"
+			}
+	,
+
+			{"title": "Git & GitHub Basics",
+			 "image": "/icons/git-icon.svg",
+			 "url": "/tutorials/git-01/",
+			 "tag": "version-control",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Git",
+			 "date":"2015-09-01"
+			}
+	
+, 
+
+	
+		
 			{"title": "HTML5 New Elements",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/html-icon.svg",
 			 "url": "/tutorials/html-01/",
 			 "tag": "jekyll",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
-			 "series:": "Html",
+			 "tutseries:": "Html",
 			 "date":"2015-08-25"
 			}
 	,
 
 			{"title": "HTML5 New Elements",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/html-icon.svg",
 			 "url": "/tutorials/html-01/",
 			 "tag": "liquid",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
-			 "series:": "Html",
+			 "tutseries:": "Html",
 			 "date":"2015-08-25"
 			}
 	,
 
 			{"title": "HTML5 New Elements",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/html-icon.svg",
 			 "url": "/tutorials/html-01/",
 			 "tag": "html5",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
-			 "series:": "Html",
+			 "tutseries:": "Html",
 			 "date":"2015-08-25"
 			}
 	,
 
 			{"title": "HTML5 New Elements",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/html-icon.svg",
 			 "url": "/tutorials/html-01/",
 			 "tag": "elements",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
-			 "series:": "Html",
+			 "tutseries:": "Html",
 			 "date":"2015-08-25"
 			}
 	
@@ -234,32 +310,32 @@
 
 	
 		
-			{"title": "Javascript Basics",
-			 "image": "jekyll_logo_large.png",
+			{"title": "Javascript Basics Part 1",
+			 "image": "/icons/javascript-icon.svg",
 			 "url": "/tutorials/javascript-01/",
 			 "tag": "javascript",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Javascript",
+			 "tutseries:": "Javascript",
 			 "date":"2015-09-01"
 			}
 	,
 
-			{"title": "Javascript Basics",
-			 "image": "jekyll_logo_large.png",
+			{"title": "Javascript Basics Part 1",
+			 "image": "/icons/javascript-icon.svg",
 			 "url": "/tutorials/javascript-01/",
 			 "tag": "osx",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Javascript",
+			 "tutseries:": "Javascript",
 			 "date":"2015-09-01"
 			}
 	,
 
-			{"title": "Javascript Basics",
-			 "image": "jekyll_logo_large.png",
+			{"title": "Javascript Basics Part 1",
+			 "image": "/icons/javascript-icon.svg",
 			 "url": "/tutorials/javascript-01/",
 			 "tag": "command-line",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Javascript",
+			 "tutseries:": "Javascript",
 			 "date":"2015-09-01"
 			}
 	
@@ -268,31 +344,31 @@
 	
 		
 			{"title": "Javascript Basics Part 2",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/javascript-icon.svg",
 			 "url": "/tutorials/javascript-02/",
 			 "tag": "javascript",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Javascript",
+			 "tutseries:": "Javascript",
 			 "date":"2015-09-01"
 			}
 	,
 
 			{"title": "Javascript Basics Part 2",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/javascript-icon.svg",
 			 "url": "/tutorials/javascript-02/",
 			 "tag": "osx",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Javascript",
+			 "tutseries:": "Javascript",
 			 "date":"2015-09-01"
 			}
 	,
 
 			{"title": "Javascript Basics Part 2",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/javascript-icon.svg",
 			 "url": "/tutorials/javascript-02/",
 			 "tag": "command-line",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Javascript",
+			 "tutseries:": "Javascript",
 			 "date":"2015-09-01"
 			}
 	
@@ -301,51 +377,51 @@
 	
 		
 			{"title": "Set Up Your Dev Environment",
-			 "image": "sublime_text.png",
+			 "image": "/icons/jekyll-icon.svg",
 			 "url": "/tutorials/jekyll-01/",
 			 "tag": "sublime-text",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
-			 "series:": "Jekyll",
+			 "description": "We'll start this tutorials on Jekyll by turning your Mac into a development machine for statically generated sites.",
+			 "tutseries:": "Jekyll",
 			 "date":"2015-09-01"
 			}
 	,
 
 			{"title": "Set Up Your Dev Environment",
-			 "image": "sublime_text.png",
+			 "image": "/icons/jekyll-icon.svg",
 			 "url": "/tutorials/jekyll-01/",
 			 "tag": "development",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
-			 "series:": "Jekyll",
+			 "description": "We'll start this tutorials on Jekyll by turning your Mac into a development machine for statically generated sites.",
+			 "tutseries:": "Jekyll",
 			 "date":"2015-09-01"
 			}
 	,
 
 			{"title": "Set Up Your Dev Environment",
-			 "image": "sublime_text.png",
+			 "image": "/icons/jekyll-icon.svg",
 			 "url": "/tutorials/jekyll-01/",
 			 "tag": "osx",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
-			 "series:": "Jekyll",
+			 "description": "We'll start this tutorials on Jekyll by turning your Mac into a development machine for statically generated sites.",
+			 "tutseries:": "Jekyll",
 			 "date":"2015-09-01"
 			}
 	,
 
 			{"title": "Set Up Your Dev Environment",
-			 "image": "sublime_text.png",
+			 "image": "/icons/jekyll-icon.svg",
 			 "url": "/tutorials/jekyll-01/",
 			 "tag": "command-line",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
-			 "series:": "Jekyll",
+			 "description": "We'll start this tutorials on Jekyll by turning your Mac into a development machine for statically generated sites.",
+			 "tutseries:": "Jekyll",
 			 "date":"2015-09-01"
 			}
 	,
 
 			{"title": "Set Up Your Dev Environment",
-			 "image": "sublime_text.png",
+			 "image": "/icons/jekyll-icon.svg",
 			 "url": "/tutorials/jekyll-01/",
 			 "tag": "setup",
-			 "description": "In this first part of my series on developing with Jekyll, I'm going to walk you through every step of turning your Mac into a development machine.",
-			 "series:": "Jekyll",
+			 "description": "We'll start this tutorials on Jekyll by turning your Mac into a development machine for statically generated sites.",
+			 "tutseries:": "Jekyll",
 			 "date":"2015-09-01"
 			}
 	
@@ -354,41 +430,41 @@
 	
 		
 			{"title": "An Introduction to GitHub Pages",
-			 "image": "github_octocat.jpeg",
+			 "image": "/icons/jekyll-icon.svg",
 			 "url": "/tutorials/jekyll-02/",
 			 "tag": "jekyll",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
-			 "series:": "Jekyll",
+			 "tutseries:": "Jekyll",
 			 "date":"2015-09-02"
 			}
 	,
 
 			{"title": "An Introduction to GitHub Pages",
-			 "image": "github_octocat.jpeg",
+			 "image": "/icons/jekyll-icon.svg",
 			 "url": "/tutorials/jekyll-02/",
 			 "tag": "setup",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
-			 "series:": "Jekyll",
+			 "tutseries:": "Jekyll",
 			 "date":"2015-09-02"
 			}
 	,
 
 			{"title": "An Introduction to GitHub Pages",
-			 "image": "github_octocat.jpeg",
+			 "image": "/icons/jekyll-icon.svg",
 			 "url": "/tutorials/jekyll-02/",
 			 "tag": "osx",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
-			 "series:": "Jekyll",
+			 "tutseries:": "Jekyll",
 			 "date":"2015-09-02"
 			}
 	,
 
 			{"title": "An Introduction to GitHub Pages",
-			 "image": "github_octocat.jpeg",
+			 "image": "/icons/jekyll-icon.svg",
 			 "url": "/tutorials/jekyll-02/",
 			 "tag": "command-line",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.",
-			 "series:": "Jekyll",
+			 "tutseries:": "Jekyll",
 			 "date":"2015-09-02"
 			}
 	
@@ -396,75 +472,42 @@
 
 	
 		
-			{"title": "An Introduction to Python",
-			 "image": "python.png",
-			 "url": "/tutorials/python-01/",
-			 "tag": "python",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, saepe. Neque minus, at dignissimos.",
-			 "series:": "Python",
-			 "date":"2015-09-01"
-			}
-	,
-
-			{"title": "An Introduction to Python",
-			 "image": "python.png",
-			 "url": "/tutorials/python-01/",
-			 "tag": "programming",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, saepe. Neque minus, at dignissimos.",
-			 "series:": "Python",
-			 "date":"2015-09-01"
-			}
-	,
-
-			{"title": "An Introduction to Python",
-			 "image": "python.png",
-			 "url": "/tutorials/python-01/",
-			 "tag": "scripting",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa, saepe. Neque minus, at dignissimos.",
-			 "series:": "Python",
-			 "date":"2015-09-01"
-			}
-	
-, 
-
-	
-		
 			{"title": "Ruby Basics",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/ruby-icon.svg",
 			 "url": "/tutorials/ruby-01/",
 			 "tag": "ruby",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Ruby",
+			 "tutseries:": "Ruby",
 			 "date":"2015-09-01"
 			}
 	,
 
 			{"title": "Ruby Basics",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/ruby-icon.svg",
 			 "url": "/tutorials/ruby-01/",
 			 "tag": "matsumoto",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Ruby",
+			 "tutseries:": "Ruby",
 			 "date":"2015-09-01"
 			}
 	,
 
 			{"title": "Ruby Basics",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/ruby-icon.svg",
 			 "url": "/tutorials/ruby-01/",
 			 "tag": "object-oriented",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Ruby",
+			 "tutseries:": "Ruby",
 			 "date":"2015-09-01"
 			}
 	,
 
 			{"title": "Ruby Basics",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/ruby-icon.svg",
 			 "url": "/tutorials/ruby-01/",
 			 "tag": "scripting",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Ruby",
+			 "tutseries:": "Ruby",
 			 "date":"2015-09-01"
 			}
 	
@@ -473,41 +516,41 @@
 	
 		
 			{"title": "An Introduction to SASS",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/sass-icon.svg",
 			 "url": "/tutorials/sass-01/",
 			 "tag": "ruby",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Sass",
+			 "tutseries:": "Sass",
 			 "date":"2015-09-01"
 			}
 	,
 
 			{"title": "An Introduction to SASS",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/sass-icon.svg",
 			 "url": "/tutorials/sass-01/",
 			 "tag": "matsumoto",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Sass",
+			 "tutseries:": "Sass",
 			 "date":"2015-09-01"
 			}
 	,
 
 			{"title": "An Introduction to SASS",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/sass-icon.svg",
 			 "url": "/tutorials/sass-01/",
 			 "tag": "object-oriented",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Sass",
+			 "tutseries:": "Sass",
 			 "date":"2015-09-01"
 			}
 	,
 
 			{"title": "An Introduction to SASS",
-			 "image": "jekyll_logo_large.png",
+			 "image": "/icons/sass-icon.svg",
 			 "url": "/tutorials/sass-01/",
 			 "tag": "scripting",
 			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
-			 "series:": "Sass",
+			 "tutseries:": "Sass",
 			 "date":"2015-09-01"
 			}
 	

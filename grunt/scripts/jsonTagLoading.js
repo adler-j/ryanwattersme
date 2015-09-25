@@ -45,11 +45,19 @@ function getMatches(thetag, thestring) {
     if ((request.status === 200) && (request.readyState === 4)) {
       var rawContent = JSON.parse(request.responseText),
         content = rawContent.siteContent,
-        matchingItems = document.getElementById('matching-items');
+        matchingItems = document.querySelector('.matching-items');
       matchingItems.innerHTML = '';
       for (var i = 0; i < content.length; i++) {
         if (content[i].tag == tagId) {
-          matchingItems.innerHTML += '<li class=\"animated fadeInUp\"><a href=\"' + content[i].url + '\"><img src=\"/assets/images/' + content[i].image + '\"/><section><h5>' + content[i].title + '</h5><p>' + content[i].description + '</p></section></a></li>';
+          var iconTest = new RegExp(/icon/i);
+          var iconClass;
+          if(iconTest.test(content[i].image)){
+            console.log("Test is working!");
+            iconClass = 'icon';
+          }else{
+            iconClass = '';
+          }
+          matchingItems.innerHTML += '<li class=\"animated fadeInUp\"><a href=\"' + content[i].url + '\" class=\"tag-match\"><div class=\"tag-page-image ' + iconClass + '\" style=\"background-image:url(/assets/images/' + content[i].image + ');\"></div><section><h3>' + content[i].title + '</h3><p>' + content[i].description + '</p></section></a></li>';
         }
       }
     }

@@ -5,8 +5,8 @@ subtitle: Jekyll Tutorial Part 2
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo voluptas.
 layout: article
 series_no: 02
-main_image: github_octocat.jpeg
-main_image_description: The Github Octocat logo.
+main_image:
+main_image_description:
 published: true
 published_on: 2015-09-02
 comments: true

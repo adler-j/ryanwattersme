@@ -64,7 +64,9 @@ permalink: /:collection/:path/
 # BUILD SETTINGS
 
 markdown: redcarpet
-highlighter: rouge
+redcarpet:
+  extensions: ['smart','superscript','strikethrough','autolinks','tables','no_intra_emphasis','footnotes']
+highlighter: pygments
 # kramdown:
 #   auto_ids: false
 #   footnote_nr: 1
