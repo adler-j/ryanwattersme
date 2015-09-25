@@ -12,8 +12,8 @@ window.onload = init;
 
 
 //convenient hasClass function from toddmotto.com
-function hasClass(elem, className) {
-  return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+function hasClass(elem, classn) {
+  return new RegExp(' ' + classn + ' ').test('/' + elem.className + '/i');
 }
 
 function init() {
@@ -33,16 +33,11 @@ function toggleMenu() {
   var globalNav = document.getElementById('global-navigation'),
     menuButton = document.getElementById('mobile-toggle'),
     mainContent = document.querySelector('.main');
+    globalNav.classList.toggle('mobile-menu');
+    menuButton.classList.toggle('mobile-menu');
+    mainContent.classList.toggle('mobile-menu');
     // mobileTitleContent = document.getElementById('site-title-container'),
     // siteFooter = document.getElementById('footer');
-  var elsToShift = [globalNav, menuButton, mainContent];
-  elsToShift.forEach(function(item) {
-    if (!(hasClass(item, 'mobile-menu'))) {
-      item.className += ' mobile-menu';
-    } else {
-      item.className = item.className.split(' ')[0];
-    }
-  })
 }
 
 //add "target=_blank" attribute to all external links on page

@@ -871,9 +871,11 @@ a.tag {
 
 #mobile-toggle {
     position: absolute;
+    min-height: 30px;
     right: 12px;
     top: 13px;
     background-color: transparent;
+
     @include MQ(M) {
         display: none;
     }
