@@ -52,7 +52,6 @@ function getMatches(thetag, thestring) {
           var iconTest = new RegExp(/icon/i);
           var iconClass;
           if(iconTest.test(content[i].image)){
-            console.log("Test is working!");
             iconClass = 'icon';
           }else{
             iconClass = '';
