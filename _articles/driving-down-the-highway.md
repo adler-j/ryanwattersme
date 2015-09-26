@@ -1,7 +1,7 @@
 ---
 title: Driving Down the Highway
 subtitle: Testing Stuff
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.
 layout: article
 main_image: speedometer_old_car.jpeg
 main_image_description: A speedometer in an old car.
@@ -18,7 +18,7 @@ tags:
 
 ### Heading
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, obcaecati! Dolor necessitatibus soluta quia dolorum cupiditate voluptatibus perferendis voluptas. Cheeseball. Iste nemo odit fugiat velit a, magnam iure non eos. Hic.ss
+Lorem ipsum dolor sit amet, consectetur adipisicing elit &#x2318;. Ab, obcaecati! Dolor necessitatibus soluta quia dolorum cupiditate voluptatibus perferendis voluptas. Cheeseball. Iste nemo odit fugiat velit a, magnam iure non eos. 
 
 One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it.
 

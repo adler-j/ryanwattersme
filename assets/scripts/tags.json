@@ -11,7 +11,7 @@ regenerate: true
 				"image": "{{article.main_image}}",  
 					"url": "{{article.url}}",
 					"tag": "{{tag | slugify}}",
-					"description": "{{article.description}}",
+					"description": "{{article.description | truncatewords: 20, '...' }}",
 					"date":"{{article.published_on | date: "%Y-%m-%d" }}"
 			},
 		{% endfor %}
@@ -24,7 +24,7 @@ regenerate: true
 			 "image": "{% if tutorial.main_image %}{{tutorial.main_image}}{% else %}/icons/{{tutorial.series | slugify }}-icon.svg{% endif %}",
 			 "url": "{{tutorial.url}}",
 			 "tag": "{{tag | slugify}}",
-			 "description": "{{tutorial.description}}",
+			 "description": "{{tutorial.description | truncatewords: 20, '...' }}",
 			 "tutseries:": "{{tutorial.series | capitalize }}",
 			 "date":"{{tutorial.published_on | date: "%Y-%m-%d" }}"
 			}

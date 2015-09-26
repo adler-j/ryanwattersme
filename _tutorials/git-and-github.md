@@ -1,5 +1,5 @@
 ---
-series: git
+series: git and github
 series_no: 1
 title: "Git & GitHub Basics"
 subtitle: These are some git and GitHub basics

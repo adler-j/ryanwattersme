@@ -12,7 +12,7 @@ module.exports = function(grunt) {
       dev: {
         options: {
           sourcemap: 'none',
-          style: 'compressed'
+          outputStyle: 'compressed'
             // Uncomment the below line to include outside directories as well.
             // loadPath: ['location/of/other/sass']
         },

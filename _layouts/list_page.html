@@ -29,13 +29,13 @@ regenerate: true
 			{% endunless %}
 			{% assign previous = ser %}
 		{% endfor %}
-		{% comment %}
-<!-- 		<ul class="svg-icon-list">
+		
+		<ul class="svg-icon-list">
 			{% for ser in unique_series %}
-			<li class="svg-icon-list-item"><a href="#" class="svg-icon-anchor" data-targetseries="{{ser}}">{% include icons/{{ser}}-icon.svg %}</a></li>
+			<li class="svg-icon-list-item"><a href="#" class="svg-icon-anchor" data-targetseries="{{ser}}">{% include icons/{{ ser | slugify }}-icon.svg %}</a></li>
 			{% endfor %}
-		</ul> -->
-		{% endcomment %}
+		</ul>
+		
 	{% endif %}
 	<ul class="content-list">
 	    {% for item in contents %}

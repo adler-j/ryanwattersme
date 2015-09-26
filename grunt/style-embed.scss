@@ -8,6 +8,7 @@
 @import 'sass/search';
 @import 'sass/animations';
 @import 'sass/tooltip';
+
 body,
 #body {
     display: -webkit-flex;
@@ -285,11 +286,11 @@ main {
         @include MQ(M) {
             width: calc(100vw - 250px);
             max-width: calc(100vw - 250px);
-            min-height: $article-header-m-plus-min-height;
+            min-height: $article-header-image-min-height-tablet-plus;
         }
         float: left;
         position: relative;
-        min-height: $article-header-mobile-min-height;
+        min-height: $article-header-image-min-height-mobile;
         margin-left: 0px;
         padding-left: 0px;
         background-size: $article-header-background-image-size;
@@ -439,7 +440,7 @@ article {
         font-size: $base-font-size;
     }
     a:not(.list) {
-        font-size: $base-font-size;
+        font-size: inherit;
         color: $anchor-color;
         transition: box-shadow ease 250ms, color ease 250ms;
         cursor: pointer;
@@ -519,10 +520,23 @@ article {
             max-width: 100%;
             overflow-x: scroll;
             @include MQ(M) {
-                width: inherit;
-                max-width: inherit;
+                overflow-x: scroll;
+                max-width: 90%;
                 position: relative;
                 margin-left: 25vw;
+                white-space: pre-wrap; 
+            }
+            @include MQ(L) {
+                max-width: $content-max-width;
+            }
+        }
+        code {
+            overflow-x:scroll;
+            @include MQ(M) {
+                max-width:90%;
+            }
+            @include MQ(L) {
+                max-width: $content-max-width;
             }
         }
     }
@@ -662,15 +676,15 @@ ul.content-list {
     }
 }
 
-blockquote {
+article > blockquote {
     display: block;
     background: $article-blockquote-background-color;
     padding: 15px 20px 15px 45px;
     margin: 0 0 20px;
     position: relative;
     /*Font*/
-    p {
-        font-family: $blockquote-font-family;
+    > p {
+        font-family: $article-blockquote-font-family;
         font-size: $base-font-size * 1.2;
         line-height: 1.2;
         color: #666;
@@ -678,10 +692,17 @@ blockquote {
         @include MQ(M) {
             font-size: $base-font-size * 1.7;
         }
+        > a.blockquote {
+            background-color:$white;
+            &:hover {
+                box-shadow: 0 -4px 0 #5E727F inset;
+                color: inherit;
+            }
+        }
     }
     /*Borders - (Optional)*/
-    border-left: 15px solid $accent-color;
-    border-right: 2px solid $accent-color;
+    border-left: 15px solid $article-blockquote-border-color;
+    border-right: 2px solid $article-blockquote-border-color;
     /*Box Shadow - (Optional)*/
     box-shadow: 2px 2px 15px #ccc;
     &::before {
@@ -712,6 +733,7 @@ blockquote {
         font-style: italic;
     }
 }
+
 
 .content-footer {
     &.search-open {
@@ -817,6 +839,7 @@ blockquote {
 }
 
 a.tag {
+    transition: all .5s;
     display: inline-block;
     position: relative;
     display: block;
@@ -833,7 +856,10 @@ a.tag {
     line-height: 1.5;
     float: left;
     margin: 0 0 6px 16px;
-    box-shadow:none;
+    box-shadow: none;
+    &:hover {
+        background-color: $article-sticky-footer-tag-hover-color;
+    }
     &:after {
         content: '';
         position: absolute;
@@ -843,10 +869,12 @@ a.tag {
         height: 4px;
         border-radius: 50%;
         background: $article-sticky-footer-background;
-        box-shadow:none;
+        box-shadow: none;
+        &:hover {
+            background-color: $article-sticky-footer-tag-hover-color;
+        }
     }
     &:before {
-        transition: all .5s;
         content: '';
         top: 0;
         right: 100%;
@@ -859,12 +887,16 @@ a.tag {
         border-right-color: $article-sticky-footer-tag-color;
         border-width: 14px;
         transition: border-color .5s;
-        box-shadow:none;
+        box-shadow: none;
     }
-    &:hover{
-        box-shadow:none;
+    &:hover {
+        box-shadow: none;
+        &::before {
+            border-right-color: $article-sticky-footer-tag-hover-color;
+        }
     }
 }
+
 
 #mobile-menu {
     padding: 10px;
@@ -1243,17 +1275,12 @@ ul.svg-icon-list {
 // }
 
 
-
-
-
-
-
-
-
-//Social Media Icons (embedded SVG) hover fill colors from social media sass map in _variables.scss
+//Social Media Icons (embedded SVG) fill colors on hover=>from social media sass map in _variables.scss
 @each $social,
 $socialcolor in $socials {
     ##{$social}-icon:hover {
         fill: $socialcolor;
     }
 }
+
+

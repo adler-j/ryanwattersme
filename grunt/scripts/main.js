@@ -1,9 +1,14 @@
 /**
  * All user interactions for the site are written in vanilla Javascript so as to preclude the jQuery dependency--although the Grunt build/concatenate will pull jquery through first, thereby allowing you to add additional scripts using jq syntax. If you decide to break the scripts up in the "gruntscripts" folder, be careful of adding the "async" attribute on your script tags, since this may have unreliable results if using jquery syntax before the jquery library has been loaded.
  */
+
+//get the hash from the current URL and set it as a global variable
 var currentHash = window.location.hash;
+//add eventlistener for user pressing "s" on the keyboard
 window.addEventListener('keyup', function(event) {
+  //grab search form from site header
   var openSearchForm = document.getElementById('search-form');
+  //if the user presses "s" and the search form is NOT already open OR if the user presses escape and the search form is open - init toggleSearch function
   if ((event.keyCode == 83 && !(openSearchForm.classList.contains('search-open'))) || (event.keyCode == 27 && openSearchForm.classList.contains('search-open'))) {
     toggleSearch();
   }
@@ -33,11 +38,11 @@ function toggleMenu() {
   var globalNav = document.getElementById('global-navigation'),
     menuButton = document.getElementById('mobile-toggle'),
     mainContent = document.querySelector('.main');
-    globalNav.classList.toggle('mobile-menu');
-    menuButton.classList.toggle('mobile-menu');
-    mainContent.classList.toggle('mobile-menu');
-    // mobileTitleContent = document.getElementById('site-title-container'),
-    // siteFooter = document.getElementById('footer');
+  globalNav.classList.toggle('mobile-menu');
+  menuButton.classList.toggle('mobile-menu');
+  mainContent.classList.toggle('mobile-menu');
+  // mobileTitleContent = document.getElementById('site-title-container'),
+  // siteFooter = document.getElementById('footer');
 }
 
 //add "target=_blank" attribute to all external links on page
@@ -76,6 +81,27 @@ function preventRefresh(enteredTerm) {
   enteredTerm.preventDefault();
 }
 
+/**
+ * Blockquote styling function that only runs on article (ie, including tutorial) pages. This looks for a hyphen in block quotes, assumes the hyphen (requires one space on both sides of the hyphen) indicates quote attribution, and then wraps the remaing text in span.quote-attribution for additional styling.
+ */
 
-
-
+(function() {
+  var tutorialLocTest = new RegExp(/tutorials/i),
+    articleLocTest = new RegExp(/articles/i),
+    currentLoc = window.location.href;
+  if (articleLocTest.test(currentLoc) || tutorialLocTest.test(currentLoc)) {
+    //first for loop grabs all anchor tags inside blockquote > p and converts to a.blockquote to work around style inheritance issues with multiple anchors in lists throughout the site
+    var blockQuoteAnchors = document.querySelectorAll('blockquote > p > a');
+    for (var i = 0; i < blockQuoteAnchors.length; i++) {
+      blockQuoteAnchors[i].className = "blockquote";
+    }
+    var blockQuotes = document.querySelectorAll('blockquote > p');
+    if (blockQuotes !== -1) {
+      for (var j = 0; j < blockQuotes.length; j++) {
+        if(blockQuotes[j].innerHTML.search(' - ')){
+          console.log(i);
+        }
+      }
+    }
+  }
+})();
