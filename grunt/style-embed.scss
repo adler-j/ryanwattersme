@@ -209,6 +209,9 @@ nav.global-navigation {
                         content: ']';
                         transform: translateX(-20px);
                     }
+                    &:hover{
+                        color:$white;
+                    }
                     &:hover::before,&:hover::after,&:focus::before,&:focus::after {
                         opacity:1;
                         -webkit-transform:translateX(0px);
@@ -915,10 +918,11 @@ a.tag {
 
 #mobile-toggle {
     position: absolute;
-    min-height: 30px;
+    min-height: 35px;
     right: 12px;
     top: 13px;
     background-color: transparent;
+    z-index: 99;
 
     @include MQ(M) {
         display: none;
@@ -952,6 +956,7 @@ a.tag {
     &.mobile-menu {
         background: $global-nav-background-mobile;
         position: fixed;
+        min-height: 35px;
         span {
             background-color: transparent;
             &:before,

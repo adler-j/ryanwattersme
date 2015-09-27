@@ -67,14 +67,9 @@ markdown: redcarpet
 redcarpet:
   extensions: ['smart','superscript','strikethrough','autolinks','tables','no_intra_emphasis','footnotes']
 highlighter: pygments
-# kramdown:
-#   auto_ids: false
-#   footnote_nr: 1
-#   input: GFM
 
 exclude: [Gemfile,Gemfile.lock,snippets_and_notes.md,grunt]
 include: [scripts]
-
 
 sass:
   sass_dir: _sass

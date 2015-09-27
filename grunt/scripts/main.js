@@ -37,7 +37,7 @@ function init() {
 function toggleMenu() {
   var globalNav = document.getElementById('global-navigation'),
     menuButton = document.getElementById('mobile-toggle'),
-    mainContent = document.querySelector('.main');
+    mainContent = document.getElementById('main');
   globalNav.classList.toggle('mobile-menu');
   menuButton.classList.toggle('mobile-menu');
   mainContent.classList.toggle('mobile-menu');
