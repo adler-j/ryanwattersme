@@ -692,11 +692,19 @@ article > blockquote {
         @include MQ(M) {
             font-size: $base-font-size * 1.7;
         }
-        > a.blockquote {
-            background-color:$white;
-            &:hover {
-                box-shadow: 0 -4px 0 #5E727F inset;
-                color: inherit;
+        span.quote-reference {
+            font-size: $base-font-size;
+            position: absolute;
+            display: block;
+            right: 10px;
+            bottom: 10px;
+            a {
+                background-color: $white;
+                box-shadow: 0 -4px 0 $article-blockquote-border-color inset;
+                &:hover {
+                    color: $white;
+                    box-shadow: 0 -27px 0 $anchor-color inset;
+                }
             }
         }
     }
@@ -733,6 +741,8 @@ article > blockquote {
         font-style: italic;
     }
 }
+
+
 
 
 .content-footer {

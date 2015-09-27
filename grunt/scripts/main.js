@@ -85,23 +85,38 @@ function preventRefresh(enteredTerm) {
  * Blockquote styling function that only runs on article (ie, including tutorial) pages. This looks for a hyphen in block quotes, assumes the hyphen (requires one space on both sides of the hyphen) indicates quote attribution, and then wraps the remaing text in span.quote-attribution for additional styling.
  */
 
-(function() {
-  var tutorialLocTest = new RegExp(/tutorials/i),
-    articleLocTest = new RegExp(/articles/i),
-    currentLoc = window.location.href;
-  if (articleLocTest.test(currentLoc) || tutorialLocTest.test(currentLoc)) {
-    //first for loop grabs all anchor tags inside blockquote > p and converts to a.blockquote to work around style inheritance issues with multiple anchors in lists throughout the site
-    var blockQuoteAnchors = document.querySelectorAll('blockquote > p > a');
-    for (var i = 0; i < blockQuoteAnchors.length; i++) {
-      blockQuoteAnchors[i].className = "blockquote";
-    }
-    var blockQuotes = document.querySelectorAll('blockquote > p');
-    if (blockQuotes !== -1) {
-      for (var j = 0; j < blockQuotes.length; j++) {
-        if(blockQuotes[j].innerHTML.search(' - ')){
-          console.log(i);
-        }
-      }
-    }
-  }
-})();
+// var CreateNewAnchor = function(location, content, cssClass) {
+//   this.location = location;
+//   this.content = content;
+//   this.cssClass = cssClass;
+//   this.createNew = function() {
+//     var newA = document.createElement('a');
+//     newA.setAttribute('href', this.location);
+//     newA.className = this.cssClass;
+//     newA.textContent = this.content;
+//     return newA;
+//   }
+// }
+
+// function blockQuoteStyling() {
+//   var tutorialLocTest = new RegExp(/tutorials/i),
+//     articleLocTest = new RegExp(/articles/i),
+//     currentLoc = window.location.href;
+//   if (articleLocTest.test(currentLoc) || tutorialLocTest.test(currentLoc)) {
+//     var allBqs = document.querySelector('blockquote p');
+//     var allQtAs = document.querySelectorAll('blockquote p a');
+//     if (allQtAs !== -1) {
+//       for (var i = 0; i < allQtAs.length; i++) {
+//         var original_anchor_content = allQtAs[i].parentNode.innerHTML;
+//         var new_quote_content = original_anchor_content.split(' - ')[0];
+//         var new_anchor_content = original_anchor_content.split(' - ')[1];
+//         var new_wrapped_anchor = '<span class=\"quote-reference\">' + new_anchor_content + '</span>';
+//         allQtAs[i].parentNode.innerHTML = new_quote_content + new_wrapped_anchor;
+//       }
+//     }else if (allBqs !== -1){
+//       console.log("HERE!");
+//     }
+//   }
+// }
+
+// blockQuoteStyling();
