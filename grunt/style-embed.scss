@@ -32,8 +32,8 @@ h6 {
     font-weight: $heading-font-weight;
     color: $heading-font-color;
 }
-
-#header {
+//SITE HEADER
+body > header:first-child {
     display: block;
     width: 100%;
     width: 100vw;
@@ -61,7 +61,7 @@ h6 {
         bottom: 0;
     }
 }
-
+//TITLE CONTAINER WITHIN SITE HEADER
 .site-title-container {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -122,7 +122,7 @@ h6 {
         }
     }
 }
-
+// SITE/GLOBAL NAVIGATION
 nav.global-navigation {
     @include hardware-accelerate;
     position: fixed;
@@ -242,7 +242,7 @@ nav.global-navigation {
         }
     }
 }
-
+//MAIN CONTENT
 main {
     transition: all 200ms ease-in-out;
     display: -webkit-flex;
@@ -281,15 +281,19 @@ main {
     }
 }
 
-#article-header {
+article > header:first-child {
     margin-bottom: 10px;
     &.article-header-with-image {
-        width: 100vw;
-        max-width: 100vw;
+        width: 105vw!important;
+        max-width: 105vw;
+        left: -5vw;
+        overflow-x: hidden;
+        left: -5vw;
         @include MQ(M) {
-            width: calc(100vw - 250px);
-            max-width: calc(100vw - 250px);
+            width: calc(150vw - 250px)!important;
+            max-width: calc(150vw - 250px)!important;
             min-height: $article-header-image-min-height-tablet-plus;
+            left: -25vw;
         }
         float: left;
         position: relative;
@@ -299,54 +303,69 @@ main {
         background-size: $article-header-background-image-size;
         background-repeat:no-repeat;
         background-position:$article-header-background-image-position;
-        h1,
-        section {
-            color: $article-headline-font-color;
-            width: 90%;
-            margin-right: auto;
-            margin-left: auto;
-            time,
-            .series-info {
-                font-weight: bold;
+        section.article-information {
+            width:100vw;
+            position:relative;
+            height:$article-header-image-min-height-mobile;
+            @include MQ(M){
+                max-width:$content-max-width;
+                text-align:left;
+                margin-left:25vw;
+                height:$article-header-image-min-height-tablet-plus;
             }
-        }
-        a.breadcrumb-link {
-            font-size: $base-font-size * .75;
-            line-height: 1.5;
-            height:$base-font-size * 1.5;
-            vertical-align: middle;
-            position: absolute;
-            bottom: 15px;
-            right: 15px;
-            color: $white;
-            min-width: auto;
-            z-index:10;
-            &:hover {
-                text-decoration: none;
-                font-weight:bold;
-            }
-            @include MQ(M) {
-                font-size: $base-font-size;
-            }
-            svg {
-                display: inline;
-                height: $base-font-size * .75;
-                max-height: $base-font-size * .75;
-                vertical-align: middle;
-                margin-right: 5px;
-                fill: $white;
-                @include MQ(M) {
-                    height: $base-font-size;
-                    max-height: $base-font-size;
-                    max-width: 40px;
+            h1,
+            section {
+                color: $article-headline-font-color;
+                width: 90%;
+                margin-left: 5%;
+                @include MQ(M){
+                    margin-left:0vw;
+                }
+                time,
+                .series-info {
+                    font-weight: bold;
                 }
             }
-        }
-    }
-    h1{
-        font-size: $base-font-size * 1.5;
-        @include MQ(M){
-            font-size: 2em;
+            a.breadcrumb-link {
+                transition:all 200ms ease-in-out;
+                font-size: $base-font-size * .75;
+                line-height: 1.5;
+                height: $base-font-size * 1.5;
+                vertical-align: middle;
+                position: absolute;
+                bottom: 15px;
+                right: 15px;
+                color: $white;
+                min-width: auto;
+                z-index: 10;
+                box-shadow:none;
+                &:hover {
+                    text-decoration: none;
+                    font-weight: bold;
+                    box-shadow:none;
+                }
+                &:hover > svg {
+                    opacity:1;
+                }
+                @include MQ(M) {
+                    font-size: $base-font-size;
+                }
+                svg {
+                    transition:opacity 200ms ease-in-out;
+                    display: inline;
+                    opacity:0;
+                    height: $base-font-size * .75;
+                    max-height: $base-font-size * .75;
+                    vertical-align: middle;
+                    margin-right: 5px;
+                    fill: $white;
+                    @include MQ(M) {
+                        height: $base-font-size;
+                        max-height: $base-font-size;
+                        max-width: 40px;
+                    }
+                }
+            }
         }
     }
     &.article-header-without-image {
@@ -360,6 +379,8 @@ main {
         }
     }
 }
+
+
 
 article {
     header{
@@ -379,8 +400,8 @@ article {
                 text-decoration:none;
             }
             svg {
-                height:$base-font-size;
-                width:$base-font-size;
+                height:$base-font-size * .8;
+                width:$base-font-size * .8;
             }
         }
     }
@@ -1003,11 +1024,7 @@ ul.site-tags {
             &:focus,
             &:hover {
                 background-color: $tag-page-tag-focus-background-color;
-                padding: 6px;
                 box-shadow:none;
-            }
-            &:focus {
-                font-weight: bold;
             }
         }
         @include MQ(M) {
@@ -1249,43 +1266,6 @@ ul.svg-icon-list {
         }
     }
 }
-
-td.linenos > div.linenodiv > pre > code {
-    padding-top:-10px;
-}
-
-// table {
-//     border-collapse: collapse;
-//     border-spacing: .5rem;
-//     margin-bottom: $base-font-size;
-//     tr {
-//         &:hover {
-//             cursor: pointer;
-//             background-color: #01589B;
-//         }
-//         td,
-//         th {
-//             border: 1px solid tomato;
-//         }
-//         th {
-//             text-transform: uppercase;
-//             padding-right: 40px;
-//             padding-left: 5px;
-//         }
-//         td {
-//             margin: 10px;
-//             padding-right: 40px;
-//             padding-left: 5px;
-//         }
-//         &:nth-child(odd):not(thead) {
-//             background-color: steelblue;
-//         }
-//     }
-// }
-// thead {
-//     background-color: $white;
-// }
-
 
 //Social Media Icons (embedded SVG) fill colors on hover=>from social media sass map in _variables.scss
 @each $social,
