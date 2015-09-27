@@ -11,7 +11,7 @@ insearch: true
 comments: true
 tags:
 - japan
-- github
+- GitHub
 - javascript
 ---
 

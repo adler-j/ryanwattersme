@@ -14,7 +14,7 @@ comments: true
 insearch: true
 tags:
 - git
-- GitHub
+- github
 - version control
 ---
 

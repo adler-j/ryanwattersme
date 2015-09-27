@@ -9,6 +9,7 @@ regenerate: true
 {% assign tutorial_tags =  site.tutorials | map: 'tags' | join: ',' | join: ',' | split: ',' %}
 
 {% for tag in article_tags %}
+	{% assign tag = tag %}
   {% assign tags = tags | push: tag %}
 {% endfor %}
 
@@ -19,6 +20,7 @@ regenerate: true
 
 {% assign tags = tags | sort %}
 	{% for tag in tags %}
+		{% assign tag = tag %}
   	{% unless tag == previous or tag == '' %}
 			{% assign unique_tags = unique_tags | push: tag %}
   	{% endunless %}
@@ -32,7 +34,7 @@ regenerate: true
 	<h1 class="tag-page">{{page.title}} <em id="selected-tag"></em></h1>
 	<ul class="site-tags">
 	{% for tag in unique_tags %}
-		<li class="site-tag"><a href="#{{tag | slugify}}" id="{{tag | slugify }}" data-tagstring="{{tag}}" class="tag-ajax">{{tag}}</a></li>
+		<li class="site-tag"><a href="#{{tag | slugify}}" id="{{tag | slugify }}" data-tagstring="{{tag}}" class="tag-ajax">{{ tag }}</a></li>
 	{% endfor %}
 	</ul>
 </header>
