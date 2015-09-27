@@ -9,7 +9,7 @@ $content-max-width:700px;
 //Colors
 $brand: #2A2C39;
 $brand-two: #51B3FE;
-$brand-three: darken(#01589B,10%);
+$brand-three: #013B68;
 $accent-color: #487557;
 $anchor-color: #5E727F;
 $button-color:$anchor-color;
@@ -68,9 +68,10 @@ $article-header-background-image-position:center left;
 $article-header-image-min-height-mobile:50vh;
 $article-header-image-min-height-tablet-plus:50vh;
 $article-sticky-footer-background:$white;
-$article-sticky-footer-tag-font-size:$base-font-size * .75;
+$article-sticky-footer-tag-font-size:16px;
+$article-sticky-footer-tag-font-weight: 100;
 $article-sticky-footer-tag-color:$heading-font-color;
-$article-sticky-footer-tag-hover-color:$accent-color;
+$article-sticky-footer-tag-hover-color:$brand-three;
 
 $list-page-heading-background-color:$anchor-color;
 $list-page-heading-background-color-hover:darken($list-page-heading-background-color,20%);

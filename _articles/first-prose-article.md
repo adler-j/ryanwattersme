@@ -36,6 +36,6 @@ A collection of textile samples lay spread out on the table - Samsa was a travel
 ```javascript
 windown.onload = init;
 function init(){
-	console.log("Initialize, bitches!");
+	console.log("Initialize!");
 }
 ```

@@ -695,20 +695,21 @@ article > blockquote {
         @include MQ(M) {
             font-size: $base-font-size * 1.7;
         }
-        span.quote-reference {
-            font-size: $base-font-size;
-            position: absolute;
-            display: block;
-            right: 10px;
-            bottom: 10px;
-            a {
+        a {
+            span.quote-reference {
+                font-size: $base-font-size;
+                position: absolute;
+                display: block;
+                right: 10px;
+                bottom: 10px;
                 background-color: $white;
                 box-shadow: 0 -4px 0 $article-blockquote-border-color inset;
-                &:hover {
-                    color: $white;
-                    box-shadow: 0 -27px 0 $anchor-color inset;
-                }
             }
+            &:hover {
+                    color: $white;
+                    // box-shadow: 0 -27px 0 $anchor-color inset;
+                    box-shadow: none;
+                }
         }
     }
     /*Borders - (Optional)*/
@@ -732,13 +733,6 @@ article > blockquote {
     &::after {
         /*Reset to make sure*/
         content: "";
-    }
-    a {
-        text-decoration: none;
-        background: #eee;
-        cursor: pointer;
-        padding: 0 3px;
-        color: #c76c0c;
     }
     em {
         font-style: italic;
@@ -850,7 +844,7 @@ article > blockquote {
         }
     }
 }
-
+//Style for tag "buttons" at the bottom of article pages---when clicked, these take the user to /tags/
 a.tag {
     transition: all .5s;
     display: inline-block;
@@ -858,12 +852,12 @@ a.tag {
     display: block;
     height: 28px;
     width: auto;
-    padding: 0px 4px 3px 6px;
+    padding: 3px 4px 3px 6px;
     box-sizing: border-box;
     border-radius: 0 4px 4px 0;
     background-color: $article-sticky-footer-tag-color;
     color: $article-sticky-footer-background;
-    font-weight: 600;
+    font-weight: $article-sticky-footer-tag-font-weight;
     font-size: $article-sticky-footer-tag-font-size;
     text-transform: lowercase;
     line-height: 1.5;
@@ -923,7 +917,6 @@ a.tag {
     top: 13px;
     background-color: transparent;
     z-index: 99;
-
     @include MQ(M) {
         display: none;
     }
