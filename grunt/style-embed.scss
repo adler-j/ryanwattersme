@@ -5,9 +5,9 @@
 @import 'sass/layout';
 @import 'sass/fonts';
 @import 'sass/solarized-pygments';
-@import 'sass/search';
+@import 'sass/search-overlay';
 @import 'sass/animations';
-@import 'sass/tooltip';
+@import 'sass/next-and-previous-article-tooltip';
 
 body,
 #body {
@@ -1248,6 +1248,10 @@ ul.svg-icon-list {
             }
         }
     }
+}
+
+td.linenos > div.linenodiv > pre > code {
+    padding-top:-10px;
 }
 
 // table {

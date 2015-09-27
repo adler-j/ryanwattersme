@@ -119,4 +119,4 @@ function blockQuoteStyling() {
   }
 }
 
-// blockQuoteStyling();
+blockQuoteStyling();

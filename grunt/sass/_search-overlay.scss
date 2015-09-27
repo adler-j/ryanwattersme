@@ -59,7 +59,8 @@ article#search-page {
 }
 
 #tipue_search_warning {
-    font: 300 15px/1.6 'Open Sans', sans-serif;
+    font-family: $search-overlay-font-family;
+    font-weight:300;
     color: #555;
     margin: 7px 0;
 }
@@ -75,7 +76,7 @@ article#search-page {
 
 #tipue_search_results_count {
     font: 300 15px/1.7;
-    font-family: $base-font-family;
+    font-family: $search-overlay-font-family;
     color: #555;
 }
 
@@ -86,7 +87,7 @@ article#search-page {
 }
 
 span.search-term-top {
-    color: $results-highlight-color;
+    color: $search-result-matching-term-text-color;
     font-weight: bold;
     font-style: italic;
 }
@@ -107,8 +108,7 @@ span.search-term-top {
 }
 
 .tipue_search_content_url {
-    font: 300 14px/1.9 $base-font-family;
-    ;
+    font: 300 14px/1.9 $search-overlay-font-family;
     word-wrap: break-word;
     hyphens: auto;
 }
@@ -123,7 +123,7 @@ span.search-term-top {
 }
 
 .tipue_search_content_text {
-    font: 300 15px/1.6 $base-font-family;
+    font: 300 15px/1.6 $search-overlay-font-family;
     color: #555;
     word-wrap: break-word;
     hyphens: auto;
@@ -131,13 +131,13 @@ span.search-term-top {
 }
 
 .tipue_search_content_debug {
-    font: 300 13px/1.6 $base-font-family;
+    font: 300 13px/1.6 $search-overlay-font-family;
     color: #555;
     margin: 5px 0;
 }
 
 .h01 {
-    color: $results-highlight-color;
+    color: $search-result-matching-term-text-color;
     font-weight: bold;
 }
 
