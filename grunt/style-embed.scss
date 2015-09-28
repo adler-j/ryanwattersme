@@ -308,9 +308,10 @@ article > header:first-child {
         background-repeat:no-repeat;
         background-position:$article-header-background-image-position;
         section.article-information {
-            width:100vw;
+            width:100%;
             position:relative;
             height:$article-header-image-min-height-mobile;
+            overflow-x:hidden;
             @include MQ(M){
                 max-width:$content-max-width;
                 text-align:left;
@@ -322,6 +323,7 @@ article > header:first-child {
                 color: $article-headline-font-color;
                 width: 90%;
                 margin-left: 5%;
+                overflow-x:hidden;
                 @include MQ(M){
                     margin-left:0vw;
                 }
@@ -343,6 +345,7 @@ article > header:first-child {
                 min-width: auto;
                 z-index: 10;
                 box-shadow:none;
+                overflow-x:hidden;
                 &:hover {
                     text-decoration: none;
                     font-weight: bold;
