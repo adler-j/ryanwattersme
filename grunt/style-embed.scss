@@ -402,8 +402,11 @@ article {
             }
         }
         a#content-by-tag{
-            position:absolute;
-            top:20px;
+            display:block;
+            width:100%;
+            float:right;
+            text-align:right;
+            clear:both;
             right:5px;
             color:$base-font-color;
             box-shadow:none;
@@ -708,13 +711,12 @@ ul.content-list {
 }
 
 article > blockquote {
-display: block;
+    display: block;
     background: $article-blockquote-background-color;
     padding: 15px 20px 15px 45px;
     margin: 0 0 20px;
     position: relative;
     /*Font*/
-    
     > p {
         font-family: $article-blockquote-font-family;
         font-size: $base-font-size * 1.2;
@@ -724,34 +726,21 @@ display: block;
         @include MQ(M) {
             font-size: $base-font-size * 1.7;
         }
-        span.quote-reference {
-            a {
-                font-size: $base-font-size;
+        @if $article-blockquote-author-attribution-separate-style {
+            span.quote-reference {
                 position: absolute;
                 display: block;
                 right: 10px;
                 bottom: 10px;
+                font-size: $base-font-size;
                 background-color: $white;
                 font-style: italic;
-                box-shadow: none;
-                // box-shadow: 0 -4px 0 $article-blockquote-border-color inset;
-                &:hover {
-                    // box-shadow: 0 -27px 0 $anchor-color inset;
-                    box-shadow: none;
-                    color: $base-font-color;
-                }
-                &:before {
-                    content: ' - ';
-                }
+                a {}
             }
         }
     }
-    /*Borders - (Optional)*/
-    
     border-left: 15px solid $article-blockquote-border-color;
     border-right: 2px solid $article-blockquote-border-color;
-    /*Box Shadow - (Optional)*/
-    
     box-shadow: 2px 2px 15px #ccc;
     &::before {
         content: "\201C";
@@ -766,16 +755,15 @@ display: block;
         left: 10px;
         top: 5px;
     }
-    
     &::after {
         /*Reset to make sure*/
         content: "";
     }
-    
     em {
         font-style: italic;
     }
 }
+
 
 .content-footer {
     &.search-open {

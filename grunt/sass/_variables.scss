@@ -61,6 +61,7 @@ $article-anchor-font-color:$anchor-color;
 $article-blockquote-background-color: $white;
 $article-blockquote-border-color: $accent-color;
 $article-blockquote-font-family: $base-font-family;
+$article-blockquote-author-attribution-separate-style: true; //set to false if you do not want to set the author of a quote apart from the main blockquote text
 $article-codeblock-background:#111111;
 $article-header-background-image-size:cover;
 $article-header-background-image-position:center left;

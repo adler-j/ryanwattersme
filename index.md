@@ -1,6 +1,6 @@
 ---
 layout: homepage
-title: Welcome to My Website
+title: Ryan Watters
 comments: false
 insearch: true
 regenerate: true

@@ -29,9 +29,13 @@ He lay on his armour-like back, and if he lifted his head a little he could see 
 
 > Without the fear of falling, there is no joy in flight. - [Kobo Abe](https://en.wikipedia.org/wiki/K%C5%8Db%C5%8D_Abe)
 
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste eligendi possimus veritatis nesciunt maiores autem vero temporibus ad distinctio consectetur eos veniam, aperiam in accusantium repellendus voluptate, consequatur esse suscipit.
+
+> How now brown cow. - John Doe
+
 His many legs, pitifully thin compared with the size of the rest of him, waved about helplessly as he looked. "What's happened to me? " he thought. It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its four familiar walls.
 
-A collection of textile samples lay spread out on the table - Samsa was a travelling salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops
+A collection of textile samples lay spread out on the table---Samsa was a travelling salesman---and above it there hung a picture that he had recently cut out of an illustrated magazine and housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright, raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to look out the window at the dull weather. Drops
 
 ```javascript
 windown.onload = init;
