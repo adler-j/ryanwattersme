@@ -308,8 +308,6 @@ article > header:first-child {
         background-repeat:no-repeat;
         background-position:$article-header-background-image-position;
         section.article-information {
-            width:100%;
-            position:relative;
             height:$article-header-image-min-height-mobile;
             overflow-x:hidden;
             @include MQ(M){
