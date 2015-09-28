@@ -16,7 +16,7 @@ layout: default
     {% assign header_class = "article-header-without-image" %}
 {% endif %}
 <article>
-    <header {% if img == true %}style="background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('{{site.baseurl}}/assets/images/{{main_image}}')" alt="{{page.main_image_description}}" {% endif %} class="article-header {{ header_class }}">
+    <header {% if img == true %}style="background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('{{site.baseurl}}/assets/images/{{main_image}}')" alt="{{page.main_image_description}}" {% endif %} class="{{ header_class }}">
         <section class="article-information">
             <h1>{{ page.title }}</h1>
             <section class="publishing-metadata">

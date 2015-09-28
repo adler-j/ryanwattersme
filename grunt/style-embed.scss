@@ -33,7 +33,7 @@ h6 {
     color: $heading-font-color;
 }
 //SITE HEADER
-#header {
+body > header:first-child {
     display: block;
     width: 100%;
     width: 100vw;
@@ -70,7 +70,7 @@ h6 {
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     text-align: left;
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
     color: $site-title-font-color;
     @include MQ(M) {
         margin-left: auto;
@@ -126,7 +126,7 @@ h6 {
 nav.global-navigation {
     @include hardware-accelerate;
     position: fixed;
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -145,7 +145,6 @@ nav.global-navigation {
     background: $global-nav-background-mobile;
     -webkit-transform: translateX(100%);
     transform: translateX(100%);
-    z-index:99;
     &.mobile-menu {
         -webkit-transform: translateX(0);
         transform: translateX(0);
@@ -247,7 +246,7 @@ nav.global-navigation {
 }
 //MAIN CONTENT
 #main {
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;
@@ -287,7 +286,7 @@ nav.global-navigation {
     }
 }
 
-.article-header {
+article > header:first-child {
     margin-bottom: 10px;
     &.article-header-with-image {
         width: 100vw!important;
@@ -338,7 +337,7 @@ nav.global-navigation {
                 }
             }
             a.breadcrumb-link {
-                transition:all 200ms ease-in-out;
+                transition:all 300ms ease-in-out;
                 font-size: $base-font-size * .75;
                 line-height: 1.5;
                 height: $base-font-size * 1.5;
@@ -363,7 +362,7 @@ nav.global-navigation {
                     font-size: $base-font-size * .9;
                 }
                 svg {
-                    transition:opacity 200ms ease-in-out;
+                    transition:opacity 300ms ease-in-out;
                     display: inline;
                     opacity:0;
                     height: $base-font-size * .75;
@@ -481,7 +480,7 @@ article {
         transition: box-shadow ease 250ms, color ease 250ms;
         cursor: pointer;
         text-decoration: none;
-        box-shadow: 0 -4px 0 $anchor-color inset;
+        box-shadow: 0 -2px 0 $anchor-color inset;
         font-weight:inherit;
         padding-left:3px;
         padding-right:3px;
@@ -709,42 +708,50 @@ ul.content-list {
 }
 
 article > blockquote {
-    display: block;
+display: block;
     background: $article-blockquote-background-color;
     padding: 15px 20px 15px 45px;
     margin: 0 0 20px;
     position: relative;
     /*Font*/
+    
     > p {
         font-family: $article-blockquote-font-family;
         font-size: $base-font-size * 1.2;
         line-height: 1.2;
         color: #666;
-        text-align: justify;
+        // text-align: justify;
         @include MQ(M) {
             font-size: $base-font-size * 1.7;
         }
-        a {
-            span.quote-reference {
+        span.quote-reference {
+            a {
                 font-size: $base-font-size;
                 position: absolute;
                 display: block;
                 right: 10px;
                 bottom: 10px;
                 background-color: $white;
-                box-shadow: 0 -4px 0 $article-blockquote-border-color inset;
-            }
-            &:hover {
-                    color: $white;
+                font-style: italic;
+                box-shadow: none;
+                // box-shadow: 0 -4px 0 $article-blockquote-border-color inset;
+                &:hover {
                     // box-shadow: 0 -27px 0 $anchor-color inset;
                     box-shadow: none;
+                    color: $base-font-color;
                 }
+                &:before {
+                    content: ' - ';
+                }
+            }
         }
     }
     /*Borders - (Optional)*/
+    
     border-left: 15px solid $article-blockquote-border-color;
     border-right: 2px solid $article-blockquote-border-color;
     /*Box Shadow - (Optional)*/
+    
     box-shadow: 2px 2px 15px #ccc;
     &::before {
         content: "\201C";
@@ -759,17 +766,16 @@ article > blockquote {
         left: 10px;
         top: 5px;
     }
+    
     &::after {
         /*Reset to make sure*/
         content: "";
     }
+    
     em {
         font-style: italic;
     }
 }
-
-
-
 
 .content-footer {
     &.search-open {
@@ -949,13 +955,13 @@ a.tag {
     @include MQ(M) {
         display: none;
     }
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
     cursor: pointer;
     padding: 10px 30px 16px 0px;
     span,
     span:before,
     span:after {
-        transition: all 200ms ease-in-out;
+        transition: all 300ms ease-in-out;
         cursor: pointer;
         border-radius: 1px;
         height: 3px;
@@ -1115,7 +1121,7 @@ ul.matching-items {
                     -ms-flex-positive: 1;
                     flex-grow: 1;
                     width: 100%;
-                    min-height:155px;
+                    min-height:160px;
                     height: 100%;
                     box-shadow: none;
                     background-size:cover;
@@ -1170,7 +1176,7 @@ ul.matching-items {
 }
 
 #footer {
-    transition: all 200ms ease-in-out;
+    transition: all 300ms ease-in-out;
     display: -webkit-flex;
     display: -ms-flexbox;
     display: flex;

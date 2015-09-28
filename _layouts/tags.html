@@ -36,7 +36,7 @@ regenerate: true
 	<ul class="site-tags">
 	<!-- Now we can iterate through the list of unique tags for the site -->
 	{% for tag in unique_tags %}
-		<!-- You need to use liquid's native "slugify" tag to account for tags that may contain special characters or spaces (eg, "prose.io" or "command line") The data attribute allows another attribute for us to target with javascrtipt, making it easier to create filters with the tags.json data-->
+		<!-- You need to use liquid's native "slugify" filter to account for tags that may contain special characters or spaces (eg, "prose.io" or "command line") The data attribute allows another attribute for us to target with javascrtipt, making it easier to create filters with the tags.json data-->
 		<li class="site-tag"><a href="#{{tag | slugify}}" id="{{tag | slugify }}" data-tagstring="{{tag}}" class="tag-ajax">{{ tag }}</a></li>
 	{% endfor %}
 	</ul>
