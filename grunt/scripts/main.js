@@ -41,8 +41,6 @@ function toggleMenu() {
   globalNav.classList.toggle('mobile-menu');
   menuButton.classList.toggle('mobile-menu');
   mainContent.classList.toggle('mobile-menu');
-  mobileTitleContent = document.getElementById('site-title-container'),
-  siteFooter = document.getElementById('footer');
 }
 
 //add "target=_blank" attribute to all external links on page
