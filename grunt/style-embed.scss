@@ -47,6 +47,7 @@ body > header:first-child {
     position: fixed;
     top: 0;
     left: 0;
+    overflow-x:hidden;
     @include MQ(M) {
         -webkit-flex-direction: column;
         -ms-flex-direction: column;
@@ -283,6 +284,7 @@ main {
 
 article > header:first-child {
     margin-bottom: 10px;
+    overflow-x:hidden;
     &.article-header-with-image {
         width: 105vw!important;
         max-width: 105vw;
