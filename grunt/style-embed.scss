@@ -727,7 +727,7 @@ article > blockquote {
             font-size: $base-font-size * 1.7;
         }
         @if $article-blockquote-author-attribution-separate-style {
-            span.quote-reference {
+            cite {
                 position: absolute;
                 display: block;
                 right: 10px;
