@@ -309,8 +309,11 @@ article > header:first-child {
         background-position:$article-header-background-image-position;
         section.article-information {
             height:$article-header-image-min-height-mobile;
+            max-width:90%;
             overflow-x:hidden;
             @include MQ(M){
+                position:relative;
+                width:100%;
                 max-width:$content-max-width;
                 text-align:left;
                 margin-left:25vw;
