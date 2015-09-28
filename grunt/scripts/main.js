@@ -41,8 +41,8 @@ function toggleMenu() {
   globalNav.classList.toggle('mobile-menu');
   menuButton.classList.toggle('mobile-menu');
   mainContent.classList.toggle('mobile-menu');
-  // mobileTitleContent = document.getElementById('site-title-container'),
-  // siteFooter = document.getElementById('footer');
+  mobileTitleContent = document.getElementById('site-title-container'),
+  siteFooter = document.getElementById('footer');
 }
 
 //add "target=_blank" attribute to all external links on page
@@ -98,25 +98,25 @@ function preventRefresh(enteredTerm) {
 //   }
 // }
 
-function blockQuoteStyling() {
-  var tutorialLocTest = new RegExp(/tutorials/i),
-    articleLocTest = new RegExp(/articles/i),
-    currentLoc = window.location.href;
-  if (articleLocTest.test(currentLoc) || tutorialLocTest.test(currentLoc)) {
-    var allBqs = document.querySelector('blockquote p');
-    var allQtAs = document.querySelectorAll('blockquote p a');
-    if (allQtAs !== -1) {
-      for (var i = 0; i < allQtAs.length; i++) {
-        var original_anchor_content = allQtAs[i].parentNode.innerHTML;
-        var new_quote_content = original_anchor_content.split(' - ')[0];
-        var new_anchor_content = original_anchor_content.split(' - ')[1];
-        var new_wrapped_anchor = '<span class=\"quote-reference\">' + new_anchor_content + '</span>';
-        allQtAs[i].parentNode.innerHTML = new_quote_content + new_wrapped_anchor;
-      }
-    }else if (allBqs !== -1){
-      console.log("HERE!");
-    }
-  }
-}
+// function blockQuoteStyling() {
+//   var tutorialLocTest = new RegExp(/tutorials/i),
+//     articleLocTest = new RegExp(/articles/i),
+//     currentLoc = window.location.href;
+//   if (articleLocTest.test(currentLoc) || tutorialLocTest.test(currentLoc)) {
+//     var allBqs = document.querySelector('blockquote p');
+//     var allQtAs = document.querySelectorAll('blockquote p a');
+//     if (allQtAs !== -1) {
+//       for (var i = 0; i < allQtAs.length; i++) {
+//         var original_anchor_content = allQtAs[i].parentNode.innerHTML;
+//         var new_quote_content = original_anchor_content.split(' - ')[0];
+//         var new_anchor_content = original_anchor_content.split(' - ')[1];
+//         var new_wrapped_anchor = '<span class=\"quote-reference\">' + new_anchor_content + '</span>';
+//         allQtAs[i].parentNode.innerHTML = new_quote_content + new_wrapped_anchor;
+//       }
+//     }else if (allBqs !== -1){
+//       console.log("HERE!");
+//     }
+//   }
+// }
 
-blockQuoteStyling();
+// blockQuoteStyling();

@@ -21,20 +21,7 @@ regenerate: true
 		{% assign series_contents = site.tutorials | map: 'series' | join: ',' | join: ',' | split: ',' %}
 		{% for serie in series_contents %}
 			{% assign theseries = theseries | push: serie %}
-		{% endfor %}
-		{% assign theseries = theseries | sort %}
-		{% for ser in theseries %}
-			{% unless ser == previous or ser == '' %}
-				{% assign unique_series = unique_series | push: ser%}
-			{% endunless %}
-			{% assign previous = ser %}
-		{% endfor %}
-		
-		<ul class="svg-icon-list">
-			{% for ser in unique_series %}
-			<li class="svg-icon-list-item"><a href="#" class="svg-icon-anchor" data-targetseries="{{ser}}">{% include icons/{{ ser | slugify }}-icon.svg %}</a></li>
-			{% endfor %}
-		</ul>
+		{% endfor %}		
 		
 	{% endif %}
 	<ul class="content-list">
