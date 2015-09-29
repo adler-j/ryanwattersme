@@ -9,6 +9,7 @@
     <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     {% include favicons.html %}
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="apple-mobile-web-app-title" content="{{site.title}}">
     {%if site.googleplus %}
     
     <meta rel="publisher" content="//plus.google.com/{{site.googleplus}}">
