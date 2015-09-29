@@ -10,7 +10,10 @@ published_on: 2015-09-01
 comments: true
 published: true
 insearch: true
-tags: ['javascript','jekyll','attempting']
+tags:
+- javascript
+- jekyll
+- setup
 ---
 
 ### Here is an Article Heading

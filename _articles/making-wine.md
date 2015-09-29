@@ -11,8 +11,8 @@ insearch: true
 comments: true
 tags:
 - japan
-- GitHub
-- JAVASCRIPT
+- github
+- javascript
 ---
 
 ### Here is a Heading in an Article

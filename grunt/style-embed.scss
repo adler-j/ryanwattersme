@@ -1059,7 +1059,7 @@ ul.matching-items {
         margin-bottom: 10px;
         background-color: $white;
         box-shadow: 2px 2px 15px #ccc;
-        @include MQ(M) {
+        @include MQ(SM) {
             width: 45%;
             max-width: 45%;
             &:nth-child(odd) {
@@ -1085,7 +1085,7 @@ ul.matching-items {
             padding-left:0px;
             margin-right:0px;
             margin-left:0px;
-            @include MQ(M) {
+            @include MQ(SM) {
                 -webkit-flex-direction: column;
                 -ms-flex-direction: column;
                 flex-direction: column;
@@ -1101,7 +1101,7 @@ ul.matching-items {
             }
             .tag-page-image {
                 display: none;
-                @include MQ(M) {
+                @include MQ(SM) {
                     display: -webkit-flex;
                     display: -ms-flexbox;
                     display: flex;

@@ -14,6 +14,7 @@ tags:
   - travel
   - japan
   - awesome
+  - javascript
 ---
 
 ### Heading

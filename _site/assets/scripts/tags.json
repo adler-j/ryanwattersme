@@ -34,6 +34,14 @@
 					"date":"2015-09-14"
 			},
 		
+			{"title": "Driving Down the Highway",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/driving-down-the-highway/",
+					"tag": "javascript",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-14"
+			},
+		
 	
 	
 	
@@ -151,7 +159,7 @@
 			{"title": "Trying Once More",
 				"image": "shoes_on_the_beach.jpeg",  
 					"url": "/articles/trying-once-more/",
-					"tag": "attempting",
+					"tag": "setup",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
 					"date":"2015-09-01"
 			},
