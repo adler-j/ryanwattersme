@@ -296,6 +296,10 @@ span.search-term-top {
         width: 100%;
         max-width: $content-max-width;
         border-bottom: 1px solid $base-font-color;
+        //remove clear "X" from search input on IE10+
+        &::-ms-clear{
+            display:none;
+        }
         &:focus {
             outline: none!important;
             border-left: none!important;
