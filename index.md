@@ -7,8 +7,14 @@ regenerate: true
 published_on: 2015-09-01
 ---
 
-This site is currently in development. 
+Content and coding for this site is currently in development and scheduled for publication on 2015/11/01. 
 
-The ultimate goal of this site is to act as a portfolio of my editorial, writing, and front-end development experience. I will also include a personal blog and a Jekyll tutorial series to teach absolute beginners how to make a [brutally fast](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fryansportfol.io), professional, static site for free.
+Once this site is completed, I'll be including a multi-step, open-source tutorial series on how I built the site using [Jekyll](//jekyllrb.com), command line tools (including [Grunt](http://gruntjs.com/) and [lunr.js](http://lunrjs.com), [CloudFlare](https://www.cloudflare.com/), and [BrowserStack](https://www.browserstack.com/) for testing.
+
+Although content is still being created, I would like to extend a special thank you to [BrowserStack](https://www.browserstack.com/) for helping me during the testing phase of development. 
+
+<a href="https://www.browserstack.com" style="box-shadow:none;">
+{% include icons/browserstack-logo.svg %}
+</a>
 
 
