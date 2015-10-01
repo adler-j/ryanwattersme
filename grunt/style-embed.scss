@@ -351,13 +351,18 @@ article > header:first-child {
                 z-index: 10;
                 box-shadow:none;
                 overflow-x:hidden;
+                border-bottom: 1px solid $white;
                 &:hover {
-                    text-decoration: none;
                     font-weight: bold;
                     box-shadow:none;
+                    text-decoration:none;
                 }
                 &:hover > svg {
-                    opacity:1;
+                    @include MQ(M) {
+                        height: $base-font-size;
+                        max-height: $base-font-size;
+                        
+                    }
                 }
                 @include MQ(M) {
                     margin-left:0px;
@@ -366,19 +371,17 @@ article > header:first-child {
                     font-size:$base-font-size;
                 }
                 svg {
-                    transition:opacity 300ms ease-in-out;
+                    transition:visibility 300ms ease-in-out;
                     display: inline;
-                    opacity:0;
+                    vertical-align: middle;
+                    fill: $white;
+                    max-width:0px;
+                    margin-left:0px;
+                    border-bottom:none;
                     height: $base-font-size * .75;
                     max-height: $base-font-size * .75;
-                    vertical-align: middle;
-                    margin-right: 5px;
-                    fill: $white;
-                    @include MQ(M) {
-                        height: $base-font-size;
-                        max-height: $base-font-size;
-                        max-width: 40px;
-                    }
+                    max-width: 40px;
+                    margin-left: 5px;
                 }
             }
         }
