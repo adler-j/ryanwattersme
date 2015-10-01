@@ -6,26 +6,20 @@
     <style type="text/css">
      {% include style-embed.html %}
     </style>
-    <title>{% if page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    <title>
+    {% if page.title == site.title %}Home - {{ site.title }}{% elsif page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     {% include favicons.html %}
     <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
     <meta name="apple-mobile-web-app-title" content="{{site.title}}">
     {%if site.googleplus %}
-    
     <meta rel="publisher" content="//plus.google.com/{{site.googleplus}}">
     {% endif %}
     <meta property="og:locale" content="en_US">
-    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">   
-
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+      
+    <meta property="og:image" content="{% if page.main_image %}{{site.url}}/images/{{page.main_image}}{%else%}{{site.url}}/images/site-logo.png{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
-    
-
     <meta property="og:site_name" content="{{ site.title }}">
-    
-
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
-    
-
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}" />
-
 </head>

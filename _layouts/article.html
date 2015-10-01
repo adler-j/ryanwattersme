@@ -15,6 +15,7 @@ layout: default
     {% assign img = false %}
     {% assign header_class = "article-header-without-image" %}
 {% endif %}
+{% assign reading_time = content | strip_html | number_of_words | divided_by: 200 | round %}
 <article>
     <header {% if img == true %}style="background-image:linear-gradient(rgba(0, 0, 0, 0.7),rgba(0, 0, 0, 0.7)),url('{{site.baseurl}}/assets/images/{{main_image}}')" alt="{{page.main_image_description}}" {% endif %} class="{{ header_class }}">
         <section class="article-information">
@@ -24,14 +25,18 @@ layout: default
                     <div class="series-info">{{page.series | capitalize }} Series, Part {{page.series_no}}</div>
                     {% elsif page.collection == 'articles' %}
                     <time>{{ page.published_on | date: '%B %d, %Y' }}</time>
+                    <div class="reading-time">
+                        <div>{% include icons/clock-icon.svg %} {{reading_time}}-minute read</div>
+                    </div>
                     {% endif %}
             </section>
             <a href="/{{page.collection}}" class="breadcrumb-link">
+                Back to {{page.collection | capitalize }}
                 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="back-arrow-icon" x="0px" y="0px"viewBox="0 0 400.004 400.004" style="enable-background:new 0 0 400.004 400.004;" xml:space="preserve" >
                         <g>
                         <path d="M382.688,182.686H59.116l77.209-77.214c6.764-6.76,6.764-17.726,0-24.485c-6.764-6.764-17.73-6.764-24.484,0L5.073,187.757   c-6.764,6.76-6.764,17.727,0,24.485l106.768,106.775c3.381,3.383,7.812,5.072,12.242,5.072c4.43,0,8.861-1.689,12.242-5.072   c6.764-6.76,6.764-17.726,0-24.484l-77.209-77.218h323.572c9.562,0,17.316-7.753,17.316-17.315   C400.004,190.438,392.251,182.686,382.688,182.686z"></path>
                         </g>
-                </svg>Back to {{page.collection | capitalize }}
+                </svg>
             </a>
         </section>
     </header>

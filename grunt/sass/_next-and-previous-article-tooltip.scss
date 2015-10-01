@@ -7,6 +7,12 @@
         max-height: 40px;
         min-width: 40px;
         max-width: 40px;
+        &:hover .arrow-icons{
+            fill:#000000;
+        }
+        .arrow-icons{
+            fill:lighten($base-font-color,15%);
+        }
     }
 }
 

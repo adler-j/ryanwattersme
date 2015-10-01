@@ -8,6 +8,7 @@
 @import 'sass/search-overlay';
 @import 'sass/animations';
 @import 'sass/next-and-previous-article-tooltip';
+@import 'sass/disqus_thread';
 
 body,
 #body {
@@ -359,7 +360,10 @@ article > header:first-child {
                     opacity:1;
                 }
                 @include MQ(M) {
-                    font-size: $base-font-size * .9;
+                    margin-left:0px;
+                    padding-left:0px;
+                    left:0px;
+                    font-size:$base-font-size;
                 }
                 svg {
                     transition:opacity 300ms ease-in-out;
@@ -416,6 +420,35 @@ article {
             svg {
                 height:$base-font-size * .8;
                 width:$base-font-size * .8;
+            }
+        }
+        .reading-time{
+            height:$base-font-size * 1.5;
+            color:$white;
+            width:100%;
+            position:relative;
+            vertical-align:middle;
+            display:block;
+            div{
+                color:$white;
+                height:$base-font-size * 1.5;
+                line-height:$base-font-size * 1.5;
+                width:180px;
+                display:inline;
+                font-size:$base-font-size;
+                text-align:left;
+                padding-bottom:5px;
+                svg {
+                    fill:$white;
+                    display:inline;
+                    max-height:$base-font-size;
+                    max-width:$base-font-size;
+                    float:left;
+                    line-height:$base-font-size * 1.5;
+                    vertical-align:middle;
+                    margin-right:$base-font-size / 2;
+                    margin-top: $base-font-size / 3;
+                }
             }
         }
     }
@@ -581,21 +614,6 @@ div.highlight {
     }
 }
 
-
-aside {
-    #disqus_thread {
-        width: 90%;
-        position: relative;
-        margin-right: auto;
-        margin-left: auto;
-        max-width: $content-max-width;
-        @include MQ(M) {
-            margin-bottom: 50px;
-            margin-top: 10px;
-            padding-top: 0px;
-        }
-    }
-}
 
 .fluidvids {
     margin-top: $base-font-size;
