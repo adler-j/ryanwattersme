@@ -369,6 +369,7 @@ article > header:first-child {
                     padding-left:0px;
                     left:0px;
                     font-size:$base-font-size;
+                    overflow-y:hidden;
                 }
                 svg {
                     transition:visibility 300ms ease-in-out;
@@ -601,6 +602,7 @@ div.highlight {
             position: relative;
             margin-left: 25vw;
             white-space: pre-wrap;
+            overflow-x:scroll;
         }
         @include MQ(L) {
             max-width: $content-max-width;
