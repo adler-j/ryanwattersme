@@ -602,7 +602,7 @@ div.highlight {
             position: relative;
             margin-left: 25vw;
             white-space: pre-wrap;
-            overflow-x:scroll;
+            overflow-x:hidden;
         }
         @include MQ(L) {
             max-width: $content-max-width;
