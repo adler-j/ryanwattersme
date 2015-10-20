@@ -329,8 +329,10 @@ article > header:first-child {
                 width: 90%;
                 margin-left: 5%;
                 overflow-x:hidden;
+                overflow-y:hidden;
                 @include MQ(M){
                     margin-left:0vw;
+                    overflow-y:hidden;
                 }
                 time,
                 .series-info {
