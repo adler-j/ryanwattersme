@@ -66,7 +66,7 @@ permalink: /:collection/:path/
 markdown: redcarpet
 redcarpet:
   extensions: ['smart','superscript','strikethrough','autolinks','tables','no_intra_emphasis','footnotes', 'tables', 'with_toc_data']
-highlighter: pygments
+# highlighter: pygments
 
 exclude: [Gemfile,Gemfile.lock,snippets_and_notes.md,grunt]
 include: [scripts]

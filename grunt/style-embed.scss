@@ -1065,32 +1065,25 @@ ul.site-tags {
 }
 
 ul.matching-items {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-wrap: wrap;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
+    @include display(flex);
+    @include flex-wrap(wrap);
     margin-top: 25px;
     text-indent: 0;
     margin-left: 0;
     li {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-flex-direction: column;
-        -ms-flex-direction: column;
-        flex-direction: column;
+        @include display(flex);
+        @include flex-direction(column);
         width: 100%;
-        height: auto;
-        clear: both;
-        position: relative;
+        min-height: 100%;
+        // position: relative;
         margin-bottom: 10px;
         background-color: $white;
         box-shadow: 2px 2px 15px #ccc;
         @include MQ(SM) {
             width: 45%;
             max-width: 45%;
+            flex-shrink:0;
+            flex-basis:auto;
             &:nth-child(odd) {
                 margin-right: 5%;
             }
@@ -1103,12 +1096,8 @@ ul.matching-items {
             }
         }
         a.tag-match {
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            -webkit-align-items: flex-start;
-            -ms-flex-align: flex-start;
-            align-items: flex-start;
+            @include display(flex);
+            @include align-items(flex-start);
             box-shadow:none;
             padding-right:0px;
             padding-left:0px;
@@ -1118,6 +1107,9 @@ ul.matching-items {
                 -webkit-flex-direction: column;
                 -ms-flex-direction: column;
                 flex-direction: column;
+                min-height:100%;
+                flex-shrink:0;
+                flex-basis:auto;
             }
             @include MQ(L) {
                 width: 100%;
@@ -1131,9 +1123,7 @@ ul.matching-items {
             .tag-page-image {
                 display: none;
                 @include MQ(SM) {
-                    display: -webkit-flex;
-                    display: -ms-flexbox;
-                    display: flex;
+                    @include display(flex);
                     -webkit-flex-grow: 1;
                     -ms-flex-positive: 1;
                     flex-grow: 1;
@@ -1160,9 +1150,12 @@ ul.matching-items {
                 -webkit-flex-direction: column;
                 -ms-flex-direction: column;
                 flex-direction: column;
+                flex-shrink:0;
+                flex-basis:auto;
                 margin: 0px;
                 padding: 0px;
                 height: 100%;
+                min-height:100%;
                 h3 {
                     display: -webkit-flex;
                     display: -ms-flexbox;
@@ -1182,10 +1175,12 @@ ul.matching-items {
                     display: -webkit-flex;
                     display: -ms-flexbox;
                     display: flex;
+                    flex-grow:1;
                     padding: 5px 8px;
                     font-weight: normal;
                     margin: 0px;
                     font-size: 16px;
+                    flex:1;
                 }
             }
         }

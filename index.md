@@ -7,7 +7,7 @@ regenerate: true
 published_on: 2015-09-01
 ---
 
-Content and coding for this site is currently in development and scheduled for publication on 2015/11/01. 
+Content and coding for this site is currently in development and scheduled for publication on 2015/12/01. 
 
 Once this site is completed, I'll be including a multi-step, open-source tutorial series on how I built the site using [Jekyll](//jekyllrb.com), command line tools (including [Grunt](http://gruntjs.com/), [Tipue](http://www.tipue.com/), and possibly [lunr.js](http://lunrjs.com)), [CloudFlare](https://www.cloudflare.com/), and [BrowserStack](https://www.browserstack.com/) for testing.
 
