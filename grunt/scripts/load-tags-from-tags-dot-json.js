@@ -3,14 +3,11 @@ document.addEventListener('DOMContentLoaded', checkHash(), false);
 //Add listener to see if user clicks one of the tag buttons
 window.addEventListener('click', function(event) {
   if (event.target.className == "tag-ajax") {
-    /*uncomment this setTimeout function if you want to prevent the default browser behavior of scroll jumping to the respective id/href when a tag is clicked. This seemed like a good idea at the time (on desktop), but it ends up inadvertently hiding matching items on mobile*/
-    // setTimeout(function() {
-    //   //on click, try to prevent default of moving page down to id#
-    //   window.scrollTo(0, 0);
-    // }, 1); 
     var theTag = event.target.id;
     var tagString = event.target.dataset.tagstring;
     getMatches(theTag, tagString);
+  }else{
+    return;
   }
 }, false);
 

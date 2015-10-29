@@ -13,6 +13,8 @@ Once this site is completed, I'll be including a multi-step, open-source tutoria
 
 Although final content for site launch has yet to be published on the live site, I would like to extend a special thank you to [BrowserStack](https://www.browserstack.com/) for helping me during the testing phase of development. If you haven't used their product, it's the best option out there for all your cross-browser and cross-platform testing needs.
 
+<span style="font-size:36px;">{{page.url}}</span>
+
 <a href="https://www.browserstack.com" style="box-shadow:none;">
 {% include icons/browserstack-logo.svg %}
 </a>
