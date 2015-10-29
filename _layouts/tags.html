@@ -19,7 +19,7 @@ regenerate: true
 {% endfor %}
 <!-- Sort the full list of article/tutorial tags alphabetically -->
 {% assign tags = tags | sort %}
-<!-- Iterate through full of site tags  -->
+<!-- Iterate through full list of site tags  -->
 {% for tag in tags %}
 	<!-- For the first iteration, you can't check against the previous item (ie, since index 0 has no preceding/-1 index), so we will create an exception for the first tag in the tags array by using the 'or' logical liquid operator to check for an empty string -->
 	{% unless tag == previous or tag == '' %}
