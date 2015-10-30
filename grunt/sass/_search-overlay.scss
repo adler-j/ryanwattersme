@@ -286,6 +286,8 @@ span.search-term-top {
     }
     input#tipue_search_input {
         display: block;
+        //allow styling of the search in put in Safari on OSX and iOS
+        -webkit-appearance: textfield;
         color: $base-font-color;
         font-size: $base-font-size * 2;
         font-weight: 300;
