@@ -31,11 +31,11 @@ One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your foo
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Culpa repellat, soluta, illo totam expedita, nesciunt neque inventore sunt reiciendis excepturi, nemo sequi quos ipsam accusantium eaque accusamus consectetur tempore nobis.
 
-{% highlight javascript linenos=true %}
+```javascript
 $(document).ready(function(){
     console.log("hello world");
 });
-{% endhighlight %}
+```
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem fugiat, animi sequi est veritatis provident quasi harum excepturi magnam. Repudiandae, vero, tenetur. Repellendus ipsa nobis quaerat eum deleniti totam est.
 
