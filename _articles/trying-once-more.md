@@ -22,7 +22,7 @@ One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your foo
 
 > How now brown cow. - John Doe
 
-If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it.
+If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average a&*$^%& out walkin' around on the streets and that's it.
 
 #### Here is an Article Subheading 
 

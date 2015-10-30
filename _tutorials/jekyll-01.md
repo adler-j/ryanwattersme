@@ -26,7 +26,7 @@ First line of this paragraph. Lorem ipsum dolor sit amet, consectetur adipisicin
 
 One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. 
 
-If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it.
+If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average a&*$^%& out walkin' around on the streets and that's it.
 
 <iframe width="640" height="360" src="//www.youtube.com/embed/UXyHf_SpUUI" frameborder="0" allowfullscreen></iframe>
 
@@ -36,7 +36,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis deserunt 
 
 Do commanded an shameless we disposing do. Indulgence ten remarkably nor are impression out. Power is lived means oh every in we quiet. Remainder provision an in intention. Saw supported too joy promotion engrossed propriety. Me till like it sure no sons.
 
-One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average asshole out walkin' around on the streets and that's it.
+One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. If you don't watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin'? Well you're not! You're not! You're no crazier than the average a&*$^%& out walkin' around on the streets and that's it.
 
 >Here is a blockquote. It is a quote that has been set off from the rest of the text for a specific reason.
 
