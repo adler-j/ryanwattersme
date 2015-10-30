@@ -1162,8 +1162,7 @@ ul.matching-items {
                 -webkit-flex-direction: column;
                 -ms-flex-direction: column;
                 flex-direction: column;
-                flex-shrink:0;
-                flex-basis:auto;
+                @include flex(1);
                 margin: 0px;
                 padding: 0px;
                 height: 100%;
