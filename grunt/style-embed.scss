@@ -1052,6 +1052,7 @@ ul.site-tags {
             padding: 4px;
             background-color: $button-color;
             box-shadow:none;
+            white-space: nowrap;
             &:focus,
             &:hover {
                 background-color: $tag-page-tag-focus-background-color;
