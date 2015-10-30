@@ -6,7 +6,7 @@ window.addEventListener('click', function(event) {
     var theTag = event.target.id;
     var tagString = event.target.dataset.tagstring;
     getMatches(theTag, tagString);
-  }else{
+  } else {
     return;
   }
 }, false);
@@ -33,10 +33,10 @@ function checkHash() {
 }
 
 function getMatches(thetag, thestring) {
-  var tagId = thetag,
-    idString = thestring,
-    theIdSpan = document.getElementById('selected-tag'),
-    request = new XMLHttpRequest;
+  var tagId = thetag;
+  var idString = thestring;
+  var theIdSpan = document.getElementById('selected-tag');
+  var request = new XMLHttpRequest;
   theIdSpan.innerHTML = '- ' + idString;
   request.open('GET', '../assets/scripts/tags.json', true);
   request.onreadystatechange = function() {
@@ -49,9 +49,9 @@ function getMatches(thetag, thestring) {
         if (content[i].tag == tagId) {
           var iconTest = new RegExp(/icon/i);
           var iconClass;
-          if(iconTest.test(content[i].image)){
+          if (iconTest.test(content[i].image)) {
             iconClass = 'icon';
-          }else{
+          } else {
             iconClass = '';
           }
           matchingItems.innerHTML += '<li class=\"animated fadeInUp\"><a href=\"' + content[i].url + '\" class=\"tag-match\"><div class=\"tag-page-image ' + iconClass + '\" style=\"background-image:url(/assets/images/' + content[i].image + ');\"></div><section><h3>' + content[i].title + '</h3><p>' + content[i].description + '</p></section></a></li>';
