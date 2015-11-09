@@ -43,7 +43,7 @@
 			},
 		
 	
-	
+
 	
 		
 			{"title": "First Prose.io Article",
@@ -71,11 +71,11 @@
 			},
 		
 	
-	
+
 	
 		
 	
-	
+
 	
 		
 			{"title": "Making Wine",
@@ -103,7 +103,7 @@
 			},
 		
 	
-	
+
 	
 		
 			{"title": "Need More Articles",
@@ -139,7 +139,7 @@
 			},
 		
 	
-	
+
 	
 		
 			{"title": "Trying Once More",
@@ -167,7 +167,7 @@
 			},
 		
 	
-	
+
 	
 		
 			{"title": "Trying Yet Again",
@@ -195,7 +195,7 @@
 			},
 		
 	
-	
+
 
 	
 		
@@ -307,47 +307,7 @@
 , 
 
 	
-		
-			{"title": "HTML5 New Elements",
-			 "image": "/icons/html-icon.svg",
-			 "url": "/tutorials/html-01/",
-			 "tag": "jekyll",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
-			 "tutseries:": "Html",
-			 "date":"2015-08-25"
-			}
-	,
-
-			{"title": "HTML5 New Elements",
-			 "image": "/icons/html-icon.svg",
-			 "url": "/tutorials/html-01/",
-			 "tag": "liquid",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
-			 "tutseries:": "Html",
-			 "date":"2015-08-25"
-			}
-	,
-
-			{"title": "HTML5 New Elements",
-			 "image": "/icons/html-icon.svg",
-			 "url": "/tutorials/html-01/",
-			 "tag": "html5",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
-			 "tutseries:": "Html",
-			 "date":"2015-08-25"
-			}
-	,
-
-			{"title": "HTML5 New Elements",
-			 "image": "/icons/html-icon.svg",
-			 "url": "/tutorials/html-01/",
-			 "tag": "elements",
-			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.",
-			 "tutseries:": "Html",
-			 "date":"2015-08-25"
-			}
-	
-, 
+		, 
 
 	
 		, 

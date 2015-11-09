@@ -35,10 +35,10 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  jekyll
+  jekyll (= 3.0)
   json
   redcarpet
-  rouge (= 1.9)
+  rouge (= 1.9.0)
 
 BUNDLED WITH
    1.10.6

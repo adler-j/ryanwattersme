@@ -16,7 +16,7 @@ regenerate: true
 			},
 		{% endfor %}
 	{% endif %}
-	{% endfor %}
+{% endfor %}
 {% for tutorial in site.tutorials | sort: 'published_on' %}
 	{% if tutorial.tags %}
 		{% for tag in tutorial.tags %}

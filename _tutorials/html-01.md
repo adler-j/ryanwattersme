@@ -1,21 +1,16 @@
 ---
 series: html
+series_no: 01
 title: HTML5 New Elements
 subtitle: HTML5 elements 
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio architecto, eveniet ipsum ad obcaecati.
 layout: article
-series_no: 01
 main_image:
 main_image_description:
 published: true
 published_on: 2015-08-25
 comments: true
 insearch: true
-tags: 
-- jekyll
-- liquid
-- html5
-- elements
 ---
 
 First line of this paragraph. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](http://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste. Hello world.
