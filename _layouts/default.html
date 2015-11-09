@@ -45,6 +45,9 @@ layout: compress
     };
     </script>
     {% endif %}
+    {% if jekyll.environment == "development" %}
+     <script src="js/vendor/livereload.js?host=localhost&port=32579"></script> 
+    {% endif %}
 </body>
 
 </html>
