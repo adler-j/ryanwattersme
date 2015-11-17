@@ -91,7 +91,7 @@ table {
 
 @import 'bourbon/bourbon'; // http://bourbon.io/
 
-$color-1: #2A2C39;
+$color-1: darken(#01589B,15%);
 $color-2: #487557;
 $color-3: #ebebeb; // Gallery
 $color-4: #ffffff; // White
@@ -250,8 +250,8 @@ header.intro-block {
 		position: absolute;
 		@include center;
 		top: 95%;
-		height: 24px;
-		width: 24px;
+		height: 36px;
+		width: 36px;
 		background: url(/assets/images/icons/arrow-back.svg) no-repeat center center;
 		opacity: 0;
 		@include transition(opacity .2s);
@@ -549,6 +549,7 @@ Project slider navigation
 		height: 60px;
 		width: 4%;
 		background: url(/assets/images/icons/arrow.svg) no-repeat center center;
+		background-color:rgba(0,0,0,.5);
 		@include transition(opacity 0.2s 0s, visibility 0s 0s);
 
 		&.next {
@@ -663,6 +664,9 @@ Project content panel
 
 		p {
 			font-size: 1.8rem;
+		}
+		img {
+			margin-top: .75rem;
 		}
 
 		.close {
