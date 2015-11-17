@@ -22,6 +22,11 @@ module.exports = function(grunt) {
           src: ['style-embed.scss'],
           dest: '../_includes/',
           ext: '.html'
+        },{
+          expand: true,
+          src: ['../assets/altstylesheets/samples.scss'],
+          dest: '../assets/altstylesheets/samples.scss',
+          ext: '.css'
         }]
       }
     },
