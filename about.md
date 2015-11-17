@@ -10,5 +10,3 @@ published_on: 2015-09-01
 Hi. 
 
 My name is Ryan Watters. I am a writer, editor, publisher, content strategist, and inchoate front-end web developer. Feel free to email me directly at [ryan@ryansportfol.io](mailto:ryan@ryansportfol.io?subject=ryansportfol.io) for writing samples or to discuss potential freelance work. 
-
-Please see my [resume](/resume/) for my professional work experience. 
