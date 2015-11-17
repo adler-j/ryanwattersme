@@ -259,9 +259,9 @@
 
 	
 	<url>
-		<loc>https://ryansportfol.io/parse/</loc>
+		<loc>https://ryansportfol.io/resume/</loc>
 		
-		<lastmod></lastmod>
+		<lastmod>2015-09-01</lastmod>
 				
 		<changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -270,9 +270,9 @@
 
 	
 	<url>
-		<loc>https://ryansportfol.io/resume/</loc>
+		<loc>https://ryansportfol.io/samples/</loc>
 		
-		<lastmod>2015-09-01</lastmod>
+		<lastmod>2015-11-18</lastmod>
 				
 		<changefreq>weekly</changefreq>
     <priority>0.5</priority>

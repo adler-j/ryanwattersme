@@ -3,3 +3,4 @@ Allow: /
 Disallow: /images/
 Disallow: /scripts/
 Disallow: /*.js$
+Disallow: /samples/;

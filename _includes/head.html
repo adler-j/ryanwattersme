@@ -3,9 +3,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="alternate" href="{{site.url}}" hreflang="en-us" />
+    {% unless page.alt_stylesheet %}
     <style type="text/css">
      {% include style-embed.html %}
     </style>
+    {% endunless %}
     <title>
     {% if page.title == site.title %}Home - {{ site.title }}{% elsif page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
     {% include favicons.html %}
@@ -22,4 +24,7 @@
     <meta property="og:site_name" content="{{ site.title }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}" />
+    {% if page.alt_stylesheet%}
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/altstylesheets/{{page.alt_stylesheet}}">
+    {% endif %}
 </head>
