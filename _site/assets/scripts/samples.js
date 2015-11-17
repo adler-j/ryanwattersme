@@ -1,6 +1,6 @@
 jQuery(document).ready(function(){
 	var intro = $('header.intro-block'),
-		projectsContainer = $('.projects-wrapper'),
+		projectsContainer = $('.samples-wrapper'),
 		projectsSlider = projectsContainer.children('.slider'),
 		singleProjectContent = $('.project-content'),
 		sliderNav = $('.slider-navigation');
@@ -96,7 +96,7 @@ jQuery(document).ready(function(){
 
 	function checkMQ() {
 		//check if mobile or desktop device
-		return window.getComputedStyle(document.querySelector('.projects-wrapper'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
+		return window.getComputedStyle(document.querySelector('.samples-wrapper'), '::before').getPropertyValue('content').replace(/'/g, "").replace(/"/g, "");
 	}
 
 	function setSliderContainer() {

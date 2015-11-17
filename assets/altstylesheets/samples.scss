@@ -150,7 +150,7 @@ $animation-duration: 0.3s;
 // breakpoints
    
 $S:     480px;   
-$M:     900px;     
+$M:     640px;     
 $L:     1170px;     
 
 // media queries
@@ -167,15 +167,10 @@ $L:     1170px;
   }
 }
 
-// super light grid - it works with the .cd-container class inside style.scss
-
 @mixin column($percentage, $float-direction:left) {
   width: 100% * $percentage;
   float: $float-direction;
 }
-
-
-
 
 *, *::after, *::before {
 	box-sizing: border-box;
@@ -202,13 +197,6 @@ a {
 img {
 	max-width: 100%;
 }
-
-/* -------------------------------- 
-
-Patterns - reusable parts of our design
-
--------------------------------- */
-
 .btn {
 	display: inline-block;
 	padding: 1.4em 2em;
@@ -332,7 +320,7 @@ Projects Slider
 
 -------------------------------- */
 
-.projects-wrapper {
+.samples-wrapper {
 	position: fixed;
 	z-index: 1;
 	top: 0;

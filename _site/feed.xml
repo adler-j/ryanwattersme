@@ -5,8 +5,8 @@
     <description>My name is Ryan. This is my website.</description>
     <link>https://ryansportfol.io/</link>
     <atom:link href="https://ryansportfol.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Mon, 16 Nov 2015 19:54:39 -0600</pubDate>
-    <lastBuildDate>Mon, 16 Nov 2015 19:54:39 -0600</lastBuildDate>
+    <pubDate>Mon, 16 Nov 2015 20:06:01 -0600</pubDate>
+    <lastBuildDate>Mon, 16 Nov 2015 20:06:01 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -97,12 +97,18 @@
       </item>
     
       <item>
-        <title>Articles</title>
-        <description></description>
+        <title>Hand Full of Wine Grapes</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.</description>
         
-        <pubDate>2000-08-01</pubDate>
+        <pubDate>2015-09-07</pubDate>
         
-        <link>https://ryansportfol.io/articles/</link>
+        <link>https://ryansportfol.io/articles/hand-full-of-grapes/</link>
+        
+        <category>japan</category>
+        
+        <category>github</category>
+        
+        <category>javascript</category>
         
       </item>
     

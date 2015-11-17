@@ -1,5 +1,5 @@
 ---
-title: Making Wine
+title: Hand Full of Wine Grapes
 subtitle: Here is a subtitle for my article
 layout: article
 author: Ryan Watters
