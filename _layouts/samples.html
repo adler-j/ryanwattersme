@@ -21,7 +21,7 @@ layout: compress
             <img src="/assets/images/samples/migrations.png" alt="project image">
             <div class="sample-info">
               <h2>Content Migrations</h2>
-              <p class="sample-snippet">Tutorial site, web best practices, and standards-based content migrations</p>
+              <p class="sample-snippet">Tutorials, web best practices, and standardizing content migrations</p>
             </div>
           </a>
         </li>
@@ -30,7 +30,7 @@ layout: compress
             <img src="/assets/images/samples/development.png" alt="project image">
             <div class="sample-info">
               <h2>Web Development</h2>
-              <p class="sample-snippet">Coding as a means to better content management and digital strategy</p>
+              <p class="sample-snippet">Coding for better content management and digital strategy</p>
             </div>
           </a>
         </li>
@@ -39,7 +39,7 @@ layout: compress
             <img src="/assets/images/samples/process.png" alt="project image">
             <div class="sample-info">
               <h2>Process</h2>
-              <p class="sample-snippet">Samples pieces of contract medical writing and medical copy editing</p>
+              <p class="sample-snippet">Editorial process improvements and DMS business proposal</p>
             </div>
           </a>
         </li>
@@ -48,7 +48,7 @@ layout: compress
             <img src="/assets/images/samples/writing.png" alt="project image">
             <div class="sample-info">
               <h2>Writing and Editing</h2>
-              <p class="sample-snippet">Medical writing and medical copy editing</p>
+              <p class="sample-snippet">Medical writing, medical copy editing, and style guides</p>
             </div>
           </a>
         </li>
@@ -57,7 +57,7 @@ layout: compress
             <img src="/assets/images/samples/strategy.png" alt="project image">
             <div class="sample-info">
               <h2>Strategy</h2>
-              <p class="sample-snippet">Samples addresing different aspects of content strategy for the web</p>
+              <p class="sample-snippet">A mix of pieces addressing the many facets of web content strategy</p>
             </div>
           </a>
         </li>
@@ -83,7 +83,7 @@ layout: compress
       </div>
       <a href="#0" class="close img-replace">Close</a>
     </section>
-    <section class="sample-content is-visible" data-tileid="3">
+    <section class="sample-content" data-tileid="3">
       <div>
         {% capture process %}{% include sampcont/process.md %}{% endcapture %}
         {{ process | markdownify }} 
@@ -92,7 +92,16 @@ layout: compress
     </section>
     <section class="sample-content" data-tileid="4">
       <div>
+      {% capture writingediting %}{% include sampcont/writingediting.md %}{% endcapture %}
+        {{ writingediting | markdownify }}
         
+      </div>
+      <a href="#0" class="close img-replace">Close</a>
+    </section>
+    <section class="sample-content" data-tileid="5">
+      <div>
+      {% capture strategy %}{% include sampcont/strategy.md %}{% endcapture %}
+        {{ strategy | markdownify }}  
       </div>
       <a href="#0" class="close img-replace">Close</a>
     </section>

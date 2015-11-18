@@ -1,6 +1,8 @@
 ## Content Migrations
 
-I have included a full reproduction [the AAP.org content migration site](/samples/aapmigrations/) (originally aapmigrations.info) within this samples collection. I developed this site in mid-2014 to facilitate the content migration of 50+ AAP.org subsites from our previous platform (ColdFusion) to our new CMS (SharePoint 2013). I wanted to provide my colleagues a simple website where they could learn about basic content management strategy, best writing practices, web technology, and editorial process. I wrote every line of content and code for the site. The current site is now part of the organizations internal network and is therefore unavailable for feature in the samples collection.
+Please visit the full version of the [AAP.org content migration site](/samples/aapmigrations/) (originally aapmigrations.info) I have included in this samples collection. I developed this site in mid-2014 to facilitate the content migration of 50+ AAP.org subsites from our previous platform (ColdFusion) to our new CMS (SharePoint 2013). I wanted to provide an area where my colleagues could learn about content management strategy, best practices for web writing, web technology basics, and editorial process. 
+
+I wrote every line of content and code for the site. The current site is now part of the organizations internal network and is therefore unavailable for feature in the samples collection.
 
 ### Site Features 
 
