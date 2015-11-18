@@ -5,8 +5,8 @@
     <description>My name is Ryan. This is my website.</description>
     <link>https://ryansportfol.io/</link>
     <atom:link href="https://ryansportfol.io/feed.xml" rel="self" type="application/rss+xml"/>
-    <pubDate>Wed, 18 Nov 2015 00:18:11 -0600</pubDate>
-    <lastBuildDate>Wed, 18 Nov 2015 00:18:11 -0600</lastBuildDate>
+    <pubDate>Wed, 18 Nov 2015 02:02:50 -0600</pubDate>
+    <lastBuildDate>Wed, 18 Nov 2015 02:02:50 -0600</lastBuildDate>
     <generator>Jekyll v3.0.0</generator>
     
       <item>
@@ -61,54 +61,50 @@
     
     
       <item>
-        <title>Driving Down the Highway</title>
-        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.</description>
-        
-        <pubDate>2015-09-14</pubDate>
-        
-        <link>https://ryansportfol.io/articles/driving-down-the-highway/</link>
-        
-        <category>food</category>
-        
-        <category>travel</category>
-        
-        <category>japan</category>
-        
-        <category>awesome</category>
-        
-        <category>javascript</category>
-        
-      </item>
-    
-      <item>
-        <title>First Prose.io Article</title>
-        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.</description>
-        
-        <pubDate>2015-09-20</pubDate>
-        
-        <link>https://ryansportfol.io/articles/first-prose-article/</link>
-        
-        <category>javascript</category>
-        
-        <category>prose.io</category>
-        
-        <category>github</category>
-        
-      </item>
-    
-      <item>
-        <title>Hand Full of Wine Grapes</title>
+        <title>Comparison of Publishing CMSs</title>
         <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.</description>
         
-        <pubDate>2015-09-07</pubDate>
+        <pubDate>2015-09-04</pubDate>
         
-        <link>https://ryansportfol.io/articles/hand-full-of-grapes/</link>
-        
-        <category>japan</category>
-        
-        <category>github</category>
+        <link>https://ryansportfol.io/articles/comparison-of-publishing-cms/</link>
         
         <category>javascript</category>
+        
+        <category>jekyll</category>
+        
+        <category>static</category>
+        
+      </item>
+    
+      <item>
+        <title>How to Develop Content Models</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.</description>
+        
+        <pubDate>2015-09-01</pubDate>
+        
+        <link>https://ryansportfol.io/articles/how-to-develop-content-models/</link>
+        
+        <category>javascript</category>
+        
+        <category>jekyll</category>
+        
+        <category>setup</category>
+        
+      </item>
+    
+      <item>
+        <title>The Importance of Core Modeling</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.</description>
+        
+        <pubDate>2015-09-12</pubDate>
+        
+        <link>https://ryansportfol.io/articles/importance-of-core-modeling/</link>
+        
+        <category>core modeling</category>
+        
+        <category>content typing</category>
+        
+        <category>project management</category>
         
       </item>
     

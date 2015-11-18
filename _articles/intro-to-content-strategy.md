@@ -1,5 +1,5 @@
 ---
-title: Driving Down the Highway
+title: Introduction to Content Strategy
 subtitle: Testing Stuff
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.
 layout: article

@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Trying Once More
+title: How to Develop Content Models
 subtitle: Here is a little subtitle for this post
 author: Ryan Watters
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.

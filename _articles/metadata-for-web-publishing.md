@@ -1,6 +1,6 @@
 ---
 layout: article
-title: First Prose.io Article
+title: Metadata for Web Publishing
 subtitle: This is the first article I wrote using Prose.io
 author: Ryan Watters
 published_on: 2015-09-16
@@ -12,8 +12,8 @@ comments: false
 insearch: true
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.
 tags:
-- javascript
-- prose.io
+- web publishing
+- metadata
 - github
 ---
 

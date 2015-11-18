@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Trying Yet Again    
+title: Comparison of Publishing CMSs    
 subtitle: Playing with date sorting
 author: Ryan Watters
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.

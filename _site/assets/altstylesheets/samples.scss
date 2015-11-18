@@ -207,7 +207,8 @@ img {
 	box-shadow: 0 1px 20px rgba($color-2, .2), inset 0 1px 0 rgba(#fff, .4);
 
 	color: $color-4;
-	font-size: 1.3rem;
+	font-size: 1.6rem;
+	line-height: 1.4;
 	font-weight: bold;
 	text-transform: uppercase;
 	letter-spacing: 1px;
@@ -605,6 +606,9 @@ Project content panel
 		padding: 4em 2em;
 		a{
 			font-weight:bold;
+			&:hover {
+				text-decoration:underline;
+			}
 		}
 		
 		> * {
@@ -670,6 +674,9 @@ Project content panel
 			}
 			a{
 				font-weight:bold;
+				&:hover{
+					text-decoration: underline;
+				}
 			}
 			&:last-child{
 				margin-bottom: .75em;
@@ -715,6 +722,10 @@ code,pre{
 	@include MQ(M){
 		font-size: 2.5rem;
 	}
+}
+
+strong {
+	font-weight:bold;
 }
 
 /* -------------------------------- 

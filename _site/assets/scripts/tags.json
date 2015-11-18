@@ -2,165 +2,53 @@
 
 	
 		
-			{"title": "Driving Down the Highway",
-				"image": "speedometer_old_car.jpeg",  
-					"url": "/articles/driving-down-the-highway/",
-					"tag": "food",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
-					"date":"2015-09-14"
-			},
-		
-			{"title": "Driving Down the Highway",
-				"image": "speedometer_old_car.jpeg",  
-					"url": "/articles/driving-down-the-highway/",
-					"tag": "travel",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
-					"date":"2015-09-14"
-			},
-		
-			{"title": "Driving Down the Highway",
-				"image": "speedometer_old_car.jpeg",  
-					"url": "/articles/driving-down-the-highway/",
-					"tag": "japan",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
-					"date":"2015-09-14"
-			},
-		
-			{"title": "Driving Down the Highway",
-				"image": "speedometer_old_car.jpeg",  
-					"url": "/articles/driving-down-the-highway/",
-					"tag": "awesome",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
-					"date":"2015-09-14"
-			},
-		
-			{"title": "Driving Down the Highway",
-				"image": "speedometer_old_car.jpeg",  
-					"url": "/articles/driving-down-the-highway/",
-					"tag": "javascript",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
-					"date":"2015-09-14"
-			},
-		
-	
-
-	
-		
-			{"title": "First Prose.io Article",
-				"image": "coffee_cup_and_pencil.jpeg",  
-					"url": "/articles/first-prose-article/",
-					"tag": "javascript",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
-					"date":"2015-09-16"
-			},
-		
-			{"title": "First Prose.io Article",
-				"image": "coffee_cup_and_pencil.jpeg",  
-					"url": "/articles/first-prose-article/",
-					"tag": "prose-io",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
-					"date":"2015-09-16"
-			},
-		
-			{"title": "First Prose.io Article",
-				"image": "coffee_cup_and_pencil.jpeg",  
-					"url": "/articles/first-prose-article/",
-					"tag": "github",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
-					"date":"2015-09-16"
-			},
-		
-	
-
-	
-		
-			{"title": "Hand Full of Wine Grapes",
-				"image": "hands_full_of_grapes.jpeg",  
-					"url": "/articles/hand-full-of-grapes/",
-					"tag": "japan",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
-					"date":"2015-09-07"
-			},
-		
-			{"title": "Hand Full of Wine Grapes",
-				"image": "hands_full_of_grapes.jpeg",  
-					"url": "/articles/hand-full-of-grapes/",
-					"tag": "github",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
-					"date":"2015-09-07"
-			},
-		
-			{"title": "Hand Full of Wine Grapes",
-				"image": "hands_full_of_grapes.jpeg",  
-					"url": "/articles/hand-full-of-grapes/",
+			{"title": "Comparison of Publishing CMSs",
+				"image": "guy_holding_camera.jpeg",  
+					"url": "/articles/comparison-of-publishing-cms/",
 					"tag": "javascript",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
-					"date":"2015-09-07"
+					"date":"2015-09-04"
+			},
+		
+			{"title": "Comparison of Publishing CMSs",
+				"image": "guy_holding_camera.jpeg",  
+					"url": "/articles/comparison-of-publishing-cms/",
+					"tag": "jekyll",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-04"
+			},
+		
+			{"title": "Comparison of Publishing CMSs",
+				"image": "guy_holding_camera.jpeg",  
+					"url": "/articles/comparison-of-publishing-cms/",
+					"tag": "static",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-04"
 			},
 		
 	
 
 	
 		
-	
-
-	
-		
-			{"title": "Need More Articles",
-				"image": "glowing_macbook_on_bed.jpeg",  
-					"url": "/articles/need-more-articles/",
-					"tag": "food",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
-					"date":"2015-09-12"
-			},
-		
-			{"title": "Need More Articles",
-				"image": "glowing_macbook_on_bed.jpeg",  
-					"url": "/articles/need-more-articles/",
-					"tag": "travel",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
-					"date":"2015-09-12"
-			},
-		
-			{"title": "Need More Articles",
-				"image": "glowing_macbook_on_bed.jpeg",  
-					"url": "/articles/need-more-articles/",
-					"tag": "japan",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
-					"date":"2015-09-12"
-			},
-		
-			{"title": "Need More Articles",
-				"image": "glowing_macbook_on_bed.jpeg",  
-					"url": "/articles/need-more-articles/",
-					"tag": "traffic",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
-					"date":"2015-09-12"
-			},
-		
-	
-
-	
-		
-			{"title": "Trying Once More",
+			{"title": "How to Develop Content Models",
 				"image": "shoes_on_the_beach.jpeg",  
-					"url": "/articles/trying-once-more/",
+					"url": "/articles/how-to-develop-content-models/",
 					"tag": "javascript",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
 					"date":"2015-09-01"
 			},
 		
-			{"title": "Trying Once More",
+			{"title": "How to Develop Content Models",
 				"image": "shoes_on_the_beach.jpeg",  
-					"url": "/articles/trying-once-more/",
+					"url": "/articles/how-to-develop-content-models/",
 					"tag": "jekyll",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
 					"date":"2015-09-01"
 			},
 		
-			{"title": "Trying Once More",
+			{"title": "How to Develop Content Models",
 				"image": "shoes_on_the_beach.jpeg",  
-					"url": "/articles/trying-once-more/",
+					"url": "/articles/how-to-develop-content-models/",
 					"tag": "setup",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
 					"date":"2015-09-01"
@@ -170,28 +58,132 @@
 
 	
 		
-			{"title": "Trying Yet Again",
-				"image": "guy_holding_camera.jpeg",  
-					"url": "/articles/trying-yet-again/",
+			{"title": "The Importance of Core Modeling",
+				"image": "glowing_macbook_on_bed.jpeg",  
+					"url": "/articles/importance-of-core-modeling/",
+					"tag": "core-modeling",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-12"
+			},
+		
+			{"title": "The Importance of Core Modeling",
+				"image": "glowing_macbook_on_bed.jpeg",  
+					"url": "/articles/importance-of-core-modeling/",
+					"tag": "content-typing",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-12"
+			},
+		
+			{"title": "The Importance of Core Modeling",
+				"image": "glowing_macbook_on_bed.jpeg",  
+					"url": "/articles/importance-of-core-modeling/",
+					"tag": "project-management",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-12"
+			},
+		
+	
+
+	
+		
+	
+
+	
+		
+			{"title": "Introduction to Content Strategy",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/intro-to-content-strategy/",
+					"tag": "food",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-14"
+			},
+		
+			{"title": "Introduction to Content Strategy",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/intro-to-content-strategy/",
+					"tag": "travel",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-14"
+			},
+		
+			{"title": "Introduction to Content Strategy",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/intro-to-content-strategy/",
+					"tag": "japan",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-14"
+			},
+		
+			{"title": "Introduction to Content Strategy",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/intro-to-content-strategy/",
+					"tag": "awesome",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-14"
+			},
+		
+			{"title": "Introduction to Content Strategy",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/intro-to-content-strategy/",
+					"tag": "javascript",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-14"
+			},
+		
+	
+
+	
+		
+			{"title": "Markdown and Content-First Publishing",
+				"image": "hands_full_of_grapes.jpeg",  
+					"url": "/articles/markdown-and-content-first-publishing/",
+					"tag": "japan",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-07"
+			},
+		
+			{"title": "Markdown and Content-First Publishing",
+				"image": "hands_full_of_grapes.jpeg",  
+					"url": "/articles/markdown-and-content-first-publishing/",
+					"tag": "github",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-07"
+			},
+		
+			{"title": "Markdown and Content-First Publishing",
+				"image": "hands_full_of_grapes.jpeg",  
+					"url": "/articles/markdown-and-content-first-publishing/",
 					"tag": "javascript",
 					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
-					"date":"2015-09-04"
+					"date":"2015-09-07"
 			},
 		
-			{"title": "Trying Yet Again",
-				"image": "guy_holding_camera.jpeg",  
-					"url": "/articles/trying-yet-again/",
-					"tag": "jekyll",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
-					"date":"2015-09-04"
+	
+
+	
+		
+			{"title": "Metadata for Web Publishing",
+				"image": "coffee_cup_and_pencil.jpeg",  
+					"url": "/articles/metadata-for-web-publishing/",
+					"tag": "web-publishing",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-16"
 			},
 		
-			{"title": "Trying Yet Again",
-				"image": "guy_holding_camera.jpeg",  
-					"url": "/articles/trying-yet-again/",
-					"tag": "static",
-					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
-					"date":"2015-09-04"
+			{"title": "Metadata for Web Publishing",
+				"image": "coffee_cup_and_pencil.jpeg",  
+					"url": "/articles/metadata-for-web-publishing/",
+					"tag": "metadata",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-16"
+			},
+		
+			{"title": "Metadata for Web Publishing",
+				"image": "coffee_cup_and_pencil.jpeg",  
+					"url": "/articles/metadata-for-web-publishing/",
+					"tag": "github",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-16"
 			},
 		
 	

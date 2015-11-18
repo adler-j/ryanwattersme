@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Need More Articles
+title: The Importance of Core Modeling
 subtitle: Subtitle for this particular piece
 author: Ryan Watters
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.
@@ -11,10 +11,9 @@ published: true
 published_on: 2015-09-12
 comments: false
 tags: 
-  - food
-  - travel
-  - japan
-  - traffic
+  - core modeling
+  - content typing
+  - project management
 ---
 
 One Flew Over the Cuckoo's Nest random quotes. Man, when you lose your laugh you lose your footing. All I know is this: nobody's very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it's the truth even if it didn't happen. You're not! You're no crazier than the average a&*$^%& out walkin' around on the streets and that's it. Here is [a link to Google](https://www.google.com). Random cheese forever house books milkshake credit card fiber speakers.

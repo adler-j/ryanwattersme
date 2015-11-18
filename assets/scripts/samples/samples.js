@@ -4,8 +4,7 @@ jQuery(document).ready(function() {
     projectsSlider = projectsContainer.children('.slider'),
     sliderNav = $('.slider-navigation'),
     sampleContent = $('.sample-content');
-
-  var resizing = false;
+   var resizing = false;
 
   //if on desktop - set a width for the projectsSlider element
   setSliderContainer();
@@ -207,8 +206,8 @@ jQuery(document).ready(function() {
     });
   }
 });
-
-$('a').each(function() {
+//open all external site tabs(anc control for mailto) in a new tab/window
+$('a:not([href*="mailto:').each(function() {
    var a = new RegExp('/' + window.location.host + '/');
    if (!a.test(this.href)) {
        $(this).attr('target','_blank');

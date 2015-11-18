@@ -1,5 +1,5 @@
 ---
-title: Hand Full of Wine Grapes
+title: Markdown and Content-First Publishing
 subtitle: Here is a subtitle for my article
 layout: article
 author: Ryan Watters
