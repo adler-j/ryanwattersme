@@ -2,9 +2,9 @@
 
 The following websites demonstrate my skills in front-end development (HTML5, CSS3, JavaScript), performance best practices, 508 compliance and accessibility, user experience, author experience, responsive and mobile-first design, content typing, content management strategy, social media integration, metadata strategy, content standardization, and content-first publishing.
 
-Effectively managing large amounts of digital content requires an understanding of the way computers work. Every content management system has its idiosyncrasies, but concepts borrowed from object-oriented programming (eg, inheritance, properties in content types), structured data (eg, XML or HTML), and dynamically generated content (eg, filters in templating logic, DBMS, CMS relationships) lend themselves exceptionally well to repurposing content, publishing on the web, and maintaining the integrity of intellectual property. 
+Effectively managing large amounts of digital content requires an understanding of the way computers work. Every content management system has its idiosyncrasies, but concepts borrowed from object-oriented programming (eg, inheritance, object properties and prototypes), structured data (eg, XML or HTML), and dynamically generated content (eg, templating filters, DBMS, CMS relationships) lend themselves exceptionally well to repurposing content, publishing on the web, and maintaining the integrity of intellectual property. 
 
-[Ryanwatter.me](http://www.ryanwatters.me) is an exercise in building a website with a blank CMS. [Ryansportfol.io](https://ryansportfol.io) is the home of my future portfolio site. As of November 2015, both sites only include dummy text for content. This is why they are *not* showcases for web design&mdash;content should dictate form. That said, articles are currently being drafted for [ryansportfol.io](https://ryansportfol.io). First publishing is scheduled for December 2015. Content will focus on web content strategy, front-end web development, asset management, open standards and metadata, and STM publishing.
+[Ryanwatter.me](http://www.ryanwatters.me) is an exercise in building a website with an empty CMS. [Ryansportfol.io](https://ryansportfol.io) is the home of my future portfolio site. As of November 2015, the content for both sites is just dummy text. This is why they are *not* showcases for web design&mdash;content should dictate form. That said, articles are currently being drafted for [ryansportfol.io](https://ryansportfol.io). First publishing is scheduled for December 2015. Content will focus on web content strategy, front-end web development, asset management, open standards and metadata, and STM publishing.
 
 ### [ryanwatters.me](http://www.ryanwatters.me)
 
@@ -12,7 +12,7 @@ Effectively managing large amounts of digital content requires an understanding 
 
 * Content Management System: [Webhook](http://www.webhook.com)
 * Content typing and modeling (including complex relationships in the CMS)
-    - Site designed to allow the the CMS to index article tagging and other metadata
+    - Site IA allowed for the CMS to index article tagging and other metadata
     - All content types were developed from scratch and contain 1-to-1 and 1-to-many relationships in a simple author-centric writing environment
     ![First screenshot of content types in the Webhook CMS](/assets/images/samples/webhookcms-1.png)
     ![Secont screenshot of content types in the Webhook CMS](/assets/images/samples/webhookcms-2.png)  
@@ -24,7 +24,7 @@ Effectively managing large amounts of digital content requires an understanding 
     - [Google+](https://developers.google.com/+/?hl=en)
 * Content-first publishing:
     - Third-party webhook services ([Zapier](https://zapier.com/)) for Twitter and Facebook integration
-    - Relatively defined, article-specific social media metadata (for share buttons)
+    - Relatively defined, article-specific social media metadata (for sharing)
     - Content written in [markdown](https://daringfireball.net/projects/markdown/) files (ie, the format used by Ghost CMS, O'Reilly Atlas, and many others) for conversion to multiple file formats using [Pandoc](http://pandoc.org/)
     - `Variables.scss`, including SASS functions, maps, and mixins for better long-term management and single, declarative source for design customizations
 * Search engine optimization:
@@ -38,10 +38,13 @@ Effectively managing large amounts of digital content requires an understanding 
     - Aria roles
     - Pagination (ie, in place of infinite scroll) for users who have JavaScript disabled
     - Alt text for images (all optimized)
+* Mobile-first Design
+    - Site is fully responsive and tested on both Android and iOS
+    - 
 * Search: [Swiftype](https://swiftype.com/), including Swiftype-specific meta tags in the `<head>` element for faceted search
 * [Google Analytics](https://www.google.com/analytics/) and [Webmaster Tools](https://www.google.com/webmasters/tools/)
 
-#### Tech Specs
+#### Technical Specs
 
 * [Google Pagespeed Scores: 92-97/100](https://developers.google.com/speed/pagespeed/insights/?url=ryanwatters.me)
 * Templating Engine: [Swig.js](http://paularmstrong.github.io/swig/) (a javascript implementation of the Twig [PHP] templating engine)
@@ -54,6 +57,7 @@ Effectively managing large amounts of digital content requires an understanding 
 * Cross-browser testing: [Browserstack](https://www.browserstack.com/)
 * DR/backup: Nightly backups for the last 7 days
 * Commenting: [Disqus](https://disqus.com/)
+* Total monthly costs: $9
 
 ### [ryansportfol.io](https://ryansportfolio)
 
@@ -83,7 +87,7 @@ Effectively managing large amounts of digital content requires an understanding 
 * Search: [Tipue](http://www.tipue.com/search/), a jQuery, client-side, JSON-based full-text search engine; the release version of the site will include [lunr.js] to remove the jQuery dependency and improve loading time
 * [Google Analytics](https://www.google.com/analytics/) and [Webmaster Tools](https://www.google.com/webmasters/tools/)
 
-#### Tech Specs
+#### Technical Specs
 
 * [Google Pagespeed Scores: 97+/100](https://developers.google.com/speed/pagespeed/insights/?url=ryanwatters.me)
 * Templating Engine: [Liquid 3](http://liquidmarkup.org/)
@@ -98,3 +102,4 @@ Effectively managing large amounts of digital content requires an understanding 
 * Cross-browser testing: [Browserstack](https://www.browserstack.com/)
 * DR/backup: Nightly backups for the last 7 days
 * Commenting: [Disqus](https://disqus.com/)(set as article-level metadata and as a global/site variable)
+* Total monthly costs: $0

@@ -215,6 +215,17 @@
 
 	
 	<url>
+		<loc>https://ryansportfol.io/feed.xml</loc>
+		
+		<lastmod></lastmod>
+				
+		<changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+	</url>
+	
+
+	
+	<url>
 		<loc>https://ryansportfol.io/about/</loc>
 		
 		<lastmod>2015-09-01</lastmod>
@@ -229,17 +240,6 @@
 		<loc>https://ryansportfol.io/contact/</loc>
 		
 		<lastmod>2015-09-01</lastmod>
-				
-		<changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>https://ryansportfol.io/feed.xml</loc>
-		
-		<lastmod></lastmod>
 				
 		<changefreq>weekly</changefreq>
     <priority>0.5</priority>
@@ -273,17 +273,6 @@
 		<loc>https://ryansportfol.io/resume/</loc>
 		
 		<lastmod>2015-09-01</lastmod>
-				
-		<changefreq>weekly</changefreq>
-    <priority>0.5</priority>
-	</url>
-	
-
-	
-	<url>
-		<loc>https://ryansportfol.io/samples/</loc>
-		
-		<lastmod>2015-11-18</lastmod>
 				
 		<changefreq>weekly</changefreq>
     <priority>0.5</priority>
