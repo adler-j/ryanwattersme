@@ -215,7 +215,8 @@ jQuery(document).ready(function() {
 //open all external site tabs(anc control for mailto) in a new tab/window
 $('a:not([href*="mailto:').each(function() {
   var a = new RegExp('/' + window.location.host + '/');
-  if (!a.test(this.href)) {
+  var b = new RegExp(/\.pdf/);
+  if (!a.test(this.href) || b.test(this.href)) {
     $(this).attr('target', '_blank');
   }
 });
