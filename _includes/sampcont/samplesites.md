@@ -4,7 +4,7 @@ The following websites demonstrate my skills in front-end development (HTML5, CS
 
 Effectively managing large amounts of digital content requires an understanding of the way computers work. Every content management system has its idiosyncrasies, but concepts borrowed from object-oriented programming (eg, inheritance, object properties and prototypes), structured data (eg, XML or HTML), and dynamically generated content (eg, templating filters, DBMS, CMS relationships) lend themselves exceptionally well to repurposing content, publishing on the web, and maintaining the integrity of intellectual property. 
 
-[Ryanwatter.me](http://www.ryanwatters.me) is an exercise in building a website with an empty CMS. [Ryansportfol.io](https://ryansportfol.io) is the home of my future portfolio site. As of November 2015, the content for both sites is just dummy text. This is why they are *not* showcases for web design&mdash;content should dictate form. That said, articles are currently being drafted for [ryansportfol.io](https://ryansportfol.io). First publishing is scheduled for December 2015. Content will focus on web content strategy, front-end web development, asset management, open standards and metadata, and STM publishing.
+[Ryanwatters.me](http://www.ryanwatters.me) is an exercise in building a website with an empty CMS. [Ryansportfol.io](https://ryansportfol.io) is the home of my future portfolio site. As of November 2015, the content for both sites is just dummy text. This is why they are *not* showcases for web design&mdash;content should dictate form. That said, articles are currently being drafted for [ryansportfol.io](https://ryansportfol.io). First publishing is scheduled for December 2015. Content will focus on web content strategy, front-end web development, asset management, open standards and metadata, and STM publishing.
 
 ### [ryanwatters.me](http://www.ryanwatters.me)
 
@@ -40,7 +40,6 @@ Effectively managing large amounts of digital content requires an understanding 
     - Alt text for images (all optimized)
 * Mobile-first Design
     - Site is fully responsive and tested on both Android and iOS
-    - 
 * Search: [Swiftype](https://swiftype.com/), including Swiftype-specific meta tags in the `<head>` element for faceted search
 * [Google Analytics](https://www.google.com/analytics/) and [Webmaster Tools](https://www.google.com/webmasters/tools/)
 

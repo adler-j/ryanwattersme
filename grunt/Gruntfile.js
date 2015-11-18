@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         },{
           expand: true,
           src: ['../assets/altstylesheets/samples.scss'],
-          dest: '../assets/altstylesheets/samples.scss',
+          dest: '../assets/altstylesheets/',
           ext: '.css'
         }]
       }
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         tasks: ['uglify']
       },
       sass: {
-        files: ['sass/*.scss','style-embed.scss'],
+        files: ['sass/*.scss','style-embed.scss','../assets/altstylesheets/samples.scss'],
         tasks: ['sass']
       }
     }

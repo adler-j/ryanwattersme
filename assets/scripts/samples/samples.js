@@ -3,8 +3,9 @@ jQuery(document).ready(function() {
     projectsContainer = $('.samples-wrapper'),
     projectsSlider = projectsContainer.children('.slider'),
     sliderNav = $('.slider-navigation'),
+    allAnchors = $('a'),
     sampleContent = $('.sample-content');
-   var resizing = false;
+  var resizing = false;
 
   //if on desktop - set a width for the projectsSlider element
   setSliderContainer();
@@ -20,7 +21,7 @@ jQuery(document).ready(function() {
   intro.on('click', 'a[data-action="show-samples"]', function(event) {
     event.preventDefault();
     intro.addClass('samples-visible');
-    $('main').attr('aria-hidden','false');
+    $('main').attr('aria-hidden', 'false');
     projectsContainer.addClass('samples-visible');
     //animate single project - entrance animation
     setTimeout(function() {
@@ -31,7 +32,7 @@ jQuery(document).ready(function() {
   intro.on('click', function(event) {
     //projects slider is visible - hide slider and show the intro panel
     if (intro.hasClass('samples-visible') && !$(event.target).is('a[data-action="show-samples"]')) {
-      $('main').attr('aria-hidden','true');
+      $('main').attr('aria-hidden', 'true');
       intro.removeClass('samples-visible');
       projectsContainer.removeClass('samples-visible');
     }
@@ -47,15 +48,15 @@ jQuery(document).ready(function() {
     } else if ($(this).parent('li').prev('li').prev('li').prev('li').is('.current') && (mq == 'desktop')) {
       nextSides(projectsSlider);
     } else {
-    	console.log(theContentId);
-    	var theFullContents = document.querySelectorAll('.sample-content');
-    	for (var i = 0; i < theFullContents.length; i++){
-    		if(theFullContents[i].classList.contains('is-visible')){
-    			theFullContents[i].classList.remove('is-visible');
-    		}else if(theFullContents[i].dataset.tileid === theContentId){
-    			theFullContents[i].classList.add('is-visible');
-    		}
-    	}
+      console.log(theContentId);
+      var theFullContents = document.querySelectorAll('.sample-content');
+      for (var i = 0; i < theFullContents.length; i++) {
+        if (theFullContents[i].classList.contains('is-visible')) {
+          theFullContents[i].classList.remove('is-visible');
+        } else if (theFullContents[i].dataset.tileid === theContentId) {
+          theFullContents[i].classList.add('is-visible');
+        }
+      }
     }
   });
 
@@ -205,11 +206,16 @@ jQuery(document).ready(function() {
       'transform': 'translateX(-' + translate + ')',
     });
   }
+  for (var i = 0, download = new RegExp(/\.(pdf|xlsx|txt|vsdx)$/i); i < allAnchors.length; i++) {
+    if (download.test(allAnchors[i])) {
+      allAnchors[i].innerHTML += ' <i class="fa fa-download"></i>';
+    }
+  }
 });
 //open all external site tabs(anc control for mailto) in a new tab/window
 $('a:not([href*="mailto:').each(function() {
-   var a = new RegExp('/' + window.location.host + '/');
-   if (!a.test(this.href)) {
-       $(this).attr('target','_blank');
-   }
+  var a = new RegExp('/' + window.location.host + '/');
+  if (!a.test(this.href)) {
+    $(this).attr('target', '_blank');
+  }
 });
