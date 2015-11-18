@@ -1,6 +1,6 @@
-## [Tutorial Site](/samples/aapmigrations/)
+## Content Migrations
 
-I built [this site](/samples/aapmigrations/), which originally lived at http://aapmigrations.info, to facilitate the content migrations of 50+ AAP.org subsites from our previous platform (ColdFusion) to our new CMS (SharePoint 2013). I also wanted a single resource for my colleagues to learn about basic content management strategy, best writing practices, web technology, and editorial process. I wrote every line of content and code for the site.
+I have included a full reproduction [the AAP.org content migration site](/samples/aapmigrations/) (originally aapmigrations.info) within this samples collection. I developed this site in mid-2014 to facilitate the content migration of 50+ AAP.org subsites from our previous platform (ColdFusion) to our new CMS (SharePoint 2013). I wanted to provide my colleagues a simple website where they could learn about basic content management strategy, best writing practices, web technology, and editorial process. I wrote every line of content and code for the site. The current site is now part of the organizations internal network and is therefore unavailable for feature in the samples collection.
 
 ### Site Features 
 

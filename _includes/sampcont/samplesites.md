@@ -30,7 +30,7 @@ Effectively managing large amounts of digital content requires an understanding 
 * Search engine optimization:
     - [Schema.org](http://schema.org/) microdata ("rich snippets") for structured content and Google's Knowledge Graph
     - [PageSpeed scores > 90/100](https://developers.google.com/speed/pagespeed/insights/?url=ryanwatters.me)
-    - Sitemap.xml
+    - XML Sitemap
     - RSS Feed
     - Responsive, mobile-first design
     - Simple, logical navigation structure (never break the back button)
@@ -73,7 +73,7 @@ Effectively managing large amounts of digital content requires an understanding 
     - [Schema.org](http://schema.org/) microdata ("rich snippets") for structured content and Google's Knowledge Graph
     - [PageSpeed scores > 97](https://developers.google.com/speed/pagespeed/insights/?url=ryansportfol.io)
     - Secure delivery (SSL)
-    - Sitemap.xml
+    - XML Sitemap
     - RSS Feed
     - Responsive, mobile-first design
     - Simple, logical navigation structure

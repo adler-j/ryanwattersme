@@ -71,8 +71,8 @@ layout: compress
     <!-- .samples-wrapper -->
     <section class="sample-content" data-tileid="1">
       <div>
-      	{% capture aapmigrations %}{% include sampcont/aapmigrations.md %}{% endcapture %}
-        {{ aapmigrations | markdownify }}
+      	{% capture contentmigrations %}{% include sampcont/contentmigrations.md %}{% endcapture %}
+        {{ contentmigrations | markdownify }}
       </div>
       <a href="#0" class="close img-replace">Close</a>
     </section>
@@ -98,7 +98,9 @@ layout: compress
     </section>
   </main>
   <script src="{{site.baseurl}}/assets/scripts/samples.min.js"></script>
+  {% if jekyll.environment == "development" %}
   <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  {% endif %}
 </body>
 
 </html>
