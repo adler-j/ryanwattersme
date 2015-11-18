@@ -95,6 +95,7 @@ $color-1: darken(#01589B,15%);
 $color-2: #487557;
 $color-3: #ebebeb; // Gallery
 $color-4: #ffffff; // White
+$font-color: #333333;
 $font-family: 'Raleway','Helvetica Neue',helvetica,sans-serif;
 
 $animation-duration: 0.3s;
@@ -266,14 +267,14 @@ header.intro-block {
 
 	h1 {
 		width: 90%;
-		margin: 0 auto .6em;
+		margin: 0 auto 1em;
 
-		font-size: 2.4rem;
+		font-size: 2.8rem;
 		color: $color-3;
 		@include font-smoothing;
 	}
 
-	&.projects-visible {
+	&.samples-visible {
 		/* translate the .intro-block element to reveal the projects slider */
 		@include transform(translateY(-90%));
 		box-shadow: 0 4px 40px rgba(#000, .6);
@@ -292,11 +293,11 @@ header.intro-block {
 		}
 
 		h1 {
-			font-size: 4.4rem;
+			font-size: 4.6rem;
 			font-weight: 300;
 		}
 
-		&.projects-visible {
+		&.samples-visible {
 			@include transform(translateY(-95%));
 		}
 	}
@@ -337,7 +338,7 @@ Projects Slider
 		display: none;
 	}
 
-	&.projects-visible {
+	&.samples-visible {
 		visibility: visible;
 		@include transition(visibility 0s 0s);
 	}
@@ -355,7 +356,7 @@ Projects Slider
 	height: 100%;
 	overflow-y: auto;
 
-	.projects-visible & {
+	.samples-visible & {
 		/* smooth scrolling on iOS */
 		-webkit-overflow-scrolling: touch;
 	}
@@ -588,6 +589,7 @@ Project content panel
 	height: 100%;
 	visibility: hidden;
 	background-color: $color-3;
+	color:$font-color;
 	
 	/* Force Hardware Acceleration */
 	@include transform(translateZ(0));
@@ -601,6 +603,9 @@ Project content panel
 		height: 100%;
 		overflow-y: auto;
 		padding: 4em 2em;
+		a{
+			font-weight:bold;
+		}
 		
 		> * {
 			max-width: 800px;
@@ -622,21 +627,21 @@ Project content panel
 	}
 
 	h2 {
-		font-size: 2.0rem;
+		font-size: 2.5rem;
 		font-weight: bold;
 	}
-
-	em {
-		display: block;
-		font-size: 1.8rem;
-		font-style: italic;
-		margin: 1em auto;
+	h3{
+		width:100%;
+		border-bottom: 1px solid $font-color;
+		margin-bottom: .75em;
 	}
-
+	h4 {
+		margin-bottom: .75em;
+	}
 	p {
 		margin-bottom: 1em;
 		font-size: 1.4rem;
-		color: tint($color-1, 40%);
+		color: $font-color;
 	}
 
 	em , p {
@@ -652,16 +657,44 @@ Project content panel
 		right: 10px;
 		background: url(/assets/images/icons/close-dark.svg) no-repeat center center;
 	}
+	ul {
+		li {
+			list-style: circle inside none;
+			padding-left:1em;
+			text-indent: -1em;
+			line-height:1.2;
+			margin-bottom:.3em;
+			font-size:1.4rem;
+			@include MQ(M){
+				font-size:1.8rem;
+			}
+			a{
+				font-weight:bold;
+			}
+			&:last-child{
+				margin-bottom: .75em;
+			}
+			ul li {
+				list-style: disc inside none;
+				margin-top: .3em;
+			}
+		}
+	}
+	img {
+		max-width:100%;
+		margin:.75em;
+	}
 
 	@include MQ(M) {
 		h2 {
 			font-size: 6rem;
 		}
-
-		em {
-			font-size: 2.4rem;
+		h3 {
+			font-size: 4rem;
 		}
-
+		h4 {
+			font-size: 2.5rem;
+		}
 		p {
 			font-size: 1.8rem;
 		}
@@ -673,6 +706,14 @@ Project content panel
 			top: 30px;
 			right: 5%;
 		}
+	}
+}
+
+code,pre{
+	font-family:monospace;
+	font-size: 1.7rem;
+	@include MQ(M){
+		font-size: 2.5rem;
 	}
 }
 

@@ -10,18 +10,19 @@ jQuery(document).ready(function() {
   //if on desktop - set a width for the projectsSlider element
   setSliderContainer();
   $(window).on('resize', function() {
-    //on resize - update projectsSl'ider width and translate value
+    //on resize - update projectSlider width and translate value
     if (!resizing) {
       (!window.requestAnimationFrame) ? setSliderContainer(): window.requestAnimationFrame(setSliderContainer);
       resizing = true;
     }
   });
 
-  //show the projects slider if user clicks the show-projects button
-  intro.on('click', 'a[data-action="show-projects"]', function(event) {
+  //show the samples slider if user clicks the show-samples button
+  intro.on('click', 'a[data-action="show-samples"]', function(event) {
     event.preventDefault();
-    intro.addClass('projects-visible');
-    projectsContainer.addClass('projects-visible');
+    intro.addClass('samples-visible');
+    $('main').attr('aria-hidden','false');
+    projectsContainer.addClass('samples-visible');
     //animate single project - entrance animation
     setTimeout(function() {
       showProjectPreview(projectsSlider.children('li').eq(0));
@@ -30,9 +31,10 @@ jQuery(document).ready(function() {
 
   intro.on('click', function(event) {
     //projects slider is visible - hide slider and show the intro panel
-    if (intro.hasClass('projects-visible') && !$(event.target).is('a[data-action="show-projects"]')) {
-      intro.removeClass('projects-visible');
-      projectsContainer.removeClass('projects-visible');
+    if (intro.hasClass('samples-visible') && !$(event.target).is('a[data-action="show-samples"]')) {
+      $('main').attr('aria-hidden','true');
+      intro.removeClass('samples-visible');
+      projectsContainer.removeClass('samples-visible');
     }
   });
 
@@ -75,9 +77,9 @@ jQuery(document).ready(function() {
   //go to next/pre slide - keyboard navigation
   $(document).keyup(function(event) {
     var mq = checkMQ();
-    if (event.which == '37' && intro.hasClass('projects-visible') && !(sliderNav.find('.prev').hasClass('inactive')) && (mq == 'desktop')) {
+    if (event.which == '37' && intro.hasClass('samples-visible') && !(sliderNav.find('.prev').hasClass('inactive')) && (mq == 'desktop')) {
       prevSides(projectsSlider);
-    } else if (event.which == '39' && intro.hasClass('projects-visible') && !(sliderNav.find('.next').hasClass('inactive')) && (mq == 'desktop')) {
+    } else if (event.which == '39' && intro.hasClass('samples-visible') && !(sliderNav.find('.next').hasClass('inactive')) && (mq == 'desktop')) {
       nextSides(projectsSlider);
     } else if (event.which == '27' && sampleContent.hasClass('is-visible')) {
       sampleContent.removeClass('is-visible');
@@ -204,4 +206,11 @@ jQuery(document).ready(function() {
       'transform': 'translateX(-' + translate + ')',
     });
   }
+});
+
+$('a').each(function() {
+   var a = new RegExp('/' + window.location.host + '/');
+   if (!a.test(this.href)) {
+       $(this).attr('target','_blank');
+   }
 });

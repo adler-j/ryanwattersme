@@ -8,5 +8,5 @@ comments: false
 published_on: 2015-09-01
 ---
 
-Here is some information about me.
+Contact form coming soon.
 

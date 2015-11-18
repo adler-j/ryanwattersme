@@ -4,7 +4,8 @@ module.exports = function(grunt) {
     uglify: {
       build: {
         files: {
-          '../_includes/minified.min.js': ['scripts/*.js']
+          '../_includes/minified.min.js': ['scripts/*.js'],
+          '../assets/scripts/samples.min.js':['../assets/scripts/samples/*.js']
         }
       }
     },
@@ -39,7 +40,7 @@ module.exports = function(grunt) {
         files: ['../_site/index.html']
       },
       scripts: {
-        files: ['scripts/*.js'],
+        files: ['scripts/*.js','../assets/scripts/samples/*.js'],
         tasks: ['uglify']
       },
       sass: {
