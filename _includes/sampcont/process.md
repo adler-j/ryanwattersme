@@ -23,7 +23,7 @@ The following is a screen shot of the home page aap.org/websites. The main menu 
 ![Screenshot of the homepage of the AAP.org internal request system built on SharePoint 2013](/assets/images/samples/aaporgwebsites.png)
 
 * Automated workflow using SharePoint 2013, Access web apps, SharePoint Designer 2013, Visio Pro, and InfoPath services
-* The first editorial process map for AAP.org content requests for content owners ([download request process](/samples/docs/request_process.vsdx) (Visio document)) 
+* The first editorial process map for AAP.org content requests for content owners ([request process](/samples/docs/request_process.vsdx) \[Visio document\]) 
 * Reporting capabilities (see screenshot); the site has processed thousands of requests and now average less than 2 days for request turnarounds
 * Improved transparency&mdash;all content owners were able to see where their recent requests fell in the editorial process
 * Separate video request form for [Ooyala](http://www.ooyala.com/), the AAP's new video digital asset management system
