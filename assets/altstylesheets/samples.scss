@@ -368,6 +368,9 @@ Projects Slider
 	&.samples-visible {
 		visibility: visible;
 		@include transition(visibility 0s 0s);
+		span.download-resume {
+			display:none;
+		}
 	}
 
 	@include MQ(M) {
@@ -773,4 +776,8 @@ Keyframes
 
 .fa-download {
 	margin-left: 1em;
+}
+
+.intro-block.samples-visible > span.download-resume {
+	display:none;
 }
