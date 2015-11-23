@@ -27,9 +27,18 @@ regenerate: true
 			 "description": "{{tutorial.description | truncatewords: 20, '...' }}",
 			 "tutseries:": "{{tutorial.series | capitalize }}",
 			 "date":"{{tutorial.published_on | date: "%Y-%m-%d" }}"
-			}
-	{% if forloop.rindex0 > 0 %},{% endif %}
-{% endfor %}{% if forloop.rindex0 > 0 %}, {% endif %}{% endif %}
-{% endfor %}]}
+			},
+		{% endfor %}
+	{% endif %}
+{% endfor %}
+{
+	"title": "About Me",
+	"image": "me.jpg",
+	"url": "/",
+	"tag": "home",
+	"description": "The homepage of {{site.title}}",
+	"date":"2015-09-01"
+}
+]}
 
 

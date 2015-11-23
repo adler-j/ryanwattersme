@@ -81,7 +81,11 @@ compress_html:
   endings: all 
 
 repository: rdwatters/
-gems: ['rouge','redcarpet']
+gems: ['rouge','redcarpet','algoliasearch-jekyll']
+
+# ALGOLIA SEARCH
+algolia:
+  record_css_selector: 'p,ul'
 
 # PROSE.IO SETTINGS
 
