@@ -69,17 +69,20 @@ $article-header-background-image-size:cover;
 $article-header-background-image-position:center left;
 $article-header-image-min-height-mobile:50vh;
 $article-header-image-min-height-tablet-plus:50vh;
-$article-sticky-footer-background:$white;
+$article-sticky-footer-background-color-m-plus:$white;
 $article-sticky-footer-tag-font-size:12px;
+$article-sticky-footer-tag-font-size-small:14px;
+$article-sticky-footer-tag-font-size-m-plus:14px;
 $article-sticky-footer-tag-font-weight: 100;
 $article-sticky-footer-tag-color:$heading-font-color;
 $article-sticky-footer-tag-hover-color:$brand-three;
 $article-sticky-footer-next-and-previous-title-background-color:$brand-three;
+$article-sticky-footer-next-and-previous-title-font-color:$white;
 
 $list-page-heading-background-color:$anchor-color;
 $list-page-heading-background-color-hover:darken($list-page-heading-background-color,20%);
-// $list-page-heading-background-color-hover:#000000;
 $list-page-heading-font-color:$white;
+
 //article headings (note that for mobile screens, these values are reduce to size * .85)
 $h1-font-size: $base-font-size * 1.7; //mobile = $h1-font-size * .75
 $h2-font-size: $base-font-size * 1.5; //mobile = $h2-font-size * .85

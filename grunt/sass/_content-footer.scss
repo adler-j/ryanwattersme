@@ -16,7 +16,7 @@
     bottom: 0;
     width: 100%;
     max-width: 100%;
-    background: $article-sticky-footer-background;
+    background: $article-sticky-footer-background-color-m-plus;
     @include MQ(M) {
         -webkit-flex-direction: row;
         -ms-flex-direction: row;
@@ -30,23 +30,6 @@
         margin: 0;
         z-index: 10;
         box-shadow: 0 0 8px rgba(91, 95, 114, .5);
-    }
-    .tags {
-        width: 100%;
-        max-width: 100%;
-        list-style: none;
-        margin: 0;
-        overflow: hidden;
-        padding: 0;
-        margin-top: 10px;
-        li {
-            float: left;
-        }
-        @include MQ(M) {
-            max-width: 50%;
-            float: left;
-            margin-left: 15px;
-        }
     }
     .prev-and-next {
         display: -webkit-flex;
@@ -65,21 +48,21 @@
             @include align-items(center);
             margin-top: 5px;
             margin-bottom: 5px;
-            color: #ffffff;
-            background-color: $brand-three;
+            color: $article-sticky-footer-next-and-previous-title-font-color;
+            background-color: $article-sticky-footer-next-and-previous-title-background-color;
             svg {
                 width: 35px;
                 height: 35px;
                 max-width: 35px;
                 max-height: 35px;
-                fill: #ffffff;
+                fill: $article-sticky-footer-next-and-previous-title-font-color;
                 vertical-align: middle;
                 cursor: pointer;
                 &:hover .arrow-icons {
-                    fill: #ffffff;
+                    fill: $article-sticky-footer-next-and-previous-title-font-color;
                 }
                 .arrow-icons {
-                    fill: #ffffff;
+                    fill: $article-sticky-footer-next-and-previous-title-font-color;
                 }
             }
         }
@@ -129,26 +112,29 @@
 
 @include MQ(MMAX) {
     a.direction {
+        -webkit-flex-grow: 1;
+        -ms-flex-positive: 1;
+        flex-grow: 1;
         .direction-content {
-            padding:10px;
-            font-weight:bold;
-            margin-right:auto;
-            margin-left:auto;
-            text-align:center;
-            width:100%;
+            padding: 10px;
+            font-weight: bold;
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+            width: 100%;
             .direction-heading,
             .direction-date {
                 width: 100%;
                 text-align: center;
                 font-size: .75em;
-                font-weight:normal;
+                font-weight: normal;
             }
             .direction-heading {
-                width:100%;
+                width: 100%;
                 font-size: .6em;
                 margin-bottom: 5px;
-                border-top:1px solid white;
-                border-bottom:1px solid white;
+                border-top: 1px solid white;
+                border-bottom: 1px solid white;
             }
         }
         svg {
@@ -280,5 +266,82 @@
         -webkit-transform: translate3d(0, 0, 0);
         transform: translate3d(0, 0, 0);
         font-size: 18px;
+    }
+}
+
+.tags {
+    width: 100%;
+    max-width: 100%;
+    list-style: none;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 10px;
+    li {
+        float: left;
+    }
+    @include MQ(M) {
+        max-width: 50%;
+        float: left;
+        margin-left: 15px;
+    }
+    //Style for tag "buttons" at the bottom of article pages---when clicked, these take the user to /tags/
+    a.tag {
+        transition: all .5s;
+        display: inline-block;
+        position: relative;
+        display: block;
+        height: 28px;
+        width: auto;
+        padding: 3px 4px 3px 6px;
+        box-sizing: border-box;
+        border-radius: 0 4px 4px 0;
+        background-color: $article-sticky-footer-tag-color;
+        color: $article-sticky-footer-background-color-m-plus;
+        font-weight: $article-sticky-footer-tag-font-weight;
+        font-size: $article-sticky-footer-tag-font-size-small;
+        text-transform: lowercase;
+        line-height: 1.5;
+        float: left;
+        margin: 0 0 6px 16px;
+        box-shadow: none;
+        &:hover {
+            background-color: $article-sticky-footer-tag-hover-color;
+        }
+        &:after {
+            content: '';
+            position: absolute;
+            top: 6px;
+            left: 0;
+            width: 4px;
+            height: 4px;
+            border-radius: 50%;
+            background: $article-sticky-footer-background-color-m-plus;
+            box-shadow: none;
+            &:hover {
+                background-color: $article-sticky-footer-tag-hover-color;
+            }
+        }
+        &:before {
+            content: '';
+            top: 0;
+            right: 100%;
+            border: solid transparent;
+            height: 0;
+            width: 0;
+            position: absolute;
+            pointer-events: none;
+            border-color: rgba(255, 255, 255, 0);
+            border-right-color: $article-sticky-footer-tag-color;
+            border-width: 14px;
+            transition: border-color .5s;
+            box-shadow: none;
+        }
+        &:hover {
+            box-shadow: none;
+            &::before {
+                border-right-color: $article-sticky-footer-tag-hover-color;
+            }
+        }
     }
 }

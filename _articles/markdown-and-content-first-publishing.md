@@ -8,7 +8,7 @@ main_image_description: A man holding two handfuls of grapes.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.
 published_on: 2015-09-07
 insearch: true
-comments: true
+comments: false
 tags:
 - japan
 - github
