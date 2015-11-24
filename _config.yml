@@ -63,8 +63,9 @@ permalink: /:collection/:path/
 
 # BUILD SETTINGS
 
-markdown: kramdown
-# highlighter: pygments
+markdown: redcarpet
+redcarpet:
+  extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data","smart"]
 
 exclude: [Gemfile,Gemfile.lock,snippets_and_notes.md,grunt]
 include: [scripts]
@@ -79,7 +80,7 @@ compress_html:
   endings: all 
 
 repository: rdwatters/
-gems: ['rouge']
+gems: ['rouge','redcarpet']
 
 # PROSE.IO SETTINGS
 

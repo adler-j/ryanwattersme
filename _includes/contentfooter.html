@@ -42,38 +42,38 @@
         {% unless prevurl == collection_listpage or prevurl == nil %}
         <a href="{{prevurl}}" class="direction previous">
             {% include icons/previous-icon.svg %}
-            <span class="direction-content">
-                <span class="direction-text">
-                    <span class="direction-inner">
+            <div class="direction-content">
+                <div class="direction-text">
+                    <div class="direction-inner">
                         {% if page.collection == 'articles' %}
-                        <span class="direction-heading">PREVIOUS {{collection_name | upcase }}</span>
+                        <div class="direction-heading">PREVIOUS {{collection_name | upcase }}</div>
                         {% elsif page.collection == 'tutorials' %}
-                        <span class="direction-heading">PREV: {{prevseries | upcase }} PART {{prevnum}}</span>    
+                        <div class="direction-heading">PREV: {{prevseries | upcase }} PART {{prevnum}}</div>    
                         {% endif %}
                         {{prevtitle}}
-                        <span class="direction-date">{{prevdate}}</span>
-                    </span>
-                </span>
-            </span>
+                        <div class="direction-date">{{prevdate}}</div>
+                    </div>
+                </div>
+            </div>
         </a>
         {% endunless %}
         
         {% if nexturl != nil %}
         <a href="{{nexturl}}" class="direction next">
             {% include icons/next-icon.svg %}
-            <span class="direction-content">
-                <span class="direction-text">
-                    <span class="direction-inner">
+            <div class="direction-content">
+                <div class="direction-text">
+                    <div class="direction-inner">
                         {% if page.collection == 'articles' %}
-                        <span class="direction-heading">NEXT {{collection_name | upcase }}</span>
+                        <div class="direction-heading">NEXT {{collection_name | upcase }}</div>
                         {% elsif page.collection == 'tutorials' %}
-                        <span class="direction-heading">NEXT: {{nextseries | upcase }} PART {{nextnum}}</span>
+                        <div class="direction-heading">NEXT: {{nextseries | upcase }} PART {{nextnum}}</div>
                         {% endif %}
                         {{nexttitle}}
-                        <span class="direction-date">{{nextdate}}</span>
-                    </span>
-                </span>
-            </span>
+                        <div class="direction-date">{{nextdate}}</div>
+                    </div>
+                </div>
+            </div>
         </a>
         {% endif %}
     </section>

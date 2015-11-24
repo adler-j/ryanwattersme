@@ -7,7 +7,7 @@
 @import 'sass/solarized-pygments';
 @import 'sass/search-overlay';
 @import 'sass/animations';
-@import 'sass/next-and-previous-article-tooltip';
+@import 'sass/content_footer';
 @import 'sass/disqus_thread';
 
 body,
@@ -793,109 +793,6 @@ article > blockquote {
     }
 }
 
-
-.content-footer {
-    &.search-open {
-        display: none;
-        .prev-and-next a svg {
-            display: none;
-        }
-    }
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-flex-direction:column;
-    -ms-flex-direction:column;
-    flex-direction:column;
-    position: relative;
-    clear: both;
-    bottom: 0;
-    width: 100%;
-    max-width: 100%;
-    background: $article-sticky-footer-background;
-    @include MQ(M) {
-        -webkit-flex-direction: row;
-        -ms-flex-direction: row;
-        flex-direction: row;
-        -webkit-align-items: center;
-        -ms-flex-align: center;
-        align-items: center;
-        position: fixed;
-        height: auto;
-        width: calc(100% - 250px);
-        margin: 0;
-        z-index: 10;
-        box-shadow: 0 0 8px rgba(91, 95, 114, .5);
-    }
-    .tags {
-        width: 100%;
-        max-width: 100%;
-        list-style: none;
-        margin: 0;
-        overflow: hidden;
-        padding: 0;
-        margin-top: 10px;
-        li {
-            float: left;
-        }
-        @include MQ(M) {
-            max-width: 50%;
-            float: left;
-            margin-left: 15px;
-        }
-    }
-    .prev-and-next {
-        display: -webkit-flex;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-        justify-content: space-around;
-        transition: all .4s ease-in-out;
-        a {
-            display: -webkit-flex;
-            display: -ms-flexbox;
-            display: flex;
-            margin-top: 5px;
-            margin-bottom: 5px;
-            color: $base-font-color;
-            svg {
-                width: 35px;
-                height: 35px;
-                max-width: 35px;
-                max-height: 35px;
-                fill: $base-font-color;
-                vertical-align: middle;
-                cursor: pointer;
-            }
-        }
-        @include MQ(M) {
-            -webkit-flex-direction: row;
-            -ms-flex-direction: row;
-            flex-direction: row;
-            -webkit-align-items: center;
-            -ms-flex-align: center;
-            align-items: center;
-            -webkit-justify-content: flex-end;
-            -ms-flex-pack: end;
-            justify-content: flex-end;
-            position: relative;
-            width: 50%;
-            text-align: right;
-            margin: 5px 100px 5px 0px;
-            float: right;
-            a {
-                display: inline;
-                &.next {
-                    float: right;
-                }
-                &.previous {
-                    margin-right: 50px;
-                }
-            }
-        }
-    }
-}
 //Style for tag "buttons" at the bottom of article pages---when clicked, these take the user to /tags/
 a.tag {
     transition: all .5s;
