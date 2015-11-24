@@ -7,8 +7,8 @@
 @import 'sass/solarized-pygments';
 @import 'sass/search-overlay';
 @import 'sass/animations';
-@import 'sass/content_footer';
-@import 'sass/disqus_thread';
+@import 'sass/content-footer';
+@import 'sass/disqus-thread';
 
 body,
 #body {
@@ -24,8 +24,7 @@ body,
     line-height: 1.5;
 }
 
-h1,
-h2,
+h1,h2,
 h3,
 h4,
 h5,

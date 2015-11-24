@@ -20,9 +20,9 @@ module.exports = function(grunt) {
         files: [{
           // Files in the /sass/ directory will go to /static/css/ when processed.
           expand: true,
-          src: ['style-embed.scss'],
-          dest: '../_includes/',
-          ext: '.html'
+          src: ['style.scss'],
+          dest: '../assets/css/',
+          ext: '.min.css'
         },{
           expand: true,
           src: ['../assets/altstylesheets/samples.scss'],
@@ -44,7 +44,7 @@ module.exports = function(grunt) {
         tasks: ['uglify']
       },
       sass: {
-        files: ['sass/*.scss','style-embed.scss','../assets/altstylesheets/samples.scss'],
+        files: ['sass/*.scss','style.scss','../assets/altstylesheets/samples.scss'],
         tasks: ['sass']
       }
     }
