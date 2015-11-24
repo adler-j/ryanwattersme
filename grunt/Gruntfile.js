@@ -26,7 +26,7 @@ module.exports = function(grunt) {
         },{
           expand: true,
           src: ['../assets/altstylesheets/samples.scss'],
-          dest: '../assets/altstylesheets/',
+          dest: '../altstylesheets/',
           ext: '.min.css'
         }]
       }

@@ -130,17 +130,25 @@
 @include MQ(MMAX) {
     a.direction {
         .direction-content {
-            padding-top:10px;
-            padding-bottom:10px;
+            padding:10px;
             font-weight:bold;
             margin-right:auto;
             margin-left:auto;
+            text-align:center;
+            width:100%;
             .direction-heading,
             .direction-date {
                 width: 100%;
                 text-align: center;
                 font-size: .75em;
                 font-weight:normal;
+            }
+            .direction-heading {
+                width:100%;
+                font-size: .6em;
+                margin-bottom: 5px;
+                border-top:1px solid white;
+                border-bottom:1px solid white;
             }
         }
         svg {
