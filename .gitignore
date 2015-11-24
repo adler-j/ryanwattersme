@@ -1,4 +1,5 @@
 .sass-cache/
+_site/
 snippets_and_notes.md
 grunt/node_modules/
 grunt/.sass-cache/
