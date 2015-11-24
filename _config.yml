@@ -63,9 +63,7 @@ permalink: /:collection/:path/
 
 # BUILD SETTINGS
 
-markdown: redcarpet
-redcarpet:
-  extensions: ['smart','superscript','strikethrough','autolinks','tables','no_intra_emphasis','footnotes', 'tables', 'with_toc_data']
+markdown: kramdown
 # highlighter: pygments
 
 exclude: [Gemfile,Gemfile.lock,snippets_and_notes.md,grunt]
@@ -81,11 +79,7 @@ compress_html:
   endings: all 
 
 repository: rdwatters/
-gems: ['rouge','redcarpet','algoliasearch-jekyll']
-
-# ALGOLIA SEARCH
-algolia:
-  record_css_selector: 'p,ul'
+gems: ['rouge']
 
 # PROSE.IO SETTINGS
 
