@@ -5,7 +5,7 @@ module.exports = function(grunt) {
       build: {
         files: {
           '../_includes/minified.min.js': ['scripts/*.js'],
-          '../assets/scripts/samples.min.js':['../assets/scripts/samples/*.js']
+          '../assets/scripts/samples.min.js': ['../assets/scripts/samples/*.js']
         }
       }
     },
@@ -13,26 +13,36 @@ module.exports = function(grunt) {
       dev: {
         options: {
           sourcemap: 'none',
-          outputStyle: 'compressed'
-            // Uncomment the below line to include outside directories as well.
-            // loadPath: ['location/of/other/sass']
+          outputStyle: 'expanded'
         },
         files: [{
           // Files in the /sass/ directory will go to /static/css/ when processed.
           expand: true,
           src: ['style.scss'],
           dest: '../assets/css/',
-          ext: '.min.css'
-        },{
+          ext: '.css'
+        }, {
           expand: true,
           src: ['../assets/altstylesheets/samples.scss'],
           dest: '../altstylesheets/',
-          ext: '.min.css'
+          ext: '.css'
         }]
       }
     },
+    postcss: {
+      options: {
+        map: true, // inline sourcemaps
+        processors: [
+          require('autoprefixer')({browsers: 'last 1 version'}), // add vendor prefixes
+          require('cssnano')() // minify the result
+        ]
+      },
+      dist: {
+        src: '../_site/assets/css/style.css',
+        dest: '../_site/assets/css/style.min.css'
+      }
+    },
     watch: {
-      // for scripts, run uglify
       options: {
         livereload: true,
       },
@@ -40,17 +50,22 @@ module.exports = function(grunt) {
         files: ['../_site/index.html']
       },
       scripts: {
-        files: ['scripts/*.js','../assets/scripts/samples/*.js'],
+        files: ['scripts/*.js', '../assets/scripts/samples/*.js'],
         tasks: ['uglify']
       },
       sass: {
-        files: ['sass/*.scss','style.scss','../assets/altstylesheets/samples.scss'],
+        files: ['sass/*.scss', 'style.scss', '../assets/altstylesheets/samples.scss'],
         tasks: ['sass']
+      },
+      postcss: {
+        files: ['../_site/assets/css/style.css'],
+        tasks: ['postcss']
       }
     }
   });
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-postcss');
   grunt.registerTask('default', ['watch']);
 };

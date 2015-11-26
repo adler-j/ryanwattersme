@@ -10,14 +10,12 @@ article#search-page {
 #search-overlay-toggle {
     #search-icon {
         height: $global-nav-font-size-mobile;
-        -webkit-transform: translateY($global-nav-font-size-mobile/5);
         transform: translateY($global-nav-font-size-mobile/5);
         @include MQ(M) {
             height: $search-icon-size-m-plus-screen-sizes;
             position: absolute;
             top: $search-icon-size-m-plus-screen-sizes/2;
             right: $search-icon-size-m-plus-screen-sizes/2;
-            -webkit-transform: translateY(-210px);
             transform: translateY(-210px);
         }
         fill:$global-nav-font-color;
@@ -34,7 +32,6 @@ article#search-page {
             font-size: 12px;
             position: absolute;
             top: $search-icon-size-m-plus-screen-sizes/2;
-            -webkit-transform: translateY(-205px);
             transform: translateY(-205px);
 
         }
@@ -198,29 +195,15 @@ span.search-term-top {
     width: 3px;
     display: inline-block;
     margin-right: 2px;
-    -webkit-animation: stretchdelay 1.2s infinite ease-in-out;
     animation: stretchdelay 1.2s infinite ease-in-out;
 }
 
 .tipue_search_spinner .tipue_search_rect2 {
-    -webkit-animation-delay: -1.1s;
     animation-delay: -1.1s;
 }
 
 .tipue_search_spinner .tipue_search_rect3 {
-    -webkit-animation-delay: -1.0s;
     animation-delay: -1.0s;
-}
-
-@-webkit-keyframes stretchdelay {
-    0%,
-    40%,
-    100% {
-        -webkit-transform: scaleY(0.4)
-    }
-    20% {
-        -webkit-transform: scaleY(1.0)
-    }
 }
 
 @keyframes stretchdelay {
@@ -228,11 +211,9 @@ span.search-term-top {
     40%,
     100% {
         transform: scaleY(0.4);
-        -webkit-transform: scaleY(0.4);
     }
     20% {
         transform: scaleY(1.0);
-        -webkit-transform: scaleY(1.0);
     }
 }
 

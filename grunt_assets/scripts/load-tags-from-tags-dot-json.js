@@ -54,7 +54,7 @@ function getMatches(thetag, thestring) {
           } else {
             iconClass = '';
           }
-          matchingItems.innerHTML += '<li class=\"animated fadeInUp\"><a href=\"' + content[i].url + '\" class=\"tag-match\"><div class=\"tag-page-image ' + iconClass + '\" style=\"background-image:url(/assets/images/' + content[i].image + ');\"></div><section><h3>' + content[i].title + '</h3><p>' + content[i].description + '</p></section></a></li>';
+          matchingItems.innerHTML += '<li class=\"animated fadeInUp\"><a href=\"' + content[i].url + '\" class=\"tag-match\"><div class=\"tag-page-image ' + iconClass + '\" style=\"background-image:url(/assets/images/' + content[i].image + ');\"></div><section><h3>' + content[i].title + '</h3><div>' + content[i].description + '</div></section></a></li>';
         }
       }
     }
