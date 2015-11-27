@@ -83,3 +83,5 @@ function toggleSearch() {
 function preventRefresh(enteredTerm) {
   enteredTerm.preventDefault();
 }
+
+console.log("Hello!");

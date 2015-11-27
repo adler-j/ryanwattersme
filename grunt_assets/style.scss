@@ -587,7 +587,7 @@ article {
         }
     }
 }
-div.highlight {
+div.highlighter-rouge {
     padding: 5px;
     margin-bottom: $base-font-size;
     @include MQ(M) {
@@ -595,6 +595,7 @@ div.highlight {
         margin-left: -25vw;
         max-width: 150vw;
         overflow-x:hidden;
+        background-color:$article-codeblock-background-color;
     }
     pre {
         width: 100%;

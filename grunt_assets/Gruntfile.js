@@ -38,8 +38,8 @@ module.exports = function(grunt) {
         ]
       },
       dist: {
-        src: '../_site/assets/css/style.css',
-        dest: '../_site/assets/css/style.min.css'
+        src: '../assets/css/style.css',
+        dest: '../assets/css/style.min.css'
       }
     },
     watch: {

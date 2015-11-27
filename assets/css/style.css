@@ -2005,28 +2005,29 @@ article ol li ol li ol li {
   position: relative;
 }
 
-div.highlight {
+div.highlighter-rouge {
   padding: 5px;
   margin-bottom: 18px;
 }
 
 @media only screen and (min-width: 761px) {
-  div.highlight {
+  div.highlighter-rouge {
     width: 150vw;
     margin-left: -25vw;
     max-width: 150vw;
     overflow-x: hidden;
+    background-color: #111111;
   }
 }
 
-div.highlight pre {
+div.highlighter-rouge pre {
   width: 100%;
   max-width: 100%;
   overflow-x: scroll;
 }
 
 @media only screen and (min-width: 761px) {
-  div.highlight pre {
+  div.highlighter-rouge pre {
     overflow-x: scroll;
     max-width: 90%;
     position: relative;
@@ -2037,23 +2038,23 @@ div.highlight pre {
 }
 
 @media only screen and (min-width: 960px) {
-  div.highlight pre {
+  div.highlighter-rouge pre {
     max-width: 700px;
   }
 }
 
-div.highlight code {
+div.highlighter-rouge code {
   overflow-x: scroll;
 }
 
 @media only screen and (min-width: 761px) {
-  div.highlight code {
+  div.highlighter-rouge code {
     max-width: 90%;
   }
 }
 
 @media only screen and (min-width: 960px) {
-  div.highlight code {
+  div.highlighter-rouge code {
     max-width: 700px;
   }
 }
