@@ -629,14 +629,17 @@ article {
 article {
     pre {
         display:block;
-        padding: 10px;
+        padding: 5vw;
         margin-bottom: $base-font-size;
         background-color: $article-codeblock-background-color;
+        width:110vw!important;
+        margin-left:-5vw;
         @include MQ(M) {
             width: 150vw;
             max-width: 150vw;
             margin-left: -25vw;
             overflow-x: hidden;
+            padding-left: 0px;
         }
         code {
             overflow-x: scroll;
