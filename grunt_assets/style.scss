@@ -587,6 +587,8 @@ article {
         }
     }
 }
+
+// old highlighting style => uncomment and remove the highlighting that follows after
 // div.highlighter-rouge {
 //     padding: 5px;
 //     margin-bottom: $base-font-size;
@@ -627,7 +629,7 @@ article {
 article {
     pre {
         display:block;
-        padding: 5px;
+        padding: 10px;
         margin-bottom: $base-font-size;
         background-color: $article-codeblock-background-color;
         @include MQ(M) {
