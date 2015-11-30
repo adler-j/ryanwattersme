@@ -62,22 +62,23 @@ collections:
 permalink: /:collection/:path/
 
 # Conversion
-markdown:    kramdown
-highlighter: pygments.rb
-lsi:         false
+markdown:    redcarpet
+highlighter: pygments
 excerpt_separator: "\n\n"
-incremental: false
+incremental: true
 
 # Markdown Processor
-kramdown:
-  auto_ids:       false
-  footnote_nr:    1
-  entity_output:  as_char
-  toc_levels:     1..6
-  smart_quotes:   lsquo,rsquo,ldquo,rdquo
-  enable_coderay: false
-  input: GFM
-gems: ['pygments']
+# kramdown:
+#   auto_ids:       false
+#   footnote_nr:    1
+#   entity_output:  as_char
+#   toc_levels:     1..6
+#   smart_quotes:   lsquo,rsquo,ldquo,rdquo
+#   enable_coderay: false
+#   input: GFM
+redcarpet:
+    extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
+gems: ['redcarpet']
 
 exclude: [Gemfile,Gemfile.lock,snippets_and_notes.md,grunt]
 include: [scripts]
