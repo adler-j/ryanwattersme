@@ -272,349 +272,349 @@ textarea {
   font-style: normal;
 }
 
-.highlight {
+code {
   background: #111111;
   color: #93a1a1;
 }
 
-.highlight .c {
+code .c {
   color: #586e75;
 }
 
 /* Comment */
-.highlight .err {
+code .err {
   color: #93a1a1;
 }
 
 /* Error */
-.highlight .g {
+code .g {
   color: #93a1a1;
 }
 
 /* Generic */
-.highlight .k {
+code .k {
   color: #859900;
 }
 
 /* Keyword */
-.highlight .l {
+code .l {
   color: #93a1a1;
 }
 
 /* Literal */
-.highlight .n {
+code .n {
   color: #93a1a1;
 }
 
 /* Name */
-.highlight .o {
+code .o {
   color: #859900;
 }
 
 /* Operator */
-.highlight .x {
+code .x {
   color: #cb4b16;
 }
 
 /* Other */
-.highlight .p {
+code .p {
   color: #93a1a1;
 }
 
 /* Punctuation */
-.highlight .cm {
+code .cm {
   color: #586e75;
 }
 
 /* Comment.Multiline */
-.highlight .cp {
+code .cp {
   color: #859900;
 }
 
 /* Comment.Preproc */
-.highlight .c1 {
+code .c1 {
   color: #586e75;
 }
 
 /* Comment.Single */
-.highlight .cs {
+code .cs {
   color: #859900;
 }
 
 /* Comment.Special */
-.highlight .gd {
+code .gd {
   color: #2aa198;
 }
 
 /* Generic.Deleted */
-.highlight .ge {
+code .ge {
   color: #93a1a1;
   font-style: italic;
 }
 
 /* Generic.Emph */
-.highlight .gr {
+code .gr {
   color: #dc322f;
 }
 
 /* Generic.Error */
-.highlight .gh {
+code .gh {
   color: #cb4b16;
 }
 
 /* Generic.Heading */
-.highlight .gi {
+code .gi {
   color: #859900;
 }
 
 /* Generic.Inserted */
-.highlight .go {
+code .go {
   color: #93a1a1;
 }
 
 /* Generic.Output */
-.highlight .gp {
+code .gp {
   color: #93a1a1;
 }
 
 /* Generic.Prompt */
-.highlight .gs {
+code .gs {
   color: #93a1a1;
   font-weight: bold;
 }
 
 /* Generic.Strong */
-.highlight .gu {
+code .gu {
   color: #cb4b16;
 }
 
 /* Generic.Subheading */
-.highlight .gt {
+code .gt {
   color: #93a1a1;
 }
 
 /* Generic.Traceback */
-.highlight .kc {
+code .kc {
   color: #cb4b16;
 }
 
 /* Keyword.Constant */
-.highlight .kd {
+code .kd {
   color: #268bd2;
 }
 
 /* Keyword.Declaration */
-.highlight .kn {
+code .kn {
   color: #859900;
 }
 
 /* Keyword.Namespace */
-.highlight .kp {
+code .kp {
   color: #859900;
 }
 
 /* Keyword.Pseudo */
-.highlight .kr {
+code .kr {
   color: #268bd2;
 }
 
 /* Keyword.Reserved */
-.highlight .kt {
+code .kt {
   color: #dc322f;
 }
 
 /* Keyword.Type */
-.highlight .ld {
+code .ld {
   color: #93a1a1;
 }
 
 /* Literal.Date */
-.highlight .m {
+code .m {
   color: #2aa198;
 }
 
 /* Literal.Number */
-.highlight .s {
+code .s {
   color: #2aa198;
 }
 
 /* Literal.String */
-.highlight .na {
+code .na {
   color: #93a1a1;
 }
 
 /* Name.Attribute */
-.highlight .nb {
+code .nb {
   color: #B58900;
 }
 
 /* Name.Builtin */
-.highlight .nc {
+code .nc {
   color: #268bd2;
 }
 
 /* Name.Class */
-.highlight .no {
+code .no {
   color: #cb4b16;
 }
 
 /* Name.Constant */
-.highlight .nd {
+code .nd {
   color: #268bd2;
 }
 
 /* Name.Decorator */
-.highlight .ni {
+code .ni {
   color: #cb4b16;
 }
 
 /* Name.Entity */
-.highlight .ne {
+code .ne {
   color: #cb4b16;
 }
 
 /* Name.Exception */
-.highlight .nf {
+code .nf {
   color: #268bd2;
 }
 
 /* Name.Function */
-.highlight .nl {
+code .nl {
   color: #93a1a1;
 }
 
 /* Name.Label */
-.highlight .nn {
+code .nn {
   color: #93a1a1;
 }
 
 /* Name.Namespace */
-.highlight .nx {
+code .nx {
   color: #93a1a1;
 }
 
 /* Name.Other */
-.highlight .py {
+code .py {
   color: #93a1a1;
 }
 
 /* Name.Property */
-.highlight .nt {
+code .nt {
   color: #268bd2;
 }
 
 /* Name.Tag */
-.highlight .nv {
+code .nv {
   color: #268bd2;
 }
 
 /* Name.Variable */
-.highlight .ow {
+code .ow {
   color: #859900;
 }
 
 /* Operator.Word */
-.highlight .w {
+code .w {
   color: #ffffff;
 }
 
 /* Text.Whitespace */
-.highlight .mf {
+code .mf {
   color: #2aa198;
 }
 
 /* Literal.Number.Float */
-.highlight .mh {
+code .mh {
   color: #2aa198;
 }
 
 /* Literal.Number.Hex */
-.highlight .mi {
+code .mi {
   color: #2aa198;
 }
 
 /* Literal.Number.Integer */
-.highlight .mo {
+code .mo {
   color: #2aa198;
 }
 
 /* Literal.Number.Oct */
-.highlight .sb {
+code .sb {
   color: #586e75;
 }
 
 /* Literal.String.Backtick */
-.highlight .sc {
+code .sc {
   color: #2aa198;
 }
 
 /* Literal.String.Char */
-.highlight .sd {
+code .sd {
   color: #93a1a1;
 }
 
 /* Literal.String.Doc */
-.highlight .s2 {
+code .s2 {
   color: #2aa198;
 }
 
 /* Literal.String.Double */
-.highlight .se {
+code .se {
   color: #cb4b16;
 }
 
 /* Literal.String.Escape */
-.highlight .sh {
+code .sh {
   color: #93a1a1;
 }
 
 /* Literal.String.Heredoc */
-.highlight .si {
+code .si {
   color: #2aa198;
 }
 
 /* Literal.String.Interpol */
-.highlight .sx {
+code .sx {
   color: #2aa198;
 }
 
 /* Literal.String.Other */
-.highlight .sr {
+code .sr {
   color: #dc322f;
 }
 
 /* Literal.String.Regex */
-.highlight .s1 {
+code .s1 {
   color: #2aa198;
 }
 
 /* Literal.String.Single */
-.highlight .ss {
+code .ss {
   color: #2aa198;
 }
 
 /* Literal.String.Symbol */
-.highlight .bp {
+code .bp {
   color: #268bd2;
 }
 
 /* Name.Builtin.Pseudo */
-.highlight .vc {
+code .vc {
   color: #268bd2;
 }
 
 /* Name.Variable.Class */
-.highlight .vg {
+code .vg {
   color: #268bd2;
 }
 
 /* Name.Variable.Global */
-.highlight .vi {
+code .vi {
   color: #268bd2;
 }
 
 /* Name.Variable.Instance */
-.highlight .il {
+code .il {
   color: #2aa198;
 }
 
@@ -2005,56 +2005,37 @@ article ol li ol li ol li {
   position: relative;
 }
 
-div.highlighter-rouge {
+article pre {
+  display: block;
   padding: 5px;
   margin-bottom: 18px;
+  background-color: #111111;
 }
 
 @media only screen and (min-width: 761px) {
-  div.highlighter-rouge {
+  article pre {
     width: 150vw;
-    margin-left: -25vw;
     max-width: 150vw;
+    margin-left: -25vw;
     overflow-x: hidden;
-    background-color: #111111;
   }
 }
 
-div.highlighter-rouge pre {
-  width: 100%;
-  max-width: 100%;
+article pre code {
   overflow-x: scroll;
 }
 
 @media only screen and (min-width: 761px) {
-  div.highlighter-rouge pre {
-    overflow-x: scroll;
+  article pre code {
     max-width: 90%;
-    position: relative;
     margin-left: 25vw;
-    white-space: pre-wrap;
-    overflow-x: hidden;
   }
 }
 
 @media only screen and (min-width: 960px) {
-  div.highlighter-rouge pre {
-    max-width: 700px;
-  }
-}
-
-div.highlighter-rouge code {
-  overflow-x: scroll;
-}
-
-@media only screen and (min-width: 761px) {
-  div.highlighter-rouge code {
-    max-width: 90%;
-  }
-}
-
-@media only screen and (min-width: 960px) {
-  div.highlighter-rouge code {
+  article pre code {
+    display: block;
+    margin-left: 25vw;
     max-width: 700px;
   }
 }

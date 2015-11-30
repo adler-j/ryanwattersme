@@ -587,42 +587,71 @@ article {
         }
     }
 }
-div.highlighter-rouge {
-    padding: 5px;
-    margin-bottom: $base-font-size;
-    @include MQ(M) {
-        width: 150vw;
-        margin-left: -25vw;
-        max-width: 150vw;
-        overflow-x:hidden;
-        background-color:$article-codeblock-background-color;
-    }
+// div.highlighter-rouge {
+//     padding: 5px;
+//     margin-bottom: $base-font-size;
+//     @include MQ(M) {
+//         width: 150vw;
+//         margin-left: -25vw;
+//         max-width: 150vw;
+//         overflow-x:hidden;
+//         background-color:$article-codeblock-background-color;
+//     }
+//     pre {
+//         width: 100%;
+//         max-width: 100%;
+//         overflow-x: scroll;
+//         @include MQ(M) {
+//             overflow-x: scroll;
+//             max-width: 90%;
+//             position: relative;
+//             margin-left: 25vw;
+//             white-space: pre-wrap;
+//             overflow-x:hidden;
+//         }
+//         @include MQ(L) {
+//             max-width: $content-max-width;
+//         }
+//     }
+//     code {
+//         overflow-x: scroll;
+//         @include MQ(M) {
+//             max-width: 90%;
+//         }
+//         @include MQ(L) {
+//             max-width: $content-max-width;
+//         }
+//     }
+// }
+
+article {
     pre {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: scroll;
+        display:block;
+        padding: 5px;
+        margin-bottom: $base-font-size;
+        background-color: $article-codeblock-background-color;
         @include MQ(M) {
+            width: 150vw;
+            max-width: 150vw;
+            margin-left: -25vw;
+            overflow-x: hidden;
+        }
+        code {
             overflow-x: scroll;
-            max-width: 90%;
-            position: relative;
-            margin-left: 25vw;
-            white-space: pre-wrap;
-            overflow-x:hidden;
-        }
-        @include MQ(L) {
-            max-width: $content-max-width;
-        }
-    }
-    code {
-        overflow-x: scroll;
-        @include MQ(M) {
-            max-width: 90%;
-        }
-        @include MQ(L) {
-            max-width: $content-max-width;
+            // margin-left: -25vw;
+            @include MQ(M) {
+                max-width: 90%;
+                margin-left:25vw;
+            }
+            @include MQ(L) {
+                display:block;
+                margin-left:25vw;
+                max-width: $content-max-width;
+            }
         }
     }
 }
+
 
 
 .fluidvids {

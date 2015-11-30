@@ -63,7 +63,7 @@ permalink: /:collection/:path/
 
 # Conversion
 markdown:    kramdown
-highlighter: rouge
+highlighter: pygments.rb
 lsi:         false
 excerpt_separator: "\n\n"
 incremental: false
@@ -77,6 +77,7 @@ kramdown:
   smart_quotes:   lsquo,rsquo,ldquo,rdquo
   enable_coderay: false
   input: GFM
+gems: ['pygments']
 
 exclude: [Gemfile,Gemfile.lock,snippets_and_notes.md,grunt]
 include: [scripts]
