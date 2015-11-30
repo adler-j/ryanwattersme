@@ -19,8 +19,8 @@ module.exports = function(grunt) {
           // Files in the /sass/ directory will go to /static/css/ when processed.
           expand: true,
           src: ['style.scss'],
-          dest: '../assets/css/',
-          ext: '.css'
+          dest: '../_includes/',
+          ext: '.html'
         }, {
           expand: true,
           src: ['../assets/altstylesheets/samples.scss'],
