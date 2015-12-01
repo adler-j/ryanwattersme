@@ -643,15 +643,17 @@ article {
         }
         code {
             overflow-x: scroll;
-            // margin-left: -25vw;
             @include MQ(M) {
                 max-width: 90%;
-                margin-left:25vw;
-            }
-            @include MQ(L) {
                 display:block;
                 margin-left:25vw;
+                white-space: pre-wrap;
+            }
+            @include MQ(L) {
+                white-space: pre-wrap;   
+                margin-left:25vw;
                 max-width: $content-max-width;
+                overflow-x: hidden;
             }
         }
     }
