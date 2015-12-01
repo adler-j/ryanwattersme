@@ -1037,13 +1037,12 @@ ul.matching-items {
                     display: flex;
                     flex-shrink: 0;
                     width: 100%;
-                    font-size: $base-font-size * 1.1;
+                    font-size: $base-font-size;
                     margin: 0px;
                     padding-left: 8px;
                     background-color: $tag-page-match-list-heading-background-color;
                     color: $list-page-heading-font-color;
-                    font-weight: 300;
-                    
+                    font-weight: 300;                    
                     @include MQ(L) {
                         font-size: $base-font-size * 1.3;
                     }
