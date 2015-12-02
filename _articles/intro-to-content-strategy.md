@@ -23,7 +23,7 @@ One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your foo
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora expedita voluptas deleniti nesciunt accusantium, alias architecto quis asperiores similique atque. Ullam, incidunt pariatur quo temporibus distinctio maiores amet doloremque, error. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate aperiam quos, alias consectetur illum, voluptas nesciunt, accusantium laboriosam eaque autem sapiente, id et adipisci neque sed provident ullam reprehenderit cum!
 
-```javascript
+```js
 window.onload = init;
 
 function init(){
