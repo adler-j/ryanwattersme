@@ -1,27 +1,30 @@
 ---
 layout: article
-title: Comparison of Publishing CMSs    
+title: Comparison of Publishing CMSs
 subtitle: Playing with date sorting
 author: Ryan Watters
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.
-layout: article
+description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."
 main_image: guy_holding_camera.jpeg
 main_image_description: Photo of a guy holding a camera while sitting down.
 categories: foo
-tags:
-- javascript
-- jekyll
-- static
-published_on: 2015-09-04
+tags: 
+  - javascript
+  - jekyll
+  - static
+published_on: {}
 comments: true
 insearch: true
+published: true
 ---
+
 
 ### Heading
 
 ### Hello Nathan!
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium tempore delectus soluta, repudiandae commodi ipsum consequatur ab obcaecati sequi. Here is a [link to Google](https://www.google.com). Qui voluptatem quae officia autem a sit aperiam architecto culpa iste.
+
+Hello world!
 
 #### Subheading
 
