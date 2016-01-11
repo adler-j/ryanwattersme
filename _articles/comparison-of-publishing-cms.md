@@ -6,11 +6,8 @@ author: Ryan Watters
 description: "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic."
 main_image: guy_holding_camera.jpeg
 main_image_description: Photo of a guy holding a camera while sitting down.
-categories: foo
-tags: 
-  - javascript
-  - jekyll
-  - static
+categories: [foo,bar,baz]
+tags: [javascript,jekyll,static]
 published_on: 2016-01-01
 comments: true
 insearch: true
