@@ -9,7 +9,7 @@ main_image_description: Photo of a guy holding a camera while sitting down.
 categories: [foo,bar,baz]
 tags: [javascript,jekyll,static]
 published_on: 2016-01-01
-comments: true
+comments: false
 insearch: true
 published: true
 ---
