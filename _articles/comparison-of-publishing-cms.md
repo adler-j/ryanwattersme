@@ -11,7 +11,7 @@ tags:
   - javascript
   - jekyll
   - static
-published_on: {}
+published_on: 2016-01-01
 comments: true
 insearch: true
 published: true
