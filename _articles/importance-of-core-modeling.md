@@ -8,7 +8,7 @@ main_image: glowing_macbook_on_bed.jpeg
 main_image_description: A glowing laptop on a bed in a dark bedroom.
 insearch: true
 published: true
-published_on: 2015-09-12
+publishdate: 2015-09-12
 comments: false
 tags: 
   - core modeling

@@ -8,7 +8,7 @@ layout: article
 main_image:
 main_image_description:
 published: true
-published_on: 2015-09-01
+publishdate: 2015-09-01
 lastmod: 2015-09-22
 comments: true
 insearch: true

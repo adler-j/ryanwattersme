@@ -9,7 +9,7 @@ insearch: false
 	<url>
 		<loc>{{ site.url }}{{ item.url }}</loc>
 		{% if item.lastmod == null %}
-		<lastmod>{{item.published_on}}</lastmod>
+		<lastmod>{{item.publishdate}}</lastmod>
 		{% else %}
 		<lastmod>{{item.lastmod}}</lastmod>
 		{% endif %}		
@@ -19,12 +19,12 @@ insearch: false
 	{% endunless %}
 {% endfor %}
 
-{% for item in site.articles | sort: 'published_on' | reverse %}
+{% for item in site.articles | sort: 'publishdate' | reverse %}
 	{% unless item.published == false %}
 	<url>
 		<loc>{{ site.url }}{{ item.url }}</loc>
 		{% if item.lastmod == null %}
-		<lastmod>{{item.published_on}}</lastmod>
+		<lastmod>{{item.publishdate}}</lastmod>
 		{% else %}
 		<lastmod>{{item.lastmod}}</lastmod>
 		{% endif %}		
@@ -33,12 +33,12 @@ insearch: false
 	</url>
 	{% endunless %}
 {% endfor %}
-{% for item in site.pages | sort: 'published_on' | reverse %}
+{% for item in site.pages | sort: 'publishdate' | reverse %}
 	{% unless item.published == false %}
 	<url>
 		<loc>{{ site.url }}{{ item.url }}</loc>
 		{% if item.lastmod == null %}
-		<lastmod>{{item.published_on}}</lastmod>
+		<lastmod>{{item.publishdate}}</lastmod>
 		{% else %}
 		<lastmod>{{item.lastmod}}</lastmod>
 		{% endif %}		

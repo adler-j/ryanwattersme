@@ -3,7 +3,7 @@ layout: article
 title: Metadata for Web Publishing
 subtitle: This is the first article I wrote using Prose.io
 author: Ryan Watters
-published_on: 2015-09-16
+publishdate: 2015-09-16
 published: true
 lastmod: 2015-09-20
 main_image: coffee_cup_and_pencil.jpeg

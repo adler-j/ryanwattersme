@@ -8,7 +8,7 @@
     {% endif %}
     <section class="prev-and-next">
         {% if page.collection == "articles" %} 
-            {% assign contents = site.articles | sort: 'published_on' %}
+            {% assign contents = site.articles | sort: 'publishdate' %}
             {% assign collection_name = page.collection %}
             {% capture stringLength %}{{ collection_name | size | minus: 1 }}{% endcapture %}
             {% assign collection_name = collection_name | truncate: stringLength, '' %}
@@ -24,7 +24,7 @@
                 {% unless forloop.first %} 
                     {% assign prevurl = prev.url %} 
                     {% assign prevtitle = prev.title %}
-                    {% assign prevdate = prev.published_on | date: '%B %d, %Y' %}
+                    {% assign prevdate = prev.publishdate | date: '%B %d, %Y' %}
                     {% assign prevseries = prev.series %}
                     {% assign prevnum = prev.series_no %} 
                 {% endunless %} 
@@ -32,7 +32,7 @@
                     {% assign next = contents[forloop.index] %} 
                     {% assign nexturl = next.url %} 
                     {% assign nexttitle = next.title %}
-                    {% assign nextdate = next.published_on | date: '%B %d, %Y' %}
+                    {% assign nextdate = next.publishdate | date: '%B %d, %Y' %}
                     {% assign nextseries = next.series %}
                     {% assign nextnum = next.series_no %} 
                 {% endunless %} 

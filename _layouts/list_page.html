@@ -10,7 +10,7 @@ regenerate: true
 		
 	</header>
 	{% if page.collection == 'articles'%}
-		{% assign contents = site.articles | sort: 'published_on' | reverse %}
+		{% assign contents = site.articles | sort: 'publishdate' | reverse %}
 		{% assign article_type = 'articles' %}
 	{% endif %}
 	{% if page.collection == 'tutorials' %}
@@ -31,7 +31,7 @@ regenerate: true
 		    <li>
 		        <a class="list" href="{{ item.url }}" {% if item.series %}date-series="{{item.series | downcase}}"{% endif %}><h1>{{ item.title }}</h1>
 						{% if article_type == 'articles' %}
-		        <time>{{ item.published_on | date: "%Y-%m-%d" }}</time>
+		        <time>{{ item.publishdate | date: "%Y-%m-%d" }}</time>
 		        {% elsif article_type == 'tutorials' %}
 		        <div class="series">
 		        	{% include icons/{{ item.series | slugify }}-icon.svg %}

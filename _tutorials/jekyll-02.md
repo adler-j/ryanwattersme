@@ -8,7 +8,7 @@ series_no: 02
 main_image:
 main_image_description:
 published: true
-published_on: 2015-09-02
+publishdate: 2015-09-02
 comments: true
 insearch: true
 tags: [jekyll,setup,osx,command line]

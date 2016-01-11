@@ -20,7 +20,7 @@ regenerate: true
         {% if item.lastmod %}
         <pubDate>{{ item.lastmod }}</pubDate>
         {% else %}
-        <pubDate>{{ item.published_on }}</pubDate>
+        <pubDate>{{ item.publishdate }}</pubDate>
         {% endif %}
         <link>{{site.url}}{{ item.url }}</link>
         {% for tag in item.tags %}
@@ -28,14 +28,14 @@ regenerate: true
         {% endfor %}
       </item>
     {% endfor %}
-    {% for item in site.articles | sort: 'published_on' | reverse limit:3 %}
+    {% for item in site.articles | sort: 'publishdate' | reverse limit:3 %}
       <item>
         <title>{{ item.title | xml_escape }}</title>
         <description>{{ item.description | xml_escape }}</description>
         {% if item.lastmod %}
         <pubDate>{{ item.lastmod }}</pubDate>
         {% else %}
-        <pubDate>{{ item.published_on }}</pubDate>
+        <pubDate>{{ item.publishdate }}</pubDate>
         {% endif %}
         <link>{{site.url}}{{ item.url }}</link>
         {% for tag in item.tags %}

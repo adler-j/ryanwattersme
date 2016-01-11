@@ -116,7 +116,7 @@ repository: rdwatters/
 #           element: "textarea"
 #           label: "Article Description"
 #           help: "Write a short description of this article. Try to keep it to less than 200 characters."
-#       - name: "published_on"
+#       - name: "publishdate"
 #         field:
 #           label: "When this article was published"
 #           element: "text"

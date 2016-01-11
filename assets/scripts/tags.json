@@ -4,7 +4,7 @@ regenerate: true
 ---
 
 {"siteContent": [
-{% for article in site.articles | sort: 'published_on' %}
+{% for article in site.articles | sort: 'publishdate' %}
 	{% if article.tags %}
 		{% for tag in article.tags %}
 			{"title": "{{article.title}}",
@@ -12,12 +12,12 @@ regenerate: true
 					"url": "{{article.url}}",
 					"tag": "{{tag | slugify}}",
 					"description": "{{article.description | truncatewords: 20, '...' }}",
-					"date":"{{article.published_on | date: "%Y-%m-%d" }}"
+					"date":"{{article.publishdate | date: "%Y-%m-%d" }}"
 			},
 		{% endfor %}
 	{% endif %}
 {% endfor %}
-{% for tutorial in site.tutorials | sort: 'published_on' %}
+{% for tutorial in site.tutorials | sort: 'publishdate' %}
 	{% if tutorial.tags %}
 		{% for tag in tutorial.tags %}
 			{"title": "{{tutorial.title}}",
@@ -26,7 +26,7 @@ regenerate: true
 			 "tag": "{{tag | slugify}}",
 			 "description": "{{tutorial.description | truncatewords: 20, '...' }}",
 			 "tutseries:": "{{tutorial.series | capitalize }}",
-			 "date":"{{tutorial.published_on | date: "%Y-%m-%d" }}"
+			 "date":"{{tutorial.publishdate | date: "%Y-%m-%d" }}"
 			},
 		{% endfor %}
 	{% endif %}
