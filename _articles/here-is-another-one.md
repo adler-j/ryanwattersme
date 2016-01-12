@@ -1,6 +1,7 @@
 ---
-title: Playing With Scripting
-subtitle: Subtitle About Playing With Scripting
+layout: article
+title: Working with Scripting
+subtitle: Not Able to Get This to Work for Some Reason
 author: Ryan D Watters
 date: 2016-01-11
 publishdate: 2016-01-11
