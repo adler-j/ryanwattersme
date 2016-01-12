@@ -10,7 +10,7 @@ description_long: This is a much longer description. Yada yada yada. Here it is.
 main_image: cap-logo.png
 main_image_description: This is the official logo of the College of American Pathologists
 categories: [publishing, content strategy]
-tags: [content strategy, javascript, content strategy]
+tags: [content strategy,javascript,scripting,static]
 comments: false
 insearch: true
 draft: false
