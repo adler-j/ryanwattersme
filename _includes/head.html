@@ -13,7 +13,7 @@
     {% endif %}
     <meta property="og:locale" content="en_US">
     <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
-    <meta property="og:image" content="{% if page.main_image %}{{site.url}}/images/{{page.main_image}}{%else%}{{site.url}}/images/site-logo.png{% endif %}">
+    <meta property="og:image" content="{% if page.main_image %}{{site.url}}/assets/images/{{page.main_image}}{%else%}{{site.url}}/assets/images/site-logo.png{% endif %}">
     <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
     <meta property="og:site_name" content="{{ site.title }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
