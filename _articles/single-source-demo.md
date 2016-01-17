@@ -3,7 +3,6 @@ layout: article
 title: Single Sourcing Demo
 subtitle: Single Sourcing Demo Subtitle
 author: Ryan Watters
-date: 2015-10-14
 publishdate: 2015-10-14
 description: This is a very short description that is used for SEO or short list pages.
 description_long: This is a longer description area that can be used for when you want a description to write directly to the page. For example, you would use this type of description for summaries on a list page for a blog. 
