@@ -29,7 +29,7 @@ regenerate: true
 	{% assign previous = tag %}
 {% endfor %}
 
-<article>
+<article class="all-tags">
 <header class="tagpage-header">
 <!-- 	Although the tag page layout inherits from 'default', the list of tags required some new styling--hence the addition of the 'tag-page' class to the page header's h1 -->
 	<h1 class="tag-page">{{page.title}} <em id="selected-tag"></em></h1>

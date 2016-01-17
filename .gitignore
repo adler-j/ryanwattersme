@@ -11,3 +11,5 @@ CNAME
 practice.md
 samples-content/
 node_modules/
+*.docx
+*.doc

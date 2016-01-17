@@ -62,6 +62,8 @@ body > header:first-child {
         bottom: 0;
     }
 }
+
+
 //TITLE CONTAINER WITHIN SITE HEADER
 .site-title-container {
     display: -webkit-flex;
@@ -288,7 +290,7 @@ nav.global-navigation {
 }
 
 article > header:first-child {
-    margin-bottom: 10px;
+    margin-bottom: 20px;
     &.article-header-with-image {
         width: 100vw!important;
         max-width: 100vw!important;
@@ -589,44 +591,6 @@ article {
     }
 }
 
-// old highlighting style => uncomment and remove the highlighting that follows after
-// div.highlighter-rouge {
-//     padding: 5px;
-//     margin-bottom: $base-font-size;
-//     @include MQ(M) {
-//         width: 150vw;
-//         margin-left: -25vw;
-//         max-width: 150vw;
-//         overflow-x:hidden;
-//         background-color:$article-codeblock-background-color;
-//     }
-//     pre {
-//         width: 100%;
-//         max-width: 100%;
-//         overflow-x: scroll;
-//         @include MQ(M) {
-//             overflow-x: scroll;
-//             max-width: 90%;
-//             position: relative;
-//             margin-left: 25vw;
-//             white-space: pre-wrap;
-//             overflow-x:hidden;
-//         }
-//         @include MQ(L) {
-//             max-width: $content-max-width;
-//         }
-//     }
-//     code {
-//         overflow-x: scroll;
-//         @include MQ(M) {
-//             max-width: 90%;
-//         }
-//         @include MQ(L) {
-//             max-width: $content-max-width;
-//         }
-//     }
-// }
-
 article {
     pre {
         display:block;
@@ -659,8 +623,6 @@ article {
         }
     }
 }
-
-
 
 .fluidvids {
     margin-top: $base-font-size;
@@ -1185,6 +1147,29 @@ $socialcolor in $socials {
         fill: $socialcolor;
     }
 }
+
+div.printing-buttons {
+    min-height:40px;
+    display:block;
+    width:50px;
+    padding-left:5px;
+    margin-top:10px;
+    float:right;
+    position:relative;
+    > a{
+    box-shadow:none;
+        &:hover {
+            box-shadow:none;
+        }
+    }
+    a#print-button svg {
+        fill:#000000;
+    }
+    a#pdf-button {
+        fill: #972600;
+    }
+}
+
 
 
 

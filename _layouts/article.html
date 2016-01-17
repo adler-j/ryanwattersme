@@ -35,7 +35,14 @@ layout: default
             </a>
         </section>
     </header>
-    {{ content }}  
+    {% if page.collection == "articles" %}
+    {% assign pdfurl = page.url | remove: '/articles/' | replace: '/','.pdf' %}
+    <div class="printing-buttons">
+        <a href="{{Site.baseurl}}/pdfs/{{pdfurl}}" target="_blank" id="pdf-button">{% include icons/pdf-icon.svg %}</a>
+        <a href="#" onclick="window.print()" id="print-button" role="button">{% include icons/printer-icon.svg %}</a>
+    </div>
+    {% endif %}
+    {{ content }} 
 </article>
     {% include contentfooter.html %}
     {% include disquscomments.html %}
