@@ -13,19 +13,14 @@ module.exports = function(grunt) {
       dev: {
         options: {
           sourcemap: 'none',
-          outputStyle: 'expanded'
+          outputStyle: 'compressed'
         },
         files: [{
           // Files in the /sass/ directory will go to /static/css/ when processed.
-          expand: true,
+          expand: false,
           src: ['style.scss'],
-          dest: '../_includes/',
+          dest: '../_includes/style.html',
           ext: '.html'
-        }, {
-          expand: true,
-          src: ['../assets/altstylesheets/samples.scss'],
-          dest: '../altstylesheets/',
-          ext: '.css'
         }]
       }
     },
@@ -46,15 +41,12 @@ module.exports = function(grunt) {
       options: {
         livereload: true,
       },
-      pages: {
-        files: ['../_site/index.html']
-      },
       scripts: {
         files: ['scripts/*.js', '../assets/scripts/samples/*.js'],
         tasks: ['uglify']
       },
       sass: {
-        files: ['sass/*.scss', 'style.scss', '../assets/altstylesheets/samples.scss'],
+        files: ['sass/*.scss', 'style.scss'],
         tasks: ['sass']
       },
       postcss: {

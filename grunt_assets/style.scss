@@ -1,14 +1,15 @@
-@import 'sass/bourbon/bourbon';
-@import 'sass/variables';
-@import 'sass/reset';
-@import 'sass/mixins';
-@import 'sass/layout';
-@import 'sass/fonts';
-@import 'sass/solarized-pygments';
-@import 'sass/search-overlay';
-@import 'sass/animations';
-@import 'sass/content-footer';
-@import 'sass/disqus-thread';
+@import 'sass/bourbon/bourbon.scss';
+@import 'sass/variables.scss';
+@import 'sass/reset.scss';
+@import 'sass/mixins.scss';
+@import 'sass/layout.scss';
+@import 'sass/fonts.scss';
+@import 'sass/solarized-pygments.scss';
+@import 'sass/search-overlay.scss';
+@import 'sass/animations.scss';
+@import 'sass/content-footer.scss';
+@import 'sass/disqus-thread.scss';
+@import 'sass/print.scss';
 
 body,
 #body {
@@ -1184,3 +1185,6 @@ $socialcolor in $socials {
         fill: $socialcolor;
     }
 }
+
+
+

@@ -1,0 +1,82 @@
+@media print {
+    html {
+        font-family: sans-serif;
+        display: block;
+    }
+    body {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin-left: 0px;
+        border: 0px;
+        outline: 0px;
+    }
+    @include MQ(M) {
+        #site-header {
+            margin-left: -250px;
+        }
+    }
+    #site-header,
+    #site-footer,
+    nav#global-navigation,
+    form#search-form,
+    a#mobile-toggle,
+    footer.content-footer,
+    section.prev-and-next,
+    section#site-title,
+    section.site-title-container,
+    ul.tags,
+    a.tag,
+    a.direction.next,
+    a.direction.previous {
+        visibility: hidden;
+        display: none!important;
+    }
+    #main,
+    article {
+        display: block;
+        width: 100%;
+        min-width: 100%;
+        max-width: 100%;
+        margin-left: 0px;
+        padding-left: 0px;
+        margin-right: 0px;
+        padding-right: 0px;
+        float: none!important;
+    }
+    article header {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    img {
+        display: block;
+        height: auto;
+    }
+    article div.highlight {
+        display: block;
+        width: auto;
+        color: black;
+        background-color: white;
+    }
+    #site-footer > section {
+        display: none;
+    }
+    pre,
+    code {
+        background-color: white;
+        color: black;
+        font: monospace;
+    }
+    section.prev-and-next {
+        display: none!important;
+    }
+    #site-title svg {
+        display: none!important;
+        float: none!important;
+    }
+    #site-title > svg {
+        display: none!important;
+        float: none!important;
+    }
+}
