@@ -1,7 +1,7 @@
 ---
 layout: article
-title: Power of Single Sourcing
-subtitle: Single Sourcing Subtitle
+title: Let's Change This Title
+subtitle: Here is another Subtitle
 author: Ryan D Watters
 date: 2016-01-19
 publishdate: 2016-01-19
