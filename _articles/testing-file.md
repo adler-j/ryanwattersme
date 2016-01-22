@@ -6,7 +6,7 @@ author: Jon Doe
 publishdate: 2016-01-22
 description: This is a short description that shows up for SEO purposes.
 description_long: This is a longer description that can be used for things like list pages, summaries, etc.
-main_image: cap-logo.png
+main_image: cap-logo.jpg
 main_image_description: The official logo of the College of American Pathologists.
 categories: [publishing,technology,content strategy]
 tags: [scripting, single sourcing, markdown, plain text]
