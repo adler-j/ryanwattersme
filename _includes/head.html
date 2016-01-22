@@ -39,7 +39,7 @@
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:site" content="@{{site.twitter}}">
     <meta name="twitter:creator" content="@{{site.twitter}}">
-    <meta name="twitter:title" content=content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
     <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
     <meta name="twitter:image" content="{% if page.main_image %}{{site.url}}/assets/images/{{page.main_image}}{%else%}{{site.url}}/assets/images/site-logo.png{% endif %}">
     <!-- end twitter -->
