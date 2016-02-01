@@ -14,7 +14,9 @@ insearch: true
 published: true
 ---
 
-### Heading
+### Let's Change This Title
+
+![Picture of Tokyo](http://vignette3.wikia.nocookie.net/olympians/images/4/40/Tokyo-Main-Image.jpg/revision/latest?cb=20150706064906)
 
 Bahbah Yachiyodai sweatshirt funnel cake elephants are amazing. 
 
