@@ -11,5 +11,6 @@ CNAME
 practice.md
 samples-content/
 node_modules/
+assets/css/fonts/pnov/
 *.docx
 *.doc
