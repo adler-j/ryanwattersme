@@ -62,9 +62,9 @@ collections:
     permalink: /:collection/:path/
 permalink: /:collection/:path/
 
-# Conversion
-markdown:    redcarpet
-highlighter: pygments
+# MARKDOWN CONVERSION
+markdown: kramdown
+highlighter: rouge
 excerpt_separator: "\n\n"
 incremental: true
 
