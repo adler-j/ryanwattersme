@@ -62,24 +62,25 @@ collections:
     permalink: /:collection/:path/
 permalink: /:collection/:path/
 
-# MARKDOWN CONVERSION
+# MARKDOWN CONVERSION TOP
 markdown: kramdown
 highlighter: rouge
 excerpt_separator: "\n\n"
 incremental: true
 
-# Markdown Processor
-# kramdown:
-#   auto_ids:       false
-#   footnote_nr:    1
-#   entity_output:  as_char
-#   toc_levels:     1..6
-#   smart_quotes:   lsquo,rsquo,ldquo,rdquo
-#   enable_coderay: false
-#   input: GFM
-redcarpet:
-    extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
-gems: ['redcarpet']
+# KRAMDOWN OPTIONS
+kramdown:
+  auto_ids:       false
+  footnote_nr:    1
+  entity_output:  as_char
+  toc_levels:     1..6
+  smart_quotes:   lsquo,rsquo,ldquo,rdquo
+  enable_coderay: false
+  input: GFM
+
+# redcarpet:
+#     extensions: ["no_intra_emphasis", "tables", "autolink", "strikethrough", "with_toc_data"]
+# gems: ['redcarpet']
 
 exclude: [Gemfile,Gemfile.lock,snippets_and_notes.md,grunt]
 include: [scripts]
