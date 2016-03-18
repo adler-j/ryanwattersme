@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--[if lt IE 9]>
+	<link rel="stylesheet" type="text/css" href="ie8-and-down.css" />
+<![endif]-->
+<head>
+	<script src="//use.typekit.net/lfy4ghr.js"></script>
+	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	{{ partial "site_header/metadata_standard.html" . }}
+	{{ partial "site_header/metadata_opengraph.html" . }}
+	{{ partial "site_header/metadata_twitter.html" . }}
+	{{ partial "site_header/metadata_prefetch.html" . }}
+	{{ partial "site_header/metadata_favicons.html" . }}
+	<!-- This partial is configured for critical render path in config.toml-->
+	{{ partial "site_header/site_style.html" . }}
+	<!-- IncludeJQ = true in config.toml if you want to include jQuery from the Google CDN -->
+	{{ if .Site.Params.IncludeJQ }}
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	{{ end }}
+	<!-- include lunr.js on pageload -->
+	<script src="/assets/js/lunr.min.js"></script>
+</head>
+<body>
+	<header class="site-header">
+		<a href="#" id="site-header-toggle">Header Toggle</a>
+			{{ partial "site_header/site_navigation.html" . }}
+			{{ partial "site_header/site_copyright.html" . }}
+	</header>
+	<a href="#" id="search-button">Search</a>
+			{{ partial "site_header/site_search_form.html" . }}
+

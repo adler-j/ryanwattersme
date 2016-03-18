@@ -1,0 +1,87 @@
+//HEADINGS
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-family;
+    margin-bottom: 0px;
+    display: block;
+    font-weight: $heading-font-weight;
+}
+
+h1 {
+    text-transform: $h1-text-transform;
+    font-size: $h1-sm-screen;
+    @include MQ(M) {
+        font-size: $h1-m-screen;
+    }
+    @include MQ(L) {
+        font-size: $h1-l-screen;
+    }
+}
+
+h2 {
+    text-transform: $h2-text-transform;
+    font-size: $h2-sm-screen;
+    @include MQ(M) {
+        font-size: $h2-m-screen;
+    }
+    @include MQ(L) {
+        font-size: $h2-l-screen;
+    }
+}
+
+h3 {
+    text-transform: $h3-text-transform;
+    font-size: $h3-sm-screen;
+    @include MQ(M) {
+        font-size: $h3-m-screen;
+    }
+    @include MQ(L) {
+        font-size: $h3-l-screen;
+    }
+}
+
+h4 {
+    text-transform: $h4-text-transform;
+    font-size: $h4-sm-screen;
+    @include MQ(M) {
+        font-size: $h4-m-screen;
+    }
+    @include MQ(L) {
+        font-size: $h4-l-screen;
+    }
+}
+
+h5 {
+    text-transform: $h5-text-transform;
+    font-size: $h5-sm-screen;
+    @include MQ(M) {
+        font-size: $h5-m-screen;
+    }
+    @include MQ(L) {
+        font-size: $h5-l-screen;
+    }
+}
+
+blockquote {
+    background: $blockquote-background;
+    padding-left: 10px;
+    margin-left: -10px;
+    border-left: $blockquote-left-border;
+    font-size: $blockquote-font-size;
+    position: relative;
+    font-family: $blockquote-font-family;
+}
+
+//This relates to the blockquote-styling-based-on-hyphen-position.js in assets/js/modules. This script finds the text after " - " in blockquote > p and wraps the remaining text in a <cite> tag for more specialized styling to show the source of the block quote (if necessary). Comment out or simply delete the javascript module and the following if you don't want to extend Markdown in this fashion.
+blockquote cite {
+    display: block;
+    font-style: normal;
+    font-size: .75em;
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
