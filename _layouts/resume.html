@@ -1,0 +1,12 @@
+---
+layout: page
+---
+
+{% for job in site.data.jobs %}
+<section>
+    <h1>{{job.employer}}</h1>
+    <span>{{job.started}}</span>
+    <span>{{job.ended}}</span>
+    <p>{{job.description}}</p>
+</section>
+{% endfor %}

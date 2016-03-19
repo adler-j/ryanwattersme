@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ryan Watters</title>
+    <description>My name is Ryan. This is my website.</description>
+    <link>https://ryansportfol.io/</link>
+    <atom:link href="https://ryansportfol.io/feed.xml" rel="self" type="application/rss+xml"/>
+    <pubDate>Sun, 21 Feb 2016 12:21:10 -0600</pubDate>
+    <lastBuildDate>Sun, 21 Feb 2016 12:21:10 -0600</lastBuildDate>
+    <generator>Jekyll v3.0.3</generator>
+    
+      <item>
+        <title>Command Line Basics Part 1</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.</description>
+        
+        <pubDate>2015-09-20</pubDate>
+        
+        <link>https://ryansportfol.io/tutorials/commandline-01/</link>
+        
+        <category>bash</category>
+        
+        <category>command line</category>
+        
+        <category>scripting</category>
+        
+      </item>
+    
+      <item>
+        <title>Using Viewport Measurements in CSS</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.</description>
+        
+        <pubDate>2015-09-20</pubDate>
+        
+        <link>https://ryansportfol.io/tutorials/css-01/</link>
+        
+        <category>ruby</category>
+        
+        <category>matsumoto</category>
+        
+        <category>object-oriented</category>
+        
+        <category>scripting</category>
+        
+      </item>
+    
+      <item>
+        <title>Git &amp; GitHub Basics</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.</description>
+        
+        <pubDate>2015-09-20</pubDate>
+        
+        <link>https://ryansportfol.io/tutorials/git-and-github/</link>
+        
+        <category>git</category>
+        
+        <category>github</category>
+        
+        <category>version control</category>
+        
+      </item>
+    
+    
+      <item>
+        <title>Showing Murali My Single Sourcing Demo</title>
+        <description>Write a &lt;160 character description of your article here</description>
+        
+        <pubDate>2016-01-22</pubDate>
+        
+        <link>https://ryansportfol.io/articles/showing-murali/</link>
+        
+        <category>javascript</category>
+        
+        <category>ssg</category>
+        
+        <category>hugo</category>
+        
+        <category>github</category>
+        
+      </item>
+    
+      <item>
+        <title>Comparison of Publishing CMSs</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.</description>
+        
+        <pubDate>2016-01-01</pubDate>
+        
+        <link>https://ryansportfol.io/articles/comparison-of-publishing-cms/</link>
+        
+        <category>javascript</category>
+        
+        <category>jekyll</category>
+        
+        <category>static</category>
+        
+      </item>
+    
+      <item>
+        <title>How to Develop Content Models</title>
+        <description>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward benzoylformic.</description>
+        
+        <pubDate>2015-09-01</pubDate>
+        
+        <link>https://ryansportfol.io/articles/how-to-develop-content-models/</link>
+        
+        <category>javascript</category>
+        
+        <category>jekyll</category>
+        
+        <category>setup</category>
+        
+      </item>
+    
+  </channel>
+</rss>

@@ -1,6 +1,0 @@
-<!-- Twitter Cards summary card with large image https://dev.twitter.com/cards/types/summary-large-image-->
-<meta property="twitter:card" content="summary_large_image">
-<meta property="twitter:site" content="@{{.Site.Params.TwitterUsername}}">
-<meta property="twitter:title" content="{{if .Title }}{{.Title}}{{else}}{{.Site.Title}}{{end}}">
-<meta property="twitter:image" content="{{ if .Params.image }}{{.Site.BaseURL}}/images/{{.Params.image}}{{ else }}{{.Site.BaseURL}}/images/{{.Site.Params.DefaultSocialImage}}{{ end }}">
-<meta property="twitter:description" content="{{if .Description }}{{.Description}}{{else}}{{.Site.Params.SiteDescription}}{{end}}">

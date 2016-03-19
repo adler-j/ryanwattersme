@@ -1,0 +1,16 @@
+{
+  "name": "minifyingjsforrdwatters",
+  "version": "0.1.0",
+  "description": "separate grunt build for UI/Design components for a GitHub pages-hosted site",
+  "devDependencies": {
+    "autoprefixer": "^6.1.1",
+    "cssnano": "^3.3.2",
+    "grunt": "~0.4.5",
+    "grunt-contrib-uglify": "latest",
+    "grunt-contrib-watch": "latest",
+    "grunt-postcss": "^0.7.1",
+    "grunt-sass": "^1.0.0"
+  },
+  "dependencies": {},
+  "license": "MIT"
+}

@@ -1,0 +1,116 @@
+--- 
+layout: compress 
+---
+<!DOCTYPE html>
+<html>
+{% include head.html %}
+
+<body id="body">
+  <header class="intro-block">
+    <span class="go-home"><a href="/">&#x2190; Return to Ryan Watters' website</a></span>
+    <span class="download-resume"><a href="/samples/docs/ryan_watters_resume.pdf">Download resume</a></span>
+    <div class="content-wrapper">
+      <h1>{{page.addressing}}</h1>
+      <a href="#0" class='btn' data-action="show-samples" role="button">Samples for <br>Digital Content Manager, CAP</a>
+    </div>
+  </header>
+  <main aria-hidden="true">
+    <article class="samples-wrapper">
+      <ul class="slider">
+        <li class="current">
+          <a class="sample-tile" href="#0" data-contentid="1">
+            <img src="/assets/images/samples/migrations.png" alt="project image">
+            <div class="sample-info">
+              <h2>Content Migrations</h2>
+              <p class="sample-snippet">Tutorials, web best practices, and standardizing content migrations</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="sample-tile" href="#0" data-contentid="2">
+            <img src="/assets/images/samples/development.png" alt="project image">
+            <div class="sample-info">
+              <h2>Web Development</h2>
+              <p class="sample-snippet">Coding for better content management and digital strategy</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="sample-tile" href="#0" data-contentid="3">
+            <img src="/assets/images/samples/process.png" alt="project image">
+            <div class="sample-info">
+              <h2>Process</h2>
+              <p class="sample-snippet">Editorial process improvements and DMS business proposal</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="sample-tile" href="#0" data-contentid="4">
+            <img src="/assets/images/samples/writing.png" alt="project image">
+            <div class="sample-info">
+              <h2>Writing and Editing</h2>
+              <p class="sample-snippet">Medical writing, medical copy editing, and style guides</p>
+            </div>
+          </a>
+        </li>
+        <li>
+          <a class="sample-tile" href="#0" data-contentid="5">
+            <img src="/assets/images/samples/strategy.png" alt="project image">
+            <div class="sample-info">
+              <h2>Strategy</h2>
+              <p class="sample-snippet">Addressing the many facets of web content strategy</p>
+            </div>
+          </a>
+        </li>
+      </ul>
+      <ul class="slider-navigation img-replace">
+        <li><a href="#0" class="prev inactive">Prev</a></li>
+        <li><a href="#0" class="next">Next</a></li>
+      </ul>
+      <!-- .slider-navigation -->
+    </article>
+    <!-- .samples-wrapper -->
+    <section class="sample-content" data-tileid="1">
+      <div>
+      	{% capture contentmigrations %}{% include sampcont/contentmigrations.md %}{% endcapture %}
+        {{ contentmigrations | markdownify }}
+      </div>
+      <a href="#0" class="close img-replace">Close</a>
+    </section>
+    <section class="sample-content" data-tileid="2">
+      <div>
+        {% capture samplesites %}{% include sampcont/samplesites.md %}{% endcapture %}
+        {{ samplesites | markdownify }}
+      </div>
+      <a href="#0" class="close img-replace">Close</a>
+    </section>
+    <section class="sample-content" data-tileid="3">
+      <div>
+        {% capture process %}{% include sampcont/process.md %}{% endcapture %}
+        {{ process | markdownify }} 
+      </div>
+      <a href="#0" class="close img-replace">Close</a>
+    </section>
+    <section class="sample-content" data-tileid="4">
+      <div>
+      {% capture writingediting %}{% include sampcont/writingediting.md %}{% endcapture %}
+        {{ writingediting | markdownify }}
+        
+      </div>
+      <a href="#0" class="close img-replace">Close</a>
+    </section>
+    <section class="sample-content" data-tileid="5">
+      <div>
+      {% capture strategy %}{% include sampcont/strategy.md %}{% endcapture %}
+        {{ strategy | markdownify }}  
+      </div>
+      <a href="#0" class="close img-replace">Close</a>
+    </section>
+  </main>
+  <script src="{{site.baseurl}}/assets/scripts/samples.min.js" async></script>
+  {% if jekyll.environment == "development" %}
+  <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+  {% endif %}
+</body>
+
+</html>
