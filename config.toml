@@ -1,7 +1,7 @@
 # Only one archetype (posts) is included in Hugo Starter
 archetypedir = "archetypes"
 baseurl = ""
-buildDrafts = true
+buildDrafts = false
 buildFuture = false
 canonifyurls = true
 config = "config.toml"
