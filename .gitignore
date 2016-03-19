@@ -1,15 +1,2 @@
-.bundle
-.bundle/
-.sass-cache
-.sass-cache/
-.jekyll-metadata
-_site/
-snippets_and_notes.md
-grunt/node_modules/
-grunt/.sass-cache/
+assets/node_modules/
 practice.md
-samples-content/
-node_modules/
-assets/css/fonts/pnov/
-*.docx
-*.doc
