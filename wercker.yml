@@ -16,10 +16,10 @@ build:
       cd public/json/ && cp index.html ../assets/site-index.json
 deploy:
   steps:
-    - install-packages:
-      packages: git ssh-client
-    - leipert/git-push:
-       gh_oauth: $GIT_TOKEN
-       repo: rdwatters/rdwatters.github.io
-       branch: gh-pages
-       basedir: public
+    - s3sync:
+      key-id: $AWS_ACCESS_KEY_ID
+      key-secret: $AWS_SECRET_ACCESS_KEY
+      bucket-url: $AWS_BUCKET_URL
+      source_dir: public/
+      delete-removed: true
+
