@@ -3,46 +3,84 @@ html {
     line-height: $base-line-height;
 }
 
+html,
+html a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
 body {
-    font-size: $base-font-size;
+    font-size: 90%;
+    @include MQ(M) {
+        font-size: 100%;
+    }
     font-family: $base-font-family;
-    background: $body-background;
+    background: $body-background-color;
     color: $base-font-color;
-    position:relative;
-    min-height:100%;
+    position: relative;
+    min-height: 100%;
+    min-height: 100vh;
+    margin-top: 0px;
+    padding-top: 0px;
+    border: none;
+    overflow: auto;
+    font-weight: $base-font-weight;
+}
+
+*,
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: 1.2;
+    margin-top: 0px;
+    margin-bottom: 0.4em;
+    padding: 0;
 }
 
 p {
     line-height: $base-line-height;
-    margin-bottom: $base-font-size;
+    margin: {
+        top: 0px;
+        bottom: $base-font-size;
+    }
 }
 
 a {
     color: $anchor-color;
     font-weight: $anchor-weight;
-    -webkit-transition: $anchor-transition;
-    -moz-transition: $anchor-transition;
     transition: $anchor-transition;
+    text-decoration: $anchor-default-text-decoration;
 }
 
-em,i {
-    font-style:italic;
-    font-weight:inherit;
+em,
+i {
+    font-style: italic;
+    font-weight: inherit;
 }
 
-strong,b {
-    font-weight:700;
+strong,
+b {
+    font-weight: 700;
 }
 
-
-
-input[type=search]{
-    background-color:$body-background;
+input[type=search] {
+    background-color: $body-background-color;
+    border: none;
+    border-radius: 0;
     &:focus {
-        outline:none;
-        border:0px;
+        outline: none;
+        border: 0px;
     }
     @include placeholder {
-        color:$input-placeholder-text-color;
+        color: $input-placeholder-text-color;
     }
 }

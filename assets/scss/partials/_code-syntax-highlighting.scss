@@ -1,0 +1,99 @@
+@font-face {
+    font-family: "Inconsolata";
+    src: url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.eot");
+    src: url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.woff") format("woff"), url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.ttf") format("truetype"), url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.svg") format("svg");
+    font-weight: 400;
+    font-style: normal
+}
+
+pre {
+  //allows code blocks to wrap for responsive
+    white-space: pre-wrap;
+}
+
+// Modified from https://github.com/isagalaev/highlight.js/blob/master/src/styles/monokai-sublime.css
+//These styles rely on highlight.js, which is a script located at assets/js/modules/style-syntax-highlighting-highlightjs.js
+//
+.hljs {
+    display: block;
+    overflow-x: auto;
+    padding: 0.5em;
+    background: darken($body-background-color,5%);
+    font-size:.9em;
+    font-weight:400;
+    font-family:'inconsolata',monospace;
+    @include MQ(M){
+      font-size:1em;
+    }
+}
+
+.hljs,
+.hljs-tag,
+.hljs-subst {
+    color: $base-font-color
+}
+
+.hljs-strong,
+.hljs-emphasis {
+    color: $accent-color;
+}
+
+.hljs-bullet,
+.hljs-quote,
+.hljs-number,
+.hljs-regexp,
+.hljs-literal,
+.hljs-link {
+    color: $red;
+}
+
+.hljs-code,
+.hljs-title,
+.hljs-section,
+.hljs-selector-class {
+    color: $orange;
+}
+
+.hljs-strong {
+    font-weight: bold;
+}
+
+.hljs-emphasis {
+    font-style: italic;
+}
+
+.hljs-keyword,
+.hljs-selector-tag,
+.hljs-name,
+.hljs-attr {
+    color: $brand;
+}
+
+.hljs-symbol,
+.hljs-attribute {
+    color: #66d9ef;
+}
+
+.hljs-params,
+.hljs-class .hljs-title {
+    color: $base-font-color;
+}
+
+.hljs-string,
+.hljs-type,
+.hljs-built_in,
+.hljs-builtin-name,
+.hljs-selector-id,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-addition,
+.hljs-variable,
+.hljs-template-variable {
+    color: $red;
+}
+
+.hljs-comment,
+.hljs-deletion,
+.hljs-meta {
+    color: $red;
+}

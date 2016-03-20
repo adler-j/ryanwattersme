@@ -5,21 +5,23 @@ if ('ontouchstart' in document.documentElement) {
     clickOrTouchStart = "click";
 }
 var headerToggle = document.getElementById('site-header-toggle');
-(function() {
-    var siteSections = document.querySelectorAll('.site-section');
-    var address = location.pathname.split('/')[1];
-    if (address.length > 0) {
-        var addressTest = new RegExp(address);
-        for (var i = 0; i < siteSections.length; i++) {
-            if (addressTest.test(siteSections[i].dataset.section)) {
-                siteSections[i].className += " active";
-            }
-        }
-    }
-})();
+var mainContent = document.querySelector('main');
+mainContent.addEventListener(clickOrTouchStart, toggleHeader, false);
 headerToggle.addEventListener(clickOrTouchStart, toggleHeader, false);
 
-function toggleHeader() {
-    document.querySelector('.site-header').classList.toggle('open');
-    document.querySelector('main').classList.toggle('open');
+function toggleHeader(event) {
+    var header = document.querySelector('body > header');
+    var mainContent = document.querySelector('main');
+    if (header.classList.contains('open')) {
+        event.preventDefault();
+        document.querySelector('body > header').classList.remove('open');
+        document.querySelector('main').classList.remove('open');
+        document.querySelector('body > footer').classList.remove('open');
+    } else if ((event.target.id === "site-header-toggle") && !(header.classList.contains('open'))) {
+        event.preventDefault();
+        document.querySelector('body > header').classList.add('open');
+        document.querySelector('main').classList.add('open');
+        document.querySelector('body > footer').classList.add('open');
+    }
+
 }
