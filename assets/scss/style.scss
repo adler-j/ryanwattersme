@@ -110,12 +110,16 @@ div.category {
 }
 
 main > article {
-    max-width: 35em;
+    width:100%;
     margin-left: auto;
     margin-right: auto;
     overflow: scroll;
     position: relative;
     z-index: 99;
+    overflow-x:hidden;
+    @include MQ(M){
+    	width:35em;
+    }
 }
 
 article.content > p:nth-of-type(1) {
@@ -201,31 +205,18 @@ ul.tags {
     }
 }
 
-// ul.tags-desktop {
-//     display: none;
-//     @include MQ(M) {
-//         list-style: none;
-//         position:absolute;
-//         margin-left: 0px;
-//         padding-left: 0px;
-//         width: auto;
-//         justify-content: flex-end;
-//         li {
-//             // display: inline;
-//             a {
-//                 font-weight: normal;
-//                 font-family: $heading-font-family;
-//                 padding: 0px .3em .1em .3em;
-//                 border: 1px solid $base-font-color;
-//                 font-size: 1em;
-//                 &:hover {
-//                     background-color: $base-font-color;
-//                     color: $white;
-//                 }
-//             }
-//         }
-//     }
-// }
+article img {
+	width:100%;
+	height:auto;
+	&.right {
+		float:right;
+		width:40%;
+	}
+	&.left {
+		float:left;
+		width:40%;
+	}
+}
 article > time {
     position: absolute;
     top: 0;

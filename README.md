@@ -1,3 +1,3 @@
 # Ryan Watters Blog
 
-Created Using Hugo and Hosted via Amazon S3
+Created with Hugo and Hosted on Amazon S3

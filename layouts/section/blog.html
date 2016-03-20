@@ -1,11 +1,19 @@
 {{ partial "site_header.html" . }}
-<main class="main">
-<ul>
-	{{ range .Data.Pages }}
-	<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
-	{{ end }}
-</ul>
-
+<main role="main">
+    <article>
+        <header>
+        <h1>{{.Title}}</h1>
+        </header>
+        <ul class="contents-list">
+            {{ range .Data.Pages }}
+            <li>
+            	<a href="{{ .Permalink }}">
+            	<h3>{{.Title}}</h3>
+            	<p>{{ .Description }}</p>
+            	</a>
+            </li>
+            {{ end }}
+        </ul>
+    </article>
 </main>
-
 {{ partial "site_footer.html" . }}

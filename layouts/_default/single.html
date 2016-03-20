@@ -1,22 +1,19 @@
 {{ partial "site_header.html" . }}
-<!-- Basic starter layout for single content files. Delete if needed.-->
-<main class="main">
-	<!-- Swiftype attributes will only show if Swiftype = true in config.toml. -->
-	<article class="content"{{if .Site.Params.Swiftype }}data-swiftype-name="body" data-swiftype-type="text" {{ end}}>
-		<header>
-			<h1>{{ .Title }} - {{ .Section | upper }}</h1>
-			<ul class="article-tags">
-  			{{ range .Params.tags }}
-    		<li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
-  			{{ end }}
-			</ul>
-		</header>
-		{{ partial "social_share.html" . }}
-		{{ .Content }}
-	</article>
-	<!-- This sample single layout shows how to set up disqus_comments conditionals at both the Site Param and Page Param level.  -->
-	{{if and .Params.comments .Site.Params.UseDisqus }}
-		{{ partial "disqus_comments.html" . }}
-	{{ end }}
+<main role="main">
+    <article class="content">
+        <div class="category">{{range .Params.categories}}
+            <a href="/categories/{{.|urlize}}">{{.}}</a> {{end}}
+        </div>
+        <time datetime="{{.PublishDate}}">{{.PublishDate.Format "Jan 2, 2006"}}</time>
+        <header>
+            <h1>{{ .Title }}</h1>
+        </header>
+        {{ .Content }}
+        <ul class="tags">
+            {{ range .Params.tags }}
+            <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
+            {{ end }}
+        </ul>
+    </article>
 </main>
 {{ partial "site_footer.html" . }}

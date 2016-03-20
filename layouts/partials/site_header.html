@@ -1,11 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
-<!--[if lt IE 9]>
-	<link rel="stylesheet" type="text/css" href="ie8-and-down.css" />
-<![endif]-->
 <head>
 	<script src="//use.typekit.net/lfy4ghr.js"></script>
-	<script>try{Typekit.load({ async: true });}catch(e){}</script>
+	<script>try{Typekit.load({ async: false });}catch(e){}</script>
 	{{ partial "site_header/metadata_standard.html" . }}
 	{{ partial "site_header/metadata_opengraph.html" . }}
 	{{ partial "site_header/metadata_twitter.html" . }}
@@ -21,11 +18,17 @@
 	<script src="/assets/js/lunr.min.js"></script>
 </head>
 <body>
-	<header class="site-header">
-		<a href="#" id="site-header-toggle">Toggle Menu</a>
-			{{ partial "site_header/site_navigation.html" . }}
-			{{ partial "site_header/site_copyright.html" . }}
+	<a href="/" class="site-logo" >
+	{{ partial "svgs/site-logo.svg" . }}
+	</a>
+	<header>
+	<div class="header-toggle-container">
+		<a href="#" id="site-header-toggle">
+		&#9776;
+			<!-- {{partial "svgs/menu-icon.svg" . }} -->
+		</a>
+	</div>
+		{{ partial "site_header/site_navigation.html" . }}
 	</header>
-	<a href="#" id="search-button">Search</a>
-			{{ partial "site_header/site_search_form.html" . }}
+		{{ partial "site_header/site_search_form.html" . }}
 

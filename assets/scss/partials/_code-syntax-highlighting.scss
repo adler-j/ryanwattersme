@@ -7,8 +7,16 @@
 }
 
 pre {
-  //allows code blocks to wrap for responsive
+    //allows code blocks to wrap for responsive
     white-space: pre-wrap;
+    @include MQ(M) {
+        width: 110%!important;
+        width: 110vw!important;
+        margin-left: -5%;
+        code {
+            padding-left: 10%;
+        }
+    }
 }
 
 // Modified from https://github.com/isagalaev/highlight.js/blob/master/src/styles/monokai-sublime.css
@@ -18,12 +26,15 @@ pre {
     display: block;
     overflow-x: auto;
     padding: 0.5em;
-    background: darken($body-background-color,5%);
-    font-size:.9em;
-    font-weight:400;
-    font-family:'inconsolata',monospace;
-    @include MQ(M){
-      font-size:1em;
+    background: darken($body-background-color, 5%);
+    font-size: .9em;
+    font-weight: 400;
+    font-family: 'inconsolata', monospace;
+    @include MQ(M) {
+        font-size: 1em;
+        padding-left: 5%;
+        width:110%;
+        width:110vw;
     }
 }
 
