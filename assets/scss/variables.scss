@@ -23,11 +23,14 @@ $gray: lighten($base-font-color,20%);
 $body-background-color:#ffffff;
 $input-placeholder-text-color:lighten($base-font-color,20%);
 $site-menu-background-color:$base-font-color;
+$site-logo-color:$base-font-color;
 $accent-color:$brand;
 $dropcap-color:$accent-color;
 $site-logo-color:$base-font-color;
-$blockquote-border-color:lighten($base-font-color,15%);
-$blockquote-background-color:darken($body-background-color,3%);
+$blockquote-border-color:$accent-color;
+$blockquote-background-color:$body-background-color;
+$blockquote-font-size:1.4em;
+$blockquote-font-style:regular;
 
 //Anchors
 $anchor-color: $brand;

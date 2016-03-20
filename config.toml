@@ -55,7 +55,7 @@ watch = true
 
 [taxonomies]
   tag = "tags"
-  categories = "categories"
+  category = "categories"
 
 
 

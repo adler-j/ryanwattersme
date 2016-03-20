@@ -1,0 +1,92 @@
+h1 {
+    font-size: 2.8em;
+    margin-top: .3em;
+    margin-bottom: 6px;
+    font-weight: 600;
+    @include MQ(M) {
+        font-size: 3.5em;
+    }
+    @include MQ(L) {
+        font-size: 4rem;
+    }
+}
+
+h2 {
+    font-size: 1em;
+    text-transform: uppercase;
+    margin-bottom: 1em;
+}
+
+h3,
+h4 {
+    margin-bottom: .3em;
+    margin-top: 1em;
+}
+
+h3 {
+    font-size: 2em;
+}
+
+h4 {
+    font-size: 1.1em;
+    color: lighten($base-font-color, 20%);
+    padding-bottom: .1em;
+    margin-bottom: .3em;
+    text-transform: uppercase;
+}
+
+span.dropcap {
+    padding-right: 2px;
+}
+
+blockquote {
+    display: block;
+    background: $blockquote-background-color;
+    padding: 15px 20px 15px 55px;
+    margin: 0 0 20px;
+    position: relative;
+    font-family: $heading-font-family, Georgia, serif;
+    font-size: $blockquote-font-size;
+    color: $base-font-color;
+    text-align: justify;
+    border-left: 4px solid $blockquote-border-color;
+    border-right: 1px solid $blockquote-border-color;
+    p{
+        line-height: 1.2;
+        font-style:$blockquote-font-style;
+    }
+}
+
+blockquote::before {
+    content: "\201C";
+    font-family: $heading-font-family, Georgia, serif;
+    font-size: 70px;
+    font-weight: regular;
+    color: $blockquote-border-color;
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+blockquote::after {
+    /*Reset to make sure*/
+    content: "";
+}
+
+cite.blockquote-citation {
+    display: block;
+    width: 100%;
+    clear: both;
+    font-style: normal;
+    font-weight: bold;
+    text-align: left;
+    margin-bottom: 0px;
+    margin-bottom: .3em;
+    padding-bottom: 0px;
+    a {
+        border-bottom:none;
+        color:$base-font-color;
+        font-weight:600;
+        font-size:.8em;
+    }
+}

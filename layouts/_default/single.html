@@ -1,22 +1,25 @@
 {{ partial "site_header.html" . }}
 <main role="main">
-    <article class="content">
-        <div class="category">{{range .Params.categories}}
-            <a href="/categories/{{.|urlize}}">{{.}}</a> {{end}}
-        </div>
+    <article class="content" id="{{.Title|urlize}}">
+        {{range .Params.categories}}
+            <a href="/categories/{{.|urlize}}" class="category">{{.}}</a>
+        {{end}}
         <time datetime="{{.PublishDate}}">{{.PublishDate.Format "Jan 2, 2006"}}</time>
         <header>
             <h1>{{ .Title }}</h1>
             {{with .Params.subtitle}}
             <h2>{{.}}</h2>
             {{end}}
+            {{ if eq .Section "blog" }}
+                {{ partial "share_social_media.html" . }}
+            {{ end }}
         </header>
         {{ .Content }}
-        <ul class="tags">
+    </article>
+    <ul class="tags"><span>tags:</span>
             {{ range .Params.tags }}
             <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
             {{ end }}
-        </ul>
-    </article>
+    </ul>
 </main>
 {{ partial "site_footer.html" . }}

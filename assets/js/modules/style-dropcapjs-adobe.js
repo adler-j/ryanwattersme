@@ -129,11 +129,10 @@ if ((firstPara !== null) && (location.pathname.split('/').length > 2) && blogTes
     //switching out text of first paragraph to include dropcap span plus the remaining text of the paragraph
     firstPara.innerHTML = firstLetter + remainingText;
 } else {
-    console.log("Nope!");
+    console.log("Dropcaps.js is not being applied to this page!");
 }
 var dropcap = document.querySelector(".dropcap");
 if (dropcap !== null) {
     dropcap.style.fontFamily = "'baskerville',Georgia,serif";
-    window.Dropcap.layout(dropcap, 3);
-    console.log("What the hell");
+    window.Dropcap.layout(dropcap, 2);
 }

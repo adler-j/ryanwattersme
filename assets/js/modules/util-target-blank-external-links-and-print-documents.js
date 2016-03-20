@@ -16,7 +16,7 @@
       a[i].setAttribute('target', '_blank');
     } else if(mailTo.test(a[i].href)){
       a[i].setAttribute('target','');
-    } 
+    }
     else if (!internal.test(theHost)) { // make sure the href doesn't contain current site's host
       a[i].setAttribute('target', '_blank'); // if it doesn't, set attributes
     }

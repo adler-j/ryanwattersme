@@ -1,5 +1,6 @@
 //Convenient Brand Colors. Notice both color and fill are added so that classes can be added to embedded SVGs for quick styling.
 $socials: (
+email:$accent-color,
 facebook:#3b5998,
 foursquare:#0072b1,
 github:#AB5B50,
@@ -18,7 +19,7 @@ youtube:#bb0000
 
 @each $social,
 $socialcolor in $socials {
-    .#{$social}:hover {
+    .icon-#{$social}:hover {
         fill: $socialcolor;
         color: $socialcolor;
     }

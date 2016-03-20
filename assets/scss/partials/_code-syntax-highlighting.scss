@@ -1,9 +1,19 @@
 @font-face {
-    font-family: "Inconsolata";
+    font-family: "inconsolata";
     src: url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.eot");
     src: url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.woff") format("woff"), url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.ttf") format("truetype"), url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.svg") format("svg");
     font-weight: 400;
     font-style: normal
+}
+
+p > code {
+    font-family: 'inconsolata', courier, monospace;
+    color:$base-font-color;
+    background-color:lighten($base-font-color,70%);
+    padding-left:.1em;
+    padding-right:.1em;
+    margin-left:-.1em;
+    margin-right:-.1em;
 }
 
 pre {
