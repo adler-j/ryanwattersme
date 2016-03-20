@@ -196,6 +196,10 @@ main > article {
 //     }
 // }
 
+span.dropcap {
+	color:$red;
+}
+
 
 div.navigation-wrapper {
 	width:80%;
@@ -390,8 +394,8 @@ blockquote {
     padding: 15px 20px 15px 55px;
     margin: 0 0 20px;
     position: relative;
-    // font-family: $heading-font-family,Georgia, serif;
-    font-size: 1.1em;
+    font-family: $heading-font-family,Georgia, serif;
+    font-size: 1em;
     line-height: 1.2;
     color: $base-font-color;
     text-align: justify;
