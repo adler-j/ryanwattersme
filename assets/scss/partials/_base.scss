@@ -59,6 +59,10 @@ a {
     font-weight: $anchor-weight;
     transition: $anchor-transition;
     text-decoration: $anchor-default-text-decoration;
+    cursor:pointer;
+    &:hover {
+        color:$anchor-hover-color;
+    }
 }
 
 em,
@@ -83,4 +87,9 @@ input[type=search] {
     @include placeholder {
         color: $input-placeholder-text-color;
     }
+}
+
+small {
+    text-transform:uppercase;
+    font-size:.5em;
 }

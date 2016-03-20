@@ -3,7 +3,7 @@ HUGO STARTER - DROPCAP SCRIPT
 The following allows for dropcap styling of the first letter of the first paragraph in <article>'s with the "content" class. This module allows for extra styling but can be commented our or removed altogether if not needed.*/
 //grab first paragraph in article.content
 var firstPara = document.querySelector('main > article > p:nth-of-type(1)');
-if (firstPara !== null) {
+if (firstPara !== null && location.pathname !== "/") {
     //assign text of first paragraph to firstParaText
     var firstParaText = firstPara.innerHTML;
     //grab first letter of firstParaText and wrap in span.dropcap

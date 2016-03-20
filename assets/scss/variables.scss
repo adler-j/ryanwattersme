@@ -10,6 +10,7 @@ $heading-font-weight: 400;
 $base-line-height: 1.5em;
 $base-font-size: 20px;
 $base-font-weight:400;
+$site-menu-width: 200px;
 
 //Color Palette
 
@@ -25,9 +26,12 @@ $site-menu-background-color:$base-font-color;
 $accent-color:$brand;
 $dropcap-color:$accent-color;
 $site-logo-color:$base-font-color;
+$blockquote-border-color:lighten($base-font-color,15%);
+$blockquote-background-color:darken($body-background-color,3%);
 
 //Anchors
-$anchor-color: $base-font-color;
+$anchor-color: $brand;
 $anchor-weight: bold;
 $anchor-transition: all .3s ease-in-out;
+$anchor-hover-color: $base-font-color;
 $anchor-default-text-decoration: none;

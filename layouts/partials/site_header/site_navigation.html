@@ -1,7 +1,23 @@
-<nav role="navigation" aria-label="main navigation" class="site-navigation">
-    <ul>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-    </ul>
-</nav>
+<div class="navigation-wrapper left">
+    <div class="site-title">
+        <!-- <i class="icon-rw-site-logo"></i>  -->Ryan Watters</div>
+    <nav role="navigation" aria-label="main navigation" class="site-navigation">
+        <ul>
+        		<li><a href="/">Home</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="#" id="search-toggle">Search <i class="icon-search"></i></a></li>
+        </ul>
+    </nav>
+</div>
+<div class="navigation-wrapper right">
+    <nav class="social">
+        <ul>
+            <li><a href="mailto:ryan@ryanwatters.io"><i class="icon-mail"></i></a></li>
+            <li><a href="https://www.twitter.com/@{{.Site.Params.Twitter}}"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://www.github.com/{{.Site.Params.GitHub}}"><i class="icon-github"></i></a></li>
+            <li><a href="{{.Site.Params.LinkedIn}}"><i class="icon-linkedin-1"></i></a></li>
+        </ul>
+    </nav>
+    <div class="copyright">&copy; {{.Site.LastChange.Format "2006" }} {{.Site.Copyright}}</div>
+</div>
