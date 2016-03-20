@@ -173,28 +173,29 @@ main > article {
     }
 }
 
-article.content > p:nth-of-type(1) {
-    font-size: 1.1em;
-}
+// article.content > p:nth-of-type(1) {
+//     font-size: 1.1em;
+// }
 
-span.dropcap {
-    float: left;
-    color: $red;
-    font-size: 70px;
-    line-height: 38px;
-    padding-top: 12px;
-    padding-right: 8px;
-    padding-left: 0px;
-    margin-bottom: -8px;
-    font-family: $heading-font-family;
-    @include MQ(M) {
-        font-size: 70px;
-        line-height: 43px;
-        padding-bottom: 4px;
-        margin-bottom: 4px;
-        padding-top: 9px;
-    }
-}
+// span.dropcap {
+//     float: left;
+//     color: $red;
+//     font-size: 70px;
+//     line-height: 38px;
+//     padding-top: 12px;
+//     padding-right: 8px;
+//     padding-left: 0px;
+//     margin-bottom: -8px;
+//     font-family: $heading-font-family;
+//     @include MQ(M) {
+//         font-size: 70px;
+//         line-height: 43px;
+//         padding-bottom: 4px;
+//         margin-bottom: 4px;
+//         padding-top: 9px;
+//     }
+// }
+
 
 div.navigation-wrapper {
 	width:80%;
