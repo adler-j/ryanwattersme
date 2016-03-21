@@ -16,7 +16,7 @@ $site-menu-width: 200px;
 
 $base-font-color:#333333;
 $white:#ffffff;
-$red:darken(red,25%);
+$red:darken(red,15%);
 $orange:darken(orange,5%);
 $brand:darken(#01589B,10%);
 $gray: lighten($base-font-color,20%);
@@ -24,7 +24,7 @@ $body-background-color:#ffffff;
 $input-placeholder-text-color:lighten($base-font-color,20%);
 $site-menu-background-color:$base-font-color;
 $site-logo-color:$base-font-color;
-$accent-color:$brand;
+$accent-color:$red;
 $dropcap-color:$accent-color;
 $site-logo-color:$base-font-color;
 $blockquote-border-color:$accent-color;

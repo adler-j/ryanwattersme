@@ -1,4 +1,14 @@
 //Begin Navigation
+nav {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0px;
+    padding-top: 0px;
+    text-align:right;
+}
 nav[role="navigation"] {
     z-index: 99;
     ul {
@@ -9,11 +19,12 @@ nav[role="navigation"] {
             margin-bottom: .75em;
             a {
                 font-weight: normal;
-                text-align: left;
+                text-align: right;
                 cursor: pointer!important;
                 text-transform: lowercase;
                 z-index: 9999;
                 font-size: 1.2em;
+                color:lighten($base-font-color,15%);
                 i.icon-search {
                     font-size: .7em;
                 }
