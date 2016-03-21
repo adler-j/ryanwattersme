@@ -133,6 +133,5 @@ if ((firstPara !== null) && (location.pathname.split('/').length > 2) && blogTes
 }
 var dropcap = document.querySelector(".dropcap");
 if (dropcap !== null) {
-    dropcap.style.fontFamily = "'baskerville',Georgia,serif";
     window.Dropcap.layout(dropcap, 2);
 }

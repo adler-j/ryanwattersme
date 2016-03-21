@@ -27,8 +27,6 @@ Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite tre
 
 Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/c0-Ti74fucA" frameborder="0" allowfullscreen></iframe>
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
 
 ```javascript

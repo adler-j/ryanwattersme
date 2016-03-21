@@ -2,13 +2,13 @@ $S: 640px;
 $M: 800px;
 $L: 1000px;
 
-$base-font-family: 'proxima-nova', 'helvetica Neue', Helvetica, sans-serif;
-$heading-font-family: "baskerville-urw",Georgia,serif;
+$base-font-family: 'chaparral-pro', 'helvetica Neue', Helvetica, sans-serif;
+$heading-font-family: "futura-pt",Georgia,serif;
 $heading-font-weight: 400;
 
 //Sizing
 $base-line-height: 1.58;
-$base-font-size: 20px;
+$base-font-size: 22px;
 $base-font-weight:400;
 $site-menu-width: 170px;
 
@@ -20,15 +20,19 @@ $red:darken(red,15%);
 $orange:darken(orange,5%);
 $brand:darken(#01589B,10%);
 $gray: lighten($base-font-color,20%);
+$site-logo-color:$base-font-color;
 $body-background-color:#ffffff;
 $input-placeholder-text-color:lighten($base-font-color,20%);
 $site-menu-background-color:$base-font-color;
 $site-logo-color:$base-font-color;
 $accent-color:$red;
+
+$dropcap-font-family:$heading-font-family;
 $dropcap-color:$accent-color;
-$site-logo-color:$base-font-color;
+
+$blockquote-font-family: $base-font-family;
 $blockquote-border-color:$accent-color;
-$blockquote-background-color:$body-background-color;
+$blockquote-background-color:darken($body-background-color,2%);
 $blockquote-font-size:1.2em;
 $blockquote-font-style:regular;
 

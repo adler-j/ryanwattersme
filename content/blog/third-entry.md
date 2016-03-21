@@ -1,5 +1,5 @@
 ---
-title: Sample 3.
+title: The Third and Most Recent Post
 subtitle:
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit animi dolorum consequatur, facilis perspiciatis explicabo commodi!
 date: 2016-03-20

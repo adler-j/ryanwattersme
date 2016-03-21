@@ -35,7 +35,7 @@
         {{if and .IsPage .Section}}
             <section class="next-and-previous-links">
                 {{with .PrevInSection }}
-                <a href="{{.Permalink}}" class="prev-link" title="Read the previous published article, {{.Title}}"><i class="icon-previous"></i> Previous</a>
+                <a href="{{.Permalink}}" class="prev-link" title="Read the previously published article, {{.Title}}"><i class="icon-previous"></i> Previous</a>
                 {{end}}
                 <a href="/{{.Section | urlize }}" class="section-title"><h2>{{.Section}}</h2></a>
                 {{with .NextInSection }}
