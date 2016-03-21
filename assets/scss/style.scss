@@ -162,7 +162,8 @@ main > article {
 article.content {
     a.category {
         width: auto;
-        border-bottom: 1px solid $base-font-color;
+        // border-bottom: 1px solid $base-font-color;
+        box-shadow: 0 -1px 0 $base-font-color inset;
         cursor: pointer;
         color: $base-font-color;
         font-size: .8em;
@@ -230,23 +231,43 @@ article > time {
 
 main > article.content a,
 article.homepage a {
-    border-bottom: 1px solid darken($body-background-color, 25%);
-    font-weight: 500;
-    transition: background-color 0.3s, border-color 0.3s;
+    font-size:inherit;
+    color:$brand;
+    transition:box-shadow ease 250ms,color ease 250ms;
+    cursor:pointer;
+    text-decoration:none;
+    box-shadow: 0 -1px 0 $brand inset;
+    font-weight:inherit;
+    padding-left:3px;
+    padding-right:3px;
+    margin-left:-3px;
+    margin-right:-3px;
+    background-color:transparent;
     &:hover {
-        border-color: rgba(52, 73, 94, 0);
-        background-color: $anchor-color;
-        color: $white;
-        padding-left: .2em;
-        padding-right: .2em;
-        margin-left: -.2em;
-        margin-right: -.2em;
-        padding-top: .2em;
-        padding-bottom: .2em;
-        margin-top: -.2em;
-        margin-bottom: -.2em;
+        color:$body-background-color;
+        box-shadow: 0 -1.5em 0 $brand inset;
     }
 }
+
+
+// {
+//     border-bottom: 1px solid darken($body-background-color, 25%);
+//     font-weight: 500;
+//     transition: background-color 0.3s, border-color 0.3s;
+//     &:hover {
+//         border-color: rgba(52, 73, 94, 0);
+//         background-color: $anchor-color;
+//         color: $white;
+//         padding-left: .2em;
+//         padding-right: .2em;
+//         margin-left: -.2em;
+//         margin-right: -.2em;
+//         padding-top: .2em;
+//         padding-bottom: .2em;
+//         margin-top: -.2em;
+//         margin-bottom: -.2em;
+//     }
+// }
 
 
 

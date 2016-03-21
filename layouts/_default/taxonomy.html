@@ -4,7 +4,7 @@
 	<article>
 	<header>
 		{{ $data := .Data }}
-		<a href="/{{$data.Plural}}/" title="See all site content by {{$data.Plural}}.">&larr; See all {{ $data.Plural }}</a>
+		<a href="/{{$data.Plural}}/" title="See all site content by {{$data.Plural}}.">&larr; all {{ $data.Plural }}</a>
 		<h1><small>{{$data.Singular}}:</small> {{ .Title }}</h1>
 	</header>
 	<ul class="contents-list">

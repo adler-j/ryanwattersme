@@ -1,5 +1,5 @@
 ---
-title: Totally. Fucked.
+title: Sample Post.
 subtitle: Trump's candidacy has gone from hilarious to horrifying.
 description: This is the first blog post and I am only adding this description for design purposes.
 date: 2016-03-19

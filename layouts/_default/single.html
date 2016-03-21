@@ -1,6 +1,9 @@
 {{ partial "site_header.html" . }}
 <main role="main">
     <article class="content" id="{{.Title|urlize}}">
+        {{ if eq .Section "blog" }}
+                {{ partial "next_and_previous_links.html" . }}
+            {{ end }}
         {{range .Params.categories}}
             <a href="/categories/{{.|urlize}}" class="category">{{.}}</a>
         {{end}}

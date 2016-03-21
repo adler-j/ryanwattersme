@@ -55,9 +55,12 @@ ul.contents-list {
     width: 100%;
     position: relative;
     li {
-        border-bottom: .5px dashed lighten($base-font-color, 25%);
+
         a {
             cursor: pointer;
+            display:block;
+            height:auto;
+            border-bottom: .5px dashed lighten($base-font-color, 25%);
             h3 {
                 color: $base-font-color;
             }
@@ -74,15 +77,17 @@ ul.contents-list {
                 text-decoration: underline;
             }
             &:hover {
-                color: $brand;
+                color: $body-background-color;
+                background-color: $base-font-color;
+                border-bottom: .5px solid lighten($base-font-color, 25%);
                 h3 {
-                    color: $brand;
+                    color: $body-background-color;
                 }
                 p {
-                    color: $brand;
+                    color: $body-background-color;
                 }
                 time {
-                    color: $brand;
+                    color: $body-background-color;
                 }
             }
         }
