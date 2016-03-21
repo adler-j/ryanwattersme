@@ -88,6 +88,7 @@ ul.contents-list {
                 font-size: .7em;
                 color: $base-font-color;
                 font-weight:normal;
+                font-family:$heading-font-family;
             }
             &:hover {
                 color: $anchor-color;
