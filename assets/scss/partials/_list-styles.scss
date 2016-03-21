@@ -12,6 +12,7 @@ nav {
 
 nav[role="navigation"] {
     z-index: 99;
+    margin-top:3.5em;
     ul {
         list-style: none;
         margin-left: .2em;
@@ -52,9 +53,8 @@ nav.social {
             display: inline;
             a {
                 font-size: 1em;
-                i.icon-mail,
-                i.icon-rss {
-                    font-size: .8em;
+                @include MQ(M){
+                    font-size:.9em;
                 }
             }
         }
