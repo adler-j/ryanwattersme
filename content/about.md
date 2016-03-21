@@ -21,7 +21,7 @@ People have told me to write a blog for the last decade. I didn't fall in love w
 
 #### Content
 
-All content for the site is written in clean, semantic [markdown](https://daringfireball.net/projects/markdown/). Extensions to the markdown are rendered on the client via [several JavaScript modules](https://github.com/rdwatters/ryanwattersme/tree/master/assets/js/modules). That said, my aim was to create CMS-independent content that could be easily ported to any [static site generator](https://www.staticgen.com/) that interprets markdown files with embedded yaml.
+All content for the site is written in clean, semantic [markdown](https://daringfireball.net/projects/markdown/) according to the latest [commonmark spec](http://spec.commonmark.org/). Extensions to the markdown are rendered on the client via [several JavaScript modules](https://github.com/rdwatters/ryanwattersme/tree/master/assets/js/modules). That said, my aim was to create CMS-independent content that could be easily ported to any [static site generator](https://www.staticgen.com/) that interprets markdown files with embedded yaml.
 
 #### Design
 

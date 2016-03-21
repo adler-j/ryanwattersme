@@ -90,16 +90,16 @@ ul.contents-list {
                 font-weight:normal;
             }
             &:hover {
-                color: $accent-color;
-                border-bottom: .5px solid lighten($base-font-color, 25%);
+                color: $anchor-color;
+                border-bottom: .5px solid $anchor-color;
                 h3 {
-                    color: $accent-color;
+                    color: $anchor-color;
                 }
                 p {
-                    color: $accent-color;
+                    color: $anchor-color;
                 }
                 time {
-                    color: $accent-color;
+                    color: $anchor-color;
                 }
             }
         }

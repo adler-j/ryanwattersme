@@ -3,7 +3,7 @@ h1 {
     margin-top: .3em;
     margin-bottom: 6px;
     font-weight: 600;
-    line-height:1;
+    line-height: 1;
     @include MQ(M) {
         font-size: 3.5em;
     }
@@ -25,7 +25,7 @@ h4 {
 }
 
 h3 {
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 h4 {
@@ -37,12 +37,12 @@ h4 {
 }
 
 span.dropcap {
-    margin-right:.1em;
-    padding-bottom:-.2em;
-    margin-bottom:-.2em;
-    margin-top:.15em!important;
-    color:$accent-color;
-    font-family:$dropcap-font-family;
+    margin-right: .1em;
+    padding-bottom: -.2em;
+    margin-bottom: -.2em;
+    margin-top: .15em!important;
+    color: $accent-color;
+    font-family: $dropcap-font-family;
 }
 
 blockquote {
@@ -56,9 +56,9 @@ blockquote {
     color: $base-font-color;
     border-left: 3px solid $blockquote-border-color;
     border-right: 1px solid $blockquote-border-color;
-    p{
+    p {
         line-height: 1.4;
-        font-style:$blockquote-font-style;
+        font-style: $blockquote-font-style;
     }
 }
 
@@ -78,19 +78,30 @@ blockquote::after {
     content: "";
 }
 
-cite.blockquote-citation {
-    display: block;
-    width: 100%;
-    clear: both;
-    font-style: normal;
-    text-align: left;
-    margin-bottom: 0px;
-    margin-bottom: .3em;
-    padding-bottom: 0px;
+blockquote {
     a {
-        border-bottom:none;
-        color:$base-font-color;
-        font-weight:600;
-        font-size:.8em;
+        border-bottom: none;
+        color: $base-font-color;
+        font-weight: 600;
+        font-size: .8em;
+    }
+    cite.blockquote-citation {
+        display: block;
+        width: 100%;
+        clear: both;
+        font-style: normal;
+        text-align: left;
+        margin-bottom: 0px;
+        margin-bottom: .3em;
+        padding-bottom: 0px;
+        a {
+            border-bottom: none;
+            color: $base-font-color!important;
+            font-weight: 600;
+            font-size: .8em;
+            &:hover {
+                color:$body-background-color!important;
+            }
+        }
     }
 }
