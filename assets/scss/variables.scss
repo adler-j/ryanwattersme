@@ -1,6 +1,11 @@
-$S: 640px;
-$M: 800px;
-$L: 1000px;
+/***************MEDIA QUERIES*****************/
+//https://css-tricks.com/snippets/css/media-queries-for-standard-devices/
+// Tablet
+$M:668px;
+// Desktop
+$L:1025px;
+// XL Screens
+$XL:1200px;
 
 $base-font-family: 'chaparral-pro', 'helvetica Neue', Helvetica, sans-serif;
 $heading-font-family: "futura-pt",Georgia,serif;

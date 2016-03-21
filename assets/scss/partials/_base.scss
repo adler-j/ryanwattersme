@@ -9,8 +9,11 @@ html a {
 }
 
 body {
-    font-size: 90%;
+    font-size: 80%;
     @include MQ(M) {
+        font-size: 90%;
+    }
+    @include MQ(L) {
         font-size: 100%;
     }
     font-family: $base-font-family;
@@ -59,9 +62,9 @@ a {
     font-weight: $anchor-weight;
     transition: $anchor-transition;
     text-decoration: $anchor-default-text-decoration;
-    cursor:pointer;
+    cursor: pointer;
     &:hover {
-        color:$anchor-hover-color;
+        color: $anchor-hover-color;
     }
 }
 
@@ -90,6 +93,6 @@ input[type=search] {
 }
 
 small {
-    text-transform:uppercase;
-    font-size:.5em;
+    text-transform: uppercase;
+    font-size: .5em;
 }
