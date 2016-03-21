@@ -41,12 +41,13 @@ a.site-logo {
 
 #site-header-toggle {
     position: absolute;
-    top: .5em;
+    top: .25em;
     right: .5em;
     font-weight: normal;
     font-size: 1.6em;
     color: $base-font-color;
     background-color: $body-background-color;
+    font-family:$base-font-family;
     z-index: 9999;
     cursor: pointer;
     @include MQ(M) {
@@ -71,7 +72,38 @@ a.site-logo {
     right: 0px;
     width: 100%;
     height: 3em;
-    box-shadow: 0 2px 2px -1px lighten($base-font-color, 30%);
+    // box-shadow: 0 2px 2px -1px lighten($base-font-color, 30%);
+    border-bottom: 1.5px solid #f0f0f0;
+}
+
+a.section-title {
+    width: 20%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 40%;
+    text-align: center;
+    font-family: $heading-font-family;
+    height: 2em;
+    line-height: 2em;
+    vertical-align:center;
+    font-size:.8em;
+    margin-top: .75em;
+    border: 1px solid $base-font-color;
+    box-shadow: none;
+    color: $base-font-color;
+    &:hover {
+        box-shadow: none;
+        color: $base-font-color;
+        background-color: $base-font-color;
+        color: $body-background-color;
+    }
+    h2 {
+        margin-bottom: 0px;
+        padding-right:.5em;
+        padding-left:.5em;
+    }
 }
 
 .headroom {
@@ -106,7 +138,7 @@ body > header {
     min-height: 100%;
     min-height: 100vh;
     background-color: white;
-    border-left:1px solid #f0f0f0;
+    border-left: 1px solid #f0f0f0;
     // box-shadow: 0px 0px 5px 0px rgba(51, 51, 51, 0.5);
     z-index: 3;
     @include transform(translateX(101%));
@@ -179,13 +211,11 @@ article.content.blog header {
     margin-top: 1em;
 }
 
-
-
 .site-title {
-    font-size: 1.8em;
+    font-size: 1.3em;
     line-height: 1.2;
     font-family: $heading-font-family;
-    margin: 1em 0px;
+    margin: 1.5em 0px .25em 0px;
     width: 80%;
     margin-left: 10%;
     .icon-rw-site-logo {
@@ -229,7 +259,8 @@ article > time.publishdate {
 }
 
 main > article.content a,
-article.homepage a, a.back {
+article.homepage a,
+a.back {
     font-size: inherit;
     color: $brand;
     transition: box-shadow ease 250ms, color ease 250ms;
@@ -249,20 +280,20 @@ article.homepage a, a.back {
 }
 
 article.homepage {
-    display:flex;
-    flex-direction:column;
-    min-height:100%;
-    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    min-height: 100vh;
 }
 
 article#about {
     img {
-        width:40%;
+        width: 40%;
         max-width: 150px;
-        float:right;
-        padding-bottom:0px;
-        margin-top:1em;
-        margin-left:.5em;
+        float: right;
+        padding-bottom: 0px;
+        margin-top: 1em;
+        margin-left: .5em;
         box-shadow: 0px 0px 4px 0px rgba(51, 51, 51, 0.5);
     }
     time {
@@ -306,10 +337,10 @@ div.category-and-publishdate {
         padding-bottom: 0px;
         margin-bottom: 0px;
         line-height: 1;
-        width: 40%;
+        width: 20%;
         max-width: 40%;
         font-size: .8em;
-        margin-top: auto;
+        margin-top: .5em;
         &:hover {
             box-shadow: none;
             color: $base-font-color;
@@ -317,41 +348,12 @@ div.category-and-publishdate {
     }
     .prev-link {
         position: absolute;
-        justify-content:flex-start;
-        left: 0px;
+        left: 15%;
         top: .25em;
     }
     .next-link {
         position: absolute;
-        right: 0px;
+        right: 15%;
         top: .25em;
-    }
-    a.blog-section-title {
-        width: 18%;
-        position: absolute;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        left: 41%;
-        text-align: center;
-        font-family: $heading-font-family;
-        font-size: .8em;
-        padding-top: .3em;
-        padding-bottom: .3em;
-        border: 1px solid $base-font-color;
-        box-shadow: none;
-        color: $base-font-color;
-        &:hover {
-            box-shadow: none;
-            color: $base-font-color;
-            background-color: $base-font-color;
-            color: $body-background-color;
-        }
-        h2 {
-            line-height: 1.5em;
-            height: 1.5em;
-            font-size: 1.2em;
-            margin-bottom: 0px;
-        }
     }
 }

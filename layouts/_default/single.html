@@ -1,10 +1,6 @@
 {{ partial "site_header.html" . }}
 <main role="main">
     <article class="content {{.Section}}" id="{{.Title|urlize}}">
-        {{ if eq .Section "blog" }}
-                {{ partial "next_and_previous_links.html" . }}
-        {{ end }}
-
         <header>
 
             <h1>{{ .Title }}</h1>

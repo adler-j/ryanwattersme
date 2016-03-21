@@ -22,6 +22,7 @@ nav[role="navigation"] {
                 text-align: right;
                 cursor: pointer!important;
                 text-transform: lowercase;
+                font-family:$heading-font-family;
                 z-index: 9999;
                 font-size: 1.2em;
                 color:lighten($base-font-color,15%);
