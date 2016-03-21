@@ -10,7 +10,7 @@
             <li>
               <a href="{{ .Permalink }}">
               <h3>{{.Title}}</h3>
-              <time>{{ .PublishDate.Format "2006-01-02" }}</time>
+              <time>{{ dateFormat "2006-01-02" .PublishDate  }}</time>
               <p>{{ .Description }}</p>
               </a>
             </li>
