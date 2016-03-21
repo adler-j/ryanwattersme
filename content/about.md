@@ -15,7 +15,7 @@ comments: First attempt at creating the About page for ryanwatters.io
 
 My name is Ryan. I am a content strategist, editor, writer, and web publisher living Chicago, IL.
 
-People have told me to write a blog for the last decade. I didn't fall in love with the web until 2013. I'm trying to catch up.
+People have told me to write a blog for the last decade, but I didn't fall in love with the web until 2013. I'm trying to catch up.
 
 ### The Site
 
@@ -25,7 +25,7 @@ All content for the site is written in clean, semantic [markdown](https://daring
 
 #### Design
 
-This site uses two premium typefaces, Baskerville and Proxima Nova, both of which are provided via [Adobe's Typekit web service](https://typekit.com/fonts).
+This site uses two premium typefaces, Chaparral Pro and Futura PT, both of which are provided via [Adobe's Typekit web service](https://typekit.com/fonts).
 
 #### Development
 

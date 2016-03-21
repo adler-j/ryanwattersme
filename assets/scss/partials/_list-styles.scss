@@ -7,8 +7,9 @@ nav {
     margin-right: auto;
     margin-top: 0px;
     padding-top: 0px;
-    text-align:right;
+    text-align: right;
 }
+
 nav[role="navigation"] {
     z-index: 99;
     ul {
@@ -22,10 +23,10 @@ nav[role="navigation"] {
                 text-align: right;
                 cursor: pointer!important;
                 text-transform: lowercase;
-                font-family:$heading-font-family;
+                font-family: $heading-font-family;
                 z-index: 9999;
                 font-size: 1.2em;
-                color:lighten($base-font-color,15%);
+                color: lighten($base-font-color, 15%);
                 i.icon-search {
                     font-size: .7em;
                 }
@@ -43,7 +44,7 @@ nav.social {
     ul {
         width: 100%;
         display: flex;
-        flex-wrap:wrap;
+        flex-wrap: wrap;
         justify-content: space-around;
         padding-left: 0px;
         margin-left: 0px;
@@ -51,7 +52,8 @@ nav.social {
             display: inline;
             a {
                 font-size: 1em;
-                i.icon-mail,i.icon-rss {
+                i.icon-mail,
+                i.icon-rss {
                     font-size: .8em;
                 }
             }
@@ -67,12 +69,11 @@ ul.contents-list {
     width: 100%;
     position: relative;
     li {
-        position:relative;
-
+        position: relative;
         a {
             cursor: pointer;
-            display:block;
-            height:auto;
+            display: block;
+            height: auto;
             border-bottom: .5px dashed lighten($base-font-color, 25%);
             h3 {
                 color: $base-font-color;
@@ -87,8 +88,8 @@ ul.contents-list {
                 right: 0px;
                 font-size: .7em;
                 color: $base-font-color;
-                font-weight:normal;
-                font-family:$heading-font-family;
+                font-weight: normal;
+                font-family: $heading-font-family;
             }
             &:hover {
                 color: $anchor-color;
@@ -102,6 +103,26 @@ ul.contents-list {
                 time {
                     color: $anchor-color;
                 }
+                &::after {
+                    border: $anchor-color 1px solid;
+                }
+            }
+        }
+        &:after {
+            display: block;
+            content: "";
+            width: 7px;
+            height: 7px;
+            border: lighten($base-font-color, 20%) 1px solid;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            margin-left: -5px;
+            background: $body-background-color;
+            border-radius: 100%;
+            box-shadow: #FFF 0 0 0 5px;
+            &:hover {
+                border: $anchor-color 1px solid;
             }
         }
     }

@@ -199,6 +199,7 @@ article.content {
         box-shadow: 0 -1px 0 $base-font-color inset;
         cursor: pointer;
         color: $base-font-color;
+        font-family:$heading-font-family;
         font-size: .7em;
         text-transform: uppercase;
         small {
@@ -250,12 +251,13 @@ article img {
     }
 }
 
-article > time.publishdate {
+article time.publishdate {
     position: absolute;
     top: 0;
     right: 0;
     font-size: .8em;
     text-transform: uppercase;
+    font-family:$heading-font-family;
 }
 
 main > article.content a,
