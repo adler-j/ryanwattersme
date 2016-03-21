@@ -1,18 +1,22 @@
 {{ partial "site_header.html" . }}
 <main role="main">
-    <article class="content" id="{{.Title|urlize}}">
+    <article class="content {{.Section}}" id="{{.Title|urlize}}">
         {{ if eq .Section "blog" }}
                 {{ partial "next_and_previous_links.html" . }}
-            {{ end }}
-        {{range .Params.categories}}
-            <a href="/categories/{{.|urlize}}" class="category">{{.}}</a>
-        {{end}}
-        <time datetime="{{.PublishDate}}">{{.PublishDate.Format "Jan 2, 2006"}}</time>
+        {{ end }}
+
         <header>
+
             <h1>{{ .Title }}</h1>
             {{with .Params.subtitle}}
             <h2>{{.}}</h2>
             {{end}}
+            <div class="category-and-publishdate">
+                {{range .Params.categories}}
+                    <a href="/categories/{{.|urlize}}" class="category"><small>IN: </small>{{.}}</a>
+                {{end}}
+                <time class="publishdate" datetime="{{.PublishDate}}">{{.PublishDate.Format "Jan 2, 2006"}}</time>
+            </div>
             {{ if eq .Section "blog" }}
                 {{ partial "share_social_media.html" . }}
             {{ end }}

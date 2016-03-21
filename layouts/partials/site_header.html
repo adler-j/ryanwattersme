@@ -23,9 +23,15 @@
 
 <body>
     <div class="top-bar headroom">
+        {{if .IsHome }}
+        <a href="#" class="site-logo">
+            <i class="icon-rw-site-logo"></i>
+        </a>
+        {{ else }}
         <a href="/" class="site-logo">
             <i class="icon-rw-site-logo"></i>
         </a>
+        {{ end }}
         <a href="#" id="site-header-toggle">&#9776;</a>
     </div>
 

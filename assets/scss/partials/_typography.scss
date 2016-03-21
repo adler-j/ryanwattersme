@@ -36,19 +36,19 @@ h4 {
 }
 
 span.dropcap {
-    padding-right: 2px;
+    margin-right:.1em;
+    margin-bottom:0;
 }
 
 blockquote {
     display: block;
     background: $blockquote-background-color;
-    padding: 15px 20px 15px 55px;
+    padding: 15px 20px 15px 2em;
     margin: 0 0 20px;
     position: relative;
     font-family: $heading-font-family, Georgia, serif;
     font-size: $blockquote-font-size;
     color: $base-font-color;
-    text-align: justify;
     border-left: 4px solid $blockquote-border-color;
     border-right: 1px solid $blockquote-border-color;
     p{
@@ -61,6 +61,7 @@ blockquote::before {
     content: "\201C";
     font-family: $heading-font-family, Georgia, serif;
     font-size: 70px;
+    font-size: 2.5em;
     font-weight: regular;
     color: $blockquote-border-color;
     position: absolute;
@@ -78,7 +79,6 @@ cite.blockquote-citation {
     width: 100%;
     clear: both;
     font-style: normal;
-    font-weight: bold;
     text-align: left;
     margin-bottom: 0px;
     margin-bottom: .3em;

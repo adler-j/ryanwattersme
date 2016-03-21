@@ -1,15 +1,15 @@
 ---
-title: Longer Blog Title
-subtitle: Trump's candidacy has gone from hilarious to horrifying.
-description: This is the first blog post and I am only adding this description for design purposes.
-date: 2016-03-18
-publishdate: 2016-03-18
-updated: 2016-03-18
+title: Sample 3.
+subtitle:
+description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit animi dolorum consequatur, facilis perspiciatis explicabo commodi!
+date: 2016-03-20
+publishdate: 2016-03-20
+updated: 2016-03-20
 categories: [technology]
 tags: [blog,publishing, content]
 ---
 
-Ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
+Amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let's make a [link to Google](https://www.google.com).
 

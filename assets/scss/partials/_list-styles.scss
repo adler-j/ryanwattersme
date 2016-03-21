@@ -55,6 +55,7 @@ ul.contents-list {
     width: 100%;
     position: relative;
     li {
+        position:relative;
 
         a {
             cursor: pointer;
@@ -70,24 +71,23 @@ ul.contents-list {
             }
             time {
                 position: absolute;
-                top: .5em;
+                top: -.75em;
                 right: 0px;
-                font-size: .9em;
+                font-size: .7em;
                 color: $base-font-color;
-                text-decoration: underline;
+                font-weight:normal;
             }
             &:hover {
-                color: $body-background-color;
-                background-color: $base-font-color;
+                color: $accent-color;
                 border-bottom: .5px solid lighten($base-font-color, 25%);
                 h3 {
-                    color: $body-background-color;
+                    color: $accent-color;
                 }
                 p {
-                    color: $body-background-color;
+                    color: $accent-color;
                 }
                 time {
-                    color: $body-background-color;
+                    color: $accent-color;
                 }
             }
         }
