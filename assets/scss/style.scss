@@ -10,6 +10,7 @@
 @import 'partials/list-styles';
 @import 'partials/typography';
 @import 'partials/social-media';
+@import 'partials/bigfoot';
 body {
     display: flex;
     flex-direction: column;
@@ -21,19 +22,19 @@ a.site-logo {
     position: absolute;
     top: .33em;
     left: .5em;
-    // width: 1.8em;
+    width: 1.5em;
     height: 1.5em;
     line-height: 1.8em;
-    font-size: 1.4em;
+    font-size: 1.2em;
     margin-top: 0px;
-    padding: 0px;
-    text-indent: -.1em;
+    padding: 4px;
+    text-indent: -.15em;
     border-radius: 50%;
     cursor: pointer;
     color: $site-logo-color;
     &:hover {
         color: $white;
-        text-indent: -.1em;
+        text-indent: -.15em;
         background-color: $brand;
         border: 1px solid $brand;
     }
@@ -248,6 +249,18 @@ article img {
     }
     &:hover {
         filter: grayscale(0%);
+    }
+    &.author {
+        display:block;
+        width:40%;
+        max-width:200px;
+        margin-right:auto;
+        margin-left:auto;
+        border-radius:10px;
+        box-shadow: 0px 0px 5px 0px lighten($base-font-color,35%);
+        &:hover {
+            box-shadow: 0px 0px 10px 1px lighten($base-font-color,35%);
+        }
     }
 }
 

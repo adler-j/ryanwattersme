@@ -1,2 +1,10 @@
+<script src="/assets/js/lunr.min.js"></script>
+<!-- IncludeJQ = true in config.toml if you want to include jQuery from the Google CDN -->
+{{ if .Site.Params.IncludeJQ }}
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+{{ end }}
+{{ if in .Permalink "blog" }}
+<script async src="{{.Site.BaseURL}}/assets/js/bigfoot.min.js"></script>
+{{ end }}
 <script async src="{{.Site.BaseURL}}/assets/js/main.min.js"></script>
 <script async src="{{.Site.BaseURL}}/assets/js/headroom.min.js"></script>

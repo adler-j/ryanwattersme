@@ -10,7 +10,6 @@ categories: []
 comments: First attempt at creating the About page for ryanwatters.io
 ---
 
-![A photo of Ryan Watters, author of this site. $%right ](/assets/images/me.jpg)
 ### Me
 
 My name is Ryan. I am a content strategist, editor, writer, and web publisher living Chicago, IL.

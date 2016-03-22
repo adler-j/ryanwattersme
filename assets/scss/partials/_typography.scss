@@ -1,36 +1,43 @@
-h1 {
+h1.title {
     font-size: 2.4em;
     margin-top: .3em;
     margin-bottom: 6px;
-    font-weight: 600;
+    font-weight: 300;
     line-height: 1;
+    color:$h1-page-heading-font-color;
     @include MQ(M) {
         font-size: 3.5em;
     }
     @include MQ(L) {
         font-size: 4rem;
     }
+    &.homepage {
+        font-weight:400;
+    }
 }
 
-h2 {
+span.subtitle {
     font-size: 1em;
     text-transform: uppercase;
     margin-bottom: 1em;
+    font-family:$heading-font-family;
 }
 
 h3,
-h4 {
+h4,h1.title-list {
     margin-bottom: .3em;
     margin-top: 1em;
+    font-weight:800;
+    color:lighten($h1-page-heading-font-color,20%);
 }
 
-h3 {
+h3,h1.title-list {
     font-size: 1.8em;
 }
 
 h4 {
     font-size: 1.1em;
-    color: lighten($base-font-color, 10%);
+    color: lighten($base-font-color, 30%);
     padding-bottom: .1em;
     margin-bottom: .3em;
     text-transform: uppercase;
@@ -71,6 +78,19 @@ blockquote::before {
     position: absolute;
     left: 10px;
     top: 10px;
+}
+sup {
+    font-size:.3em;
+    padding-top:0px;
+    transform:translateY(-10px);
+    margin-top:-4em;
+    font-weight:100;
+    font-family:$base-font-family;
+    vertical-align: super;
+    &.footnote-ref {
+        font-size:.6em;
+        margin-right:.2em;
+    }
 }
 
 blockquote::after {

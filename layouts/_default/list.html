@@ -9,7 +9,7 @@
             {{ range .Data.Pages }}
             <li>
               <a href="{{ .Permalink }}">
-              <h3>{{.Title}}</h3>
+              <h1 class="title-list">{{.Title}}</h1>
               <time>{{ dateFormat "2006-01-02" .PublishDate  }}</time>
               <p>{{ .Description }}</p>
               </a>
