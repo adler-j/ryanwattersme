@@ -1,0 +1,29 @@
+article img {
+    width: 100%;
+    height: auto;
+    transition: filter .3s ease-in-out;
+    filter: grayscale(100%);
+    &.right {
+        float: right;
+        width: 40%;
+    }
+    &.left {
+        float: left;
+        width: 40%;
+    }
+    &:hover {
+        filter: grayscale(0%);
+    }
+    &.author {
+        display:block;
+        width:40%;
+        max-width:200px;
+        margin-right:auto;
+        margin-left:auto;
+        border-radius:10px;
+        box-shadow: 0px 0px 5px 0px lighten($base-font-color,35%);
+        &:hover {
+            box-shadow: 0px 0px 10px 1px lighten($base-font-color,35%);
+        }
+    }
+}

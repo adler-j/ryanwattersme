@@ -35,6 +35,13 @@ body {
     -webkit-font-smoothing: antialiased !important;
 }
 
+body {
+    display: flex;
+    flex-direction: column;
+    z-index: 0;
+    position: relative;
+}
+
 h1,
 h2,
 h3,

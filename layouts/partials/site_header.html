@@ -19,16 +19,10 @@
 
 <body>
     <div class="top-bar headroom">
-        {{if .IsHome }}
-        <a href="#" class="site-logo">
-            <i class="icon-rw-site-logo"></i>
-        </a>
-        {{ else }}
         <a href="/" class="site-logo">
             <i class="icon-rw-site-logo"></i>
         </a>
-        {{ end }}
-        {{if and .IsPage .Section}}
+        {{if eq .Section "blog"}}
             <section class="next-and-previous-links">
                 {{with .PrevInSection }}
                 <a href="{{.Permalink}}" class="prev-link" title="Read the previously published article, {{.Title}}"><i class="icon-previous"></i> Previous</a>

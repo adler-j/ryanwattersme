@@ -6,7 +6,7 @@ date: 2016-03-18
 publishdate: 2016-03-18
 updated: 2016-03-18
 categories: [technology]
-tags: [blog,publishing, content]
+tags: [publishing, content]
 ---
 
 Ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur. Here is an item with a superscript.[^1] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore fugit quam quas voluptatibus at animi ratione velit optio, qui iste. Maxime, dolor dicta voluptatem quasi temporibus libero perspiciatis enim cumque.
