@@ -1,37 +1,16 @@
-// bigfoot - v2.1.1 - 2015.04.04
-
-
-//        ___       ___          ___       ___                      ___          ___
-//       /  /\     /  /\        /  /\     /  /\         ___        /  /\        /  /\
-//      /  /::\   /  /::\      /  /::\   /  /::\       /__/\      /  /:/_      /  /::\
-//     /  /:/\:\ /  /:/\:\    /  /:/\:\ /  /:/\:\      \  \:\    /  /:/ /\    /  /:/\:\
-//    /  /:/~/://  /:/  \:\  /  /:/~/://  /:/  \:\      \  \:\  /  /:/ /:/_  /  /:/~/:/
-//   /__/:/ /://__/:/ \__\:\/__/:/ /://__/:/ \__\:\ ___  \__\:\/__/:/ /:/ /\/__/:/ /:/___
-//   \  \:\/:/ \  \:\ /  /:/\  \:\/:/ \  \:\ /  /://__/\ |  |:|\  \:\/:/ /:/\  \:\/:::::/
-//    \  \::/   \  \:\  /:/  \  \::/   \  \:\  /:/ \  \:\|  |:| \  \::/ /:/  \  \::/~~~~
-//     \  \:\    \  \:\/:/    \  \:\    \  \:\/:/   \  \:\__|:|  \  \:\/:/    \  \:\
-//      \  \:\    \  \::/      \  \:\    \  \::/     \__\::::/    \  \::/      \  \:\
-//       \__\/     \__\/        \__\/     \__\/          ~~~~      \__\/        \__\/
-//
-// These are the key variables for styling the popover.
-// Just set the variable to none if you don't want that styling.
-
-// KEY VARIABLES
-// =============================================================================
-
 // STYLES
-$popover-width:                         22em !default;                           // Ideal width of the popover
-$popover-max-width:                     90% !default;                            // Best as a % to accommodate smaller viewports
+$popover-width:                         20em !default;                           // Ideal width of the popover
+$popover-max-width:                     80% !default;                            // Best as a % to accommodate smaller viewports
 $popover-max-height:                    15em !default;                           // Maximum size of the content area
-$popover-color-background:              rgb(250, 250, 250) !default;             // Color of the popover background
-$popover-border-radius:                 0.5em !default;                          // Radius of the corners of the popover
-$popover-border:                        1px solid rgb(195, 195, 195) !default;   // Border of the popover/ tooltip
+$popover-color-background:              $body-background-color !default;             // Color of the popover background
+$popover-border-radius:                 0em !default;                          // Radius of the corners of the popover
+$popover-border:                        1px solid $base-font-color !default;   // Border of the popover/ tooltip
 $popover-inactive-opacity:              0 !default;                              // Opacity of the popover when instantiated/ deactivating
 $popover-active-opacity:                0.97 !default;                           // Opacity of the popover when active
-$popover-box-shadow:                    0px 0px 8px rgba(0, 0, 0, 0.3) !default; // Sets the box shadow under the popover/ tooltip
+$popover-box-shadow:                    0px 0px 3px rgba(0, 0, 0, 0.3) !default; // Sets the box shadow under the popover/ tooltip
 $popover-bottom-position:               auto !default;                           // Sets the bottom position of the popover. Use only when setting positionPopover to false in the script
 $popover-left-position:                 auto !default;                           // Sets the left position of the popover. Use only when setting positionPopover to false in the script
-$popover-tooltip-size:                  1.3em !default;                          // Sets the side lengths of the tooltip
+$popover-tooltip-size:                  1em !default;                          // Sets the side lengths of the tooltip
 $popover-scroll-indicator-width:        0.625em !default;                        // The width of the scroll indicator
 $popover-scroll-indicator-aspect-ratio: (15/12) !default;                        // The ratio of the height over the width of the scroll indicator
 $popover-scroll-indicator-opacity:      0.1 !default;                            // The active opacity of scroll indicators
@@ -102,7 +81,7 @@ $popover-transition-default-timing-function:     ease !default;
 $button-height:                         0.95em !default;                         // The total height of the button
 $button-width:                          auto !default;                           // The total button width (applies only if $button-apply-dimensions is true)
 $button-inner-circle-size:              0.25em !default;                         // Total height/width of the ellipsis circles
-$button-border-radius:                  0.3em !default;                          // Border radius on the button itself
+$button-border-radius:                  0em !default;                          // Border radius on the button itself
 $button-left-margin:                    0.2em !default;                          // Margin between the button and the text to its left
 $button-right-margin:                   0.1em !default;                          // Margin between the button and the text to its right
 $button-vertical-adjust:                -0.1em !default;                         // Pushes the buttons along the vertical axis to align it with text as desired
@@ -193,7 +172,7 @@ $button-transition-properties:      background-color !default;
 .bigfoot-footnote__button {
   // POSITIONING
   position: relative;
-  z-index: 5;
+  z-index: 99999;
   top: $button-vertical-adjust;
 
   // DISPLAY AND SIZING
