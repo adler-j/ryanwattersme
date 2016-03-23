@@ -13,6 +13,7 @@ nav {
 nav[role="navigation"] {
     z-index: 99;
     margin-top: 3.5em;
+    flex-grow:1;
     ul {
         list-style: none;
         margin-left: .2em;
@@ -32,15 +33,24 @@ nav[role="navigation"] {
                     font-size: .7em;
                 }
             }
+            &:first-child {
+                a{
+                    font-weight:700;
+                    font-size:.8em;
+                    text-transform:uppercase;
+                    @include MQ(L){
+                        font-size:.7em;
+                    }
+                }
+            }
         }
     }
 }
 
 nav.social {
     display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
+    align-items: flex-end;
     margin-top: auto;
     ul {
         width: 100%;
@@ -53,8 +63,8 @@ nav.social {
             display: inline;
             a {
                 font-size: 1em;
-                @include MQ(M) {
-                    font-size: .9em;
+                i.icon-rss {
+                    font-size:.8em;
                 }
             }
         }
@@ -168,7 +178,7 @@ ul.tags {
         margin-left: .3em;
         a {
             font-weight: normal;
-            // font-family: $heading-font-family;
+            font-family: $heading-font-family;
             padding: 0px .3em .1em .3em;
             border: 1px solid $base-font-color;
             font-size: .8em;

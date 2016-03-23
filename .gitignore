@@ -1,2 +1,12 @@
 assets/node_modules
 notes.md
+static/presentation/node_modules/*
+static/presentation/travis.yml
+static/presentation/bower.json
+static/presentation/cap-color-palette.scss
+static/presentation/content.md
+static/presentation/CONTRIBUTING.md
+static/presentation/Gruntfile.js
+static/presentation/LICENSE
+static/presentation/package.json
+static/presentation/README.md

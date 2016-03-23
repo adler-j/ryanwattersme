@@ -6,7 +6,7 @@ date: 2016-03-20
 publishdate: 2016-03-20
 updated: 2016-03-20
 categories: [technology]
-tags: [blog,publishing, content]
+tags: [publishing, content]
 ---
 
 Amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.

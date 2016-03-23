@@ -6,7 +6,7 @@ date: 2016-03-19
 publishdate: 2016-03-19
 updated: 2016-03-19
 categories: [technology]
-tags: [blog,publishing, content]
+tags: [javascript, development]
 ---
 
 Dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
