@@ -34,8 +34,9 @@ Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mou
 
 ### Heading Again
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo enim magni facere officia nesciunt, sunt obcaecati recusandae, doloribus libero. Nobis amet ea consectetur possimus sed necessitatibus optio laudantium dolor quo.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo enim magni facere officia nesciunt, sunt[^2] obcaecati recusandae, doloribus libero. Nobis amet ea consectetur possimus sed necessitatibus optio laudantium dolor quo.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut tempore at unde. Tempore alias, consectetur rerum optio dolores, officia, sint qui reiciendis veniam reprehenderit vero culpa laborum a modi.
 
-[^1]: Here is the actual endnote called out in the first paragraph.
+[^1]: Here is a [link to Google](https://www.google.com).
+[^2]: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quidem quibusdam id veniam cupiditate fuga maxime exercitationem totam. Labore distinctio vero nostrum quisquam, eos hic accusantium. Porro doloribus, repellat earum.
