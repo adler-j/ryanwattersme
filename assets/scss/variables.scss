@@ -7,7 +7,11 @@ $L:1025px;
 // XL Screens
 $XL:1200px;
 
-$base-font-family: 'chaparral-pro', 'helvetica Neue', Helvetica, sans-serif;
+$use-font-face-module:true;
+$include-second-font:false;
+$font: 'crimsontext';
+
+$base-font-family: $font, 'helvetica Neue', Helvetica, sans-serif;
 $heading-font-family: "futura-pt",Georgia,serif;
 $heading-font-weight: 400;
 
