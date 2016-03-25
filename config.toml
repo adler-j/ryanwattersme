@@ -42,9 +42,9 @@ watch = true
   CopyrightLine = "Ryan D Watters, ELS"
   SiteDescription = "Ryan Watters official website."
   # If true, site style will be embedded in a <style> tag in each html <head> by pulling in "style-embed-for-crp-only.html" partial created by default as part of the Gulp Build. If set to false, the css is not embedded in each page but instead includes an external call to <link rel="stylesheet" href="{{.Site.BaseURL}}/css/style.min.css">
-  UseCRP = false
+  UseCRP = true
   # Include the jQuery CDN in the <head> of your site?
-  IncludeJQ = true
+  IncludeJQ = false
   UseDisqus = true
   disqusShortname = ""
   SitePublishDate = "2016-01-01"
