@@ -1,4 +1,41 @@
+<!-- add header toggle to immediate pageload for mobile -->
+<script>
+	var clickOrTouchStart;
+if ('ontouchstart' in document.documentElement) {
+    clickOrTouchStart = "touchstart";
+} else {
+    clickOrTouchStart = "click";
+}
+var headerToggle = document.getElementById('site-header-toggle');
+var headerCancel = document.getElementById('close-menu');
+var mainContent = document.querySelector('main');
+mainContent.addEventListener(clickOrTouchStart, toggleHeader, false);
+headerToggle.addEventListener(clickOrTouchStart, toggleHeader, false);
+headerCancel.onclick = function(event) {
+    event.preventDefault();
+    document.querySelector('body > header').classList.remove('open');
+    document.querySelector('main').classList.remove('open');
+    document.querySelector('body > footer').classList.remove('open');
+}
 
+
+function toggleHeader(event) {
+    var header = document.querySelector('body > header');
+    var mainContent = document.querySelector('main');
+    if (header.classList.contains('open')) {
+        event.preventDefault();
+        document.querySelector('body > header').classList.remove('open');
+        document.querySelector('main').classList.remove('open');
+        document.querySelector('body > footer').classList.remove('open');
+    } else if ((event.target.id === "site-header-toggle") && !(header.classList.contains('open'))) {
+        event.preventDefault();
+        document.querySelector('body > header').classList.add('open');
+        document.querySelector('main').classList.add('open');
+        document.querySelector('body > footer').classList.add('open');
+    }
+
+}
+</script>
 <!-- IncludeJQ = true in config.toml if you want to include jQuery from the Google CDN -->
 {{ if .Site.Params.IncludeJQ }}
 <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
@@ -6,7 +43,7 @@
 <!-- {{ if in .Permalink "blog" }}
 <script async src="{{.Site.BaseURL}}/assets/js/bigfoot.min.js"></script>
 {{ end }} -->
-<script src="/assets/js/lunr.min.js"></script>
+<!-- <script src="/assets/js/lunr.min.js"></script> -->
 <script src="/assets/js/jquery-2.2.2.min.js"></script>
 <script async src="{{.Site.BaseURL}}/assets/js/main.min.js"></script>
 <script async src="{{.Site.BaseURL}}/assets/js/headroom.min.js"></script>
