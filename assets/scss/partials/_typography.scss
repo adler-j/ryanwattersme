@@ -29,12 +29,11 @@ h4,h1.title-list {
     margin-top: 1em;
     font-weight:500;
     color:lighten($h1-page-heading-font-color,20%);
-    font-family:$base-font-family;
+    font-family:$heading-font-family;
 }
 
 h3,h1.title-list {
-    font-size: 1.8em;
-    font-family:$base-font-family;
+    font-size: 1.8em;;
     font-weight:500;
 }
 

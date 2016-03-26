@@ -7,24 +7,27 @@ $L:1025px;
 // XL Screens
 $XL:1200px;
 
-$use-font-face-module:true;
-$include-second-font:true;
-$include-third-font:true;
-$font: 'crimsontext';
-$second-font: 'playfairdisplay';
+$use-font-face-module:false;
+$include-second-font:false;
+$include-third-font:false;
+$font: 'chaparral-pro';
+$second-font: 'futura-pt';
 $third-font: 'ptsans';
 
 $base-font-family: $font, 'helvetica Neue', Helvetica, sans-serif;
 $heading-font-family: $second-font,"futura-pt",Georgia,serif;
 $heading-font-weight: 400;
-$site-header-font-family: $third-font,Arial,Helvetic,sans-serif;
-$tags-font-family:$third-font;
+$form-input-font-family: $base-font-family;
+$site-header-font-family: $heading-font-family,Arial,Helvetic,sans-serif;
+$tags-font-family:$heading-font-family;
 
 //Sizing
 $base-line-height: 1.58;
 $base-font-size: 22px;
 $base-font-weight:400;
 $site-menu-width: 170px;
+$top-bar-height: 3em;
+$content-max-width:30em;
 
 //Color Palette
 
@@ -51,6 +54,12 @@ $blockquote-border-color:$accent-color;
 $blockquote-background-color:darken($body-background-color,2%);
 $blockquote-font-size:1.2em;
 $blockquote-font-style:regular;
+
+
+//Buttons
+$button-submit-background-color:$accent-color;
+$button-submit-text-color:$white;
+$button-border-radius:0px;
 
 //Anchors
 $anchor-color: $brand;

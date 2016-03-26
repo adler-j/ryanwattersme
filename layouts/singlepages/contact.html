@@ -1,7 +1,29 @@
 {{ partial "site_header.html" . }}
 <main role="main">
-<article>
-	<h1>CONTACT</h1>
-</article>
+    <article>
+        <header>
+            <h1 class="title">{{.Title}}</h1>
+        </header>
+        {{.Content}}
+        <form action="https://formspree.io/watters.ryan@gmail.com" method="POST" class="form" autofocus>
+            <fieldset>
+                <div class="field">
+                    <input tabindex="1" type="text" name="name" required="required">
+                    <label class="label" for="name">Name</label>
+                </div>
+                <div class="field">
+                    <input tabindex="2" type="email" name="email-address" required="required">
+                    <label class="label" for="email-address">Email</label>
+                </div>
+                <div class="field">
+                		<textarea tabindex="3" name="comments" id="comments" cols="30" rows="10"></textarea>
+                		<label class="label comments" for="comments">Comments</label>
+                </div>
+                <div class="button">
+                    <input tabindex="4" id="submit-button" type="submit" value="Send">
+                </div>
+            </fieldset>
+        </form>
+    </article>
 </main>
 {{ partial "site_footer.html" . }}

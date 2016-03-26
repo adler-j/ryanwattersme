@@ -4,7 +4,7 @@
 	<article>
 	<header>
 		{{ $data := .Data }}
-		<h1 class="title"><small>{{$data.Singular}}:</small> {{ .Title }}</h1>
+		<h1 class="title"><a href="/{{$data.Plural}}"><small>{{$data.Plural}}:</small></a> {{ .Title }}</h1>
 	</header>
 	<ul class="contents-list">
 	   <!-- Sorts pages by .PublishDate, with the most recent publish first.  -->

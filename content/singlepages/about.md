@@ -14,7 +14,7 @@ comments: First attempt at creating the About page for ryanwatters.io
 
 ### Me
 
-My name is Ryan. I am a content strategist, editor, writer, and web publisher living Chicago, IL.
+My name is Ryan. I am a content strategist, editor, writer, and web publisher in Chicago, IL.
 
 People have told me to write a blog for the last decade, but I didn't fall in love with the web until 2013. I'm trying to catch up.
 

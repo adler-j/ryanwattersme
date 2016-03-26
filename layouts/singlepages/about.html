@@ -1,7 +1,10 @@
 {{ partial "site_header.html" . }}
 <main role="main">
-<article id="about">
-	<h1>About Page</h1>
-</article>
+    <article class="content" id="about">
+        <header>
+            <h1 class="title">{{.Title}}</h1>
+        </header>
+        {{.Content}}
+    </article>
 </main>
 {{ partial "site_footer.html" . }}

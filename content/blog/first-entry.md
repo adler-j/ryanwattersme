@@ -4,6 +4,7 @@ subtitle: Trump's candidacy has gone from hilarious to horrifying.
 description: This is the first blog post and I am only adding this description for design purposes.
 date: 2016-03-18
 publishdate: 2016-03-18
+image: trump.jpg
 updated: 2016-03-18
 categories: [technology]
 tags: [publishing, content]

@@ -5,3 +5,9 @@
   -o-transform: translate3d(0,0,0);
   transform: translate3d(0,0,0);
 }
+
+@mixin header-transition {
+	transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
+}

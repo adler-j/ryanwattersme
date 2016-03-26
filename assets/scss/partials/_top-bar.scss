@@ -29,8 +29,7 @@ a.site-logo {
     left: 0px;
     right: 0px;
     width: 100%;
-    height: 3em;
-    // box-shadow: 0 2px 2px -1px lighten($base-font-color, 30%);
+    height: $top-bar-height;
     border-bottom: 1.5px solid #f0f0f0;
 }
 

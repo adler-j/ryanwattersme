@@ -2,9 +2,9 @@
 <main role="main">
 	<article>
 		<header>
-			<h1>{{.Title}}</h1>
+			<h1 class="title">{{.Title}}</h1>
 		</header>
-		<ul class="contents-list terms">
+		<ul class="terms">
 	    {{ $data := .Data }}
 	    {{ range $key,$value := .Data.Terms.ByCount }}
 	    <li class="site-tag">

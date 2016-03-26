@@ -13,9 +13,10 @@
 @import 'partials/list-styles';
 @import 'partials/typography';
 @import 'partials/social-media';
+@import 'partials/share-menu';
 @import 'partials/bigfoot';
+@import 'partials/form';
 @import 'partials/404';
-
 main[role="main"] {
     width: 95%;
     display: flex;
@@ -25,10 +26,8 @@ main[role="main"] {
     margin-top: 60px;
     min-height: 100%;
     flex: 1;
-    transition-property: all;
-    transition-duration: 0.2s;
-    transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
     z-index: 10;
+    @include header-transition;
     &.open {
         transform: translateX(-$site-menu-width);
         opacity: 0.3;
@@ -41,6 +40,7 @@ main[role="main"] {
 
 main > article {
     width: 100%;
+    position: relative;
     min-height: 80vh;
     margin-left: auto;
     margin-right: auto;
@@ -49,7 +49,7 @@ main > article {
     position: relative;
     z-index: 9999;
     overflow-x: hidden;
-    max-width:30em;
+    max-width: $content-max-width;
     header {
         margin-bottom: 1.5em;
     }
@@ -58,15 +58,14 @@ main > article {
 article.content {
     a.category {
         width: auto;
-        // border-bottom: 1px solid $base-font-color;
         box-shadow: 0 -1px 0 $base-font-color inset;
         cursor: pointer;
         color: $base-font-color;
-        font-family:$heading-font-family;
+        font-family: $heading-font-family;
         font-size: .7em;
         text-transform: uppercase;
         small {
-            font-size:1em;
+            font-size: 1em;
         }
     }
 }
@@ -94,12 +93,12 @@ article time.publishdate {
     right: 0;
     font-size: .8em;
     text-transform: uppercase;
-    font-family:$heading-font-family;
+    font-family: $heading-font-family;
 }
 
 main > article.content a,
 article.homepage a,
-a.back {
+article#about a {
     font-size: inherit;
     color: $brand;
     transition: box-shadow ease 250ms, color ease 250ms;
@@ -154,4 +153,3 @@ article#about {
         text-transform: uppercase;
     }
 }
-

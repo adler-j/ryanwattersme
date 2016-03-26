@@ -5,6 +5,7 @@ description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit 
 date: 2016-03-19
 publishdate: 2016-03-19
 updated: 2016-03-19
+image: trump.jpg
 categories: [technology]
 tags: [javascript, development]
 ---

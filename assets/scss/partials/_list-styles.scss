@@ -167,6 +167,7 @@ ul.tags {
     padding-left: 0px;
     width: auto;
     justify-content: center;
+    margin-bottom: $top-bar-height * 1.5; //margin for sticky social share footer
     span {
         font-family: $tags-font-family;
     }
