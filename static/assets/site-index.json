@@ -4,14 +4,14 @@
     "title": "About",
     "tags": ["about", "development"],
     "categories": [],
-    "content": "[Me My name is Ryan. I am a content strategist, editor, writer, and web publisher living Chicago, IL. People have told me to write a blog for the last decade, but I didn&amp;rsquo;t fall in love with the web until 2013. I&amp;rsquo;m trying to catch up. The Site Content All content for the site is written in clean, semantic markdown according to the latest commonmark spec. Extensions to the markdown are rendered on the client via several JavaScript modules. That said, my aim was to create CMS-independent content that could be easily ported to any static site generator that interprets markdown files with embedded yaml. Design This site uses two premium typefaces, Chaparral Pro and Futura PT, both of which are provided via Adobe&amp;rsquo;s Typekit web service. Development All code used for this site is open source and hosted on GitHub.]"
+    "content": "[Me My name is Ryan. I am a content strategist, editor, writer, and web publisher in Chicago, IL. People have told me to write a blog for the last decade, but I didn&amp;rsquo;t fall in love with the web until 2013. I&amp;rsquo;m trying to catch up. The Site Content All content for the site is written in clean, semantic markdown according to the latest commonmark spec. Extensions to the markdown are rendered on the client via several JavaScript modules. That said, my aim was to create CMS-independent content that could be easily ported to any static site generator that interprets markdown files with embedded yaml. Design This site uses two premium typefaces, Chaparral Pro and Futura PT, both of which are provided via Adobe&amp;rsquo;s Typekit web service. Development All code used for this site is open source and hosted on GitHub.]"
 },
 {
     "href": "/contact/",
     "title": "Contact",
     "tags": ["about", "development"],
     "categories": [],
-    "content": "[]"
+    "content": "[Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi culpa natus eius, dicta facilis, placeat dolore neque tenetur consequuntur harum sunt perspiciatis porro deleniti aut, nemo sit fugit! Commodi, debitis!]"
 },
 {
     "href": "/blog/third-entry/",

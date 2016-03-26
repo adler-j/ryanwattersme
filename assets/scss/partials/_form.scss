@@ -1,22 +1,22 @@
 .form {
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     margin-top: 1em;
     background: #fff;
     padding: 0px;
     border: none;
-    width:100%;
-    max-width:600px;
+    width: 100%;
+    max-width: 600px;
     fieldset {
         border: none;
-        max-width:400px;
+        max-width: 400px;
     }
     div {
         position: relative;
         margin-bottom: 1.3em;
-        max-width:400px;
+        max-width: 400px;
     }
 }
 
@@ -57,10 +57,21 @@ textarea#comments {
 }
 
 input[type="text"],
+input[type="submit"],
+input[type="email"] {
+    appearance: none;
+    -moz-appearance: none;
+    -webkit-appearance: none;
+    border-radius: 0;
+    -moz-border-radius: 0;
+    -webkit-border-radius: 0;
+}
+
+input[type="text"],
 input[type="email"] {
     padding: .4em 1em .2em 0em;
     width: 100%;
-    max-width:400px;
+    max-width: 400px;
     border: 0;
     border-bottom: 1px solid $base-font-color;
     font-size: 1.2em;
@@ -83,7 +94,7 @@ input[type="email"] {
 }
 
 textarea#comments {
-    width:100%;
+    width: 100%;
 }
 
 .button input {
@@ -100,9 +111,11 @@ textarea#comments {
     border-radius: $button-border-radius;
     transition: all 0.1s ease-in-out;
     cursor: pointer;
-    &:focus,&:hover,&:active {
+    &:focus,
+    &:hover,
+    &:active {
         outline: none;
-        background-color:$brand;
+        background-color: $brand;
         box-shadow: 1px 1px 1px 0 rgba(0, 0, 0, 0.6);
         transform: scale(1);
     }
