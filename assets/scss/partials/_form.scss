@@ -33,6 +33,7 @@ textarea#comments {
     -webkit-appearance: none;
     margin-top: 1.5em;
     background-color: darken($body-background-color, 4%);
+    border-radius:0px;
     &:focus ~ .label.comments,
     &:active ~ .label.comments {
         top: -.1em;
