@@ -8,12 +8,17 @@ $L:1025px;
 $XL:1200px;
 
 $use-font-face-module:true;
-$include-second-font:false;
+$include-second-font:true;
+$include-third-font:true;
 $font: 'crimsontext';
+$second-font: 'playfairdisplay';
+$third-font: 'ptsans';
 
 $base-font-family: $font, 'helvetica Neue', Helvetica, sans-serif;
-$heading-font-family: "futura-pt",Georgia,serif;
+$heading-font-family: $second-font,"futura-pt",Georgia,serif;
 $heading-font-weight: 400;
+$site-header-font-family: $third-font,Arial,Helvetic,sans-serif;
+$tags-font-family:$third-font;
 
 //Sizing
 $base-line-height: 1.58;

@@ -59,7 +59,7 @@ a.section-title {
     justify-content: center;
     left: 40%;
     text-align: center;
-    font-family: $heading-font-family;
+    font-family: $site-header-font-family;
     height: 2em;
     line-height: 2em;
     vertical-align:center;
@@ -87,4 +87,5 @@ a.section-title {
     text-align: center;
     position: absolute;
     bottom: 2em;
+    font-family:$site-header-font-family;
 }

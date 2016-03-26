@@ -25,7 +25,7 @@ nav[role="navigation"] {
                 text-align: right;
                 cursor: pointer!important;
                 text-transform: lowercase;
-                font-family: $heading-font-family;
+                font-family: $site-header-font-family;
                 z-index: 9999;
                 font-size: 1.2em;
                 color: lighten($base-font-color, 15%);
@@ -88,11 +88,8 @@ ul.contents-list {
             article {
                 h1.title-list {
                     color: $base-font-color;
-                    font-family: $heading-font-family;
-                    font-weight: 100;
                     margin-bottom: .3em;
                     margin-top: 1em;
-                    font-weight: 800;
                 }
                 p {
                     font-weight: normal;
@@ -171,14 +168,14 @@ ul.tags {
     width: auto;
     justify-content: center;
     span {
-        font-family: $heading-font-family;
+        font-family: $tags-font-family;
     }
     li {
         display: inline;
         margin-left: .3em;
         a {
             font-weight: normal;
-            font-family: $heading-font-family;
+            font-family: $tags-font-family;
             padding: 0px .3em .1em .3em;
             border: 1px solid $base-font-color;
             font-size: .8em;
