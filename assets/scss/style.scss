@@ -76,6 +76,12 @@ header.blog {
     margin-bottom: 1.5em;
     padding-top: 2em;
     height: 30vh;
+    @include MQ(M){
+        height:45vh;
+    }
+    @include MQ(L) {
+        height: 60vh;
+    }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -121,9 +127,7 @@ header.blog {
             }
         }
     }
-    @include MQ(M) {
-        height: 60vh;
-    }
+
 }
 
 .site-title {
