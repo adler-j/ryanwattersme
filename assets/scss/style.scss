@@ -55,23 +55,71 @@ main > article {
     }
 }
 
-article.content {
-    a.category {
-        width: auto;
-        box-shadow: 0 -1px 0 $base-font-color inset;
-        cursor: pointer;
-        color: $base-font-color;
-        font-family: $heading-font-family;
-        font-size: .7em;
-        text-transform: uppercase;
-        small {
-            font-size: 1em;
-        }
+a.category {
+    width: auto;
+    box-shadow: 0 -1px 0 $white inset;
+    cursor: pointer;
+    color: $base-font-color;
+    font-family: $heading-font-family;
+    font-size: .7em;
+    text-transform: uppercase;
+    small {
+        font-size: 1em;
     }
 }
 
-article.content.blog header {
+header.blog {
     margin-top: 1em;
+    width: 110%!important;
+    margin-left: -5%;
+    margin-top: 0px;
+    margin-bottom: 1.5em;
+    padding-top:2em;
+    height: 40vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    // background-image: linear-gradient(rgba(255, 0, 0, 0.45),rgba(255, 0, 0, 0.45));
+    // filter: grayscale(100%);
+    .header-content.blog {
+        width: 90%;
+        height:100%;
+        // padding-top:2em;
+        max-width: $content-max-width;
+        color: $white;
+        margin-left: auto;
+        margin-right: auto;
+        position:relative;
+        .title-and-subtitle {
+            background-color:rgba(0,0,0,0.3);
+            margin-left:-.5em;
+            margin-right:-.5em;
+            padding:.5em;
+        }
+        a {
+            color: $white;
+            font-size: inherit;
+            color: $white;
+            transition: box-shadow ease 250ms, color ease 250ms;
+            cursor: pointer;
+            text-decoration: none;
+            box-shadow: 0 -1px 0 $white inset;
+            font-weight: inherit;
+            padding-left: 2px;
+            padding-right: 2px;
+            margin-left: -2px;
+            margin-right: -2px;
+            background-color: transparent;
+            &:hover {
+                color: $white;
+                box-shadow: 0 -1.5em 0 $brand inset;
+            }
+        }
+    }
+    @include MQ(M) {
+        height: 60vh;
+    }
 }
 
 .site-title {
@@ -84,6 +132,20 @@ article.content.blog header {
     .icon-rw-site-logo {
         margin-right: .5em;
         font-size: .5em;
+    }
+}
+
+.category-and-publishdate {
+    display:block;
+    width: 100%;
+    position: absolute;
+    bottom:2em;
+    time.publishdate {
+        position: absolute;
+        top: 0;
+        right: 0;
+        font-size: .8em;
+        text-transform: uppercase;
     }
 }
 
@@ -142,14 +204,4 @@ article#about {
     }
 }
 
-.category-and-publishdate {
-    width: 100;
-    position: relative;
-    time.publishdate {
-        position: absolute;
-        top: 0;
-        right: 0;
-        font-size: .8em;
-        text-transform: uppercase;
-    }
-}
+

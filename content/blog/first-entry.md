@@ -1,12 +1,12 @@
 ---
-title: Longer Blog Title
+title: What an Asshole
 subtitle: Trump's candidacy has gone from hilarious to horrifying.
 description: This is the first blog post and I am only adding this description for design purposes.
 date: 2016-03-18
 publishdate: 2016-03-18
 image: trump.jpg
 updated: 2016-03-18
-categories: [technology]
+categories: [musings]
 tags: [publishing, content]
 ---
 
@@ -16,13 +16,15 @@ Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite tre
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!
 
-![image with some alt text. right](/assets/images/my-image.jpg)
+![image with some alt text. $=left](/assets/images/my-image.jpg)
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
 
 ### Article Heading
 
 Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.
+
+![image with some alt text. $=right](/assets/images/my-image.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
 

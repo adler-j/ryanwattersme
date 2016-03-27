@@ -8,9 +8,9 @@
 
     function applyAltClasses(images) {
         for (var i = 0; i < images.length; i++) {
-            if (images[i].alt.indexOf('$%') > 0) {
-                var justText = images[i].alt.split('$%')[0];
-                var newClass = images[i].alt.split('$%')[1];
+            if (images[i].alt.indexOf('$=') > 0) {
+                var justText = images[i].alt.split('$=')[0];
+                var newClass = images[i].alt.split('$=')[1];
                 images[i].setAttribute('alt', justText);
                 images[i].className = newClass;
             }
