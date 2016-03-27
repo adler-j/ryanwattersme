@@ -1,11 +1,11 @@
 ---
-title: My Second Blog Entry
+title: I Need a Vacation
 subtitle:
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit animi dolorum consequatur, facilis perspiciatis explicabo commodi!
 date: 2016-03-19
 publishdate: 2016-03-19
 updated: 2016-03-19
-image: trump.jpg
+image: beach.jpg
 categories: [technology]
 tags: [javascript, development]
 ---

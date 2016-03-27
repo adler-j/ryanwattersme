@@ -3,12 +3,12 @@
     {{ if eq .Section "blog" }} {{ partial "share_social_media.html" . }} {{ end }}
     <header class="{{.Section}}" style="background-image:url(/assets/images/{{.Params.image}});">
         <div class="header-content {{.Section}}">
-            <div class="title-and-subtitle">
+           <!--  <div class="title-and-subtitle"> -->
                 <h1 class="title {{.Section}}">{{ .Title }}</h1>
                 {{with .Params.subtitle}}
                     <h2 class="subtitle">{{.}}</h2>
                 {{end}}
-            </div>
+            <!-- </div> -->
             <div class="category-and-publishdate">
                 {{range .Params.categories}}
                 <a href="/categories/{{.|urlize}}" class="category"><small>IN: </small>{{.}}</a> {{end}}
