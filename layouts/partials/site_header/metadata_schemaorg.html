@@ -1,0 +1,8 @@
+{{ if .IsPage }}
+<meta itemscope itemtype="http://schema.org/blogPost" />
+<meta itemprop="headline" content="{{.Title}}" />
+<meta itemprop="description" content="{{.Description}}" />
+	{{ if .Params.image }}
+	<meta itemprop="image" content="http://ryanwatters.io/assets/images/{{.Params.image}}" />
+	{{ end }}
+{{ end }}
