@@ -6,7 +6,6 @@
         </header>
         {{.Content}}
         <form action="https://formspree.io/watters.ryan@gmail.com" method="POST" class="form" autofocus>
-            <fieldset>
                 <div class="field">
                     <input tabindex="1" type="text" name="name" required="required">
                     <label class="label" for="name">Name</label>
@@ -16,13 +15,12 @@
                     <label class="label" for="email-address">Email</label>
                 </div>
                 <div class="field">
-                		<textarea tabindex="3" name="comments" id="comments" cols="40" rows="10"></textarea>
+                		<textarea tabindex="3" name="comments" id="comments"></textarea>
                 		<label class="label comments" for="comments">Comments</label>
                 </div>
                 <div class="button">
                     <input tabindex="4" id="submit-button" type="submit" value="Send">
                 </div>
-            </fieldset>
         </form>
     </article>
 </main>

@@ -1,24 +1,20 @@
 .form {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     margin-top: 1em;
     background: #fff;
     padding: 0px;
     border: none;
     width: 100%;
-    max-width: 600px;
-    fieldset {
-        border: none;
-        max-width: 500px;
-        margin:0px;
-        padding:0px;
-    }
+    max-width: 500px;
+    margin-left:auto;
+    margin-right:auto;
     div {
         position: relative;
         margin-bottom: 1.3em;
-        max-width: 500px;
+        width:100%;
     }
 }
 
@@ -37,7 +33,7 @@ textarea#comments {
     &:focus ~ .label.comments,
     &:active ~ .label.comments {
         top: -.1em;
-        left: -3.2em;
+        left: -4.2em;
         transform: scale(.6);
         color: $brand;
         font-weight: bold;
@@ -72,9 +68,9 @@ input[type="email"] {
 
 input[type="text"],
 input[type="email"] {
-    padding: .4em 1em .2em 0em;
+    padding: .4em 0em .2em 0em;
     width: 100%;
-    max-width: 400px;
+    // max-width: 400px;
     border: 0;
     border-bottom: 1px solid $base-font-color;
     font-size: 1.2em;
@@ -85,7 +81,7 @@ input[type="email"] {
     &:focus ~ label,
     &:valid ~ label {
         top: -1.2em;
-        left: -3.2em;
+        left: -4.3em;
         transform: scale(.6);
         color: $brand;
         font-weight: bold;
@@ -98,6 +94,7 @@ input[type="email"] {
 
 textarea#comments {
     width: 100%;
+    min-height:180px;
 }
 
 .button input {

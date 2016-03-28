@@ -49,7 +49,9 @@ main > article {
     position: relative;
     z-index: 9999;
     overflow-x: hidden;
-    max-width: $content-max-width;
+    @include MQ(M) {
+        width: $content-max-width;
+    }
     header {
         margin-bottom: 1.5em;
     }
@@ -76,8 +78,8 @@ header.blog {
     margin-bottom: 1.5em;
     padding-top: 2em;
     height: 30vh;
-    @include MQ(M){
-        height:45vh;
+    @include MQ(M) {
+        height: 45vh;
     }
     @include MQ(L) {
         height: 60vh;
@@ -127,7 +129,6 @@ header.blog {
             }
         }
     }
-
 }
 
 .site-title {

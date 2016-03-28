@@ -3,15 +3,17 @@ article img {
     height: auto;
     transition: filter .3s ease-in-out;
     filter: grayscale(100%);
-    margin-bottom:1em;
-    &.right {
-        float: right;
-        width: 50%;
-        padding:.5em 0em .5em .1em;
-        // border-radius: 20%;
-    }
-    &.left {
-        float: left;
+    margin-bottom: 1em;
+    @include MQ(M) {
+        &.right {
+            float: right;
+            width: 50%;
+            padding: .5em 0em .5em .1em;
+            // border-radius: 20%;
+        }
+        &.left {
+            float: left;
+        }
     }
     &:hover {
         filter: grayscale(0%);
