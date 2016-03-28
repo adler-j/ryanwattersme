@@ -5,18 +5,14 @@ h1.title {
     font-weight: 600;
     line-height: 1;
     color: $h1-page-heading-font-color;
-    // @include MQ(M) {
-    //     font-size: 3.3em;
-    // }
     @include MQ(L) {
         font-size: 3.7em;
-
     }
     &.homepage {
         font-weight: 400;
     }
     &.blog {
-        color:$white;
+        color: $white;
     }
 }
 
@@ -132,5 +128,12 @@ blockquote {
                 color: $body-background-color!important;
             }
         }
+    }
+}
+
+//h1-specific styles
+#stop-laughing {
+    @include MQ(L) {
+        width: 40%;
     }
 }

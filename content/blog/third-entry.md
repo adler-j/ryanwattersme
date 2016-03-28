@@ -1,11 +1,11 @@
 ---
-title: The Third and Most Recent Post
-subtitle:
+title: Third Post
+subtitle: Here is a fake subtitle for testing.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit animi dolorum consequatur, facilis perspiciatis explicabo commodi!
 date: 2016-03-20
 publishdate: 2016-03-20
 updated: 2016-03-20
-image: trump.jpg
+image: keyboard.jpg
 categories: [publishing]
 tags: [publishing, content]
 ---

@@ -3,7 +3,7 @@
     {{ if eq .Section "blog" }} {{ partial "share_social_media.html" . }} {{ end }}
     <header class="{{.Section}}" style="background-image:url(/assets/images/{{.Params.image}});">
         <div class="header-content {{.Section}}">
-                <h1 class="title {{.Section}}">{{ .Title }}</h1>
+                <h1 class="title {{.Section}}" id="{{replace .Title "." "" | urlize}}">{{ .Title }}</h1>
                 {{with .Params.subtitle}}
                     <span class="subtitle">{{.}}</span>
                 {{end}}

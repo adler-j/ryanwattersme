@@ -46,6 +46,7 @@ main > article {
     margin-left: auto;
     margin-right: auto;
     margin-top: .75em;
+    margin-bottom: 2em;
     overflow: scroll;
     position: relative;
     z-index: 9999;
@@ -113,26 +114,6 @@ header.blog {
         position: relative;
         background-color: rgba(0, 0, 0, 0.3);
         padding: .5em;
-        // a {
-        //     color: $white;
-        //     font-size: inherit;
-        //     color: $white;
-        //     transition: box-shadow ease 250ms, color ease 250ms;
-        //     cursor: pointer;
-        //     text-decoration: none;
-        //     box-shadow: 0 -1px 0 $white inset;
-        //     font-weight: inherit;
-        //     padding-left: 2px;
-        //     padding-right: 2px;
-        //     margin-left: -2px;
-        //     margin-right: -2px;
-        //     background-color: transparent;
-        //     font-size: 16px;
-        //     &:hover {
-        //         color: $white;
-        //         box-shadow: 0 -1.5em 0 $brand inset;
-        //     }
-        // }
     }
 }
 
@@ -208,10 +189,3 @@ article.homepage {
     min-height: 100vh;
 }
 
-// article#about {
-//     #me {
-//         width:100%;
-//         clear:both;
-//         display:block;
-//     }
-// }
