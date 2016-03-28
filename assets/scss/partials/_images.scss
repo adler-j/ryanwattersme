@@ -5,7 +5,7 @@ article p img {
     height: auto;
     transition: filter .3s ease-in-out;
     display:block;
-    filter: grayscale(100%);
+    // filter: grayscale(100%);
     margin-bottom: 1em;
     z-index:9999;
     @include MQ(M) {
@@ -16,6 +16,9 @@ article p img {
         }
         &.left {
             float: left;
+        }
+        &.full {
+
         }
     }
     &:hover {
