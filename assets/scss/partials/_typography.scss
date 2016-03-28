@@ -133,7 +133,5 @@ blockquote {
 
 //h1-specific styles
 #stop-laughing {
-    @include MQ(L) {
         width: 40%;
-    }
 }
