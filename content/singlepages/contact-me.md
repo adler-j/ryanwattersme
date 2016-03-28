@@ -12,4 +12,4 @@ categories: []
 comments: First attempt at creating the Contact page for ryanwatters.io
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi culpa natus eius, dicta facilis, placeat dolore neque tenetur consequuntur harum sunt perspiciatis porro deleniti aut, nemo sit fugit! Commodi, debitis!
+If you have questions about the site, would like to share tips or feedback, or would like to discuss contract opportunities, please do not hesitate to contact me.

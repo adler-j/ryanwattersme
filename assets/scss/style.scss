@@ -19,14 +19,13 @@
 @import 'partials/404';
 main[role="main"] {
     width: 95%;
-    display: flex;
-    flex-direction: column;
+    display: block;
     margin-left: auto;
     margin-right: auto;
     margin-top: 60px;
     min-height: 100%;
-    flex: 1;
-    z-index: 10;
+    position:relative;
+    z-index: 1;
     @include header-transition;
     &.open {
         transform: translateX(-$site-menu-width);
@@ -49,11 +48,33 @@ main > article {
     position: relative;
     z-index: 9999;
     overflow-x: hidden;
+    display: block;
     @include MQ(M) {
         width: $content-max-width;
     }
     header {
         margin-bottom: 1.5em;
+    }
+}
+
+main > article.content a,
+article.homepage a,
+article#about a {
+    font-size: inherit;
+    color: $brand;
+    transition: box-shadow ease 250ms, color ease 250ms;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 -1px 0 $brand inset;
+    font-weight: inherit;
+    padding-left: 2px;
+    padding-right: 2px;
+    margin-left: -2px;
+    margin-right: -2px;
+    background-color: transparent;
+    &:hover {
+        color: $body-background-color;
+        box-shadow: 0 -1.5em 0 $brand inset;
     }
 }
 
@@ -74,19 +95,20 @@ header.blog {
     margin-top: 1em;
     width: 110%!important;
     margin-left: -5%;
-    margin-top: 0px;
+    margin-top: -10px;
     margin-bottom: 1.5em;
     padding-top: 2em;
     height: 30vh;
     @include MQ(M) {
         height: 45vh;
+        margin-top:0px;
     }
     @include MQ(L) {
         height: 60vh;
     }
     @include MQ(retinaLandscape) {
         height: calc(100vh - 3em);
-        margin-top:0px;
+        margin-top: 0px;
     }
     background-size: cover;
     background-repeat: no-repeat;
@@ -162,48 +184,8 @@ article time.publishdate {
     font-family: $heading-font-family;
 }
 
-main > article.content a,
-article.homepage a,
-article#about a {
-    font-size: inherit;
-    color: $brand;
-    transition: box-shadow ease 250ms, color ease 250ms;
-    cursor: pointer;
-    text-decoration: none;
-    box-shadow: 0 -1px 0 $brand inset;
-    font-weight: inherit;
-    padding-left: 2px;
-    padding-right: 2px;
-    margin-left: -2px;
-    margin-right: -2px;
-    background-color: transparent;
-    &:hover {
-        color: $body-background-color;
-        box-shadow: 0 -1.5em 0 $brand inset;
-    }
-}
-
 article.homepage {
-    display: flex;
-    flex-direction: column;
+    display: block;
     min-height: 100%;
     min-height: 100vh;
-}
-
-article#about {
-    img {
-        width: 40%;
-        max-width: 150px;
-        float: right;
-        padding-bottom: 0px;
-        margin-top: 1em;
-        margin-left: .5em;
-        box-shadow: 0px 0px 4px 0px rgba(51, 51, 51, 0.5);
-    }
-    time {
-        display: none;
-    }
-    a {
-        display: inline;
-    }
 }
