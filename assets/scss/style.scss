@@ -26,6 +26,7 @@ main[role="main"] {
     margin-right: auto;
     margin-top: 60px;
     min-height: 100%;
+    margin-bottom:3em;
     position: relative;
     z-index: 1;
     @include header-transition;
@@ -46,7 +47,6 @@ main > article {
     margin-left: auto;
     margin-right: auto;
     margin-top: .75em;
-    margin-bottom: 2em;
     overflow: scroll;
     position: relative;
     z-index: 9999;
