@@ -79,18 +79,7 @@ article#about a {
     }
 }
 
-a.category {
-    width: auto;
-    box-shadow: 0 -1px 0 $white inset;
-    cursor: pointer;
-    color: $base-font-color;
-    font-family: $heading-font-family;
-    font-size: .7em;
-    text-transform: uppercase;
-    small {
-        font-size: 1em;
-    }
-}
+
 
 header.blog {
     margin-top: 1em;
@@ -99,9 +88,9 @@ header.blog {
     margin-top: -10px;
     margin-bottom: 1.5em;
     padding-top: 2em;
-    height: 30vh;
+    height: 50vh;
     @include MQ(M) {
-        height: 45vh;
+        height: 50vh;
         margin-top:0px;
     }
     @include MQ(L) {
@@ -115,8 +104,6 @@ header.blog {
     background-repeat: no-repeat;
     background-position: center;
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
-    // background-image: linear-gradient(rgba(255, 0, 0, 0.45),rgba(255, 0, 0, 0.45));
-    // filter: grayscale(100%);
     .header-content.blog {
         width: 90%;
         height: auto;
@@ -141,11 +128,25 @@ header.blog {
             margin-left: -2px;
             margin-right: -2px;
             background-color: transparent;
+            font-size:16px;
             &:hover {
                 color: $white;
                 box-shadow: 0 -1.5em 0 $brand inset;
             }
         }
+    }
+}
+
+a.category {
+    width: auto;
+    box-shadow: 0 -1px 0 $white inset;
+    cursor: pointer;
+    color: $base-font-color;
+    font-family: $heading-font-family;
+    font-size: 16px;
+    text-transform: uppercase;
+    small {
+        font-size: 16px;
     }
 }
 
@@ -165,14 +166,13 @@ header.blog {
 .category-and-publishdate {
     display: block;
     width: 100%;
-    // position: absolute;
-    // bottom: 2em;
     time.publishdate {
         position: absolute;
         bottom: .5em;
         right: .5em;
-        font-size: .8em;
+        font-size: 16px;
         text-transform: uppercase;
+        font-family:$heading-font-family;
     }
 }
 
@@ -180,7 +180,6 @@ article time.publishdate {
     position: absolute;
     top: 0;
     right: 0;
-    font-size: .8em;
     text-transform: uppercase;
     font-family: $heading-font-family;
 }
