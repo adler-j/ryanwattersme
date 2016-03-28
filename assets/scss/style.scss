@@ -84,6 +84,10 @@ header.blog {
     @include MQ(L) {
         height: 60vh;
     }
+    @include MQ(retinaLandscape) {
+        height: calc(100vh - 3em);
+        margin-top:0px;
+    }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -93,22 +97,13 @@ header.blog {
     .header-content.blog {
         width: 90%;
         height: auto;
-        // padding-top:2em;
         max-width: $content-max-width;
         color: $white;
         margin-left: auto;
         margin-right: auto;
         position: relative;
         background-color: rgba(0, 0, 0, 0.3);
-        // margin-left: -.5em;
-        // margin-right: -.5em;
         padding: .5em;
-        // .title-and-subtitle {
-        //     background-color: rgba(0, 0, 0, 0.3);
-        //     margin-left: -.5em;
-        //     margin-right: -.5em;
-        //     padding: .5em;
-        // }
         a {
             color: $white;
             font-size: inherit;
