@@ -43,4 +43,6 @@ function toggleHeader(event) {
 <script src="/assets/js/jquery-2.2.2.min.js"></script>
 {{ end }}
 <script async src="{{.Site.BaseURL}}/assets/js/main.min.js"></script>
-<script async src="{{.Site.BaseURL}}/assets/js/headroom.min.js"></script>
+{{ if .IsPage }}
+        <script async src="{{.Site.BaseURL}}/assets/js/headroom.min.js"></script>
+{{ end }}

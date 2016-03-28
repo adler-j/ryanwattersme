@@ -1,6 +1,10 @@
 {{ partial "site_header.html" . }}
 <main role="main">
-    {{ if eq .Section "blog" }} {{ partial "share_social_media.html" . }} {{ end }}
+    {{ if .IsPage }}
+        {{if ne .URL "/contact/"}}
+            {{ partial "share_social_media.html" . }}
+        {{ end }}
+    {{ end }}
     <header class="{{.Section}}" style="background-image:url(/assets/images/{{.Params.image}});">
         <div class="header-content {{.Section}}">
                 <h1 class="title {{.Section}}" id="{{replace .Title "." "" | urlize}}">{{ .Title }}</h1>
