@@ -1,4 +1,4 @@
-//Begin Navigation
+//Navigation Base
 nav {
     width: 80%;
     display: flex;
@@ -10,10 +10,16 @@ nav {
     text-align: right;
 }
 
-nav[role="navigation"] {
+// .nav-wrapper {
+//     overflow-y: scroll;
+// }
+
+//Main Navigation
+nav.site-navigation {
     z-index: 99;
     margin-top: 3.5em;
-    flex-grow:1;
+    flex-grow: 1;
+    overflow-y: scroll;
     ul {
         list-style: none;
         margin-left: .2em;
@@ -34,43 +40,58 @@ nav[role="navigation"] {
                 }
             }
             &:first-child {
-                a{
-                    font-weight:700;
-                    font-size:.8em;
-                    text-transform:uppercase;
-                    @include MQ(L){
-                        font-size:.7em;
-                    }
+                a {
+                    font-weight: 700;
+                    font-size: .6em;
+                    text-transform: uppercase;
                 }
+            }
+            //styling for colophon link
+            &:last-child,
+            &.colophon {
+                margin-top: 25vh;
+                a {
+                    text-transform: uppercase;
+                    font-size: .75em;
+                }
+            }
+            &.search-list-item + .colophon {
+                margin-top: 15vh;
             }
         }
     }
-}
-
-nav.social {
-    display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    margin-top: auto;
-    ul {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-        padding-left: 0px;
+    ul.social {
+        display: block;
+        margin-top: 1em;
         margin-left: 0px;
+        padding-left: 0px;
+        width: 100%;
+        padding-left: 0px;
+        float: left;
         li {
             display: inline;
+            font-size: .9em;
             a {
-                font-size: 1em;
+                // font-size: 1em;
+                i.icon-twitter {
+                    font-size: 1.6em;
+                }
+                i.icon-github {
+                    font-size: .9em;
+                }
+                i.icon-linkedin {
+                    font-size: .9em;
+                }
                 i.icon-rss {
-                    font-size:.8em;
+                    font-size: 1.1em;
+                    margin-right: .2em;
                 }
             }
         }
     }
 }
 
+//Global/Site Social Buttons in off-canvas header
 //Begin List Styles
 ul.contents-list {
     list-style: none;
@@ -106,9 +127,9 @@ ul.contents-list {
                 }
                 &:hover {
                     color: $anchor-color;
-                    margin-bottom:-1px;
+                    margin-bottom: -1px;
                     border-bottom: 1px solid $anchor-color;
-                    box-shadow:none;
+                    box-shadow: none;
                     h1 {
                         color: $anchor-color;
                     }

@@ -1,6 +1,6 @@
 ---
-title: I Need a Vacation
-subtitle:
+title: Taking Vacation
+subtitle: Photos of my Beach Vacation
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit animi dolorum consequatur, facilis perspiciatis explicabo commodi!
 date: 2016-03-19
 publishdate: 2016-03-19

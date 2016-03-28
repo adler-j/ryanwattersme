@@ -5,11 +5,13 @@
         <div class="header-content {{.Section}}">
                 <h1 class="title {{.Section}}">{{ .Title }}</h1>
                 {{with .Params.subtitle}}
-                    <h2 class="subtitle">{{.}}</h2>
+                    <span class="subtitle">{{.}}</span>
                 {{end}}
             <div class="category-and-publishdate">
+                <small>IN: </small>
                 {{range .Params.categories}}
-                <a href="/categories/{{.|urlize}}" class="category"><small>IN: </small>{{.}}</a> {{end}}
+                <a href="/categories/{{.|urlize}}" class="category">{{.}}</a>
+                {{end}}
                 <time class="publishdate" datetime="{{.PublishDate}}">{{.PublishDate.Format "Jan 2, 2006"}}</time>
             </div>
         </div>

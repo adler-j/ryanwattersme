@@ -17,6 +17,7 @@
 @import 'partials/share-menu';
 @import 'partials/bigfoot';
 @import 'partials/form';
+@import 'partials/homepage-styles';
 @import 'partials/404';
 main[role="main"] {
     width: 95%;
@@ -25,7 +26,7 @@ main[role="main"] {
     margin-right: auto;
     margin-top: 60px;
     min-height: 100%;
-    position:relative;
+    position: relative;
     z-index: 1;
     @include header-transition;
     &.open {
@@ -79,8 +80,6 @@ article#about a {
     }
 }
 
-
-
 header.blog {
     margin-top: 1em;
     width: 110%!important;
@@ -91,7 +90,7 @@ header.blog {
     height: 50vh;
     @include MQ(M) {
         height: 50vh;
-        margin-top:0px;
+        margin-top: 0px;
     }
     @include MQ(L) {
         height: 60vh;
@@ -114,39 +113,26 @@ header.blog {
         position: relative;
         background-color: rgba(0, 0, 0, 0.3);
         padding: .5em;
-        a {
-            color: $white;
-            font-size: inherit;
-            color: $white;
-            transition: box-shadow ease 250ms, color ease 250ms;
-            cursor: pointer;
-            text-decoration: none;
-            box-shadow: 0 -1px 0 $white inset;
-            font-weight: inherit;
-            padding-left: 2px;
-            padding-right: 2px;
-            margin-left: -2px;
-            margin-right: -2px;
-            background-color: transparent;
-            font-size:16px;
-            &:hover {
-                color: $white;
-                box-shadow: 0 -1.5em 0 $brand inset;
-            }
-        }
-    }
-}
-
-a.category {
-    width: auto;
-    box-shadow: 0 -1px 0 $white inset;
-    cursor: pointer;
-    color: $base-font-color;
-    font-family: $heading-font-family;
-    font-size: 16px;
-    text-transform: uppercase;
-    small {
-        font-size: 16px;
+        // a {
+        //     color: $white;
+        //     font-size: inherit;
+        //     color: $white;
+        //     transition: box-shadow ease 250ms, color ease 250ms;
+        //     cursor: pointer;
+        //     text-decoration: none;
+        //     box-shadow: 0 -1px 0 $white inset;
+        //     font-weight: inherit;
+        //     padding-left: 2px;
+        //     padding-right: 2px;
+        //     margin-left: -2px;
+        //     margin-right: -2px;
+        //     background-color: transparent;
+        //     font-size: 16px;
+        //     &:hover {
+        //         color: $white;
+        //         box-shadow: 0 -1.5em 0 $brand inset;
+        //     }
+        // }
     }
 }
 
@@ -166,13 +152,45 @@ a.category {
 .category-and-publishdate {
     display: block;
     width: 100%;
+    a.category {
+        width: auto;
+        box-shadow: 0 -1px 0 $white inset;
+        cursor: pointer;
+        color: $base-font-color;
+        font-family: $heading-font-family;
+        font-size: 16px;
+        text-transform: uppercase;
+        margin-right: 1em;
+        color: $white;
+        font-size: inherit;
+        color: $white;
+        transition: box-shadow ease 250ms, color ease 250ms;
+        cursor: pointer;
+        text-decoration: none;
+        box-shadow: 0 -1px 0 $white inset;
+        font-weight: inherit;
+        padding-left: 2px;
+        padding-right: 2px;
+        margin-left: -2px;
+        margin-right: .25em;
+        background-color: transparent;
+        font-size: 16px;
+        &:hover {
+            color: $white;
+            box-shadow: 0 -1.5em 0 $brand inset;
+        }
+    }
+    small {
+        font-size: .6em;
+        font-family: $heading-font-family;
+    }
     time.publishdate {
         position: absolute;
         bottom: .5em;
         right: .5em;
         font-size: 16px;
         text-transform: uppercase;
-        font-family:$heading-font-family;
+        font-family: $heading-font-family;
     }
 }
 
@@ -191,19 +209,9 @@ article.homepage {
 }
 
 // article#about {
-//     img {
-//         width: 40%;
-//         max-width: 150px;
-//         float: right;
-//         padding-bottom: 0px;
-//         margin-top: 1em;
-//         margin-left: .5em;
-//         box-shadow: 0px 0px 4px 0px rgba(51, 51, 51, 0.5);
-//     }
-//     time {
-//         display: none;
-//     }
-//     a {
-//         display: inline;
+//     #me {
+//         width:100%;
+//         clear:both;
+//         display:block;
 //     }
 // }

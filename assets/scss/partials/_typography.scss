@@ -1,15 +1,16 @@
 h1.title {
-    font-size: 2.4em;
+    font-size: 10vw;
     margin-top: .3em;
     margin-bottom: 6px;
     font-weight: 600;
     line-height: 1;
     color: $h1-page-heading-font-color;
-    @include MQ(M) {
-        font-size: 3.5em;
-    }
+    // @include MQ(M) {
+    //     font-size: 3.3em;
+    // }
     @include MQ(L) {
-        font-size: 3.7rem;
+        font-size: 3.7em;
+
     }
     &.homepage {
         font-weight: 400;
@@ -19,7 +20,7 @@ h1.title {
     }
 }
 
-span.subtitle {
+.subtitle {
     font-size: 1em;
     text-transform: uppercase;
     margin-bottom: 1em;

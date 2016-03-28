@@ -1,20 +1,20 @@
 <a href="#" id="close-menu"><i class="icon-cancel"></i></a>
-<!-- <div class="site-title">Ryan Watters</div> -->
-<nav role="navigation" aria-label="main navigation" class="site-navigation">
-    <ul>
-        <li><a href="/">ryanwatters.io</a></li>
-        <li><a href="/blog">Blog</a></li>
-        <li><a href="/about">About</a></li>
-        <li><a href="/contact">Contact</a></li>
-        <!-- <li><a href="#" id="search-toggle"><i class="icon-search"></i> Search</a></li> -->
-    </ul>
-</nav>
-<nav class="social">
-    <ul>
-        <li><a href="https://www.twitter.com/@{{.Site.Params.Twitter}}"><i class="icon-twitter"></i></a></li>
-        <li><a href="https://www.github.com/{{.Site.Params.GitHub}}"><i class="icon-github"></i></a></li>
-        <li><a href="{{.Site.Params.LinkedIn}}"><i class="icon-linkedin"></i></a></li>
-        <li><a href="/index.xml" target="_blank"><i class="icon-rss"></i></a></li>
-    </ul>
-</nav>
+<!-- <div class="nav-wrapper"> -->
+    <nav role="navigation" aria-label="main navigation" class="site-navigation">
+        <ul class="site-navigation">
+            <li><a href="/">ryanwatters.io</a></li>
+            <li><a href="/blog">Blog</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+            <!-- <li><a href="#" id="search-toggle"><i class="icon-search"></i> Search</a></li> -->
+            <li class="colophon"><a href="/colophon">Colophon</a></li>
+        </ul>
+        <ul class="social">
+            <li><a href="https://www.twitter.com/@{{.Site.Params.Twitter}}"><i class="icon-twitter"></i></a></li>
+            <li><a href="https://www.github.com/{{.Site.Params.GitHub}}"><i class="icon-github"></i></a></li>
+            <li><a href="{{.Site.Params.LinkedIn}}"><i class="icon-linkedin"></i></a></li>
+            <li><a href="/index.xml" target="_blank"><i class="icon-rss"></i></a></li>
+        </ul>
+    </nav>
+<!-- </div> -->
 <div class="copyright">&copy; {{.Site.LastChange.Format "2006" }} {{.Site.Copyright}}</div>
