@@ -15,7 +15,6 @@
         </div>
     </header>
     <article class="content {{.Section}}" id="{{.Title|urlize}}">
-        <h5>{{.Permalink}}</h5>
         {{ .Content }}
     </article>
     <ul class="tags"><span>tags:</span> {{ range .Params.tags }}
