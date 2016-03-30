@@ -28,7 +28,7 @@ verboseLog = false
 watch = true
 
 [permalinks]
-  singlepages = "/:title/"
+  singletons = "/:title/"
 
 [params]
 	SiteAuthor = ""

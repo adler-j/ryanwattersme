@@ -1,13 +1,13 @@
 [
 {
-    "href": "/about/",
+    "href": "/singletons/about/",
     "title": "About",
     "tags": ["about", "development"],
     "categories": [],
     "content": "[Me My name is Ryan. I am a content strategist, editor, writer, and web publisher in Chicago, IL. People have told me to write a blog for the last decade, but I didn&amp;rsquo;t fall in love with the web until 2013. I&amp;rsquo;m trying to catch up. The Site Content All content for the site is written in clean, semantic markdown according to the latest commonmark spec. Extensions to the markdown are rendered on the client via several JavaScript modules. That said, my aim was to create CMS-independent content that could be easily ported to any static site generator that interprets markdown files with embedded yaml. Design This site uses two premium typefaces, Chaparral Pro and Futura PT, both of which are provided via Adobe&amp;rsquo;s Typekit web service. Development All code used for this site is open source and hosted on GitHub.]"
 },
 {
-    "href": "/contact/",
+    "href": "/singletons/contact-me/",
     "title": "Contact",
     "tags": ["about", "development"],
     "categories": [],
@@ -15,27 +15,34 @@
 },
 {
     "href": "/blog/third-entry/",
-    "title": "The Third and Most Recent Post",
+    "title": "Third Post",
     "tags": ["publishing", "content"],
-    "categories": ["technology"],
+    "categories": ["publishing"],
     "content": "[Amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur. Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let&amp;rsquo;s make a link to Google. Here is a blockquote without any attribution. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis! Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Here is a long and engaging quote from a very famous person that everyone knows and admires. - Jon Doe Article Heading Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur. function myFunction(){ console.log(&amp;quot;Hello World!&amp;quot;); } Article Subheading That is Longer than the Heading Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid. Heading Again Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo enim magni facere officia nesciunt, sunt obcaecati recusandae, doloribus libero. Nobis amet ea consectetur possimus sed necessitatibus optio laudantium dolor quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut tempore at unde. Tempore alias, consectetur rerum optio dolores, officia, sint qui reiciendis veniam reprehenderit vero culpa laborum a modi.]"
 },
 {
     "href": "/blog/second-entry/",
-    "title": "I Need a Vacation",
+    "title": "Taking Vacation",
     "tags": ["javascript", "development"],
     "categories": ["technology"],
     "content": "[Dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur. Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let&amp;rsquo;s make a link to Google. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis! Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Article Heading Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur. Article Subheading That is Considerably Longer Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid. Heading Again Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo enim magni facere officia nesciunt, sunt obcaecati recusandae, doloribus libero. Nobis amet ea consectetur possimus sed necessitatibus optio laudantium dolor quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut tempore at unde. Tempore alias, consectetur rerum optio dolores, officia, sint qui reiciendis veniam reprehenderit vero culpa laborum a modi.]"
 },
 {
+    "href": "/singletons/colophon/",
+    "title": "Colophon",
+    "tags": ["colophon", "style"],
+    "categories": ["publishing"],
+    "content": "[]"
+},
+{
     "href": "/blog/first-entry/",
-    "title": "What an Asshole",
+    "title": "Stop. Laughing.",
     "tags": ["publishing", "content"],
-    "categories": ["musings"],
+    "categories": ["essays"],
     "content": "[Ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur. Here is an item with a superscript.1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore fugit quam quas voluptatibus at animi ratione velit optio, qui iste. Maxime, dolor dicta voluptatem quasi temporibus libero perspiciatis enim cumque. Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let&amp;rsquo;s make a link to Google. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis! Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Article Heading Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur. Subheading That Is Longer Than the Heading Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid. Heading Again Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo enim magni facere officia nesciunt, sunt2 obcaecati recusandae, doloribus libero. Nobis amet ea consectetur possimus sed necessitatibus optio laudantium dolor quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut tempore at unde. Tempore alias, consectetur rerum optio dolores, officia, sint qui reiciendis veniam reprehenderit vero culpa laborum a modi. Here is a link to Google. ↩ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quidem quibusdam id veniam cupiditate fuga maxime exercitationem totam. Labore distinctio vero nostrum quisquam, eos hic accusantium. Porro doloribus, repellat earum. ↩]"
 },
 {
-    "href": "/404/",
+    "href": "/singletons/404/",
     "title": "404",
     "tags": [],
     "categories": [],

@@ -5,7 +5,7 @@ description: An overview of the reasoning behind the site, as well as the develo
 date: 2016-03-20
 publishdate: 2016-03-20
 updated: 2016-03-20
-type: singlepages
+type: singletons
 layout: about
 tags: [about,development]
 categories: []
@@ -16,7 +16,7 @@ comments: First attempt at creating the About page for ryanwatters.io
 
 My name is Ryan. I am a content strategist, editor, writer, and web publisher in Chicago, IL.
 
-People have told me to write a blog for the last decade, but I didn't fall in love with the web until 2013. I'm trying to catch up.
+People have told me to write a blog for the last decade. I'm catching up.
 
 ### The Site
 
