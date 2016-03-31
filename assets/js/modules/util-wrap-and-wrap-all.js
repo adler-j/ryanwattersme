@@ -57,5 +57,3 @@
         }
     };
 })();
-
-console.log(clickOrTouchStart);

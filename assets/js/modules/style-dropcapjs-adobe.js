@@ -128,8 +128,6 @@ if ((firstPara !== null) && (location.pathname.split('/').length > 2) && blogTes
     var remainingText = firstParaText.substring(1, firstParaText.length);
     //switching out text of first paragraph to include dropcap span plus the remaining text of the paragraph
     firstPara.innerHTML = firstLetter + remainingText;
-} else {
-    console.log("Dropcaps.js is not being applied to this page!");
 }
 var dropcap = document.querySelector(".dropcap");
 if (dropcap !== null) {

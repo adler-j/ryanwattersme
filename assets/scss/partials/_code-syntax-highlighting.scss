@@ -1,13 +1,8 @@
-@font-face {
-    font-family: "inconsolata";
-    src: url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.eot");
-    src: url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.eot?#iefix") format("embedded-opentype"), url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.woff") format("woff"), url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.ttf") format("truetype"), url("/assets/css/fonts/inconsolata/inconsolata-regular-webfont.svg") format("svg");
-    font-weight: 400;
-    font-style: normal
+code,pre,.hljs {
+    font-family:$code-font-family;
 }
 
 p > code {
-    font-family: 'inconsolata', courier, monospace;
     color:$base-font-color;
     background-color:lighten($base-font-color,70%);
     padding-left:.1em;
@@ -31,7 +26,6 @@ pre {
 
 // Modified from https://github.com/isagalaev/highlight.js/blob/master/src/styles/monokai-sublime.css
 //These styles rely on highlight.js, which is a script located at assets/js/modules/style-syntax-highlighting-highlightjs.js
-//
 .hljs {
     display: block;
     overflow-x: auto;
@@ -39,7 +33,6 @@ pre {
     background: darken($body-background-color, 5%);
     font-size: .9em;
     font-weight: 400;
-    font-family: 'inconsolata', monospace;
     @include MQ(M) {
         font-size: 1em;
         padding-left: 5%;

@@ -12,10 +12,11 @@ $include-second-font:true;
 $include-third-font:true;
 $font: 'chaparralpro';
 $second-font: 'futurapt';
-$third-font: 'inconsolata';
+$third-font: 'robotomono'; //code blocks
 
 $base-font-family: $font, 'helvetica Neue', Helvetica, sans-serif;
 $heading-font-family: $second-font,"futura-pt",Georgia,serif;
+$code-font-family: $third-font,Courier,monospace;
 $heading-font-weight: 400;
 $form-input-font-family: $base-font-family;
 $site-header-font-family: $heading-font-family,Arial,Helvetic,sans-serif;
