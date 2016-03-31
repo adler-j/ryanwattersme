@@ -5,9 +5,9 @@
             {{ partial "share_social_media.html" . }}
         {{ end }}
     {{ end }}
-    <header class="{{.Section}}" style="background-image:url(/assets/images/{{.Params.image}});">
+    <header class="{{.Section}}" style="background-image:url(/assets/images/{{.Params.image}});" id="{{replace .Title "." "" | urlize}}">
         <div class="header-content {{.Section}}">
-                <h1 class="title {{.Section}}" id="{{replace .Title "." "" | urlize}}">{{ .Title }}</h1>
+                <h1 class="title {{.Section}}" >{{ .Title }}</h1>
                 {{with .Params.subtitle}}
                     <span class="subtitle">{{.}}</span>
                 {{end}}

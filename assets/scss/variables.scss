@@ -42,7 +42,8 @@ $gray: lighten($base-font-color,20%);
 $site-logo-color:$base-font-color;
 $body-background-color:#ffffff;
 $input-placeholder-text-color:lighten($base-font-color,20%);
-$site-menu-background-color:$base-font-color;
+$site-header-background-color:darken($body-background-color,1%);
+$top-bar-background-color:$site-header-background-color;
 $site-logo-color:$base-font-color;
 $accent-color:$red;
 
@@ -51,7 +52,7 @@ $dropcap-color:$accent-color;
 
 $blockquote-font-family: $base-font-family;
 $blockquote-border-color:$accent-color;
-$blockquote-background-color:darken($body-background-color,2%);
+$blockquote-background-color:$body-background-color;
 $blockquote-font-size:1.2em;
 $blockquote-font-style:regular;
 
