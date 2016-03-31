@@ -7,12 +7,12 @@ $L:1025px;
 // XL Screens
 $XL:1200px;
 
-$use-font-face-module:false;
-$include-second-font:false;
-$include-third-font:false;
-$font: 'chaparral-pro';
-$second-font: 'futura-pt';
-$third-font: 'ptsans';
+$use-font-face-module:true;
+$include-second-font:true;
+$include-third-font:true;
+$font: 'chaparralpro';
+$second-font: 'futurapt';
+$third-font: 'inconsolata';
 
 $base-font-family: $font, 'helvetica Neue', Helvetica, sans-serif;
 $heading-font-family: $second-font,"futura-pt",Georgia,serif;
