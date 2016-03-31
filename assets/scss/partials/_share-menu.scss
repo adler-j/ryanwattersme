@@ -9,10 +9,11 @@ div.social-media-share-menu {
     z-index: 999999;
     font-size: 1em;
     transform: translateY(100%);
-    @include MQ(M) {
-        height: 2.5em;
-    }
+    // @include MQ(M) {
+    //     height: 2.5em;
+    // }
     ul.share-menu {
+        display: flex;
         list-style: none;
         margin: 0px;
         padding: 0px;
@@ -20,25 +21,56 @@ div.social-media-share-menu {
         align-items: center;
         justify-content: space-around;
         width: 100%;
-        display: flex;
         li {
             a {
                 color: $base-font-color;
             }
         }
-        @include MQ(M){
-        	max-width:$content-max-width;
-        	margin-left:auto;
-        	margin-right:auto;
-        	li {
-        		display:inline;
-        	}
-        }
+        // @include MQ(M){
+        //  max-width:$content-max-width;
+        //  margin-left:auto;
+        //  margin-right:auto;
+        //  li {
+        //      display:inline;
+        //  }
+        // }
     }
     &.social-fixed.social-top {
-    	transform:translateY(100%);
+        transform: translateY(100%);
     }
-    &.social-fixed,&.social-reveal {
+    &.social-fixed,
+    &.social-reveal {
         transform: translateY(0%);
+    }
+}
+
+@include MQ(L) {
+    div.social-media-share-menu {
+        position: fixed;
+        left: 3em;
+        top: 6em;
+        width: 50px;
+        height: 350px;
+        display: block;
+        transform: translateX(-300%);
+        border:none;
+        box-shadow: 0px 0px 5px 0px rgba(154,154,154,0.5);
+        ul.share-menu {
+            display: flex;
+            flex-direction:column;
+            justify-content:center;
+            width: 50px;
+            height:auto;
+            li {
+                display: list;
+            }
+        }
+        &.social-fixed.social-top {
+            transform: translateX(-300%);
+        }
+        &.social-fixed,
+        &.social-reveal {
+            transform: translateX(0%);
+        }
     }
 }

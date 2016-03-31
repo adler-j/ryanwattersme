@@ -84,6 +84,7 @@ article#about a {
 }
 
 header.blog {
+    transition:all .2s ease-in-out;
     margin-top: 1em;
     width: 110%!important;
     margin-left: -5%;
@@ -91,6 +92,7 @@ header.blog {
     margin-bottom: 1.5em;
     padding-top: 2em;
     height: 50vh;
+    filter:grayscale(100%);
     @include MQ(M) {
         height: 50vh;
         margin-top: 0px;
@@ -101,6 +103,9 @@ header.blog {
     @include MQ(retinaLandscape) {
         height: calc(100vh - 3em);
         margin-top: 0px;
+    }
+    &:hover {
+        filter:grayscale(0%);
     }
     background-size: cover;
     background-repeat: no-repeat;

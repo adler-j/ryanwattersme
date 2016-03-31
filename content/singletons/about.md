@@ -22,11 +22,7 @@ People have told me to write a blog for the last decade. I'm catching up.
 
 #### Content
 
-All content for the site is written in clean, semantic [markdown](https://daringfireball.net/projects/markdown/) according to the latest [commonmark spec](http://spec.commonmark.org/). Extensions to the markdown are rendered on the client via [several JavaScript modules](https://github.com/rdwatters/ryanwattersme/tree/master/assets/js/modules). That said, my aim was to create CMS-independent content that could be easily ported to any [static site generator](https://www.staticgen.com/) that interprets markdown files with embedded yaml.
-
-#### Design
-
-This site uses two premium typefaces, Chaparral Pro and Futura PT, both of which are provided via [Adobe's Typekit web service](https://typekit.com/fonts).
+All content for the site is written in clean, semantic [markdown](https://daringfireball.net/projects/markdown/) according to the latest [commonmark spec](http://spec.commonmark.org/). Extensions to markdown are rendered on the client through [several JavaScript modules](https://github.com/rdwatters/ryanwattersme/tree/master/assets/js/modules). My intent is to create CMS-independent content that can be easily ported to any [static site generator](https://www.staticgen.com/) with support for markdown files with embedded yaml.
 
 #### Development
 
