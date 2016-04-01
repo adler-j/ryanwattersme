@@ -22,7 +22,7 @@ Friends have told me to write a blog for the last decade. I'm just catching up.
 
 #### Content
 
-All content for the site is written in CMS-independent, semantic [markdown](https://daringfireball.net/projects/markdown/) in observation of the latest [commonmark spec](http://spec.commonmark.org/). Extensions to markdown are rendered on the client through [several JavaScript modules](https://github.com/rdwatters/ryanwattersme/tree/master/assets/js/modules). My intent is to create CMS-independent content that can be easily ported to any [static site generator](https://www.staticgen.com/) with support for markdown files with embedded yaml.
+All content for the site is written in clean, semantic [markdown](https://daringfireball.net/projects/markdown/) in observation of the latest [commonmark spec](http://spec.commonmark.org/). As a publisher, my intent is to create CMS-independent content that can be easily ported to any [static site generator](https://www.staticgen.com/) with support for markdown files with embedded yaml. Where markdown falls short, extensions the syntax are rendered on the client through [several JavaScript modules](https://github.com/rdwatters/ryanwattersme/tree/master/assets/js/modules) or [Hugo Shortcodes](http://gohugo.io/extras/shortcodes/).
 
 #### Development
 
