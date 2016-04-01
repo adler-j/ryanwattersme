@@ -1,6 +1,6 @@
 ---
-title: Above the Microscope
-subtitle: What pathology teaches us about America's modern scientific ethic.
+title: First Entry
+subtitle: This is only a test subtitle for layout purposes.
 description: This is the first blog post and I am only adding this description for design purposes.
 date: 2016-03-18
 publishdate: 2016-03-18
