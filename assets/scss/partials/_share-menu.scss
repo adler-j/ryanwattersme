@@ -9,9 +9,6 @@ div.social-media-share-menu {
     z-index: 999999;
     font-size: 1em;
     transform: translateY(100%);
-    // @include MQ(M) {
-    //     height: 2.5em;
-    // }
     ul.share-menu {
         display: flex;
         list-style: none;
@@ -26,14 +23,6 @@ div.social-media-share-menu {
                 color: $base-font-color;
             }
         }
-        // @include MQ(M){
-        //  max-width:$content-max-width;
-        //  margin-left:auto;
-        //  margin-right:auto;
-        //  li {
-        //      display:inline;
-        //  }
-        // }
     }
     &.social-fixed.social-top {
         transform: translateY(100%);
@@ -74,3 +63,25 @@ div.social-media-share-menu {
         }
     }
 }
+
+
+div.kudos-block {
+    position: relative;
+    display:block;
+    margin-right:auto;
+    margin-left:auto;
+    @include MQ(L) {
+        position:fixed;
+        top: 6em;
+        right: 3em;
+        transform:translateX(600%);
+        &.kudos-hidden,&.kudos-top {
+            transform:translateX(600%);
+        }
+        &.kudos-unpinned {
+            transform:translateX(0%);
+            opacity:1;
+        }
+    }
+}
+

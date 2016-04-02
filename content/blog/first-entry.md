@@ -12,6 +12,12 @@ tags: [publishing, content]
 
 Ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur. Here is an item with a superscript.[^1] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore fugit quam quas voluptatibus at animi ratione velit optio, qui iste. Maxime, dolor dicta voluptatem quasi temporibus libero perspiciatis enim cumque.
 
+```javascript
+function myFunction(){
+  console.log("hello world!");
+}
+```
+
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let's make a [link to Google](https://www.google.com).
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!
@@ -23,8 +29,6 @@ Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite tre
 ### Article Heading
 
 Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.
-
-![image with some alt text. $=right](/assets/images/my-image.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
 

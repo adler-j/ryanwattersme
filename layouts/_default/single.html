@@ -27,5 +27,6 @@
         <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
         {{ end }}
     </ul>
+    {{partial "parse.html" . }}
 </main>
 {{ partial "site_footer.html" . }}

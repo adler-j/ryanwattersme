@@ -21,6 +21,7 @@
 @import 'partials/404';
 @import 'partials/colophon';
 @import 'partials/post-specific-styles';
+@import 'partials/kudos';
 main[role="main"] {
     width: 95%;
     display: block;
@@ -28,7 +29,7 @@ main[role="main"] {
     margin-right: auto;
     margin-top: 60px;
     min-height: 100%;
-    margin-bottom:3em;
+    margin-bottom: 3em;
     position: relative;
     z-index: 1;
     @include header-transition;
@@ -84,7 +85,7 @@ article#about a {
 }
 
 header.blog {
-    transition:all .2s ease-in-out;
+    transition: all .2s ease-in-out;
     margin-top: 1em;
     width: 110%!important;
     margin-left: -5%;
@@ -92,7 +93,7 @@ header.blog {
     margin-bottom: 1.5em;
     padding-top: 2em;
     height: 50vh;
-    filter:grayscale(100%);
+    filter: grayscale(100%);
     @include MQ(M) {
         height: 50vh;
         margin-top: 0px;
@@ -105,7 +106,7 @@ header.blog {
         margin-top: 0px;
     }
     &:hover {
-        filter:grayscale(0%);
+        filter: grayscale(0%);
     }
     background-size: cover;
     background-repeat: no-repeat;
@@ -195,4 +196,3 @@ article.homepage {
     min-height: 100%;
     min-height: 100vh;
 }
-
