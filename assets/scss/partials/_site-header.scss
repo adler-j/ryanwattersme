@@ -29,9 +29,9 @@ header.site-header {
 
 #close-menu {
     position: absolute;
-    top: .75em;
-    right: .75em;
-    font-size: 1.1em;
+    top: .1em;
+    right: .1em;
+    font-size: 2em;
 }
 
 //headroom.js transitions
@@ -87,5 +87,6 @@ a.section-title {
     text-align: center;
     position: relative;
     margin-top:1em;
+    margin-bottom:1em;
     font-family:$site-header-font-family;
 }
