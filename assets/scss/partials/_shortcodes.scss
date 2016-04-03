@@ -150,7 +150,7 @@ header.bumble-header {
         margin-right:auto;
         font-weight:300;
         color:lighten($base-font-color,45%);
-        border-radius:10px;
+        border-radius:6px;
         background-color:$body-background-color;
         border:1px solid darken(#f0f0f0,5%);
         margin-top:.5em;
@@ -165,6 +165,7 @@ header.bumble-header {
         padding-left:0px;
         margin-left:auto;
         margin-right:auto;
+        position:relative;
         .type {
             font-size:1.6em;
             color:$bumble;
@@ -177,6 +178,28 @@ header.bumble-header {
             margin-left:.3em;
             width:.9em;
             color:rgb(152,152,152);
+        }
+        .camera-bumble {
+            position:absolute;
+            left:2.6em;
+            bottom:.5em;
+            width:2em;
+            height:1.6em;
+            background-image:url(/assets/images/camera-bumble.svg);
+            background-repeat:no-repeat;
+            background-position:center;
+            display:inline;
+        }
+        .gif-icon {
+            position:absolute;
+            left:5.6em;
+            bottom:.4em;
+            width:1.6em;
+            height:1.7em;
+            background-image:url(/assets/images/gif-icon.svg);
+            background-repeat:no-repeat;
+            background-position:center;
+            display:inline;
         }
         .send {
             width:auto;
