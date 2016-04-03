@@ -1,20 +1,133 @@
+$bumble-her-bg-color:darken($body-background-color, 20%);
+$bumble-icon-color:lighten($base-font-color, 15%);
 .bumble-block {
-    header {
-        background-color: $bumble;
-        text-align: center;
-        height:auto;
-        h3.match-name {
-            color: white;
-            font-size: .7em;
-            font-family: "Helvetica Neue", arial, sans-serif;
-            text-transform: uppercase;
-            vertical-align: middle;
-            height: 1.6em;
-            line-height: 1.6em;
-            img {
-            	display:inline;
-            	border-radius:50%;
-            	margin-right:.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    max-width: 25em;
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "-apple-system-body", "Helvetica Neue", arial, sans-serif;
+    font-size: .8em;
+    margin-bottom: 30vh;
+    box-shadow: 0px 0px 1px 0px rgba(51, 51, 51, 0.75);
+}
+
+header.bumble-header {
+    background-color: darken($body-background-color, 2%);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 3em;
+    position: relative;
+    // border-bottom: 1px solid #f0f0f0;
+    box-shadow: 0px 1px 2px 0px rgba(115, 115, 115, 0.4);
+    .icon-star,
+    .icon-info,
+    .icon-leftarrow {
+        color: lighten($base-font-color, 15%);
+        filter: blur(0px);
+    }
+    .icon-info {
+        font-size: 1.6em;
+    }
+    .icon-star {
+        margin-right: -.2em;
+        font-size: 1.7em;
+    }
+    .icon-leftarrow {
+        font-size: 2.2em;
+        // margin-left:-.5em;
+    }
+    div.icons-right {
+        margin-right: .5em;
+    }
+}
+
+.match-name-and-image {
+    display: flex;
+    align-items: center;
+    max-height: 2.3em;
+    color: lighten(black, 20%);
+    filter: blur(0px);
+    font-size: 1.3em;
+    padding-left:.5em;
+    img.bumble-image {
+        width: 1.8em;
+        height: 1.8em;
+        border-radius: 50%;
+        margin-right: .5em;
+        filter: blur(0px);
+    }
+}
+
+.conversation-thread {
+    font-size:1.1em;
+    ul {
+        list-style: none;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        li {
+            text-indent: 0px;
+            list-style: none;
+            margin: 0px;
+            padding: 0px;
+            font-size: 1em;
+            padding: .5em 1em;
+            border-radius: 1em;
+            position: relative;
+            margin-bottom: .75em;
+            line-height: 1.2;
+            &:after {
+                border-color: $bumble;
+                border-radius: 50% 50% 50% 50%;
+                border-style: solid;
+                border-width: 0 20px;
+                bottom: 0;
+                clip: rect(20px, 35px, 42px, 0px);
+                content: " ";
+                height: 40px;
+                position: absolute;
+                right: -50px;
+                width: 30px;
+                z-index: -1;
+            }
+            &:nth-child(even) {
+                background-color: $bumble;
+                color: white;
+                width: 60%;
+                float: right;
+                clear: both;
+                margin-right: 5%;
+            }
+            &:nth-child(odd) {
+                background-color: $bumble-her-bg-color;
+                color: black;
+                width: 60%;
+                float: left;
+                clear: both;
+                margin-left: 14%;
+                &::after {
+                    border-color: $bumble-her-bg-color;
+                    left: -50px;
+                    transform: rotateY(180deg);
+                }
+                &:before {
+                    content: '';
+                    background-image: url(/assets/images/pam.jpg);
+                    display: block;
+                    position: absolute;
+                    left: -2.75em;
+                    bottom: 0px;
+                    width: 2.3em;
+                    height: 2.3em;
+                    border-radius: 50%;
+                    background-size: contain;
+                    z-index: 99;
+                }
             }
         }
     }

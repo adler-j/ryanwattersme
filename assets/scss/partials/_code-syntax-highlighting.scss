@@ -13,6 +13,7 @@ p > code {
 pre {
     //allows code blocks to wrap for responsive
     white-space: pre-wrap;
+    clear:both;
     code {
         padding-left: 10%;
     }

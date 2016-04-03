@@ -13,7 +13,6 @@ nav {
 // .nav-wrapper {
 //     overflow-y: scroll;
 // }
-
 //Main Navigation
 nav.site-navigation {
     z-index: 99;
@@ -50,7 +49,7 @@ nav.site-navigation {
             &:last-child,
             &.colophon {
                 margin-top: 20vh;
-                margin-bottom:0px;
+                margin-bottom: 0px;
                 a {
                     text-transform: uppercase;
                     font-size: .75em;

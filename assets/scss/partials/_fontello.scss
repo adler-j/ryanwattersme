@@ -94,7 +94,7 @@
 .icon-rw-site-logo:before { content: '\e817'; } /* '' */
 .icon-search:before { content: '\e81b'; } /* '' */
 .icon-share:before { content: '\e80e'; } /* '' */
-.icon-star-empty:before { content: '\e823'; } /* '' */
+.icon-star-empty:before,.icon-star:before { content: '\e823'; } /* '' */
 .icon-terminal-1:before { content: '\e81a'; } /* '' */
 .icon-terminal:before { content: '\e819'; } /* '' */
 .icon-twitter-1:before { content: '\e82a'; } /* '' */
@@ -103,3 +103,5 @@
 .icon-user-woman:before { content: '\e808'; } /* '' */
 .icon-youtube-play:before { content: '\e80c'; } /* '' */
 .icon-youtube:before { content: '\e80b'; } /* '' */
+.icon-info-circled-alt:before,.icon-info:before { content: '\e831'; }
+.icon-left-open:before,.icon-leftarrow:before { content: '\e824'; } /* '' */
