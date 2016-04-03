@@ -1,27 +1,20 @@
-code,pre,.hljs {
-    font-family:$code-font-family;
-    font-size:.9em;
+code,
+pre,
+.hljs {
+    font-family: $code-font-family;
+    font-size: .9em;
 }
 
 p > code {
-    color:$base-font-color;
-    background-color:lighten($base-font-color,70%);
-    padding-left:.1em;
-    padding-right:.1em;
-    margin-left:-.1em;
-    margin-right:-.1em;
+    color: $base-font-color;
+    background-color: lighten($base-font-color, 70%);
 }
 
 pre {
     //allows code blocks to wrap for responsive
     white-space: pre-wrap;
-    @include MQ(M) {
-        width: 110%!important;
-        width: 110vw!important;
-        margin-left: -5%;
-        code {
-            padding-left: 10%;
-        }
+    code {
+        padding-left: 10%;
     }
 }
 
@@ -37,8 +30,6 @@ pre {
     @include MQ(M) {
         font-size: 1em;
         padding-left: 5%;
-        width:110%;
-        width:110vw;
     }
 }
 

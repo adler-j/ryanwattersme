@@ -10,7 +10,10 @@ categories: [essays]
 tags: [publishing, content]
 ---
 
-Ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur. Here is an item with a superscript.[^1] Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore fugit quam quas voluptatibus at animi ratione velit optio, qui iste. Maxime, dolor dicta voluptatem quasi temporibus libero perspiciatis enim cumque.
+Ipsum dolor sit amet, consectetur adipisicing elit. Here is an item with a superscript.
+
+{{% bumble "Jennifer" %}}
+{{% /bumble %}}
 
 ```javascript
 function myFunction(){
@@ -19,12 +22,6 @@ function myFunction(){
 ```
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let's make a [link to Google](https://www.google.com).
-
-{{% bumble "Jennifer" %}}
-* One
-* Two
-* Three
-{{% /bumble %}}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!
 
@@ -47,9 +44,9 @@ Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mou
 
 ### Heading Again
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo enim magni facere officia nesciunt, sunt[^2] obcaecati recusandae, doloribus libero. Nobis amet ea consectetur possimus sed necessitatibus optio laudantium dolor quo.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo enim magni facere officia nesciunt, sunt[^1] obcaecati recusandae, doloribus libero. Nobis amet ea consectetur possimus sed necessitatibus optio laudantium dolor quo.
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut tempore at unde. Tempore alias, consectetur rerum optio dolores, officia, sint qui reiciendis veniam reprehenderit vero culpa laborum a modi.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut tempore at unde. Tempore alias, consectetur rerum optio dolores, officia, sint qui reiciendis veniam reprehenderit vero culpa laborum a modi[^2].
 
-[^1]: Here is a [link to Google](https://www.google.com).
-[^2]: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quidem quibusdam id veniam cupiditate fuga maxime exercitationem totam. Labore distinctio vero nostrum quisquam, eos hic accusantium. Porro doloribus, repellat earum.
+[^2]: Here is something different.
+[^1]: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quidem quibusdam id veniam cupiditate fuga maxime exercitationem totam. Labore distinctio vero nostrum quisquam, eos hic accusantium. Porro doloribus, repellat earum.
