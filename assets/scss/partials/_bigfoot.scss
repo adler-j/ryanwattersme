@@ -1,12 +1,12 @@
 // STYLES
 $popover-width:                         20em !default;                           // Ideal width of the popover
-$popover-max-width:                     60% !default;                            // Best as a % to accommodate smaller viewports
+$popover-max-width:                     50% !default;                            // Best as a % to accommodate smaller viewports
 $popover-max-height:                    15em !default;                           // Maximum size of the content area
 $popover-color-background:              $body-background-color !default;             // Color of the popover background
 $popover-border-radius:                 0em !default;                          // Radius of the corners of the popover
 $popover-border:                        1px solid $base-font-color !default;   // Border of the popover/ tooltip
 $popover-inactive-opacity:              0 !default;                              // Opacity of the popover when instantiated/ deactivating
-$popover-active-opacity:                0.97 !default;                           // Opacity of the popover when active
+$popover-active-opacity:                1 !default;                           // Opacity of the popover when active
 $popover-box-shadow:                    0px 0px 3px rgba(0, 0, 0, 0.3) !default; // Sets the box shadow under the popover/ tooltip
 $popover-bottom-position:               auto !default;                           // Sets the bottom position of the popover. Use only when setting positionPopover to false in the script
 $popover-left-position:                 auto !default;                           // Sets the left position of the popover. Use only when setting positionPopover to false in the script
@@ -29,7 +29,7 @@ $popover-scroll-indicator-icon:         url("data:image/svg+xml;base64,PHN2ZyB3a
 
 // POPOVER
 $popover-margin-top:                             0.1em !default;
-$popover-padding-content-horizontal:             1.3em !default;
+$popover-padding-content-horizontal:             .9em !default;
 $popover-padding-content-top:                    1.1em !default;
 $popover-padding-content-bottom:                 1.2em !default;
 $popover-z-index:                                10 !default;                         // Set the base so that it's above the other body children
@@ -172,7 +172,7 @@ $button-transition-properties:      background-color !default;
 .bigfoot-footnote__button {
   // POSITIONING
   position: relative;
-  z-index: 99999;
+  z-index: 10;
   top: $button-vertical-adjust;
 
   // DISPLAY AND SIZING
@@ -558,6 +558,9 @@ $button-transition-properties:      background-color !default;
   img { max-width: 100%; }
   *:last-child { margin-bottom: 0 !important; }
   *:first-child { margin-top: 0 !important; }
+  p {
+    font-size:.8em;
+  }
 }
 
 

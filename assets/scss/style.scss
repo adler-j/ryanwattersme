@@ -58,7 +58,7 @@ main > article {
     overflow-y: scroll;
     overflow-x:hidden;
     position: relative;
-    z-index: 9999;
+    z-index: 9;
     display: block;
     &::-webkit-scrollbar{
         display:none!important;
@@ -204,9 +204,12 @@ article time.publishdate {
     display:block;
     margin-left:auto;
     margin-right:auto;
-    max-width:$content-max-width;
     overflow:hidden;
     position:relative;
+    padding-bottom:4em;
+    @include MQ(M){
+        width:$content-max-width;
+    }
     &.colophon {
         @include MQ(L) {
         width: 1000px;
