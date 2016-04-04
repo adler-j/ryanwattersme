@@ -47,31 +47,31 @@ main[role="main"] {
     }
 }
 
-main > article {
-    width:100%;
-    width:100vw;
-    position: relative;
-    min-height: 80vh;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: .75em;
-    overflow-y: scroll;
-    overflow-x:hidden;
-    position: relative;
-    z-index: 9;
-    display: block;
-    &::-webkit-scrollbar{
-        display:none!important;
-    }
-    @include MQ(M) {
-        max-width: $content-max-width;
-    }
-    header {
-        margin-bottom: 1.5em;
+.content-wrapper{
+    article {
+        width:100%;
+        position: relative;
+        min-height: 80vh;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: .75em;
+        overflow-y: scroll;
+        overflow-x:hidden;
+        position: relative;
+        z-index: 9;
+        display: block;
+        &::-webkit-scrollbar{
+            display:none!important;
+        }
+        @include MQ(M) {
+            max-width: $content-max-width;
+        }
+        header {
+            margin-bottom: 1.5em;
+        }
     }
 }
 
-.content-wrapper {
     article a, article.content a,
     article.homepage a,
     article#about a {
@@ -92,7 +92,7 @@ main > article {
         box-shadow: 0 -1.5em 0 $brand inset;
     }
     }
-}
+
 
 header.blog {
     transition: all .2s ease-in-out;

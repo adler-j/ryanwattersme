@@ -1,5 +1,6 @@
 {{ partial "site_header.html" . }}
 <main role="main">
+<div class="content-wrapper">
     <article>
         <header>
         <h1 class="title">{{.Title}}</h1>
@@ -8,15 +9,16 @@
             {{ range .Data.Pages }}
             <li>
             	<a href="{{ .Permalink }}">
-                <article>
+                <section>
             	<h1 class="title-list">{{.Title}}</h1>
                 <time class="list-publishdate" datetime="{{.PublishDate}}">{{dateFormat "Jan 2 2006" .PublishDate }}</time>
             	<p>{{ .Description }}</p>
-                </article>
+                </section>
             	</a>
             </li>
             {{ end }}
         </ul>
     </article>
+</div>
 </main>
 {{ partial "site_footer.html" . }}

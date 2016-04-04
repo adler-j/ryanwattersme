@@ -121,8 +121,11 @@ ul.contents-list {
             cursor: pointer;
             display: block;
             height: auto;
+            text-decoration:none;
+            box-shadow:none;
             border-bottom: 1px dashed lighten($base-font-color, 25%);
-            article {
+            section {
+                height:auto;
                 h1.title-list {
                     color: $base-font-color;
                     margin-bottom: .3em;
@@ -176,6 +179,9 @@ ul.contents-list {
                 &:hover {
                     border: $anchor-color 1px solid;
                 }
+            }
+            &:hover {
+                box-shadow:none;
             }
         }
     }
