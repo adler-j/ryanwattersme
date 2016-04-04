@@ -89,6 +89,9 @@ main[role="main"] {
         header {
             margin-bottom: 1.5em;
         }
+        &.homepage {
+            min-height:60vh;
+        }
     }
 }
 
