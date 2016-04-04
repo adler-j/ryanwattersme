@@ -60,6 +60,7 @@ main[role="main"] {
         position: relative;
         z-index: 9;
         display: block;
+        margin-right:-16px;
         &::-webkit-scrollbar{
             display:none!important;
         }
