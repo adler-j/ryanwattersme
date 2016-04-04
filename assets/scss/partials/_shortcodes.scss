@@ -10,7 +10,7 @@ $bumble-icon-color:lighten($base-font-color, 15%);
     margin-right: auto;
     font-family: "-apple-system-body", "Helvetica Neue", arial, sans-serif;
     font-size: .8em;
-    margin-bottom: 30vh;
+    margin-bottom: 1.5em;
     min-height:46em;
     box-shadow: 0px 0px 1px 0px rgba(51, 51, 51, 0.75);
 }
@@ -19,27 +19,99 @@ header.bumble-header {
     background-color: darken($body-background-color, 2%);
     width: 100%;
     display: flex;
-    justify-content: space-between;
+    flex-direction:column;
     align-items: center;
-    height: 3em;
     position: relative;
-    // border-bottom: 1px solid #f0f0f0;
-    box-shadow: 0px 1px 2px 0px rgba(115, 115, 115, 0.4);
+    border-bottom:1px solid darken(#f0f0f0,5%);
+    .phone {
+        width:100%;
+        min-width:100%;
+        color:black;
+        .signal {
+            padding-left:.65em;
+            .empty,.filled {
+                display:inline-block;
+                width:.25em;
+                height:.25em;
+                border-radius:50%;
+                border:1px solid black;
+                padding:0px;
+                margin:0px;
+                margin-left:-.2em;
+            }
+            .filled {
+                background-color:black;
+            }
+            .carrier {
+                padding-left:.3em;
+                font-size:.8em;
+            }
+        }
+        .message-time {
+            position:absolute;
+            top:.25em;
+            left:45%;
+            width:auto;
+            font-size:.8em;
+            font-weight:bold;
+        }
+        .location-and-battery{
+            position:absolute;
+            top:.25em;
+            right:.25em;
+            height:.8em;
+            .location-arrow {
+                background-image:url(/assets/images/location-arrow.svg);
+                height:100%;
+                width:1em;
+                background-repeat:no-repeat;
+                position:absolute;
+                right:2.8em;
+                top:.2em;
+            }
+            .bluetooth {
+                background-image:url(/assets/images/bluetooth.svg);
+                height:100%;
+                width:1em;
+                background-repeat:no-repeat;
+                position:absolute;
+                right:2em;
+                top:0em;
+                height:1em;
+            }
+            .battery-power {
+                position:absolute;
+                right:0em;
+                top:.1em;
+                width:2em;
+                height:95%;
+                background-repeat:no-repeat;
+                background-image:url(/assets/images/battery.svg);
+            }
+        }
+    }
+    .match-header {
+        width:100%;
+        display:flex;
+        justify-content: space-between;
+        height: 3em;
+    }
     .icon-star,
     .icon-info,
     .icon-leftarrow {
-        color: lighten($base-font-color, 15%);
-        filter: blur(0px);
+        color: rgb(127,127,127);
     }
     .icon-info {
         font-size: 1.6em;
     }
     .icon-star {
         margin-right: -.2em;
-        font-size: 1.7em;
+        font-size: 1.6em;
     }
     .icon-leftarrow {
-        font-size: 2.2em;
+        font-size: 2.1em;
+        padding-bottom:.2em;
+        padding-top:0px;
         // margin-left:-.5em;
     }
     div.icons-right {
@@ -119,7 +191,7 @@ header.bumble-header {
                 }
                 &:before {
                     content: '';
-                    background-image: url(/assets/images/pam.jpg);
+                    // background-image: url(/assets/images/amanda.jpg);
                     display: block;
                     position: absolute;
                     left: -2.75em;

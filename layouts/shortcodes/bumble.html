@@ -1,22 +1,42 @@
 <div class="bumble-block">
+{{$lowername := .Get 0 | lower }}
+<style>
+		.conversation-thread.{{$lowername}} > ul li:nth-child(odd):before{background-image: url(/assets/images/headshots/{{$lowername}}.jpg);
+		}
+</style>
     <header class="bumble-header">
+    	<div class="phone">
+    		<div class="signal">
+    			<span class="filled"></span>
+    			<span class="filled"></span>
+    			<span class="filled"></span>
+    			<span class="empty"></span>
+    			<span class="empty"></span>
+    			<span class="carrier">AT&T &nbsp;LTE</span>
+    		</div>
+    		<div class="message-time">{{.Get 1}}</div>
+    		<div class="location-and-battery">
+    			<div class="location-arrow"></div>
+    			<div class="bluetooth"></div>
+    			<div class="battery-power"></div>
+    		</div>
+    	</div>
+    	<div class="match-header">
         <div>
             <i class="icon-leftarrow"></i>
         </div>
         <div class="match-name-and-image">
-            <img class="bumble-image" src="/assets/images/{{.Get 0 | lower}}.jpg" alt="Fake bumble profile photo." />
+            <img class="bumble-image" src="/assets/images/headshots/{{$lowername}}.jpg" alt="Fake bumble profile photo." />
             <span>{{.Get 0}}</span>
         </div>
         <div class="icons-right">
             <i class="icon-star"></i>
             <i class="icon-info"></i>
         </div>
+        </div>
     </header>
-    <div class="conversation-thread  {{.Get 0 | lower}}">
-   <ul>
-   	<li>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cum quas et odio. </li>
-   	<li>Voluptatem, labore! Consequuntur quisquam, doloremque possimus quia minima unde nobis distinctio? Nulla sint qui, velit nobis itaque facere maxime.</li>
-   </ul>
+    <div class="conversation-thread {{$lowername}}">
+     {{.Inner}}
     </div>
     <div class="response-box">
 	    <div class="your-message">Your message</div>
