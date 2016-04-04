@@ -12,9 +12,14 @@ tags: [publishing, content]
 
 Ipsum dolor sit amet, consectetur adipisicing elit. Here is an item with a superscript.
 
-{{% bumble "Alexandria" "6:04 PM"%}}
+{{% bumble "Alexandria" "6:04 PM" "4 hours ago" %}}
 * Hi Ryan, how are you today?
 * I am great. Thank you very much for asking.
+
+<div class="since-sent">2 hours ago</div>
+
+* Here is another conversation starting.
+* Here is another one.
 {{% /bumble %}}
 
 ```javascript
