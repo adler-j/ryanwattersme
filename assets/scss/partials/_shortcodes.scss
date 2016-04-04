@@ -11,7 +11,7 @@ $bumble-icon-color:lighten($base-font-color, 15%);
     font-family: "-apple-system-body", "Helvetica Neue", arial, sans-serif;
     font-size: .8em;
     margin-bottom: 1.5em;
-    min-height:44em;
+    min-height: 44em;
     box-shadow: 0px 0px 1px 0px rgba(51, 51, 51, 0.75);
 }
 
@@ -19,90 +19,91 @@ header.bumble-header {
     background-color: darken($body-background-color, 2%);
     width: 100%;
     display: flex;
-    flex-direction:column;
+    flex-direction: column;
     align-items: center;
     position: relative;
-    border-bottom:1px solid darken(#f0f0f0,5%);
-    margin-bottom:0px;
+    border-bottom: 1px solid darken(#f0f0f0, 5%);
+    margin-bottom: 0px;
     .phone {
-        width:100%;
-        min-width:100%;
-        color:black;
-        margin-bottom:-.4em;
-        padding-bottom:0px;
+        width: 100%;
+        min-width: 100%;
+        color: black;
+        margin-bottom: -.4em;
+        padding-bottom: 0px;
         .signal {
-            padding-left:.65em;
-            .empty,.filled {
-                display:inline-block;
-                width:.25em;
-                height:.25em;
-                border-radius:50%;
-                border:1px solid black;
-                padding:0px;
-                margin:0px;
-                margin-left:-.2em;
+            padding-left: .65em;
+            .empty,
+            .filled {
+                display: inline-block;
+                width: .25em;
+                height: .25em;
+                border-radius: 50%;
+                border: 1px solid black;
+                padding: 0px;
+                margin: 0px;
+                margin-left: -.2em;
             }
             .filled {
-                background-color:black;
+                background-color: black;
             }
             .carrier {
-                padding-left:.3em;
-                font-size:.8em;
+                padding-left: .3em;
+                font-size: .8em;
             }
         }
         .message-time {
-            position:absolute;
-            top:.25em;
-            left:45%;
-            width:auto;
-            font-size:.8em;
-            font-weight:bold;
+            position: absolute;
+            top: .25em;
+            left: 45%;
+            width: auto;
+            font-size: .8em;
+            font-weight: bold;
         }
-        .location-and-battery{
-            position:absolute;
-            top:.25em;
-            right:.25em;
-            height:.8em;
+        .location-and-battery {
+            position: absolute;
+            top: .25em;
+            right: .25em;
+            height: .8em;
             .location-arrow {
-                background-image:url(/assets/images/location-arrow.svg);
-                height:100%;
-                width:1em;
-                background-repeat:no-repeat;
-                position:absolute;
-                right:2.8em;
-                top:.2em;
+                background-image: url(/assets/images/location-arrow.svg);
+                height: 100%;
+                width: 1em;
+                background-repeat: no-repeat;
+                position: absolute;
+                right: 2.8em;
+                top: .2em;
             }
             .bluetooth {
-                background-image:url(/assets/images/bluetooth.svg);
-                height:100%;
-                width:1em;
-                background-repeat:no-repeat;
-                position:absolute;
-                right:2em;
-                top:0em;
-                height:1em;
+                background-image: url(/assets/images/bluetooth.svg);
+                height: 100%;
+                width: 1em;
+                background-repeat: no-repeat;
+                position: absolute;
+                right: 2em;
+                top: 0em;
+                height: 1em;
             }
             .battery-power {
-                position:absolute;
-                right:0em;
-                top:.1em;
-                width:2em;
-                height:95%;
-                background-repeat:no-repeat;
-                background-image:url(/assets/images/battery.svg);
+                position: absolute;
+                right: 0em;
+                top: .1em;
+                width: 2em;
+                height: 95%;
+                background-repeat: no-repeat;
+                background-image: url(/assets/images/battery.svg);
             }
         }
     }
     .match-header {
-        width:100%;
-        display:flex;
+        width: 100%;
+        display: flex;
         justify-content: space-between;
         height: 3em;
     }
     .icon-star,
     .icon-info,
     .icon-leftarrow {
-        color: rgb(127,127,127);
+        color: rgb(127, 127, 127);
     }
     .icon-info {
         font-size: 1.6em;
@@ -113,8 +114,8 @@ header.bumble-header {
     }
     .icon-leftarrow {
         font-size: 2.1em;
-        padding-bottom:.2em;
-        padding-top:0px;
+        padding-bottom: .2em;
+        padding-top: 0px;
         // margin-left:-.5em;
     }
     div.icons-right {
@@ -129,7 +130,7 @@ header.bumble-header {
     color: lighten(black, 20%);
     filter: blur(0px);
     font-size: 1.3em;
-    padding-left:.5em;
+    padding-left: .5em;
     img.bumble-image {
         width: 1.8em;
         height: 1.8em;
@@ -140,19 +141,19 @@ header.bumble-header {
 }
 
 .conversation-thread {
-    font-size:1em;
+    font-size: 1em;
     .since-sent {
-        width:100%;
-        clear:both;
-        display:block;
-        text-align:center;
-        font-size:.7em;
-        line-height:1;
-        margin-top:1em;
-        margin-bottom:1em;
+        width: 100%;
+        clear: both;
+        display: block;
+        text-align: center;
+        font-size: .7em;
+        line-height: 1;
+        margin-top: 1em;
+        margin-bottom: 1em;
     }
     ul {
-        flex:1;
+        flex: 1;
         list-style: none;
         width: 100%;
         margin: 0px;
@@ -178,9 +179,10 @@ header.bumble-header {
                 content: " ";
                 height: 40px;
                 position: absolute;
-                right: -50px;
+                right: -46px;
                 width: 30px;
                 z-index: -1;
+                transform: rotateY(42deg);
             }
             &:nth-child(even) {
                 background-color: $bumble;
@@ -199,8 +201,8 @@ header.bumble-header {
                 margin-left: 16%;
                 &::after {
                     border-color: $bumble-her-bg-color;
-                    left: -50px;
-                    transform: rotateY(180deg);
+                    left: -46px;
+                    transform: rotateY(140deg);
                 }
                 &:before {
                     content: '';
@@ -218,81 +220,122 @@ header.bumble-header {
             }
         }
     }
+    ul:not(:nth-of-type(1)) {
+        > li:nth-child(even),
+        > li:nth-child(odd) {
+            background-color: $bumble;
+            color: white;
+            width: 60%;
+            float: right;
+            clear: both;
+            margin-right: 5%;
+            &:after {
+                border-color: $bumble;
+                border-radius: 50% 50% 50% 50%;
+                border-style: solid;
+                border-width: 0 20px;
+                bottom: 0;
+                clip: rect(20px, 35px, 42px, 0px);
+                content: " ";
+                height: 40px;
+                position: absolute;
+                right: -46px;
+                width: 30px;
+                z-index: -1;
+                transform: rotateY(42deg);
+            }
+            &:before {
+                background-image:none;
+            }
+        }
+        > li:nth-child(odd){
+            &::after {
+                right: 0px;
+                left:calc(100% - 24px);
+                position:absolute;
+                float:right;
+            }
+            &::before {
+                width:0px;
+                height:0px;
+            }
+        }
+    }
 }
 
 .response-box {
-    display:flex;
-    flex-direction:column;
-    align-self:flex-end;
-    margin-top:auto;
-    background-color:darken($body-background-color,3%);
-    height:5em;
-    width:100%;
-    border-top:1px solid darken(#f0f0f0,5%);
+    display: flex;
+    flex-direction: column;
+    align-self: flex-end;
+    margin-top: auto;
+    background-color: darken($body-background-color, 3%);
+    height: 5em;
+    width: 100%;
+    border-top: 1px solid darken(#f0f0f0, 5%);
     .your-message {
-        width:92%;
-        margin-left:auto;
-        margin-right:auto;
-        font-weight:300;
-        color:lighten($base-font-color,45%);
-        border-radius:6px;
-        background-color:$body-background-color;
-        border:1px solid darken(#f0f0f0,5%);
-        margin-top:.5em;
-        padding-left:.8em;
-        padding-top:.15em;
-        padding-bottom:.15em;
-        font-size:1em;
+        width: 92%;
+        margin-left: auto;
+        margin-right: auto;
+        font-weight: 300;
+        color: lighten($base-font-color, 45%);
+        border-radius: 6px;
+        background-color: $body-background-color;
+        border: 1px solid darken(#f0f0f0, 5%);
+        margin-top: .5em;
+        padding-left: .8em;
+        padding-top: .15em;
+        padding-bottom: .15em;
+        font-size: 1em;
     }
     .bumble-footer-icons {
-        display:block;
-        width:95%;
-        padding-left:0px;
-        margin-left:auto;
-        margin-right:auto;
-        position:relative;
+        display: block;
+        width: 95%;
+        padding-left: 0px;
+        margin-left: auto;
+        margin-right: auto;
+        position: relative;
         .type {
-            font-size:1.6em;
-            color:$bumble;
-            width:auto;
-            float:left;
-            font-weight:500;
+            font-size: 1.6em;
+            color: $bumble;
+            width: auto;
+            float: left;
+            font-weight: 500;
         }
         i.icon-camera-bumble {
-            font-size:1.6em;
-            margin-left:.3em;
-            width:.9em;
-            color:rgb(152,152,152);
+            font-size: 1.6em;
+            margin-left: .3em;
+            width: .9em;
+            color: rgb(152, 152, 152);
         }
         .camera-bumble {
-            position:absolute;
-            left:2.6em;
-            bottom:.5em;
-            width:2em;
-            height:1.6em;
-            background-image:url(/assets/images/camera-bumble.svg);
-            background-repeat:no-repeat;
-            background-position:center;
-            display:inline;
+            position: absolute;
+            left: 2.6em;
+            bottom: .5em;
+            width: 2em;
+            height: 1.6em;
+            background-image: url(/assets/images/camera-bumble.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline;
         }
         .gif-icon {
-            position:absolute;
-            left:5.6em;
-            bottom:.4em;
-            width:1.6em;
-            height:1.7em;
-            background-image:url(/assets/images/gif-icon.svg);
-            background-repeat:no-repeat;
-            background-position:center;
-            display:inline;
+            position: absolute;
+            left: 5.6em;
+            bottom: .4em;
+            width: 1.6em;
+            height: 1.7em;
+            background-image: url(/assets/images/gif-icon.svg);
+            background-repeat: no-repeat;
+            background-position: center;
+            display: inline;
         }
         .send {
-            width:auto;
-            float:right;
-            font-size:1.1em;
-            padding-top:.35em;
-            color:lighten($base-font-color,25%);
-            font-weight:500;
+            width: auto;
+            float: right;
+            font-size: 1.1em;
+            padding-top: .35em;
+            color: lighten($base-font-color, 25%);
+            font-weight: 500;
         }
     }
 }

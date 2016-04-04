@@ -1,7 +1,7 @@
 <div class="bumble-block">
 {{$lowername := .Get 0 | lower }}
 <style>
-		.conversation-thread.{{$lowername}} > ul li:nth-child(odd):before{background-image: url(/assets/images/headshots/{{$lowername}}.jpg);
+		.conversation-thread.{{$lowername}} > ul:nth-of-type(1) li:nth-child(odd):before{background-image: url(/assets/images/headshots/{{$lowername}}.jpg);
 		}
 </style>
     <header class="bumble-header">

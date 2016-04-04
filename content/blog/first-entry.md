@@ -13,13 +13,25 @@ tags: [publishing, content]
 Ipsum dolor sit amet, consectetur adipisicing elit. Here is an item with a superscript.
 
 {{% bumble "Alexandria" "6:04 PM" "4 hours ago" %}}
-* Hi Ryan, how are you today?
-* I am great. Thank you very much for asking.
+* Blah, blah, blah blah. Blah blah?
+* Yada yada yada yada yada yada.
 
 <div class="since-sent">2 hours ago</div>
 
-* Here is another conversation starting.
-* Here is another one.
+* Testing second `<ul>` styling
+* Testing second `<ul>` styling
+
+<div class="since-sent">1 hour ago</div>
+
+* This is just a test entry.
+* This is not a real conversation.
+* Testing Hugo shortcodes for fake Bumble conversation.
+
+<div class="since-sent">10 minutes ago</div>
+
+* Testing testing testing
+* Testing testing testing
+* Testing testing testing
 {{% /bumble %}}
 
 ```javascript
