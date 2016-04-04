@@ -12,10 +12,10 @@ tags: [publishing, content]
 
 Ipsum dolor sit amet, consectetur adipisicing elit. Here is an item with a superscript.
 
-{{% bumble "Tina" "6:04 PM" "22 March 2016" %}}
+{{% bumble "Janet" "3:13 AM" "22 March 2016" %}}
 * Blah, blah, blah blah. Blah blah?
 * Yada yada yada yada yada yada.
-* Blah blah blah blah blah. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reprehenderit enim eius. Nemo illum fugiat iusto facilis ut.
+* Blah blah blah blah blah. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reprehenderit enim eius.
 
 5 hours ago
 
@@ -26,13 +26,7 @@ Ipsum dolor sit amet, consectetur adipisicing elit. Here is an item with a super
 
 * This is just a test entry.
 * This is not a real conversation.
-* Testing Hugo shortcodes for fake Bumble conversation.
 
-10 minutes ago
-
-* Testing testing testing
-* Testing testing testing
-* Testing testing testing
 {{% /bumble %}}
 
 ```javascript

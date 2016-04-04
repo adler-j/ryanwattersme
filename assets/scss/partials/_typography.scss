@@ -9,10 +9,11 @@ h1.title {
         font-size: 3.7em;
     }
     &.homepage {
-        font-weight: 400;
+        font-weight: 900;
     }
     &.blog {
         color: $white;
+        text-transform:none;
     }
 }
 
