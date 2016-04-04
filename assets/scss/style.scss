@@ -60,6 +60,9 @@ main > article {
     position: relative;
     z-index: 9999;
     display: block;
+    &::-webkit-scrollbar{
+        display:none!important;
+    }
     @include MQ(M) {
         width: $content-max-width;
     }

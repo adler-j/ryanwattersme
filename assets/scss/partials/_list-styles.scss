@@ -11,19 +11,25 @@ nav {
 }
 
 .nav-wrapper {
-    position:relative;
+    position: relative;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
+
 //Main Navigation
 nav.site-navigation {
     z-index: 99;
     margin-top: 3.5em;
     flex-grow: 1;
-    overflow-x:hidden;
+    overflow-x: hidden;
     overflow-y: scroll;
-    position:absolute;
-    left:0;
+    position: absolute;
+    left: 0;
+    -ms-overflow-style: none;
     &::-webkit-scrollbar {
-        display:none;
+        display: none;
     }
     ul {
         list-style: none;
