@@ -112,3 +112,7 @@ small {
     text-transform: uppercase;
     font-size: .5em;
 }
+
+::-webkit-scrollbar {
+    display:none!important;
+}
