@@ -1,7 +1,7 @@
 ---
 title: Contact
 subtitle:
-description: An overview of the reasoning behind the site, as well as the development and design specifications for ryanwatters.io.
+description: Feel free to contact me directly if you have any questions about ryanwatters.io or contract work.
 date: 2016-03-20
 publishdate: 2016-03-20
 updated: 2016-03-20
