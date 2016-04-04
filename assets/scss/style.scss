@@ -67,8 +67,9 @@ main[role="main"] {
 }
 #colophon {
         @include MQ(L) {
-        width: 1000px;
-        max-width: 1000px;
+        width: 1016px;
+        max-width: 1016px;
+        padding-right: 16px;
         }
     }
 
