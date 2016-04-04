@@ -5,6 +5,8 @@
 ::-webkit-scrollbar {
     display:none!important;
 }
+
+html {box-sizing: border-box;}*, *:before, *:after {box-sizing:inherit;}
 html {
     font-size: $base-font-size; //This will equal 1REM
     line-height: $base-line-height;
