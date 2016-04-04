@@ -22,13 +22,13 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nul
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
 
-> Here is a long and engaging quote from a very famous person that everyone knows and admires. - [Jon Doe](https://www.google.com)
+> Here is a long and engaging quote from a very famous person that everyone knows and admires. - [Jon Doe][]
 
 ### Article Heading
 
 Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.
 
-{{< video-thumb "youtube" "7xYO-VMZUGo">}}
+{{< video "youtube" "7xYO-VMZUGo">}}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
 
@@ -39,7 +39,6 @@ function myFunction(){
 }
 
 ```
-
 
 #### Article Subheading That is Longer than the Heading
 
@@ -52,3 +51,6 @@ Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mou
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo enim magni facere officia nesciunt, sunt obcaecati recusandae, doloribus libero. Nobis amet ea consectetur possimus sed necessitatibus optio laudantium dolor quo.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut tempore at unde. Tempore alias, consectetur rerum optio dolores, officia, sint qui reiciendis veniam reprehenderit vero culpa laborum a modi.
+
+[Jon Doe]: https://www.google.com
+
