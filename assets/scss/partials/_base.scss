@@ -1,3 +1,10 @@
+*,*:after,*:before {
+    -ms-overflow-style:none!important;
+}
+//remove scrollbars on Chrome
+::-webkit-scrollbar {
+    display:none!important;
+}
 html {
     font-size: $base-font-size; //This will equal 1REM
     line-height: $base-line-height;
@@ -111,8 +118,4 @@ input[type=search] {
 small {
     text-transform: uppercase;
     font-size: .5em;
-}
-
-::-webkit-scrollbar {
-    display:none!important;
 }
