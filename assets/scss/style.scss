@@ -65,6 +65,12 @@ main[role="main"] {
         }
     }
 }
+#colophon {
+        @include MQ(L) {
+        width: 1000px;
+        max-width: 1000px;
+        }
+    }
 
 .content-wrapper{
     article {
