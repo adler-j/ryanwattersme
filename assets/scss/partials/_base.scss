@@ -1,5 +1,6 @@
 *,*:after,*:before {
     -ms-overflow-style:none!important;
+    overflow: -moz-scrollbars-none!important;
 }
 //remove scrollbars on Chrome
 ::-webkit-scrollbar {
