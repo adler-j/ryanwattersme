@@ -1,6 +1,12 @@
 $bumble-her-bg-color:darken($body-background-color, 20%);
 $bumble-icon-color:lighten($base-font-color, 15%);
 .bumble-block {
+    * {
+        box-sizing:content-box;
+    }
+    *:after,*:before {
+        box-sizing:inherit;
+    }
     width: 99.5%;
     display: flex;
     flex-direction: column;

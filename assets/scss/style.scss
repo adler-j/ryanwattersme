@@ -69,10 +69,9 @@ main[role="main"] {
 .content-wrapper{
     article {
         width:100%;
+        min-height:100%;
         position: relative;
-        min-height: 80vh;
         margin-left: auto;
-        margin-right: auto;
         margin-top: .75em;
         overflow-y: scroll;
         overflow-x:hidden;
@@ -80,6 +79,7 @@ main[role="main"] {
         z-index: 9;
         display: block;
         margin-right:-16px;
+        padding-right:1em;
         &::-webkit-scrollbar{
             display:none!important;
         }
