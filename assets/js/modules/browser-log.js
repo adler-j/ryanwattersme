@@ -1,3 +1,2 @@
-window.onload = function(){
-	console.log(window.navigator.appVersion);
-}
+console.log(window.navigator.appVersion);
+

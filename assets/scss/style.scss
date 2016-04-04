@@ -71,9 +71,10 @@ main > article {
     }
 }
 
-main > article.content a,
-article.homepage a,
-article#about a {
+.content-wrapper {
+    article a, article.content a,
+    article.homepage a,
+    article#about a {
     font-size: inherit;
     color: $brand;
     transition: box-shadow ease 250ms, color ease 250ms;
@@ -89,6 +90,7 @@ article#about a {
     &:hover {
         color: $body-background-color;
         box-shadow: 0 -1.5em 0 $brand inset;
+    }
     }
 }
 
