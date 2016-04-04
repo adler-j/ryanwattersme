@@ -30,7 +30,8 @@ nav.site-navigation {
     overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
-    left: -32px;
+    left: -16px;
+    padding-right:16px;
     margin-right:-16px;
     width:180px;
     -ms-overflow-style: none;
@@ -81,11 +82,11 @@ nav.site-navigation {
         margin-left: 0px;
         padding-left: 0px;
         width: 100%;
-        padding-left: 0px;
+        padding-left: 1em;
         float: left;
         li {
             display: inline;
-            font-size: .9em;
+            font-size: .8em;
             a {
                 // font-size: 1em;
                 i.icon-twitter {
