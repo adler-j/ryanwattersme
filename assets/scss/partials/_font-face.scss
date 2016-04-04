@@ -16,16 +16,16 @@ NOTE: FontAwesome is kept pascal case to reflect same casing in fontawesome sass
 ******/
 
 @if $use-font-face-module {
-    @font-face {
-        font-family: "#{$font}";
-        src: url("/assets/css/fonts/#{$font}/#{$font}-extralight-webfont.eot");
-        src: url("/assets/css/fonts/#{$font}/#{$font}-extralight-webfont.eot?#iefix") format("embedded-opentype"),
-        url("/assets/css/fonts/#{$font}/#{$font}-extralight-webfont.woff") format("woff"),
-        url("/assets/css/fonts/#{$font}/#{$font}-extralight-webfont.ttf") format("truetype"),
-        url("/assets/css/fonts/#{$font}/#{$font}-extralight-webfont.svg") format("svg");
-        font-weight: 100;
-        font-style: normal
-    }
+    // @font-face {
+    //     font-family: "#{$font}";
+    //     src: url("/assets/css/fonts/#{$font}/#{$font}-extralight-webfont.eot");
+    //     src: url("/assets/css/fonts/#{$font}/#{$font}-extralight-webfont.eot?#iefix") format("embedded-opentype"),
+    //     url("/assets/css/fonts/#{$font}/#{$font}-extralight-webfont.woff") format("woff"),
+    //     url("/assets/css/fonts/#{$font}/#{$font}-extralight-webfont.ttf") format("truetype"),
+    //     url("/assets/css/fonts/#{$font}/#{$font}-extralight-webfont.svg") format("svg");
+    //     font-weight: 100;
+    //     font-style: normal
+    // }
     @font-face {
         font-family: "#{$font}";
         src: url("/assets/css/fonts/#{$font}/#{$font}-extralight-italic-webfont.eot");
