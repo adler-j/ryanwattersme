@@ -13,6 +13,8 @@ nav {
 .nav-wrapper {
     position: relative;
     -ms-overflow-style: none;
+    overflow: hidden;
+    width:90%;
     &::-webkit-scrollbar {
         display: none;
     }
@@ -27,8 +29,11 @@ nav.site-navigation {
     flex-grow: 1;
     overflow-x: hidden;
     overflow-y: scroll;
-    position: absolute;
-    left: 0;
+    position: relative;
+    left: -16px;
+    margin-right:-16px;
+    padding-right:16px;
+    width:100%;
     -ms-overflow-style: none;
     &::-webkit-scrollbar {
         display: none;
