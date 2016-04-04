@@ -36,6 +36,7 @@
     background-size: cover;
     filter: grayscale(100%);
     cursor: pointer;
+    margin-top:-1em;
     &:before {
         content: '\e80c';
         font-family: "fontello";
