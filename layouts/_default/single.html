@@ -20,9 +20,11 @@
             </div>
         </div>
     </header>
+    <div class="content-wrapper">
     <article class="content {{.Section}}" id="{{.Title|urlize}}">
         {{ .Content }}
     </article>
+    </div>
     <ul class="tags"><span>tags:</span> {{ range .Params.tags }}
         <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
         {{ end }}

@@ -1,6 +1,7 @@
 {{ partial "site_header.html" . }}
 <!-- Your Default List Layout Here -->
 <main role="main">
+<div class="content-wrapper">
   <article>
    <header>
    <h1>{{ .Title }}</h1>
@@ -17,5 +18,6 @@
             {{ end }}
         </ul>
   </article>
+</div>
 </main>
 {{ partial "site_footer.html" . }}

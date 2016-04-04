@@ -1,6 +1,7 @@
 {{ partial "site_header.html" . }}
 <main role="main">
-		{{ partial "share_social_media.html" . }}
+	{{ partial "share_social_media.html" . }}
+    <div class="content-wrapper">
     <article class="content" id="about">
         <header>
         		<div class="about-image">
@@ -11,5 +12,6 @@
         {{.Content}}
     </article>
     {{partial "parse.html" . }}
+    </div>
 </main>
 {{ partial "site_footer.html" . }}
