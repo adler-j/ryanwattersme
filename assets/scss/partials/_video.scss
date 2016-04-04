@@ -1,14 +1,16 @@
 //From the brillian Chris Coyier here: https://css-tricks.com/NetMag/FluidWidthVideo/Article-FluidWidthVideo.php
 .videoWrapper {
-    transition:all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     position: relative;
     padding-bottom: 56.25%;
     /* 16:9 */
     padding-top: 25px;
     height: 0;
-    z-index:-1;
-    clear:both;
-    &:hover,&:active,&:focus {
+    z-index: -1;
+    clear: both;
+    &:hover,
+    &:active,
+    &:focus {
         filter: grayscale(0%);
     }
 }
@@ -22,31 +24,39 @@
 }
 
 .video-thumbnail {
-    width:100%;
-    min-height:100%;
-    clear:both;
-    display:block;
-    z-index:9999;
-    padding-bottom:56.25%;
-    background-repeat:no-repeat;
-    background-position:center;
-    background-size:cover;
-    filter:grayscale(100%);
-    cursor:pointer;
+    transition:all .3s ease-in-out;
+    width: 100%;
+    min-height: 100%;
+    clear: both;
+    display: block;
+    z-index: 9999;
+    padding-bottom: 56.25%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    filter: grayscale(100%);
+    cursor: pointer;
     &:before {
         content: '\e80c';
         font-family: "fontello";
-        position:absolute;
-        font-size:4em;
-        left:45%;
-        bottom:30%;
+        position: absolute;
+        font-size: 4em;
+        left: 42%;
+        bottom: 20%;
+        color: #bb0000;
+        @include MQ(M) {
+            bottom: 30%;
+        }
+    }
+    &:hover {
+        filter: grayscale(0%);
     }
 }
 
 .videoWrapper:after {
     display: block;
     width: 100%;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
 }
 
 .videoWrapper {
