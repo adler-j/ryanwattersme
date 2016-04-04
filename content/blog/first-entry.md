@@ -12,22 +12,23 @@ tags: [publishing, content]
 
 Ipsum dolor sit amet, consectetur adipisicing elit. Here is an item with a superscript.
 
-{{% bumble "Alexandria" "6:04 PM" "4 hours ago" %}}
+{{% bumble "Jennifer" "6:04 PM" "22 March 2016" %}}
 * Blah, blah, blah blah. Blah blah?
 * Yada yada yada yada yada yada.
+* Blah blah blah blah blah. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reprehenderit enim eius. Nemo illum fugiat iusto facilis ut.
 
-<div class="since-sent">2 hours ago</div>
+5 hours ago
 
 * Testing second `<ul>` styling
 * Testing second `<ul>` styling
 
-<div class="since-sent">1 hour ago</div>
+1 hour ago
 
 * This is just a test entry.
 * This is not a real conversation.
 * Testing Hugo shortcodes for fake Bumble conversation.
 
-<div class="since-sent">10 minutes ago</div>
+10 minutes ago
 
 * Testing testing testing
 * Testing testing testing

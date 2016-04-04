@@ -142,15 +142,16 @@ header.bumble-header {
 
 .conversation-thread {
     font-size: 1em;
-    .since-sent {
+    p {
         width: 100%;
         clear: both;
         display: block;
         text-align: center;
-        font-size: .7em;
+        font-size: .8em;
         line-height: 1;
         margin-top: 1em;
         margin-bottom: 1em;
+        color: darken($bumble-her-bg-color,15%);
     }
     ul {
         flex: 1;
@@ -199,6 +200,9 @@ header.bumble-header {
                 float: left;
                 clear: both;
                 margin-left: 16%;
+                @include MQ(M) {
+                    margin-left: 13%;
+                }
                 &::after {
                     border-color: $bumble-her-bg-color;
                     left: -46px;
@@ -245,19 +249,19 @@ header.bumble-header {
                 transform: rotateY(42deg);
             }
             &:before {
-                background-image:none;
+                background-image: none;
             }
         }
-        > li:nth-child(odd){
+        > li:nth-child(odd) {
             &::after {
                 right: 0px;
-                left:calc(100% - 24px);
-                position:absolute;
-                float:right;
+                left: calc(100% - 24px);
+                position: absolute;
+                float: right;
             }
             &::before {
-                width:0px;
-                height:0px;
+                width: 0px;
+                height: 0px;
             }
         }
     }
