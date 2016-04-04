@@ -10,7 +10,8 @@ categories: [essays]
 tags: [publishing, content]
 ---
 
-Ipsum dolor sit amet, consectetur adipisicing elit. Here is an item with a superscript.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+tempor incididunt ut labore et dolore.
 
 {{% bumble "Jasmine" "3:13 AM" "22 March 2016" %}}
 * Blah, blah, blah blah. Blah blah?

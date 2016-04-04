@@ -28,6 +28,7 @@ header.site-header {
     &.open {
         @include transform(translateX(0%));
         z-index: 99999;
+        right:-16px;
     }
 }
 

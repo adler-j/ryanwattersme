@@ -71,20 +71,20 @@ main[role="main"] {
         width:100%;
         min-height:100%;
         position: relative;
-        margin-left: auto;
-        margin-top: .75em;
+        margin-left:0px;
+        // margin-top: .75em;
         overflow-y: scroll;
         overflow-x:hidden;
         position: relative;
         z-index: 9;
         display: block;
         margin-right:-16px;
-        padding-right:1em;
         &::-webkit-scrollbar{
             display:none!important;
         }
         @include MQ(M) {
             width: $content-max-width;
+            padding-right:1em;
         }
         header {
             margin-bottom: 1.5em;
@@ -119,7 +119,7 @@ header.blog {
     margin-top: 1em;
     width:100%;
     margin-top: -10px;
-    margin-bottom: 1.5em;
+    margin-bottom: 1em;
     padding-top: 2em;
     height: 50vh;
     filter: grayscale(100%);
