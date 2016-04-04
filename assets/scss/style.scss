@@ -34,6 +34,7 @@ main[role="main"] {
     margin-bottom: 3em;
     position: relative;
     z-index: 1;
+    overflow-x:hidden;
     @include header-transition;
     &.open {
         transform: translateX(-$site-menu-width);
