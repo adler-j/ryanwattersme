@@ -96,3 +96,32 @@ a.site-logo {
         top: .25em;
     }
 }
+
+a.section-title {
+    width: 20%;
+    position: absolute;
+    display: block;
+    left: 40%;
+    top: 0em;
+    text-align: center;
+    font-family: $site-header-font-family;
+    height: 2em;
+    line-height: 2em;
+    vertical-align:middle;
+    font-size:.8em;
+    margin-top: .75em;
+    border: 1px solid $base-font-color;
+    box-shadow: none;
+    color: $base-font-color;
+    &:hover {
+        box-shadow: none;
+        color: $base-font-color;
+        background-color: $base-font-color;
+        color: $body-background-color;
+    }
+    h2 {
+        margin-bottom: 0px;
+        padding-right:.5em;
+        padding-left:.5em;
+    }
+}
