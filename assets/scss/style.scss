@@ -24,7 +24,8 @@
 @import 'partials/kudos';
 @import 'partials/shortcodes';
 main[role="main"] {
-    width: 95%;
+    width: 100%;
+    width:100vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -46,6 +47,7 @@ main[role="main"] {
 
 main > article {
     width: 100%;
+    width:100vw;
     position: relative;
     min-height: 80vh;
     margin-left: auto;
@@ -61,6 +63,16 @@ main > article {
     }
     header {
         margin-bottom: 1.5em;
+    }
+    p,h2,h3,h4,h5,h6 {
+        padding-left:2%;
+        padding-right:2%;
+    }
+    p > img {
+        width:104%;
+        position:relative;
+        left:-2%;
+        padding-left:0px;
     }
 }
 
