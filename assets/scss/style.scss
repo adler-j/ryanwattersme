@@ -206,6 +206,7 @@ article time.publishdate {
     margin-right:auto;
     max-width:$content-max-width;
     overflow:hidden;
+    position:relative;
     &.colophon {
         @include MQ(L) {
         width: 1000px;
