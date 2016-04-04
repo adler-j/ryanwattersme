@@ -104,11 +104,11 @@ header.blog {
     height: 50vh;
     filter: grayscale(100%);
     @include MQ(M) {
-        height: 50vh;
+        height: 60vh;
         margin-top: 0px;
     }
     @include MQ(L) {
-        height: 60vh;
+        height: 65vh;
     }
     @include MQ(retinaLandscape) {
         height: calc(100vh - 3em);
