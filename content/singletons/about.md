@@ -28,5 +28,7 @@ All content for the site is written in clean, semantic [markdown](https://daring
 
 All code used for this site is open source and [hosted on GitHub](https://www.github.com/rdwatters/ryanwattersme).
 
+The combination of [JavaScript-based build tools](http://gulpjs.com/), [static site generation](www.gohugo.io), and [CDN](https://www.cloudflare.com) make this site [absurdly fast](https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fryanwatters.io).
+
 
 

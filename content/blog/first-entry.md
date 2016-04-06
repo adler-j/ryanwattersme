@@ -14,9 +14,9 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.
 
 {{% bumble "Jasmine" "3:13 AM" "22 March 2016" %}}
-* Blah, blah, blah blah. Blah blah?
+* yada, yada, yada yada. yada yada?
 * Yada yada yada yada yada yada.
-* Blah blah blah blah blah. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reprehenderit enim eius.
+* yada yada yada yada yada. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reprehenderit enim eius.
 
 5 hours ago
 
