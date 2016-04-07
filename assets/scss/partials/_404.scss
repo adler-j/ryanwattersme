@@ -180,21 +180,25 @@ p.fourohfour {
     span.info {
         font-size: 1.2em;
         a {
-          box-shadow:none;
-          color:$base-font-color;
-          &:hover {
-            box-shadow:none;
-            color:$base-font-color;
-            text-decoration:underline;
-          }
+            box-shadow: none;
+            color: $base-font-color;
+            &:hover {
+                box-shadow: none;
+                color: $base-font-color;
+                text-decoration: underline;
+            }
         }
     }
 }
+
 a#notfoundgohome {
-color:$base-font-color;
-box-shadow:none;
-&:hover {
-  box-shadow:none;
-  color:$base-font-color;
-}
+    display: block;
+    color: $base-font-color;
+    box-shadow: none;
+    margin-top:40%;
+    margin-top: 40vh;
+    &:hover {
+        box-shadow: none;
+        color: $base-font-color;
+    }
 }
