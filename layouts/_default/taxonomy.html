@@ -1,25 +1,25 @@
 {{ partial "site_header.html" . }}
 <!-- STARTER LIST PAGE for tags taxonomy. -->
 <main role="main">
+<div class="content-wrapper">
 	<article>
 	<header>
 		{{ $data := .Data }}
-		<h1 class="title"><a href="/{{$data.Plural}}"><small>{{$data.Plural}}:</small></a> {{ .Title }}</h1>
+		<h1 class="title"><a href="/{{$data.Plural}}"><small>{{$data.Singular}}:</small></a> {{ .Title }}</h1>
 	</header>
-	<div class="content-wrapper">
 	<ul class="contents-list">
 	   <!-- Sorts pages by .PublishDate, with the most recent publish first.  -->
-	    {{ range sort .Data.Pages "PublishDate" "desc" }}
+	    {{ range .Data.Pages }}
             <li>
             	<a href="{{ .Permalink }}">
-                <article>
+                <section>
             	<h1 class="title-list">{{.Title}}</h1>
                 <time class="list-publishdate" datetime="{{.PublishDate}}">{{dateFormat "Jan 2 2006" .PublishDate }}</time>
             	<p>{{ .Description }}</p>
-                </article>
+                </section>
             	</a>
             </li>
-	    {{ end }}
+            {{ end }}
 	</ul>
 	</article>
 	</div>
