@@ -85,17 +85,19 @@ div.social-media-share-menu {
         font-size: 20px;
         line-height: 40px;
         vertical-align: middle;
-        color: $white;
-        background-color: $brand;
+        color: $share-button-font-color;
+        background-color: $share-button-background-color;
         border-radius: 50%;
         i.icon-share:after {
             content: 'SHARE';
+            font-style: normal;
+            font-family: $heading-font-family;
             font-size: 8px;
-            width:40px;
-            text-align:center;
-            display:block;
-            position:absolute;
-            margin-top:-28px;
+            width: 40px;
+            text-align: center;
+            display: block;
+            position: absolute;
+            margin-top: -28px;
         }
         &.share-open {
             border-top: 0px;
@@ -103,14 +105,18 @@ div.social-media-share-menu {
             background-color: transparent;
             border-radius: 0px;
             i.icon-share:before {
-                content: 'X';
+                content: ' X';
                 font-weight: bold;
+                padding-left: 2px;
                 color: $accent-color;
+                font-family: $heading-font-family;
             }
             i.icon-share:after {
                 content: 'CLOSE';
-                color:$accent-color;
-                margin-top:-28px;
+                color: $accent-color;
+                margin-top: -28px;
+                font-style: normal;
+                font-family: $heading-font-family;
             }
         }
         i.icon-share {
@@ -152,6 +158,9 @@ div.social-media-share-menu {
                 a {
                     i {
                         font-size: 26px;
+                    }
+                    i.icon-facebook {
+                        font-size:34px;
                     }
                 }
                 &.share-button {
