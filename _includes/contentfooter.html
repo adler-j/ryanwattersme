@@ -7,7 +7,7 @@
     </ul>
     {% endif %}
     <section class="prev-and-next">
-        {% if page.collection == "articles" %} 
+        {% if page.collection == "articles" %}
             {% assign contents = site.articles | sort: 'publishdate' %}
             {% assign collection_name = page.collection %}
             {% capture stringLength %}{{ collection_name | size | minus: 1 }}{% endcapture %}
@@ -15,30 +15,30 @@
         {% elsif page.collection == "tutorials" %}
             {% assign contents = site.tutorials | sort: 'series_no' %}
         {% assign contents = contents | sort: 'series' %}
-            {% assign collection_name = 'tutorials' %} 
-        {% endif %} 
+            {% assign collection_name = 'tutorials' %}
+        {% endif %}
         {% assign collection_listpage = page.collection | prepend: '/' | append: '/' %}
-        
+
         {% for content in contents %}
             {% if content.title == page.title %}
-                {% unless forloop.first %} 
-                    {% assign prevurl = prev.url %} 
+                {% unless forloop.first %}
+                    {% assign prevurl = prev.url %}
                     {% assign prevtitle = prev.title %}
                     {% assign prevdate = prev.publishdate | date: '%B %d, %Y' %}
                     {% assign prevseries = prev.series %}
-                    {% assign prevnum = prev.series_no %} 
-                {% endunless %} 
+                    {% assign prevnum = prev.series_no %}
+                {% endunless %}
                 {% unless forloop.last %}
-                    {% assign next = contents[forloop.index] %} 
-                    {% assign nexturl = next.url %} 
+                    {% assign next = contents[forloop.index] %}
+                    {% assign nexturl = next.url %}
                     {% assign nexttitle = next.title %}
                     {% assign nextdate = next.publishdate | date: '%B %d, %Y' %}
                     {% assign nextseries = next.series %}
-                    {% assign nextnum = next.series_no %} 
-                {% endunless %} 
-            {% endif %} 
+                    {% assign nextnum = next.series_no %}
+                {% endunless %}
+            {% endif %}
             {% assign prev = content %}
-        {% endfor %} 
+        {% endfor %}
         {% unless prevurl == collection_listpage or prevurl == nil %}
         <a href="{{prevurl}}" class="direction previous">
             {% include icons/previous-icon.svg %}
@@ -48,7 +48,7 @@
                         {% if page.collection == 'articles' %}
                         <div class="direction-heading">PREVIOUS {{collection_name | upcase }}</div>
                         {% elsif page.collection == 'tutorials' %}
-                        <div class="direction-heading">PREV: {{prevseries | upcase }} PART {{prevnum}}</div>    
+                        <div class="direction-heading">PREV: {{prevseries | upcase }} PART {{prevnum}}</div>
                         {% endif %}
                         {{prevtitle}}
                         <div class="direction-date">{{prevdate}}</div>
@@ -57,7 +57,7 @@
             </div>
         </a>
         {% endunless %}
-        
+
         {% if nexturl != nil %}
         <a href="{{nexturl}}" class="direction next">
             {% include icons/next-icon.svg %}
