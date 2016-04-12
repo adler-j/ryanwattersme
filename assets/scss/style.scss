@@ -127,31 +127,50 @@ article#about a {
 
 header.blog {
     transition: all .2s ease-in-out;
-    margin-top: 1em;
     width: 100%;
-    margin-top: -10px;
+    margin-top: -2.5em;
     margin-bottom: 1em;
     padding-top: 2em;
-    height: 50vh;
-    filter: grayscale(100%);
+    height: 100vh;
+    position:relative;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    // filter: grayscale(100%);
     @include MQ(M) {
-        height: 60vh;
-        margin-top: 0px;
+        height: 100vh;
     }
     @include MQ(L) {
-        height: 65vh;
+        height: 100vh;
     }
     @include MQ(retinaLandscape) {
         height: calc(100vh - 3em);
         margin-top: 0px;
     }
+    &:before {
+        transition:opacity .3s ease-in-out;
+        content: '';
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        height:100vh;
+        bottom: 0;
+        left: 0;
+        pointer-events: none;
+        opacity:1;
+        background-image: linear-gradient(45deg, rgba(1, 74, 130, 0.6), rgba(179, 0, 0, 0.6));
+    }
     &:hover {
-        filter: grayscale(0%);
+        transition:opacity .3s ease-in-out;
+        // filter: grayscale(0%);
+        &:before {
+            opacity:0;
+        }
     }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
     .header-content.blog {
         width: 90%;
         height: auto;
@@ -160,7 +179,6 @@ header.blog {
         margin-left: auto;
         margin-right: auto;
         position: relative;
-        background-color: rgba(0, 0, 0, 0.3);
         padding: .5em;
     }
 }
