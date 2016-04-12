@@ -22,4 +22,3 @@ deploy:
       bucket-url: $AWS_BUCKET_URL
       source_dir: public/
       delete-removed: true
-

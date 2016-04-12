@@ -26,7 +26,7 @@
 @import 'partials/site-footer';
 main[role="main"] {
     width: 100%;
-    width:100vw;
+    width: 100vw;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -35,10 +35,10 @@ main[role="main"] {
     margin-bottom: 3em;
     position: relative;
     z-index: 1;
-    overflow-x:hidden;
+    overflow-x: hidden;
     @include header-transition;
     &.open {
-        transform: translateX(-$site-menu-width);
+        // transform: translateX(-$site-menu-width);
         opacity: 0.3;
         @include MQ(M) {
             transform: translateX(0%);
@@ -46,64 +46,67 @@ main[role="main"] {
         }
     }
 }
+
 .content-wrapper {
     width: 95%;
     width: 95vw;
-    display:block;
-    margin-left:auto;
-    margin-right:auto;
-    overflow:hidden;
-    position:relative;
-    padding-bottom:4em;
-    @include MQ(M){
-        max-width:$content-max-width - 1em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    position: relative;
+    padding-bottom: 4em;
+    @include MQ(M) {
+        max-width: $content-max-width - 1em;
     }
     &.colophon {
         @include MQ(L) {
-        width: 1000px;
-        max-width: 1000px;
+            width: 1000px;
+            max-width: 1000px;
         }
     }
 }
+
 #colophon {
-        @include MQ(L) {
+    @include MQ(L) {
         width: 1016px;
         max-width: 1016px;
         padding-right: 16px;
-        }
     }
+}
 
-.content-wrapper{
+.content-wrapper {
     article {
-        width:100%;
-        min-height:100%;
+        width: 100%;
+        min-height: 100%;
         position: relative;
-        margin-left:0px;
+        margin-left: 0px;
         overflow-y: scroll;
-        overflow-x:hidden;
+        overflow-x: hidden;
         position: relative;
         z-index: 9;
         display: block;
-        margin-right:-16px;
-        &::-webkit-scrollbar{
-            display:none!important;
+        margin-right: -16px;
+        &::-webkit-scrollbar {
+            display: none!important;
         }
         @include MQ(M) {
             width: $content-max-width;
-            padding-right:1em;
+            padding-right: 1em;
         }
         header {
             margin-bottom: 1.5em;
         }
         &.homepage {
-            min-height:60vh;
+            min-height: 60vh;
         }
     }
 }
 
-    article a, article.content a,
-    article.homepage a,
-    article#about a {
+article a,
+article.content a,
+article.homepage a,
+article#about a {
     font-size: inherit;
     color: $brand;
     transition: box-shadow ease 250ms, color ease 250ms;
@@ -120,13 +123,12 @@ main[role="main"] {
         color: $body-background-color;
         box-shadow: 0 -1.5em 0 $brand inset;
     }
-    }
-
+}
 
 header.blog {
     transition: all .2s ease-in-out;
     margin-top: 1em;
-    width:100%;
+    width: 100%;
     margin-top: -10px;
     margin-bottom: 1em;
     padding-top: 2em;
@@ -228,9 +230,3 @@ article time.publishdate {
     text-transform: uppercase;
     font-family: $heading-font-family;
 }
-
-
-
-
-
-
