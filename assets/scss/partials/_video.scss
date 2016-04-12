@@ -41,11 +41,12 @@
         content: '\e80c';
         font-family: "fontello";
         position: absolute;
-        font-size: 4em;
+        font-size: 3.8em;
         left: 42%;
-        bottom: 20%;
+        bottom: 25%;
         color: #bb0000;
         @include MQ(M) {
+            font-size:4.1em;
             bottom: 30%;
         }
     }
