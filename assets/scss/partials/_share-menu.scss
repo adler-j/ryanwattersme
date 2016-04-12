@@ -4,7 +4,6 @@ div.social-media-share-menu {
     min-height: 42px;
     bottom: 30px;
     right: 16px;
-    border-top: 1.5px solid #f0f0f0;
     z-index: 999999;
     font-size: 1em;
     background-color: transparent;
@@ -17,8 +16,8 @@ div.social-media-share-menu {
         margin-left: 0px;
         padding-left: 0px;
         bottom: 0px;
-        margin-bottom:0px;
-        padding-bottom:0px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
         right: 0px;
         width: 42px;
         transform-origin: bottom;
@@ -50,17 +49,17 @@ div.social-media-share-menu {
                 }
             }
             &:first-child {
-                padding-top:8px;
-                height:48px;
+                padding-top: 8px;
+                height: 48px;
             }
             &:last-child {
-                padding-bottom:60px;
+                padding-bottom: 60px;
             }
         }
         &.share-open {
             transform: scale(1);
-            border:none;
-            min-height:100%;
+            border: none;
+            min-height: 100%;
         }
     }
     &.social-fixed.social-top {
@@ -71,7 +70,7 @@ div.social-media-share-menu {
         // transform: translateY(0%);
     }
     a#share-button {
-        transition:all .3s ease-in-out;
+        transition: all .3s ease-in-out;
         box-sizing: content-box;
         width: 40px;
         height: 40px;
@@ -86,18 +85,32 @@ div.social-media-share-menu {
         font-size: 20px;
         line-height: 40px;
         vertical-align: middle;
-        color:$white;
-        background-color:$brand;
-        border-radius:50%;
+        color: $white;
+        background-color: $brand;
+        border-radius: 50%;
+        i.icon-share:after {
+            content: 'SHARE';
+            font-size: 8px;
+            width:40px;
+            text-align:center;
+            display:block;
+            position:absolute;
+            margin-top:-28px;
+        }
         &.share-open {
             border-top: 0px;
-            color:$brand;
-            background-color:transparent;
-            border-radius:0px;
+            color: $brand;
+            background-color: transparent;
+            border-radius: 0px;
             i.icon-share:before {
-                content:'X';
-                font-weight:bold;
+                content: 'X';
+                font-weight: bold;
+                color: $accent-color;
+            }
+            i.icon-share:after {
+                content: 'CLOSE';
                 color:$accent-color;
+                margin-top:-28px;
             }
         }
         i.icon-share {
@@ -127,13 +140,13 @@ div.social-media-share-menu {
             width: 50px;
             height: auto;
             line-height: 2em;
-            transform:scale(1);
+            transform: scale(1);
             li {
                 display: list;
                 margin-bottom: .5em;
                 padding-bottom: 0px;
-                width:50px;
-                text-align:center;
+                width: 50px;
+                text-align: center;
                 border: none;
                 background-color: $body-background-color;
                 a {
@@ -145,8 +158,8 @@ div.social-media-share-menu {
                     display: none;
                 }
                 &:last-child {
-                    padding-bottom:0px;
-                    margin-bottom:.5em;
+                    padding-bottom: 0px;
+                    margin-bottom: .5em;
                 }
             }
         }
