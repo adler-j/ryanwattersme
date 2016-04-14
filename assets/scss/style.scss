@@ -132,10 +132,10 @@ header.blog {
     margin-bottom: 1em;
     padding-top: 2em;
     height: 100vh;
-    position:relative;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     // filter: grayscale(100%);
     @include MQ(M) {
         height: 100vh;
@@ -148,30 +148,34 @@ header.blog {
         margin-top: 0px;
     }
     &:before {
-        transition:opacity .3s ease-in-out;
+        transition: opacity .3s ease-in-out;
         content: '';
         display: block;
         position: absolute;
         top: 0;
         right: 0;
-        height:100vh;
+        height: 100vh;
         bottom: 0;
         left: 0;
         pointer-events: none;
-        opacity:1;
-        background-image: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8));
+        opacity: 1;
+        background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
     }
     &.blog-not-top {
-        transition:opacity .3s ease-in-out;
+        transition: opacity .3s ease-in-out;
         // filter: grayscale(0%);
         &:before {
-            opacity:0;
+            opacity: 0;
+        }
+        .header-content.blog {
+            background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
         }
     }
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     .header-content.blog {
+        transition: background-image .3s ease-in-out;
         width: 90%;
         height: auto;
         max-width: $content-max-width;
