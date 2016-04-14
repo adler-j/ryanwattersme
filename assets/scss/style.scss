@@ -159,9 +159,9 @@ header.blog {
         left: 0;
         pointer-events: none;
         opacity:1;
-        background-image: linear-gradient(45deg, rgba(1, 74, 130, 0.6), rgba(179, 0, 0, 0.6));
+        background-image: linear-gradient(45deg, rgba(0,0,0,0.8), rgba(0,0,0,0.8));
     }
-    &:hover {
+    &.blog-not-top {
         transition:opacity .3s ease-in-out;
         // filter: grayscale(0%);
         &:before {
