@@ -1,5 +1,5 @@
 {{ partial "site_header.html" . }}
-<main role="main">
+<main role="main" class="main">
     {{ if .IsPage }}
         {{if ne .URL "/contact/"}}
             {{ partial "share_social_media.html" . }}
@@ -20,11 +20,12 @@
             </div>
         </div>
     </header>
+
+    <article class="{{.Section}}" id="{{.Title|urlize}}">
     <div class="content-wrapper">
-    <article class="content {{.Section}}" id="{{.Title|urlize}}">
         {{ .Content }}
-    </article>
     </div>
+    </article>
     <ul class="tags"><span>tags:</span> {{ range .Params.tags }}
         <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
         {{ end }}

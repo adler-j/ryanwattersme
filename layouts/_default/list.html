@@ -1,23 +1,23 @@
 {{ partial "site_header.html" . }}
 <!-- Your Default List Layout Here -->
 <main role="main">
-<div class="content-wrapper">
-  <article>
-   <header>
-   <h1>{{ .Title }}</h1>
-   </header>
-        <ul class="contents-list">
-            {{ range .Data.Pages }}
-            <li>
-              <a href="{{ .Permalink }}">
-              <h1 class="title-list">{{.Title}}</h1>
-              <time>{{ dateFormat "2006-01-02" .PublishDate  }}</time>
-              <p>{{ .Description }}</p>
-              </a>
-            </li>
-            {{ end }}
-        </ul>
-  </article>
-</div>
+    <article>
+        <div class="content-wrapper">
+            <header>
+                <h1>{{ .Title }}</h1>
+            </header>
+            <ul class="contents-list">
+                {{ range .Data.Pages }}
+                <li>
+                    <a href="{{ .Permalink }}">
+                        <h1 class="title-list">{{.Title}}</h1>
+                        <time>{{ dateFormat "2006-01-02" .PublishDate }}</time>
+                        <p>{{ .Description }}</p>
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
+    </article>
 </main>
 {{ partial "site_footer.html" . }}

@@ -1,5 +1,5 @@
 ---
-title: First Entry
+title: Stop Laughing
 subtitle: This is only a test subtitle for layout purposes.
 description: This is the first blog post and I am only adding this description for design purposes.
 date: 2016-03-18
@@ -7,7 +7,7 @@ publishdate: 2016-03-18
 image: microscope.jpg
 updated: 2016-03-18
 categories: [essays]
-tags: [publishing, content]
+tags: [politics]
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

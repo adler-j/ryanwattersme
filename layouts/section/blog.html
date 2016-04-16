@@ -1,24 +1,24 @@
 {{ partial "site_header.html" . }}
 <main role="main">
-<div class="content-wrapper">
     <article>
-        <header>
-        <h1 class="title">{{.Title}}</h1>
-        </header>
-        <ul class="contents-list">
-            {{ range .Data.Pages }}
-            <li>
-            	<a href="{{ .Permalink }}">
-                <section>
-            	<h1 class="title-list">{{.Title}}</h1>
-                <time class="list-publishdate" datetime="{{.PublishDate}}">{{dateFormat "Jan 2 2006" .PublishDate }}</time>
-            	<p>{{ .Description }}</p>
-                </section>
-            	</a>
-            </li>
-            {{ end }}
-        </ul>
+        <div class="content-wrapper">
+            <header>
+                <h1 class="title">{{.Title}}</h1>
+            </header>
+            <ul class="contents-list">
+                {{ range .Data.Pages }}
+                <li>
+                    <a href="{{ .Permalink }}">
+                        <section>
+                            <h1 class="title-list">{{.Title}}</h1>
+                            <time class="list-publishdate" datetime="{{.PublishDate}}">{{dateFormat "Jan 2 2006" .PublishDate }}</time>
+                            <p>{{ .Description }}</p>
+                        </section>
+                    </a>
+                </li>
+                {{ end }}
+            </ul>
+        </div>
     </article>
-</div>
 </main>
 {{ partial "site_footer.html" . }}

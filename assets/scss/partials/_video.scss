@@ -6,12 +6,13 @@
     /* 16:9 */
     padding-top: 25px;
     height: 0;
-    z-index: -1;
     clear: both;
+    cursor:pointer;
     &:hover,
     &:active,
     &:focus {
         filter: grayscale(0%);
+        cursor:pointer;
     }
 }
 

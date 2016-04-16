@@ -1,20 +1,32 @@
-*,*:after,*:before {
-    -ms-overflow-style:none!important;
-}
-//remove scrollbars on Chrome
-::-webkit-scrollbar {
-    display:none!important;
+*,
+*:after,
+*:before {
+    -ms-overflow-style: none!important;
 }
 
-html {box-sizing: border-box;}*, *:before, *:after {box-sizing:inherit;}
+//remove scrollbars on Chrome
+::-webkit-scrollbar {
+    display: none!important;
+}
+
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
 html {
     font-size: $base-font-size; //This will equal 1REM
     line-height: $base-line-height;
-    width:100%;
-    width:100vw;
-    border:0;
-    margin:0;
-    padding:0;
+    width: 100%;
+    width: 100vw;
+    border: 0;
+    margin: 0;
+    padding: 0;
 }
 
 html,
@@ -34,16 +46,16 @@ body {
     background: $body-background-color;
     color: $base-font-color;
     position: relative;
-    z-index:0;
-    min-height: 100%;
-    min-height: 100vh;
-    // width:100%;
-    // width:100vw;
-    margin-top: 0px;
-    padding-top: 0px;
+    z-index:1;
     border: 0;
     padding:0;
     margin:0;
+    min-height: 100%;
+    min-height: 100vh;
+    margin-right:-16px;
+    padding-right:16px;
+    margin-top: 0px;
+    padding-top: 0px;
     overflow-x: hidden;
     font-weight: $base-font-weight;
 }
@@ -87,7 +99,7 @@ a {
     font-weight: $anchor-weight;
     transition: $anchor-transition;
     text-decoration: $anchor-default-text-decoration;
-    cursor: pointer;
+    cursor: pointer!important;
     &:hover {
         color: $anchor-hover-color;
     }

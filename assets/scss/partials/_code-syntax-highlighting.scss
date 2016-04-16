@@ -17,6 +17,10 @@ pre {
     code {
         padding-left: 10%;
     }
+    @include MQ(M){
+        width:80vw;
+        margin-left:-10vw;
+    }
 }
 
 // Modified from https://github.com/isagalaev/highlight.js/blob/master/src/styles/monokai-sublime.css

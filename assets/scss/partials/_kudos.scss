@@ -1,3 +1,7 @@
+div.kudos-block {
+    background-color:$body-background-color;
+}
+
 p.count {
     display: block;
 }
@@ -64,6 +68,7 @@ figure.kudo {
     -moz-user-select: none;
     -ms-user-select: none;
     user-select: none;
+    z-index:999;
 }
 
 

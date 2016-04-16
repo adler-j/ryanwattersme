@@ -1,6 +1,6 @@
 @import 'variables';
 @import 'bourbon/bourbon';
-@import 'partials/animate';
+// @import 'partials/animate';
 @import 'partials/layout';
 @import 'partials/mixins';
 @import 'partials/font-face';
@@ -24,7 +24,8 @@
 @import 'partials/kudos';
 @import 'partials/shortcodes';
 @import 'partials/site-footer';
-main[role="main"] {
+main[role="main"],
+main.main {
     width: 100%;
     width: 100vw;
     display: block;
@@ -33,8 +34,6 @@ main[role="main"] {
     margin-top: 60px;
     min-height: 100%;
     margin-bottom: 3em;
-    position: relative;
-    z-index: 1;
     overflow-x: hidden;
     @include header-transition;
     &.open {
@@ -47,17 +46,33 @@ main[role="main"] {
     }
 }
 
+article {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin-right: -16px;
+    &::-webkit-scrollbar {
+        display: none!important;
+    }
+    header {
+        margin-bottom: 1.5em;
+    }
+    &.homepage {
+        min-height: 60vh;
+    }
+}
+
 .content-wrapper {
+    display: block;
+    margin: auto;
     width: 95%;
     width: 95vw;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    overflow: hidden;
-    position: relative;
     padding-bottom: 4em;
+    position: relative;
     @include MQ(M) {
-        max-width: $content-max-width - 1em;
+        width: $content-max-width;
     }
     &.colophon {
         @include MQ(L) {
@@ -67,39 +82,21 @@ main[role="main"] {
     }
 }
 
+article > p img.full,
+article img.full {
+    @include MQ(M) {
+        width: 100vw;
+        height: auto;
+        z-index:-1;
+        left: calc((-100vw + #{$content-max-width}) / 2);
+    }
+}
+
 #colophon {
     @include MQ(L) {
         width: 1016px;
         max-width: 1016px;
         padding-right: 16px;
-    }
-}
-
-.content-wrapper {
-    article {
-        width: 100%;
-        min-height: 100%;
-        position: relative;
-        margin-left: 0px;
-        overflow-y: scroll;
-        overflow-x: hidden;
-        position: relative;
-        z-index: 9;
-        display: block;
-        margin-right: -16px;
-        &::-webkit-scrollbar {
-            display: none!important;
-        }
-        @include MQ(M) {
-            width: $content-max-width;
-            padding-right: 1em;
-        }
-        header {
-            margin-bottom: 1.5em;
-        }
-        &.homepage {
-            min-height: 60vh;
-        }
     }
 }
 
@@ -132,7 +129,7 @@ header.blog {
     margin-bottom: 1em;
     padding-top: 2em;
     height: 100vh;
-    position: relative;
+    // position: relative;
     display: flex;
     justify-content: center;
     align-items: center;

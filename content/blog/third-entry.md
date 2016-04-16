@@ -1,12 +1,12 @@
 ---
-title: Third Post
+title: Hugo with lunr.js
 subtitle: Here is a fake subtitle for testing.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit animi dolorum consequatur, facilis perspiciatis explicabo commodi!
 date: 2016-03-20
 publishdate: 2016-03-20
 updated: 2016-03-20
 image: keyboard.jpg
-categories: [publishing]
+categories: [tech and dev]
 tags: [publishing, content]
 ---
 
