@@ -6,6 +6,7 @@
 {{ else }}
 <title>{{ .Site.Title }} | Home </title>
 {{ end }}
+<meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="description" content="{{ if .Description }}{{ .Description }}{{ else }}{{ .Site.Params.SiteDescription }}{{ end }}">
 <!-- Responsive meta tag -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
