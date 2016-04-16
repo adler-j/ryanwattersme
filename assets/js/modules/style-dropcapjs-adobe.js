@@ -117,7 +117,7 @@ http://www.apache.org/licenses/LICENSE-2.0.html
                 var e = Array.prototype.forEach;
                 e.call(a, function(a) { k(a, b, c) }) } } } }();
 
-var firstPara = document.querySelector('.content-wrapper > article > p:nth-of-type(1)');
+var firstPara = document.querySelector('article > .content-wrapper > p:nth-of-type(1)');
 var blogTest = new RegExp('/blog/');
 if ((firstPara !== null) && (location.pathname.split('/').length > 2) && blogTest.test(location.pathname) && (location.pathname !== "/")) {
     //assign text of first paragraph to firstParaText
