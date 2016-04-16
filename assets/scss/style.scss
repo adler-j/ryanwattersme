@@ -50,6 +50,7 @@ main.main {
 article {
     display: block;
     width: 100%;
+    max-width: 100%;
     min-height: 100%;
     overflow-y: scroll;
     overflow-x: hidden;
@@ -70,10 +71,12 @@ article {
     margin: auto;
     width: 95%;
     width: 95vw;
+    overflow-x:hidden;
     padding-bottom: 4em;
     position: relative;
     @include MQ(M) {
         width: $content-max-width;
+        overflow-x:visible;
     }
 }
 
