@@ -1,8 +1,9 @@
 {{ partial "site_header.html" . }}
 <main role="main">
 {{ partial "share_social_media.html" . }}
-<div class="content-wrapper colophon">
+
 <article id="colophon">
+<div class="content-wrapper colophon">
 	<header><h1 class="title">{{.Title}}</h1></header>
 	<div class="typeface">
 		<h3>Typefaces</h3>
@@ -30,8 +31,9 @@
 
 		</div>
 	</div>
+	</div>
 </article>
-</div>
+
 {{partial "parse.html" . }}
 </main>
 {{ partial "site_footer.html" . }}

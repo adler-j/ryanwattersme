@@ -1,6 +1,6 @@
 {{$baseShare := "https://ryanwatters.io"}}
 {{$siteName := "ryanwatters.io" }}
-<div class="social-media-share-menu">
+<div class="social-media-share-menu {{.Title|lower}}">
     <ul class="share-menu">
         <li><a class="facebook share" href="https://www.facebook.com/sharer/sharer.php?u={{$baseShare}}{{.Permalink}}"><i class="icon-facebook"></i></a></li>
         <li><a href="https://twitter.com/home?status={{$baseShare}}{{.Permalink}}" class="twitter share"><i class="icon-twitter"></i></a></li>

@@ -1,17 +1,8 @@
-main[role="main"] > article#colophon {
-    @include MQ(L) {
-        width: 1000px;
-        max-width: 1000px;
-        h3#color {
-            margin-top: 0px;
-        }
-    }
-}
-
 .content-wrapper.colophon {
+    margin:auto;
     @include MQ(L) {
-        width: 1000px;
-        max-width: 1000px;
+        width: 900px;
+        max-width: 900px;
     }
 }
 

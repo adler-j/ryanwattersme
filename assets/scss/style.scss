@@ -86,14 +86,6 @@ article img.full {
     }
 }
 
-#colophon {
-    @include MQ(L) {
-        width: 1016px;
-        max-width: 1016px;
-        padding-right: 16px;
-    }
-}
-
 article a,
 article.content a,
 article.homepage a,
