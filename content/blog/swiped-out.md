@@ -12,6 +12,6 @@ tags: [dating, technology]
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!
 
-![image with some alt text. $=full](/assets/images/my-image.jpg)
+![Enormous stack of used, hardcover books. $=full](/assets/images/books.jpg)
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.

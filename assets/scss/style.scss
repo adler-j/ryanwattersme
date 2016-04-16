@@ -74,12 +74,6 @@ article {
     @include MQ(M) {
         width: $content-max-width;
     }
-    &.colophon {
-        @include MQ(L) {
-            width: 1000px;
-            max-width: 1000px;
-        }
-    }
 }
 
 article > p img.full,

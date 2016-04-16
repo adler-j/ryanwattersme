@@ -8,6 +8,13 @@ main[role="main"] > article#colophon {
     }
 }
 
+.content-wrapper.colophon {
+    @include MQ(L) {
+        width: 1000px;
+        max-width: 1000px;
+    }
+}
+
 ul.typography {
     list-style: none;
     padding: 0px;
@@ -61,21 +68,21 @@ ul.colors {
     margin: 0px;
     padding: 0px;
     display: flex;
-    flex-wrap:wrap;
-    justify-content:center;
+    flex-wrap: wrap;
+    justify-content: center;
     margin-left: 10%;
     @include MQ(M) {
         margin-left: 0px;
     }
     @include MQ(L) {
-    	// justify-content:flex-start;
+        // justify-content:flex-start;
     }
     li.color {
         margin-left: 0px;
         padding-left: 0px;
         margin-right: 1.5em;
         display: flex;
-        justify-content:center;
+        justify-content: center;
         width: 100px;
         height: 100px;
         min-height: 100px;
