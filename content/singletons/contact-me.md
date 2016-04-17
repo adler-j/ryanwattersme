@@ -7,7 +7,7 @@ publishdate: 2016-03-20
 updated: 2016-03-20
 type: singletons
 layout: contact
-tags: [about,development]
+tags: [contact]
 categories: []
 comments: First attempt at creating the Contact page for ryanwatters.io
 ---

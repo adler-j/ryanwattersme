@@ -85,15 +85,7 @@ article {
     }
 }
 
-article > p img.full,
-article img.full {
-    @include MQ(M) {
-        width: 100vw;
-        height: auto;
-        z-index: -1;
-        left: calc((-100vw + #{$content-max-width}) / 2);
-    }
-}
+
 
 article a,
 article.content a,
