@@ -114,7 +114,7 @@ article#about a {
 header.blog {
     transition: all .2s ease-in-out;
     width: 100%;
-    margin-top: -2.5em;
+    margin-top: -2em;
     margin-bottom: 1em;
     padding-top: 2em;
     height: 100vh;
@@ -126,18 +126,14 @@ header.blog {
         height: calc(100vh - 3em);
         margin-top: 0px;
     }
-    @include MQ(L) {
-        height: calc(100vh + 3em);
-    }
     &:before {
         transition: opacity .3s ease-in-out;
-        height: calc(100vh + 3em);
+        height: 100vh;
         content: '';
         display: block;
         position: absolute;
         top: 0;
         right: 0;
-        // height: 100vh;
         bottom: 0;
         left: 0;
         pointer-events: none;

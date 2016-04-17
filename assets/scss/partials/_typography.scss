@@ -5,18 +5,16 @@ h1.title {
     font-weight: 600;
     line-height: 1;
     color: $h1-page-heading-font-color;
-    // @include MQ(M) {
-    //     font-size:3em;
-    // }
-    // @include MQ(L) {
-    //     font-size: 3.7em;
-    // }
+    @include MQ(XL) {
+        font-size: 4.2em;
+    }
     &.homepage {
+        font-size: 3.2em;
         font-weight: 900;
     }
     &.blog {
         color: $white;
-        text-transform:none;
+        text-transform: none;
     }
 }
 
@@ -136,6 +134,5 @@ blockquote {
 }
 
 small.taxonomy {
-    font-size:.3em;
+    font-size: .3em;
 }
-
