@@ -37,10 +37,10 @@ a.site-logo {
 
 #site-header-toggle {
     position: absolute;
-    top: $top-bar-height * .125;
-    right: $top-bar-height * .125;
+    top: $top-bar-height * .25;
+    right: $top-bar-height * .25;
     font-weight: normal;
-    font-size: $top-bar-height * .66666;
+    font-size: $top-bar-height * .5;
     color: $site-header-toggle-menu-color;
     background-color: $top-bar-background-color;
     font-family:$base-font-family;
