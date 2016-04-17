@@ -42,11 +42,13 @@ function init(){
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let's make a [link to Google](https://www.google.com).
 
+{{% code "myFunction"%}}
 ```javascript
 function myFunction(){
   console.log("hello world!");
 }
 ```
+{{% /code %}}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!
 
@@ -65,15 +67,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis repreh
 
 #### Subheading That Is Longer Than the Heading
 
-Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
-
-Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.
-
-### Heading Again
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo enim magni facere officia nesciunt, sunt[^1] obcaecati recusandae, doloribus libero. Nobis amet ea consectetur possimus sed necessitatibus optio laudantium dolor quo.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut tempore at unde. Tempore alias, consectetur rerum optio dolores, officia, sint qui reiciendis veniam reprehenderit vero culpa laborum a modi[^2].
 
-[^2]: Here is something different.
-[^1]: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quidem quibusdam id veniam cupiditate fuga maxime exercitationem totam. Labore distinctio vero nostrum quisquam, eos hic accusantium. Porro doloribus, repellat earum.
+Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
+
+[^1]: Here is something different.
+[^2]: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quidem quibusdam id veniam cupiditate fuga maxime exercitationem totam. Labore distinctio vero nostrum quisquam, eos hic accusantium. Porro doloribus, repellat earum.
