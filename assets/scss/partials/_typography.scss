@@ -1,12 +1,15 @@
 h1.title {
-    font-size: 3.5em;
+    font-size: 3em;
     margin-top: .3em;
     margin-bottom: 6px;
     font-weight: 600;
     line-height: 1;
     color: $h1-page-heading-font-color;
+    @include MQ(L) {
+        font-size: 3.5em;
+    }
     @include MQ(XL) {
-        font-size: 4.2em;
+        font-size: 3.7em;
     }
     &.homepage {
         font-size: 3.2em;

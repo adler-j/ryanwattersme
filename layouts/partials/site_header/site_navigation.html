@@ -1,13 +1,19 @@
 <a href="#" id="close-menu"><i class="icon-cancel"></i></a>
 <div class="nav-wrapper">
     <nav role="navigation" aria-label="main navigation" class="site-navigation">
-        <ul>
-            <li><a href="/">ryanwatters.io</a></li>
-            <li><a href="/blog">Blog</a></li>
-            <li><a href="/about">About</a></li>
-            <li><a href="/contact">Contact</a></li>
+        <ul class="nav">
+            <li class="main-nav-item"><a href="/">ryanwatters.io</a></li>
+            <li class="main-nav-item"><a href="#" id="categories-toggle">Blog</a>
+                <ul class="blog-categories">
+                    {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+                    <li class="blog-category"><a href="/categories/{{$key}}">{{replace $key "-" " "}}</a></li>
+                    {{ end }}
+                </ul>
+            </li>
+            <li class="main-nav-item"><a href="/about">About</a></li>
+            <li class="main-nav-item"><a href="/contact">Contact</a></li>
             <!-- <li><input type="text" class="st-default-search-input"></li> -->
-            <li class="colophon"><a href="/colophon">Colophon</a></li>
+            <li class="main-nav-item colophon"><a href="/colophon">Colophon</a></li>
         </ul>
         <ul class="social">
             <li><a href="https://www.twitter.com/@{{.Site.Params.Twitter}}"><i class="icon-twitter"></i></a></li>

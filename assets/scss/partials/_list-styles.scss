@@ -7,43 +7,48 @@ nav {
     margin-right: auto;
     margin-top: 0px;
     padding-top: 0px;
-    text-align: right;
+    text-align: left;
 }
 
 .nav-wrapper {
     position: relative;
     -ms-overflow-style: none;
     overflow: hidden;
-    width:90%;
+    width: 90%;
     &::-webkit-scrollbar {
         display: none;
     }
 }
 
-
-
 //Main Navigation
 nav.site-navigation {
     z-index: 99;
     margin-top: 3.5em;
+    padding-left: 0px;
     flex-grow: 1;
     overflow-x: hidden;
     overflow-y: scroll;
     position: relative;
-    left: -16px;
-    padding-right:16px;
-    margin-right:-16px;
-    width:180px;
+    left: 0px;
+    padding-right: 16px;
+    margin-right: -16px;
+    width: $site-menu-width;
     -ms-overflow-style: none;
     &::-webkit-scrollbar {
         display: none;
     }
-    ul {
+    ul.nav {
         list-style: none;
         margin-left: .2em;
         padding-left: 0px;
-        li {
-            margin-bottom: .75em;
+        li.main-nav-item {
+            position: relative;
+            transition: all .3s ease-in-out;
+            margin-bottom: 0em;
+            padding-left: 1.5em;
+            width: 100%;
+            font-size: 1.2em;
+            line-height: 1.9em;
             a {
                 font-weight: normal;
                 text-align: right;
@@ -51,8 +56,10 @@ nav.site-navigation {
                 text-transform: lowercase;
                 font-family: $site-header-font-family;
                 z-index: 9999;
-                font-size: 1.2em;
+
+                min-width:100%;
                 color: lighten($base-font-color, 15%);
+                text-transform: uppercase;
                 i.icon-search {
                     font-size: .7em;
                 }
@@ -65,7 +72,6 @@ nav.site-navigation {
                 }
             }
             //styling for colophon link
-            &:last-child,
             &.colophon {
                 margin-top: 20vh;
                 margin-bottom: 0px;
@@ -74,36 +80,73 @@ nav.site-navigation {
                     font-size: .75em;
                 }
             }
+            ul.blog-categories {
+                transition: all .3s ease-in-out;
+                list-style: none;
+                padding-left: .25em;
+                margin-left: 0px;
+                opacity: 0;
+                max-height: 0em;
+                height: auto;
+                &.show-categories {
+                    transition: all .3s ease-in-out;
+                    opacity: 1;
+                    margin-top: 0px;
+                    min-height: auto;
+                    max-height: 10em;
+                }
+                li.blog-category {
+                    font-family: $heading-font-family;
+                    padding: 0px;
+                    line-height: 2.5em;
+                    height: 2.5em;
+                    vertical-align: middle;
+                    a {
+                        font-size: .8em;
+                        text-transform: lowercase;
+                    }
+                }
+            }
         }
     }
     ul.social {
         display: block;
         margin-top: 1em;
         margin-left: 0px;
-        padding-left: 0px;
+        padding-left: 1.5em;
         width: 100%;
-        padding-left: 1em;
         float: left;
         li {
             display: inline;
             font-size: .8em;
             a {
-                // font-size: 1em;
-                i.icon-twitter {
-                    font-size: 1.6em;
-                }
-                i.icon-github {
-                    font-size: .9em;
-                }
-                i.icon-linkedin {
-                    font-size: .9em;
-                }
                 i.icon-rss {
-                    font-size: 1.1em;
-                    margin-right: .2em;
+                    font-size: .9em;
+                    // margin-right: .2em;
                 }
             }
         }
+    }
+}
+
+a#categories-toggle {
+    width:100%;
+    transition:all .3s ease-in-out;
+    &:after {
+        transition:all .3s ease-in-out;
+        content: '';
+        display: inline;
+        float:right;
+        height: .5em;
+        width: .5em;
+        margin-right: .5em;
+        margin-top: .5em;
+        background-image: url(/assets/images/arrow-right.svg);
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+    &.categories-open:after {
+        transform:translateY(25%) rotate(90deg);
     }
 }
 
@@ -113,8 +156,8 @@ ul.contents-list {
     list-style: none;
     margin-left: 0;
     padding-left: 0;
-    margin-right:-16px;
-    padding-right:16px;
+    margin-right: -16px;
+    padding-right: 16px;
     width: 100%;
     position: relative;
     li {
@@ -123,11 +166,11 @@ ul.contents-list {
             cursor: pointer;
             display: block;
             height: auto;
-            text-decoration:none;
-            box-shadow:none;
+            text-decoration: none;
+            box-shadow: none;
             border-bottom: 1px dashed lighten($base-font-color, 25%);
             section {
-                height:auto;
+                height: auto;
                 h1.title-list {
                     color: $base-font-color;
                     margin-bottom: .3em;
@@ -183,7 +226,7 @@ ul.contents-list {
                 }
             }
             &:hover {
-                box-shadow:none;
+                box-shadow: none;
             }
         }
     }
