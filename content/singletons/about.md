@@ -7,7 +7,7 @@ publishdate: 2016-03-20
 updated: 2016-03-20
 type: singletons
 layout: about
-tags: [about,development]
+tags: [about,info]
 categories: []
 comments: First attempt at creating the About page for ryanwatters.io
 ---

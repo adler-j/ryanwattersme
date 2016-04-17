@@ -8,42 +8,45 @@
     right: 0px;
     width: 100%;
     height: $top-bar-height;
-    border-bottom: 1.5px solid #f0f0f0;
+    border-bottom: $top-bar-bottom-border;
+    // border-bottom: 1.5px solid #f0f0f0;
 }
 
 a.site-logo {
     position: absolute;
-    top: .5em;
-    left: .5em;
-    height:2em;
-    width:2em;
+    top: $top-bar-height * .125;
+    left: $top-bar-height * .125;
+    height:$top-bar-height * .75;
+    width:$top-bar-height * .75;
+    line-height:$top-bar-height * .75;
     border-radius: 50%;
     cursor: pointer;
     color: $site-logo-color;
     i.icon-rw-site-logo {
-        line-height:2em;
-        font-size:1em;
-        vertical-align:middle;
-        text-indent:-.1em;
+        font-size:.9em;
+        position:absolute;
+        margin-top:.1em;
+        // text-indent:-.1em;
+        margin-bottom: -.3em;
     }
     &:hover {
         color: $white;
         background-color: $brand;
-        border: 1px solid $brand;
     }
 }
 
 #site-header-toggle {
     position: absolute;
-    top: .25em;
-    right: .5em;
+    top: $top-bar-height * .125;
+    right: $top-bar-height * .125;
     font-weight: normal;
-    font-size: 1.6em;
-    color: $base-font-color;
+    font-size: $top-bar-height * .66666;
+    color: $site-header-toggle-menu-color;
     background-color: $top-bar-background-color;
     font-family:$base-font-family;
     z-index: 9999;
     cursor: pointer;
+    line-height:1;
     @include MQ(M) {
         z-index: 9999;
     }
@@ -53,7 +56,7 @@ a.site-logo {
     width: 100%;
     display: flex;
     flex-direction: row;
-    min-height: 3em;
+    min-height: $top-bar-height;
     align-items: center;
     justify-content: center;
     .next-link,
@@ -63,9 +66,9 @@ a.site-logo {
         box-shadow: none;
         font-family: $heading-font-family;
         text-align: center;
-        min-height: 3em;
+        min-height: $top-bar-height;
         align-items: center;
-        color: $base-font-color;
+        color: $top-bar-links-font-color;
         box-shadow: none;
         padding-bottom: 0px;
         margin-bottom: 0px;
@@ -76,13 +79,13 @@ a.site-logo {
         margin-top: .5em;
         text-transform:uppercase;
         i.icon-previous,i.icon-next {
-            font-size:1.4em;
+            font-size:1em;
             margin-top:.4em;
             margin-bottom:.4em;
         }
         &:hover {
             box-shadow: none;
-            color: $base-font-color;
+            color: $top-bar-links-font-color;
         }
     }
     .prev-link {
@@ -100,23 +103,26 @@ a.site-logo {
 a.section-title {
     width: 20%;
     position: absolute;
-    display: block;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin-top:$top-bar-height * .25;
     left: 40%;
     top: 0em;
     text-align: center;
     font-family: $site-header-font-family;
-    height: 2em;
-    line-height: 2em;
+    height: $top-bar-height * .666666;
+    line-height: $top-bar-height * .666666;
     vertical-align:middle;
-    font-size:.8em;
-    margin-top: .75em;
-    border: 1px solid $base-font-color;
-    box-shadow: none;
-    color: $base-font-color;
+    font-size:$top-bar-height * .3333;
+    border: 1px solid $top-bar-links-font-color;
+    color: $top-bar-links-font-color;
+    box-shadow:none;
+    text-transform:uppercase;
     &:hover {
         box-shadow: none;
-        color: $base-font-color;
-        background-color: $base-font-color;
+        color: $top-bar-links-font-color;
+        background-color: $top-bar-background-color;
         color: $body-background-color;
     }
     h2 {

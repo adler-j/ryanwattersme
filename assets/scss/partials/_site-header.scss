@@ -23,7 +23,7 @@ header.site-header {
     }
     @include transform(translateX(101%));
     a {
-        color: #333333;
+        color: $base-font-color;
     }
     &.open {
         @include transform(translateX(0%));

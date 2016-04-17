@@ -27,7 +27,7 @@ $base-line-height: 1.58;
 $base-font-size: 24px;
 $base-font-weight:400;
 $site-menu-width: 9em;
-$top-bar-height: 3em;
+
 $content-max-width:30em;
 
 //Color Palette
@@ -44,12 +44,19 @@ $site-logo-color:$base-font-color;
 $body-background-color:#ffffff;
 $input-placeholder-text-color:lighten($base-font-color,20%);
 $site-header-background-color:darken($body-background-color,1%);
-$top-bar-background-color:$site-header-background-color;
-$site-logo-color:$base-font-color;
+$site-header-toggle-menu-color:$white;
+$site-logo-color:$white;
 $accent-color:$red;
-
 $dropcap-font-family:$heading-font-family;
 $dropcap-color:$accent-color;
+
+//Top Bar
+$top-bar-height: 2.5em;
+$top-bar-background-color:black;
+$top-bar-links-font-color:$white;
+$top-bar-bottom-border:0px solid #f0f0f0;
+
+//Blockquotes
 
 $blockquote-font-family: $base-font-family;
 $blockquote-border-color:$accent-color;
