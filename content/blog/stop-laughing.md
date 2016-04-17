@@ -13,6 +13,16 @@ tags: [politics]
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.
 
+
+{{% code "javascript" "special-function" %}}
+```javascript
+window.onload = init;
+function init(){
+  console.log
+}
+```
+{{% /code %}}
+
 {{% bumble "Jasmine" "3:13 AM" "22 March 2016" %}}
 * yada, yada, yada yada. yada yada?
 * Yada yada yada yada yada yada.

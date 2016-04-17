@@ -24,7 +24,7 @@ source = ""
 title = "Ryan Watters"
 uglyURLs = false
 verbose = true
-verboseLog = false
+verboseLog = true
 watch = true
 
 [permalinks]
