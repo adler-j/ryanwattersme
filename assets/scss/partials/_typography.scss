@@ -1,5 +1,5 @@
 h1.title {
-    font-size: 3em;
+    font-size: 2.5em;
     margin-top: .3em;
     margin-bottom: 6px;
     font-weight: 600;
@@ -62,6 +62,7 @@ span.dropcap {
     margin-top: .15em!important;
     color: $accent-color;
     font-family: $dropcap-font-family;
+    text-shadow: 1px 1px 1px $base-font-color;
 }
 
 blockquote {
