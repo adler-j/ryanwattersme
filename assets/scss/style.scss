@@ -26,11 +26,11 @@
 main[role="main"],
 main.main {
     width: 100%;
-    max-width:100%;
-    border:none;
+    max-width: 100%;
+    border: none;
     display: block;
     margin: 60px 0px 3em 0px;
-    padding:0px;
+    padding: 0px;
     min-height: 100%;
     overflow-x: hidden;
     @include header-transition;
@@ -47,9 +47,9 @@ article {
     display: block;
     width: 100%;
     max-width: 100%;
-    position:relative;
-    left:0px;
-    margin:auto;
+    position: relative;
+    left: 0px;
+    margin: auto;
     overflow-y: scroll;
     overflow-x: hidden;
     &::-webkit-scrollbar {
@@ -68,14 +68,14 @@ article {
     margin: auto;
     width: 95%;
     max-width: 95%;
-    overflow-x:hidden;
-    position:relative;
+    overflow-x: hidden;
+    position: relative;
     padding-bottom: 4em;
     position: relative;
     @include MQ(M) {
         width: $content-max-width;
-        margin:auto;
-        overflow-x:visible;
+        margin: auto;
+        overflow-x: visible;
     }
 }
 
@@ -84,7 +84,7 @@ article img.full {
     @include MQ(M) {
         width: 100vw;
         height: auto;
-        z-index:-1;
+        z-index: -1;
         left: calc((-100vw + #{$content-max-width}) / 2);
     }
 }
@@ -118,29 +118,26 @@ header.blog {
     margin-bottom: 1em;
     padding-top: 2em;
     height: 100vh;
-    // position: relative;
+    min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    // filter: grayscale(100%);
-    @include MQ(M) {
-        height: 100vh;
-    }
-    @include MQ(L) {
-        height: 100vh;
-    }
     @include MQ(retinaLandscape) {
         height: calc(100vh - 3em);
         margin-top: 0px;
     }
+    @include MQ(L) {
+        height: calc(100vh + 3em);
+    }
     &:before {
         transition: opacity .3s ease-in-out;
+        height: calc(100vh + 3em);
         content: '';
         display: block;
         position: absolute;
         top: 0;
         right: 0;
-        height: 100vh;
+        // height: 100vh;
         bottom: 0;
         left: 0;
         pointer-events: none;
@@ -170,6 +167,9 @@ header.blog {
         margin-right: auto;
         position: relative;
         padding: .5em;
+        @include MQ(XL) {
+            max-width: 1000px;
+        }
     }
 }
 

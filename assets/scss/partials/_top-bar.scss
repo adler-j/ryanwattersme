@@ -1,3 +1,16 @@
+.top-bar {
+    z-index: 9999;
+    display: block;
+    position: fixed;
+    background-color: $top-bar-background-color;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    width: 100%;
+    height: $top-bar-height;
+    border-bottom: 1.5px solid #f0f0f0;
+}
+
 a.site-logo {
     position: absolute;
     top: .5em;
@@ -18,19 +31,6 @@ a.site-logo {
         background-color: $brand;
         border: 1px solid $brand;
     }
-}
-
-.top-bar {
-    z-index: 9999;
-    display: block;
-    position: fixed;
-    background-color: $top-bar-background-color;
-    top: 0px;
-    left: 0px;
-    right: 0px;
-    width: 100%;
-    height: $top-bar-height;
-    border-bottom: 1.5px solid #f0f0f0;
 }
 
 #site-header-toggle {

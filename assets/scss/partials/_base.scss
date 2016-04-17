@@ -46,6 +46,9 @@ body {
     @include MQ(L) {
         font-size: 100%;
     }
+    @include MQ(XL) {
+        font-size: 120%;
+    }
     font-family: $base-font-family;
     background: $body-background-color;
     color: $base-font-color;
