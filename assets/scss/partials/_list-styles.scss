@@ -55,8 +55,6 @@ nav.site-navigation {
                 cursor: pointer!important;
                 text-transform: lowercase;
                 font-family: $site-header-font-family;
-                z-index: 9999;
-
                 min-width:100%;
                 color: lighten($base-font-color, 15%);
                 text-transform: uppercase;
@@ -98,11 +96,11 @@ nav.site-navigation {
                 li.blog-category {
                     font-family: $heading-font-family;
                     padding: 0px;
-                    line-height: 2.5em;
-                    height: 2.5em;
+                    line-height: 2em;
+                    height: 2em;
                     vertical-align: middle;
                     a {
-                        font-size: .8em;
+                        font-size: .9em;
                         text-transform: lowercase;
                     }
                 }
@@ -120,6 +118,7 @@ nav.site-navigation {
             display: inline;
             font-size: .8em;
             a {
+                font-size:1.3em;
                 i.icon-rss {
                     font-size: .9em;
                     // margin-right: .2em;
@@ -139,8 +138,8 @@ a#categories-toggle {
         float:right;
         height: .5em;
         width: .5em;
-        margin-right: .5em;
-        margin-top: .5em;
+        margin-right: 1.75em;
+        margin-top: .66em;
         background-image: url(/assets/images/arrow-right.svg);
         background-repeat: no-repeat;
         background-size: contain;

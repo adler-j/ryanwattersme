@@ -35,7 +35,6 @@ main.main {
     overflow-x: hidden;
     @include header-transition;
     &.open {
-        opacity: 0.3;
         @include MQ(M) {
             transform: translateX(0%);
             opacity: 1;

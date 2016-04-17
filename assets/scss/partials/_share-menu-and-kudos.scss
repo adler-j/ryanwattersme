@@ -21,7 +21,6 @@ div.social-media-share-menu {
         right: 0px;
         width: 42px;
         transform-origin: bottom;
-        background-color: $body-background-color;
         box-shadow: 0px 0px 5px 0px rgba(154, 154, 154, 0.5);
         transform: scale(0);
         li {
@@ -37,7 +36,7 @@ div.social-media-share-menu {
             padding: 0px;
             background-color: $body-background-color;
             a.share {
-                background-color: $body-background-color;
+                background-color: transparent;
                 color: $base-font-color;
                 width: 40px;
                 min-height: 40px;
@@ -78,7 +77,6 @@ div.social-media-share-menu {
         position: absolute;
         right: 0px;
         bottom: 0px;
-        background-color: $body-background-color;
         border: none;
         outline: none;
         // border: 1px solid $brand;
@@ -133,13 +131,12 @@ div.social-media-share-menu {
         width: 50px;
         height: 260px;
         display: block;
-        background-color: $body-background-color;
-        // transform: translateX(-300%);
         transition: opacity .3s ease-in-out;
         opacity: 0;
         border: none;
         ul.share-menu {
             display: flex;
+            background-color: $social-media-bar-and-kudos-background-color;
             flex-direction: column;
             justify-content: center;
             margin-top: 0em;
@@ -154,7 +151,7 @@ div.social-media-share-menu {
                 width: 50px;
                 text-align: center;
                 border: none;
-                background-color: $body-background-color;
+                background-color: transparent;
                 a {
                     i {
                         font-size: 26px;
@@ -294,7 +291,7 @@ figure.kudo {
     user-select: none;
     z-index: 999;
     border-radius:25%;
-    background-color:rgba(255,255,255,0.5);
+    background-color:$social-media-bar-and-kudos-background-color;
 }
 
 
@@ -304,7 +301,7 @@ figure.kudo {
     background-image: url(/assets/images/heart_60x60.png);
     background-position: center;
     background-repeat: no-repeat;
-    background-color: #000000t;
+    background-color: #000000;
     background-size: 80%;
     -moz-background-size: 80%;
 }

@@ -2,7 +2,7 @@ img {
     transition: all .3s ease-in-out;
 }
 
-article p img {
+.content-wrapper p img {
     position: relative;
     display: block;
     width: 100%;
@@ -10,7 +10,6 @@ article p img {
     transition: filter .3s ease-in-out;
     filter: grayscale(100%);
     margin-bottom: 1em;
-    z-index: 9999;
     @include MQ(M) {
         &.right {
             float: right;
@@ -35,6 +34,15 @@ article p img {
         &:hover {
             box-shadow: 0px 0px 10px 1px lighten($base-font-color, 35%);
         }
+    }
+}
+
+.content-wrapper p img.full,
+.content-wrapper img.full {
+    @include MQ(M) {
+        width: 100vw;
+        height: auto;
+        left: calc((-100vw + #{$content-max-width}) / 2);
     }
 }
 
