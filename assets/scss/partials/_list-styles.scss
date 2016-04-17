@@ -102,6 +102,9 @@ nav.site-navigation {
                     a {
                         font-size: .9em;
                         text-transform: lowercase;
+                        @include MQ(M){
+                            font-size:.8em;
+                        }
                     }
                 }
             }

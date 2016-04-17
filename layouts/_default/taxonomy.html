@@ -5,7 +5,7 @@
 	<article class="list">
 	<header>
 		{{ $data := .Data }}
-		<h1 class="title"><a href="/{{$data.Plural}}"><small class="taxonomy">{{$data.Plural}}:</small></a> {{ .Title }}</h1>
+		<h1 class="title {{$data.Plural}}"><a href="/{{$data.Plural}}"><small class="taxonomy">{{$data.Singular}}:</small></a> {{ .Title }}</h1>
 	</header>
 	<ul class="contents-list">
 	   <!-- Sorts pages by .PublishDate, with the most recent publish first.  -->

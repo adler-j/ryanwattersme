@@ -19,6 +19,9 @@ h1.title {
         color: $white;
         text-transform: none;
     }
+    &.tags {
+        text-transform:lowercase;
+    }
 }
 
 .subtitle {

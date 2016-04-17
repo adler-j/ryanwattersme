@@ -7,7 +7,7 @@ publishdate: 2016-03-20
 updated: 2016-03-20
 image: keyboard.jpg
 categories: [tech and dev]
-tags: [publishing, content]
+tags: [search,lunr.js,hugo]
 ---
 
 Amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
