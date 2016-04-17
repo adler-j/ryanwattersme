@@ -221,7 +221,7 @@ div.kudos-block {
 
 //Kudos block
 div.kudos-block {
-    background-color: $body-background-color;
+    background-color: transparent;
 }
 
 p.count {
@@ -229,7 +229,7 @@ p.count {
 }
 
 div.opening {
-    background-color: transparent;
+    background-color:transparent;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -282,6 +282,8 @@ figure.kudo {
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5px;
+    padding-top:10px;
+    padding-bottom:10px;
     top: 3px;
     text-align: center;
     width: 75px;
@@ -291,6 +293,8 @@ figure.kudo {
     -ms-user-select: none;
     user-select: none;
     z-index: 999;
+    border-radius:25%;
+    background-color:rgba(255,255,255,0.5);
 }
 
 
@@ -438,20 +442,3 @@ a.kudobject:hover {
         -moz-transform: scale(0.85)
     }
 }
-
-// div.kudos-block.colophon {
-//     @include MQ(XL) {
-//         position: fixed;
-//         transition: opacity .3s ease-in-out;
-//         top: 6em;
-//         right: 3em;
-//         opacity: 0;
-//         &.kudos-hidden,
-//         &.kudos-top {
-//             opacity: 0;
-//         }
-//         &.kudos-unpinned {
-//             opacity: 1;
-//         }
-//     }
-// }

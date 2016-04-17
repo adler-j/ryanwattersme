@@ -25,6 +25,10 @@ p > code {
         position: relative;
     }
     button.copy-button {
+        display: none;
+        @include MQ(M) {
+            display: block;
+        }
         transition: all .3s ease-in-out;
         position: absolute;
         right: 4px;
