@@ -1,8 +1,8 @@
 $('.video-thumbnail').click(function() {
     var iframe = document.createElement('iframe');
+    //assign theService to the provider added, but set to lower case to control for youtube, YouTube, etc.
     var theService = $(this).parent().attr('data-streaming').toLowerCase();
-    var theVideoId = $(this).parent().attr('data-videoid').toLowerCase();
-    console.log(theVideoId);
+    var theVideoId = $(this).parent().attr('data-videoid');
     if (theService == "youtube") {
         iframe.setAttribute('src', '//www.youtube.com/embed/' + theVideoId + '?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=1&showinfo=0&rel=0');
     } else if (theService == "vimeo") {
@@ -35,7 +35,6 @@ if (allThumbs.length > 0) {
     for (var i = 0; i < allThumbs.length; i++) {
         if(allThumbs[i].dataset.isVimeo === "true"){
             var vidId = allThumbs[i].dataset.videoid;
-            console.log(vidId);
             getVimeoThumbnail(vidId,allThumbs[i]);
         }
     }
