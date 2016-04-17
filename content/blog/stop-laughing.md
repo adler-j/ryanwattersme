@@ -4,7 +4,7 @@ subtitle: This is only a test subtitle for layout purposes.
 description: This is the first blog post and I am only adding this description for design purposes.
 date: 2016-03-18
 publishdate: 2016-03-18
-image: microscope.jpg
+image: trump.jpg
 updated: 2016-03-18
 categories: [essays]
 tags: [politics]
@@ -14,11 +14,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.
 
 
-{{% code "javascript" "special-function" %}}
+{{% code "special-function" %}}
 ```javascript
 window.onload = init;
 function init(){
-  console.log
+  console.log("Hello to all the world!");
 }
 ```
 {{% /code %}}
@@ -50,9 +50,11 @@ function myFunction(){
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!
 
-{{< video "youtube" "vJS69eWiDdQ">}}
+{{< video "vimeo" "162799888" >}}
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
+
+{{< video "youtube" "JGNiafLl0iA" >}}
 
 ### Article Heading
 

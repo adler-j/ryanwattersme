@@ -1,24 +1,16 @@
 <!-- add header toggle to immediate pageload for mobile -->
 <script async>
-	var clickOrTouchStart;
-if ('ontouchstart' in document.documentElement) {
-    clickOrTouchStart = "touchstart";
-} else {
-    clickOrTouchStart = "click";
-}
 var headerToggle = document.getElementById('site-header-toggle');
 var headerCancel = document.getElementById('close-menu');
 var mainContent = document.querySelector('main');
-mainContent.addEventListener(clickOrTouchStart, toggleHeader, false);
-headerToggle.addEventListener(clickOrTouchStart, toggleHeader, false);
+mainContent.addEventListener('click', toggleHeader, false);
+headerToggle.addEventListener('click', toggleHeader, false);
 headerCancel.onclick = function(event) {
     event.preventDefault();
     document.querySelector('body > header').classList.remove('open');
     document.querySelector('main').classList.remove('open');
     document.querySelector('body > footer').classList.remove('open');
 }
-
-
 function toggleHeader(event) {
     var header = document.querySelector('body > header');
     var mainContent = document.querySelector('main');
@@ -50,5 +42,5 @@ _st('install','-prxNdv6dfZzH2brPSbq','2.0.0');
 {{ end }}
 <script async src="/assets/js/main.min.js"></script>
 {{ if .IsPage }}
-        <script async src="/assets/js/headroom.min.js"></script>
+<script async src="/assets/js/headroom.min.js"></script>
 {{ end }}
