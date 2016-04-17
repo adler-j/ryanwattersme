@@ -93,6 +93,13 @@ nav.site-navigation {
                     min-height: auto;
                     max-height: 10em;
                 }
+                li.categories {
+                    margin:0px;
+                    padding:0px;
+                    margin-bottom:0em;
+                    border-bottom:1px solid $base-font-color;
+                    line-height:1.3;
+                }
                 li.blog-category {
                     font-family: $heading-font-family;
                     padding: 0px;
@@ -104,6 +111,13 @@ nav.site-navigation {
                         text-transform: lowercase;
                         @include MQ(M){
                             font-size:.8em;
+                        }
+                    }
+                    &.see-all {
+                        line-height:1;
+                        a {
+                            text-transform:capitalize;
+                            margin-top:-.5em;
                         }
                     }
                 }
