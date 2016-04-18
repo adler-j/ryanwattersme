@@ -34,9 +34,10 @@ header.site-header {
 
 #close-menu {
     position: absolute;
-    top: .1em;
-    right: .5em;
-    font-size: 2em;
+    right: $top-bar-height * .42;
+    top: $top-bar-height * .125;
+    font-weight: normal;
+    font-size: $top-bar-height * .5;
     z-index:9999;
 }
 
