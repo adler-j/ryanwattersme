@@ -1,7 +1,7 @@
 ---
 title: Swiped Out
 subtitle: Modern dating is an exhausting exercise in decision fatigue.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit animi dolorum consequatur, facilis perspiciatis explicabo commodi!
+description: After 6 weeks of diving full bore into dating apps and online romance, I'm left exhausted, jaded, and penniless.
 date: 2016-03-19
 publishdate: 2016-03-19
 updated: 2016-03-19

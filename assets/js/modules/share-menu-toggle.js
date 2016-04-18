@@ -13,6 +13,6 @@ var catToggle = document.querySelector('#categories-toggle');
 catToggle.onclick = showCategories;
 
 function showCategories() {
-	document.querySelector('.blog-categories').classList.toggle('show-categories');
+	$('.blog-categories').slideToggle(200);
 	document.getElementById('categories-toggle').classList.toggle('categories-open');
 }
