@@ -21,7 +21,7 @@ publishdir = "public"
 pygmentsUseClasses = true
 relativeURLs = true
 source = ""
-title = "Ryan Watters"
+title = "ryanwatters.io"
 uglyURLs = false
 verbose = true
 verboseLog = true
@@ -37,10 +37,11 @@ watch = true
   Facebook = ""
   YouTube = ""
   GooglePlus = ""
+  DefaultSocialImage = "ryanwattersio-social.jpg"
   LinkedIn = "https://www.linkedin.com/in/ryan-watters-els-08010725"
   GoogleAnalyticsTrackingId = "UA-76549364-1"
   CopyrightLine = "Ryan D Watters, ELS"
-  SiteDescription = "Ryan Watters official website."
+  SiteDescription = "The official website of Ryan Watters - editor, writer, essayist, content strategist, web publisher, and entirely mediocre front-end developer."
   # If true, site style will be embedded in a <style> tag in each html <head> by pulling in "style-embed-for-crp-only.html" partial created by default as part of the Gulp Build. If set to false, the css is not embedded in each page but instead includes an external call to <link rel="stylesheet" href="{{.Site.BaseURL}}/css/style.min.css">
   UseCRP = true
   # Include locally hosted jQuery 2.2.2
