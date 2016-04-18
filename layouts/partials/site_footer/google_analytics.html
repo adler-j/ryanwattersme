@@ -1,4 +1,4 @@
-<script>
+<script async>
 (function() {
   if (window.location.hostname === "localhost") {
   	console.log("Local dev No Google Analytics!");
@@ -16,7 +16,7 @@
       m.parentNode.insertBefore(a, m)
     })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
 
-    ga('create', '{{.Site.params.GoogleAnalyticsTrackingId | safeJS }}', 'auto');
+    ga('create', '{{.Site.Params.GoogleAnalyticsTrackingId | safeJS }}', 'auto');
     ga('send', 'pageview');
   }
 })();
