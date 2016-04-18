@@ -34,7 +34,7 @@ main.main {
     overflow-x: hidden;
     @include header-transition;
     &.open {
-        opacity:0.5;
+        opacity: 0.5;
         @include MQ(M) {
             transform: translateX(0%);
         }
@@ -60,7 +60,8 @@ article {
         min-height: 60vh;
         margin-top: 3.5em;
     }
-    &.list,&.singleton {
+    &.list,
+    &.singleton {
         margin-top: 3.5em;
     }
     &.content.blog {
@@ -83,8 +84,6 @@ article {
         overflow-x: visible;
     }
 }
-
-
 
 article a,
 article.content a,
@@ -233,4 +232,35 @@ article time.publishdate {
     right: 0;
     text-transform: uppercase;
     font-family: $heading-font-family;
+}
+
+@charset "UTF-8";
+.animated {
+    -webkit-animation-duration: 1.8s;
+    animation-duration: 1.8s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@-webkit-keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0
+    }
+    to {
+        opacity: 1
+    }
+}
+
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+    animation-name: fadeIn
 }

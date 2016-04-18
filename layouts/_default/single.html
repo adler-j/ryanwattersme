@@ -6,7 +6,7 @@
         {{ end }}
     {{ end }}
     <header class="{{.Section}}" style="background-image:url(/assets/images/{{.Params.image}});" id="{{replace .Title "." "" | urlize}}">
-        <div class="header-content {{.Section}}">
+        <div class="header-content {{.Section}}{{if eq .Section "blog"}} animated fadeIn{{end}}">
                 <h1 class="title {{.Section}}" >{{ .Title }}</h1>
                 {{with .Params.subtitle}}
                     <span class="subtitle">{{.}}</span>
