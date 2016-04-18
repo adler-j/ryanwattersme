@@ -3,6 +3,8 @@
 <meta itemprop="headline" content="{{.Title}}" />
 <meta itemprop="description" content="{{.Description}}" />
 	{{ if .Params.image }}
-	<meta itemprop="image" content="http://ryanwatters.io/assets/images/{{.Params.image}}" />
+	<meta itemprop="image" content="{{.Site.BaseURL}}/assets/images/{{.Params.image}}" />
+	{{ else }}
+	<meta itemprop="image" content="{{.Site.BaseURL}}/assets/images/{{.Site.Params.DefaultSocialImage}}" />
 	{{ end }}
 {{ end }}

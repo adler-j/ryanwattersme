@@ -2,5 +2,5 @@
 <meta property="twitter:card" content="summary_large_image">
 <meta property="twitter:site" content="@{{.Site.Params.Twitter}}">
 <meta property="twitter:title" content="{{if .Title }}{{.Title}}{{else}}{{.Site.Title}}{{end}}">
-<meta property="twitter:image" content="{{ if .Params.image }}{{.Site.BaseURL}}assets/images/{{.Params.image}}{{ else }}{{.Site.BaseURL}}assets/images/{{.Site.Params.DefaultSocialImage}}{{ end }}">
+<meta property="twitter:image" content="{{ if .Params.image }}{{.Site.BaseURL}}/assets/images/{{.Params.image}}{{ else }}{{.Site.BaseURL}}/assets/images/{{.Site.Params.DefaultSocialImage}}{{ end }}">
 <meta property="twitter:description" content="{{if .Description }}{{.Description}}{{else}}{{.Site.Params.SiteDescription}}{{end}}">
