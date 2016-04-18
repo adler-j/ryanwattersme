@@ -70,9 +70,10 @@ span.dropcap {
     padding-bottom: -.2em;
     margin-bottom: -.2em;
     margin-top: .15em!important;
-    color: $accent-color;
+    color: $dropcap-color;
+    font-weight: $dropcap-font-weight;
     font-family: $dropcap-font-family;
-    text-shadow: 1px 1px 1px $base-font-color;
+    text-shadow: $dropcap-box-shadow;
 }
 
 blockquote {

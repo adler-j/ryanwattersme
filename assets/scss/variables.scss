@@ -48,7 +48,10 @@ $site-header-toggle-menu-color:$white;
 $site-logo-color:$white;
 $accent-color:$red;
 $dropcap-font-family:$heading-font-family;
-$dropcap-color:$accent-color;
+$dropcap-font-weight: 700;
+$dropcap-color:$base-font-color;
+// $dropcap-box-shadow:1px 1px 1px $base-font-color;
+$dropcap-box-shadow:none;
 
 //Top Bar
 $top-bar-height: 2.5em;
