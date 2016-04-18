@@ -5,7 +5,7 @@ description: After 6 weeks of diving full bore into dating apps and online roman
 date: 2016-03-19
 publishdate: 2016-03-19
 updated: 2016-03-19
-image: tinder-smudge.png
+image: tinder-smudge.jpg
 categories: [essays]
 tags: [dating, technology]
 ---
