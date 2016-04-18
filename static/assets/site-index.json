@@ -1,48 +1,48 @@
 [
 {
-    "href": "/about/",
+    "href": "https://ryanwatters.io/about/",
     "title": "About",
     "tags": ["about", "info"],
     "categories": [],
     "content": "[Me My name is Ryan. I am a content strategist, editor, writer, and web publisher in Chicago, IL. Friends have told me to write a blog for the last decade. I&amp;rsquo;m just catching up. The Site Content All content for the site is written in clean, semantic markdown in observation of the latest commonmark spec. As a publisher, my intent is to create CMS-independent content that can be easily ported to any static site generator with support for markdown files with embedded yaml. Where markdown falls short, extensions to the syntax are rendered on the client through a handful of JavaScript modules and Hugo Shortcodes. Development All code used for this site is open source and hosted on GitHub. There were many moving parts in the development of this site. Suffice it to say that I built this site with performance and simplicity in mind.]"
 },
 {
-    "href": "/contact/",
+    "href": "https://ryanwatters.io/contact/",
     "title": "Contact",
     "tags": ["contact"],
     "categories": [],
     "content": "[If you have questions about the site, would like to share tips or feedback, or would like to discuss contract opportunities, please do not hesitate to contact me.]"
 },
 {
-    "href": "/blog/hugo-with-lunrjs/",
+    "href": "https://ryanwatters.io/blog/hugo-with-lunrjs/",
     "title": "Hugo with lunr.js",
     "tags": ["search", "lunr.js", "hugo"],
     "categories": ["tech and dev"],
     "content": "[Amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur. Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let&amp;rsquo;s make a link to Google. Here is a blockquote without any attribution. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis! Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Here is a long and engaging quote from a very famous person that everyone knows and admires. - Jon Doe Article Heading Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur. function myFunction(){ console.log(&amp;quot;Hello World!&amp;quot;); } Article Subheading That is Longer than the Heading Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid. Heading Again Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo enim magni facere officia nesciunt, sunt obcaecati recusandae, doloribus libero. Nobis amet ea consectetur possimus sed necessitatibus optio laudantium dolor quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut tempore at unde. Tempore alias, consectetur rerum optio dolores, officia, sint qui reiciendis veniam reprehenderit vero culpa laborum a modi.]"
 },
 {
-    "href": "/blog/swiped-out/",
+    "href": "https://ryanwatters.io/blog/swiped-out/",
     "title": "Swiped Out",
     "tags": ["dating", "technology"],
     "categories": ["essays"],
     "content": "[Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio labore fugit, modi aspernatur reiciendis inventore porro natus voluptate dolorem accusantium iure quos delectus eum eius, nostrum corporis veniam suscipit officiis. function myFunction(){ console.log(&amp;quot;Here is a string to write to the console&amp;quot;); } One Flew Over the Cuckoo&amp;rsquo;s Nest. Man, when you lose your laugh you lose your footing. All I know is this: nobody&amp;rsquo;s very big in the first place, and it looks to me like everybody spends their whole life tearing everybody else down. But it&amp;rsquo;s the truth even if it didn&amp;rsquo;t happen. He knows that you have to laugh at the things that hurt you just to keep yourself in balance, just to keep the world from running you plumb crazy. If you don&amp;rsquo;t watch it people will force you one way or the other, into doing what they think you should do, or into just being mule-stubborn and doing the opposite out of spite. What do you think you are, for Chrissake, crazy or somethin&amp;rsquo;? Well you&amp;rsquo;re not! You&amp;rsquo;re not! You&amp;rsquo;re no crazier than the average asshole out walkin&amp;rsquo; around on the streets and that&amp;rsquo;s it. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.]"
 },
 {
-    "href": "/colophon/",
+    "href": "https://ryanwatters.io/colophon/",
     "title": "Colophon",
     "tags": ["colophon", "style"],
     "categories": ["publishing"],
     "content": "[]"
 },
 {
-    "href": "/blog/stop-laughing/",
+    "href": "https://ryanwatters.io/blog/stop-laughing/",
     "title": "Stop Laughing",
     "tags": ["politics"],
     "categories": ["essays"],
     "content": "[Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore. window.onload = init; function init(){ console.log(&amp;quot;Hello to all the world!&amp;quot;); } .conversation-thread.jasmine ul:nth-of-type(1) li:nth-child(odd):before{background-image: url(/assets/images/headshots/jasmine.jpg); } AT&amp;T &amp;nbsp;LTE 3:13 AM Jasmine 22 March 2016 yada, yada, yada yada. yada yada? Yada yada yada yada yada yada. yada yada yada yada yada. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reprehenderit enim eius. 5 hours ago Testing second &amp;lt;ul&amp;gt; styling Testing second &amp;lt;ul&amp;gt; styling 1 hour ago This is just a test entry. This is not a real conversation. Your message Aa Send Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let&amp;rsquo;s make a link to Google. function myFunction(){ console.log(&amp;quot;hello world!&amp;quot;); } Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis! Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Article Heading Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur. Subheading That Is Longer Than the Heading Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo enim magni facere officia nesciunt, sunt1 obcaecati recusandae, doloribus libero. Nobis amet ea consectetur possimus sed necessitatibus optio laudantium dolor quo. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi aut tempore at unde. Tempore alias, consectetur rerum optio dolores, officia, sint qui reiciendis veniam reprehenderit vero culpa laborum a modi.2 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Here is something different. ↩ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quidem quibusdam id veniam cupiditate fuga maxime exercitationem totam. Labore distinctio vero nostrum quisquam, eos hic accusantium. Porro doloribus, repellat earum. ↩]"
 },
 {
-    "href": "/404/",
+    "href": "https://ryanwatters.io/404/",
     "title": "404",
     "tags": [],
     "categories": [],
