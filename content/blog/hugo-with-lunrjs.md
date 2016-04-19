@@ -32,14 +32,6 @@ Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mou
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
 
-```javascript
-
-function myFunction(){
-  console.log("Hello World!");
-}
-
-```
-
 #### Article Subheading That is Longer than the Heading
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
