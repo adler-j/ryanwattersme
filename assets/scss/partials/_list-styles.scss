@@ -263,6 +263,7 @@ ul.tags {
     width: auto;
     justify-content: center;
     position: relative;
+    clear:both;
     span {
         font-family: $tags-font-family;
     }
