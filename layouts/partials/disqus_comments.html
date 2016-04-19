@@ -1,5 +1,4 @@
-{{ if .Site.Params.UseDisqus}}
-	{{ if .Params.include_comments}}
+{{ if and .Site.Params.UseDisqus .Params.include_comments}}
 	<div id="disqus_thread"></div>
 	<script async>
 	var disqus_config = function () {
@@ -16,5 +15,4 @@
 	})();
 	</script>
 	<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" rel="nofollow">comments powered by Disqus.</a></noscript>
-	{{ end }}
 {{ end }}
