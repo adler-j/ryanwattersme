@@ -14,7 +14,17 @@ include_comments: true
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!
 
+## Heading
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio labore fugit, modi aspernatur reiciendis inventore porro natus voluptate dolorem accusantium iure quos delectus eum eius, nostrum corporis veniam suscipit officiis.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt maiores perspiciatis voluptate exercitationem iste. Molestiae sed non, accusamus in ea maxime, reiciendis ut, iure nisi esse repudiandae, odio facilis natus.
+
+### Subheading
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fuga aut nisi ipsum ex maxime voluptatem provident doloribus asperiores unde corporis minus iste reprehenderit ducimus soluta suscipit, vel aperiam obcaecati magnam.
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis ullam iste quas aperiam amet nulla, quod dolor inventore iure numquam illum similique, placeat repellat dignissimos nostrum error perspiciatis consequuntur, vero?
 
 {{% bumble "Jasmine" "3:13 AM" "22 March 2016" %}}
 * yada, yada, yada yada. yada yada?

@@ -126,9 +126,11 @@ a.section-title {
         background-color: $top-bar-background-color;
         color: $body-background-color;
     }
-    h2 {
-        margin-bottom: 0px;
+    span {
+        font-size:1.3em;
+        // margin-bottom: 0px;
         padding-right:.5em;
         padding-left:.5em;
+        color: $top-bar-links-font-color;
     }
 }
