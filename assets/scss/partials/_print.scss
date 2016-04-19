@@ -52,8 +52,8 @@
     div.videoWrapper,
     div.video-thumbnail {
         -webkit-print-color-adjust: exact;
-        -webkit-column-break-inside: avoid;
-        page-break-inside: avoid;
-        break-inside: avoid;
+        -webkit-column-break-inside: avoid!important;
+        page-break-inside: avoid!important;
+        break-inside: avoid!important;
     }
 }
