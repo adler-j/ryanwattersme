@@ -50,7 +50,7 @@
         filter: grayscale(0%)!important;
     }
     div.videoWrapper,
-    div.video-thumbnail {
+    div.video-thumbnail,.content-wrapper p {
         -webkit-print-color-adjust: exact;
         -webkit-column-break-inside: avoid!important;
         page-break-inside: avoid!important;
