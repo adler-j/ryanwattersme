@@ -13,6 +13,7 @@ $include-third-font:true;
 $font: 'chaparralpro';
 $second-font: 'futurapt';
 $third-font: 'courierprime'; //code blocks
+$awsFonts: "//ryanwattersfonts.s3-website-us-east-1.amazonaws.com/";
 
 $base-font-family: $font, 'helvetica Neue', Helvetica, sans-serif;
 $heading-font-family: $second-font,"futura-pt",Georgia,serif;

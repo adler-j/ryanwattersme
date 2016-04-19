@@ -6,6 +6,7 @@ date: 2016-03-19
 publishdate: 2016-03-19
 updated: 2016-03-19
 image: tinder-smudge.jpg
+draft: true
 categories: [essays]
 tags: [dating, technology]
 ---
