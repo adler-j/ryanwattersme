@@ -7,12 +7,12 @@
     padding-top: 25px;
     height: 0;
     clear: both;
-    cursor:pointer;
+    cursor: pointer;
     &:hover,
     &:active,
     &:focus {
         filter: grayscale(0%);
-        cursor:pointer;
+        cursor: pointer;
     }
 }
 
@@ -25,7 +25,7 @@
 }
 
 .video-thumbnail {
-    transition:all .3s ease-in-out;
+    transition: all .3s ease-in-out;
     width: 100%;
     min-height: 100%;
     clear: both;
@@ -37,7 +37,7 @@
     background-size: cover;
     filter: grayscale(100%);
     cursor: pointer;
-    margin-top:-1em;
+    margin-top: -1em;
     &:before {
         content: '\e80c';
         font-family: "fontello";
@@ -46,9 +46,9 @@
         left: 42%;
         bottom: 33%;
         color: #bb0000;
-        border-radius:30px;
+        border-radius: 30px;
         @include MQ(M) {
-            font-size:3.2em;
+            font-size: 3.2em;
             bottom: 30%;
         }
     }
@@ -69,4 +69,9 @@
     + p {
         margin-top: 1em;
     }
+}
+
+.videoWrapper + h3 {
+    margin-bottom: 0px;
+    margin-top: .5em;
 }

@@ -14,30 +14,13 @@ include_comments: true
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.
 
-{{% bumble "Jasmine" "3:13 AM" "22 March 2016" %}}
-* yada, yada, yada yada. yada yada?
-* Yada yada yada yada yada yada.
-* yada yada yada yada yada. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptate reprehenderit enim eius.
-
-5 hours ago
-
-* Testing second `<ul>` styling
-* Testing second `<ul>` styling
-
-1 hour ago
-
-* This is just a test entry.
-* This is not a real conversation.
-
-{{% /bumble %}}
-
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let's make a [link to Google](https://www.google.com).
 
 {{% code title="aTest" filepath="layouts/shortcodes/testing.html" %}}
 
 ```javascript
 function myFunction(){
-  console.log("hello world!");
+  console.log("This is a JavaScript snippet you can copy to your clipboard.");
 }
 ```
 {{% /code %}}
