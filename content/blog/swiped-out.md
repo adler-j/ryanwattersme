@@ -9,6 +9,7 @@ image: tinder-smudge.jpg
 draft: true
 categories: [essays]
 tags: [dating, technology]
+include_comments: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!

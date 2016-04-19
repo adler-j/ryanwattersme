@@ -31,5 +31,8 @@
         {{ end }}
     </ul>
     {{partial "parse.html" . }}
+    <div class="content-wrapper disqus">
+    {{partial "disqus_comments.html" . }}
+    </div>
 </main>
 {{ partial "site_footer.html" . }}

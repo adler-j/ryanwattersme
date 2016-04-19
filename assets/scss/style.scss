@@ -266,3 +266,9 @@ article time.publishdate {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn
 }
+#disqus_thread {
+    filter:grayscale(100%)!important;
+}
+.content-wrapper.disqus {
+    filter:grayscale(100%)!important;
+}

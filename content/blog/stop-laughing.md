@@ -8,6 +8,7 @@ image: trump.jpg
 updated: 2016-03-18
 categories: [essays]
 tags: [politics]
+include_comments: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
