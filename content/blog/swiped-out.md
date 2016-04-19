@@ -20,4 +20,6 @@ One Flew Over the Cuckoo's Nest. Man, when you lose your laugh you lose your foo
 
 ![Enormous stack of used, hardcover books. $=full](/assets/images/books.jpg)
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.[^1]
+
+[^1]: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit autem architecto dignissimos, ratione labore doloribus explicabo voluptate beatae nam eligendi.

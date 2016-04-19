@@ -33,6 +33,7 @@ main.main {
     min-height: 100%;
     overflow-x: hidden;
     @include header-transition;
+    margin-bottom:2em;
     &.open {
         opacity: 0.5;
         @include MQ(M) {
@@ -50,6 +51,7 @@ article {
     margin: auto;
     overflow-y: scroll;
     overflow-x: hidden;
+    height:auto;
     &::-webkit-scrollbar {
         display: none!important;
     }
@@ -75,8 +77,6 @@ article {
     width: 95%;
     max-width: 95%;
     overflow-x: hidden;
-    position: relative;
-    padding-bottom: 4em;
     position: relative;
     @include MQ(M) {
         width: $content-max-width;

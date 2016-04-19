@@ -55,7 +55,7 @@ nav.site-navigation {
                 cursor: pointer!important;
                 text-transform: lowercase;
                 font-family: $site-header-font-family;
-                min-width:100%;
+                min-width: 100%;
                 color: lighten($base-font-color, 15%);
                 text-transform: uppercase;
                 i.icon-search {
@@ -79,8 +79,8 @@ nav.site-navigation {
                 }
             }
             ul.blog-categories {
-                display:none;
-                clear:both;
+                display: none;
+                clear: both;
                 list-style: none;
                 padding-left: .25em;
                 margin-left: 0px;
@@ -99,51 +99,51 @@ nav.site-navigation {
                     a {
                         font-size: .9em;
                         text-transform: lowercase;
-                        @include MQ(M){
-                            font-size:.8em;
+                        @include MQ(M) {
+                            font-size: .8em;
                         }
                     }
                     &.see-all {
-
                         a {
-                            font-weight:bold;
-                            color:$brand;
-                            margin-top:-.5em;
+                            font-weight: bold;
+                            color: $brand;
+                            margin-top: -.5em;
                         }
                     }
-                }
-            }
-        }
-    }
-    ul.social {
-        display: block;
-        margin-top: 1em;
-        margin-left: 0px;
-        padding-left: 1.25em;
-        width: 100%;
-        float: left;
-        li {
-            display: inline;
-            font-size: .8em;
-            a {
-                font-size:1.3em;
-                i.icon-rss {
-                    font-size: .9em;
-                    // margin-right: .2em;
                 }
             }
         }
     }
 }
 
+ul.social {
+    display: block;
+    margin-top: 1em;
+    margin-left: 0px;
+    padding-left: 1.25em;
+    width: 100%;
+    float: left;
+    li {
+        display: inline;
+        font-size: .8em;
+        a {
+            font-size: 1.3em;
+            i.icon-rss {
+                font-size: .9em;
+                // margin-right: .2em;
+            }
+        }
+    }
+}
+
 a#categories-toggle {
-    width:100%;
-    transition:all .3s ease;
+    width: 100%;
+    transition: all .3s ease;
     &:after {
         @include header-transition;
         content: '';
         display: inline;
-        float:right;
+        float: right;
         height: .5em;
         width: .5em;
         margin-right: 1.75em;
@@ -153,7 +153,7 @@ a#categories-toggle {
         background-size: contain;
     }
     &.categories-open:after {
-        transform:translateY(25%) rotate(90deg);
+        transform: translateY(25%) rotate(90deg);
     }
 }
 
@@ -262,7 +262,7 @@ ul.tags {
     padding-left: 0px;
     width: auto;
     justify-content: center;
-    margin-bottom: 1.5em; //margin for sticky social share footer
+    position: relative;
     span {
         font-family: $tags-font-family;
     }
