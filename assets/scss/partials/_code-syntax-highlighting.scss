@@ -15,14 +15,31 @@ p > code {
     padding: .5em;
     margin-bottom: 1em;
     @include MQ(M) {
-        width: 120vw;
-        margin-left: calc((-120vw + #{$content-max-width}) / 2);
+        width: 100vw;
+        padding-left: 0px;
+        margin-left: calc((-100vw + #{$content-max-width}) / 2);
     }
     pre {
-        max-width: $content-max-width;
-        margin-left: auto;
-        margin-right: auto;
+        width: $content-max-width;
+        padding-left: 0px;
+        margin-left: 0px;
         position: relative;
+        @include MQ(M) {
+            margin-left: calc((100vw - 33em) / 2);
+        }
+    }
+    div.filepath {
+        width:100%;
+        padding-right:1em;
+        font-family: $heading-font-family;
+        font-size: 60%;
+        margin-bottom: .5em;
+        color: lighten($base-font-color, 20%);
+        text-align: right;
+        @include MQ(M) {
+            width:$content-max-width;
+            margin-left: calc((100vw - 8em) / 2);
+        }
     }
     button.copy-button {
         display: none;
@@ -63,8 +80,7 @@ article {
         margin-bottom: 1em;
         code {
             padding-left: 0px;
-            margin-left: auto;
-            margin-right: auto;
+            margin-left: 0px;
             max-width: $content-max-width;
         }
     }

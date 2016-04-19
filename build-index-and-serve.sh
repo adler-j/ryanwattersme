@@ -15,6 +15,6 @@ find ${curdir}/content \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.gif' \) 
 # End Image copy
 # Open Google Chrome
 open -a Google\ Chrome.app http://localhost:1313
-hugo server
+hugo server --buildDrafts=true
 
 

@@ -13,16 +13,6 @@ tags: [politics]
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.
 
-
-{{% code "special-function" %}}
-```javascript
-window.onload = init;
-function init(){
-  console.log("Hello to all the world!");
-}
-```
-{{% /code %}}
-
 {{% bumble "Jasmine" "3:13 AM" "22 March 2016" %}}
 * yada, yada, yada yada. yada yada?
 * Yada yada yada yada yada yada.
@@ -42,7 +32,8 @@ function init(){
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let's make a [link to Google](https://www.google.com).
 
-{{% code "myFunction"%}}
+{{% code title="aTest" filepath="layouts/shortcodes/testing.html" %}}
+
 ```javascript
 function myFunction(){
   console.log("hello world!");
