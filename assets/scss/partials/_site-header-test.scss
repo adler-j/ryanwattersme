@@ -1,0 +1,62 @@
+header.site-header {
+    transition-property: all;
+    transition-duration: .3s;
+    transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
+    width: $site-menu-width;
+    position: fixed;
+    display: block;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    margin: 0px;
+    padding: 0px;
+    border: none;
+    min-height: 100%;
+    min-height: 100vh;
+    background-color: $site-header-background-color;
+    border-left: 1px solid #f0f0f0;
+    z-index: 3;
+    overflow-y: scroll;
+    -ms-overflow-style: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
+    @include transform(translateX(101%));
+    a {
+        color: $base-font-color;
+    }
+    &.open {
+        @include transform(translateX(0%));
+        z-index: 99999;
+        right: -16px;
+    }
+}
+
+body > header > a.site-logo.overlay {
+    color: $white;
+    background-color: $brand;
+    z-index:9999;
+}
+
+#close-menu {
+    position: absolute;
+    right: $top-bar-height * .15;
+    top: 0em;
+    font-weight: normal;
+    font-size: $top-bar-height * .8;
+    z-index: 9999;
+}
+
+//headroom.js transitions
+.headroom {
+    will-change: transform;
+    transition: transform 200ms linear;
+}
+
+.headroom--pinned {
+    transform: translateY(0%);
+}
+
+.headroom--unpinned {
+    transform: translateY(-100%);
+}

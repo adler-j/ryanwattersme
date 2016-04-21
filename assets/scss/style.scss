@@ -7,11 +7,11 @@
 @import 'partials/base';
 @import 'partials/images';
 @import 'partials/video';
-@import 'partials/site-header';
+@import 'partials/site-header-test';
 @import 'partials/top-bar';
 @import 'partials/code-syntax-highlighting';
 @import 'partials/fontello';
-@import 'partials/list-styles';
+@import 'partials/list-styles-test';
 @import 'partials/typography';
 @import 'partials/social-media';
 @import 'partials/share-menu-and-kudos';
@@ -23,6 +23,7 @@
 @import 'partials/post-specific-styles';
 @import 'partials/shortcodes';
 @import 'partials/site-footer';
+@import 'partials/table-of-contents';
 @import 'partials/print';
 main[role="main"],
 main.main {

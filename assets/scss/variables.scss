@@ -27,12 +27,14 @@ $tags-font-family:$heading-font-family;
 $base-line-height: 1.58;
 $base-font-size: 24px;
 $base-font-weight:400;
-$site-menu-width: 9em;
+$site-menu-width: calc(100% + 16px);
 
 $content-max-width:30em;
 
 //Color Palette
 
+// $base-font-color:rgba(34,43,46,0.9);
+// $h1-page-heading-font-color: rgba(34,43,46,0.9);
 $base-font-color:#4d4d4d;
 $h1-page-heading-font-color: #000000;
 $white:#ffffff;
@@ -56,10 +58,12 @@ $dropcap-box-shadow:none;
 
 //Top Bar
 $top-bar-height: 2.5em;
-$top-bar-background-color:black;
+// $top-bar-background-color:black;
+$top-bar-background-color:#000000;
 $top-bar-links-font-color:$white;
 $top-bar-bottom-border:0px solid #f0f0f0;
-$top-bar-opacity:0.9;
+// border-bottom: 1.5px solid #f0f0f0;
+$top-bar-opacity:1;
 
 //Blockquotes
 

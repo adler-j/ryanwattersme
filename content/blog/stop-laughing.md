@@ -7,7 +7,7 @@ publishdate: 2016-03-18
 image: trump.jpg
 updated: 2016-03-18
 categories: [essays]
-tags: [politics]
+tags: [politics, two words]
 include_comments: true
 ---
 

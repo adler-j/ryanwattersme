@@ -4,7 +4,7 @@ $('.video-thumbnail').click(function() {
     var theService = $(this).parent().attr('data-streaming').toLowerCase();
     var theVideoId = $(this).parent().attr('data-videoid');
     if (theService == "youtube") {
-        iframe.setAttribute('src', '//www.youtube.com/embed/' + theVideoId + '?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=1&showinfo=0&rel=0');
+        iframe.setAttribute('src', '//www.youtube.com/embed/' + theVideoId + '?autoplay=1&autohide=2&border=0&wmode=opaque&enablejsapi=1&controls=1&showinfo=0&rel=0&hd=1');
     } else if (theService == "vimeo") {
         iframe.setAttribute('src', '//player.vimeo.com/video/' + theVideoId + '?autoplay=1&title=0&byline=0&portrait=0');
     } else {

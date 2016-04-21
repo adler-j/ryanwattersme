@@ -9,25 +9,23 @@
     width: 100%;
     height: $top-bar-height;
     border-bottom: $top-bar-bottom-border;
-    opacity:$top-bar-opacity;
-    // border-bottom: 1.5px solid #f0f0f0;
+    opacity: $top-bar-opacity;
 }
 
 a.site-logo {
     position: absolute;
     top: $top-bar-height * .125;
     left: $top-bar-height * .125;
-    height:$top-bar-height * .75;
-    width:$top-bar-height * .75;
-    line-height:$top-bar-height * .75;
+    height: $top-bar-height * .75;
+    width: $top-bar-height * .75;
+    line-height: $top-bar-height * .75;
     border-radius: 50%;
     cursor: pointer;
     color: $site-logo-color;
     i.icon-rw-site-logo {
-        font-size:.9em;
-        position:absolute;
-        margin-top:.1em;
-        // text-indent:-.1em;
+        font-size: .9em;
+        position: absolute;
+        margin-top: .1em;
         margin-bottom: -.3em;
     }
     &:hover {
@@ -43,11 +41,11 @@ a.site-logo {
     font-weight: normal;
     font-size: $top-bar-height * .5;
     color: $site-header-toggle-menu-color;
-    background-color: $top-bar-background-color;
-    font-family:$base-font-family;
+    background-color: transparent;
+    font-family: $base-font-family;
     z-index: 9999;
     cursor: pointer;
-    line-height:1;
+    line-height: 1;
     @include MQ(M) {
         z-index: 9999;
     }
@@ -78,11 +76,12 @@ a.site-logo {
         max-width: 40%;
         font-size: .6em;
         margin-top: .5em;
-        text-transform:uppercase;
-        i.icon-previous,i.icon-next {
-            font-size:1em;
-            margin-top:.4em;
-            margin-bottom:.4em;
+        text-transform: uppercase;
+        i.icon-previous,
+        i.icon-next {
+            font-size: 1em;
+            margin-top: .4em;
+            margin-bottom: .4em;
         }
         &:hover {
             box-shadow: none;
@@ -105,21 +104,21 @@ a.section-title {
     width: 20%;
     position: absolute;
     display: flex;
-    justify-content:center;
-    align-items:center;
-    margin-top:$top-bar-height * .333;
+    justify-content: center;
+    align-items: center;
+    margin-top: $top-bar-height * .333;
     left: 40%;
     top: 0em;
     text-align: center;
     font-family: $site-header-font-family;
     height: $top-bar-height * .75;
     line-height: $top-bar-height * .75;
-    vertical-align:middle;
-    font-size:$top-bar-height * .25;
+    vertical-align: middle;
+    font-size: $top-bar-height * .25;
     border: 1px solid $top-bar-links-font-color;
     color: $top-bar-links-font-color;
-    box-shadow:none;
-    text-transform:uppercase;
+    box-shadow: none;
+    text-transform: uppercase;
     &:hover {
         box-shadow: none;
         color: $top-bar-links-font-color;
@@ -127,10 +126,10 @@ a.section-title {
         color: $body-background-color;
     }
     span {
-        font-size:1.3em;
+        font-size: 1.3em;
         // margin-bottom: 0px;
-        padding-right:.5em;
-        padding-left:.5em;
+        padding-right: .5em;
+        padding-left: .5em;
         color: $top-bar-links-font-color;
     }
 }
