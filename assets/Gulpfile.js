@@ -10,10 +10,6 @@ var plumber = require('gulp-plumber');
 var autoprefixer = require('gulp-autoprefixer');
 var gutil = require('gulp-util');
 
-//Markdown to json task
-// var markdown = require('gulp-markdown-to-json');
-
-
 // Compile Sass; note sass options to prevent server from breaking when you fudge a css rule
 gulp.task('sass', function() {
   return gulp.src('scss/style.scss')
@@ -44,19 +40,23 @@ gulp.task('scripts', function() {
     .pipe(gulp.dest('../static/assets/js'));
 });
 
-//Markdown to json task
-// gulp.task('markdown', function() {
-//   gulp.src('../content/**/*.md')
-//     .pipe(gutil.buffer())
-//     .pipe(markdown('search-index.json'))
-//     .pipe(gulp.dest('../static/'))
-// });
+gulp.task('scripts2', function() {
+  return gulp.src('js/kudos/*.js')
+    .pipe(concat('kudos-all.js'))
+    .pipe(babel({
+      presets: ['es2015']
+    }))
+    .pipe(uglify())
+    .pipe(rename('kudosall.min.js'))
+    .pipe(gulp.dest('../static/assets/js'));
+});
 
 //the default "compile" task for sass and js
-gulp.task('compile', ['sass', 'scripts'], function() {
+gulp.task('compile', ['sass', 'scripts','scripts2'], function() {
   gulp.watch(['scss/*.scss', 'scss/modules/*scss'], ['sass']);
   gulp.watch("scss/partials/*.scss", ['sass']);
   gulp.watch("js/modules/*.js", ['scripts']);
+  gulp.watch("js/kudos/*.js", ['scripts2']);
   // gulp.watch("../content/**/*.md", ['markdown']);
 });
 

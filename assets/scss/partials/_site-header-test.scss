@@ -1,7 +1,8 @@
 header.site-header {
-    transition-property: all;
-    transition-duration: .3s;
-    transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
+    transition: all 0.7s;
+    -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+    -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+    transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
     width: $site-menu-width;
     position: fixed;
     display: block;
@@ -21,7 +22,7 @@ header.site-header {
     &::-webkit-scrollbar {
         display: none;
     }
-    @include transform(translateX(101%));
+    transform:translateX(101%);
     a {
         color: $base-font-color;
     }
@@ -32,10 +33,23 @@ header.site-header {
     }
 }
 
-body > header > a.site-logo.overlay {
-    color: $white;
-    background-color: $brand;
-    z-index:9999;
+header.site-header {
+    a.site-logo.overlay {
+        transition: background-color 2.5s ease;
+        color: $white;
+        background-color: transparent;
+        z-index: 9999;
+        span.site-logo-title {
+            margin-left: 2.5em;
+            color: $base-font-color;
+            font-weight: normal;
+        }
+    }
+    &.open {
+        a.site-logo.overlay {
+            background-color:$brand;
+        }
+    }
 }
 
 #close-menu {
@@ -43,7 +57,7 @@ body > header > a.site-logo.overlay {
     right: $top-bar-height * .15;
     top: 0em;
     font-weight: normal;
-    font-size: $top-bar-height * .8;
+    font-size: $top-bar-height * .7;
     z-index: 9999;
 }
 

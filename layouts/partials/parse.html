@@ -1,4 +1,4 @@
-<div class="kudos-block {{.Title | lower}}">
+<div class="kudos-block {{replace .Title "." "" | urlize}}">
     <figure class="kudo kudoable" data-id="1">
         <a class="kudobject">
             <div class="opening">

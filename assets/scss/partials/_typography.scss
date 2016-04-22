@@ -14,11 +14,11 @@ h1.title {
     &.homepage {
         font-size: 2.9em;
         font-weight: 400;
-        width:auto;
-        max-width:60%;
-        display:inline;
-        @include MQ(M){
-            font-size:3.8em;
+        width: auto;
+        max-width: 60%;
+        display: inline;
+        @include MQ(M) {
+            font-size: 3.8em;
         }
     }
     &.blog {
@@ -26,7 +26,7 @@ h1.title {
         text-transform: none;
     }
     &.tags {
-        text-transform:lowercase;
+        text-transform: lowercase;
     }
 }
 
@@ -50,7 +50,6 @@ h1.title-list {
 h2,
 h1.title-list {
     font-size: 1.8em;
-    ;
 }
 
 h3 {
@@ -63,9 +62,6 @@ h3 {
 
 span.dropcap {
     margin-right: .1em;
-    padding-bottom: -.2em;
-    margin-bottom: -.2em;
-    margin-top: .15em!important;
     color: $dropcap-color;
     font-weight: $dropcap-font-weight;
     font-family: $dropcap-font-family;

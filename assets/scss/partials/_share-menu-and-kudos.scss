@@ -195,10 +195,13 @@ div.social-media-share-menu {
 div.kudos-block {
     position: relative;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
+    margin:0px auto;
+    padding:0px;
+    background-color:$body-background-color;
+    margin-top:-1em;
     @include MQ(L) {
         position: fixed;
+        background-color:transparent;
         transition: opacity .3s ease-in-out;
         right: 1rem;
         top: 25vh;
@@ -214,11 +217,6 @@ div.kudos-block {
     @include MQ(XL) {
         right: 5vw;
     }
-}
-
-//Kudos block
-div.kudos-block {
-    background-color: transparent;
 }
 
 p.count {
@@ -278,7 +276,7 @@ figure.kudo {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5px;
+    // margin-bottom: 5px;
     padding-top:10px;
     padding-bottom:10px;
     top: 3px;

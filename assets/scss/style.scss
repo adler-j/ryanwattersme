@@ -34,13 +34,14 @@ main.main {
     padding: 0px;
     min-height: 100%;
     overflow-x: hidden;
-    @include header-transition;
-    margin-bottom:2em;
+    transition: transform 0.7s;
+    -webkit-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+    -moz-transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+    transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+    background-color: $body-background-color;
     &.open {
         opacity: 0.5;
-        @include MQ(M) {
-            transform: translateX(0%);
-        }
+        transform: translateX(-100%);
     }
 }
 
@@ -53,8 +54,8 @@ article {
     margin: auto;
     overflow-y: scroll;
     overflow-x: hidden;
-    height:auto;
-    clear:both;
+    height: auto;
+    clear: both;
     &::-webkit-scrollbar {
         display: none!important;
     }
@@ -69,18 +70,17 @@ article {
     &.singleton {
         margin-top: 3.5em;
     }
-    &.content.blog {
-        margin-top: 102vh;
-    }
 }
 
-.content-wrapper,.list-wrapper {
+.content-wrapper,
+.list-wrapper {
     display: block;
     margin: auto;
     width: 95%;
     max-width: 95%;
     overflow-x: hidden;
     position: relative;
+    background-color: $body-background-color;
     @include MQ(M) {
         width: $content-max-width;
         margin: auto;
@@ -110,17 +110,29 @@ article#about a {
     }
 }
 
+@include MQ(M) {
+    article.content.blog {
+        margin-top: 100vh;
+        padding-top: 2vh;
+        margin-bottom: 0px;
+        background-color: $body-background-color;
+    }
+}
+
 header.blog {
-    position: absolute;
+    position: relative;
     top: 0px;
     left: 0px;
     right: 0px;
-    bottom: 0px;
-    transition: all .2s ease-in-out;
+    transition: all $blog-header-trans-time ease-in-out;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
     width: 100%;
     margin-bottom: 1em;
     height: 100vh;
     min-height: 100vh;
+    max-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -128,8 +140,15 @@ header.blog {
         height: calc(100vh - 3em);
         margin-top: 0px;
     }
+    @include MQ(M) {
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        background-attachment: fixed;
+    }
     &:before {
-        transition: opacity .3s ease-in-out;
+        transition: opacity $blog-header-trans-time ease-in-out;
         height: 100vh;
         content: '';
         display: block;
@@ -140,23 +159,35 @@ header.blog {
         left: 0;
         pointer-events: none;
         opacity: 1;
-        background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        // background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+        background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
     }
     &.blog-not-top {
-        transition: opacity .3s ease-in-out;
-        // filter: grayscale(0%);
+        transition: all $blog-header-trans-time ease-in-out;
         &:before {
-            opacity: 0;
+            opacity: .9;
         }
         .header-content.blog {
-            background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+            &:before {
+                background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
+            }
+        }
+        @include MQ(M) {
+            opacity: .8;
+            .header-content.blog {
+                background-image: none;
+                opacity: 1;
+            }
         }
     }
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+    &.not-bottom {
+        background-color: $body-background-color;
+    }
+    &.headroom.top.pinned {
+        transition: opacity .3s ease-in-out;
+    }
     .header-content.blog {
-        transition: background-image .3s ease-in-out;
+        transition: background-image $blog-header-trans-time ease-in-out;
         width: 90%;
         height: auto;
         max-width: $content-max-width;
@@ -267,9 +298,18 @@ article time.publishdate {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn
 }
+
 #disqus_thread {
-    filter:grayscale(100%)!important;
+    width: 90%;
+    filter: grayscale(100%)!important;
+    display: block;
+    max-width: $content-max-width;
+    margin-left: auto;
+    margin-right: auto;
 }
-.content-wrapper.disqus {
-    filter:grayscale(100%)!important;
+
+.disqus-wrapper {
+    filter: grayscale(100%)!important;
+    background-color: $body-background-color;
+    padding-bottom: 2em;
 }

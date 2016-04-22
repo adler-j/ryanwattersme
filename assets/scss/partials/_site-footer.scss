@@ -1,8 +1,13 @@
-.site-footer {
+footer.site-footer {
+    z-index:9999;
+    height:2.5em;
     display:flex;
     flex-direction:column;
     flex-shrink:0;
     flex-grow:1;
+    background-color:$body-background-color;
+    padding:0px;
+    position:relative;
 }
 
 .copyright {
@@ -16,9 +21,11 @@
     bottom: 1em;
     right: 0px;
     font-family: $site-header-font-family;
+    background-color:$body-background-color;
 }
 
 
 .kudos-block + .copyright {
-    margin-bottom:4.5em;
+    // margin-bottom:4.5em;
+    background-color:$body-background-color;
 }

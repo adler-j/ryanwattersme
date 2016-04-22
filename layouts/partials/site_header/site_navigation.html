@@ -1,38 +1,45 @@
 <a href="#" id="close-menu"><i class="icon-cancel"></i></a>
 <a href="/" class="site-logo overlay">
-        <i class="icon-rw-site-logo"></i>
+    <i class="icon-rw-site-logo"></i><span class="site-logo-title">{{.Site.Title}}</span>
 </a>
 <div class="nav-wrapper">
     <nav role="navigation" aria-label="main navigation" class="site-navigation">
-    <div class="navblock left">
-        <ul class="nav">
-            <li class="main-nav-item"><a href="/">{{.Site.Title}}</a></li>
-            <li class="main-nav-item"><a href="#" id="categories-toggle">Blog</a>
-                <ul class="blog-categories">
-                    <li class="blog-category see-all"><a href="/blog">See All Posts</a></li>
-                    {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
-                    <li class="blog-category"><a href="/categories/{{$key}}">{{replace $key "-" " "}}</a></li>
-                    {{ end }}
-                </ul>
-            </li>
-            <li class="main-nav-item"><a href="/about">About</a></li>
-            <li class="main-nav-item"><a href="/contact">Contact</a></li>
-            <li class="main-nav-item colophon"><a href="/colophon">Colophon</a></li>
-        </ul>
-    </div>
-    <div class="navblock right">
-        <h3 class="content-by-tag">Content By Tag</h3>
-         <ul class="site-tags">
-            {{range $name,$taxonomy := .Site.Taxonomies.tags}}
-            <li><a href="/tags/{{$name}}">{{replace $name "-" " "}}</a></li>
-            {{end}}
-         </ul>
-         <ul class="social">
+        <div class="navblock left">
+            <ul class="nav">
+                <li class="main-nav-item"><a href="#" id="categories-toggle">Blog</a>
+                    <ul class="blog-categories">
+                        <li class="blog-category see-all"><a href="/blog">See All Posts</a></li>
+                        {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
+                        <li class="blog-category"><a href="/categories/{{$key}}">{{replace $key "-" " "}}</a></li>
+                        {{ end }}
+                    </ul>
+                </li>
+                <li class="main-nav-item"><a href="/about">About</a></li>
+                <li class="main-nav-item"><a href="/contact">Contact</a></li>
+                <li class="main-nav-item colophon"><a href="/colophon">Colophon</a></li>
+            </ul>
+        </div>
+        <div class="navblock right">
+            <h3 class="content-by-tag">Content By Tag</h3>
+            <ul class="site-tags">
+                {{range $name,$taxonomy := .Site.Taxonomies.tags}}
+                <li><a href="/tags/{{$name}}">{{replace $name "-" " "}}</a></li>
+                {{end}}
+            </ul>
+            <ul class="social">
+                <li><a href="https://www.twitter.com/@{{.Site.Params.Twitter}}"><i class="icon-twitter"></i></a></li>
+                <li><a href="https://www.github.com/{{.Site.Params.GitHub}}"><i class="icon-github"></i></a></li>
+                <li><a href="{{.Site.Params.LinkedIn}}"><i class="icon-linkedin"></i></a></li>
+                <li><a href="/index.xml" target="_blank"><i class="icon-rss"></i></a></li>
+            </ul>
+        </div>
+    </nav>
+    <div class="site-social-menu">
+        <!-- <ul class="social">
             <li><a href="https://www.twitter.com/@{{.Site.Params.Twitter}}"><i class="icon-twitter"></i></a></li>
             <li><a href="https://www.github.com/{{.Site.Params.GitHub}}"><i class="icon-github"></i></a></li>
             <li><a href="{{.Site.Params.LinkedIn}}"><i class="icon-linkedin"></i></a></li>
             <li><a href="/index.xml" target="_blank"><i class="icon-rss"></i></a></li>
-        </ul>
+        </ul> -->
     </div>
-    </nav>
 </div>

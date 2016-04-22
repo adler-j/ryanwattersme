@@ -8,6 +8,7 @@
 
 @mixin header-transition {
 	transition-property: all;
-  transition-duration: 0.2s;
-  transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
+  transition-duration: 0.7s;
+  // transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
+  transition-timing-function: cubic-bezier(1,.09,.87,.53);
 }
