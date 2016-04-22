@@ -1,8 +1,7 @@
 header.site-header {
     transition: all 0.7s;
-    -webkit-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
-    -moz-transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
-    transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+    transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
+    // transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
     width: $site-menu-width;
     position: fixed;
     display: block;
@@ -35,7 +34,7 @@ header.site-header {
 
 header.site-header {
     a.site-logo.overlay {
-        transition: background-color 2.5s ease;
+        transition: background-color 3.5s ease;
         color: $white;
         background-color: transparent;
         z-index: 9999;

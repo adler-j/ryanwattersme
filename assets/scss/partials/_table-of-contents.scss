@@ -1,5 +1,9 @@
 aside.toc {
+		position:relative;
+		background-color:$body-background-color;
+		z-index:9999;
     nav#TableOfContents {
+    	background-color:$body-background-color;
         ul {
         	list-style:none;
             li {
