@@ -28,6 +28,9 @@ h1.title {
     &.tags {
         text-transform: lowercase;
     }
+    &.categories span {
+        font-size:.7em;
+    }
 }
 
 .subtitle {

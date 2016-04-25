@@ -2,8 +2,8 @@ div.social-media-share-menu {
     width: 40px;
     position: fixed;
     min-height: 40px;
-    bottom: 30px;
-    left: 16px;
+    bottom: 1em;
+    left: .75em;
     z-index: 999999;
     font-size: 1em;
     background-color: transparent;
@@ -49,7 +49,7 @@ div.social-media-share-menu {
                 }
             }
             &:first-child {
-                padding-top: 8px;
+                padding-top: 6px;
                 height: 48px;
             }
             &:last-child {
@@ -72,7 +72,7 @@ div.social-media-share-menu {
     a#share-button {
         transition: all .3s ease-in-out;
         box-sizing: content-box;
-        width: 40px;
+        width: 42px;
         height: 40px;
         border-radius: $button-border-radius;
         position: absolute;
@@ -86,7 +86,9 @@ div.social-media-share-menu {
         vertical-align: middle;
         color: $share-button-font-color;
         background-color: $share-button-background-color;
-        border-radius: 50%;
+        border-radius: 21px;
+        padding-bottom:3px;
+        padding-left:1px;
         i.icon-share:after {
             content: 'SHARE';
             font-style: normal;
@@ -125,7 +127,7 @@ div.social-media-share-menu {
 }
 
 @include MQ(L) {
-    div.social-media-share-menu {
+    div.social-media-share-menu:not(.home) {
         position: fixed;
         left: 1rem;
         top: 25vh;
@@ -199,12 +201,13 @@ div.kudos-block {
     padding:0px;
     background-color:$body-background-color;
     margin-top:-1em;
+    z-index:99;
     @include MQ(L) {
         position: fixed;
         background-color:transparent;
         transition: opacity .3s ease-in-out;
         right: 1rem;
-        top: 25vh;
+        top: 20vh;
         opacity: 0;
         &.kudos-hidden,
         &.kudos-top {

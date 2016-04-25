@@ -1,4 +1,6 @@
 .top-bar {
+    @include main-and-body-transition;
+    transform: translateX(0%);
     z-index: 9999;
     display: block;
     position: fixed;
@@ -10,6 +12,15 @@
     height: $top-bar-height;
     border-bottom: $top-bar-bottom-border;
     opacity: $top-bar-opacity;
+    &.open {
+        transform: translateX(-100%);
+    }
+    &.headroom-unpinned,&.headroom--not-top {
+        transform: translateY(-100%);
+    }
+    &.headroom--pinned,&.headroom--bottom {
+        transform: translateY(0%);
+    }
 }
 
 a.site-logo {
@@ -23,10 +34,12 @@ a.site-logo {
     cursor: pointer;
     color: $site-logo-color;
     i.icon-rw-site-logo {
-        font-size: .9em;transition: transform 0.7s;
+        font-size: .9em;
+        transition: transform 0.7s;
         position: absolute;
         margin-top: .1em;
         margin-bottom: -.3em;
+        margin-left: -.15em;
     }
     &:hover {
         color: $white;
@@ -75,7 +88,7 @@ a.site-logo {
         width: 20%;
         max-width: 40%;
         font-size: .6em;
-        margin-top: .5em;
+        margin-top: .25em;
         text-transform: uppercase;
         i.icon-previous,
         i.icon-next {
@@ -106,7 +119,7 @@ a.section-title {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: $top-bar-height * .333;
+    margin-top: 1em;
     left: 40%;
     top: 0em;
     text-align: center;

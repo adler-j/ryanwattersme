@@ -5,11 +5,11 @@
             {{ partial "share_social_media.html" . }}
         {{ end }}
     {{ end }}
-    <header class="{{.Section}}" style="background-image:url(/assets/images/{{.Params.image}});" id="{{replace .Title "." "" | urlize}}">
+    <header class="{{.Section}}" style="background-image:url(/assets/images/{{.Params.image}});z-index:0;" id="{{replace .Title "." "" | urlize}}">
         <div class="header-content {{.Section}}{{if eq .Section "blog"}} animated fadeIn{{end}}">
-                <h1 class="title {{.Section}}" >{{ .Title }}</h1>
+                <h1 class="title {{.Section}}">{{ .Title }}</h1>
                 {{with .Params.subtitle}}
-                    <span class="subtitle">{{.}}</span>
+                    <div class="subtitle">{{.}}</div>
                 {{end}}
             <div class="category-and-publishdate">
                 <small>IN: </small>
@@ -18,9 +18,8 @@
                 {{end}}
                 <time class="publishdate" datetime="{{.PublishDate}}">{{.PublishDate.Format "Jan 2, 2006"}}</time>
             </div>
-        </div>>
+        </div>
     </header>
-
     <article class="content {{.Section}}" id="{{.Title|urlize}}">
     <div class="content-wrapper">
         {{ .Content }}

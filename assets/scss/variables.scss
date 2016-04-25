@@ -42,7 +42,9 @@ $white:#ffffff;
 $red:#b30000;//rgba(179, 0, 0, 1)
 $orange:darken(orange,5%);
 $brand:#014a82;//rgba(1, 74, 130, 1)
-$bumble:#F8C537;
+
+
+
 $gray: lighten($base-font-color,20%);
 $site-logo-color:$base-font-color;
 $body-background-color:#ffffff;
@@ -51,6 +53,23 @@ $site-header-background-color:darken($body-background-color,1%);
 $site-header-toggle-menu-color:$white;
 $site-logo-color:$white;
 $accent-color:$red;
+
+//Fake ios app colors
+$bumble:#F8C537;
+$bumble-her-bg-color:darken($body-background-color, 20%);
+$bumble-icon-color:lighten($base-font-color, 15%);
+$bumble-header-background-color:darken($body-background-color, 2%);
+$bumble-timestamp-font-color: darken($bumble-her-bg-color, 15%);
+
+$tinder: rgb(55,179,199);
+$tinder-her-bg-color:lighten($bumble-her-bg-color, 10%);
+$tinder-icon-color:lighten($base-font-color, 15%);
+$tinder-header-background-color:$body-background-color;
+$tinder-red:darken(#FF8080,4%);
+$tinder-icon: #E44C27;
+$dating-app-icon-size:3em;
+
+
 $dropcap-font-family:$heading-font-family;
 $dropcap-font-weight: 400;
 $dropcap-color:$base-font-color;
@@ -58,8 +77,7 @@ $dropcap-color:$base-font-color;
 $dropcap-box-shadow:none;
 
 //Top Bar
-$top-bar-height: 2.5em;
-// $top-bar-background-color:black;
+$top-bar-height: 2.2em;
 $top-bar-background-color:#000000;
 $top-bar-links-font-color:$white;
 $top-bar-bottom-border:0px solid #f0f0f0;
@@ -85,6 +103,8 @@ $social-media-bar-and-kudos-background-color:rgba(255,255,255,0.7);
 
 //Blog Single
 $blog-header-trans-time: .6s;
+$site-header-trans-time: .4s;
+$body-trans-time: .4s;
 
 //Anchors
 $anchor-color: $brand;

@@ -12,26 +12,45 @@ categories: []
 comments: First attempt at creating the About page for ryanwatters.io
 ---
 
-### Me
+## Me
 
 My name is Ryan. I am a content strategist, editor, writer, and web publisher in Chicago, IL.
 
-Friends have told me to write a blog for the last decade. I'm just catching up. Thank you for your patience.
+For the record, this site is classier and cleaner than my apartment.
 
-### The Site
+A friend implored me to write a blog in 2007. It's 2016. Thank you for your patience.
 
-#### Content
+## The Site
 
-All content for the site is written in clean, semantic [markdown](https://daringfireball.net/projects/markdown/) in observation of the latest [commonmark spec][]. As a publisher, my intent is to create CMS-independent content that can be easily ported to any [static site generator](https://www.staticgen.com/) with support for markdown files with embedded yaml. Where markdown falls short, extensions to the syntax are rendered on the client through a handful of [JavaScript modules](https://github.com/rdwatters/ryanwattersme/tree/master/assets/js/modules) and [Hugo Shortcodes](http://gohugo.io/extras/shortcodes/).
+### Content
 
-#### Development
+All content for the site is written in [GitHub Flavored][] [markdown](https://daringfireball.net/projects/markdown/) that observes the latest [commonmark spec][] whenever possible. As a publisher, I want CMS-independent content that can be easily ported to any [static site generator]() with built-in support for `.md` files with embedded `yaml` front matter.
 
-All code used for this site is open source and [hosted on GitHub](https://www.github.com/rdwatters/ryanwattersme).
+Where markdown falls short, extensions to the syntax are rendered on the client via a handful of [JavaScript functions][] on the client and [Hugo Shortcodes][].
 
-There were many moving parts in the development of this site. Suffice it to say that I built this site [with performance][] and simplicity in mind.
+### Development
 
+All code used for this site is open source and [hosted on GitHub][].
+
+Here is the shortlist of build tools:
+
+* [Babel][] for ES6 transpilation
+* [Gulp][] for asset management and compiling static assets
+* [Hugo][] as a static site generator
+
+There are many moving parts in the development of this site. Suffice it to say that I built this site with [performance][] and [simplicity][] in mind.
+
+[Babel]:https://babeljs.io/
 [commonmark spec]:http://spec.commonmark.org/
-[with performance]:https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fryanwatters.io
+[GitHub Flavored]:https://help.github.com/articles/basic-writing-and-formatting-syntax/
+[Gulp]:http://gulpjs.com/
+[hosted on GitHub]:https://www.github.com/rdwatters/ryanwattersme
+[Hugo]:http://gohugo.io/
+[Hugo Shortcodes]:http://gohugo.io/extras/shortcodes/
+[JavaScript Functions]:https://github.com/rdwatters/ryanwattersme/tree/master/assets/js/modules
+[performance]:https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fryanwatters.io
+[simplicity]:/colophon/
+[static site generator]:https://www.staticgen.com/
 
 
 

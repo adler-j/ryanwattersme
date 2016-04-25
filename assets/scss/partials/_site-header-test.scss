@@ -1,7 +1,5 @@
 header.site-header {
-    transition: all 0.7s;
-    transition-timing-function: cubic-bezier(0.91, 0.01, 0.6, 0.99);
-    // transition-timing-function: cubic-bezier(0.86, 0.01, 0.77, 0.78);
+    @include header-transition;
     width: $site-menu-width;
     position: fixed;
     display: block;
@@ -17,7 +15,6 @@ header.site-header {
     border-left: 1px solid #f0f0f0;
     z-index: 3;
     overflow-y: scroll;
-    -ms-overflow-style: none;
     &::-webkit-scrollbar {
         display: none;
     }
@@ -34,9 +31,10 @@ header.site-header {
 
 header.site-header {
     a.site-logo.overlay {
-        transition: background-color 3.5s ease;
+        transition:.3s;
+        opacity:0;
         color: $white;
-        background-color: transparent;
+        background-color: $brand;
         z-index: 9999;
         span.site-logo-title {
             margin-left: 2.5em;
@@ -46,9 +44,35 @@ header.site-header {
     }
     &.open {
         a.site-logo.overlay {
-            background-color:$brand;
+            background-color: $brand;
         }
     }
+}
+
+// fadeInSlow for site logo in header overlay
+.animatedSlow {
+    transition: opacity .3s ease;
+    -webkit-animation-duration: 2s;
+    animation-duration: 2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both
+}
+
+@keyframes fadeInSlow {
+    0% {
+        opacity: 0
+    }
+    45% {
+        opacity: 0
+    }
+    100% {
+        opacity: 1
+    }
+}
+
+.fadeInSlow {
+    -webkit-animation-name: fadeInSlow;
+    animation-name: fadeInSlow;
 }
 
 #close-menu {

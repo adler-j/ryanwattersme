@@ -14,10 +14,14 @@ p > code {
     background-color: darken($body-background-color, 5%);
     padding: .5em;
     margin-bottom: 1em;
+    overflow-x:scroll;
     @include MQ(M) {
         width: 100vw;
         padding-left: 0px;
         margin-left: calc((-100vw + #{$content-max-width}) / 2);
+    }
+    @include MQ(L){
+        overflow-x:hidden;
     }
     pre {
         width: $content-max-width;

@@ -6,20 +6,26 @@ date: 2016-03-20
 publishdate: 2016-03-20
 updated: 2016-03-20
 image: keyboard.jpg
-categories: [tech and dev]
+categories: [development]
 tags: [search,lunr.js,hugo]
 include_comments: true
 ---
 
 Amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
 
+## Introduction
+
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let's make a [link to Google](https://www.google.com).
 
 > Here is a blockquote without any attribution.
 
+## Second Section
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!
 
 ![image with some alt text. $=full](/assets/images/my-image.jpg)
+
+## More Information
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
 
@@ -28,8 +34,6 @@ Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite tre
 ## Article Heading
 
 Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.
-
-{{< video "youtube" "7xYO-VMZUGo">}}
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
 

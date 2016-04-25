@@ -9,6 +9,8 @@ var rename = require('gulp-rename');
 var plumber = require('gulp-plumber');
 var autoprefixer = require('gulp-autoprefixer');
 var gutil = require('gulp-util');
+const imagemin = require('gulp-imagemin');
+const pngquant = require('imagemin-pngquant'); // $ npm i -D imagemin-pngquant
 
 // Compile Sass; note sass options to prevent server from breaking when you fudge a css rule
 gulp.task('sass', function() {
@@ -51,13 +53,24 @@ gulp.task('scripts2', function() {
     .pipe(gulp.dest('../static/assets/js'));
 });
 
+gulp.task('images', () => {
+  return gulp.src('../static/assets/images/*')
+    .pipe(imagemin({
+      progressive: true,
+      optimizationLevel: 5,
+      svgoPlugins: [{removeViewBox: false}],
+      use: [pngquant()]
+    }))
+    .pipe(gulp.dest('../static/assets/images/'));
+});
+
 //the default "compile" task for sass and js
 gulp.task('compile', ['sass', 'scripts','scripts2'], function() {
   gulp.watch(['scss/*.scss', 'scss/modules/*scss'], ['sass']);
   gulp.watch("scss/partials/*.scss", ['sass']);
   gulp.watch("js/modules/*.js", ['scripts']);
   gulp.watch("js/kudos/*.js", ['scripts2']);
-  // gulp.watch("../content/**/*.md", ['markdown']);
+  gulp.watch("../static/assets/images/*",['images']);
 });
 
 // Default Task

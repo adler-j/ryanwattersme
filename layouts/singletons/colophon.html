@@ -6,7 +6,7 @@
 <div class="content-wrapper colophon">
 	<header><h1 class="title">{{.Title}}</h1></header>
 	<div class="typeface">
-		<h3>Typefaces</h3>
+		<h2>Typeface</h2>
 		<p>The site uses {{ delimit .Params.fonts ", " ", and " }} for body copy, headings, and code blocks, respectively.</p>
 		<ul class="typography">
 			{{$size := .Params.fontinems }}
@@ -20,7 +20,7 @@
 			</li>
 			{{end}}
 		</ul>
-		<h3>Colors</h3>
+		<h2>Color</h2>
 		<p>The color palette is type-centric, with four colors for body copy, one brand color, and one accent color.</p>
 		<div class="sitecolors">
 			<ul class="colors">
@@ -30,10 +30,16 @@
 			</ul>
 
 		</div>
+<!-- 		<div class="headings-and-copy">
+			<h1 class="title">Title</h1>
+			<span class="subtitle">Subtitle</span>
+			<h2>Heading</h2>
+			<h3>Subheading</h3>
+			<p>Body copy.</p>
+		</div> -->
 	</div>
 	</div>
 </article>
-
 {{partial "parse.html" . }}
 </main>
 {{ partial "site_footer.html" . }}

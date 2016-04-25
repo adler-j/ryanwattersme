@@ -1,42 +1,45 @@
-<!-- add header toggle to immediate pageload for mobile -->
 <script async>
 var headerToggle = document.getElementById('site-header-toggle');
 var headerCancel = document.getElementById('close-menu');
 var mainContent = document.querySelector('main');
 mainContent.addEventListener('click', toggleHeader, false);
 headerToggle.addEventListener('click', toggleHeader, false);
-headerCancel.onclick = function(event) {
+headerCancel.addEventListener('click', closeHeader, false);
+
+function closeHeader(event) {
     event.preventDefault();
     document.querySelector('body > header').classList.remove('open');
     document.querySelector('main').classList.remove('open');
     document.querySelector('body > footer').classList.remove('open');
+    document.querySelector('.site-logo.overlay.animatedSlow').classList.remove('fadeInSlow');
+    document.querySelector('.top-bar').classList.remove('open');
 }
+
 function toggleHeader(event) {
-    var header = document.querySelector('body > header');
+    var header = document.querySelector('header.site-header');
     var mainContent = document.querySelector('main');
+    var siteLogoInOverlay = document.querySelector('.site-logo.overlay.animatedSlow');
+    var siteFooter = document.querySelector('footer.site-footer');
+    var topBar = document.querySelector('.top-bar');
     if (header.classList.contains('open')) {
         event.preventDefault();
-        document.querySelector('body > header').classList.remove('open');
-        document.querySelector('main').classList.remove('open');
-        document.querySelector('body > footer').classList.remove('open');
+        header.classList.remove('open');
+        mainContent.classList.remove('open');
+        siteFooter.classList.remove('open');
+        siteLogoInOverlay.classList.remove('fadeInSlow');
+        topBar.classList.remove('open');
     } else if ((event.target.id === "site-header-toggle") && !(header.classList.contains('open'))) {
         event.preventDefault();
-        document.querySelector('body > header').classList.add('open');
-        document.querySelector('main').classList.add('open');
-        document.querySelector('body > footer').classList.add('open');
+        header.classList.add('open');
+        mainContent.classList.add('open');
+        siteFooter.classList.add('open');
+        siteLogoInOverlay.classList.add('fadeInSlow');
+        topBar.classList.add('open');
     }
 
 }
 </script>
-<!-- Swiftype Embed Code -->
-<!--<script type="text/javascript">
-(function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
-(w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
-e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
-})(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
 
-_st('install','-prxNdv6dfZzH2brPSbq','2.0.0');
-</script>-->
 {{ if .Site.Params.IncludeJQ }}
 <script src="/assets/js/jquery-2.2.2.min.js"></script>
 {{ end }}

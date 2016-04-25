@@ -6,10 +6,12 @@
     max-width: $content-max-width;
     margin-left: auto;
     margin-right: auto;
+    background-color: $body-background-color!important;
 }
 
 .disqus-wrapper {
     filter: grayscale(100%)!important;
-    background-color: $body-background-color;
+    background-color: $body-background-color!important;
     padding-bottom: 2em;
+    z-index:9999;
 }

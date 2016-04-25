@@ -1,5 +1,7 @@
-{{if gt .WordCount 400 }}
-<aside class="toc">
+{{if gt .WordCount 300 }}
+<aside class="toc" id="toc">
+	<h4 class="toc-heading">{{.Title}}</h4>
 	{{ .TableOfContents }}
 </aside>
+	<a href="#" id="toggle-toc">...</a>
 {{end}}

@@ -63,11 +63,12 @@ nav.site-navigation {
             line-height: 1.9em;
             a {
                 font-weight: normal;
-                text-align: right;
+                text-align: left;
                 cursor: pointer!important;
                 text-transform: lowercase;
                 font-family: $site-header-font-family;
                 min-width: 100%;
+                display: block;
                 color: lighten($base-font-color, 15%);
                 text-transform: uppercase;
                 i.icon-search {
@@ -94,6 +95,7 @@ nav.site-navigation {
                     vertical-align: middle;
                     a {
                         font-size: .8em;
+                        transition: all .3s ease-in-out;
                         text-transform: lowercase;
                         @include MQ(M) {
                             font-size: .7em;
@@ -190,7 +192,7 @@ a#categories-toggle {
     text-align: left;
     transition: all .3s ease;
     &:after {
-        @include header-transition;
+        transition: transform .3s ease;
         content: '';
         display: inline;
         float: right;
@@ -287,19 +289,23 @@ ul.contents-list {
             }
         }
     }
-    &.terms {
-        li {
-            border-bottom: none;
-            margin-bottom: .9em;
-            a {
-                border: none;
-                text-decoration: none;
-                font-size: 1.3em;
-                color: $base-font-color;
-                &:hover {
-                    color: $white;
-                    background-color: $brand;
-                }
+}
+
+ul.terms {
+    padding-left: 0px;
+    list-style: none;
+    margin-left: 0px;
+    li {
+        border-bottom: none;
+        margin-bottom: .9em;
+        a {
+            border: none;
+            text-decoration: none;
+            font-size: 1.3em;
+            color: $base-font-color;
+            &:hover {
+                color: $white;
+                background-color: $brand;
             }
         }
     }
@@ -314,7 +320,7 @@ ul.tags {
     justify-content: center;
     position: relative;
     clear: both;
-    background-color:$body-background-color;
+    background-color: $body-background-color;
     span {
         font-family: $tags-font-family;
     }
