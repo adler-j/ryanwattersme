@@ -65,6 +65,7 @@ article {
     &.list,
     &.singleton {
         margin-top: 3.5em;
+        overflow:hidden;
     }
 }
 
@@ -80,6 +81,11 @@ article {
     @include MQ(M) {
         width: $content-max-width;
         margin: auto;
+    }
+}
+
+@include MQ(M){
+    .content-wrapper {
         overflow-x: visible;
     }
 }

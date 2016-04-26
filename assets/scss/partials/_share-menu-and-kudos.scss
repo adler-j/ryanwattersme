@@ -57,6 +57,8 @@ div.social-media-share-menu {
             transform: scale(1);
             border: none;
             min-height: 100%;
+            border:1px solid lighten($base-font-color,65%);
+            padding-bottom:.1em;
         }
     }
     &.social-fixed.social-top {
@@ -105,13 +107,15 @@ div.social-media-share-menu {
             i.icon-share:before {
                 content: ' X';
                 font-weight: bold;
-                padding-left: 2px;
+                padding-left: 5px;
+                padding-bottom: 4px;
                 color: $accent-color;
                 font-family: $heading-font-family;
             }
             i.icon-share:after {
                 content: 'CLOSE';
                 color: $accent-color;
+                padding-left: 2px;
                 margin-top: -28px;
                 font-style: normal;
                 font-family: $heading-font-family;
