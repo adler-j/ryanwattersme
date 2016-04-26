@@ -1,15 +1,14 @@
 img {
-    display:block;
+    display: block;
     transition: all .3s ease-in-out;
 }
 
-.content-wrapper p img {
+.content-wrapper img {
     position: relative;
     display: block;
     width: 100%;
     height: auto;
     transition: filter .3s ease-in-out;
-    filter: grayscale(100%);
     margin-bottom: 1em;
     @include MQ(M) {
         &.right {
@@ -20,9 +19,6 @@ img {
         &.left {
             float: left;
         }
-    }
-    &:hover {
-        filter: grayscale(0%);
     }
     &.author {
         display: block;
@@ -38,8 +34,9 @@ img {
     }
 }
 
-.content-wrapper p img.full,
-.content-wrapper img.full {
+// .content-wrapper p img.full,
+.content-wrapper img.full,
+.content-wrapper figure.full {
     @include MQ(M) {
         width: 100vw;
         height: auto;
@@ -47,7 +44,30 @@ img {
     }
 }
 
-
+.content-wrapper {
+    figure {
+        img {
+            margin-bottom: .25em;
+        }
+        p {
+            margin: 0px;
+        }
+        figcaption {
+            width: 50%;
+            margin-left: auto;
+            margin-right: auto;
+            text-align: center;
+            font-size: .8em;
+            font-family: $heading-font-family;
+            margin-top: 0px;
+            padding-top: 0px;
+            line-height: 1;
+            position: relative;
+            margin-bottom: 1em;
+            font-style:italic;
+        }
+    }
+}
 
 .homepage-image {
     margin-top: 3em;

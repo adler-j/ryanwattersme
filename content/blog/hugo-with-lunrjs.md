@@ -1,11 +1,11 @@
 ---
 title: Hugo with lunr.js
-subtitle: Here is a fake subtitle for testing.
+subtitle: Implementing live, full-text, client-side search as part of your HUGO build.
 description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit animi dolorum consequatur, facilis perspiciatis explicabo commodi!
 date: 2016-03-20
 publishdate: 2016-03-20
 updated: 2016-03-20
-image: keyboard.jpg
+image: javascript.jpg
 categories: [development]
 tags: [search,lunr.js,hugo]
 include_comments: true

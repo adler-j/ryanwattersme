@@ -2,39 +2,36 @@ div.social-media-share-menu {
     width: 40px;
     position: fixed;
     min-height: 40px;
-    bottom: 1em;
+    bottom: 1.75em;
     left: .75em;
     z-index: 999999;
     font-size: 1em;
     background-color: transparent;
     ul.share-menu {
         box-sizing: border-box;
-        display: flex;
-        flex-wrap: wrap;
+        display: block;
         transition: all .3s ease-in-out;
         list-style: none;
         margin-left: 0px;
         padding-left: 0px;
+        padding-right: 5px;
         bottom: 0px;
         margin-bottom: 0px;
         padding-bottom: 0px;
-        right: 0px;
         width: 42px;
         transform-origin: bottom;
-        box-shadow: 0px 0px 5px 0px rgba(154, 154, 154, 0.5);
+        // box-shadow: 0px 0px 5px 0px rgba(154, 154, 154, 0.5);
+        border:1px solid lighten($base-font-color,65%);
         transform: scale(0);
-        background-color:$body-background-color;
+        background-color: $body-background-color;
         li {
-            flex-shrink: 0;
-            flex-grow: 1;
-            justify-content: center;
-            align-items: center;
             width: 40px;
             height: 40px;
             vertical-align: middle;
             margin: 0px;
             margin-bottom: 10px;
             padding: 0px;
+            padding-right:6px;
             background-color: $body-background-color;
             a.share {
                 background-color: transparent;
@@ -87,8 +84,8 @@ div.social-media-share-menu {
         color: $share-button-font-color;
         background-color: $share-button-background-color;
         border-radius: 21px;
-        padding-bottom:3px;
-        padding-left:1px;
+        padding-bottom: 3px;
+        padding-left: 1px;
         i.icon-share:after {
             content: 'SHARE';
             font-style: normal;
@@ -129,7 +126,8 @@ div.social-media-share-menu {
 @include MQ(L) {
     div.social-media-share-menu:not(.home) {
         position: fixed;
-        left: 1rem;
+        left:2em;
+        left: 2vw;
         top: 25vh;
         width: 50px;
         height: 260px;
@@ -143,7 +141,7 @@ div.social-media-share-menu {
             flex-direction: column;
             justify-content: center;
             margin-top: 0em;
-            width: 50px;
+            width: 40px;
             height: auto;
             line-height: 2em;
             transform: scale(1);
@@ -151,16 +149,18 @@ div.social-media-share-menu {
                 display: list;
                 margin-bottom: .5em;
                 padding-bottom: 0px;
-                width: 50px;
+                padding-left:0px;
+                width: 40px;
                 text-align: center;
                 border: none;
                 background-color: transparent;
                 a {
                     i {
-                        font-size: 26px;
+                        font-size: 20px;
                     }
                     i.icon-facebook {
-                        font-size: 30px;
+                        font-size: 22px;
+                        padding-right:4px;
                     }
                 }
                 &.share-button {
@@ -188,7 +188,7 @@ div.social-media-share-menu {
             display: none;
         }
         @include MQ(XL) {
-            left: 5vw;
+            left: 7vw;
             top: 25vh;
         }
     }
@@ -197,17 +197,21 @@ div.social-media-share-menu {
 div.kudos-block {
     position: relative;
     display: block;
-    margin:0px auto;
-    padding:0px;
-    background-color:$body-background-color;
-    margin-top:-1em;
-    z-index:99;
+    margin: 0px auto;
+    padding: 0px;
+    background-color: $body-background-color;
+    margin-top: -1em;
+    padding-bottom: 1.5em;
+    z-index: 99;
     @include MQ(L) {
         position: fixed;
-        background-color:transparent;
+        background-color: transparent;
         transition: opacity .3s ease-in-out;
-        right: 1rem;
-        top: 20vh;
+        padding-right:0px;
+        right: .25em;
+        top: 15vh;
+        min-width: 130px;
+        max-width: 130px;
         opacity: 0;
         &.kudos-hidden,
         &.kudos-top {
@@ -218,7 +222,10 @@ div.kudos-block {
         }
     }
     @include MQ(XL) {
-        right: 5vw;
+        min-width: 150px;
+        max-width: 150px;
+        padding-right:.75em;
+        right: 1.5em;
     }
 }
 
@@ -227,7 +234,7 @@ p.count {
 }
 
 div.opening {
-    background-color:transparent;
+    background-color: transparent;
     width: 50px;
     height: 50px;
     border-radius: 50%;
@@ -269,9 +276,8 @@ div.opening div.circle {
 figure {
     display: block;
     position: relative;
-    margin: 0 auto;
-    left: auto;
-    top: auto;
+    margin-right: auto;
+    margin-left:auto;
     margin-top: 20px;
 }
 
@@ -279,9 +285,8 @@ figure.kudo {
     position: relative;
     margin-left: auto;
     margin-right: auto;
-    // margin-bottom: 5px;
-    padding-top:10px;
-    padding-bottom:10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     top: 3px;
     text-align: center;
     width: 75px;
@@ -291,8 +296,8 @@ figure.kudo {
     -ms-user-select: none;
     user-select: none;
     z-index: 999;
-    border-radius:25%;
-    background-color:$social-media-bar-and-kudos-background-color;
+    border-radius: 0%;
+    background-color: $social-media-bar-and-kudos-background-color;
 }
 
 

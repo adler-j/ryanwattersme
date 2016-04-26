@@ -10,9 +10,10 @@
     {{ partial "site_header/metadata_favicons.html" . }}
     <!-- site_style.html is configured for critical render path in config.toml-->
     {{ partial "site_header/site_style.html" . }}
+    {{ partial "site_header/swiftype.html" . }}
 </head>
 
-<body>
+<body {{if .IsNode }}data-swiftype-index=false {{end}}>
     {{ partial "site_header/top_bar.html" . }}
     <header class="site-header">
         {{ partial "site_header/site_navigation.html" . }}

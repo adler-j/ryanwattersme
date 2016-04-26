@@ -21,7 +21,7 @@
         </div>
     </header>
     <article class="content {{.Section}}" id="{{.Title|urlize}}">
-    <div class="content-wrapper">
+    <div class="content-wrapper" {{if .Site.Params.Swiftype}}data-swiftype-name="body" data-swiftype-type="text"{{end}}>
         {{ .Content }}
     </div>
     </article>

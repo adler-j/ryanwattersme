@@ -39,7 +39,7 @@ html a {
 }
 
 body {
-    font-size: 80%;
+    font-size: 75%;
     @include MQ(M) {
         font-size: 90%;
     }
@@ -47,7 +47,7 @@ body {
         font-size: 100%;
     }
     @include MQ(XL) {
-        font-size: 120%;
+        font-size: 110%;
     }
     font-family: $base-font-family;
     background: $body-background-color;

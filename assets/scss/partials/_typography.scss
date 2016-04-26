@@ -5,6 +5,7 @@ h1.title {
     font-weight: 600;
     line-height: 1;
     color: $h1-page-heading-font-color;
+    margin-left: -0.0325em;
     @include MQ(L) {
         font-size: 3.5em;
     }
@@ -28,8 +29,11 @@ h1.title {
     &.tags {
         text-transform: lowercase;
     }
-    &.categories span {
-        font-size:.7em;
+    &.categories {
+        margin-left:4px;
+        span {
+            font-size: .65em;
+        }
     }
 }
 

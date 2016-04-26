@@ -47,16 +47,10 @@ header.tinder-header {
     }
     .icon-info {
         font-size: 1.4em;
-        // &:before {
-        //     margin-top: .2em;
-        // }
     }
     .icon-star {
         margin-right: -.25em;
         font-size: 1.4em;
-        // &:before {
-        //     margin-top: .2em;
-        // }
     }
     .icon-leftarrow {
         font-size: 2em;
@@ -104,25 +98,24 @@ header.tinder-header {
     box-sizing: border-box;
     width: $dating-app-icon-size / 1.001;
     height: $dating-app-icon-size / 1.001;
-    overflow:hidden;
+    overflow: hidden;
     position: absolute;
     right: -$dating-app-icon-size / 3;
     top: 3.5em;
     z-index: 99;
     background-color: $body-background-color;
-    box-shadow: 0px 0px 2px 1px rgba(34,34,34,0.4);
+    box-shadow: 0px 0px 2px 1px rgba(34, 34, 34, 0.4);
     border-radius: 0.625em;
     svg {
         z-index: 99999;
         width: 103%;
         height: 103%;
         fill: white;
-        padding:0px;
+        padding: 0px;
     }
     svg#tinder-icon {
         fill: white;
-        background-color:#E44C27;
-
+        background-color: #E44C27;
     }
 }
 
@@ -179,15 +172,15 @@ header.tinder-header {
         width: 1.7em;
         height: 95%;
         background-repeat: no-repeat;
-        border:none;
+        border: none;
         &.empty {
-        background-image: url(/assets/images/battery-empty.svg);
+            background-image: url(/assets/images/battery-empty.svg);
         }
         &.half {
-        background-image: url(/assets/images/battery-half.svg);
+            background-image: url(/assets/images/battery-half.svg);
         }
         &.full {
-        background-image: url(/assets/images/battery-full.svg);
+            background-image: url(/assets/images/battery-full.svg);
         }
     }
 }
@@ -237,7 +230,7 @@ header.tinder-header {
     padding-left: .5em;
     &.tinder {
         font-size: 1em;
-        margin-top:.3em;
+        margin-top: .3em;
     }
 }
 
@@ -246,7 +239,7 @@ img.datingapp-image {
     height: 1.6em;
     border-radius: 50%;
     margin-right: .5em;
-    filter: blur(0px);
+    margin-bottom: 0px;
     &.tinder {
         width: 2.25em;
         height: 2.25em;
@@ -277,7 +270,7 @@ img.datingapp-image {
         margin: 0px;
         padding: 0px;
         li {
-            width:auto;
+            width: auto;
             max-width: 68%;
             text-indent: 0px;
             list-style: none;
@@ -333,7 +326,7 @@ img.datingapp-image {
         ul {
             li {
                 border-radius: 1em;
-                z-index:99;
+                z-index: 99;
                 &:after {
                     border-radius: 50% 50% 50% 50%;
                     border-style: solid;
@@ -346,21 +339,20 @@ img.datingapp-image {
                     right: -46px;
                     width: 30px;
                     transform: rotateY(42deg);
-                    z-index:-1;
+                    z-index: -1;
                 }
                 &:nth-child(even) {
                     background-color: $bumble;
-                    padding-right:.5em;
+                    padding-right: .5em;
                     &:after {
                         border-color: $bumble;
-                        z-index:-1;
+                        z-index: -1;
                     }
                 }
                 &:nth-child(odd) {
                     border-color: $bumble-her-bg-color;
                     background-color: $bumble-her-bg-color;
-                    padding-left:1em;
-
+                    padding-left: 1em;
                     &:after {
                         left: -46px;
                         border-color: $bumble-her-bg-color;
@@ -388,8 +380,8 @@ img.datingapp-image {
                 clear: both;
                 margin-right: 5%;
                 background-color: $bumble;
-                z-index:1;
-                padding-right:.9em;
+                z-index: 1;
+                padding-right: .9em;
                 &:after {
                     border-radius: 50% 50% 50% 50%;
                     border-style: solid;
@@ -403,7 +395,7 @@ img.datingapp-image {
                     width: 30px;
                     transform: rotateY(42deg);
                     border-color: $bumble;
-                    z-index:-1;
+                    z-index: -1;
                 }
             }
             > li:nth-child(odd) {
@@ -423,7 +415,7 @@ img.datingapp-image {
     &.tinder {
         ul {
             li {
-                width:auto;
+                width: auto;
                 max-width: 68%;
                 border-radius: .65em;
                 &:after {

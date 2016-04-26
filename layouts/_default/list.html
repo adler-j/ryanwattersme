@@ -4,7 +4,7 @@
     <article class="list">
         <div class="list-wrapper">
             <header>
-                <h1>{{ .Title }}</h1>
+                <h1 {{if .Site.Params.Swiftype }}data-swiftype-name="title" data-swiftype-type="string"{{end}}>{{ .Title }}</h1>
             </header>
             <ul class="contents-list">
                 {{ range .Data.Pages }}

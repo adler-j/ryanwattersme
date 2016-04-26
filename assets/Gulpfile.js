@@ -70,8 +70,10 @@ gulp.task('compile', ['sass', 'scripts','scripts2'], function() {
   gulp.watch("scss/partials/*.scss", ['sass']);
   gulp.watch("js/modules/*.js", ['scripts']);
   gulp.watch("js/kudos/*.js", ['scripts2']);
-  gulp.watch("../static/assets/images/*",['images']);
 });
 
 // Default Task
 gulp.task('default', ['compile']);
+
+// Image optimization
+gulp.task('img',['images']);

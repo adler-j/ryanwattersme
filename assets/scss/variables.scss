@@ -30,7 +30,7 @@ $base-font-weight:400;
 // $site-menu-width: calc(100% + 16px);
 $site-menu-width: calc(100% + 16px);
 
-$content-max-width:30em;
+$content-max-width:29em;
 
 //Color Palette
 
@@ -65,7 +65,7 @@ $tinder: rgb(55,179,199);
 $tinder-her-bg-color:lighten($bumble-her-bg-color, 10%);
 $tinder-icon-color:lighten($base-font-color, 15%);
 $tinder-header-background-color:$body-background-color;
-$tinder-red:darken(#FF8080,4%);
+$tinder-red:#E44C27;
 $tinder-icon: #E44C27;
 $dating-app-icon-size:3em;
 
@@ -87,8 +87,8 @@ $top-bar-opacity:1;
 //Blockquotes
 
 $blockquote-font-family: $base-font-family;
-$blockquote-border-color:$accent-color;
-$blockquote-background-color:$body-background-color;
+$blockquote-border-color: $brand;
+$blockquote-background-color:darken($body-background-color,2%);
 $blockquote-font-size:1.2em;
 $blockquote-font-style:regular;
 
@@ -102,7 +102,7 @@ $share-button-font-color:$white;
 $social-media-bar-and-kudos-background-color:rgba(255,255,255,0.7);
 
 //Blog Single
-$blog-header-trans-time: .6s;
+$blog-header-trans-time: .4s;
 $site-header-trans-time: .4s;
 $body-trans-time: .4s;
 
