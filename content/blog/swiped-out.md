@@ -62,6 +62,20 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus aliquam co
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ducimus aliquid, cupiditate, maiores quisquam magnam dignissimos tenetur iste pariatur facere porro. Vero voluptatem aliquid sit? Nulla, provident. Vel, impedit, placeat.
 
+## For the Ladies
+
+{{% tinder "Manjina" "3:13 AM" "2016-04-14" "5" "half" %}}
+<ul class="left">
+  <li>Hi there!</li>
+  <li>Hi, how are you?</li>
+</ul>
+<p>4 Jagermeisters Later</p>
+<ul class="right">
+  <li>Again</li>
+  <li>Something else entirely.</li>
+</ul>
+{{% /tinder %}}
+
 
 
 ## More Headings for SmoothScroll Test
