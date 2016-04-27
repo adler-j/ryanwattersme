@@ -29,7 +29,7 @@ h1.title {
     &.tags {
         text-transform: lowercase;
     }
-    &.categories {
+    &.categories,&.tags {
         margin-left:4px;
         span {
             font-size: .65em;

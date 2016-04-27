@@ -21,7 +21,8 @@ div.social-media-share-menu {
         width: 42px;
         transform-origin: bottom;
         // box-shadow: 0px 0px 5px 0px rgba(154, 154, 154, 0.5);
-        border:1px solid lighten($base-font-color,65%);
+        // border:1px solid lighten($base-font-color,65%);
+        border:$share-and-toc-border-color;
         transform: scale(0);
         background-color: $body-background-color;
         li {
@@ -131,8 +132,8 @@ div.social-media-share-menu {
     div.social-media-share-menu:not(.home) {
         position: fixed;
         left:2em;
-        left: 2vw;
-        top: 25vh;
+        left: 16px;
+        top: 200px;;
         width: 50px;
         height: 260px;
         display: block;
@@ -212,8 +213,8 @@ div.kudos-block {
         background-color: transparent;
         transition: opacity .3s ease-in-out;
         padding-right:0px;
-        right: .25em;
-        top: 15vh;
+        right: 16px;
+        top: 60px;
         min-width: 130px;
         max-width: 130px;
         opacity: 0;
@@ -229,7 +230,7 @@ div.kudos-block {
         min-width: 150px;
         max-width: 150px;
         padding-right:.75em;
-        right: 1.5em;
+        right: 3vw;
     }
 }
 

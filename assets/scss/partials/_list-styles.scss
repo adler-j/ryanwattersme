@@ -96,7 +96,7 @@ nav.site-navigation {
                     a {
                         font-size: .8em;
                         transition: all .3s ease-in-out;
-                        text-transform: lowercase;
+                        text-transform: $blog-category-text-transform;
                         @include MQ(M) {
                             font-size: .7em;
                         }

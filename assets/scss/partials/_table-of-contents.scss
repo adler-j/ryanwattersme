@@ -12,7 +12,7 @@ aside.toc {
     overflow: hidden;
     transform: scale(0);
     transform-origin: 100% 100%;
-    z-index:1;
+    z-index: 1;
     &.open-toc {
         transform: scale(1);
         visibility: visible;
@@ -21,22 +21,18 @@ aside.toc {
     h4.toc-title {
         color: $base-font-color;
         font-weight: bold;
-        padding-left: 20px;
         weight: 700;
         margin-bottom: 0px;
-        background-color: $body-background-color;
     }
     div.toc-subtitle {
         font-family: $heading-font-family;
         font-size: .8em;
         line-height: 1.2;
-        background-color: $body-background-color;
         margin-bottom: 0px;
-        padding-left: 20px;
+        // padding-left: 20px;
     }
     nav#TableOfContents {
         background-color: black;
-        border: 1px solid black;
         font-family: $heading-font-family;
         padding: 0px;
         margin: 0px;
@@ -72,27 +68,38 @@ aside.toc {
 }
 
 header.toc-header {
+    transition: all .3s ease-in-out;
+    box-sizing: border-box;
+    border:1px solid black;
     padding: {
         top: .5em;
         bottom: .5em;
+        left: 16px;
+        right: 16px;
     }
-    transform:translateY(100%);
     z-index:-1;
+    transform:translateY(100%);
     opacity:0;
-    border:none;
-    background-color:$body-background-color;
+    height:0px;
+    background-color:darken($body-background-color,3%);
     &.tocHead-notTop,
     &.tocHead-unpinned {
         transform: translateY(0%);
-        border: 1px solid black;
+        z-index: 10;
         opacity:1;
+        height:auto;
     }
     @include MQ(L) {
         display: none;
     }
 }
+
 div.toc-contents {
-    z-index:99;
+    z-index: 9999;
+    border: none;
+    ul {
+        z-index:9999;
+    }
 }
 
 @include MQ(L) {
@@ -105,8 +112,8 @@ div.toc-contents {
         transform: none;
         height: auto;
         max-height: auto;
-        top: 35vh;
-        right: .25em;
+        top: 200px;
+        right: 16px;
         min-width: 130px;
         max-width: 130px;
         border-width: 0px;
@@ -120,6 +127,8 @@ div.toc-contents {
         }
         nav#TableOfContents {
             border-radius: 0em;
+            border: $share-and-toc-border-color;
+            ;
             background-color: rgba(255, 255, 255, 0.8);
             margin-top: 0px;
             display: block;
@@ -160,7 +169,7 @@ div.toc-contents {
     aside.toc {
         min-width: 150px;
         max-width: 150px;
-        right: 1.5em;
+        right: 3vw;
     }
 }
 

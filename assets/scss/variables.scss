@@ -69,6 +69,9 @@ $tinder-red:#E44C27;
 $tinder-icon: #E44C27;
 $dating-app-icon-size:3em;
 
+//Overlay and Navigation
+$blog-category-text-transform: capitalize;
+
 
 $dropcap-font-family:$heading-font-family;
 $dropcap-font-weight: 400;
@@ -91,6 +94,10 @@ $blockquote-border-color: $brand;
 $blockquote-background-color:darken($body-background-color,2%);
 $blockquote-font-size:1.2em;
 $blockquote-font-style:regular;
+
+//Share and Table of Contents
+$share-and-toc-border-color:1px solid lighten($base-font-color,65%);
+
 
 
 //Buttons
