@@ -1,6 +1,5 @@
 aside.toc {
     transition: all .3s ease-in-out;
-    border: 1px solid black;
     position: fixed;
     bottom: 1.75em;
     right: 1em;
@@ -13,17 +12,11 @@ aside.toc {
     overflow: hidden;
     transform: scale(0);
     transform-origin: 100% 100%;
+    z-index:1;
     &.open-toc {
         transform: scale(1);
         visibility: visible;
         z-index: 100;
-    }
-    header.toc-header {
-        padding: {
-            top: .5em;
-            bottom: .5em;
-        }
-        background-color:$body-background-color;
     }
     h4.toc-title {
         color: $base-font-color;
@@ -43,6 +36,7 @@ aside.toc {
     }
     nav#TableOfContents {
         background-color: black;
+        border: 1px solid black;
         font-family: $heading-font-family;
         padding: 0px;
         margin: 0px;
@@ -77,6 +71,30 @@ aside.toc {
     }
 }
 
+header.toc-header {
+    padding: {
+        top: .5em;
+        bottom: .5em;
+    }
+    transform:translateY(100%);
+    z-index:-1;
+    opacity:0;
+    border:none;
+    background-color:$body-background-color;
+    &.tocHead-notTop,
+    &.tocHead-unpinned {
+        transform: translateY(0%);
+        border: 1px solid black;
+        opacity:1;
+    }
+    @include MQ(L) {
+        display: none;
+    }
+}
+div.toc-contents {
+    z-index:99;
+}
+
 @include MQ(L) {
     aside.toc {
         visibility: visible;
@@ -99,9 +117,6 @@ aside.toc {
             opacity: 1;
             transform: scale(1);
             z-index: 99;
-        }
-        header.toc-header {
-            display: none;
         }
         nav#TableOfContents {
             border-radius: 0em;
@@ -167,8 +182,8 @@ aside#toc.toc.headroom + #toggle-toc {
     padding: .3em;
     padding-bottom: .4em;
     padding-top: .1em;
-    width:2em;
-    height:2em;
+    width: 2em;
+    height: 2em;
     z-index: -1;
     color: $white;
     border-radius: 15%;
