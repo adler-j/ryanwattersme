@@ -14,4 +14,10 @@
     background-color: $body-background-color!important;
     padding-bottom: 2em;
     z-index:50;
+    noscript {
+        max-width:$content-max-width;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+    }
 }

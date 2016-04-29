@@ -64,7 +64,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugiat ducimus aliquid
 
 ## For the Ladies
 
-{{% tinder "Manjina" "3:13 AM" "2016-04-14" "5" "half" %}}
+{{% tinder "Manjina" "$strong-and-bold-default-weight3:13 AM" "2016-04-14" "5" "half" %}}
 <ul class="left">
   <li>Hi there!</li>
   <li>Hi, how are you?</li>
@@ -87,4 +87,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora rem officiis s
 
 
 
-[^1]: An assessment she will likely change once reading my unforgiving description of her in this blog post.
+[^1]: An assessment she will likely change once reading my unforgiving description of her in this article.

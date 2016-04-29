@@ -1,0 +1,172 @@
+blockquote {
+    width: 100%;
+    max-width: 100%;
+    padding-top:1.5em;
+    padding-bottom:1em;
+    margin: 0px;
+    position: relative;
+    background-color: $blockquote-background-color;
+    font-size:1.3em;
+    font-family: $blockquote-font-family;
+    p {
+        // padding-left: 2em;
+        display: block;
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: .25em;
+        font-style: $blockquote-font-style;
+        max-width: 80%;
+        color: $blockquote-font-color;
+        padding-bottom:1em;
+        &::before {
+            content: '';
+            border-left: 3px solid $blockquote-font-color;
+            position: absolute;
+            left: -.75em;
+            top: -.5em;
+            min-height: 100%;
+        }
+    }
+}
+
+@include MQ(M) {
+    blockquote {
+        min-width: 200%!important;
+        max-width: 200%!important;
+        left: -50%;
+        font-size: 1.6em;
+        p {
+            display: block;
+            width:80%;
+            max-width:calc(#{$M} * .9);
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @include MQ(L) {
+            min-width: 240%!important;
+            max-width: 240%!important;
+            left: -70%;
+            p {
+                padding-left: 0rem;
+                max-width: calc(#{$content-max-width} * 1.2);
+            }
+        }
+        @include MQ(XL){
+            min-width:300%!important;
+            max-width:300%!important;
+            left:-100%;
+        }
+    }
+}
+
+cite.blockquote-citation {
+    clear: both;
+    font-style: normal;
+    position:absolute;
+    right:0px;
+    bottom:0px;
+    min-width:100%;
+    margin-top:1.5em;
+    text-align: right;
+    text-transform: uppercase;
+    padding-left: 1em;
+    color: $blockquote-font-color!important;
+    font-size: .5em;
+    padding-left: 2em;
+    a {
+        color: $blockquote-font-color!important;
+        border-bottom: 1px solid $blockquote-font-color;
+        &:hover {
+            box-shadow: 0 -1.5em 0 $blockquote-font-color inset!important;
+            color: $blockquote-background-color!important;
+        }
+    }
+    @include MQ(M) {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 0px;
+    }
+}
+
+blockquote .tweet-quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 74px;
+    height: 26px;
+    margin-top: -13px;
+    margin-left: -36px;
+    transition: all 0.2s ease;
+}
+
+// blockquote {
+//     display: block;
+//     background: $blockquote-background-color;
+//     padding: 2em .5em 15px 2em;
+//     margin: 0 0 1em 0;
+//     position: relative;
+//     font-family: $blockquote-font-family;
+//     font-size: $blockquote-font-size;
+//     color: $base-font-color;
+//     border-left: 3px solid $blockquote-border-color;
+//     border-right: 1px solid $blockquote-border-color;
+//     p {
+//         line-height: 1.4;
+//         font-style: $blockquote-font-style;
+//     }
+// }
+// @include MQ(M){
+//     blockquote {
+//         min-width:120vw;
+//         left:calc(-100vw + 29em);
+//         p{
+//         width: $content-max-width;
+//         display:block;
+//         margin-left:auto;
+//         margin-right:auto;
+//         }
+//     }
+// }
+// blockquote::before {
+//     content: "\201C";
+//     font-family: Georgia, serif;
+//     font-size: 2.5em;
+//     font-weight: regular;
+//     color: $blockquote-border-color;
+//     position: absolute;
+//     left: 10px;
+//     top: 10px;
+// }
+// blockquote::after {
+//     /*Reset to make sure*/
+//     content: "";
+// }
+// blockquote {
+//     a {
+//         border-bottom: none;
+//         color: $base-font-color;
+//         font-weight: 600;
+//         font-size: .8em;
+//     }
+//     cite.blockquote-citation {
+//         display: block;
+//         width: 100%;
+//         clear: both;
+//         font-style: normal;
+//         text-align: left;
+//         margin-bottom: 0px;
+//         margin-bottom: .3em;
+//         padding-bottom: 0px;
+//         a {
+//             border-bottom: none;
+//             color: $base-font-color!important;
+//             font-weight: 600;
+//             font-size: .8em;
+//             &:hover {
+//                 color: $body-background-color!important;
+//             }
+//         }
+//     }
+// }

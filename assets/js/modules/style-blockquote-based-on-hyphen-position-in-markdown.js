@@ -16,7 +16,7 @@
       //newAuthorAttr === text after hyphen
       var newAuthorAttr = blockQuotes[i].innerHTML.split(' - ')[1];
       //fill blockquote paragraph with new content, but now with a <cite> wrapper around the author callout and the appropriate quotation dash.
-      blockQuotes[i].parentNode.innerHTML = '<p>' + newQuoteContent + '</p>' + '<cite class="blockquote-citation">&#x2015; ' + newAuthorAttr + '</cite>';
+      blockQuotes[i].parentNode.innerHTML = '<p>' + newQuoteContent + '<cite class="blockquote-citation">&#x2015; ' + newAuthorAttr + '</cite>' + '</p>';
     }
   }
 })();

@@ -18,6 +18,9 @@ aside.toc {
         visibility: visible;
         z-index: 100;
     }
+    div.toc-wrapper {
+        position:relative;
+    }
     h4.toc-title {
         color: $base-font-color;
         font-weight: bold;
@@ -70,7 +73,8 @@ aside.toc {
 header.toc-header {
     transition: all .3s ease-in-out;
     box-sizing: border-box;
-    border:1px solid black;
+    border: 1px solid black;
+    position:relative;
     padding: {
         top: .5em;
         bottom: .5em;
@@ -79,26 +83,39 @@ header.toc-header {
     }
     z-index:-1;
     transform:translateY(100%);
-    opacity:0;
-    height:0px;
-    background-color:darken($body-background-color,3%);
+    background-color:$toc-header-background-color;
     &.tocHead-notTop,
     &.tocHead-unpinned {
         transform: translateY(0%);
         z-index: 10;
-        opacity:1;
+        opacity: 1;
+        height: auto;
+    }
+}
+
+@include MQ(L) {
+    header.toc-header {
+        font-size: .8em;
+        border: none;
+        border-right: $toc-border-color-desktop-plus;
+        border-left: $toc-border-color-desktop-plus;
+        border-top: $toc-border-color-desktop-plus;
+        transform: scale(1);
+        visibility: visible;
+        z-index: 100;
         height:auto;
     }
-    @include MQ(L) {
+    .toc-subtitle {
         display: none;
     }
 }
 
 div.toc-contents {
     z-index: 9999;
+    position:relative;
     border: none;
     ul {
-        z-index:9999;
+        z-index: 9999;
     }
 }
 
@@ -116,34 +133,34 @@ div.toc-contents {
         right: 16px;
         min-width: 130px;
         max-width: 130px;
-        border-width: 0px;
         z-index: 100;
         opacity: 0;
         &.toc-notTop,
         &.toc-unpinned {
             opacity: 1;
             transform: scale(1);
-            z-index: 99;
         }
         nav#TableOfContents {
             border-radius: 0em;
-            border: $share-and-toc-border-color;
-            ;
-            background-color: rgba(255, 255, 255, 0.8);
+            border-right: $toc-border-color-desktop-plus;
+            border-left: $toc-border-color-desktop-plus;
+            border-bottom: $toc-border-color-desktop-plus;
+            background-color: $share-and-toc-background-color;
             margin-top: 0px;
             display: block;
-            min-width: 130px;
-            max-width: 130px;
-            padding: .75em;
+            min-width: 150px;
+            max-width: 150px;
+            padding: .25em .5em;
             height: auto;
             margin: 0px;
             ul {
                 display: block;
-                margin-left: 0px;
+                margin: 0px;
                 padding-left: 0px;
                 li {
                     min-height: 100%;
                     ul {
+                        margin-bottom:0px;
                         li {
                             font-size: .7em;
                             display: block;

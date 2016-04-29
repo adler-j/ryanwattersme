@@ -25,6 +25,12 @@
     box-shadow: 0px 0px 1px 0px rgba(51, 51, 51, 0.75);
 }
 
+h2,h3 {
+    + .ios-app {
+        margin-top:2em;
+    }
+}
+
 header.bumble-header,
 header.tinder-header {
     width: 100%;

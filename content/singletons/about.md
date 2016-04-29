@@ -18,39 +18,50 @@ My name is Ryan. I am a content strategist, editor, writer, and web publisher in
 
 For the record, this site is classier and cleaner than my apartment.
 
-A friend implored me to write a blog in 2007. It's 2016. Thank you for your patience.
-
 ## The Site
 
 ### Content
 
-All content for the site is written in [GitHub Flavored][] [markdown](https://daringfireball.net/projects/markdown/) that observes the latest [commonmark spec][] whenever possible. As a publisher, I want CMS-independent content that can be easily ported to any [static site generator]() with built-in support for `.md` files with embedded `yaml` front matter.
+All content is written in [GitHub Flavored][] [markdown](https://daringfireball.net/projects/markdown/) in observation of the latest [commonmark spec][] whenever possible. The aim of the content is to remain CMS independent so as to be easily ported to any [static site generator][] with built-in support for `.md` files with embedded `yaml` front matter.
 
-Where markdown falls short, extensions to the syntax are rendered on the client via a handful of [JavaScript functions][] on the client and [Hugo Shortcodes][].
+Where markdown falls short, the syntax is extended via a handful of [JavaScript functions][] on the client and [Hugo Shortcodes][] at build time.
 
 ### Development
 
-All code used for this site is open source and [hosted on GitHub][].
+All code used for this site is open source and [available on GitHub][].
 
-Here is the shortlist of build tools:
+Here is my shortlist of developer tools:
 
-* [Babel][] for ES6 transpilation
-* [Gulp][] for asset management and compiling static assets
-* [Hugo][] as a static site generator
+* [Gulp][]: compiling, concatenating, uglifying, and optimizing static assets; this includes [Babel][] for ES6 transpilation
+* [GitHub][]: version/source control
+* [Hugo][]: static site generation
+* [Wercker][]: automated deployments
+* [Amazon Simple Storage Service (S3)][]: hosting (static bucket)
+* [CloudFlare][]: content delivery (CDN), SSL, and reverse proxy
+* [Parse][]: NOSQL backend (article Kudos)
+* [Disqus][]: commenting
+* [Formspree][]: forms solution
 
 There are many moving parts in the development of this site. Suffice it to say that I built this site with [performance][] and [simplicity][] in mind.
 
+[Amazon Simple Storage Service (S3)]:https://aws.amazon.com/s3/
 [Babel]:https://babeljs.io/
+[CloudFlare]:https://www.cloudflare.com
 [commonmark spec]:http://spec.commonmark.org/
+[Disqus]:https://disqus.com/
+[Formspree]:http://formspree.io/
+[GitHub]:https://github.com
 [GitHub Flavored]:https://help.github.com/articles/basic-writing-and-formatting-syntax/
 [Gulp]:http://gulpjs.com/
-[hosted on GitHub]:https://www.github.com/rdwatters/ryanwattersme
+[available on GitHub]:https://www.github.com/rdwatters/ryanwattersme
 [Hugo]:http://gohugo.io/
 [Hugo Shortcodes]:http://gohugo.io/extras/shortcodes/
 [JavaScript Functions]:https://github.com/rdwatters/ryanwattersme/tree/master/assets/js/modules
+[parse]:https://www.parse.com
 [performance]:https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fryanwatters.io
 [simplicity]:/colophon/
 [static site generator]:https://www.staticgen.com/
+[wercker]:http://wercker.com/
 
 
 

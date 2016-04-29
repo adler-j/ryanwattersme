@@ -22,6 +22,7 @@ $heading-font-weight: 400;
 $form-input-font-family: $base-font-family;
 $site-header-font-family: $heading-font-family,Arial,Helvetic,sans-serif;
 $tags-font-family:$heading-font-family;
+$strong-and-bold-default-weight:500;
 
 //Sizing
 $base-line-height: 1.58;
@@ -30,7 +31,7 @@ $base-font-weight:400;
 // $site-menu-width: calc(100% + 16px);
 $site-menu-width: calc(100% + 16px);
 
-$content-max-width:29em;
+$content-max-width:29rem;
 
 //Color Palette
 
@@ -41,7 +42,11 @@ $h1-page-heading-font-color: #000000;
 $white:#ffffff;
 $red:#b30000;//rgba(179, 0, 0, 1)
 $orange:darken(orange,5%);
-$brand:#014a82;//rgba(1, 74, 130, 1)
+// $brand:#2A2C39;
+$brand:#282E54;
+
+
+// $brand:#014a82;//rgba(1, 74, 130, 1)
 
 
 
@@ -84,19 +89,23 @@ $top-bar-height: 2.2em;
 $top-bar-background-color:#000000;
 $top-bar-links-font-color:$white;
 $top-bar-bottom-border:0px solid #f0f0f0;
-// border-bottom: 1.5px solid #f0f0f0;
 $top-bar-opacity:1;
 
 //Blockquotes
 
 $blockquote-font-family: $base-font-family;
 $blockquote-border-color: $brand;
-$blockquote-background-color:darken($body-background-color,2%);
+$blockquote-background-color:$brand;
 $blockquote-font-size:1.2em;
 $blockquote-font-style:regular;
+$blockquote-font-color:$white;
 
 //Share and Table of Contents
-$share-and-toc-border-color:1px solid lighten($base-font-color,65%);
+// $share-and-toc-border-color:1px solid lighten($base-font-color,65%);
+$share-and-toc-border-color:none;
+$share-and-toc-background-color:$white;
+$toc-border-color-desktop-plus:1px solid lighten($base-font-color,65%);
+$toc-header-background-color:darken($body-background-color,5%);
 
 
 
@@ -116,6 +125,7 @@ $body-trans-time: .4s;
 //Anchors
 $anchor-color: $brand;
 $anchor-weight: bold;
+$anchor-weight-body-copy:500;
 $anchor-transition: all .3s ease-in-out;
 $anchor-hover-color: $base-font-color;
 $anchor-default-text-decoration: none;

@@ -21,6 +21,16 @@
     }
     @font-face {
         font-family: "#{$font}";
+        src: url("/assets/css/fonts/#{$font}/#{$font}-semibold-webfont.eot");
+        src: url("/assets/css/fonts/#{$font}/#{$font}-semibold-webfont.eot?#iefix") format("embedded-opentype"),
+        url("/assets/css/fonts/#{$font}/#{$font}-semibold-webfont.woff") format("woff"),
+        url("/assets/css/fonts/#{$font}/#{$font}-semibold-webfont.ttf") format("truetype"),
+        url("/assets/css/fonts/#{$font}/#{$font}-semibold-webfont.svg") format("svg");
+        font-weight: 500;
+        font-style: normal
+    }
+    @font-face {
+        font-family: "#{$font}";
         src: url("/assets/css/fonts/#{$font}/#{$font}-bold-webfont.eot");
         src: url("/assets/css/fonts/#{$font}/#{$font}-bold-webfont.eot?#iefix") format("embedded-opentype"),
         url("/assets/css/fonts/#{$font}/#{$font}-bold-webfont.woff") format("woff"),

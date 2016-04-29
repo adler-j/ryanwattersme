@@ -1,5 +1,5 @@
 {{$siteName := "ryanwatters.io" }}
-<div class="social-media-share-menu{{if .IsHome}} home{{end}} {{replace .Title "." ""|lower}}">
+<div class="social-media-share-menu{{if .IsHome}} home{{end}} {{replace .Title "." ""|urlize}}">
     <ul class="share-menu">
         <li><a class="facebook share" href="https://www.facebook.com/sharer/sharer.php?u={{.Permalink}}"><i class="icon-facebook"></i></a></li>
         <li><a href="https://twitter.com/home?status={{.Permalink}}" class="twitter share"><i class="icon-twitter"></i></a></li>

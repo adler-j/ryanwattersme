@@ -22,7 +22,7 @@ div.social-media-share-menu {
         transform-origin: bottom;
         // box-shadow: 0px 0px 5px 0px rgba(154, 154, 154, 0.5);
         // border:1px solid lighten($base-font-color,65%);
-        border:$share-and-toc-border-color;
+        border: $share-and-toc-border-color;
         transform: scale(0);
         background-color: $body-background-color;
         li {
@@ -32,7 +32,7 @@ div.social-media-share-menu {
             margin: 0px;
             margin-bottom: 10px;
             padding: 0px;
-            padding-right:6px;
+            padding-right: 6px;
             background-color: $body-background-color;
             a.share {
                 background-color: transparent;
@@ -58,8 +58,8 @@ div.social-media-share-menu {
             transform: scale(1);
             border: none;
             min-height: 100%;
-            border:1px solid lighten($base-font-color,65%);
-            padding-bottom:.1em;
+            border: 1px solid lighten($base-font-color, 65%);
+            padding-bottom: .1em;
         }
     }
     &.social-fixed.social-top {
@@ -129,11 +129,11 @@ div.social-media-share-menu {
 }
 
 @include MQ(L) {
-    div.social-media-share-menu:not(.home) {
+    div.social-media-share-menu {
         position: fixed;
-        left:2em;
-        left: 16px;
-        top: 200px;;
+        left: 2em;
+        left: 5vw;
+        top: 200px;
         width: 50px;
         height: 260px;
         display: block;
@@ -142,7 +142,7 @@ div.social-media-share-menu {
         border: none;
         ul.share-menu {
             display: flex;
-            background-color: $social-media-bar-and-kudos-background-color;
+            background-color: $share-and-toc-background-color;
             flex-direction: column;
             justify-content: center;
             margin-top: 0em;
@@ -154,7 +154,7 @@ div.social-media-share-menu {
                 display: list;
                 margin-bottom: .5em;
                 padding-bottom: 0px;
-                padding-left:0px;
+                padding-left: 0px;
                 width: 40px;
                 text-align: center;
                 border: none;
@@ -165,7 +165,7 @@ div.social-media-share-menu {
                     }
                     i.icon-facebook {
                         font-size: 22px;
-                        padding-right:4px;
+                        padding-right: 4px;
                     }
                 }
                 &.share-button {
@@ -212,7 +212,7 @@ div.kudos-block {
         position: fixed;
         background-color: transparent;
         transition: opacity .3s ease-in-out;
-        padding-right:0px;
+        padding-right: 0px;
         right: 16px;
         top: 60px;
         min-width: 130px;
@@ -229,8 +229,25 @@ div.kudos-block {
     @include MQ(XL) {
         min-width: 150px;
         max-width: 150px;
-        padding-right:.75em;
+        padding-right: .75em;
         right: 3vw;
+    }
+}
+
+@include MQ(L) {
+    div.kudos-block.colophon {
+        opacity: 1;
+        right:0px;
+    }
+    div.social-media-share-menu.home,
+    div.social-media-share-menu.colophon {
+        opacity: 1;
+    }
+    div.social-media-share-menu.colophon {
+        left: 10px;
+        @include MQ(XL) {
+            left: 2vw;
+        }
     }
 }
 
@@ -282,11 +299,12 @@ figure {
     display: block;
     position: relative;
     margin-right: auto;
-    margin-left:auto;
+    margin-left: auto;
     margin-top: 20px;
 }
 
 figure.kudo {
+    border:$share-and-toc-border-color;
     position: relative;
     margin-left: auto;
     margin-right: auto;
@@ -302,7 +320,7 @@ figure.kudo {
     user-select: none;
     z-index: 999;
     border-radius: 0%;
-    background-color: $social-media-bar-and-kudos-background-color;
+    background-color: $share-and-toc-background-color;
 }
 
 

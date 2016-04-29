@@ -12,6 +12,7 @@
 @import 'partials/fontello';
 @import 'partials/list-styles';
 @import 'partials/typography';
+@import 'partials/blockquotes.scss';
 @import 'partials/social-media';
 @import 'partials/share-menu-and-kudos';
 @import 'partials/bigfoot';
@@ -100,7 +101,7 @@ article#about a {
     cursor: pointer;
     text-decoration: none;
     box-shadow: 0 -1px 0 $brand inset;
-    font-weight: inherit;
+    font-weight: $anchor-weight-body-copy;
     padding-left: 2px;
     padding-right: 2px;
     margin-left: -2px;

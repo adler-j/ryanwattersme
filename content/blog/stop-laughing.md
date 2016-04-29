@@ -7,7 +7,7 @@ publishdate: 2016-03-18
 image: trump.jpg
 updated: 2016-03-18
 categories: [essays,content strategy]
-tags: [politics, two words]
+tags: [presidential election]
 include_comments: true
 ---
 
