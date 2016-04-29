@@ -7,8 +7,7 @@
         box-sizing: inherit;
     }
     width: 90%;
-    display: flex;
-    flex-direction: column;
+    display:block;
     @include MQ(M) {
         max-width: 25em;
     }
@@ -25,9 +24,10 @@
     box-shadow: 0px 0px 1px 0px rgba(51, 51, 51, 0.75);
 }
 
-h2,h3 {
+h2,
+h3 {
     + .ios-app {
-        margin-top:2em;
+        margin-top: 2em;
     }
 }
 
@@ -254,6 +254,37 @@ img.datingapp-image {
 
 .conversation-thread {
     font-size: 1em;
+    margin-bottom:.75em;
+    ul {
+        display: block;
+        list-style: none;
+        width: 100%;
+        margin: 0px;
+        padding: 0px;
+        li {
+            display: block;
+            width: auto;
+            max-width: 68%;
+            clear: both;
+            text-indent: 0px;
+            list-style: none;
+            margin: 0px;
+            font-size: 1em;
+            padding: .5em .75em;
+            position: relative;
+            margin-bottom: .5em;
+            line-height: 1.2;
+            vertical-align: middle;
+            &:nth-child(even) {
+                color: white;
+                float: right;
+                margin-right: 5%;
+            }
+        }
+    }
+}
+
+.conversation-thread {
     p {
         width: 100%;
         clear: both;
@@ -269,208 +300,224 @@ img.datingapp-image {
             font-size: .6em;
         }
     }
-    ul {
-        flex: 1;
-        list-style: none;
-        width: 100%;
-        margin: 0px;
-        padding: 0px;
-        li {
-            width: auto;
-            max-width: 68%;
-            text-indent: 0px;
-            list-style: none;
-            margin: 0px;
-            font-size: 1em;
-            padding: .5em .75em .5em .65em;
-            position: relative;
-            margin-bottom: .5em;
-            line-height: 1.2;
-            vertical-align: middle;
-            &:nth-child(even) {
-                color: white;
-                float: right;
-                clear: both;
-                margin-right: 5%;
-            }
-            &:nth-child(odd) {
-                color: black;
-                float: left;
-                clear: both;
-                margin-left: 14%;
-                @include MQ(M) {
-                    margin-left: 13%;
-                }
-                &:before {
-                    content: '';
-                    display: block;
-                    position: absolute;
-                    left: -2.7em;
-                    bottom: 0px;
-                    width: 2.3em;
-                    height: 2.3em;
-                    border-radius: 50%;
-                    background-size: contain;
-                    z-index: 99;
-                }
-            }
-        }
+}
+
+.conversation-thread > ul > li:nth-child(odd),
+.conversation-thread > ul.left > li:nth-child(even) {
+    color: black;
+    float: left;
+    clear: both;
+    margin-left: 14%;
+    @include MQ(M) {
+        margin-left: 13%;
     }
-    ul:not(:nth-of-type(1)) {
-        > li:nth-child(even),
-        > li:nth-child(odd) {
-            color: white;
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -2.7em;
+        bottom: 0px;
+        width: 2.3em;
+        height: 2.3em;
+        border-radius: 50%;
+        background-size: contain;
+        z-index: 99;
+    }
+}
+
+.bumble,
+.tinder {}
+
+.bumble ul.right,
+.tinder ul.right {
+    margin-right: 5%;
+    > li {
+        color: $white;
+        float: right;
+        clear: both;
+        margin-right: 0px;
+        &:before {
+            background-image: none;
+        }
+        &:nth-child(odd),
+        &:nth-child(even) {
+            color: $white;
             float: right;
             clear: both;
-            margin-right: 5%;
-            &:before {
-                background-image: none;
-            }
+            margin-right: 0px;
         }
     }
-    &.bumble {
-        ul {
-            li {
-                border-radius: 1em;
-                z-index: 99;
-                &:after {
-                    border-radius: 50% 50% 50% 50%;
-                    border-style: solid;
-                    border-width: 0 20px;
-                    bottom: 0;
-                    clip: rect(20px, 35px, 42px, 0px);
-                    content: " ";
-                    height: 40px;
-                    position: absolute;
-                    right: -46px;
-                    width: 30px;
-                    transform: rotateY(42deg);
-                    z-index: -1;
-                }
-                &:nth-child(even) {
-                    background-color: $bumble;
-                    padding-right: .5em;
-                    &:after {
-                        border-color: $bumble;
-                        z-index: -1;
-                    }
-                }
-                &:nth-child(odd) {
-                    border-color: $bumble-her-bg-color;
-                    background-color: $bumble-her-bg-color;
-                    padding-left: 1em;
-                    &:after {
-                        left: -46px;
-                        border-color: $bumble-her-bg-color;
-                        transform: rotateY(140deg);
-                    }
-                    &:before {
-                        content: '';
-                        display: block;
-                        position: absolute;
-                        left: -2.7em;
-                        bottom: 0px;
-                        width: 2.3em;
-                        height: 2.3em;
-                        border-radius: 50%;
-                        background-size: contain;
-                        z-index: -1;
-                    }
-                }
+}
+
+.bumble ul.left > li,
+.tinder ul.left > li {
+    color: black;
+    float: left;
+}
+
+.bumble {
+    ul {
+        li {
+            border-radius: 1em;
+            z-index: 99;
+            &:after {
+                border-radius: 50% 50% 50% 50%;
+                border-style: solid;
+                border-width: 0 20px;
+                bottom: 0;
+                clip: rect(20px, 35px, 42px, 0px);
+                content: " ";
+                height: 40px;
+                position: absolute;
+                right: -46px;
+                width: 30px;
+                transform: rotateY(42deg);
+                z-index: -1;
             }
-        }
-        ul:not(:nth-of-type(1)) {
-            > li:nth-child(even),
-            > li:nth-child(odd) {
-                float: right;
-                clear: both;
-                margin-right: 5%;
+            &:nth-child(even) {
                 background-color: $bumble;
-                z-index: 1;
-                padding-right: .9em;
                 &:after {
-                    border-radius: 50% 50% 50% 50%;
-                    border-style: solid;
-                    border-width: 0 20px;
-                    bottom: 0;
-                    clip-path: inset(20px, 35px, 42px, 0px);
-                    content: " ";
-                    height: 40px;
-                    position: absolute;
-                    right: -46px;
-                    width: 30px;
-                    transform: rotateY(42deg);
                     border-color: $bumble;
                     z-index: -1;
                 }
             }
-            > li:nth-child(odd) {
-                &:after {
-                    right: 0px;
-                    left: calc(100% - 24px);
-                    position: absolute;
-                    float: right;
-                }
-                &:before {
-                    width: 0px;
-                    height: 0px;
-                }
+        }
+    }
+    ul.right {
+        > li:nth-child(even),
+        > li:nth-child(odd) {
+            margin-right: 5%;
+            background-color: $bumble;
+            z-index: 1;
+            padding-right: .9em;
+            &:after {
+                border-radius: 50% 50% 50% 50%;
+                border-style: solid;
+                border-width: 0 20px;
+                bottom: 0;
+                clip-path: inset(20px, 35px, 42px, 0px);
+                content: " ";
+                height: 40px;
+                position: absolute;
+                right: -46px;
+                width: 30px;
+                transform: rotateY(42deg);
+                border-color: $bumble;
+                z-index: -1;
+            }
+        }
+        > li:nth-child(odd) {
+            &:after {
+                right: 0px;
+                left: calc(100% - 24px);
+                position: absolute;
+                float: right;
+            }
+            &:before {
+                width: 0px;
+                height: 0px;
             }
         }
     }
-    &.tinder {
-        ul {
-            li {
-                width: auto;
-                max-width: 68%;
-                border-radius: .65em;
-                &:after {
-                    content: '';
-                    width: 0;
-                    height: 0;
-                    position: absolute;
-                    bottom: -.4em;
-                    border-top: .5em solid transparent;
-                    border-bottom: .5em solid transparent;
-                    border-radius: 0% 0% 35% 0%;
-                }
-                &:nth-child(even) {
-                    background-color: $tinder;
-                    margin-right: 2%;
-                    &:after {
-                        right: 0px;
-                        border-right: .6em solid $tinder;
-                    }
-                }
-                &:nth-child(odd) {
-                    background-color: $tinder-her-bg-color;
-                    &:after {
-                        transform: rotateY(180deg);
-                        border-right: .6em solid $tinder-her-bg-color;
-                        left: 0px;
-                    }
-                }
+}
+
+.bumble ul > li:nth-child(odd),
+.bumble ul.left > li:nth-child(even) {
+    border-color: $bumble-her-bg-color;
+    background-color: $bumble-her-bg-color;
+    padding-left: 1em;
+    color: black;
+    margin-left: 13%;
+    &:after {
+        left: -46px;
+        border-color: $bumble-her-bg-color;
+        transform: rotateY(140deg);
+    }
+    &:before {
+        content: '';
+        display: block;
+        position: absolute;
+        left: -2.7em;
+        bottom: 0px;
+        width: 2.3em;
+        height: 2.3em;
+        border-radius: 50%;
+        background-size: contain;
+        z-index: -1;
+    }
+}
+
+.conversation-thread.tinder ul {
+    > li {
+        border-radius: .65em;
+        &:after {
+            content: '';
+            width: 0;
+            height: 0;
+            position: absolute;
+            bottom: -.4em;
+            border-top: .5em solid transparent;
+            border-bottom: .5em solid transparent;
+            border-radius: 0% 0% 35% 0%;
+        }
+        &:nth-child(even) {
+            background-color: $tinder;
+            margin-right: 2%;
+            &:after {
+                right: 0px;
+                border-right: .6em solid $tinder;
             }
         }
-        ul:not(:nth-of-type(1)) {
-            li:nth-child(even),
-            li:nth-child(odd) {
-                background-color: $tinder;
-                margin-right: 2%;
-                &:after {
-                    border: none;
-                }
-                &:before {
-                    background-image: none;
-                    border-color: $tinder;
-                }
+        &:nth-child(odd) {
+            background-color: $tinder-her-bg-color;
+            &:after {
+                transform: rotateY(180deg);
+                border-right: .6em solid $tinder-her-bg-color;
+                left: 0px;
             }
-            li:last-child {
-                &:after {
-                    border-top: .5em solid transparent;
-                    border-bottom: .5em solid transparent;
-                    border-right: .6em solid $tinder;
-                }
+        }
+    }
+    &.right {
+        li:nth-child(even),
+        li:nth-child(odd) {
+            background-color: $tinder;
+            margin-right: 2%;
+            &:after {
+                border: none;
+            }
+            &:before {
+                background-image: none;
+                border-color: $tinder;
+            }
+        }
+        li:last-child {
+            &:after {
+                border-top: .5em solid transparent;
+                border-bottom: .5em solid transparent;
+                border-right: .6em solid $tinder;
+            }
+        }
+    }
+    &.left {
+        li:nth-child(even),
+        li:nth-child(odd) {
+            background-color: $tinder-her-bg-color;
+            left: 0px;
+            margin-left: 13%;
+            &:before {
+                left: -2.7em;
+            }
+            &:after {
+                transform: rotateY(180deg);
+                border-right: 0px;
+                left: 0px;
+            }
+        }
+        li:last-child {
+            &:after {
+                transform: rotateY(180deg);
+                border-right: .6em solid $tinder-her-bg-color;
+                left: 0px;
             }
         }
     }

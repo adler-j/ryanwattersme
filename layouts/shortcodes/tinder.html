@@ -1,9 +1,14 @@
 <div class="ios-app">
 		{{$lowername := .Get 0 | lower }}
-		<style>
-				.conversation-thread.tinder.{{$lowername}} > ul.left li:nth-child(odd):before,.conversation-thread.tinder.{{$lowername}} > ul li:nth-child(odd):before{background-image: url(/assets/images/headshots/{{$lowername}}.jpg);bottom:-.25em;
-				}
-		</style>
+<style>
+        /*{background-image: url(/assets/images/headshots/{{$lowername}}.jpg);
+        }*/
+        .conversation-thread.tinder.{{$lowername}} > ul.split li:nth-child(odd):before,
+        .conversation-thread.tinder.{{$lowername}} > ul.left > li:before{background-image: url(/assets/images/headshots/{{$lowername}}.jpg)!important;
+            content:'';
+            background-size: contain;
+        }
+</style>
         <div class="app-icon tinder">
             <svg version="1.0" xmlns="http://www.w3.org/2000/svg" width="512.000000pt" height="512.000000pt" viewBox="0 0 512.000000 512.000000" preserveAspectRatio="xMidYMid meet" id="tinder-icon" style="stroke-width: 0px;">
                 <g transform="translate(0.000000,512.000000) scale(0.100000,-0.100000)" stroke="none">
@@ -69,8 +74,8 @@
         </div>
     </header>
     <div class="conversation-thread tinder {{$lowername}}">
-    	{{$matchDate := .Get 2}}
-    	<p class="tinder-match-date">YOU MATCHED WITH {{.Get 0 | upper}} ON {{$matchDate|dateFormat "1/2/2006" }}</p>
+
+    	<p class="tinder-match-date">YOU MATCHED WITH {{.Get 0 | upper}} ON {{.Get 2|dateFormat "1/2/2006" }}</p>
      {{.Inner}}
     </div>
     <div class="response-box-tinder">
