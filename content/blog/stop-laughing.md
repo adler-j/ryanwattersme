@@ -14,22 +14,6 @@ include_comments: true
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.
 
-{{% bumble "Jasmine" "3:13 AM" "2016-03-22" "4" "empty" %}}
-* Hi there. How is your weekend going so far?
-* My weekend is great thank you. How about your weekend?
-
-5 hours ago
-
-* Second list
-* Nope.
-
-1 hour ago
-
-* This is just a test entry.
-* This is not a real conversation.
-
-{{% /bumble %}}
-
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let's make a [link to Google](https://www.google.com).
 
 {{% code title="aTest" filepath="layouts/shortcodes/testing.html" %}}

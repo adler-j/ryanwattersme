@@ -43,6 +43,7 @@ p > code {
         @include MQ(M) {
             width:$content-max-width;
             margin-left: calc((100vw - 8em) / 2);
+            text-align:center;
         }
     }
     button.copy-button {

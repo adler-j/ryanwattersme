@@ -38,7 +38,7 @@ include_comments: true
 {{% bumble "Manjina" "3:13 AM" "2016-04-14" "5" "half" %}}
 <ul class="split">
   <li>Hi Ryan. How's your weekend shaping up?</li>
-  <li>I don't this is going to work, Manjina.</li>
+  <li>I don't think this is going to work, Manjina.</li>
   <li>It is because I have a bloody monkey skull where my genitalia should be?</li>
   <li>Your profile says you're a republican.</li>
 </ul>
