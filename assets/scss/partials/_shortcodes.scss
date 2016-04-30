@@ -7,7 +7,8 @@
         box-sizing: inherit;
     }
     width: 90%;
-    display:block;
+    display:flex;
+    flex-direction:column;
     @include MQ(M) {
         max-width: 25em;
     }
@@ -325,9 +326,6 @@ img.datingapp-image {
     }
 }
 
-.bumble,
-.tinder {}
-
 .bumble ul.right,
 .tinder ul.right {
     margin-right: 5%;
@@ -345,6 +343,7 @@ img.datingapp-image {
             float: right;
             clear: both;
             margin-right: 0px;
+            padding-left:.75em;
         }
     }
 }
