@@ -1,5 +1,5 @@
 ---
-title: Stop Laughing
+title: First Dummy Post
 subtitle: This is only a test subtitle for layout purposes.
 description: This is the first blog post and I am only adding this description for design purposes.
 date: 2016-03-18
@@ -11,17 +11,40 @@ tags: [presidential election]
 include_comments: true
 ---
 
+{{% assumptions %}}
+* Basic JavaScript proficiency
+* Familiarity with Golang templating
+* Beginner to intermediate knowledge of CSS and SASS (optional)
+{{% /assumptions %}}
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let's make a [link to Google](https://www.google.com).
 
-{{% code title="aTest" filepath="layouts/shortcodes/testing.html" %}}
+{{% code title="testing-named-params" filepath="static/js/script.js" %}}
 
 ```javascript
-function myFunction(){
-  console.log("This is a JavaScript snippet you can copy to your clipboard.");
+window.onload = myFunction;
+
+function myFunction(argument) {
+  console.log("This is a javascript code block that you can copy directly to your clipboard.");
+  return "hello";
 }
+```
+{{% /code %}}
+
+{{% code title="html-snipper" filepath="layouts/shortcodes/testing.html" %}}
+
+```html
+<section>
+  <header>
+    <h1>Article Title</h1>
+    <span class="subtitle">Article</span>
+  </header>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem assumenda tempora voluptatibus magnam, voluptatum iure, cupiditate molestiae ducimus voluptates eligendi delectus maiores esse. Cum ex soluta dolorum, debitis consequuntur dolore!</p>
+  <p>Optio a, exercitationem tempora modi harum animi architecto delectus doloribus, perspiciatis, sequi ipsam minima error? At odio corporis earum dolorem, amet repellendus. Maxime corporis, animi nostrum deleniti error. Ipsa, nesciunt!</p>
+</section>
 ```
 {{% /code %}}
 

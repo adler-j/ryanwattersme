@@ -42,7 +42,7 @@ Here is my shortlist of developer tools:
 * [Disqus][]: commenting
 * [Formspree][]: forms solution
 
-There are many moving parts in the development of this site. Suffice it to say that I built this site with [performance][] and [simplicity][] in mind.
+Suffice it to say that I built this site with [performance][] and [simplicity][] in mind.
 
 [Amazon Simple Storage Service (S3)]:https://aws.amazon.com/s3/
 [Babel]:https://babeljs.io/

@@ -100,6 +100,12 @@ $blockquote-font-size:1.2em;
 $blockquote-font-style:regular;
 $blockquote-font-color:$white;
 
+//Assumption Boxes for Tutorials
+
+$assumptions-header-background-color:$brand;
+$assumptions-header-font-color:$white;
+$assumptions-border-color:$brand;
+
 //Share and Table of Contents
 // $share-and-toc-border-color:1px solid lighten($base-font-color,65%);
 $share-and-toc-border-color:none;
@@ -129,3 +135,8 @@ $anchor-weight-body-copy:500;
 $anchor-transition: all .3s ease-in-out;
 $anchor-hover-color: $base-font-color;
 $anchor-default-text-decoration: none;
+
+//Code blocks
+// $code-block-background-color:darken($base-font-color,15%);
+$code-block-background-color:#272822;
+$code-block-base-font-color:$white;

@@ -1,93 +1,91 @@
 code,
 pre,
-.hljs {
+.hljs,
+.code-copy {
     font-family: $code-font-family;
-    font-size: .9em;
-}
-
-p > code {
-    color: $base-font-color;
 }
 
 .code-copy {
-    position: relative;
-    background-color: darken($body-background-color, 5%);
-    padding: .5em;
-    margin-bottom: 1em;
-    overflow-x:scroll;
+    display: block;
+    width: 100%;
     @include MQ(M) {
-        width: 100vw;
-        padding-left: 0px;
-        margin-left: calc((-100vw + #{$content-max-width}) / 2);
+        width: calc(100% + 60px);
+        margin-left: -30px;
+        overflow-x: visible;
     }
-    @include MQ(L){
-        overflow-x:hidden;
-    }
+    padding-left:15px;
+    color:$code-block-base-font-color;
+    background-color:$code-block-background-color;
     pre {
-        width: $content-max-width;
-        padding-left: 0px;
-        margin-left: 0px;
         position: relative;
-        @include MQ(M) {
-            margin-left: calc((100vw - 33em) / 2);
-        }
-    }
-    div.filepath {
-        width:100%;
-        padding-right:1em;
-        font-family: $heading-font-family;
-        font-size: 60%;
-        margin-bottom: .5em;
-        color: lighten($base-font-color, 20%);
-        text-align: right;
-        @include MQ(M) {
-            width:$content-max-width;
-            margin-left: calc((100vw - 8em) / 2);
-            text-align:center;
-        }
-    }
-    button.copy-button {
-        display: none;
-        @include MQ(M) {
-            display: block;
-        }
-        transition: all .3s ease-in-out;
-        position: absolute;
-        right: 4px;
-        top: 4px;
-        height: 30px;
-        // width:24px;
-        background-color: transparent;
-        border: 1px solid black;
-        outline: none;
-        border-radius: 3px;
-        padding: 2px;
-        img.clippy {
-            width: 26px;
-            height: 26px;
-            padding: {
-                top: 4px;
-                bottom: 4px;
+        margin-bottom: 1em;
+        padding: .5em;
+        code {
+            font-size:16px;
+            margin-bottom:1.5em;
+            @include MQ(M) {
+                font-size: .8em;
             }
-            margin:0px;
+            @include MQ(L){
+                font-size: .8em;
+            }
+        }
+        @include MQ(M){
+            // white-space: pre-wrap;
+        }
+    }
+    .filepath {
+        width:auto;
+        float:right;
+        clear:both;
+        font-size: 14px;
+        text-align: right;
+        background-color:#666666;
+        margin-bottom: 0px;
+        padding: .25em .5em 0em .5em;
+        + pre {
+            padding-top: 2.5em;
+            @include MQ(M){
+                padding-top:1.5em;
+            }
+            padding-bottom: .5em;
         }
     }
 }
 
-article {
-    pre {
-        padding: 0px;
-        margin: 0px;
-        background: darken($body-background-color, 5%);
-        //allows code blocks to wrap for responsive
-        white-space: pre-wrap;
-        clear: both;
-        margin-bottom: 1em;
-        code {
-            padding-left: 0px;
-            margin-left: 0px;
-            max-width: $content-max-width;
+button.copy-button {
+    display: none;
+    @include MQ(M) {
+        display: block;
+    }
+    transition: all .3s ease-in-out;
+    position: absolute;
+    right:.5em;
+    bottom: .5em;
+    height: 42px;
+    background-color: transparent;
+    border: 1px solid $white;
+    outline: none;
+    border-radius: 3px;
+    padding: 2px;
+    padding-bottom:1em;
+    img.clippy {
+        width: 24px;
+        height: 24px;
+        padding: {
+            top: 2px;
+            bottom: 2px;
+            left:6px;
         }
+        margin:0px;
+    }
+    span.copy-span {
+        color:$white;
+        margin-top:0px;
+        padding-top:0px;
+        padding-bottom:2px;
+        font-family:$heading-font-family;
+        font-weight:bold;
     }
 }
 
@@ -96,17 +94,14 @@ article {
 .hljs {
     display: block;
     overflow-x: auto;
-    font-size: .9em;
     font-weight: 400;
-    @include MQ(M) {
-        font-size: 1em;
-    }
+    color: #66d9ef;
 }
 
 .hljs,
 .hljs-tag,
 .hljs-subst {
-    color: $base-font-color
+    color: $white;
 }
 
 .hljs-strong,
@@ -127,7 +122,7 @@ article {
 .hljs-title,
 .hljs-section,
 .hljs-selector-class {
-    color: $orange;
+    color: #A6E22E;
 }
 
 .hljs-strong {
@@ -140,11 +135,17 @@ article {
 
 .hljs-keyword,
 .hljs-selector-tag,
-.hljs-name,
-.hljs-attr {
-    color: $brand;
+.hljs-name {
+    color: #F92672;
 }
 
+.hljs-attr {
+    color: #66d9ef;
+}
+
+// .hljs-function > .hljs-keyword{
+//     color: #66d9ef;
+// }
 .hljs-symbol,
 .hljs-attribute {
     color: #66d9ef;
@@ -152,10 +153,10 @@ article {
 
 .hljs-params,
 .hljs-class .hljs-title {
-    color: $base-font-color;
+    color: #FD971F;
+    font-weight:italic;
 }
 
-.hljs-string,
 .hljs-type,
 .hljs-built_in,
 .hljs-builtin-name,
@@ -165,13 +166,21 @@ article {
 .hljs-addition,
 .hljs-variable,
 .hljs-template-variable {
-    color: $red;
+    color: #66d9ef;
+}
+
+.hljs-string {
+    color: $white;
 }
 
 .hljs-comment,
 .hljs-deletion,
 .hljs-meta {
     color: $red;
+}
+
+.language-javascript.hljs {
+    color: #66d9ef;
 }
 
 .tooltipped {
@@ -183,19 +192,20 @@ article {
     z-index: 1000000;
     display: none;
     padding: 5px 8px;
-    font: normal normal 11px/1.5 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
-    color: #fff;
+    font: normal normal 14px/1.5 $heading-font-family, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
+    color: $white;
     text-align: center;
+    text-transform:uppercase;
     text-decoration: none;
     text-shadow: none;
-    text-transform: none;
     letter-spacing: normal;
     word-wrap: break-word;
     white-space: pre;
     pointer-events: none;
     content: attr(aria-label);
-    background: rgba(0, 0, 0, 0.8);
-    border-radius: 3px;
+    // background: rgba(0, 0, 0, 0.8);
+    background-color:$base-font-color;
+    border-radius: 0px;
     -webkit-font-smoothing: subpixel-antialiased
 }
 

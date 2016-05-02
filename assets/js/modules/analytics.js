@@ -1051,3 +1051,7 @@
 //         ga('send', 'pageview');
 //     }
 // })();
+// function myFunction(argument) {
+//   console.log("This is a javascript code block.");
+//   return "hello";
+// }

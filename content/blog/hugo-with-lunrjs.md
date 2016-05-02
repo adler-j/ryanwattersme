@@ -10,17 +10,15 @@ categories: [development]
 tags: [search,lunr.js,hugo]
 include_comments: true
 ---
-
 ## My First Heading
-
 
 My nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler [link to google][] epiphysitis **Platycodon** prosobranch hyperplane remap coronated branchiate.[^1] But here is *something in italics*.
 
 > Here is an example of a longer blockquote. Here is an example of a longer blockquote. - [Jon Doe][]
 
-## Second Section
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!
+
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae qui ipsa minus quod, tempora expedita rerum sed aliquid, natus obcaecati laudantium consequatur nesciunt minima perspiciatis repellendus provident nemo officia impedit.
 
 {{% fig "my-image.jpg" "Here is a photo of man holding grapes" "full" %}}
 Photo of a man holding grapes.

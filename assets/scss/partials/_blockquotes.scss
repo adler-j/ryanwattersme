@@ -4,12 +4,12 @@ blockquote {
     padding-top:1.5em;
     padding-bottom:1em;
     margin: 0px;
+    margin-bottom:1rem;
     position: relative;
     background-color: $blockquote-background-color;
     font-size:1.3em;
     font-family: $blockquote-font-family;
     p {
-        // padding-left: 2em;
         display: block;
         position: relative;
         margin-left: auto;
