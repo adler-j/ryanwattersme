@@ -8,7 +8,7 @@
     {{ partial "site_header/metadata_twitter.html" . }}
     {{ partial "site_header/metadata_prefetch.html" . }}
     {{ partial "site_header/metadata_favicons.html" . }}
-    <!-- site_style.html is configured for critical render path in config.toml-->
+    <!-- site_style.html is configured for critical render path in config.toml via UseCRP-->
     {{ partial "site_header/site_style.html" . }}
     {{ partial "site_header/swiftype.html" . }}
 </head>
@@ -18,4 +18,3 @@
     <header class="site-header">
         {{ partial "site_header/site_navigation.html" . }}
     </header>
-    {{ partial "site_header/site_search_form.html" . }}
