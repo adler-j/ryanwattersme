@@ -26,10 +26,11 @@ aside.toc {
         font-weight: bold;
         weight: 700;
         margin-bottom: 0px;
+        font-size:.85em;
     }
     div.toc-subtitle {
         font-family: $heading-font-family;
-        font-size: .8em;
+        font-size: .7em;
         line-height: 1.2;
         margin-bottom: 0px;
         // padding-left: 20px;
@@ -190,8 +191,8 @@ div.toc-contents {
 
 @include MQ(XL) {
     aside.toc {
-        min-width: 170px;
-        max-width: 170px;
+        min-width: 190px;
+        max-width: 190px;
         right: 3vw;
     }
 }
