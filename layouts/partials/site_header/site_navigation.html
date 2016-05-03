@@ -6,14 +6,16 @@
     <nav role="navigation" aria-label="main navigation" class="site-navigation">
         <div class="navblock left">
             <ul class="nav">
-                <li class="main-nav-item"><a href="#" id="categories-toggle">Blog</a>
+                <!-- <li class="main-nav-item"><a href="#" id="categories-toggle">Blog</a>
                     <ul class="blog-categories">
                         <li class="blog-category see-all"><a href="/blog">See All Posts</a></li>
                         {{ range $key, $taxonomy := .Site.Taxonomies.categories }}
                         <li class="blog-category"><a href="/categories/{{$key}}">{{replace $key "-" " "}}</a></li>
                         {{ end }}
                     </ul>
-                </li>
+                </li> -->
+                <li class="main-nav-item"><a href="/articles">Articles</a></li>
+                <li class="main-nav-item"><a href="/tutorials">Tutorials</a></li>
                 <li class="main-nav-item"><a href="/about">About</a></li>
                 <li class="main-nav-item"><a href="/contact">Contact</a></li>
                 <li class="main-nav-item colophon"><a href="/colophon">Colophon</a></li>

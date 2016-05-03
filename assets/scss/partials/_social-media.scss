@@ -24,3 +24,21 @@ $socialcolor in $socials {
         color: $socialcolor;
     }
 }
+
+
+// @each $social,
+// $socialcolor in $socials {
+//     a.#{$social}.share:hover {
+//         fill: $socialcolor;
+//         background-color: $socialcolor;
+//         color:$white;
+//     }
+// }
+// @each $social,
+// $socialcolor in $socials {
+//     a.#{$social}.share {
+//         fill: $socialcolor;
+//         background-color:$white;
+//         color: $socialcolor;
+//     }
+// }

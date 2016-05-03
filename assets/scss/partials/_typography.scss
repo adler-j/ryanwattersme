@@ -5,7 +5,7 @@ h1.title {
     font-weight: 600;
     line-height: 1;
     color: $h1-page-heading-font-color;
-    margin-left: -0.0325em;
+    // margin-left: -0.0325em;
     @include MQ(L) {
         font-size: 3.5em;
     }
@@ -22,7 +22,7 @@ h1.title {
             font-size: 3.8em;
         }
     }
-    &.blog {
+    &.articles {
         color: $white;
         text-transform: none;
     }
@@ -63,6 +63,7 @@ h1.title-list {
 h3 {
     font-size: 1.1em;
     color: lighten($base-font-color, 30%);
+    font-weight:600;
     padding-bottom: .1em;
     margin-bottom: .3em;
     text-transform: uppercase;
@@ -76,7 +77,7 @@ span.dropcap {
     text-shadow: $dropcap-box-shadow;
 }
 
-article.content.blog > div.content-wrapper > p:nth-child(2) > span.dropcap {
+article.content.articles > div.content-wrapper > p:not(:first-child) > span.dropcap {
     display: inline!important;
     position:relative!important;
     font-size: 1em!important;
@@ -92,11 +93,11 @@ article.content.blog > div.content-wrapper > p:nth-child(2) > span.dropcap {
     margin-top:0px!important;
     padding-top:0px!important;
 }
-article.content.blog > div.content-wrapper > p:nth-child(2) {
+article.content.articles > div.content-wrapper > p:not(:first-child) {
     margin-top:0px;
     padding-top:0px;
 }
-article.content.blog > div.content-wrapper > h2:nth-of-type(1) {
+article.content.articles > div.content-wrapper > h2:nth-of-type(1) {
     margin-top:.5em;
     margin-bottom:0px;
 }

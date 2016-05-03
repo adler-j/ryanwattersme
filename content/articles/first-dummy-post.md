@@ -11,12 +11,6 @@ tags: [presidential election]
 include_comments: true
 ---
 
-{{% assumptions %}}
-* Basic JavaScript proficiency
-* Familiarity with Golang templating
-* Beginner to intermediate knowledge of CSS and SASS (optional)
-{{% /assumptions %}}
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.
 

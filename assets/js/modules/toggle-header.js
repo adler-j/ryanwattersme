@@ -1,4 +1,3 @@
-<!--<script async>
 var headerToggle = document.getElementById('site-header-toggle');
 var headerCancel = document.getElementById('close-menu');
 var mainContent = document.querySelector('main');
@@ -38,16 +37,3 @@ function toggleHeader(event) {
     }
 
 }
-</script>-->
-{{ if .Site.Params.TawkTo }}
-{{ partial "site_footer/tawkto.html" . }}
-{{ end }}
-
-{{ if .Site.Params.IncludeJQ }}
-<script src="/assets/js/jquery-2.2.2.min.js"></script>
-{{ end }}
-<script src="/assets/js/main.min.js"></script>
-{{ if .IsPage }}
-<script src="/assets/js/headroom.min.js" async></script>
-<!-- <script src="/assets/js/kudosall.min.js" async defer></script> -->
-{{ end }}

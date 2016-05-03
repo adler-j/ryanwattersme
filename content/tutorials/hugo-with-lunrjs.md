@@ -6,11 +6,18 @@ date: 2016-03-20
 publishdate: 2016-03-20
 updated: 2016-03-20
 image: javascript.jpg
-categories: [development]
+categories: [Hugo]
 tags: [search,lunr.js,hugo]
 include_comments: true
 ---
-## My First Heading
+
+{{% assumptions %}}
+* Basic JavaScript proficiency
+* Familiarity with Golang templating
+* Beginner to intermediate knowledge of CSS and SASS (optional)
+{{% /assumptions %}}
+
+## Getting Started
 
 My nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler [link to google][] epiphysitis **Platycodon** prosobranch hyperplane remap coronated branchiate.[^1] But here is *something in italics*.
 
@@ -24,8 +31,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae qui ipsa min
 Photo of a man holding grapes.
 {{% /fig %}}
 
-## More Information
-
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
 
 ## Article Heading
@@ -34,7 +39,21 @@ Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mou
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.
 
-### Article Subheading That is Longer than the Heading
+Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
+
+Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.
+
+### A Normal Length Article Subheading
+
+Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
+
+Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.
+
+## Third Heading
+
+Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
+
+Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
 

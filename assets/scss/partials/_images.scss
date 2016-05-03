@@ -51,6 +51,7 @@ img {
         }
         p {
             margin: 0px;
+            text-align:center;
         }
         figcaption {
             width: 50%;
@@ -110,4 +111,9 @@ img {
             filter: grayscale(0%);
         }
     }
+}
+
+div.list-image {
+    width:200px;
+    height:100%;
 }

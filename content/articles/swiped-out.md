@@ -23,15 +23,11 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus placeat, quas
 </ul>
 <p>Time Stamp</p>
 <ul class="left">
-<li>Left side tinder list.</li>
-<li>Left side tinder list.</li>
-<li>Left side tinder list.</li>
-<li>Left side tinder list.</li>
+  <li>Left side tinder list.</li>
+  <li>Left side tinder list.</li>
 </ul>
 <p>Time Stamp</p>
 <ul class="right">
-  <li>Right side tinder list.</li>
-  <li>Right side tinder list.</li>
   <li>Right side tinder list.</li>
   <li>Right side tinder list.</li>
 </ul>

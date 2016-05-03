@@ -9,10 +9,4 @@ function toggleShare(event) {
     document.getElementById('share-button').classList.toggle('share-open');
 }
 
-var catToggle = document.querySelector('#categories-toggle');
-catToggle.onclick = showCategories;
 
-function showCategories() {
-	$('.blog-categories').slideToggle(200);
-	document.getElementById('categories-toggle').classList.toggle('categories-open');
-}

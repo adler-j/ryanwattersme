@@ -2,7 +2,18 @@
     <a href="/" class="site-logo">
         <i class="icon-rw-site-logo"></i>
     </a>
-    {{if eq .Section "blog"}}
+    {{$section := .Section}}
+    {{if eq $section "articles"}}
+        <section class="next-and-previous-links">
+            {{with .PrevInSection }}
+            <a href="{{.Permalink}}" class="prev-link" title="Read the previously published article, {{.Title}}"><i class="icon-previous"></i> Previous</a>
+            {{end}}
+            <a href="/{{.Section | urlize }}" class="section-title"><span>{{.Section|title}}</span></a>
+            {{with .NextInSection }}
+            <a href="{{.Permalink}}" class="next-link" title="Read the next published article, {{.Title}}."><i class="icon-next"></i> Next</a>
+            {{end}}
+        </section>
+    {{else if eq $section "tutorials" }}
         <section class="next-and-previous-links">
             {{with .PrevInSection }}
             <a href="{{.Permalink}}" class="prev-link" title="Read the previously published article, {{.Title}}"><i class="icon-previous"></i> Previous</a>

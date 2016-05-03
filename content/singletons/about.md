@@ -18,19 +18,19 @@ My name is Ryan. I am a content strategist, editor, writer, and web publisher in
 
 For the record, this site is classier and cleaner than my apartment.
 
-## The Site
-
-### Content
+## Site Content
 
 All content is written in [GitHub Flavored][] [markdown](https://daringfireball.net/projects/markdown/) in observation of the latest [commonmark spec][] whenever possible. The aim of the content is to remain CMS independent so as to be easily ported to any [static site generator][] with built-in support for `.md` files with embedded `yaml` front matter.
 
 Where markdown falls short, the syntax is extended via a handful of [JavaScript functions][] on the client and [Hugo Shortcodes][] at build time.
 
-### Development
+All content is licensed under a [Creative Commons Attribution 4.0 International License](http://creativecommons.org/licenses/by/4.0/).
 
-All code used for this site is open source and [available on GitHub][].
+<a href="http://creativecommons.org/licenses/by/4.0/" target="_blank" class="creative-commons"><img src="/assets/images/icons/cc-by.svg" class="cc-license-icon" alt="Creative Commons Attribution 4.0 License icon"></a>
 
-Here is my shortlist of developer tools:
+## Site Development
+
+Here is a shortlist of tools used in the development of this site:
 
 * [Gulp][]: compiling, concatenating, uglifying, and optimizing static assets; this includes [Babel][] for ES6 transpilation
 * [GitHub][]: version/source control

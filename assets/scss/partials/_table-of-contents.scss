@@ -130,9 +130,9 @@ div.toc-contents {
         height: auto;
         max-height: auto;
         top: 200px;
-        right: 16px;
-        min-width: 130px;
-        max-width: 130px;
+        right: .5em;
+        min-width: 140px;
+        max-width: 140px;
         z-index: 100;
         opacity: 0;
         &.toc-notTop,
@@ -148,8 +148,7 @@ div.toc-contents {
             background-color: $share-and-toc-background-color;
             margin-top: 0px;
             display: block;
-            min-width: 150px;
-            max-width: 150px;
+            width:100%;
             padding: .25em .5em;
             height: auto;
             margin: 0px;
@@ -157,14 +156,21 @@ div.toc-contents {
                 display: block;
                 margin: 0px;
                 padding-left: 0px;
+                width:100%;
                 li {
                     min-height: 100%;
+                    width:100%;
                     ul {
                         margin-bottom:0px;
                         li {
-                            font-size: .7em;
+                            font-size: .6em;
                             display: block;
                             height: auto;
+                            margin-bottom:.75em;
+                            line-height:1.1;
+                            @include MQ(XL) {
+                                font-size: .7em;
+                            }
                             a {
                                 color: $base-font-color;
                             }
@@ -184,8 +190,8 @@ div.toc-contents {
 
 @include MQ(XL) {
     aside.toc {
-        min-width: 150px;
-        max-width: 150px;
+        min-width: 170px;
+        max-width: 170px;
         right: 3vw;
     }
 }
@@ -197,7 +203,7 @@ aside#toc.toc.headroom + #toggle-toc {
 
 #toggle-toc {
     position: fixed;
-    background-color: #000000;
+    background-color: $toc-toggle-button-color;
     opacity: 0;
     bottom: 1.8em;
     right: 1em;
@@ -216,7 +222,8 @@ aside#toc.toc.headroom + #toggle-toc {
     &.tog-notTop,
     &.tog-unpinned {}
     &.open-toc {
-        color: #000000;
+        background-color:$toc-toggle-button-color-open;
+        color:$toc-toggle-button-color-open;
         &:after {
             content: '\e827';
             font-family: 'Fontello';

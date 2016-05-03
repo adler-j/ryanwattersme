@@ -15,6 +15,7 @@
 @import 'partials/blockquotes.scss';
 @import 'partials/social-media';
 @import 'partials/share-menu-and-kudos';
+// @import 'partials/share-menu-and-kudos-test';
 @import 'partials/bigfoot';
 @import 'partials/form';
 @import 'partials/homepage-styles';
@@ -63,11 +64,12 @@ article {
     &.homepage {
         min-height: 60vh;
         margin-top: 3.5em;
+        margin-right:-16px;
     }
     &.list,
     &.singleton {
         margin-top: 3.5em;
-        overflow:hidden;
+        overflow: hidden;
     }
 }
 
@@ -86,7 +88,7 @@ article {
     }
 }
 
-@include MQ(M){
+@include MQ(M) {
     .content-wrapper {
         overflow-x: visible;
     }
@@ -115,7 +117,7 @@ article#about a {
 }
 
 @include MQ(M) {
-    article.content.blog {
+    article.content.articles {
         margin-top: 100vh;
         padding-top: 2vh;
         margin-bottom: 0px;
@@ -123,7 +125,7 @@ article#about a {
     }
 }
 
-header.blog {
+header.articles {
     @include main-and-body-transition;
     position: relative;
     top: 0px;
@@ -165,19 +167,19 @@ header.blog {
         opacity: 1;
         background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
     }
-    &.blog-not-top {
+    &.articles-not-top {
         transition: all $blog-header-trans-time ease-in-out;
         &:before {
             opacity: .9;
         }
-        .header-content.blog {
+        .header-content.articles {
             &:before {
                 background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7));
             }
         }
         @include MQ(M) {
             opacity: .8;
-            .header-content.blog {
+            .header-content.articles {
                 background-image: none;
                 opacity: 1;
             }
@@ -189,7 +191,7 @@ header.blog {
     &.headroom.top.pinned {
         transition: opacity .3s ease-in-out;
     }
-    .header-content.blog {
+    .header-content.articles {
         transition: background-image $blog-header-trans-time ease-in-out;
         width: 90%;
         height: auto;
@@ -300,4 +302,22 @@ article time.publishdate {
 .fadeIn {
     -webkit-animation-name: fadeIn;
     animation-name: fadeIn
+}
+
+a.creative-commons {
+    margin-bottom:0px;
+    .cc-license-icon {
+        width: 40%;
+        max-width: 150px;
+        height: auto;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom:0px;
+        &:hover {
+            box-shadow: none!important;
+        }
+    }
+    &:hover {
+            box-shadow: none!important;
+    }
 }
