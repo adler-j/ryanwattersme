@@ -26,7 +26,7 @@ aside.toc {
         font-weight: bold;
         weight: 700;
         margin-bottom: 0px;
-        font-size:.85em;
+        font-size:1em;
     }
     div.toc-subtitle {
         font-family: $heading-font-family;
@@ -105,6 +105,9 @@ header.toc-header {
         visibility: visible;
         z-index: 100;
         height:auto;
+        h4.toc-title {
+            font-size:.8em;
+        }
     }
     .toc-subtitle {
         display: none;
@@ -164,14 +167,14 @@ div.toc-contents {
                     ul {
                         margin-bottom:0px;
                         li {
-                            font-size: .6em;
+                            font-size: .7em;
                             display: block;
                             height: auto;
                             margin-bottom:.75em;
                             line-height:1.1;
-                            @include MQ(XL) {
-                                font-size: .7em;
-                            }
+                            // @include MQ(XL) {
+                            //     font-size: .7em;
+                            // }
                             a {
                                 color: $base-font-color;
                             }
@@ -191,9 +194,12 @@ div.toc-contents {
 
 @include MQ(XL) {
     aside.toc {
-        min-width: 190px;
-        max-width: 190px;
+        min-width: 200px;
+        max-width: 200px;
         right: 5vw;
+        header.toc-header h4.toc-title {
+            font-size:1em;
+        }
     }
 }
 
