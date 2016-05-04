@@ -9,11 +9,13 @@
   @else if $canvas == L {
    @media only screen and (min-width: $L) { @content; }
   }
+  @else if $canvas == LL {
+   @media only screen and (min-width: $L) { @content; }
+  }
   @else if $canvas == XL {
     @media only screen and (min-width: $XL) { @content; }
   }
   @else if $canvas == retinaLandscape {
     @media only screen and (min-device-width : 375px)and (max-device-width : 667px)and (orientation : landscape) { @content;}
-
   }
 }

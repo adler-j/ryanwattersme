@@ -12,7 +12,10 @@ tags: [dating, technology]
 include_comments: true
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Delectus placeat, quasi sequi. Fugit sint, ullam iure reprehenderit a expedita voluptate sunt provident sequi voluptatibus quae eligendi nobis, ipsa velit porro.
+Eight ipsum dolor sit amet, consectetur adipisicing elit. Delectus placeat, quasi sequi. Fugit sint, ullam iure reprehenderit a expedita voluptate sunt provident sequi voluptatibus quae eligendi nobis, ipsa velit porro.
+
+{{< song "Where is my mind" "//dl.dropbox.com/s/effko7sdq9n0lpl/Where%20Is%20My%20Mind_.mp3">}}
+
 
 {{% tinder "Allryansexescombined" "3:13 AM" "1980-06-24" "3" "full" %}}
 <ul class="split">

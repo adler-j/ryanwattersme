@@ -132,8 +132,8 @@ div.toc-contents {
         max-height: auto;
         top: 200px;
         right: .5em;
-        min-width: 140px;
-        max-width: 140px;
+        min-width: 150px;
+        max-width: 150px;
         z-index: 100;
         opacity: 0;
         &.toc-notTop,
@@ -193,7 +193,7 @@ div.toc-contents {
     aside.toc {
         min-width: 190px;
         max-width: 190px;
-        right: 3vw;
+        right: 5vw;
     }
 }
 

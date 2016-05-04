@@ -4,6 +4,7 @@
 $M:668px;
 // Desktop
 $L:1025px;
+$LL: 1100px; //rarely if ever used
 // XL Screens
 $XL:1250px;
 
@@ -79,7 +80,7 @@ $blog-category-text-transform: capitalize;
 
 
 $dropcap-font-family:$heading-font-family;
-$dropcap-font-weight: 400;
+$dropcap-font-weight: 600;
 $dropcap-color:$base-font-color;
 // $dropcap-box-shadow:1px 1px 1px $base-font-color;
 $dropcap-box-shadow:none;
@@ -94,11 +95,11 @@ $top-bar-opacity:1;
 //Blockquotes
 
 $blockquote-font-family: $base-font-family;
-$blockquote-border-color: transparent;
+$blockquote-border-color: $brand;
 $blockquote-background-color:$body-background-color;
 $blockquote-font-size:1.1em;
 $blockquote-font-style:italic;
-$blockquote-font-color:lighten($base-font-color,15%);
+$blockquote-font-color:lighten($base-font-color,8%);
 
 //Assumption Boxes for Tutorials
 
@@ -113,14 +114,12 @@ $share-and-toc-background-color:$white;
 $toc-border-color-desktop-plus:1px solid lighten($base-font-color,65%);
 $toc-header-background-color:darken($body-background-color,5%);
 
-
-
 //Buttons
 $button-submit-background-color:$accent-color;
 $button-submit-text-color:$white;
 $button-border-radius:0px;
-$share-button-background-color:$brand;
-$toc-toggle-button-color: $brand;
+$share-button-background-color:#000000;
+$toc-toggle-button-color: #000000;
 $toc-toggle-button-color-open: #000000;
 $share-button-font-color:$white;
 $social-media-bar-and-kudos-background-color:rgba(255,255,255,0.7);
