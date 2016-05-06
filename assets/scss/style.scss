@@ -147,13 +147,6 @@ header.articles {
         height: calc(100vh - 3em);
         margin-top: 0px;
     }
-    // @include MQ(M) {
-    //     position: fixed;
-    //     top: 0px;
-    //     left: 0px;
-    //     right: 0px;
-    //     background-attachment: fixed;
-    // }
     &:before {
         transition: opacity $blog-header-trans-time ease-in-out;
         height: 100vh;

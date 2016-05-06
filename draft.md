@@ -2,8 +2,6 @@ Eight weeks ago, the day after she showed up at my apartment drunk enough to fal
 
 You can quell that tinge of empathy; this is the first time anything like this has ever happened. In fact, this was the first time a woman had broken up with *me* since 1999. My previous record should preempt your feelings of sadness entirely.
 
-
-
 In front of her was an empty plate. I wanted her to eat something before we talked, so I made some small, good things. Eggs. Cheese. Feeding her, I assumed, would make us both feel better.
 
 When there was nothing left on the plate but the weight of the , I started speaking for her. My time is valuable, I told her. I told her guilt and self-loathing were tenuous tethers. I deserve someone with better motivations.

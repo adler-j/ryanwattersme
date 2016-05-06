@@ -6,29 +6,17 @@ date: 2016-04-20
 publishdate: 2016-04-20
 updated: 2016-04-20
 image: tinder-smudge.jpg
-draft: true
+draft: false
 categories: [essays]
 tags: [dating, technology]
 include_comments: true
 ---
 
-Eight weeks ago, the day after she showed up at my apartment drunk enough to fall sleep with her shoes still on, I spoonfed an ICU nurse 7 years my junior the words she would need to break my heart.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iusto modi, voluptate enim reiciendis quasi dolorem provident iste ut aut reprehenderit dolore illo ducimus, placeat consequuntur repellendus porro accusantium libero.
 
-You can quell that tinge of empathy; this is the first time anything like this has ever happened. In fact, this was the first time a woman had broken up with *me* since 1999. My previous record should preempt your feelings of sadness entirely.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius asperiores placeat explicabo, aliquam natus animi sit eveniet deserunt consequatur incidunt temporibus ducimus ad distinctio doloremque commodi non, fuga quibusdam quis!
 
-In front of her was an empty plate. I wanted her to eat something before we talked, so I made some small, good things. Eggs. Cheese. Feeding her, I assumed, would make us both feel better.
-
-When there was nothing left on the plate but the weight of the , I started speaking for her. My time is valuable, I told her. I told her guilt and self-loathing were tenuous tethers. I deserve someone with better motivations.
-
-"Don't worry. I'll bounce back," I said.
-
-"I don't know what the fuck I'm doing. You're a *really* great guy." [^1]
-
-"You're off the hook," I said.
-
-And she was.
-
-And then I downloaded Tinder.
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, placeat provident aspernatur. Ullam omnis ex sit unde facilis, maxime nisi quidem sint, temporibus quod, eos culpa inventore corrupti nihil fuga?
 
 ## Love Me Tinder
 
