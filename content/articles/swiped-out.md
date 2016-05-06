@@ -20,7 +20,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, placeat prov
 
 ## Love Me Tinder
 
-{{% tinder "Allryansexescombined" "3:13 AM" "1980-06-24" "3" "Description of the above Tinder block." %}}
+{{% tinder "Allryansexescombined" "3:13 AM" "1980-06-24" "3" "empty" "Description of the above Tinder block." %}}
 <ul class="split">
   <li>Alternate list item</li>
   <li>Alternate list item</li>
@@ -45,13 +45,12 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero illum ad labore m
 
 ## I Got Blisters on Me Fingers
 
-{{% bumble "Manjina" "3:13 AM" "2016-04-14" "5" "Description of the above Bumble block." %}}
+{{% bumble "Manjina" "3:13 AM" "2016-04-14" "5" "full" "Description of the above Bumble block." %}}
 <ul class="split">
-  <li>Hi Ryan. How's your weekend shaping up?</li>
-  <li>I don't think this is going to work, Manjina.</li>
-  <li>Is it because I have a bloody monkey skull where my genitalia should be?</li>
-  <li>No. Your profile says "Trump 2016."</li>
-  <li>But he's going to make America great again!</li>
+  <li>Text message left</li>
+  <li>Text message right</li>
+  <li>Text message left. Text message left. Text message left.</li>
+  <li>Text message right. Text message right. Text message right.</li>
 </ul>
 
 {{% /bumble %}}
