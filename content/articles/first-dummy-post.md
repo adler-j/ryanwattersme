@@ -20,7 +20,9 @@ Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite tre
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!
 
-{{< video "vimeo" "122608965" >}}
+{{% video "vimeo" "122608965" %}}
+This is my Vimeo description right here.
+{{% /video %}}
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
 
@@ -30,7 +32,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cum vero, i
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
 
-{{< video "youtube" "JGNiafLl0iA" >}}
+{{% video "youtube" "JGNiafLl0iA" %}}{{% /video %}}
 
 ## First Heading
 
@@ -61,6 +63,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt necessitatibus ma
 ## Third Heading
 
 Apocrustic languidness dendrophil unindignant plethorical terephthalic benthon pumicer tourer xylenyl unbelief oniscoid imbased unpoetically Nahuatlac pili panicmonger brewster preoccupy satanist vertebrochondral palaeonemertine crummy lipocere.
+
+{{< song "Pixies" "Where is my mind?" "//dl.dropbox.com/s/effko7sdq9n0lpl/Where%20Is%20My%20Mind_.mp3">}}
 
 [^1]: Here is something different.
 [^2]: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Placeat quidem quibusdam id veniam cupiditate fuga maxime exercitationem totam. Labore distinctio vero nostrum quisquam, eos hic accusantium. Porro doloribus, repellat earum.

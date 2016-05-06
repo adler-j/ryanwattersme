@@ -1,3 +1,20 @@
 <div class="music-player">
-    <audio class="audio-player" id="{{.Get 0|urlize}}" controls="controls" src="{{.Get 1}}"></audio>
+    <!-- <div class="article-soundtrack">Theme Song</div> -->
+    <div class="audio-play-button ytp-button" aria-live="assertive" tabindex="32" aria-label="Pause">
+        <svg width="100%" height="100%" viewBox="0 0 36 36" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+                <path id="ytp-12" d="M11,10 L18,13.74 18,22.28 11,26 M18,13.74 L26,18 26,18 18,22.28">
+                    <animate id="animation" begin="indefinite" attributeType="XML" attributeName="d" fill="freeze" from="M11,10 L17,10 17,26 11,26 M20,10 L26,10 26,26 20,26" to="M11,10 L18,13.74 18,22.28 11,26 M18,13.74 L26,18 26,18 18,22.28" dur="0.1s" keySplines=".4 0 1 1" repeatCount="1"></animate>
+                </path>
+            </defs>
+            <use xlink:href="#ytp-12" class="ytp-svg-shadow"></use>
+            <use xlink:href="#ytp-12" class="ytp-svg-fill"></use>
+        </svg>
+    </div>
+    <div class="song-info">
+        <div class="song-artist">{{.Get 0}}</div>
+        <div class="song-title">{{.Get 1}}</div>
+    </div>
+    <!-- <button class="pause-song">Pause</button> -->
+    <audio class="audio-player" id="{{.Get 0|urlize}}" src="{{.Get 2}}" preload="none"></audio>
 </div>

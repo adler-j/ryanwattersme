@@ -1,7 +1,7 @@
 ---
 title: About
 subtitle:
-description: An overview of the reasoning behind the site, as well as the development and design specifications for ryanwatters.io.
+description: Here is some information about me, Ryan Watters, the sole developer, publisher, writer, and editor for ryanwatters.io.
 date: 2016-03-20
 publishdate: 2016-03-20
 updated: 2016-03-20
@@ -14,7 +14,9 @@ comments: First attempt at creating the About page for ryanwatters.io
 
 ## Me
 
-My name is Ryan. I am a content strategist, editor, writer, and web publisher in Chicago, IL.
+My name is Ryan. I am a content strategist, editor, writer, web publisher, nerd, Japanophile, inchoate front-end developer, and (arguably) the worst guitarist in Chicago, IL.
+
+I decided to build this blog 10 years after a friend implored me to do so. Thank you for your patience.
 
 For the record, this site is classier and cleaner than my apartment.
 

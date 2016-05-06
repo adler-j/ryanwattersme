@@ -1,8 +1,8 @@
 aside.toc {
     transition: all .3s ease-in-out;
     position: fixed;
-    bottom: 1.75em;
-    right: 1em;
+    bottom: 30px;
+    right: 20px;
     width: 75%;
     max-width: 400px;
     z-index: 99;
@@ -13,27 +13,34 @@ aside.toc {
     transform: scale(0);
     transform-origin: 100% 100%;
     z-index: 1;
+    a {
+        color: $base-font-color;
+    }
     &.open-toc {
         transform: scale(1);
         visibility: visible;
         z-index: 100;
+        a {
+            color: $base-font-color;
+        }
     }
     div.toc-wrapper {
-        position:relative;
+        position: relative;
     }
     h4.toc-title {
         color: $base-font-color;
         font-weight: bold;
         weight: 700;
         margin-bottom: 0px;
-        font-size:1em;
+        font-size: 1em;
     }
     div.toc-subtitle {
         font-family: $heading-font-family;
+        color: $base-font-color;
         font-size: .7em;
         line-height: 1.2;
         margin-bottom: 0px;
-        // padding-left: 20px;
+        color: $base-font-color;
     }
     nav#TableOfContents {
         background-color: black;
@@ -75,7 +82,7 @@ header.toc-header {
     transition: all .3s ease-in-out;
     box-sizing: border-box;
     border: 1px solid black;
-    position:relative;
+    position: relative;
     padding: {
         top: .5em;
         bottom: .5em;
@@ -104,9 +111,9 @@ header.toc-header {
         transform: scale(1);
         visibility: visible;
         z-index: 100;
-        height:auto;
+        height: auto;
         h4.toc-title {
-            font-size:.8em;
+            font-size: .8em;
         }
     }
     .toc-subtitle {
@@ -116,7 +123,7 @@ header.toc-header {
 
 div.toc-contents {
     z-index: 9999;
-    position:relative;
+    position: relative;
     border: none;
     ul {
         z-index: 9999;
@@ -152,7 +159,7 @@ div.toc-contents {
             background-color: $share-and-toc-background-color;
             margin-top: 0px;
             display: block;
-            width:100%;
+            width: 100%;
             padding: .25em .5em;
             height: auto;
             margin: 0px;
@@ -160,18 +167,18 @@ div.toc-contents {
                 display: block;
                 margin: 0px;
                 padding-left: 0px;
-                width:100%;
+                width: 100%;
                 li {
                     min-height: 100%;
-                    width:100%;
+                    width: 100%;
                     ul {
-                        margin-bottom:0px;
+                        margin-bottom: 0px;
                         li {
                             font-size: .7em;
                             display: block;
                             height: auto;
-                            margin-bottom:.75em;
-                            line-height:1.1;
+                            margin-bottom: .75em;
+                            line-height: 1.1;
                             // @include MQ(XL) {
                             //     font-size: .7em;
                             // }
@@ -198,7 +205,7 @@ div.toc-contents {
         max-width: 200px;
         right: 5vw;
         header.toc-header h4.toc-title {
-            font-size:1em;
+            font-size: 1em;
         }
     }
 }
@@ -212,8 +219,8 @@ aside#toc.toc.headroom + #toggle-toc {
     position: fixed;
     background-color: $toc-toggle-button-color;
     opacity: 0;
-    bottom: 1.8em;
-    right: 1em;
+    bottom: 30px;
+    right: 20px;
     line-height: 1.3em;
     display: flex;
     justify-content: center;
@@ -221,16 +228,16 @@ aside#toc.toc.headroom + #toggle-toc {
     padding: .3em;
     padding-bottom: .4em;
     padding-top: .1em;
-    width: 2em;
-    height: 2em;
+    width: 40px;
+    height: 40px;
     z-index: -1;
     color: $white;
-    border-radius: 15%;
+    border-radius: $toc-toggle-button-border-radius;
     &.tog-notTop,
     &.tog-unpinned {}
     &.open-toc {
-        background-color:$toc-toggle-button-color-open;
-        color:$toc-toggle-button-color-open;
+        background-color: $toc-toggle-button-color-open;
+        color: $toc-toggle-button-color-open;
         &:after {
             content: '\e827';
             font-family: 'Fontello';

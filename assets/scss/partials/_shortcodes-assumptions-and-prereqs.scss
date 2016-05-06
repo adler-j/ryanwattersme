@@ -1,42 +1,37 @@
 div.assumptions {
     border: 1px solid $assumptions-border-color;
     width: 100%;
-    // @include MQ(M) {
-    //     width: calc(100% + 60px);
-    //     margin-left: -30px;
-    //     padding-left: 30px;
-    // }
     padding-top: 0px;
     margin-top: 0px;
     height: auto;
     display: block;
+    cursor: pointer;
     > header {
         display: block;
         background-color: $assumptions-header-background-color;
         margin-top: 0px;
         margin-bottom: 0px;
         padding-top: 0px;
-        // @include MQ(M) {
-        //     margin-left: -30px;
-        //     padding-left: 30px;
-        // }
         transform: translateY(0%);
         h2 {
             color: $assumptions-header-font-color;
             padding-left: .5em;
             margin-top: 0px;
             font-size: 1.2em;
-            // @include MQ(M) {
-            //     padding-left: 0em;
-            // }
+            margin-bottom: 0px;
+            i.icon-next {
+                transition: transform .3s ease-in-out;
+                float: right;
+                margin-right: .25em;
+                &.open-assumptions {
+                    transform: rotate(90deg);
+                }
+            }
         }
     }
     ul {
-        padding: 0px;
-        margin-left: 1em;
-        // @include MQ(M) {
-        //     margin: 0px;
-        // }
+        display:none;
+        margin-left:1em;
         li {
             padding-left: 0px;
             margin-left: 0px;

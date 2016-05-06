@@ -1,0 +1,9 @@
+div.shortcode-description > p {
+    font-family:$heading-font-family;
+    text-align:center;
+    font-size:.9em;
+    margin-top:-.5em;
+    margin-bottom:.5em;
+    position:relative;
+    color:lighten($base-font-color,20%);
+}

@@ -1,5 +1,12 @@
 function scrollNav() {
-    $('.toc #TableOfContents a').click(function() {
+    var offTop;
+    var winWidth = document.outerWidth;
+    if (winWidth > 400) {
+        offTop = 60;
+    } else {
+        offTop = 35;
+    }
+    $('.toc a').click(function() {
         //Toggle Class
         $(".active").removeClass("active");
         $(this).closest('li').addClass("active");
@@ -7,10 +14,9 @@ function scrollNav() {
         $('.' + theClass).parent('li').addClass('active');
         //Animate
         $('html, body').stop().animate({
-            scrollTop: $($(this).attr('href')).offset().top - 60
+            scrollTop: $($(this).attr('href')).offset().top - offTop
         }, 400);
         return false;
     });
     $('.scrollTop a').scrollTop();
 }
-

@@ -6,6 +6,7 @@
 @import 'partials/base';
 @import 'partials/images';
 @import 'partials/video';
+@import 'partials/music-player';
 @import 'partials/site-header';
 @import 'partials/top-bar';
 @import 'partials/code-syntax-highlighting';
@@ -21,6 +22,7 @@
 @import 'partials/404';
 @import 'partials/colophon';
 @import 'partials/post-specific-styles';
+@import 'partials/shortcodes-general';
 @import 'partials/shortcodes-bumble-and-tinder';
 @import 'partials/shortcodes-assumptions-and-prereqs.scss';
 @import 'partials/site-footer';
@@ -115,14 +117,14 @@ article#about a {
     }
 }
 
-@include MQ(M) {
-    article.content.articles {
-        margin-top: 100vh;
-        padding-top: 2vh;
-        margin-bottom: 0px;
-        background-color: $body-background-color;
-    }
-}
+// @include MQ(M) {
+//     article.content.articles {
+//         margin-top: 100vh;
+//         padding-top: 2vh;
+//         margin-bottom: 0px;
+//         background-color: $body-background-color;
+//     }
+// }
 
 header.articles {
     @include main-and-body-transition;
@@ -145,13 +147,13 @@ header.articles {
         height: calc(100vh - 3em);
         margin-top: 0px;
     }
-    @include MQ(M) {
-        position: fixed;
-        top: 0px;
-        left: 0px;
-        right: 0px;
-        background-attachment: fixed;
-    }
+    // @include MQ(M) {
+    //     position: fixed;
+    //     top: 0px;
+    //     left: 0px;
+    //     right: 0px;
+    //     background-attachment: fixed;
+    // }
     &:before {
         transition: opacity $blog-header-trans-time ease-in-out;
         height: 100vh;

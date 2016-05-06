@@ -43,13 +43,7 @@ $h1-page-heading-font-color: #000000;
 $white:#ffffff;
 $red:#b30000;//rgba(179, 0, 0, 1)
 $orange:darken(orange,5%);
-// $brand:#2A2C39;
 $brand:#014A82;
-
-
-// $brand:#014a82;//rgba(1, 74, 130, 1)
-
-
 
 $gray: lighten($base-font-color,20%);
 $site-logo-color:$base-font-color;
@@ -121,6 +115,7 @@ $button-border-radius:0px;
 $share-button-background-color:#000000;
 $toc-toggle-button-color: #000000;
 $toc-toggle-button-color-open: #000000;
+$toc-toggle-button-border-radius:3px;
 $share-button-font-color:$white;
 $social-media-bar-and-kudos-background-color:rgba(255,255,255,0.7);
 

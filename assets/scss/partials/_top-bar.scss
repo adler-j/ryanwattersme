@@ -15,10 +15,12 @@
     &.open {
         transform: translateX(-100%);
     }
-    &.headroom-unpinned,&.headroom--not-top {
+    &.headroom-unpinned,
+    &.headroom--not-top {
         transform: translateY(-100%);
     }
-    &.headroom--pinned,&.headroom--bottom {
+    &.headroom--pinned,
+    &.headroom--bottom {
         transform: translateY(0%);
     }
 }
