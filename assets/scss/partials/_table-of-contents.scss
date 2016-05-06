@@ -174,14 +174,11 @@ div.toc-contents {
                     ul {
                         margin-bottom: 0px;
                         li {
-                            font-size: .7em;
+                            font-size: .8em;
                             display: block;
                             height: auto;
                             margin-bottom: .75em;
                             line-height: 1.1;
-                            // @include MQ(XL) {
-                            //     font-size: .7em;
-                            // }
                             a {
                                 color: $base-font-color;
                             }
@@ -203,7 +200,7 @@ div.toc-contents {
     aside.toc {
         min-width: 200px;
         max-width: 200px;
-        right: 5vw;
+        right: 3vw;
         header.toc-header h4.toc-title {
             font-size: 1em;
         }

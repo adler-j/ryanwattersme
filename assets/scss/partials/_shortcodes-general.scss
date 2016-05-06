@@ -7,3 +7,7 @@
     position:relative;
     color:lighten($base-font-color,20%);
 }
+
+.ios-app + .shortcode-description > p {
+	margin-top:-1em;
+}
