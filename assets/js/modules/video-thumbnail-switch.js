@@ -1,4 +1,6 @@
-$('.video-thumbnail').click(function() {
+$('.video-thumbnail,.icon-videoPlayButton').click(function() {
+    var clickedClass = $(this).attr('class');
+    console.log(clickedClass);
     var iframe = document.createElement('iframe');
     //assign theService to the provider added, but set to lower case to control for youtube, YouTube, etc.
     var theService = $(this).parent().attr('data-streaming').toLowerCase();
@@ -13,17 +15,22 @@ $('.video-thumbnail').click(function() {
     //The parameters for the video embed are set to show video controls but disallow related information at the video's end.
     iframe.setAttribute('frameborder', '0');
     iframe.setAttribute('class', 'video-iframe');
-    $(this).replaceWith(iframe);
+    if (clickedClass === "icon-videoPlayButton") {
+        $(this).parent().empty().append(iframe);
+    } else {
+        $(this).prev().remove();
+        $(this).replaceWith(iframe);
+    }
 });
 var vimObject = {};
-var getVimeoThumbnail = function(id,vidDiv) {
+var getVimeoThumbnail = function(id, vidDiv) {
     var imgUrl = "";
     $.ajax({
-        type:'GET',
+        type: 'GET',
         url: '//vimeo.com/api/v2/video/' + id + '.json',
         jsonp: 'callback',
         dataType: 'jsonp',
-        success: function(data){
+        success: function(data) {
             imgUrl = data[0].thumbnail_large;
             vidDiv.style.backgroundImage = "url(" + imgUrl + ")";
         }
@@ -33,9 +40,9 @@ var getVimeoThumbnail = function(id,vidDiv) {
 var allThumbs = document.querySelectorAll('.video-thumbnail');
 if (allThumbs.length > 0) {
     for (var i = 0; i < allThumbs.length; i++) {
-        if(allThumbs[i].dataset.isVimeo === "true"){
+        if (allThumbs[i].dataset.isVimeo === "true") {
             var vidId = allThumbs[i].dataset.videoid;
-            getVimeoThumbnail(vidId,allThumbs[i]);
+            getVimeoThumbnail(vidId, allThumbs[i]);
         }
     }
 }

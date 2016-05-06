@@ -8,6 +8,7 @@
     height: 0;
     clear: both;
     cursor: pointer;
+    margin-bottom:.25em;
     &:hover,
     &:active,
     &:focus {
@@ -22,6 +23,7 @@
     left: 0;
     width: 100%;
     height: 100%;
+    margin-bottom:1em;
 }
 
 .video-thumbnail {
@@ -43,8 +45,8 @@
     }
 }
 
-.icon-youtube-play.player-overlay {
-    font-family: "fontello";
+.icon-videoPlayButton {
+    // font-family: "fontello";
     position: absolute;
     font-size: 3.8em;
     left: 35%;

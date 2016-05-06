@@ -7,8 +7,7 @@
         <header>
             <h1 class="title homepage">こんにちは*</h1><sup class="foonote-ref homepage"><a rel="footnote" href="#fn:1">1</a></sup>
         </header>
-        <h3><strong><u>SITE IN DEVELOPMENT</u></strong></h3>
-        <p>Check back in mid May 2016 for essays and tutorials, the latter of which will focus on static site generators and front-end development.</p>
+        {{partial "homepage-temp-content.html" | print | markdownify }}
         <div class="footnotes">
         	<hr>
         	<ol>
@@ -16,5 +15,6 @@
         	</ol>
         </div>
     </article>
+
 </main>
 {{ partial "site_footer.html" . }}

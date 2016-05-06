@@ -56,26 +56,61 @@
 //     // body...
 // }
 //
-var flip = false,
-    pause = "M11,10 L18,13.74 18,22.28 11,26 M18,13.74 L26,18 26,18 18,22.28",
-    play = "M11,10 L17,10 17,26 11,26 M20,10 L26,10 26,26 20,26",
-    $animation = $('#animation'),
-    songPlaying = false;
+// var flip = false,
+//     pause = "M11,10 L18,13.74 18,22.28 11,26 M18,13.74 L26,18 26,18 18,22.28",
+//     play = "M11,10 L17,10 17,26 11,26 M20,10 L26,10 26,26 20,26",
+//     $animation = $('#animation'),
+//     songPlaying = false;
 
-$(".audio-play-button").on('click', function(evt) {
-    var theAudio = $(this).next().next();
-    $(this).toggleClass('toggled');
-    flip = !flip;
-    console.log(theAudio);
-    $animation.attr({
-        "from": flip ? pause : play,
-        "to": flip ? play : pause
-    }).get(0).beginElement();
-    if (songPlaying === false) {
-        theAudio[0].play();
-        songPlaying = true;
-    } else if (songPlaying === true) {
-        theAudio[0].pause();
-        songPlaying = false;
-    }
+// $(".audio-play-button").on('click', function(evt) {
+//     var theAudio = $(this).next().next();
+//     $(this).toggleClass('toggled');
+//     flip = !flip;
+//     console.log(theAudio);
+//     $animation.attr({
+//         "from": flip ? pause : play,
+//         "to": flip ? play : pause
+//     }).get(0).beginElement();
+//     if (songPlaying === false) {
+//         theAudio[0].play();
+//         songPlaying = true;
+//     } else if (songPlaying === true) {
+//         theAudio[0].pause();
+//         songPlaying = false;
+//     }
+// });
+$(function() {
+
+    /**
+     * Store the transition end event names for convenience.
+     */
+    var transitionEnd = 'transitionend webkitTransitionEnd oTransitionEnd MSTransitionEnd';
+
+    /**
+     * Trigger the play button states upon clicking.
+     */
+    $('.song-button').click(function(e) {
+
+        e.preventDefault();
+        console.log($(this).parent().next());
+
+        if ($(this).hasClass('stop')) {
+            $(this).parent().next()[0].pause();
+            $(this).removeClass('stop')
+                .addClass('to-play');
+        } else if (!$(this).hasClass('to-play')) {
+            $(this).parent().next()[0].play();
+            $(this).addClass('stop');
+        }
+    });
+
+    /**
+     * Remove the 'to-play' class upon transition end.
+     */
+    $(document).on(transitionEnd, '.to-play', function() {
+
+        $(this).removeClass('to-play');
+
+    });
+
 });

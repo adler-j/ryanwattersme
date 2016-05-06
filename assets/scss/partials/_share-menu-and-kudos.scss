@@ -4,7 +4,7 @@ div.social-media-share-menu {
     min-height: 40px;
     bottom: 30px;
     left: 20px;
-    z-index: 99;
+    z-index: 10;
     font-size: 1em;
     background-color: transparent;
     @include MQ(L){
@@ -141,7 +141,7 @@ div.kudos-block {
     background-color: $body-background-color;
     margin-top: -1em;
     padding-bottom: 1.5em;
-    z-index: 99;
+    z-index: 1;
     @include MQ(L) {
         position: fixed;
         background-color: transparent;

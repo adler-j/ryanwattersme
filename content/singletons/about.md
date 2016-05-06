@@ -52,7 +52,7 @@ Suffice it to say that I built this site with [performance][] and [simplicity][]
 [commonmark spec]:http://spec.commonmark.org/
 [Disqus]:https://disqus.com/
 [Formspree]:http://formspree.io/
-[GitHub]:https://github.com
+[GitHub]:https://github.com/rdwatters/ryanwattersme
 [GitHub Flavored]:https://help.github.com/articles/basic-writing-and-formatting-syntax/
 [Gulp]:http://gulpjs.com/
 [available on GitHub]:https://www.github.com/rdwatters/ryanwattersme

@@ -1,12 +1,12 @@
 ---
-title: First Dummy Post
-subtitle: This is only a test subtitle for layout purposes.
-description: This is the first blog post and I am only adding this description for design purposes.
+title: Time to Stop Laughing
+subtitle: Donald Trump's campaign has quickly gone from hilarious to horrifying.
+description: Donald Trump's campaign has quickly gone from hilarious to horrifying.
 date: 2016-03-18
 publishdate: 2016-03-18
 image: trump.jpg
 updated: 2016-03-18
-categories: [essays,content strategy]
+categories: [articles]
 tags: [presidential election]
 include_comments: true
 ---
