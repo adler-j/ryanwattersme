@@ -42,7 +42,7 @@ Here is a shortlist of tools used in the development of this site:
 * [CloudFlare][]: content delivery (CDN), SSL, and reverse proxy
 * [Parse][]: NOSQL backend (article Kudos)
 * [Disqus][]: commenting
-* [Formspree][]: forms solution
+* [Jotform][]: forms solution
 
 Suffice it to say that I built this site with [performance][] and [simplicity][] in mind.
 
@@ -51,7 +51,7 @@ Suffice it to say that I built this site with [performance][] and [simplicity][]
 [CloudFlare]:https://www.cloudflare.com
 [commonmark spec]:http://spec.commonmark.org/
 [Disqus]:https://disqus.com/
-[Formspree]:http://formspree.io/
+[Jotform]:http://www.jotform.com/
 [GitHub]:https://github.com/rdwatters/ryanwattersme
 [GitHub Flavored]:https://help.github.com/articles/basic-writing-and-formatting-syntax/
 [Gulp]:http://gulpjs.com/
