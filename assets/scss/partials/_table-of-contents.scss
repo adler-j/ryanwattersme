@@ -1,8 +1,8 @@
 aside.toc {
     transition: all .3s ease-in-out;
     position: fixed;
-    bottom: 30px;
-    right: 20px;
+    bottom: 20px;
+    right: 16px;
     width: 75%;
     max-width: 400px;
     z-index: 99;
@@ -33,6 +33,7 @@ aside.toc {
         weight: 700;
         margin-bottom: 0px;
         font-size: 1em;
+        line-height:1.2;
     }
     div.toc-subtitle {
         font-family: $heading-font-family;
@@ -112,9 +113,6 @@ header.toc-header {
         visibility: visible;
         z-index: 100;
         height: auto;
-        h4.toc-title {
-            font-size: .8em;
-        }
     }
     .toc-subtitle {
         display: none;
@@ -142,8 +140,8 @@ div.toc-contents {
         max-height: auto;
         top: 200px;
         right: .5em;
-        min-width: 150px;
-        max-width: 150px;
+        min-width: 180px;
+        max-width: 180px;
         z-index: 100;
         opacity: 0;
         &.toc-notTop,
@@ -198,12 +196,9 @@ div.toc-contents {
 
 @include MQ(XL) {
     aside.toc {
-        min-width: 200px;
-        max-width: 200px;
+        min-width: 210px;
+        max-width: 210px;
         right: 3vw;
-        header.toc-header h4.toc-title {
-            font-size: 1em;
-        }
     }
 }
 
@@ -216,8 +211,8 @@ aside#toc.toc.headroom + #toggle-toc {
     position: fixed;
     background-color: $toc-toggle-button-color;
     opacity: 0;
-    bottom: 30px;
-    right: 20px;
+    bottom: 20px;
+    right: 16px;
     line-height: 1.3em;
     display: flex;
     justify-content: center;

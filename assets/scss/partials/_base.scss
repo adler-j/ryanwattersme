@@ -39,15 +39,15 @@ html a {
 }
 
 body {
-    font-size: 75%;
+    font-size: 80%;
     @include MQ(M) {
-        font-size: 90%;
+        font-size: 100%;
     }
     // @include MQ(L) {
     //     font-size: 95%;
     // }
     @include MQ(XL) {
-        font-size: 100%;
+        font-size: 105%;
     }
     font-family: $base-font-family;
     background: $body-background-color;
