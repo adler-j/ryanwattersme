@@ -60,13 +60,14 @@ h1.title-list {
     font-size: 1.8em;
 }
 
+
 h3 {
-    font-size: 1.1em;
-    color: lighten($base-font-color, 30%);
-    font-weight:600;
+    font-size: $article-subheading-font-weight;
+    color: $article-subheading-font-color;
+    font-weight: $article-subheading-font-weight;
     padding-bottom: .1em;
     margin-bottom: .3em;
-    text-transform: uppercase;
+    text-transform: $article-subheading-text-transform;
 }
 
 span.dropcap {
@@ -80,23 +81,6 @@ span.dropcap {
     padding-bottom:0em!important;
 }
 
-// article.content.articles > div.content-wrapper > p:not(:first-child) > span.dropcap {
-//     display: inline!important;
-//     position:relative!important;
-//     font-size: 1em!important;
-//     color: $base-font-color!important;
-//     height:inherit!important;
-//     font-family:inherit!important;
-//     padding:auto!important;
-//     margin:auto!important;
-//     font-size:1em!important;
-//     float:none!important;
-//     line-height:1em!important;
-//     height:1em!important;
-//     margin-top:0px!important;
-//     padding-top:0px!important;
-//     font-weight:normal!important;
-// }
 article.content.articles > div.content-wrapper > p:not(:first-child) {
     margin-top:0px;
     padding-top:0px;

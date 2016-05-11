@@ -26,18 +26,16 @@ $tags-font-family:$heading-font-family;
 $strong-and-bold-default-weight:500;
 
 //Sizing
-$base-line-height: 1.58;
+$base-line-height: 1.5;
 $base-font-size: 22px;
 $base-font-weight:400;
 // $site-menu-width: calc(100% + 16px);
 $site-menu-width: calc(100% + 16px);
 
-$content-max-width:29rem;
+$content-max-width:30em;
 
 //Color Palette
 
-// $base-font-color:rgba(34,43,46,0.9);
-// $h1-page-heading-font-color: rgba(34,43,46,0.9);
 $base-font-color:#333333;
 $h1-page-heading-font-color: #000000;
 $white:#ffffff;
@@ -53,6 +51,12 @@ $site-header-background-color:darken($body-background-color,1%);
 $site-header-toggle-menu-color:$white;
 $site-logo-color:$white;
 $accent-color:$red;
+
+//Heading Structure - Content
+$article-subheading-text-transform: uppercase;
+$article-subheading-font-weight: 400;
+$article-subheading-font-weight: 1.1;
+$article-subheading-font-color: lighten($base-font-color, 25%);
 
 //Fake ios app colors
 $bumble:#F8C537;

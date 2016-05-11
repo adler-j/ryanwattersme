@@ -46,6 +46,8 @@ Here is a shortlist of tools used in the development of this site:
 
 Suffice it to say that I built this site with [performance][] and [simplicity][] in mind.
 
+All source code is available under [MIT license][]. You are free to shamelessly steal my design, layout, type treatment, templating, etc. I might add you have *excellent* taste.
+
 [Amazon Simple Storage Service (S3)]:https://aws.amazon.com/s3/
 [Babel]:https://babeljs.io/
 [CloudFlare]:https://www.cloudflare.com
@@ -59,6 +61,7 @@ Suffice it to say that I built this site with [performance][] and [simplicity][]
 [Hugo]:http://gohugo.io/
 [Hugo Shortcodes]:http://gohugo.io/extras/shortcodes/
 [JavaScript Functions]:https://github.com/rdwatters/ryanwattersme/tree/master/assets/js/modules
+[MIT License]:https://opensource.org/licenses/MIT
 [parse]:https://www.parse.com
 [performance]:https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fryanwatters.io
 [simplicity]:/colophon/
