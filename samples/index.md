@@ -1,10 +1,10 @@
 ---
 layout: samples
 permalink: /samples/
-title: Ryan Watters - CAP Samples Page
-addressing: Thank you so much for your time today, Monique, Suzan, and Dan 
+title: Ryan Watters - Professional Samples Page
+addressing: Ryan Watters, ELS
 comments: false
-publishdate: 2015-11-18
+publishdate: 2016-06-07
 alt_stylesheet: samples.min.css
 ---
 

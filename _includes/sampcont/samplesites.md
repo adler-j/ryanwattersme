@@ -2,7 +2,7 @@
 
 The following websites demonstrate my skills in front-end development (HTML5, CSS3, JavaScript), performance best practices, 508 compliance and accessibility, user experience, author experience, responsive and mobile-first design, content typing, content management strategy, social media integration, metadata strategy, content standardization, and content-first publishing.
 
-Effectively managing large amounts of digital content requires an understanding of the way computers work. Every content management system has its idiosyncrasies, but concepts borrowed from object-oriented programming (eg, inheritance, object properties and prototypes), structured data (eg, XML or HTML), and dynamically generated content (eg, templating filters, DBMS, CMS relationships) lend themselves exceptionally well to repurposing content, publishing on the web, and maintaining the integrity of intellectual property. 
+Effectively managing large amounts of digital content requires an understanding of the way computers work. Every content management system has its idiosyncrasies, but concepts borrowed from object-oriented programming (eg, inheritance, object properties and prototypes), structured data (eg, XML or HTML), and dynamically generated content (eg, templating filters, DBMS, CMS relationships) lend themselves exceptionally well to repurposing content, publishing on the web, and maintaining the integrity of intellectual property.
 
 [Ryanwatters.me](http://www.ryanwatters.me) is an exercise in building a website with an empty CMS. [Ryansportfol.io](https://ryansportfol.io) is the home of my future portfolio site. As of November 2015, the content for both sites is just dummy text. This is why they are *not* showcases for web design&mdash;content should dictate form. That said, articles are currently being drafted for [ryansportfol.io](https://ryansportfol.io). First publishing is scheduled for December 2015. Content will focus on web content strategy, front-end web development, asset management, open standards and metadata, and STM publishing.
 
@@ -15,8 +15,8 @@ Effectively managing large amounts of digital content requires an understanding 
     - Site IA allowed for the CMS to index article tagging and other metadata
     - All content types were developed from scratch and contain 1-to-1 and 1-to-many relationships in a simple author-centric writing environment
     ![First screenshot of content types in the Webhook CMS](/assets/images/samples/webhookcms-1.png)
-    ![Secont screenshot of content types in the Webhook CMS](/assets/images/samples/webhookcms-2.png)  
-* Social media and sharing: 
+    ![Secont screenshot of content types in the Webhook CMS](/assets/images/samples/webhookcms-2.png)
+* Social media and sharing:
     - [Open Graph Protocol](http://ogp.me/) (Facebook)
     - [Twitter Cards](https://dev.twitter.com/cards/)
     - [Pinterest](https://developers.pinterest.com)
@@ -66,8 +66,8 @@ Effectively managing large amounts of digital content requires an understanding 
 * Content management system (GUI): [Prose.io](http://www.prose.io)
 * Content typing and modeling (including complex relationships in the CMS)
     - All content types were developed from scratch using the built-in `collections` feature of the static-site generator
-    - Content type metadata is included in a `config.yml` for configuration of the [Prose.io GUI](http://www.prose.io) 
-* Social media and sharing: 
+    - Content type metadata is included in a `config.yml` for configuration of the [Prose.io GUI](http://www.prose.io)
+* Social media and sharing:
     - [Open Graph Protocol](http://ogp.me/)(Facebook)
 * Content-first publishing:
     - Content written in [markdown](https://daringfireball.net/projects/markdown/) files (ie, the format used by Ghost CMS, O'Reilly Atlas, and many others) for conversion to multiple file formats using [Pandoc](http://pandoc.org/)
