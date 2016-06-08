@@ -1,10 +1,10 @@
 ---
 title: Swiped Out
-subtitle: An intensive 8-week course on decision fatigue, self-commodification, and modern romantic cynicism.
-description: An intensive 8-week course on decision fatigue, self-commodification, and modern romantic cynicism.
-date: 2016-04-20
-publishdate: 2016-04-20
-updated: 2016-04-20
+subtitle: Testing design with pure CSS iOS dating app screenshots.
+description: Testing design with pure CSS iOS dating app screenshots.
+date: 2016-06-01
+publishdate: 2016-06-01
+updated: 2016-06-01
 image: tinder-smudge.jpg
 draft: false
 categories: [essays]
