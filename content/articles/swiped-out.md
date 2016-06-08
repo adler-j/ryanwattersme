@@ -53,7 +53,7 @@ Splenalgy mention retreatant dalesman histotrophy rickardite thermoperiod photot
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt porro provident tempora voluptatum saepe molestiae dicta, iste, necessitatibus nemo eius reprehenderit placeat tempore nisi laudantium id modi unde, deleniti esse.
 
-{{% bumble "Manjina" "3:13 AM" "2016-04-14" "5" "full" "Description of the above Bumble block." %}}
+{{% bumble "Sarah" "3:13 AM" "2016-04-14" "5" "full" "Description of the above Bumble block." %}}
 <ul class="split">
   <li>Text message left</li>
   <li>Text message right</li>
