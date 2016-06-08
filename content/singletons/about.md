@@ -14,11 +14,12 @@ comments: First attempt at creating the About page for ryanwatters.io
 
 ## Me
 
-My name is Ryan. I am a content strategist, editor, writer, web publisher, nerd, Japanophile, inchoate front-end developer, and (arguably) the worst guitarist in Chicago, IL.
+My name is Ryan. I am a content strategist, editor, writer, web publisher, nerd, Japanophile, inchoate front-end developer, and (arguably the worst[^1]) guitarist in Chicago, IL.
 
-I decided to build this blog 10 years after a friend implored me to do so. Thank you for your patience.
+A couple items of note, if I may:
 
-For the record, this site is classier and cleaner than my apartment.
+1. I decided to build this blog 10 years after a friend implored me to do so. Thank you for your patience.
+2. For the record, this site is classier and cleaner than my apartment.
 
 ## Site Content
 
@@ -46,7 +47,7 @@ Here is a shortlist of tools used in the development of this site:
 
 Suffice it to say that I built this site with [performance][] and [simplicity][] in mind.
 
-All source code is available under [MIT license][]. You are free to shamelessly steal my design, layout, type treatment, templating, etc. I might add you have *excellent* taste.
+All source code is available under [MIT license][]. You are free to shamelessly steal my design, layout, type treatment, templating, etc. If you do decide to steal code from this site, I should add that you have *excellent* taste.
 
 [Amazon Simple Storage Service (S3)]:https://aws.amazon.com/s3/
 [Babel]:https://babeljs.io/
@@ -67,6 +68,8 @@ All source code is available under [MIT license][]. You are free to shamelessly 
 [simplicity]:/colophon/
 [static site generator]:https://www.staticgen.com/
 [wercker]:http://wercker.com/
+
+[^1]: Seriously. I'm terrible.
 
 
 

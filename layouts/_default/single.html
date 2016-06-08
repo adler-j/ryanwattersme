@@ -35,4 +35,9 @@
     {{partial "disqus_comments.html" . }}
     </div>
 </main>
+<script>
+var previousLink = document.querySelector('a.prev-link') || "nada";
+var nextLink = document.querySelector('a.next-link') || undefined;
+console.log(previousLink);
+</script>
 {{ partial "site_footer.html" . }}

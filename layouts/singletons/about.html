@@ -1,8 +1,9 @@
 {{ partial "site_header.html" . }}
 <main role="main">
 	{{ partial "share_social_media.html" . }}
+
+<article class="singleton">
     <div class="content-wrapper">
-    <article class="singleton">
         <header>
         		<div class="about-image">
         			<img src="/assets/images/me.jpg" alt="" class="about-me">
@@ -10,9 +11,9 @@
             <h1 class="title">{{.Title}}</h1>
         </header>
         {{.Content}}
-    </article>
+    </div>
+</article>
     {{partial "parse.html" . }}
     {{partial "toc.html" . }}
-    </div>
 </main>
 {{ partial "site_footer.html" . }}

@@ -39,6 +39,8 @@ main.main {
     padding: 0px;
     min-height: 100%;
     overflow-x: hidden;
+    overflow-y:scroll;
+    -webkit-overflow-scrolling: touch;
     background-color: $body-background-color;
     &.open {
         transform: translateX(-100%);
@@ -116,15 +118,6 @@ article#about a {
         box-shadow: 0 -1.5em 0 $brand inset;
     }
 }
-
-// @include MQ(M) {
-//     article.content.articles {
-//         margin-top: 100vh;
-//         padding-top: 2vh;
-//         margin-bottom: 0px;
-//         background-color: $body-background-color;
-//     }
-// }
 
 header.articles {
     @include main-and-body-transition;
