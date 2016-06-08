@@ -1,13 +1,13 @@
 ---
-title: Time to Stop Laughing
-subtitle: Donald Trump's campaign has quickly gone from hilarious to horrifying.
-description: Donald Trump's campaign has quickly gone from hilarious to horrifying.
-date: 2016-03-18
-publishdate: 2016-03-18
+title: Random Trump Article for Layout Testing
+subtitle: This article should be ignored. Look for the first round of content in July 2016.
+description: This article should be ignored. Look for the first round of content in July 2016.
+date: 2016-05-18
+publishdate: 2016-05-18
 image: trump.jpg
-updated: 2016-03-18
+updated: 2016-05-18
 categories: [articles]
-tags: [presidential election]
+tags: [2016 election]
 include_comments: true
 ---
 
@@ -21,7 +21,7 @@ Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite tre
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!
 
 {{% video "vimeo" "122608965" %}}
-This is my Vimeo description right here.
+This is my Vimeo description.
 {{% /video %}}
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
