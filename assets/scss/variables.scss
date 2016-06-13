@@ -14,7 +14,6 @@ $include-third-font:true;
 $font: 'chaparralpro';
 $second-font: 'futurapt';
 $third-font: 'courierprime'; //code blocks
-$awsFonts: "//ryanwattersfonts.s3-website-us-east-1.amazonaws.com/";
 
 $base-font-family: $font, 'helvetica Neue', Helvetica, sans-serif;
 $heading-font-family: $second-font,"futura-pt",Georgia,serif;
@@ -53,6 +52,7 @@ $site-logo-color:$white;
 $accent-color:$red;
 
 //Heading Structure - Content
+$article-subtitle-text-transform: uppercase;
 $article-subheading-text-transform: uppercase;
 $article-subheading-font-weight: 400;
 $article-subheading-font-weight: 1.1;

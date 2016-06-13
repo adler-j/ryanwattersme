@@ -7,7 +7,7 @@ build:
       curdir=$(pwd)
       find ${curdir}/content \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.gif' \) -type f -exec mv -v -- {} ${curdir}/static/images/ \;
   - arjen/hugo-build:
-    version: "0.15"
+    version: "0.16"
     config: config.toml
     disable_pygments: true
   - script:

@@ -5,7 +5,6 @@ h1.title {
     font-weight: 600;
     line-height: 1;
     color: $h1-page-heading-font-color;
-    // margin-left: -0.0325em;
     @include MQ(L) {
         font-size: 3.5em;
     }
@@ -40,9 +39,12 @@ h1.title {
 
 .subtitle {
     font-size: .9em;
-    text-transform: uppercase;
+    text-transform: $article-subtitle-text-transform;
     margin-bottom: 1em;
     font-family: $heading-font-family;
+    code,pre {
+        text-transform:none;
+    }
 }
 
 h2,

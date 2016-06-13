@@ -1,14 +1,15 @@
 ---
 title: Hugo with lunr.js
-subtitle: Implementing live, full-text, client-side search as part of your HUGO build.
-description: Lorem ipsum dolor sit amet, consectetur adipisicing elit. Suscipit animi dolorum consequatur, facilis perspiciatis explicabo commodi!
-date: 2016-03-20
-publishdate: 2016-03-20
-updated: 2016-03-20
-image: javascript.jpg
-categories: [Hugo]
+subtitle: Offer live, client-side, full-text search for your statically generated Hugo website.
+description: ryanwatters.io is currently in development. Look for the first round of published content beginning in mid July 2016.
+date: 2016-04-28
+publishdate: 2016-04-28
+updated: 2016-04-28
+image: hugo-javascript.jpg
+categories: [dev testing]
 tags: [search,lunr.js,hugo]
-include_comments: true
+include_comments: false
+remove_kudos: true
 ---
 
 {{% assumptions %}}

@@ -12,4 +12,4 @@ categories: []
 comments: First attempt at creating the Contact page for ryanwatters.io
 ---
 
-If you have questions about the site, would like to share tips or feedback, or would like to discuss contract opportunities, please do not hesitate to contact me.
+If you have questions about the site, would like to discuss contract opportunities, or would like to request references and samples, please do not hesitate to contact me.

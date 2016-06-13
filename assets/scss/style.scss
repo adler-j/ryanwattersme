@@ -29,6 +29,7 @@
 @import 'partials/table-of-contents';
 @import 'partials/disqus';
 @import 'partials/print';
+@import 'partials/resume';
 main[role="main"],
 main.main {
     @include main-and-body-transition;

@@ -5,21 +5,18 @@
             <header>
                 <h1 class="title">{{.Title}}</h1>
             </header>
+            <div class="list-intro"><strong>
+            {{ $sectionTitle := .Title }}{{ index .Site.Data.sectioninfo $sectionTitle }}
+            </strong>
+            </div>
             <ul class="contents-list">
                 {{ range .Data.Pages }}
                 <li>
-                    <!-- <ul class="tags list">
-                        {{range .Params.tags }}
-                        <li class="tag list"><a href="/tags/{{.}}"></a>{{.}}</li><br>
-                        {{end}}
-                    </ul> -->
                     <a href="{{ .Permalink }}">
                         <section>
-                            <!-- <div class="list-image" style="background-image:url(/assets/images/{{.Params.image}}">
-                            </div> -->
                             <h1 class="title-list">{{.Title}}</h1>
                             <time class="list-publishdate" datetime="{{.PublishDate}}">{{dateFormat "Jan 2 2006" .PublishDate }}</time>
-                            <p>{{ .Description }}</p>
+                            <p>{{ .Description | markdownify }}</p>
                         </section>
                     </a>
                 </li>

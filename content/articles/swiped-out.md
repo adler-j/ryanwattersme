@@ -6,10 +6,11 @@ date: 2016-06-01
 publishdate: 2016-06-01
 updated: 2016-06-01
 image: tinder-smudge.jpg
-draft: false
-categories: [essays]
-tags: [dating, technology]
+draft: true
+categories: [dev testing]
+tags: [apps, technology]
 include_comments: true
+remove_kudos: true
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iusto modi, voluptate enim reiciendis quasi dolorem provident iste ut aut reprehenderit dolore illo ducimus, placeat consequuntur repellendus porro accusantium libero.
@@ -20,7 +21,7 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, placeat prov
 
 ## Love Me Tinder
 
-{{% tinder "Allryansexescombined" "3:13 AM" "1980-06-24" "3" "empty" "Description of the above Tinder block." %}}
+{{% tinder "Cindy" "3:13 AM" "1980-06-24" "3" "empty" "Description of the above iOS app screenshot." %}}
 <ul class="split">
   <li>Alternate list item</li>
   <li>Alternate list item</li>

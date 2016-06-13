@@ -1,3 +1,4 @@
+{{ if not .Params.remove_kudos }}
 <div class="kudos-block {{replace .Title "." "" | urlize}}">
     <figure class="kudo kudoable" data-id="1">
         <a class="kudobject">
@@ -11,3 +12,4 @@
         </a>
     </figure>
 </div>
+{{ end }}
