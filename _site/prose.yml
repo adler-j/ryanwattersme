@@ -1,0 +1,60 @@
+
+# # PROSE.IO SETTINGS
+
+# prose:
+#   siteurl: https://ryansportfol.io
+#   media: "/assets/images/"
+#   metadata:
+#     _articles:
+#       - name: "updated_date"
+#         field:
+#           element: "hidden"
+#           value: CURRENT_DATETIME
+#       - name: "title"
+#         field:
+#           element: "text"
+#           label: "Title"
+#           placeholder: "Enter the title of this article"
+#           value: ""
+#       - name: "description"
+#         field:
+#           element: "textarea"
+#           label: "Article Description"
+#           help: "Write a short description of this article. Try to keep it to less than 200 characters."
+#       - name: "publishdate"
+#         field:
+#           label: "When this article was published"
+#           element: "text"
+#           placeholder: "Enter as yyyy-mm-dd"
+#       - name: "published"
+#         field:
+#           element: "checkbox"
+#           label: "Publish now"
+#           help: "Keep this unchecked if you do not want to   publish the article right now"
+#           value: "true"
+#       - name: "layout"
+#         field: 
+#           element: "hidden"
+#           value: "article"
+#       - name: "main_image"
+#         field:
+#           element: "text"
+#           label: "Article image"
+#           value: "Full filename of the image you want to use"
+#       - name: "main_image_description"
+#         field:
+#           element: "text"
+#           label: "Article image description"
+#         value: "Write a descrption of the image used for the   article"
+#       - name: "comments"
+#         field:
+#           element: "checkbox"
+#           label: "Include comments?"
+#           value: "true"
+#       - name: "insearch"
+#         field:
+#           element: "checkbox"
+#           label: "Include in search?"
+#           value: "true"
+
+

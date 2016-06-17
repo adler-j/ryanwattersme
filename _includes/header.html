@@ -1,0 +1,44 @@
+<!-- Site header -->
+<header id="site-header">
+    <section id="site-title" class="site-title-container">
+        <a href="/" class="site-title" title="{{site.title}}">
+            {% include icons/site-logo.svg %}
+            <span>{{site.title}}</span>
+        </a>
+    </section>
+    <nav id="global-navigation" class="global-navigation" role="navigation">
+        <ul>
+            <li>
+                <a href="#" id="search-overlay-toggle" title="Search {{site.title}}" tabindex=1>
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="search-icon" x="0px" y="0px" viewBox="0 0 483.083 483.083" style="enable-background:new 0 0 483.083 483.083;" xml:space="preserve" class="detail convertSvgInline replaced-svg"><g><g><path d="M332.74,315.35c30.883-33.433,50.15-78.2,50.15-127.5C382.89,84.433,298.74,0,195.04,0S7.19,84.433,7.19,187.85    S91.34,375.7,195.04,375.7c42.217,0,81.033-13.883,112.483-37.4l139.683,139.683c3.4,3.4,7.65,5.1,11.9,5.1s8.783-1.7,11.9-5.1    c6.517-6.517,6.517-17.283,0-24.083L332.74,315.35z M41.19,187.85C41.19,103.133,110.04,34,195.04,34    c84.717,0,153.85,68.85,153.85,153.85S280.04,341.7,195.04,341.7S41.19,272.567,41.19,187.85z"></path></g></g></svg>
+                </a>
+            </li>
+            {% if page.url != '/'%}
+            {% assign activePage = page.url | remove_first: '/' | remove: "/index.html" | downcase %}
+            {% endif %}
+            {% assign tabInd = 2 %}
+            {% for link in site.main_navigation_links %}
+            <li><a href="{{site.baseurl}}/{{link.url}}" {% if link.url contains activePage or page.url contains link.url %}class="active"{% elsif link.url.size == nil and page.url == "/" %}class="active"{% endif %}tabindex={{tabInd}} >{{link.text}}</a></li>
+            {% assign tabInd = tabInd | plus: 1%}
+            {% endfor %}
+                        
+        </ul>    
+    </nav>
+    <form id="search-form" class="search-form">
+        <input type="search" name="q" class="search" id="tipue_search_input" aria-label="Search the {{ site.title }} website..."autocomplete="off" placeholder="Search this site..." required>
+        <a href="#" id="close-search">
+            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" id="close-icon" x="0px" y="0px" viewBox="0 0 27.965 27.965" xml:space="preserve">
+                <g>
+                    <g id="c142_x">
+                        <path d="M13.98,0C6.259,0,0,6.261,0,13.983c0,7.721,6.259,13.982,13.98,13.982c7.725,0,13.985-6.262,13.985-13.982    C27.965,6.261,21.705,0,13.98,0z M19.992,17.769l-2.227,2.224c0,0-3.523-3.78-3.786-3.78c-0.259,0-3.783,3.78-3.783,3.78    l-2.228-2.224c0,0,3.784-3.472,3.784-3.781c0-0.314-3.784-3.787-3.784-3.787l2.228-2.229c0,0,3.553,3.782,3.783,3.782    c0.232,0,3.786-3.782,3.786-3.782l2.227,2.229c0,0-3.785,3.523-3.785,3.787C16.207,14.239,19.992,17.769,19.992,17.769z"></path>
+                    </g>
+                    <g id="Capa_1_104_">
+                    </g>
+                </g>
+            </svg>
+        </a>
+        <div id="tipue_search_content">
+        </div>
+    </form>
+    <a href="#" id="mobile-toggle" class="mobile-toggle"><span></span></a>
+</header>

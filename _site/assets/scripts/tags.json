@@ -1,0 +1,575 @@
+{"siteContent": [
+
+	
+		
+			{"title": "Showing Murali My Single Sourcing Demo",
+				"image": "cap-logo.jpg",  
+					"url": "/articles/showing-murali/",
+					"tag": "javascript",
+					"description": "Write a <160 character description of your article here",
+					"date":"2016-01-22"
+			},
+		
+			{"title": "Showing Murali My Single Sourcing Demo",
+				"image": "cap-logo.jpg",  
+					"url": "/articles/showing-murali/",
+					"tag": "ssg",
+					"description": "Write a <160 character description of your article here",
+					"date":"2016-01-22"
+			},
+		
+			{"title": "Showing Murali My Single Sourcing Demo",
+				"image": "cap-logo.jpg",  
+					"url": "/articles/showing-murali/",
+					"tag": "hugo",
+					"description": "Write a <160 character description of your article here",
+					"date":"2016-01-22"
+			},
+		
+			{"title": "Showing Murali My Single Sourcing Demo",
+				"image": "cap-logo.jpg",  
+					"url": "/articles/showing-murali/",
+					"tag": "github",
+					"description": "Write a <160 character description of your article here",
+					"date":"2016-01-22"
+			},
+		
+	
+
+	
+		
+			{"title": "Comparison of Publishing CMSs",
+				"image": "guy_holding_camera.jpeg",  
+					"url": "/articles/comparison-of-publishing-cms/",
+					"tag": "javascript",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2016-01-01"
+			},
+		
+			{"title": "Comparison of Publishing CMSs",
+				"image": "guy_holding_camera.jpeg",  
+					"url": "/articles/comparison-of-publishing-cms/",
+					"tag": "jekyll",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2016-01-01"
+			},
+		
+			{"title": "Comparison of Publishing CMSs",
+				"image": "guy_holding_camera.jpeg",  
+					"url": "/articles/comparison-of-publishing-cms/",
+					"tag": "static",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2016-01-01"
+			},
+		
+	
+
+	
+		
+			{"title": "How to Develop Content Models",
+				"image": "shoes_on_the_beach.jpeg",  
+					"url": "/articles/how-to-develop-content-models/",
+					"tag": "javascript",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-01"
+			},
+		
+			{"title": "How to Develop Content Models",
+				"image": "shoes_on_the_beach.jpeg",  
+					"url": "/articles/how-to-develop-content-models/",
+					"tag": "jekyll",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-01"
+			},
+		
+			{"title": "How to Develop Content Models",
+				"image": "shoes_on_the_beach.jpeg",  
+					"url": "/articles/how-to-develop-content-models/",
+					"tag": "setup",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-01"
+			},
+		
+	
+
+	
+		
+			{"title": "The Importance of Core Modeling",
+				"image": "glowing_macbook_on_bed.jpeg",  
+					"url": "/articles/importance-of-core-modeling/",
+					"tag": "core-modeling",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-12"
+			},
+		
+			{"title": "The Importance of Core Modeling",
+				"image": "glowing_macbook_on_bed.jpeg",  
+					"url": "/articles/importance-of-core-modeling/",
+					"tag": "content-typing",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-12"
+			},
+		
+			{"title": "The Importance of Core Modeling",
+				"image": "glowing_macbook_on_bed.jpeg",  
+					"url": "/articles/importance-of-core-modeling/",
+					"tag": "project-management",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-12"
+			},
+		
+	
+
+	
+		
+	
+
+	
+		
+			{"title": "Introduction to Content Strategy",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/intro-to-content-strategy/",
+					"tag": "food",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-14"
+			},
+		
+			{"title": "Introduction to Content Strategy",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/intro-to-content-strategy/",
+					"tag": "travel",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-14"
+			},
+		
+			{"title": "Introduction to Content Strategy",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/intro-to-content-strategy/",
+					"tag": "japan",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-14"
+			},
+		
+			{"title": "Introduction to Content Strategy",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/intro-to-content-strategy/",
+					"tag": "awesome",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-14"
+			},
+		
+			{"title": "Introduction to Content Strategy",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/intro-to-content-strategy/",
+					"tag": "javascript",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2015-09-14"
+			},
+		
+	
+
+	
+		
+			{"title": "Markdown and Content-First Publishing",
+				"image": "hands_full_of_grapes.jpeg",  
+					"url": "/articles/markdown-and-content-first-publishing/",
+					"tag": "japan",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-07"
+			},
+		
+			{"title": "Markdown and Content-First Publishing",
+				"image": "hands_full_of_grapes.jpeg",  
+					"url": "/articles/markdown-and-content-first-publishing/",
+					"tag": "github",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-07"
+			},
+		
+			{"title": "Markdown and Content-First Publishing",
+				"image": "hands_full_of_grapes.jpeg",  
+					"url": "/articles/markdown-and-content-first-publishing/",
+					"tag": "javascript",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque veritatis maxime optio. Ceilingward...",
+					"date":"2015-09-07"
+			},
+		
+	
+
+	
+		
+			{"title": "Metadata for Web Publishing",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/metadata-for-web-publishing/",
+					"tag": "web-publishing",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2016-01-20"
+			},
+		
+			{"title": "Metadata for Web Publishing",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/metadata-for-web-publishing/",
+					"tag": "metadata",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2016-01-20"
+			},
+		
+			{"title": "Metadata for Web Publishing",
+				"image": "speedometer_old_car.jpeg",  
+					"url": "/articles/metadata-for-web-publishing/",
+					"tag": "github",
+					"description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum natus, placeat pariatur quibusdam modi officia doloremque lorem ipsum dolor.",
+					"date":"2016-01-20"
+			},
+		
+	
+
+
+	
+		
+			{"title": "Command Line Basics Part 1",
+			 "image": "/icons/command-line-icon.svg",
+			 "url": "/tutorials/commandline-01/",
+			 "tag": "bash",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Command line",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Command Line Basics Part 1",
+			 "image": "/icons/command-line-icon.svg",
+			 "url": "/tutorials/commandline-01/",
+			 "tag": "command-line",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Command line",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Command Line Basics Part 1",
+			 "image": "/icons/command-line-icon.svg",
+			 "url": "/tutorials/commandline-01/",
+			 "tag": "scripting",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Command line",
+			 "date":"2015-09-01"
+			},
+		
+	
+
+	
+		
+			{"title": "Using Viewport Measurements in CSS",
+			 "image": "/icons/css-icon.svg",
+			 "url": "/tutorials/css-01/",
+			 "tag": "ruby",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Css",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Using Viewport Measurements in CSS",
+			 "image": "/icons/css-icon.svg",
+			 "url": "/tutorials/css-01/",
+			 "tag": "matsumoto",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Css",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Using Viewport Measurements in CSS",
+			 "image": "/icons/css-icon.svg",
+			 "url": "/tutorials/css-01/",
+			 "tag": "object-oriented",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Css",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Using Viewport Measurements in CSS",
+			 "image": "/icons/css-icon.svg",
+			 "url": "/tutorials/css-01/",
+			 "tag": "scripting",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Css",
+			 "date":"2015-09-01"
+			},
+		
+	
+
+	
+		
+			{"title": "Git & GitHub Basics",
+			 "image": "/icons/git-and-github-icon.svg",
+			 "url": "/tutorials/git-and-github/",
+			 "tag": "git",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Git and github",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Git & GitHub Basics",
+			 "image": "/icons/git-and-github-icon.svg",
+			 "url": "/tutorials/git-and-github/",
+			 "tag": "github",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Git and github",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Git & GitHub Basics",
+			 "image": "/icons/git-and-github-icon.svg",
+			 "url": "/tutorials/git-and-github/",
+			 "tag": "version-control",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Git and github",
+			 "date":"2015-09-01"
+			},
+		
+	
+
+	
+		
+	
+
+	
+		
+			{"title": "Javascript Basics Part 1",
+			 "image": "/icons/javascript-icon.svg",
+			 "url": "/tutorials/javascript-01/",
+			 "tag": "javascript",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Javascript",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Javascript Basics Part 1",
+			 "image": "/icons/javascript-icon.svg",
+			 "url": "/tutorials/javascript-01/",
+			 "tag": "osx",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Javascript",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Javascript Basics Part 1",
+			 "image": "/icons/javascript-icon.svg",
+			 "url": "/tutorials/javascript-01/",
+			 "tag": "command-line",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Javascript",
+			 "date":"2015-09-01"
+			},
+		
+	
+
+	
+		
+			{"title": "Javascript Basics Part 2",
+			 "image": "/icons/javascript-icon.svg",
+			 "url": "/tutorials/javascript-02/",
+			 "tag": "javascript",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Javascript",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Javascript Basics Part 2",
+			 "image": "/icons/javascript-icon.svg",
+			 "url": "/tutorials/javascript-02/",
+			 "tag": "osx",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Javascript",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Javascript Basics Part 2",
+			 "image": "/icons/javascript-icon.svg",
+			 "url": "/tutorials/javascript-02/",
+			 "tag": "command-line",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Javascript",
+			 "date":"2015-09-01"
+			},
+		
+	
+
+	
+		
+			{"title": "Set Up Your Dev Environment",
+			 "image": "/icons/jekyll-icon.svg",
+			 "url": "/tutorials/jekyll-01/",
+			 "tag": "sublime-text",
+			 "description": "We'll start this tutorials on Jekyll by turning your Mac into a development machine for statically generated sites.",
+			 "tutseries:": "Jekyll",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Set Up Your Dev Environment",
+			 "image": "/icons/jekyll-icon.svg",
+			 "url": "/tutorials/jekyll-01/",
+			 "tag": "development",
+			 "description": "We'll start this tutorials on Jekyll by turning your Mac into a development machine for statically generated sites.",
+			 "tutseries:": "Jekyll",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Set Up Your Dev Environment",
+			 "image": "/icons/jekyll-icon.svg",
+			 "url": "/tutorials/jekyll-01/",
+			 "tag": "osx",
+			 "description": "We'll start this tutorials on Jekyll by turning your Mac into a development machine for statically generated sites.",
+			 "tutseries:": "Jekyll",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Set Up Your Dev Environment",
+			 "image": "/icons/jekyll-icon.svg",
+			 "url": "/tutorials/jekyll-01/",
+			 "tag": "command-line",
+			 "description": "We'll start this tutorials on Jekyll by turning your Mac into a development machine for statically generated sites.",
+			 "tutseries:": "Jekyll",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Set Up Your Dev Environment",
+			 "image": "/icons/jekyll-icon.svg",
+			 "url": "/tutorials/jekyll-01/",
+			 "tag": "setup",
+			 "description": "We'll start this tutorials on Jekyll by turning your Mac into a development machine for statically generated sites.",
+			 "tutseries:": "Jekyll",
+			 "date":"2015-09-01"
+			},
+		
+	
+
+	
+		
+			{"title": "An Introduction to GitHub Pages",
+			 "image": "/icons/jekyll-icon.svg",
+			 "url": "/tutorials/jekyll-02/",
+			 "tag": "jekyll",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo...",
+			 "tutseries:": "Jekyll",
+			 "date":"2015-09-02"
+			},
+		
+			{"title": "An Introduction to GitHub Pages",
+			 "image": "/icons/jekyll-icon.svg",
+			 "url": "/tutorials/jekyll-02/",
+			 "tag": "setup",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo...",
+			 "tutseries:": "Jekyll",
+			 "date":"2015-09-02"
+			},
+		
+			{"title": "An Introduction to GitHub Pages",
+			 "image": "/icons/jekyll-icon.svg",
+			 "url": "/tutorials/jekyll-02/",
+			 "tag": "osx",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo...",
+			 "tutseries:": "Jekyll",
+			 "date":"2015-09-02"
+			},
+		
+			{"title": "An Introduction to GitHub Pages",
+			 "image": "/icons/jekyll-icon.svg",
+			 "url": "/tutorials/jekyll-02/",
+			 "tag": "command-line",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae maiores, harum unde, natus minima corrupti assumenda sequi. Sit sunt quo...",
+			 "tutseries:": "Jekyll",
+			 "date":"2015-09-02"
+			},
+		
+	
+
+	
+		
+			{"title": "Ruby Basics",
+			 "image": "/icons/ruby-icon.svg",
+			 "url": "/tutorials/ruby-01/",
+			 "tag": "ruby",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Ruby",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Ruby Basics",
+			 "image": "/icons/ruby-icon.svg",
+			 "url": "/tutorials/ruby-01/",
+			 "tag": "matsumoto",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Ruby",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Ruby Basics",
+			 "image": "/icons/ruby-icon.svg",
+			 "url": "/tutorials/ruby-01/",
+			 "tag": "object-oriented",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Ruby",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "Ruby Basics",
+			 "image": "/icons/ruby-icon.svg",
+			 "url": "/tutorials/ruby-01/",
+			 "tag": "scripting",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Ruby",
+			 "date":"2015-09-01"
+			},
+		
+	
+
+	
+		
+			{"title": "An Introduction to SASS",
+			 "image": "/icons/sass-icon.svg",
+			 "url": "/tutorials/sass-01/",
+			 "tag": "ruby",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Sass",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "An Introduction to SASS",
+			 "image": "/icons/sass-icon.svg",
+			 "url": "/tutorials/sass-01/",
+			 "tag": "matsumoto",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Sass",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "An Introduction to SASS",
+			 "image": "/icons/sass-icon.svg",
+			 "url": "/tutorials/sass-01/",
+			 "tag": "object-oriented",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Sass",
+			 "date":"2015-09-01"
+			},
+		
+			{"title": "An Introduction to SASS",
+			 "image": "/icons/sass-icon.svg",
+			 "url": "/tutorials/sass-01/",
+			 "tag": "scripting",
+			 "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatibus dolorum consequuntur molestiae.",
+			 "tutseries:": "Sass",
+			 "date":"2015-09-01"
+			},
+		
+	
+
+{
+	"title": "About Me",
+	"image": "me.jpg",
+	"url": "/",
+	"tag": "home",
+	"description": "The homepage of Ryan Watters",
+	"date":"2015-09-01"
+}
+]}
+
+

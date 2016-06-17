@@ -1,0 +1,46 @@
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="alternate" href="{{site.url}}" hreflang="en-us" />
+    <title>
+    {% if page.title == site.title %}Home - {{ site.title }}{% elsif page.title %}{{ page.title }} - {{ site.title }}{% else %}{{ site.title }}{% endif %}</title>
+    {% include favicons.html %}
+    <meta name="description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
+    <meta name="apple-mobile-web-app-title" content="{{site.title}}">
+    {%if site.googleplus %}
+    <meta rel="publisher" content="//plus.google.com/{{site.googleplus}}">
+    {% endif %}
+    <meta property="og:locale" content="en_US">
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:image" content="{% if page.main_image %}{{site.url}}/assets/images/{{page.main_image}}{%else%}{{site.url}}/assets/images/site-logo.png{% endif %}">
+    <meta property="og:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ " /feed.xml " | prepend: site.baseurl | prepend: site.url }}" />
+    {% unless page.alt_stylesheet %}
+     <style>
+    {% include style.html %}
+     </style>
+    {% endunless %}
+    {% if page.alt_stylesheet%}
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/altstylesheets/{{page.alt_stylesheet}}">
+    {% endif %}
+    <!-- Google Tag Manager -->
+   <!--  <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MZGV8N"
+    height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-MZGV8N');</script> -->
+    <!-- End Google Tag Manager -->
+    <!-- twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@{{site.twitter}}">
+    <meta name="twitter:creator" content="@{{site.twitter}}">
+    <meta name="twitter:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="twitter:description" content="{% if page.description %}{{ page.description | strip_html | strip_newlines | truncate: 160 }}{% endif %}">
+    <meta name="twitter:image" content="{% if page.main_image %}{{site.url}}/assets/images/{{page.main_image}}{%else%}{{site.url}}/assets/images/site-logo.png{% endif %}">
+    <!-- end twitter -->
+</head>

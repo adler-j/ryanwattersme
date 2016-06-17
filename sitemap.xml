@@ -1,54 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  
-  <url>
-    <loc>https://ryanwatters.io/</loc>
-    <lastmod>2016-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanwatters.io/tutorials/improved-code-blocks-with-hugo-shortcodes-and-clipboardjs/</loc>
-    <lastmod>2016-05-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanwatters.io/articles/testing-article-layout/</loc>
-    <lastmod>2016-05-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanwatters.io/tutorials/hugo-with-lunrjs/</loc>
-    <lastmod>2016-04-28T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanwatters.io/about/</loc>
-    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanwatters.io/contact/</loc>
-    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanwatters.io/resume/</loc>
-    <lastmod>2016-03-20T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanwatters.io/colophon/</loc>
-    <lastmod>2016-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanwatters.io/json/site-index/</loc>
-    <lastmod>2016-03-18T00:00:00+00:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://ryanwatters.io/404/</loc>
-    <lastmod>2016-01-01T00:00:00+00:00</lastmod>
-  </url>
-  
+---
+layout: null
+insearch: false
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9 http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd" xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{% for item in site.tutorials | sort: 'series_no' %}
+	{% unless item.published == false %}
+	<url>
+		<loc>{{ site.url }}{{ item.url }}</loc>
+		{% if item.lastmod == null %}
+		<lastmod>{{item.publishdate}}</lastmod>
+		{% else %}
+		<lastmod>{{item.lastmod}}</lastmod>
+		{% endif %}		
+		<changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+	</url>
+	{% endunless %}
+{% endfor %}
+
+{% for item in site.articles | sort: 'publishdate' | reverse %}
+	{% unless item.published == false %}
+	<url>
+		<loc>{{ site.url }}{{ item.url }}</loc>
+		{% if item.lastmod == null %}
+		<lastmod>{{item.publishdate}}</lastmod>
+		{% else %}
+		<lastmod>{{item.lastmod}}</lastmod>
+		{% endif %}		
+		<changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+	</url>
+	{% endunless %}
+{% endfor %}
+{% for item in site.pages | sort: 'publishdate' | reverse %}
+	{% unless item.published == false %}
+	<url>
+		<loc>{{ site.url }}{{ item.url }}</loc>
+		{% if item.lastmod == null %}
+		<lastmod>{{item.publishdate}}</lastmod>
+		{% else %}
+		<lastmod>{{item.lastmod}}</lastmod>
+		{% endif %}		
+		<changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+	</url>
+	{% endunless %}
+{% endfor %}
 </urlset>
