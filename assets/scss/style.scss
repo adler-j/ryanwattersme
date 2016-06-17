@@ -30,6 +30,7 @@
 @import 'partials/disqus';
 @import 'partials/print';
 @import 'partials/resume';
+@import 'partials/share-selector';
 main[role="main"],
 main.main {
     @include main-and-body-transition;

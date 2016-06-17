@@ -1,5 +1,9 @@
 User-agent: *
+Disallow: /json/
 Disallow: /assets/css/
-Disallow: /assets/images/
 Disallow: /assets/js/
 Disallow: /resume/
+Disallow: /docsample/
+Disallow: /migrationsample/
+Disallow: /presentationsample1/
+Disallow: /presentationsample2/
