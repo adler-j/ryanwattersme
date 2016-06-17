@@ -6,11 +6,11 @@ email: ryan@ryanwatters.me
 description: My name is Ryan. This is my website.
 copyright_in_footer: true
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: https://ryansportfol.io # the base hostname & protocol for your site
+url: http://rdwatters.github.io # the base hostname & protocol for your site
 site_owner: Ryan Watters
 site_tags: "content strategy, publishing, front-end development"
 site_owner_initials: RW
-author_photo: #me.jpg 
+author_photo: #me.jpg
 
 # SOCIAL MEDIA/SHARING
 
@@ -18,14 +18,14 @@ author_photo: #me.jpg
 twitter: ryandwatters
 #Just your username for GitHub, Tumblr, and Pinterest
 github:  rdwatters
-tumblr: 
-pinterest: 
-instagram:  
+tumblr:
+pinterest:
+instagram:
 #Everything after https://www.youtube.com/user/
 youtube: #Megatull80
 #Everything after "facebook.com/" in the URL, regardless of whether it's a personal profile or business page.
 facebook: #pages/MySitecom/810571539011577
-#Everything after "plus.google.com/"  
+#Everything after "plus.google.com/"
 googleplus: +RyanWattersRyanWatters
 #Everything after "https://www.linkedin.com/pub/"
 linkedin: ryan-watters-els/25/107/80
@@ -41,7 +41,7 @@ disqus_shortname: ryansportfolio
 
 # GLOBAL NAVIGATION
 
-main_navigation_links: 
+main_navigation_links:
 - text: Articles
   url: articles
 - text: Tutorials
@@ -91,6 +91,6 @@ sass:
 compress_html:
   clippings: all
   comments: ["<!-- ", " -->"]
-  endings: all 
+  endings: all
 
 repository: rdwatters/
