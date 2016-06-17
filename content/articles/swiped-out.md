@@ -21,25 +21,6 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, placeat prov
 
 ## Love Me Tinder
 
-{{% tinder "Cindy" "3:13 AM" "1980-06-24" "3" "empty" "Description of the above iOS app screenshot." %}}
-<ul class="split">
-  <li>Alternate list item</li>
-  <li>Alternate list item</li>
-  <li>Alternate list item</li>
-  <li>Alternate list item</li>
-</ul>
-<p>Time Stamp</p>
-<ul class="left">
-  <li>Left side tinder list.</li>
-  <li>Left side tinder list.</li>
-</ul>
-<p>Time Stamp</p>
-<ul class="right">
-  <li>Right side tinder list.</li>
-  <li>Right side tinder list.</li>
-</ul>
-{{% /tinder %}}
-
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam ut est illum, enim doloribus nobis quae laborum maxime! Aspernatur omnis atque ipsam expedita velit dolorem aperiam nihil. Accusantium, repellat quis.
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero illum ad labore maiores voluptatibus voluptas at dolore fuga quo exercitationem, quisquam tempore nihil nam, provident facilis impedit quidem praesentium nulla?
@@ -53,16 +34,6 @@ Splenalgy mention retreatant dalesman histotrophy rickardite thermoperiod photot
 ## I Got Blisters on Me Fingers
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt porro provident tempora voluptatum saepe molestiae dicta, iste, necessitatibus nemo eius reprehenderit placeat tempore nisi laudantium id modi unde, deleniti esse.
-
-{{% bumble "Sarah" "3:13 AM" "2016-04-14" "5" "full" "Description of the above Bumble block." %}}
-<ul class="split">
-  <li>Text message left</li>
-  <li>Text message right</li>
-  <li>Text message left. Text message left. Text message left.</li>
-  <li>Text message right. Text message right. Text message right.</li>
-</ul>
-
-{{% /bumble %}}
 
 ## Turtle Cheesecake
 

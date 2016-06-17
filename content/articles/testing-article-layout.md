@@ -31,9 +31,7 @@ Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite tre
 
 > The absence of limitations is the enemy of art. - Oscar Wilde
 
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cum vero, inventore quasi asperiores optio tenetur numquam tempore quos, nam assumenda dolor quam voluptate voluptatibus fuga minima, alias, quaerat iusto.
-
----
+Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cum vero, inventore quasi asperiores optio tenetur numquam tempore quos.
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
 

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tutorials on ryanwatters.io</title>
+    <link>https://rdwatters.github.io/tutorials/</link>
+    <description>Recent content in Tutorials on ryanwatters.io</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>ryanwatters.io</copyright>
+    <lastBuildDate>Sat, 28 May 2016 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://rdwatters.github.io/tutorials/index.xml" rel="self" type="application/rss+xml" />
+    
+    <item>
+      <title>Better Code Blocks with Hugo and Clipboard.js</title>
+      <link>https://rdwatters.github.io/tutorials/improved-code-blocks-with-hugo-shortcodes-and-clipboardjs/</link>
+      <pubDate>Sat, 28 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://rdwatters.github.io/tutorials/improved-code-blocks-with-hugo-shortcodes-and-clipboardjs/</guid>
+      <description>
+
+&lt;div class=&#34;assumptions&#34;&gt;
+&lt;header&gt;
+	&lt;h2&gt;Assumptions and Prerequisites &lt;i class=&#34;icon-next&#34;&gt;&lt;/i&gt;&lt;/h2&gt;
+&lt;/header&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic JavaScript proficiency&lt;/li&gt;
+&lt;li&gt;Familiarity with Golang templating&lt;/li&gt;
+&lt;li&gt;Beginner to intermediate knowledge of CSS and SASS (optional)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;My nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler &lt;a href=&#34;https://www.google.com&#34; target=&#34;_blank&#34;&gt;link to google&lt;/a&gt; epiphysitis &lt;strong&gt;Platycodon&lt;/strong&gt; prosobranch hyperplane remap coronated branchiate.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; But here is &lt;em&gt;something in italics&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!&lt;/p&gt;
+
+&lt;p&gt;Largish writproof dynamically poolroom Eimak noncollusion orthodromics prepunishment waveson micropaleontology synodal insaneness reprimandingly mittimus vanquisher tarnal maravedi undrying nuciferous Gyrostachys possessor antiromantic stut zootechnic.&lt;/p&gt;
+
+&lt;h2 id=&#34;code-samples&#34;&gt;Code Samples&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quis dolores similique at illum molestiae suscipit vel, nam ut, ullam sapiente ex deleniti animi obcaecati? Maiores ullam eos non odio!&lt;/p&gt;
+
+
+&lt;div class=&#34;code-copy&#34; id=&#34;testing-named-params&#34;&gt;
+&lt;div class=&#34;filepath&#34;&gt;static/js/script.js&lt;/div&gt;
+	&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;window.onload = myFunction;
+
+function myFunction(argument) {
+  console.log(&amp;quot;This is a javascript code block that you can copy directly to your clipboard.&amp;quot;);
+  return &amp;quot;hello&amp;quot;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+
+&lt;div class=&#34;code-copy&#34; id=&#34;html-snipper&#34;&gt;
+&lt;div class=&#34;filepath&#34;&gt;layouts/shortcodes/testing.html&lt;/div&gt;
+	&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;section&amp;gt;
+  &amp;lt;header&amp;gt;
+    &amp;lt;h1&amp;gt;Article Title&amp;lt;/h1&amp;gt;
+    &amp;lt;span class=&amp;quot;subtitle&amp;quot;&amp;gt;Article&amp;lt;/span&amp;gt;
+  &amp;lt;/header&amp;gt;
+  &amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem assumenda tempora voluptatibus magnam, voluptatum iure, cupiditate molestiae ducimus voluptates eligendi delectus maiores esse. Cum ex soluta dolorum, debitis consequuntur dolore!&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Optio a, exercitationem tempora modi harum animi architecto delectus doloribus, perspiciatis, sequi ipsam minima error? At odio corporis earum dolorem, amet repellendus. Maxime corporis, animi nostrum deleniti error. Ipsa, nesciunt!&amp;lt;/p&amp;gt;
+&amp;lt;/section&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae qui ipsa minus quod, tempora expedita rerum sed aliquid, natus obcaecati laudantium consequatur nesciunt minima perspiciatis repellendus provident nemo officia impedit.&lt;/p&gt;
+
+&lt;p&gt;Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.&lt;/p&gt;
+
+&lt;h2 id=&#34;article-heading&#34;&gt;Article Heading&lt;/h2&gt;
+
+&lt;p&gt;Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.&lt;/p&gt;
+
+&lt;p&gt;Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.&lt;/p&gt;
+
+&lt;p&gt;Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-normal-length-article-subheading&#34;&gt;A Normal Length Article Subheading&lt;/h3&gt;
+
+&lt;p&gt;Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.&lt;/p&gt;
+
+&lt;p&gt;Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.&lt;/p&gt;
+
+&lt;h2 id=&#34;third-heading&#34;&gt;Third Heading&lt;/h2&gt;
+
+&lt;p&gt;Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.&lt;/p&gt;
+
+&lt;p&gt;Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.&lt;/p&gt;
+
+&lt;p&gt;Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.&lt;/p&gt;
+
+&lt;p&gt;Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Here is a reference that will otherwise render at the bottom of the page.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Hugo with lunr.js</title>
+      <link>https://rdwatters.github.io/tutorials/hugo-with-lunrjs/</link>
+      <pubDate>Thu, 28 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://rdwatters.github.io/tutorials/hugo-with-lunrjs/</guid>
+      <description>
+
+&lt;div class=&#34;assumptions&#34;&gt;
+&lt;header&gt;
+	&lt;h2&gt;Assumptions and Prerequisites &lt;i class=&#34;icon-next&#34;&gt;&lt;/i&gt;&lt;/h2&gt;
+&lt;/header&gt;
+&lt;ul&gt;
+&lt;li&gt;Basic JavaScript proficiency&lt;/li&gt;
+&lt;li&gt;Familiarity with Golang templating&lt;/li&gt;
+&lt;li&gt;Beginner to intermediate knowledge of CSS and SASS (optional)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;/div&gt;
+
+&lt;h2 id=&#34;getting-started&#34;&gt;Getting Started&lt;/h2&gt;
+
+&lt;p&gt;My nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler &lt;a href=&#34;https://www.google.com&#34; target=&#34;_blank&#34;&gt;link to google&lt;/a&gt; epiphysitis &lt;strong&gt;Platycodon&lt;/strong&gt; prosobranch hyperplane remap coronated branchiate.&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:1&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:1&#34;&gt;1&lt;/a&gt;&lt;/sup&gt; But here is &lt;em&gt;something in italics&lt;/em&gt;.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!&lt;/p&gt;
+
+&lt;p&gt;Largish writproof dynamically poolroom Eimak noncollusion orthodromics prepunishment waveson micropaleontology synodal insaneness reprimandingly mittimus vanquisher tarnal maravedi undrying nuciferous Gyrostachys possessor antiromantic stut zootechnic.&lt;/p&gt;
+
+&lt;h2 id=&#34;code-samples&#34;&gt;Code Samples&lt;/h2&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem quis dolores similique at illum molestiae suscipit vel, nam ut, ullam sapiente ex deleniti animi obcaecati? Maiores ullam eos non odio!&lt;/p&gt;
+
+
+&lt;div class=&#34;code-copy&#34; id=&#34;testing-named-params&#34;&gt;
+&lt;div class=&#34;filepath&#34;&gt;static/js/script.js&lt;/div&gt;
+	&lt;pre&gt;&lt;code class=&#34;language-javascript&#34;&gt;window.onload = myFunction;
+
+function myFunction(argument) {
+  console.log(&amp;quot;This is a javascript code block that you can copy directly to your clipboard.&amp;quot;);
+  return &amp;quot;hello&amp;quot;;
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+
+&lt;div class=&#34;code-copy&#34; id=&#34;html-snipper&#34;&gt;
+&lt;div class=&#34;filepath&#34;&gt;layouts/shortcodes/testing.html&lt;/div&gt;
+	&lt;pre&gt;&lt;code class=&#34;language-html&#34;&gt;&amp;lt;section&amp;gt;
+  &amp;lt;header&amp;gt;
+    &amp;lt;h1&amp;gt;Article Title&amp;lt;/h1&amp;gt;
+    &amp;lt;span class=&amp;quot;subtitle&amp;quot;&amp;gt;Article&amp;lt;/span&amp;gt;
+  &amp;lt;/header&amp;gt;
+  &amp;lt;p&amp;gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem assumenda tempora voluptatibus magnam, voluptatum iure, cupiditate molestiae ducimus voluptates eligendi delectus maiores esse. Cum ex soluta dolorum, debitis consequuntur dolore!&amp;lt;/p&amp;gt;
+  &amp;lt;p&amp;gt;Optio a, exercitationem tempora modi harum animi architecto delectus doloribus, perspiciatis, sequi ipsam minima error? At odio corporis earum dolorem, amet repellendus. Maxime corporis, animi nostrum deleniti error. Ipsa, nesciunt!&amp;lt;/p&amp;gt;
+&amp;lt;/section&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;/div&gt;
+
+
+
+
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae qui ipsa minus quod, tempora expedita rerum sed aliquid, natus obcaecati laudantium consequatur nesciunt minima perspiciatis repellendus provident nemo officia impedit.&lt;/p&gt;
+
+&lt;p&gt;Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.&lt;/p&gt;
+
+&lt;h2 id=&#34;article-heading&#34;&gt;Article Heading&lt;/h2&gt;
+
+&lt;p&gt;Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.&lt;/p&gt;
+
+&lt;p&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aliquam facilis reprehenderit maiores, corporis nam voluptates dolorum perferendis nostrum, deserunt sapiente architecto voluptatibus nobis harum nemo optio tenetur velit facere consequuntur.&lt;/p&gt;
+
+&lt;p&gt;Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.&lt;/p&gt;
+
+&lt;p&gt;Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.&lt;/p&gt;
+
+&lt;h3 id=&#34;a-normal-length-article-subheading&#34;&gt;A Normal Length Article Subheading&lt;/h3&gt;
+
+&lt;p&gt;Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.&lt;/p&gt;
+
+&lt;p&gt;Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.&lt;/p&gt;
+
+&lt;h2 id=&#34;third-heading&#34;&gt;Third Heading&lt;/h2&gt;
+
+&lt;p&gt;Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.&lt;/p&gt;
+
+&lt;p&gt;Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.&lt;/p&gt;
+
+&lt;p&gt;Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.&lt;/p&gt;
+
+&lt;p&gt;Azoxazole urethrogram wagonage microbeless campward dissoluteness ploddingly mounter Thoracostraca pamphlet foreran redepend Phaseolus thetch wavellite latah overfat air tarpot uninterestedness anotta ripost grouchily scelidosauroid.&lt;/p&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+
+&lt;hr /&gt;
+
+&lt;ol&gt;
+&lt;li id=&#34;fn:1&#34;&gt;Here is a reference that will otherwise render at the bottom of the page.
+ &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:1&#34;&gt;↩&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+  </channel>
+</rss>
