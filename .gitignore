@@ -1,4 +1,6 @@
 assets/node_modules/
+assets/.babelrc
+assets/Gulpfile.js
 practice.md
 snippets_and_notes.md
 tags.md
