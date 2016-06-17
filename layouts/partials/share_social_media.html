@@ -1,0 +1,14 @@
+{{$siteName := "ryanwatters.io" }}
+<!-- <div class="social-media-share-menu{{if .IsHome}} home{{end}} {{replace .Title "." ""|urlize}}"> -->
+<div class="social-media-share-menu home {{replace .Title "." ""|urlize}}">
+    <ul class="share-menu">
+        <li><a class="facebook share" href="https://www.facebook.com/sharer/sharer.php?u={{.Permalink}}" target="_blank"><i class="icon-facebook"></i></a></li>
+        <li><a href="https://twitter.com/home?status={{.Permalink}}" class="twitter share" target="_blank"><i class="icon-twitter"></i></a></li>
+        <li><a href="https://www.linkedin.com/shareArticle?mini=true&url={{.Permalink}}&title={{.Title}}&summary={{.Description}}" class="linkedin share" target="_blank"><i class="icon-linkedin"></i></a></li>
+        <li><a href="https://plus.google.com/share?url={{.Permalink}}" class="googleplus share" target="_blank"><i class="icon-googleplus"></i></a></li>
+        <li><a href="mailto:?subject=Sharing %22{{.Title}}%22 from {{$siteName}}&body=I wanted to share %22{{.Title}}%22 from {{$siteName}}:%0D%0D{{.Permalink}}%0D%0DDescription:%0D%0D%22{{if .IsHome }}{{.Site.Params.SiteDescription}}{{else}}{{ .Description }}{{end}}%22" class="email share"><i class="icon-email"></i></a></li>
+    </ul>
+    <a id="share-button" href="#"><i class="icon-share"></i></a>
+</div>
+
+

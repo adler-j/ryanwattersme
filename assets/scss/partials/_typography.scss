@@ -1,0 +1,137 @@
+h1.title {
+    font-size: 2.5em;
+    margin-top: .3em;
+    margin-bottom: 6px;
+    font-weight: 600;
+    line-height: 1;
+    color: $h1-page-heading-font-color;
+    @include MQ(L) {
+        font-size: 3.5em;
+    }
+    @include MQ(XL) {
+        font-size: 3.7em;
+    }
+    &.homepage {
+        font-size: 2.9em;
+        font-weight: 400;
+        width: auto;
+        max-width: 60%;
+        display: inline;
+        @include MQ(M) {
+            font-size: 3.8em;
+        }
+    }
+    &.articles {
+        color: $white;
+        text-transform: none;
+    }
+    &.tags {
+        text-transform: lowercase;
+    }
+    &.categories,
+    &.tags {
+        margin-left: 4px;
+        span {
+            font-size: .65em;
+        }
+    }
+}
+
+.subtitle {
+    font-size: .9em;
+    text-transform: $article-subtitle-text-transform;
+    margin-bottom: 1em;
+    font-family: $heading-font-family;
+    code,pre {
+        text-transform:none;
+    }
+}
+
+h2,
+h3,
+h1.title-list {
+    margin-bottom: .3em;
+    margin-top: 1em;
+    color: lighten($h1-page-heading-font-color, 20%);
+    font-family: $heading-font-family;
+    font-weight: 500;
+}
+
+h2,
+h1.title-list {
+    font-size: 1.8em;
+}
+
+
+h3 {
+    font-size: $article-subheading-font-weight;
+    color: $article-subheading-font-color;
+    font-weight: $article-subheading-font-weight;
+    padding-bottom: .1em;
+    margin-bottom: .3em;
+    text-transform: $article-subheading-text-transform;
+}
+
+span.dropcap {
+    margin-right: .1em;
+    color: $dropcap-color;
+    font-weight: $dropcap-font-weight;
+    font-family: $dropcap-font-family;
+    text-shadow: $dropcap-box-shadow;
+    margin-bottom:-.2em!important;
+    margin-top:.1em!important;
+    padding-bottom:0em!important;
+}
+
+article.content.articles > div.content-wrapper > p:not(:first-child) {
+    margin-top:0px;
+    padding-top:0px;
+}
+article.content.articles > div.content-wrapper > h2:nth-of-type(1) {
+    margin-top:.5em;
+    margin-bottom:0px;
+}
+
+sup {
+    font-size: .3em;
+    padding-top: 0px;
+    transform: translateY(-10px);
+    margin-top: -4em;
+    font-weight: 100;
+    font-family: $base-font-family;
+    vertical-align: super;
+    &.footnote-ref {
+        font-size: .6em;
+        margin-right: .2em;
+    }
+}
+
+hr {
+    border-top:3px double $base-font-color;
+    border-bottom:none;
+    border-right:none;
+    border-left:none;
+}
+
+hr {
+    border-top: 1px solid #8c8b8b;
+    text-align: center;
+}
+hr:after {
+    content: '§';
+    display: inline-block;
+    position: relative;
+    top: -14px;
+    padding: 0 10px;
+    background-color: $body-background-color;
+    color: $base-font-color;
+    font-size: 1em;
+    // font-weight:bold;
+    -webkit-transform: rotate(60deg);
+    -moz-transform: rotate(60deg);
+    transform: rotate(60deg);
+}
+
+small.taxonomy {
+    font-size: .3em;
+}
