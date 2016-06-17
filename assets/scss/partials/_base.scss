@@ -1,0 +1,141 @@
+*,
+*:after,
+*:before {
+    -ms-overflow-style: none!important;
+}
+
+//remove scrollbars on Chrome
+::-webkit-scrollbar {
+    display: none!important;
+}
+
+html,body {
+    box-sizing: border-box;
+    width:100%;
+    max-width:100%;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+html {
+    font-size: $base-font-size; //This will equal 1REM
+    line-height: $base-line-height;
+    width: 100%;
+    width: 100vw;
+    max-width:100vw;
+    overflow-x:hidden;
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+html a {
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
+}
+
+body {
+    font-size: 80%;
+    @include MQ(M) {
+        font-size: 100%;
+    }
+    // @include MQ(L) {
+    //     font-size: 95%;
+    // }
+    @include MQ(XL) {
+        font-size: 105%;
+    }
+    font-family: $base-font-family;
+    background: $body-background-color;
+    color: $base-font-color;
+    position: relative;
+    z-index:1;
+    border: 0;
+    padding:0;
+    margin:0;
+    min-height: 100%;
+    min-height: 100vh;
+    margin-top: 0px;
+    padding-top: 0px;
+    overflow-x: hidden;
+    font-weight: $base-font-weight;
+}
+
+*,
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased !important;
+}
+
+body {
+    display: block;
+    z-index: 0;
+    position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $heading-font-family;
+    font-weight: $heading-font-weight;
+    line-height: 1.2;
+    margin-top: 0px;
+    margin-bottom: 0.4em;
+    padding: 0;
+}
+
+p {
+    line-height: $base-line-height;
+    text-align:left;
+    margin: {
+        top: 0px;
+        bottom: 1em;
+    }
+}
+
+a {
+    color: $anchor-color;
+    font-weight: $anchor-weight;
+    transition: $anchor-transition;
+    text-decoration: $anchor-default-text-decoration;
+    cursor: pointer!important;
+    &:hover {
+        color: $anchor-hover-color;
+    }
+}
+
+em,
+i {
+    font-style: italic;
+    font-weight: inherit;
+}
+
+strong,
+b {
+    font-weight: $strong-and-bold-default-weight;
+}
+
+input[type=search] {
+    background-color: $body-background-color;
+    border: none;
+    border-radius: 0;
+    &:focus {
+        outline: none;
+        border: 0px;
+    }
+    @include placeholder {
+        color: $input-placeholder-text-color;
+    }
+}
+
+small {
+    text-transform: uppercase;
+    font-size: .5em;
+}

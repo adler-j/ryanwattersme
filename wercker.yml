@@ -1,0 +1,25 @@
+box: golang
+build:
+  steps:
+  - script:
+    name: echo "Recursively moving all images to static images directory"
+    code: |
+      curdir=$(pwd)
+      find ${curdir}/content \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.gif' \) -type f -exec mv -v -- {} ${curdir}/static/images/ \;
+  - arjen/hugo-build:
+    version: "0.16"
+    config: config.toml
+    disable_pygments: true
+  - script:
+    name: echo "Moving json/index.html to /site-index.json"
+    code: |
+      cd public/json/ && cp index.html ../assets/site-index.json
+deploy:
+  steps:
+    - install-packages:
+      packages: git ssh-client
+    - leipert/git-push:
+       gh_oauth: $GIT_TOKEN
+       repo: rdwatters/rdwatters.github.io
+       branch: gh-pages
+       basedir: public
