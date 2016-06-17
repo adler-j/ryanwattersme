@@ -1,0 +1,57 @@
+// header.site-header {
+//     transition-property: all;
+//     transition-duration: .7s;
+//     transition-timing-function: cubic-bezier(0.155, 0.605, 0.18, 1.055);
+//     width: $site-menu-width;
+//     position: fixed;
+//     display:block;
+//     top: 0px;
+//     right: 0px;
+//     bottom: 0px;
+//     margin: 0px;
+//     padding: 0px;
+//     border: none;
+//     min-height: 100%;
+//     min-height: 100vh;
+//     background-color: $site-header-background-color;
+//     border-left: 1px solid #f0f0f0;
+//     z-index: 3;
+//     overflow-y:scroll;
+//     -ms-overflow-style:none;
+//     &::-webkit-scrollbar {
+//         display:none;
+//     }
+//     @include transform(translateX(101%));
+//     a {
+//         color: $base-font-color;
+//     }
+//     &.open {
+//         @include transform(translateX(0%));
+//         z-index: 99999;
+//         right:-16px;
+//     }
+// }
+
+// #close-menu {
+//     position: absolute;
+//     right: $top-bar-height * .35;
+//     top: $top-bar-height * .2;
+//     font-weight: normal;
+//     font-size: $top-bar-height * .5;
+//     z-index:9999;
+// }
+
+// //headroom.js transitions
+// .headroom {
+//     will-change: transform;
+//     transition: transform .2s linear;
+// }
+
+// .headroom--pinned {
+//     transform: translateY(0%);
+// }
+
+// .headroom--unpinned {
+//     transform: translateY(-100%);
+// }
+

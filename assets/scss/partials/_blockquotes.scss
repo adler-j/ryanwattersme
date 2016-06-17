@@ -1,0 +1,90 @@
+blockquote {
+    width: 100%;
+    max-width: 100%;
+    padding-top:1.5em;
+    // padding-bottom:1em;
+    margin: 0px;
+    margin-bottom:1em;
+    position: relative;
+    background-color: $blockquote-background-color;
+    font-size:1.3em;
+    font-family: $blockquote-font-family;
+    padding-top:.25em;
+    border-left: 3px solid $blockquote-border-color;
+    p {
+        display: block;
+        position: relative;
+        margin-left: .5em;
+        margin-bottom: .25em;
+        font-style: $blockquote-font-style;
+        // max-width: 80%;
+        color: $blockquote-font-color;
+        padding-bottom:1em;
+        // &::before {
+        //     content: '';
+
+        //     position: absolute;
+        //     left: -.75em;
+        //     top: -.5em;
+        //     min-height: 100%;
+        // }
+    }
+}
+
+@include MQ(L) {
+    blockquote {
+        min-width: calc(100% + 2rem);
+        max-width: calc(100% + 2rem);
+        left: -1rem;
+        font-size: 1.1em;
+        padding-right:1rem;
+        p {
+            display: block;
+            margin-left:1rem;
+            position: relative;
+            padding-left: 0px;
+            font-size:1.2em;
+            max-width:$content-max-width;
+        }
+    }
+}
+
+cite.blockquote-citation {
+    clear: both;
+    font-style: normal;
+    position:absolute;
+    right:1em;
+    bottom:0px;
+    min-width:100%;
+    margin-top:1.5em;
+    text-align: right;
+    text-transform: uppercase;
+    padding-left: 1em;
+    color: $blockquote-font-color!important;
+    font-size: .5em;
+    padding-left: 2em;
+    a {
+        color: $blockquote-font-color!important;
+        border-bottom: 1px solid $blockquote-font-color;
+        &:hover {
+            box-shadow: 0 -1.5em 0 $blockquote-font-color inset!important;
+            color: $blockquote-background-color!important;
+        }
+    }
+    @include MQ(M) {
+        margin-left: auto;
+        margin-right: 2em;
+        padding-left: 0px;
+    }
+}
+
+blockquote .tweet-quote {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 74px;
+    height: 26px;
+    margin-top: -13px;
+    margin-left: -36px;
+    transition: all 0.2s ease;
+}

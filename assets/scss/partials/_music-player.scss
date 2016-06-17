@@ -1,0 +1,85 @@
+.music-player {
+    display: flex;
+    font-family: $heading-font-family;
+    align-items: center;
+    position: relative;
+    z-index: 5;
+    flex-grow: 0;
+    flex-shrink: 0;
+    margin-bottom: 1em;
+    width: 80%;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0px solid $brand;
+    color: $base-font-color;
+    background-color: $body-background-color;
+    border-radius: 5px;
+    padding: .5em;
+    box-shadow: 0px 0px 2px 0px rgba(51, 51, 51, .5);
+    .song-info {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+        .song-artist {
+            font-size: .8em;
+            font-weight: bold;
+        }
+        .song-title {
+            line-height: 1.2;
+        }
+    }
+}
+
+$play-button-color: $white;
+$play-button-container-size:60px;
+$play-button-size: $play-button-container-size * .45;
+$duration: 300ms;
+$easing: cubic-bezier(0, 0, .2, 1);
+$half-size: $play-button-container-size / 4;
+div.play-button-container {
+    position: relative;
+    margin-right: $play-button-size /2;
+    width: $play-button-container-size;
+    height: $play-button-container-size;
+    background-color: $brand;
+    border-radius: 50%;
+}
+
+article.content {
+    a.song-button {
+        cursor:pointer!important;
+        /** Positioning */
+        box-shadow: none!important;
+        position: absolute;
+        left: $half-size * 1.55;
+        top: $half-size * 1.1;
+        padding: 0px;
+        /** Sizing */
+        width: $play-button-size;
+        height: $play-button-size;
+        /** Border styling */
+        border-style: solid;
+        border-color: transparent $play-button-color transparent $play-button-color;
+        border-width: $half-size 0 $half-size $play-button-size;
+        &.stop,
+        &.to-play {
+            cursor:pointer!important;
+            /** Animate morphing */
+            transition: transform $duration $easing, border-top-width $duration $easing, border-bottom-width $duration $easing;
+        }
+        &.stop {
+            cursor:pointer!important;
+            /** Morph to a stop button */
+            transform: rotate(90deg);
+            border-width: 0 0 0 $play-button-size;
+            left: $half-size * 1.3;
+            top: $half-size * 1.1;
+        }
+        &.to-play {
+            /** Morph back from a stop button to a play button */
+            transform: rotate(180deg);
+            border-width: $half-size $play-button-size $half-size 0;
+        }
+    }
+}
