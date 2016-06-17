@@ -1,0 +1,19 @@
+<!-- NOTE: global_head includes up to and including the opening <body> tag. -->
+{{ partial "site_header.html" . }}
+<main role="main">
+    {{ partial "share_social_media.html" . }}
+    <article class="homepage">
+    <div class="content-wrapper home">
+        <header>
+            <h1 class="title homepage">こんにちは*</h1><sup class="foonote-ref homepage"><a rel="footnote" href="#fn:1">1</a></sup>
+        </header>
+        {{partial "homepage-temp-content.html" | print | markdownify }}
+        <div class="footnotes">
+        	<hr>
+        	<ol>
+        		<li id="fn:1">*&nbsp;Hi.</li>
+        	</ol>
+        </div>
+    </article>
+</main>
+{{ partial "site_footer.html" . }}

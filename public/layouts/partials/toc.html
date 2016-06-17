@@ -1,0 +1,18 @@
+{{if gt .WordCount 175 }}
+<aside class="toc" id="toc">
+    <div class="toc-wrapper">
+    <a href="#page-top">
+        <header class="toc-header" id="toc-header">
+            <h4 class="toc-title">{{.Title}}</h4>
+            {{with .Params.subtitle}}
+            	<div class="toc-subtitle">{{.}}</div>
+            {{end}}
+        </header>
+    </a>
+        <div class="toc-contents">
+            {{ .TableOfContents }}
+        </div>
+    </div>
+</aside>
+<a href="#" id="toggle-toc">...</a>
+{{end}}

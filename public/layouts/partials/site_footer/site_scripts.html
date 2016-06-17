@@ -1,0 +1,11 @@
+{{ if .Site.Params.TawkTo }}
+{{ partial "site_footer/tawkto.html" . }}
+{{ end }}
+
+{{ if .Site.Params.IncludeJQ }}
+<script src="/assets/js/jquery-2.2.2.min.js"></script>
+{{ end }}
+<script src="/assets/js/main.min.js"></script>
+{{ if .IsPage }}
+<script src="/assets/js/headroom.min.js" async></script>
+{{ end }}

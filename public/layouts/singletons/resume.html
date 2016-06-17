@@ -1,0 +1,17 @@
+{{ partial "site_header.html" . }}
+<main role="main" id="resume-main">
+      <article class="singleton" id="resume">
+        <div class="content-wrapper">
+        <header>
+                <h1 class="title">R&eacute;sum&eacute;</h1>
+                {{with .Params.subtitle}}
+                    <div class="subtitle">{{. | markdownify}}</div>
+                {{end}}
+                <div class="resume-contact"><a class="resume email" href="mailto:watters.ryan@gmail.com?subject=Ryan Watters resume&body=I read your resume on ryanwatters.io and would like to request writing samples and references." title="Email Ryan Watters"><i class="icon-email"></i><span>Email Me</span></a><a class="resume linkedin" target="_blank" href="https://www.linkedin.com/in/ryan-watters-els-08010725"><i class="icon-linkedin"></i><span>My LinkedIn Profile</span></a></div>
+        </header>
+        {{.Content}}
+        </div>
+      </article>
+	{{partial "toc.html" . }}
+</main>
+{{ partial "site_footer.html" . }}

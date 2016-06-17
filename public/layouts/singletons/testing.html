@@ -1,0 +1,38 @@
+{{ partial "site_header.html" . }}
+<main role="main" class="main">
+    {{ if .IsPage }}
+        {{if ne .URL "/contact/"}}
+            {{ partial "share_social_media.html" . }}
+        {{ end }}
+    {{ end }}
+    <header class="{{.Section}}" style="background-image:url(/assets/images/{{.Params.image}});z-index:0;" id="{{replace .Title "." "" | urlize}}">
+        <div class="header-content {{.Section}}{{if eq .Section "blog"}} animated fadeIn{{end}}">
+                <h1 class="title {{.Section}}">{{ .Title }}</h1>
+                {{with .Params.subtitle}}
+                    <div class="subtitle">{{.}}</div>
+                {{end}}
+            <div class="category-and-publishdate">
+                <small>IN: </small>
+                {{range .Params.categories}}
+                <a href="/categories/{{.|urlize}}" class="category">{{.}}</a>
+                {{end}}
+                <time class="publishdate" datetime="{{.PublishDate}}">{{.PublishDate.Format "Jan 2, 2006"}}</time>
+            </div>
+        </div>
+    </header>
+    <article class="content {{.Section}}" id="{{.Title|urlize}}">
+    <div class="content-wrapper" {{if .Site.Params.Swiftype}}data-swiftype-name="body" data-swiftype-type="text"{{end}}>
+        {{ .Content }}
+    </div>
+    <ul class="tags"><span>tags:</span> {{ range .Params.tags }}
+        <li><a href="/tags/{{ . | urlize }}">{{ . }}</a></li>
+        {{ end }}
+    </ul>
+    </article>
+    {{partial "parse.html" . }}
+    {{partial "toc.html" . }}
+    <div class="disqus-wrapper">
+    {{partial "disqus_comments.html" . }}
+    </div>
+</main>
+{{ partial "site_footer.html" . }}
