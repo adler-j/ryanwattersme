@@ -17,6 +17,8 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iusto modi, vol
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius asperiores placeat explicabo, aliquam natus animi sit eveniet deserunt consequatur incidunt temporibus ducimus ad distinctio doloremque commodi non, fuga quibusdam quis!
 
+> Without the fear of falling, there is no joy in flight. - Kobo Abe
+
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus, placeat provident aspernatur. Ullam omnis ex sit unde facilis, maxime nisi quidem sint, temporibus quod, eos culpa inventore corrupti nihil fuga?
 
 ## Love Me Tinder
