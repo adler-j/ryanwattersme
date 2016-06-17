@@ -10,7 +10,7 @@ build:
     version: "0.16"
     config: config.toml
     disable_pygments: true
-    flags: --buildDrafts=true
+    flags: --buildDrafts=false
   - script:
     name: echo "Moving json/index.html to /site-index.json"
     code: |
