@@ -1,5 +1,5 @@
-window.onload = tweetQuote;
-function tweetQuote() {
+// window.onload = tweetQuote;
+(function tweetQuote() {
     if (location.pathname == "/") {
         return;
     } else {
@@ -30,4 +30,4 @@ function tweetQuote() {
             $('.tweet-quote').remove();
         });
     }
-}
+})();

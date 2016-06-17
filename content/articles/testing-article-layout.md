@@ -15,6 +15,8 @@ remove_kudos: false
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
 tempor incididunt ut labore et dolore.
 
+> Comparison is the enemy of joy. - Theodore Roosevelt
+
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored. Let's make a [link to Google](https://www.google.com).
 
 > Without the fear of falling, there is no joy in flight. - Kobo Abe
@@ -26,6 +28,8 @@ This is my Vimeo description.
 {{% /video %}}
 
 Quill nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler Yarura doddered epiphysitis Platycodon prosobranch hyperplane remap coronated branchiate impudence pleurocentrum phoneticization immediatism pseudonymuncle do deplored.
+
+> The absence of limitations is the enemy of art. - Oscar Wilde
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis cum vero, inventore quasi asperiores optio tenetur numquam tempore quos, nam assumenda dolor quam voluptate voluptatibus fuga minima, alias, quaerat iusto.
 

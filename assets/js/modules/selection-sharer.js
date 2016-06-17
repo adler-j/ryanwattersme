@@ -365,4 +365,4 @@
     window.SelectionSharer = SelectionSharer;
   }
 
-})(jQuery);
+})(jQuery);$('p').selectionSharer();
