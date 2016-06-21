@@ -5,7 +5,7 @@
             {{ partial "share_social_media.html" . }}
         {{ end }}
     {{ end }}
-    <header class="articles" style="background-image:url(/assets/images/{{.Params.image}});z-index:0;" id="{{replace .Title "." "" | urlize}}">
+    <header class="articles" style="background-image:url({{.Site.BaseURL}}/assets/images/{{.Params.image}});z-index:0;" id="{{replace .Title "." "" | urlize}}">
         <div class="header-content articles animated fadeIn">
                 <h1 class="title articles">{{ .Title }}</h1>
                 {{with .Params.subtitle}}
@@ -22,6 +22,7 @@
     </header>
     <article class="content articles" id="{{.Title|urlize}}">
     <div class="content-wrapper" {{if .Site.Params.Swiftype}}data-swiftype-name="body" data-swiftype-type="text"{{end}}>
+    <!-- <div class="fb-share-button" data-href="{{.Permalink}}" data-layout="button_count" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{.Permalink}}&amp;src=sdkpreparse">Share</a></div> -->
         {{ .Content }}
     </div>
     </article>
@@ -34,10 +35,6 @@
     <div class="disqus-wrapper">
     {{partial "disqus_comments.html" . }}
     </div>
+
 </main>
-<script>
-var previousLink = document.querySelector('a.prev-link') || "nada";
-var nextLink = document.querySelector('a.next-link') || undefined;
-console.log(previousLink);
-</script>
 {{ partial "site_footer.html" . }}

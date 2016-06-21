@@ -1,6 +1,6 @@
 # Only one archetype (posts) is included in Hugo Starter
 archetypedir = "archetypes"
-baseurl = "https://rdwatters.github.io"
+baseurl = "https://ryanwatters.io"
 buildDrafts = false
 buildFuture = false
 canonifyurls = true
@@ -32,7 +32,7 @@ watch = true
   singletons = "/:title/"
 
 [params]
-	SiteAuthor = ""
+	SiteAuthor = "Ryan D Watters"
 	GitHub = "rdwatters"
   Twitter = "ryandwatters"
   Facebook = ""
@@ -50,10 +50,9 @@ watch = true
   IncludeJQ = false
   UseDisqus = true
   # Include Swiftype Metadata in Head
-  Swiftype = true
+  Swiftype = false
   disqusShortname = ""
   SitePublishDate = "2016-01-01"
-  TawkTo = false
 
 [blackfriday]
 	plainIDAnchors = true

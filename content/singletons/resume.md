@@ -1,10 +1,11 @@
 ---
 title: Resume
-subtitle: Ryan D. Watters, ELS
+subtitle: Content Strategist & Front-end Developer
 description: The résumé of Ryan D. Watters, ELS.
 date: 2016-03-20
 publishdate: 2016-03-20
 updated: 2016-03-20
+lastmod: 2016-06-20
 draft: false
 type: singletons
 layout: resume
@@ -13,9 +14,9 @@ categories: []
 comments: Resume developed
 ---
 
-## Objective
+## Profile
 
-A senior marketing position in a progressive, fast-paced digital media agency that will leverage and bolster my skills as a content marketer, content strategist, web publisher, and storyteller.
+Experienced web professional with a deep understanding of content strategy, marketing, and creation; front-end development and performance; web publishing and analytics; and search engine optimization.
 
 ## Experience
 
@@ -25,26 +26,22 @@ A senior marketing position in a progressive, fast-paced digital media agency th
 
 #### Responsibilities
 
-* Development and management of content calendars and editorial processes
-* Currently developing new enterprise-wide taxonomies and metadata (based on [DCMI][]) for content management, content marketing (GTM), and SEO strategy
-* Management of new GSA upgrade and administrator UI, including development of synonyms lists as they relate to GA unique search terms
-* Content modeling, content typing, and CMS strategy for the upcoming cap.org re-platforming project
-* Developmental editing and ghostwriting for more than 100 of the organization's most engaged members and leadership
-* Presenting to CAP Leadership Committees on web writing best practices, SEO fundamentals, and Google Analytics
-  * [Sample Presentation 1][]
-  * [Sample Presentation 2][]
-* Leading professional development workshops for the Digital Strategy and Marketing teams on CMS best practices (eg, content and core modeling), front-end development, and SEO
+* Develop content calendars, new editorial processes, and new enterprise-wide taxonomies and metadata
+* Manage new GSA upgrade
+* Create content models and CMS strategy for upcoming re-platforming project
+* Ghostwriting and developmental editing for subset of highly engaged members
+* Educational presentations to CAP Leadership on web writing best practices, SEO fundamentals, and analytics (See [Sample Presentation 1][] and [Sample Presentation 2][])
+* Lead professional development workshops for the Digital Strategy and Marketing teams on CMS best practices, front-end development, and SEO
 
 #### Accomplishments
 
 * Defined the first editorial mission for CAP member content
-* Developed new editorial process and content strategy for member-focused content on the flagship website
-* Acted as sole developer, writer, and editor for organization's first web-based writer's guide and  documentation site, which includes a Google Drive--based workflow for SMEs and a redesigned Digital Strategy blog
-  * [Sample of CAP Digital Internal Website][]
+* Designed new editorial process and content strategy for CAP's flagship website
+* Sole developer, writer, designer, and editor for the organization's first web-based writer's guide and Digital Strategy Blog (See [Digital Website Sample][])
 
 ### Senior Medical Editor <span class="work-experience-time">Jun 2015 &ndash; Dec 2015</span>
 
-<div class="employer">Precision for Value, Editorial & Mixed Services</div>
+<div class="employer">Precision for Value, Editorial &amp; Mixed Services</div>
 
 #### Responsibilities
 
@@ -54,6 +51,7 @@ A senior marketing position in a progressive, fast-paced digital media agency th
 
 #### Accomplishments
 
+* Updated more than 70 communication pieces with more than a week to spare within NDA period
 * Spearheaded project with IT and medical writers to develop a new reference management system and wiki-based style guide
 
 ### Editor AAP.org <span class="work-experience-time">Feb 2014 &ndash; Jun 2015</span>
@@ -62,20 +60,19 @@ A senior marketing position in a progressive, fast-paced digital media agency th
 
 #### Responsibilities
 
-* Content strategy for the site's refresh project and member collaboration project
-* Management of more than 100 subsites and 50,000+ pieces of content on a site built with a distributed authorship model
+* Content strategy for the site refresh and member collaboration projects
+* Management of more than 100 subsites and 50,000+ pieces of content with a distributed authorship model
 * Google analytics review and reporting
-* Oversight of the marketing department's video DAM (Ooyala)
-* Lead permissions cleanup project and acted as main point of contact for consultants to standardize permissions and inheritance within the site's CMS
-* SharePoint 2013 CMS training of three web content assistants, as well as other colleagues across the Academy
-* Introduced new content management strategy and process; the new strategy included content calendars, content modeling, new metadata schema, and the development of a tutorial site for content owners
-  * [Sample of AAP.org Tutorial Site for Content Owners][]
+* Lead permissions cleanup project
+* CMS/DMS training of three web content assistants and other colleagues
+* Oversight of the marketing department's video DAM
 
 #### Accomplishments
 
-* STAR Award (quarterly employee recognition) for the Department of Marketing
+* Introduced new content management strategy, including content calendars, content modeling, metadata schema, and a standalone tutorial site (See [Tutorial Website Sample][])
+* STAR Award, Department of Marketing (quarterly employee recognition)
 * Standardized and automated a complex editorial workflow that reduced turnaround for content-related requests from 1 week to less than 24 hours
-* Combined editorial/content calendars between AAP.org and HealthyChildren.org to better unify content strategy between the organization's main member-focused and parent-focused web properties
+* Unified content calendars for AAP.org and HealthyChildren.org for better content strategy between the properties
 * Developed all front-end code for the [AAP's Literacy Toolkit](https://littoolkit.aap.org), a site introduced by Hillary Clinton during the AAP's National Conference & Exhibition
 
 ### Managing Medical Copy Editor <span class="work-experience-time">Nov 2011 &ndash; Feb 2014</span>
@@ -100,25 +97,41 @@ A senior marketing position in a progressive, fast-paced digital media agency th
 
 #### Select Contract Work
 
-* **CORPAK MedSystems, Buffalo Grove, IL:** Developed white papers, business cases, scientific posters, and abstracts for the CORTRAK Electromagnetic Feeding Tube Placement System and CORTRAK 2 EAS
+* **CORPAK MedSystems, Buffalo Grove, IL:** Developed white papers, business case, scientific poster, and a structured abstract for the CORTRAK Electromagnetic Feeding Tube Placement System and CORTRAK 2 EAS
 * **Agentive Marketing, Belle Mead, NJ:** Developed three educational modules for sales representatives detailing the vascular anatomy of the breast and the anterior abdominal wall for LifeCell (Somerville, NJ)
 
-## Education & Certifications
-
-* BA, English Studies, Illinois State University, 2004
-* Board Certification as an Editor in the Life Sciences (ELS); [BELS][]
-* Certified Professional Medical Writer (CPMW); [Graham School, University of Chicago][]
-
-## Related Skills
+## Skills
 
 ### Analytics, Data, and Search
 
 * Google Analytics (content grouping, dashboards, Google Sheet add-ons, etc)
-* Google Webmaster Tools
+* Google Webmaster Tools (Search Console)
 * Google Tag Manager
 * Google Search Appliance
 * [Swiftype][]
 * **Schema:** [DCMI][], [MeSH][], [Schema.org][], [Open Graph Protocol][], [Twitter][]
+
+### Front-end Development
+
+My love of front-end development is a reflection and outgrowth of my expertise in HTML5 semantics and its relationship to SEO and web best practices. *I take a web-first approach to all content.*
+
+* HTML5 and CSS3
+  * Preprocessors (SASS)
+  * CSS frameworks (Bootstrap, Semantic UI)
+  * Templating languages (Liquid, Go, Swig, Twig, Handlebars)
+* JavaScript
+  * Build tools (Grunt, Gulp) and transpilers (Babel)
+  * jQuery
+  * Node.js and NPM (basic proficiency)
+  * Currently studying [Angular 2][] and [Ember.js][]
+* Static Site Generators
+  * Jekyll, Hugo, Hexo
+* BASH, Applescript, and the Unix command line
+* git and [GitHub][]
+* Single Sourcing and Automation
+  * [Pandoc][]
+  * [Zapier][]
+* See the [shortlist of tools][] on this site's [About page] for applied examples
 
 ### Software & Content Management Systems
 
@@ -126,42 +139,34 @@ A senior marketing position in a progressive, fast-paced digital media agency th
 * **Office and Productivity Software:** Office 2013 (including Visio & Access), Google Drive, iWork Suite, OmniGraffle, OmniPlanner
 * **Collaboration:** Slack, Gitter
 
-### Front-end Development
+## Education & Certifications
 
-I take a web-first approach to all content. Even in personal workflows, I leverage open-source single-sourcing software (eg, [Pandoc][]) and automation (eg, [Zapier][]) to effectively distribute content across multiple channels. My love of front-end development is a reflection and outgrowth of my expertise in HTML5 semantics and its relationship to SEO and web best practices.
-
-* HTML5 and CSS3
-  * Preprocessors (SASS)
-  * CSS frameworks (Bootstrap, Semantic UI)
-  * Templating languages (Liquid, Go, Swig)
-* JavaScript
-  * Build tools (Grunt, Gulp) and transpilers (Babel)
-  * Node.js and NPM (basic proficiency)
-* Static Site Generators
-  * Jekyll, Hugo, Hexo
-* BASH, Applescript, and the Unix command line
-* git and [GitHub][]
-* See the [shortlist of tools][] on this site's [About page] for applied examples of my developmental skills
+* BA, English Studies, Illinois State University, 2004
+* Board Certification as an Editor in the Life Sciences (ELS); [BELS][]
+* Certified Professional Medical Writer (CPMW); [Graham School, University of Chicago][]
 
 [References and samples available upon request](/contact).
 
 [About page]: /about
+[Angular 2]: https://angular.io/
 [BELS]: http://www.bels.org/
 [DCMI]: http://dublincore.org/
+[Digital Website Sample]: /docsample
+[Ember.js]: http://emberjs.com/
 [Ghost]: https://ghost.org/
 [GitHub]: https://www.github.com/rdwatters
 [Graham School, University of Chicago]: https://grahamschool.uchicago.edu/
 [MeSH]: https://www.nlm.nih.gov/mesh/
 [Open Graph Protocol]: http://ogp.me/
+[Ooyala]: http://www.ooyala.com/
 [Pandoc]: http://pandoc.org/
 [Precision for Value]: http://www.precisionforvalue.com/
-[Sample of CAP Digital Internal Website]: /docsample
-[Sample of AAP.org Tutorial Site for Content Owners]: /migrationsample
 [Sample Presentation 1]: /presentationsample1
 [Sample Presentation 2]: /presentationsample2
 [Schema.org]: http://schema.org/
 [shortlist of tools]: /about#site-development
 [Swiftype]: https://swiftype.com/
+[Tutorial Website Sample]: /migrationsample
 [Twitter]: https://dev.twitter.com/cards/markup
 [Webhook]: http://www.webhook.com/
 [Zapier]: https://zapier.com/

@@ -46,7 +46,6 @@
         while (elms.length) {
             this.appendChild(elms[0]);
         }
-
         // If the first element had a sibling, insert the wrapper before the
         // sibling to maintain the HTML structure; otherwise, just append it
         // to the parent.

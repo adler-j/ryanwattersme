@@ -17,7 +17,7 @@
     } else if(mailTo.test(a[i].href)){
       a[i].setAttribute('target','');
     }
-    //uncomment the following to make all external links open in new tab/window. - not necessary it setting this same variable within config.toml fr the BlackFriday settings.
+    //uncomment the following to make all external links open in new tab/window. - not necessary it setting this same variable within config.toml fr the BlackFriday settings with Hugo.
     // else if (!internal.test(theHost)) { // make sure the href doesn't contain current site's host
     //   a[i].setAttribute('target', '_blank'); // if it doesn't, set attributes
     // }

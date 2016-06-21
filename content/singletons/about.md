@@ -9,12 +9,13 @@ type: singletons
 layout: about
 tags: [about,info]
 categories: []
+remove_kudos: true
 comments: First attempt at creating the About page for ryanwatters.io
 ---
 
 ## Me
 
-My name is Ryan. I am a content strategist, content marketer, editor, writer, web publisher, nerd, Japanophile, inchoate front-end developer, ramen aficionado, and (arguably the worst[^1]) guitarist in Chicago, IL.
+My name is Ryan. I am a content strategist, content marketer, front-end developer, editor, writer, web publisher, unabashed nerd, Japanophile, ramen aficionado, and (arguably the worst[^1]) guitarist in Chicago, IL.
 
 A couple items of note, if I may:
 
@@ -36,15 +37,16 @@ All content is licensed under a [Creative Commons Attribution 4.0 International 
 
 ## Site Development
 
-Suffice it to say that I built this site with [performance][] and [simplicity][] in mind.
+Suffice it to say that I built this site with [performance][] and [simplicity][] in mind. With the exception of [bigfoot.js][] (requires jQuery), I did not use a single CSS/front-end frameworks or a preexisting theme to build this site.
 
 Here is a shortlist of tools I used when developing this site:
 
 * [Gulp][]: compiling, concatenating, uglifying, and optimizing static assets; this includes [Babel][] for ES6 transpilation
 * [GitHub][]: version/source control
 * [Hugo][]: static site generation
-* [Wercker][]: automated deployments
 * [Amazon Simple Storage Service (S3)][]: hosting (static bucket)
+* [Wercker][]: automated deployments
+* [Amazon Web Services CLI][]: local deployments
 * [CloudFlare][]: content delivery (CDN), SSL, and reverse proxy
 * [Parse][]: NOSQL backend (article Kudos)
 * [Disqus][]: commenting
@@ -57,11 +59,13 @@ All source code is available under [MIT license][]. You are free to shamelessly 
 For an abridged visual style guide, see the site's [colophon][].
 
 [Amazon Simple Storage Service (S3)]:https://aws.amazon.com/s3/
+[Amazon Web Services CLI]: https://aws.amazon.com/cli/
 [Articles]: /articles
-[Babel]:https://babeljs.io/
-[CloudFlare]:https://www.cloudflare.com
+[Babel]: https://babeljs.io/
+[bigfoot.js]: http://www.bigfootjs.com/
+[CloudFlare]: https://www.cloudflare.com
 [colophon]: /colophon
-[commonmark spec]:http://spec.commonmark.org/
+[commonmark spec]: http://spec.commonmark.org/
 [Disqus]:https://disqus.com/
 [Jotform]:http://www.jotform.com/
 [GitHub]:https://github.com/rdwatters/ryanwattersme

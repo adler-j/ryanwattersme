@@ -1,6 +1,6 @@
 ---
 title: Better Code Blocks with Hugo and Clipboard.js
-subtitle: Provide convenience and consistency in your code tutorials by leveraging Hugo's built-in shortcode functionality and `Document.execCommand`
+subtitle: Provide convenience and consistency in your code tutorials by leveraging Hugo shortcodes and `Document.execCommand`
 description: ryanwatters.io is currently in development. Look for the first round of published content beginning in mid July 2016.
 date: 2016-05-28
 publishdate: 2016-05-28

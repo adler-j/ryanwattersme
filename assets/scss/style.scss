@@ -132,9 +132,9 @@ header.articles {
     background-position: center;
     width: 100%;
     margin-bottom: 1em;
-    height: 100vh;
-    min-height: 100vh;
-    max-height: 100vh;
+    height: $blog-header-height;
+    min-height: $blog-header-height;
+    max-height: $blog-header-height;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -144,7 +144,9 @@ header.articles {
     }
     &:before {
         transition: opacity $blog-header-trans-time ease-in-out;
-        height: 100vh;
+        height: $blog-header-height;
+        min-height: $blog-header-height;
+        max-height: $blog-header-height;
         content: '';
         display: block;
         position: absolute;
@@ -155,6 +157,7 @@ header.articles {
         pointer-events: none;
         opacity: 1;
         background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.3));
+        // background:$brand;
     }
     &.articles-not-top {
         transition: all $blog-header-trans-time ease-in-out;
