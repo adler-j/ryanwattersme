@@ -2,9 +2,9 @@
 title: Swiped Out
 subtitle: Testing design with pure CSS iOS dating app screenshots.
 description: Testing design with pure CSS iOS dating app screenshots.
-date: 2016-06-01
-publishdate: 2016-06-01
-updated: 2016-06-01
+date: 2016-06-22
+publishdate: 2016-06-22
+updated: 2016-06-22
 image: tinder-smudge.jpg
 draft: true
 categories: [dev testing]

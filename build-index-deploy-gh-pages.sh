@@ -6,12 +6,12 @@ TODAY=$(date)
 # Begin Image Copy
 find ${curdir}/content \( -iname '*.jpg' -o -iname '*.png' -o -iname '*.gif' \) -type f -exec cp -v -- {} ${curdir}/static/assets/images/ \;
 # Build Hugo.
-hugo
-cp ${curdir}/public/json/index.html ${curdir}/static/assets/site-index.json
+hugo --ignoreCache
+cp ${curdir}/public/json/index.html ${curdir}/public/assets/site-index.json
+rm -rf ${curdir}/public/json
 cd $curdir
 
 yes | cp -rf public/* ~/Desktop/GitHub/rdwatters.github.io
-d
 rm -rf public
 cd ~/Desktop/GitHub/rdwatters.github.io
 echo "Deployment: $TODAY" >> deploy.txt

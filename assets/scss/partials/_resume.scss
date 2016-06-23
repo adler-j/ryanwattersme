@@ -80,9 +80,6 @@ main#resume-main {
 
 .resume-contact {
     display: block;
-    // position:absolute;
-    // right:0px;
-    // top:1em;
     width: auto;
     a.resume {
         display: inline;
@@ -91,8 +88,10 @@ main#resume-main {
         width: 6em;
         box-shadow: none;
         margin-right: .5em;
+        cursor:pointer;
         &:hover {
             color: $brand;
+            cursor:pointer;
         }
     }
 }

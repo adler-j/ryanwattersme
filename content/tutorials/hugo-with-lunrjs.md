@@ -5,7 +5,7 @@ description: ryanwatters.io is currently in development. Look for the first roun
 date: 2016-04-28
 publishdate: 2016-04-28
 updated: 2016-04-28
-image: hugo-javascript.jpg
+image: lunrjs.png
 categories: [dev testing]
 tags: [search,lunr.js,hugo]
 include_comments: false

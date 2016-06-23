@@ -1,19 +1,39 @@
 <!-- NOTE: global_head includes up to and including the opening <body> tag. -->
 {{ partial "site_header.html" . }}
-<main role="main">
+<main role="main" id="homepage">
     {{ partial "share_social_media.html" . }}
     <article class="homepage">
-    <div class="content-wrapper home">
-        <header>
-            <h1 class="title homepage">こんにちは*</h1><sup class="foonote-ref homepage"><a rel="footnote" href="#fn:1">1</a></sup>
+        <header class="homepage-header">
+            <!-- <h1 class="title homepage">こんにちは*</h1><sup class="foonote-ref homepage"><a rel="footnote" href="#fn:1">1</a></sup> -->
+            <h1 class="title homepage">IN DEVELOPMENT</h1>
         </header>
+        <div class="homepage-content">
         {{partial "homepage-temp-content.html" | print | markdownify }}
-        <div class="footnotes">
+        {{ range .Site.Pages.ByPublishDate.Reverse}}
+            {{if or (eq .Section "articles") (eq .Section "tutorials")}}
+                <a href="{{.Permalink}}" class="home-section">
+                    <section>
+                        <header>
+                            <div class="list-header-image">
+                                <img src="/assets/images/{{.Params.image}}" alt="">
+                            </div>
+                            <div class="article-info">
+                            <time datetime="{{.PublishDate.Format "January 2, 2006"}}">{{.PublishDate.Format "January 2, 2006"}}</time>
+                            <h1 class="title home">{{.Title}}</h1>
+                            </div>
+                        </header>
+                    </section>
+                </a>
+            {{ end }}
+        {{ end }}
+        </div>
+        <hr>
+        <!-- <div class="footnotes">
         	<hr>
         	<ol>
         		<li id="fn:1">*&nbsp;Hi.</li>
         	</ol>
-        </div>
+        </div> -->
     </article>
 </main>
 {{ partial "site_footer.html" . }}

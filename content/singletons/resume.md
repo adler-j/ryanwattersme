@@ -31,7 +31,7 @@ Experienced web professional with a deep understanding of content strategy, mark
 * Create content models and CMS strategy for upcoming re-platforming project
 * Ghostwriting and developmental editing for subset of highly engaged members
 * Educational presentations to CAP Leadership on web writing best practices, SEO fundamentals, and analytics (See [Sample Presentation 1][] and [Sample Presentation 2][])
-* Lead professional development workshops for the Digital Strategy and Marketing teams on CMS best practices, front-end development, and SEO
+* Lead professional development workshops for the Digital Strategy and Marketing teams on CMS best practices, front-end development, and SEO (See [Workshop Excerpt][])
 
 #### Accomplishments
 
@@ -118,12 +118,12 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 * HTML5 and CSS3
   * Preprocessors (SASS)
   * CSS frameworks (Bootstrap, Semantic UI)
-  * Templating languages (Liquid, Go, Swig, Twig, Handlebars)
+  * Templating languages (Liquid, Golang, Swig, Twig, Handlebars)
 * JavaScript
   * Build tools (Grunt, Gulp) and transpilers (Babel)
   * jQuery
   * Node.js and NPM (basic proficiency)
-  * Currently studying [Angular 2][] and [Ember.js][]
+  * Currently studying [Ember.js][]
 * Static Site Generators
   * Jekyll, Hugo, Hexo
 * BASH, Applescript, and the Unix command line
@@ -148,7 +148,6 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 [References and samples available upon request](/contact).
 
 [About page]: /about
-[Angular 2]: https://angular.io/
 [BELS]: http://www.bels.org/
 [DCMI]: http://dublincore.org/
 [Digital Website Sample]: /docsample
@@ -169,4 +168,5 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 [Tutorial Website Sample]: /migrationsample
 [Twitter]: https://dev.twitter.com/cards/markup
 [Webhook]: http://www.webhook.com/
+[Workshop Excerpt]: /presentationsample3
 [Zapier]: https://zapier.com/

@@ -6,7 +6,7 @@ date: 2016-05-28
 publishdate: 2016-05-28
 updated: 2016-05-28
 draft: false
-image: hugo-clipboard.jpg
+image: hugo-javascript.jpg
 categories: [dev testing]
 tags: [markdown,hugo]
 include_comments: false

@@ -7,3 +7,4 @@ Disallow: /docsample/
 Disallow: /migrationsample/
 Disallow: /presentationsample1/
 Disallow: /presentationsample2/
+Disallow: /presentationsample3/

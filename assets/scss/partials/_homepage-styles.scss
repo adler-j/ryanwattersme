@@ -1,11 +1,181 @@
+main#homepage {
+    margin: 0px;
+    padding: 0px;
+}
+
+article.homepage {
+    min-width: 100%;
+    width: 100vw;
+    margin: 0px;
+    margin-top: $top-bar-height;
+}
+
+h1.title.homepage {
+    font-size: 2.2em;
+    @include MQ(M) {
+        font-size: 3.2em;
+    }
+    @include MQ(L) {
+        font-size: 3.8em;
+    }
+}
+
+header.homepage-header {
+    margin: 0px;
+    padding-top: 0px;
+    background-color: $homepage-header-bg-color;
+    height: 45vh;
+    text-align: center;
+    margin-bottom: .5em;
+    @include MQ(M) {
+        margin-bottom: 1.5em;
+    }
+    h1 {
+        color: white;
+        line-height: 45vh;
+        height: 45vh;
+        vertical-align: middle;
+    }
+    button.bigfoot-footnote__button {
+        background-color: white!important;
+    }
+    svg.bigfoot-footnote__button__circle circle {
+        fill: $homepage-header-bg-color;
+    }
+}
 
 .homepage-footnote {
-	position:absolute;
-	bottom:0px;
-	left:0px;
-	color:$base-font-color;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    color: $base-font-color;
 }
 
 .footnote-ref.homepage {
-	font-size:16px;
+    font-size: 16px;
 }
+
+div.homepage-content {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: $XL * 1.2;
+    margin-right: auto;
+    margin-left: auto;
+    a.home-section {
+        font-size: .7em;
+        width: 95%;
+        margin-right: auto;
+        margin-left: auto;
+        color: $base-font-color;
+        margin-bottom: .75em;
+        font-family: $heading-font-family;
+        box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+        &:hover {
+            box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
+            section > header > div.list-header-image img {
+                filter: grayscale(0%);
+            }
+        }
+        @include MQ(M) {
+            margin-bottom: 1em;
+            width: 42%;
+            margin-left: 5.3%;
+            margin-right: 0%;
+        }
+        @include MQ(L) {
+            width: 30%;
+            margin-left: 2.5%;
+        }
+    }
+    section {
+        div.list-header-image {
+            img {
+                transition: all .3s ease-in-out;
+                width: 100%;
+                height: auto;
+                filter: grayscale(100%);
+            }
+        }
+        div.article-info {
+            padding: 1em;
+        }
+        h1.title.home {
+            font-size: 1.4em;
+        }
+        span.subtitle {
+            text-transform: none;
+        }
+    }
+}
+
+// div.homepage-content {
+//     display: flex;
+//     flex-wrap: wrap;
+//     a.home-section {
+//         min-height: 10em;
+//         position: relative;
+//         color: white;
+//         width: 100vw;
+//         background-size: cover;
+//         background-repeat: no-repeat;
+//         @include MQ(M) {
+//             width: 45vw;
+//             margin:.5em 0em .5em 2.5vw;
+//         }
+//         @include MQ(L) {
+//             width: 30vw;
+//         }
+//         &:hover {
+//             color: white;
+//         }
+//         &:before {
+//             content: '';
+//             display: block;
+//             position: absolute;
+//             top: 0;
+//             right: 0;
+//             bottom: 0;
+//             left: 0;
+//             min-width: 100%;
+//             min-height: 100%;
+//             background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8));
+//         }
+//         section {
+//             position: relative;
+//             min-height: 100%;
+//             margin-right: auto;
+//             margin-left: auto;
+//             header {
+//                 margin: 0px;
+//                 padding: 0px;
+//                 min-height: 100%;
+//                 position: relative;
+//             }
+//             div {
+//                 position: relative;
+//                 padding: .5em;
+//                 z-index: 10;
+//                 display: flex;
+//                 flex-direction: column;
+//                 time {
+//                     display: block;
+//                     width: 100%;
+//                     text-align: right;
+//                     text-transform: uppercase;
+//                     font-size:.8em;
+//                     font-weight: bold;
+//                     color: white;
+//                     font-family: $heading-font-family;
+//                 }
+//                 h1.title.home {
+//                     font-size: 1.5em;
+//                     color: white;
+//                 }
+//                 span.subtitle {
+//                     margin-top: 1em;
+//                     text-transform: none;
+//                 }
+//             }
+//         }
+//     }
+// }

@@ -1,8 +1,8 @@
 @import 'variables';
+@import 'partials/font-face';
 @import 'bourbon/bourbon';
 @import 'partials/layout';
 @import 'partials/mixins';
-@import 'partials/font-face';
 @import 'partials/base';
 @import 'partials/images';
 @import 'partials/video';
@@ -41,7 +41,7 @@ main.main {
     padding: 0px;
     min-height: 100%;
     overflow-x: hidden;
-    overflow-y:scroll;
+    overflow-y: scroll;
     -webkit-overflow-scrolling: touch;
     background-color: $body-background-color;
     &.open {
@@ -65,11 +65,6 @@ article {
     }
     header {
         margin-bottom: 1.5em;
-    }
-    &.homepage {
-        min-height: 60vh;
-        margin-top: 3.5em;
-        margin-right:-16px;
     }
     &.list,
     &.singleton {
@@ -99,10 +94,9 @@ article {
     }
 }
 
-article a,
 article.content a,
-article.homepage a,
-article#about a {
+article#about a,
+.content-wrapper a {
     font-size: inherit;
     color: $brand;
     transition: box-shadow ease 250ms, color ease 250ms;
@@ -297,19 +291,19 @@ article time.publishdate {
 }
 
 a.creative-commons {
-    margin-bottom:0px;
+    margin-bottom: 0px;
     .cc-license-icon {
         width: 40%;
         max-width: 150px;
         height: auto;
         margin-left: auto;
         margin-right: auto;
-        margin-bottom:0px;
+        margin-bottom: 0px;
         &:hover {
             box-shadow: none!important;
         }
     }
     &:hover {
-            box-shadow: none!important;
+        box-shadow: none!important;
     }
 }
