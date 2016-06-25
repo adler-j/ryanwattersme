@@ -2,9 +2,9 @@
 title: About
 subtitle:
 description: Here is some information about me, Ryan Watters, the sole developer, publisher, writer, and editor for ryanwatters.io.
-date: 2016-03-20
-publishdate: 2016-03-20
-updated: 2016-03-20
+date: 2016-06-24
+publishdate: 2016-06-24
+updated: 2016-06-24
 type: singletons
 layout: about
 tags: [about,info]

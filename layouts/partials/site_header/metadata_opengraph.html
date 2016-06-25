@@ -1,6 +1,6 @@
 <!-- Open Graph Protocol http://ogp.me/ -->
 <meta property="og:locale" content="en_US">
 <meta property="og:title" content="{{ if .Title }}{{ .Title }}{{ else }}{{ .Site.Title }}{{ end }}">
-<meta property="og:image" content="{{ if .Params.image }}{{.Site.BaseURL}}/assets/images/{{.Params.image}}{{ else }}{{.Site.BaseURL}}/assets/images/ryanwatters-social.png{{ end }}">
+<meta property="og:image" content="{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.DefaultSocialImage }}">
 <meta property="og:description" content="{{ if .IsHome }}{{ .Site.Params.SiteDescription }}{{ else if .IsPage }}{{ .Description }}{{ else if .IsNode }}{{ index .Site.Data.sectioninfo .Title }}{{ end }}"/>
 <meta property="og:site_name" content="{{ .Site.Title }}">

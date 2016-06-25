@@ -11,6 +11,7 @@ categories: [dev testing]
 tags: [apps, technology]
 include_comments: true
 remove_kudos: true
+no_google: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque iusto modi, voluptate enim reiciendis quasi dolorem provident iste ut aut reprehenderit dolore illo ducimus, placeat consequuntur repellendus porro accusantium libero.

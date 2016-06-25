@@ -1,16 +1,17 @@
 ---
 title: Better Code Blocks with Hugo and Clipboard.js
-subtitle: Provide convenience and consistency in your code tutorials by leveraging Hugo shortcodes and `Document.execCommand`
+subtitle: Add convenience to your tutorials by leveraging Hugo shortcodes and `Document.execCommand`
 description: ryanwatters.io is currently in development. Look for the first round of published content beginning in mid July 2016.
-date: 2016-05-28
-publishdate: 2016-05-28
-updated: 2016-05-28
+date: 2016-06-24
+publishdate: 2016-06-24
+updated: 2016-06-24
 draft: false
 image: hugo-javascript.jpg
 categories: [dev testing]
 tags: [markdown,hugo]
 include_comments: false
 remove_kudos: true
+no_google: false
 ---
 
 {{% assumptions %}}
@@ -19,13 +20,9 @@ remove_kudos: true
 * Beginner to intermediate knowledge of CSS and SASS (optional)
 {{% /assumptions %}}
 
-## Getting Started
+## Introduction
 
-My nicknameless nondesisting emballonurid bepray entireness actinocrinite trembler [link to google][] epiphysitis **Platycodon** prosobranch hyperplane remap coronated branchiate.[^1] But here is *something in italics*.
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsum et, repellat nulla praesentium totam aliquid animi itaque saepe dignissimos dolorem deserunt illo! Doloremque, perspiciatis ullam qui id porro. Repellat, quis!
-
-Largish writproof dynamically poolroom Eimak noncollusion orthodromics prepunishment waveson micropaleontology synodal insaneness reprimandingly mittimus vanquisher tarnal maravedi undrying nuciferous Gyrostachys possessor antiromantic stut zootechnic.
+Copyable code blocks have become
 
 ## Code Samples
 

@@ -7,19 +7,21 @@
             <!-- <h1 class="title homepage">こんにちは*</h1><sup class="foonote-ref homepage"><a rel="footnote" href="#fn:1">1</a></sup> -->
             <h1 class="title homepage">IN DEVELOPMENT</h1>
         </header>
+        <h2 class="recently-published">Recently Published</h2>
         <div class="homepage-content">
-        {{partial "homepage-temp-content.html" | print | markdownify }}
-        {{ range .Site.Pages.ByPublishDate.Reverse}}
+        {{ range first 3 .Site.Pages.ByPublishDate.Reverse}}
             {{if or (eq .Section "articles") (eq .Section "tutorials")}}
                 <a href="{{.Permalink}}" class="home-section">
                     <section>
                         <header>
                             <div class="list-header-image">
+                                    <span class="section-name">{{.Section | singularize | upper}}</span>
                                 <img src="/assets/images/{{.Params.image}}" alt="">
                             </div>
                             <div class="article-info">
                             <time datetime="{{.PublishDate.Format "January 2, 2006"}}">{{.PublishDate.Format "January 2, 2006"}}</time>
                             <h1 class="title home">{{.Title}}</h1>
+                            <div class="description">{{.Description }}</div>
                             </div>
                         </header>
                     </section>

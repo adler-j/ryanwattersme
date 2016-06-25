@@ -13,7 +13,7 @@
   "wordCount":{{.WordCount}},
   "image":{
   	"@type":"ImageObject",
-  	"url":"{{.Site.BaseURL}}assets/images/{{with .Params.image}}{{.}}{{else}}{{.Site.Params.DefaultSocialImage}}{{end}}",
+  	"url":"{{.Site.BaseURL}}/assets/images/{{.Params.image | default .Site.Params.DefaultSocialImage }}",
   	"height": 630,
   	"width": 1200
 	},

@@ -10,6 +10,7 @@ categories: [dev testing]
 tags: [search,lunr.js,hugo]
 include_comments: false
 remove_kudos: true
+no_google: false
 ---
 
 {{% assumptions %}}

@@ -10,6 +10,7 @@ categories: [dev testing]
 tags: [testing,nonsense]
 include_comments: false
 remove_kudos: false
+no_google: false
 ---
 
 Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod

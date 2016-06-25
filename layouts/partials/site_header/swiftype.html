@@ -1,16 +1,9 @@
-{{if .Site.Params.Swiftype }}
-{{if .IsPage }}
-<meta class="swiftype" name="title" data-type="string" content="{{if .IsHome }}{{.Site.Title}} - Home {{else}}{{ .Title }}{{end}}" />
-<meta class="swiftype" name="url" data-type="enum" content="{{ .Permalink }}" />
-<meta class="swiftype" name="description" data-type="text" content="{{if .IsPage}}{{.Description}}{{else}}{{.Site.Params.SiteDescription}}{{end}}">
-<meta class='swiftype' name='image' data-type='enum' content='{{if .Params.image }}{{.Site.BaseURL}}/assets/images/{{.Params.image}}{{else}}{{.Site.BaseURL}}/assets/images/ryanwatters-social.png{{end}}' />
-<meta class='swiftype' name='sections' data-type='string' content='{{if .IsHome}}Home{{else}}{{.Section}}{{end}}' />
-<meta class="swiftype" name="published_at" data-type="date" content="{{if .IsHome}}{{.Site.Params.SitePublishDate}}{{else if .IsPage }}{{.PublishDate.Format "2006-01-02"}}{{end}}"/>
-<meta class='swiftype' name='info' data-type='string' content='{{if .IsHome}}{{.Site.Params.SiteDescription}}{{else}}{{.Description}}{{end}}'/>
-{{if isset .Params "tags"}}
-	{{ range .Params.tags }}
-	<meta class="swiftype" name="tags" data-type="string" content="{{.}}" />
-	{{ end }}
-{{ end }}
-{{ end }}
-{{ end }}
+{{if .Site.Params.Swiftype }}<meta class="swiftype" name="title" data-type="string" content="{{if .IsHome }}{{.Site.Title}} | Home {{else}}{{ .Title }}{{end}}" />
+	<meta class="swiftype" name="url" data-type="enum" content="{{ .Permalink }}" />
+	<meta class="swiftype" name="description" data-type="text" content="{{ if .IsHome }}{{ .Site.Params.SiteDescription }}{{ else if .IsPage }}{{ .Description }}{{ else if .IsNode }}{{ index .Site.Data.sectioninfo .Title }}{{ end }}">
+	<meta class="swiftype" name="image" data-type="enum" content="{{if .Params.image }}{{.Site.BaseURL}}/assets/images/{{.Params.image}}{{else}}{{.Site.BaseURL}}/assets/images/ryanwatters-social.png{{end}}" />
+	<meta class='swiftype' name='sections' data-type='string' content='{{if .IsHome}}Home{{else if .IsPage }}{{.Section}}{{else}}{{.Title}}{{end}}' />
+	<meta class="swiftype" name="published_at" data-type="date" content="{{if .IsPage }}
+	{{.PublishDate.Format "2006-01-02"}}{{else}}{{.Site.Params.SitePublishDate}}{{end}}"/>
+	<meta class="swiftype" name="info" data-type="string" content="{{ if .IsHome }}{{ .Site.Params.SiteDescription }}{{ else if .IsPage }}{{ .Description }}{{ else if .IsNode }}{{ index .Site.Data.sectioninfo .Title }}{{ end }}"/>
+	{{if isset .Params "tags"}}{{ range .Params.tags }}<meta class="swiftype" name="tags" data-type="string" content="{{.}}" />{{ end }}{{ end }}{{ end }}

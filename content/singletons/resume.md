@@ -11,12 +11,13 @@ type: singletons
 layout: resume
 tags: []
 categories: []
+no_google: true
 comments: Resume developed
 ---
 
 ## Profile
 
-Experienced web professional with a deep understanding of content strategy, marketing, and creation; front-end development and performance; web publishing and analytics; and search engine optimization.
+Experienced web professional with a deep understanding of content strategy, storytelling, web publishing, front-end development, web performance, analytics, and search engine optimization.
 
 ## Experience
 
