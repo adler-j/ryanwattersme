@@ -109,7 +109,7 @@ Experienced web professional with a deep understanding of content strategy, stor
 * Google Webmaster Tools (Search Console)
 * Google Tag Manager
 * Google Search Appliance
-* [Swiftype][]
+* [Swiftype][], [Algolia][], [lunr.js][]
 * **Schema:** [DCMI][], [MeSH][], [Schema.org][], [Open Graph Protocol][], [Twitter][]
 
 ### Front-end Development
@@ -149,6 +149,7 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 [References and samples available upon request](/contact).
 
 [About page]: /about
+[Algolia]: https://www.algolia.com
 [BELS]: http://www.bels.org/
 [DCMI]: http://dublincore.org/
 [Digital Website Sample]: /docsample
@@ -156,6 +157,7 @@ My love of front-end development is a reflection and outgrowth of my expertise i
 [Ghost]: https://ghost.org/
 [GitHub]: https://www.github.com/rdwatters
 [Graham School, University of Chicago]: https://grahamschool.uchicago.edu/
+[lunr.js]: http://lunrjs.com/
 [MeSH]: https://www.nlm.nih.gov/mesh/
 [Open Graph Protocol]: http://ogp.me/
 [Ooyala]: http://www.ooyala.com/

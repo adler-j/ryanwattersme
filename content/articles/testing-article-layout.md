@@ -2,10 +2,10 @@
 title: This Article is Only for Testing Layout
 subtitle: This article should be ignored. Look for the first round of content in July 2016.
 description: ryanwatters.io is currently in development. Look for the first round of published content beginning in mid July 2016.
-date: 2016-05-18
-publishdate: 2016-05-18
+date: 2016-06-24
+publishdate: 2016-06-24
 image: layout-test.jpg
-updated: 2016-05-18
+updated: 2016-06-24
 categories: [dev testing]
 tags: [testing,nonsense]
 include_comments: false

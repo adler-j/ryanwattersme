@@ -307,3 +307,19 @@ a.creative-commons {
         box-shadow: none!important;
     }
 }
+
+.facebook-wrapper {
+    display: flex;
+    padding:0px;
+    margin-top: 0em;
+    margin-bottom: .5em;
+    @include MQ(M) {
+        justify-content: flex-end;
+    }
+    > div {
+        margin-right: -40%;
+        @include MQ(M) {
+            margin-right: -25%;
+        }
+    }
+}

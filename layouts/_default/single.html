@@ -22,7 +22,14 @@
     </header>
     <article class="content articles" id="{{.Title|urlize}}">
     <div class="content-wrapper" {{if .Site.Params.Swiftype}}data-swiftype-name="body" data-swiftype-type="text"{{end}}>
-    <!-- <div class="fb-share-button" data-href="{{.Permalink}}" data-layout="button_count" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u={{.Permalink}}&amp;src=sdkpreparse">Share</a></div> -->
+    <!-- <div class="facebook-wrapper">
+    <div
+      class="fb-like"
+      data-share="true"
+      data-width="450"
+      data-show-faces="true">
+    </div>
+    </div> -->
         {{ .Content }}
     </div>
     </article>

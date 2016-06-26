@@ -1,18 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+<head{{if .IsHome }} prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# website: http://ogp.me/ns/website#"{{else if .IsPage }} prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#"{{ end }}>
     {{ partial "site_header/metadata_standard.html" . }}
-    {{ partial "site_header/metadata_schemaorg.html" . }}
     {{ partial "site_header/metadata_opengraph.html" . }}
+    {{ partial "site_header/metadata_schemaorg.html" . }}
     {{ partial "site_header/metadata_twitter.html" . }}
     {{ partial "site_header/metadata_prefetch.html" . }}
     {{ partial "site_header/metadata_favicons.html" . }}
-    <!-- site_style.html is configured for critical render path in config.toml via UseCRP-->
+    <!-- site_style.html is configured for critical render path Site.Params.UseCRP-->
     {{ partial "site_header/site_style.html" . }}
     {{ partial "site_header/swiftype.html" . }}
 </head>
 <body>
+<!--     <script async>
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '1389111194449073',
+          xfbml      : true,
+          version    : 'v2.6'
+        });
+      };
+
+      (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+        </script> -->
     {{ partial "site_header/top_bar.html" . }}
     <a href="" id="page-top"></a>
     <header class="site-header">

@@ -2,9 +2,9 @@
 title: Hugo with lunr.js
 subtitle: Offer live, client-side, full-text search for your statically generated Hugo website.
 description: ryanwatters.io is currently in development. Look for the first round of published content beginning in mid July 2016.
-date: 2016-04-28
-publishdate: 2016-04-28
-updated: 2016-04-28
+date: 2016-06-24
+publishdate: 2016-06-24
+updated: 2016-06-24
 image: lunrjs.png
 categories: [dev testing]
 tags: [search,lunr.js,hugo]
