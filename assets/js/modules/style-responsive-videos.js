@@ -11,7 +11,7 @@
         videoWrapper = document.createElement('div'),
         youTubeTest = new RegExp('youtube');
     videoWrapper.className = "videoWrapper";
-    //Wrap function as substitute for jQuery .wrap(). Taken from http://stackoverflow.com/questions/3337587/wrapping-a-set-of-dom-elements-using-javascript 
+    //Wrap function as substitute for jQuery .wrap(). Taken from http://stackoverflow.com/questions/3337587/wrapping-a-set-of-dom-elements-using-javascript
     HTMLElement.prototype.wrap = function(elms) {
         // Convert `elms` to an array, if necessary.
         if (!elms.length) elms = [elms];
@@ -40,9 +40,11 @@
             }
         }
     };
-    for (var i = 0; i < iframes.length; i++) {
-        if (youTubeTest.test(iframes[i].getAttribute('src'))) {
-            videoWrapper.wrap(iframes[i]);
+    if (iframes.lenght > 0) {
+        for (var i = 0; i < iframes.length; i++) {
+            if (youTubeTest.test(iframes[i].getAttribute('src'))) {
+                videoWrapper.wrap(iframes[i]);
+            }
         }
     }
 })();

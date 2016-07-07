@@ -1,16 +1,14 @@
 <!-- NOTE: global_head includes up to and including the opening <body> tag. -->
 {{ partial "site_header.html" . }}
-<main role="main" id="homepage">
+<main role="main" class="main" id="homepage">
     {{ partial "share_social_media.html" . }}
     <article class="homepage">
         <header class="homepage-header">
-            <!-- <h1 class="title homepage">こんにちは*</h1><sup class="foonote-ref homepage"><a rel="footnote" href="#fn:1">1</a></sup> -->
             <h1 class="title homepage">IN DEVELOPMENT</h1>
         </header>
         <h2 class="recently-published">Recently Published</h2>
         <div class="homepage-content">
-        {{ range first 3 .Site.Pages.ByPublishDate.Reverse}}
-            {{if or (eq .Section "articles") (eq .Section "tutorials")}}
+        {{ range first 3 (where .Site.Pages.ByPublishDate.Reverse "Type" "!=" "singletons")}}
                 <a href="{{.Permalink}}" class="home-section">
                     <section>
                         <header>
@@ -26,16 +24,9 @@
                         </header>
                     </section>
                 </a>
-            {{ end }}
         {{ end }}
         </div>
         <hr>
-        <!-- <div class="footnotes">
-        	<hr>
-        	<ol>
-        		<li id="fn:1">*&nbsp;Hi.</li>
-        	</ol>
-        </div> -->
     </article>
 </main>
 {{ partial "site_footer.html" . }}

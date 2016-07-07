@@ -7,7 +7,7 @@ publishdate: 2016-06-24
 image: layout-test.jpg
 updated: 2016-06-24
 categories: [dev testing]
-tags: [testing,nonsense]
+tags: [testing,nonsense,apps,technology]
 include_comments: false
 remove_kudos: false
 no_google: false

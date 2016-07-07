@@ -3,9 +3,9 @@
     <div class="toc-wrapper">
     <a href="#page-top">
         <header class="toc-header" id="toc-header">
-            <h4 class="toc-title">{{.Title}}</h4>
+            <h4 class="toc-title">{{.Title | markdownify}}</h4>
             {{with .Params.subtitle}}
-            	<div class="toc-subtitle">{{.}}</div>
+            	<div class="toc-subtitle">{{. | markdownify}}</div>
             {{end}}
         </header>
     </a>

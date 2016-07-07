@@ -1,6 +1,7 @@
 main#homepage {
     margin: 0px;
     padding: 0px;
+    // filter:grayscale(100%);
 }
 
 article.homepage {
@@ -78,9 +79,9 @@ div.homepage-content {
             margin-right: 0%;
             &:hover {
                 box-shadow: 0px 4px 12px 0px rgba(0, 0, 0, 0.2);
-                section > header > div.list-header-image img {
-                    filter: grayscale(0%);
-                }
+                // section > header > div.list-header-image img {
+                //     filter: grayscale(0%);
+                // }
             }
         }
         @include MQ(L) {
@@ -95,9 +96,9 @@ div.homepage-content {
                 transition: all .3s ease-in-out;
                 width: 100%;
                 height: auto;
-                @include MQ(M) {
-                    filter: grayscale(0%);
-                }
+                // @include MQ(M) {
+                //     filter: grayscale(0%);
+                // }
             }
         }
         div.article-info {

@@ -1,5 +1,5 @@
 {{ partial "site_header.html" . }}
-<main role="main" class="main">
+<main role="main" class="main" id="main">
     {{ if .IsPage }}
         {{if ne .URL "/contact/"}}
             {{ partial "share_social_media.html" . }}
@@ -22,14 +22,6 @@
     </header>
     <article class="content articles" id="{{.Title|urlize}}">
     <div class="content-wrapper" {{if .Site.Params.Swiftype}}data-swiftype-name="body" data-swiftype-type="text"{{end}}>
-    <!-- <div class="facebook-wrapper">
-    <div
-      class="fb-like"
-      data-share="true"
-      data-width="450"
-      data-show-faces="true">
-    </div>
-    </div> -->
         {{ .Content }}
     </div>
     </article>
@@ -42,6 +34,5 @@
     <div class="disqus-wrapper">
     {{partial "disqus_comments.html" . }}
     </div>
-
 </main>
 {{ partial "site_footer.html" . }}

@@ -50,10 +50,12 @@ watch = true
   # Include locally hosted jQuery 2.2.2
   IncludeJQ = false
   UseDisqus = true
+  UseKudos = false
   # Include Swiftype Metadata in Head
-  Swiftype = true
+  Swiftype = false
   disqusShortname = ""
   SitePublishDate = "2016-01-01"
+
 
 [blackfriday]
 	plainIDAnchors = true

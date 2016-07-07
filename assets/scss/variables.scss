@@ -9,34 +9,50 @@ $LL: 1100px; //rarely if ever used
 $XL:1250px;
 
 $use-font-face-module:true;
-$include-second-font:true;
-$include-third-font:true;
-$font: 'chaparralpro';
-$second-font: 'futurapt';
-$third-font: 'courierprime'; //code blocks
+$use-font-two: true;
+$use-font-three: true;
+$font: 'proximanova';
+$font-two: 'adelle';
+$font-three: 'courierprime';
+
 
 $base-font-family: $font, 'helvetica Neue', Helvetica, sans-serif;
-$heading-font-family: $second-font,"futura-pt",Georgia,serif;
-$code-font-family: $third-font,Courier,monospace;
-$heading-font-weight: 400;
+$heading-font-family: $font-two,"futura-pt",Georgia,serif;
+$code-font-family: $font-three,Courier,monospace;
+$site-header-font-family: $heading-font-family;
+$dropcap-font-family:$heading-font-family;
 $form-input-font-family: $base-font-family;
-$site-header-font-family: $heading-font-family,Arial,Helvetic,sans-serif;
 $tags-font-family:$heading-font-family;
+
+
+
+
+// $dropcap-box-shadow:1px 1px 1px $base-font-color;
+$dropcap-box-shadow:none;
+
+$base-font-weight:400;
+$heading-font-weight: 100;
 $strong-and-bold-default-weight:500;
+$dropcap-font-weight: 600;
+
+$base-font-color:#333333;
+$h1-page-heading-font-color: #000000;
+$h1-page-head-font-weight: 100;
+$dropcap-color:$base-font-color;
 
 //Sizing
-$base-line-height: 1.5;
 $base-font-size: 22px;
-$base-font-weight:400;
+$base-line-height: 1.5;
+
+
 // $site-menu-width: calc(100% + 16px);
 $site-menu-width: calc(100% + 16px);
-
 $content-max-width:30em;
 
 //Color Palette
 
-$base-font-color:#333333;
-$h1-page-heading-font-color: #000000;
+
+
 $white:#ffffff;
 $red:#b30000;//rgba(179, 0, 0, 1)
 $orange:darken(orange,5%);
@@ -76,12 +92,6 @@ $dating-app-icon-size:3em;
 //Overlay and Navigation
 $blog-category-text-transform: capitalize;
 
-
-$dropcap-font-family:$heading-font-family;
-$dropcap-font-weight: 600;
-$dropcap-color:$base-font-color;
-// $dropcap-box-shadow:1px 1px 1px $base-font-color;
-$dropcap-box-shadow:none;
 
 //Top Bar
 $top-bar-height: 2.2em;
@@ -125,11 +135,11 @@ $share-button-font-color:$white;
 $social-media-bar-and-kudos-background-color:rgba(255,255,255,0.7);
 
 //Homepage
-$homepage-header-bg-color: $base-font-color;
-$homepage-header-bg-color-hover: $base-font-color;
+$homepage-header-bg-color: $brand;
+$homepage-header-bg-color-hover: $brand;
 
 //Blog Single
-$blog-header-height: 100vh;
+$blog-header-height: 80vh;
 
 //Transitions
 $blog-header-trans-time: .4s;

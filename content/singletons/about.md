@@ -44,9 +44,10 @@ Here is a shortlist of tools I used when developing this site:
 * [Gulp][]: compiling, concatenating, uglifying, and optimizing static assets; this includes [Babel][] for ES6 transpilation
 * [GitHub][]: version/source control
 * [Hugo][]: static site generation
-* [Amazon Simple Storage Service (S3)][]: hosting (static bucket)
+* [GitHub Pages][]: static hosting
+<!-- * [Amazon Simple Storage Service (S3)][]: hosting (static bucket) -->
 * [Wercker][]: automated deployments
-* [Amazon Web Services CLI][]: local deployments
+<!-- * [Amazon Web Services CLI][]: local deployments -->
 * [CloudFlare][]: content delivery (CDN), SSL, and reverse proxy
 * [Parse][]: NOSQL backend (article Kudos)
 * [Disqus][]: commenting
@@ -70,6 +71,7 @@ For an abridged visual style guide, see the site's [colophon][].
 [Jotform]:http://www.jotform.com/
 [GitHub]:https://github.com/rdwatters/ryanwattersme
 [GitHub Flavored]:https://help.github.com/articles/basic-writing-and-formatting-syntax/
+[GitHub Pages]: https://pages.github.com/
 [Gulp]:http://gulpjs.com/
 [available on GitHub]:https://www.github.com/rdwatters/ryanwattersme
 [Hugo]:http://gohugo.io/

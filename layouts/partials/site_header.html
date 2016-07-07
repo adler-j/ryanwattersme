@@ -12,25 +12,9 @@
     {{ partial "site_header/swiftype.html" . }}
 </head>
 <body>
-<!--     <script async>
-      window.fbAsyncInit = function() {
-        FB.init({
-          appId      : '1389111194449073',
-          xfbml      : true,
-          version    : 'v2.6'
-        });
-      };
-
-      (function(d, s, id){
-         var js, fjs = d.getElementsByTagName(s)[0];
-         if (d.getElementById(id)) {return;}
-         js = d.createElement(s); js.id = id;
-         js.src = "//connect.facebook.net/en_US/sdk.js";
-         fjs.parentNode.insertBefore(js, fjs);
-       }(document, 'script', 'facebook-jssdk'));
-        </script> -->
     {{ partial "site_header/top_bar.html" . }}
     <a href="" id="page-top"></a>
-    <header class="site-header">
+    <header class="site-header" id="site-header">
         {{ partial "site_header/site_navigation.html" . }}
     </header>
+    <div id="page-wrap">

@@ -45,24 +45,24 @@ gulp.task('fonts', function() {
 gulp.task('scripts', function() {
     return gulp.src('js/modules/*.js')
         .pipe(concat('main.js'))
+        .pipe(uglify())
         .pipe(babel({
             presets: ['es2015']
         }))
-        .pipe(uglify())
         .pipe(rename('main.min.js'))
         .pipe(gulp.dest('../static/assets/js'));
 });
 
-gulp.task('scripts2', function() {
-    return gulp.src('js/kudos/*.js')
-        .pipe(concat('kudos-all.js'))
-        .pipe(babel({
-            presets: ['es2015']
-        }))
-        .pipe(uglify())
-        .pipe(rename('kudosall.min.js'))
-        .pipe(gulp.dest('../static/assets/js'));
-});
+// gulp.task('scripts2', function() {
+//     return gulp.src('js/kudos/*.js')
+//         .pipe(concat('kudos-all.js'))
+//         .pipe(babel({
+//             presets: ['es2015']
+//         }))
+//         .pipe(uglify())
+//         .pipe(rename('kudosall.min.js'))
+//         .pipe(gulp.dest('../static/assets/js'));
+// });
 
 gulp.task('images', () => {
     return gulp.src('../static/assets/images/*')
@@ -76,12 +76,12 @@ gulp.task('images', () => {
 });
 
 //the default "compile" task for sass and js
-gulp.task('compile', ['sass', 'scripts', 'scripts2'], function() {
+gulp.task('compile', ['sass', 'scripts'], function() {
     gulp.watch(['scss/*.scss', 'scss/modules/*scss'], ['sass']);
     gulp.watch("scss/partials/*.scss", ['sass']);
     gulp.watch("scss/fonts.scss", ['fonts']);
     gulp.watch("js/modules/*.js", ['scripts']);
-    gulp.watch("js/kudos/*.js", ['scripts2']);
+    // gulp.watch("js/kudos/*.js", ['scripts2']);
 });
 
 // Default Task
