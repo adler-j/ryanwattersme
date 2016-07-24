@@ -40,7 +40,7 @@
             }
         }
     };
-    if (iframes.lenght > 0) {
+    if (iframes.length > 0) {
         for (var i = 0; i < iframes.length; i++) {
             if (youTubeTest.test(iframes[i].getAttribute('src'))) {
                 videoWrapper.wrap(iframes[i]);
